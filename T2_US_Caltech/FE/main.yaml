@@ -1,0 +1,55 @@
+--- 
+general:
+  logDir: /var/log/dtnrm-site-fe/
+  logLevel: DEBUG
+  privatedir: /opt/config/
+  sites: 
+    - "T2_US_Caltech"
+  webdomain: "https://sdn-dtn-1-7.ultralight.org"
+ContinuousLoop: 
+  logLevel: DEBUG
+  repeat: 5
+LookUpService: 
+  logLevel: DEBUG
+  repeat: 5
+PolicyService: 
+  logLevel: DEBUG
+  repeat: 5
+ProvisioningService: 
+  logLevel: DEBUG
+  repeat: 5
+T2_US_Caltech: 
+  database: /opt/config/T2_US_Caltech/sqlite.db
+  domain: ultralight.org
+  latitude: 34.1377
+  longitude: 118.1253
+  plugin: raw
+  port1_1capacity: 100
+  port1_1destport: caltech
+  port1_1desttype: switch
+  port1_1hostname: topology
+  port1_1isAlias: "urn:ogf:network:snvaca.pacificwave.net:2016:topology:caltech"
+  port1_1vlan_range: 3600-3619
+  port1_2capacity: 100
+  port1_2destport: enp143s0
+  port1_2desttype: server
+  port1_2hostname: sdn-dtn-1-7.tier2
+  port1_2vlan_range: 3600-3619
+  ports: 
+    - "1_1"
+    - "1_2"
+  privatedir: /opt/config/T2_US_Caltech/
+  switch: s0
+  year: 2013
+prefixes: 
+  mrs: "http://schemas.ogf.org/mrs/2013/12/topology#"
+  nml: "http://schemas.ogf.org/nml/2013/03/base#"
+  owl: "http://www.w3.org/2002/07/owl#"
+  rdf: "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  rdfs: "http://www.w3.org/2000/01/rdf-schema#"
+  schema: "http://schemas.ogf.org/nml/2012/10/ethernet"
+  sd: "http://schemas.ogf.org/nsi/2013/12/services/definition#"
+  site: "urn:ogf:network"
+  xml: "http://www.w3.org/XML/1998/namespace#"
+  xsd: "http://www.w3.org/2001/XMLSchema#"
+
