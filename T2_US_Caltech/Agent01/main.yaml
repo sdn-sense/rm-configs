@@ -5,6 +5,7 @@ general:
   logDir: /var/log/dtnrm-agent/
   logLevel: DEBUG
   logbackupCount: 5
+  logmaxbytes: 2000000
   port: 443
   private_dir: /opt/config/
   rotate: midnight
