@@ -6,13 +6,12 @@ general:
   logLevel: DEBUG
   logbackupCount: 5
   logmaxbytes: 2000000
-  port: 443
   private_dir: /opt/config/
   rotate: midnight
   secure: true
   sense_client: /opt/sense-client/
   siteName: T2_US_Caltech
-  webdomain: "https://sdn-dtn-1-7.ultralight.org" 
+  webdomain: "https://sdn-dtn-1-7.ultralight.org:8443" 
 agent: 
   INTERFACES: enp143s0
   NORULES: false
