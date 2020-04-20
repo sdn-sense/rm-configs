@@ -5,6 +5,9 @@ jbalcas:
 dtn17:
   full_dn: "/C=US/O=Let's Encrypt/CN=Let's Encrypt Authority X3/CN=sdn-dtn-1-7.ultralight.org"
   permissions: w
+dtn171:
+  full_dn: "/C=US/ST=California/L=Pasadena/O=Caltech/CN=sdn-dtn-1-7.ultralight.org/C=US/ST=California/L=Pasadena/O=Caltech/CN=sdn-dtn-1-7.ultralight.org"
+  permissions: w
 orchestrator:
   full_dn: "/O=University of Maryland/OU=Mid-Atlantic Crossroads/OU=research.maxgigapop.net/CN=Simple CA/O=University of Maryland/OU=Mid-Atlantic Crossroads/OU=research.maxgigapop.net/CN=Simple CA"
   permissions: w

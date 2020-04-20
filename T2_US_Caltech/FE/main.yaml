@@ -2,10 +2,12 @@
 general:
   logDir: /var/log/dtnrm-site-fe/
   logLevel: DEBUG
+  logmaxbytes: 2000000
+  logbackupCount: 5
   privatedir: /opt/config/
   sites: 
     - "T2_US_Caltech"
-  webdomain: "https://sdn-dtn-1-7.ultralight.org"
+  webdomain: "https://sdn-dtn-1-7.ultralight.org:8443"
 ContinuousLoop: 
   logLevel: DEBUG
   repeat: 5
