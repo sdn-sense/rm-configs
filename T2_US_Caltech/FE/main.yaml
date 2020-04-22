@@ -37,6 +37,7 @@ T2_US_Caltech:
   port1_2desttype: server
   port1_2hostname: sdn-dtn-1-7.tier2
   port1_2vlan_range: 3600-3619
+  port1_2isAlias: "urn:ogf:network:ultralight.org:2013:s0:1_2:sdn-dtn-1-7.tier2:enp143s0"
   ports: 
     - "1_1"
     - "1_2"
