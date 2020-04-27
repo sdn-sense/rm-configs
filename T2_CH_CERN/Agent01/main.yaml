@@ -17,7 +17,7 @@ agent:
   NORULES: false
   PUBLIC_INTF: enP48p1s0f0
   PUBLIC_INTF_MAX: 100000000000
-  hostname: sdn-dtn-1-7.tier2
+  hostname: cixp-surfnet-dtn.cern.ch
 enP48p1s0f1:
   port: 1/2
   shared: false
