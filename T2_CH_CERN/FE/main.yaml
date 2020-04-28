@@ -22,7 +22,7 @@ ProvisioningService:
   repeat: 5
 T2_CH_CERN:
   database: /opt/config/T2_CH_CERN/sqlite.db
-  domain: surfnet-dtn.cern.ch
+  domain: cern.ch
   latitude: 46.1403
   longitude: 6.0245
   plugin: raw
@@ -35,9 +35,9 @@ T2_CH_CERN:
   port1_2capacity: 100
   port1_2destport: enP48p1s0f1
   port1_2desttype: server
-  port1_2hostname: surfnet-dtn
+  port1_2hostname: cixp-surfnet-dtn.cern.ch
   port1_2vlan_range: 3985-3989
-  port1_2isAlias: "urn:ogf:network:surfnet-dtn.cern.ch:2013:s0:1_2:surfnet-dtn:enP48p1s0f1"
+  port1_2isAlias: "urn:ogf:network:cern.ch:2013:s0:1_2:cixp-surfnet-dtn.cern.ch:enP48p1s0f1"
   ports: 
     - "1_1"
     - "1_2"
