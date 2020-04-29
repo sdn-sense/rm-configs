@@ -20,7 +20,7 @@ PolicyService:
 ProvisioningService: 
   logLevel: DEBUG
   repeat: 5
-T2_CH_CERN:
+T1_US_FNAL:
   database: /opt/config/T1_US_FNAL/sqlite.db
   domain: fnal.gov
   latitude: 41.8407
