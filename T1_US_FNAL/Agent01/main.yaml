@@ -1,0 +1,28 @@
+---
+general:
+  debug: false
+  ip: "131.225.2.40"
+  logDir: /var/log/dtnrm-agent/
+  logLevel: DEBUG
+  logbackupCount: 5
+  logmaxbytes: 2000000
+  private_dir: /opt/config/
+  rotate: midnight
+  secure: true
+  sense_client: /opt/sense-client/
+  siteName: T1_US_FNAL
+  webdomain: "https://sense-dtn.fnal.gov:8443"
+agent: 
+  INTERFACES: ens1
+  NORULES: false
+  PUBLIC_INTF: eno2
+  PUBLIC_INTF_MAX: 100000000000
+  hostname: sense-dtn.fnal.gov
+ens1:
+  port: 1/2
+  shared: false
+  switch: s0
+  vlan_max: 100000000000
+  vlan_min: 1000000000
+  vlans: 3600-3619
+  ips: 172.16.1.0/30,172.17.1.0/30,172.18.1.0/30,172.19.1.0/30,172.31.6.0/24,172.31.10.0/24,172.31.11.0/24,172.31.12.0/24,172.31.13.0/24,172.31.14.0/24,172.31.15.0/24

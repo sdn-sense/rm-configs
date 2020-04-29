@@ -1,0 +1,13 @@
+---
+jbalcas:
+  full_dn: "/DC=ch/DC=cern/CN=CERN Grid Certification Authority/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=jbalcas/CN=751133/CN=Justas Balcas"
+  permissions: w
+orchestrator:
+  full_dn: "/O=University of Maryland/OU=Mid-Atlantic Crossroads/OU=research.maxgigapop.net/CN=Simple CA/O=University of Maryland/OU=Mid-Atlantic Crossroads/OU=research.maxgigapop.net/CN=Simple CA"
+  permissions: w
+xiyang:
+  full_dn: "/O=University of Maryland/OU=Mid-Atlantic Crossroads/OU=research.maxgigapop.net/CN=Simple CA/C=US/ST=Maryland/O=University of Maryland/OU=RESEARCH.MAXGIGAPOP.NET/CN=Xi Yang"
+  permissions: w
+dtn:
+  full_dn: "/C=US/ST=Illinois/L=Batavia/O=Fermilab/CN=sense-dtn.fnal.gov/C=US/ST=Illinois/L=Batavia/O=Fermilab/CN=sense-dtn.fnal.gov"
+  permissions: w

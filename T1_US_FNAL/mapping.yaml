@@ -1,0 +1,14 @@
+---
+
+
+704f8234a0190307852da550fc7c7f72: 
+  config: FE/
+  maintainer: "Justas Balcas"
+  status: production
+  type: FE
+715fcadaa90ae4bd0eff30a961b1cd96: 
+  config: Agent01/
+  maintainer: "Justas Balcas"
+  status: production
+  type: Agent
+

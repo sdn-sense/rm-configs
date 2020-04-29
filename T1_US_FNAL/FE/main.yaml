@@ -1,0 +1,58 @@
+--- 
+general:
+  logDir: /var/log/dtnrm-site-fe/
+  logLevel: DEBUG
+  logmaxbytes: 2000000
+  logbackupCount: 5
+  privatedir: /opt/config/
+  sites: 
+    - "T1_US_FNAL"
+  webdomain: "https://127.0.0.1:443"
+ContinuousLoop: 
+  logLevel: DEBUG
+  repeat: 5
+LookUpService: 
+  logLevel: DEBUG
+  repeat: 5
+PolicyService: 
+  logLevel: DEBUG
+  repeat: 5
+ProvisioningService: 
+  logLevel: DEBUG
+  repeat: 5
+T2_CH_CERN:
+  database: /opt/config/T1_US_FNAL/sqlite.db
+  domain: fnal.gov
+  latitude: 41.8407
+  longitude: 8.2794
+  plugin: raw
+  port1_1capacity: 100
+  port1_1destport: 3_2_1
+  port1_1desttype: switch
+  port1_1hostname: chich-cr5
+  port1_1isAlias: "urn:ogf:network:es.net:2013::chic-cr5:3_2_1:+"
+  port1_1vlan_range: 3600-3619
+  port1_2capacity: 100
+  port1_2destport: ens1
+  port1_2desttype: server
+  port1_2hostname: sense-dtn.fnal.gov
+  port1_2vlan_range: 3600-3619
+  port1_2isAlias: "urn:ogf:network:fnal.gov:2013:s0:1_2:sense-dtn.fnal.gov:ens1"
+  ports: 
+    - "1_1"
+    - "1_2"
+  privatedir: /opt/config/T1_US_FNAL/
+  switch: s0
+  year: 2013
+prefixes: 
+  mrs: "http://schemas.ogf.org/mrs/2013/12/topology#"
+  nml: "http://schemas.ogf.org/nml/2013/03/base#"
+  owl: "http://www.w3.org/2002/07/owl#"
+  rdf: "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  rdfs: "http://www.w3.org/2000/01/rdf-schema#"
+  schema: "http://schemas.ogf.org/nml/2012/10/ethernet"
+  sd: "http://schemas.ogf.org/nsi/2013/12/services/definition#"
+  site: "urn:ogf:network"
+  xml: "http://www.w3.org/XML/1998/namespace#"
+  xsd: "http://www.w3.org/2001/XMLSchema#"
+
