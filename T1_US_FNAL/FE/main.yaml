@@ -29,7 +29,7 @@ T1_US_FNAL:
   port1_1capacity: 100
   port1_1destport: 3_2_1
   port1_1desttype: switch
-  port1_1hostname: chic-cr5
+  port1_1hostname: chich-cr5
   port1_1isAlias: "urn:ogf:network:es.net:2013::chic-cr5:3_2_1:+"
   port1_1vlan_range: 3600-3619
   port1_2capacity: 100
