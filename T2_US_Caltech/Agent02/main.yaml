@@ -1,7 +1,7 @@
 ---
 general:
   debug: false
-  ip: "198.32.44.2"
+  ip: "198.32.44.26"
   logDir: /var/log/dtnrm-agent/
   logLevel: DEBUG
   logbackupCount: 5
