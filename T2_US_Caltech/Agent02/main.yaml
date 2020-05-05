@@ -16,7 +16,7 @@ agent:
   INTERFACES: enp4s0f1
   NORULES: false
   PUBLIC_INTF: enp4s0f1.63
-  PUBLIC_INTF_MAX: 100000000000
+  PUBLIC_INTF_MAX: 10000000000
   hostname: transfer-6.ultralight.org
 enp4s0f1:
   port: 1/3
