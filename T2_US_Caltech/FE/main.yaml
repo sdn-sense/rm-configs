@@ -38,16 +38,9 @@ T2_US_Caltech:
   port1_2hostname: sdn-dtn-1-7.tier2
   port1_2vlan_range: 3600-3619
   port1_2isAlias: "urn:ogf:network:ultralight.org:2013:s0:1_2:sdn-dtn-1-7.tier2:enp143s0"
-  port1_3capacity: 10
-  port1_3destport: enp4s0f1
-  port1_3desttype: server
-  port1_3hostname: transfer-6.ultralight.org
-  port1_3vlan_range: 3600-3619
-  port1_3isAlias: "urn:ogf:network:ultralight.org:2013:s0:1_3:transfer-6.ultralight.org:enp4s0f1"
   ports: 
     - "1_1"
     - "1_2"
-    - "1_3"
   privatedir: /opt/config/T2_US_Caltech/
   switch: s0
   year: 2013
