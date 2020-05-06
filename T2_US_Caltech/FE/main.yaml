@@ -27,20 +27,17 @@ T2_US_Caltech:
   longitude: 118.1253
   plugin: raw
   port1_1capacity: 100
-  port1_1destport: caltech
   port1_1desttype: switch
-  port1_1hostname: topology
   port1_1isAlias: "urn:ogf:network:snvaca.pacificwave.net:2016:topology:caltech"
   port1_1vlan_range: 3600-3619
   port1_2capacity: 100
-  port1_2destport: enp143s0
-  port1_2desttype: server
-  port1_2hostname: sdn-dtn-1-7.tier2
   port1_2vlan_range: 3600-3619
-  port1_2isAlias: "urn:ogf:network:ultralight.org:2013:s0:1_2:sdn-dtn-1-7.tier2:enp143s0"
+  port1_3capacity: 10
+  port1_3vlan_range: 3600-3619
   ports: 
     - "1_1"
     - "1_2"
+    - "1_3"
   privatedir: /opt/config/T2_US_Caltech/
   switch: s0
   year: 2013
