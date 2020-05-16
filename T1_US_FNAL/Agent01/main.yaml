@@ -11,7 +11,7 @@ general:
   secure: true
   sense_client: /opt/sense-client/
   siteName: T1_US_FNAL
-  webdomain: "https://sense-dtn.fnal.gov:8443"
+  webdomain: "https://sense-dtn.fnal.gov:443"
 agent: 
   INTERFACES: ens1
   NORULES: false
