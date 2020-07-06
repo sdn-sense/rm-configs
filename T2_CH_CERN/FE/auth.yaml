@@ -9,5 +9,5 @@ xiyang:
   full_dn: "/O=University of Maryland/OU=Mid-Atlantic Crossroads/OU=research.maxgigapop.net/CN=Simple CA/C=US/ST=Maryland/O=University of Maryland/OU=RESEARCH.MAXGIGAPOP.NET/CN=Xi Yang"
   permissions: w
 dtn:
-  full_dn: "/C=CH/ST=Geneva/L=Geneva/O=CERN/C=CH/ST=Geneva/L=Geneva/O=CERN/CN=cixp-surfnet-dtn.cern.ch"
+  full_dn: "/C=CH/ST=Geneva/L=Meyrin/O=CERN/OU=IT/CN=cixp-surfnet-dtn.cern.ch/emailAddress=juztas@gmail.com/C=CH/ST=Geneva/L=Meyrin/O=CERN/CN=cixp-surfnet-dtn.cern.ch"
   permissions: w
