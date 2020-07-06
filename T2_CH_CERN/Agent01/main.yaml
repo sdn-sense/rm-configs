@@ -11,7 +11,7 @@ general:
   secure: true
   sense_client: /opt/sense-client/
   siteName: T2_CH_CERN
-  webdomain: "https://192.91.245.27:443"
+  webdomain: "https://192.91.245.27:8443"
 agent: 
   INTERFACES: enP48p1s0f1
   NORULES: false
