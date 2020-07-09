@@ -1,0 +1,9 @@
+# DN|USERNAME|(one letter of rw: r-read, w-write)
+/DC=ch/DC=cern/CN=CERN Grid Certification Authority/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=jbalcas/CN=751133/CN=Justas Balcas|jbalcas|w
+/C=US/O=Let's Encrypt/CN=Let's Encrypt Authority X3/CN=180-134.research.maxgigapop.net|dtn180134|w
+/O=University of Maryland/OU=Mid-Atlantic Crossroads/OU=research.maxgigapop.net/CN=Simple CA/O=University of Maryland/OU=Mid-Atlantic Crossroads/OU=research.maxgigapop.net/CN=Simple CA|orch|w
+/O=University of Maryland/OU=Mid-Atlantic Crossroads/OU=research.maxgigapop.net/CN=Simple CA/C=US/ST=Maryland/O=University of Maryland/OU=RESEARCH.MAXGIGAPOP.NET/CN=Xi Yang|xiyang|w
+/C=US/O=Let's Encrypt/CN=Let's Encrypt Authority X3/CN=180-131.research.maxgigapop.net|w1|w
+/C=US/O=Let's Encrypt/CN=Let's Encrypt Authority X3/CN=180-132.research.maxgigapop.net|w2|w
+/C=US/O=Let's Encrypt/CN=Let's Encrypt Authority X3/CN=180-134.research.maxgigapop.net|w2|w
+

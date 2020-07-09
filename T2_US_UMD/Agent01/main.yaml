@@ -1,0 +1,29 @@
+---
+general:
+  debug: false
+  ip: "206.196.180.131"
+  logDir: /var/log/dtnrm-agent/
+  logLevel: DEBUG
+  logbackupCount: 5
+  logmaxbytes: 2000000
+  private_dir: /opt/config/
+  rotate: midnight
+  secure: true
+  sense_client: /opt/sense-client/
+  siteName: T2_US_UMD
+  webdomain: "https://206.196.180.131:8443"
+agent: 
+  INTERFACES: eth2
+  NORULES: false
+  PUBLIC_INTF: eth1
+  PUBLIC_INTF_MAX: 100000000000
+  hostname: 180-132.research.maxgigapop.net
+enP48p1s0f1:
+  port: 1/2
+  shared: false
+  switch: s0
+  vlan_max: 100000000000
+  vlan_min: 1000000000
+  vlans: 3600-3619
+  ips: 172.16.2.0/30,172.17.2.0/30,172.18.2.0/30,172.19.2.0/30,172.31.6.0/24,172.31.7.0/24,172.31.8.0/24,172.31.9.0/24,172.31.10.0/24,172.31.11.0/24,172.31.12.0/24,172.31.13.0/24,172.31.14.0/24,172.31.15.0/24
+
