@@ -31,7 +31,7 @@ T2_US_UMD:
   port1_1desttype: switch
   port1_1hostname: wash-cr5
   port1_1isAlias: "urn:ogf:network:es.net:2013::wash-cr5:6_1_1:+"
-  port1_1vlan_range: 3986-3989
+  port1_1vlan_range: 3600-3619
   port1_2capacity: 40
   port1_2destport: eth2
   port1_2desttype: server
