@@ -1,7 +1,7 @@
 ---
 general:
   debug: false
-  ip: "206.196.180.131"
+  ip: "206.196.180.134"
   logDir: /var/log/dtnrm-agent/
   logLevel: DEBUG
   logbackupCount: 5
@@ -18,8 +18,8 @@ agent:
   PUBLIC_INTF: eth1
   PUBLIC_INTF_MAX: 100000000000
   hostname: 180-134.research.maxgigapop.net
-enP48p1s0f1:
-  port: 1/2
+eth2:
+  port: 1_3
   shared: false
   switch: s0
   vlan_max: 100000000000
