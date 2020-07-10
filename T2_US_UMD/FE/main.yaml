@@ -39,11 +39,11 @@ T2_US_UMD:
   port1_2vlan_range: 3600-3619
   port1_2isAlias: "urn:ogf:network:maxgigapop.net:2013:s0:12:180-132.research.maxgigapop.net:eth2"
   port1_3capacity: 40
-  port1_3destport: eth2
+  port1_3destport: eth1
   port1_3desttype: server
   port1_3hostname: 180-134.research.maxgigapop.net
   port1_3vlan_range: 3600-3619
-  port1_3isAlias: "urn:ogf:network:maxgigapop.net:2013:s0:13:180-134.research.maxgigapop.net:eth2"
+  port1_3isAlias: "urn:ogf:network:maxgigapop.net:2013:s0:13:180-134.research.maxgigapop.net:eth1"
   ports: 
     - "1_1"
     - "1_2"

@@ -13,12 +13,12 @@ general:
   siteName: T2_US_UMD
   webdomain: "https://206.196.180.131:8443"
 agent: 
-  INTERFACES: eth2
+  INTERFACES: eth1
   NORULES: false
   PUBLIC_INTF: eth1
   PUBLIC_INTF_MAX: 100000000000
   hostname: 180-134.research.maxgigapop.net
-eth2:
+eth1:
   port: 1_3
   shared: false
   switch: s0
