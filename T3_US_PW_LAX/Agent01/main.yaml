@@ -10,7 +10,7 @@ general:
   rotate: midnight
   secure: true
   sense_client: /opt/sense-client/
-  siteName: CENIC_PW_LAX
+  siteName: T3_US_PW_LAX
   webdomain: "https://137.164.55.78:8443"
 agent: 
   INTERFACES: ens2

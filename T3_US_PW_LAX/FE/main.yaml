@@ -6,7 +6,7 @@ general:
   logbackupCount: 5
   privatedir: /opt/config/
   sites: 
-    - "CENIC_PW_LAX"
+    - "T3_US_PW_LAX"
   webdomain: "https://127.0.0.1:443"
 ContinuousLoop: 
   logLevel: DEBUG
@@ -20,8 +20,8 @@ PolicyService:
 ProvisioningService: 
   logLevel: DEBUG
   repeat: 5
-CENIC_PW_LAX:
-  database: /opt/config/CENIC_PW_LAX/sqlite.db
+T3_US_PW_LAX:
+  database: /opt/config/T3_US_PW_LAX/sqlite.db
   domain: maxgigapop.net
   latitude: 11.1
   longitude: 12.1
@@ -41,7 +41,7 @@ CENIC_PW_LAX:
   ports: 
     - "1_1"
     - "1_2"
-  privatedir: /opt/config/CENIC_PW_LAX/
+  privatedir: /opt/config/T3_US_PW_LAX/
   switch: s0
   year: 2013
 prefixes: 
