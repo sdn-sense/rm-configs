@@ -28,7 +28,7 @@ T2_US_Caltech:
   plugin: raw
   port1_1capacity: 100
   port1_1desttype: switch
-  port1_1isAlias: "urn:ogf:network:snvaca.pacificwave.net:2016:snvl2-pw-sw-1:caltech"
+  port1_1isAlias: "urn:ogf:network:lsanca.pacificwave.net:2016:losa2-pw-sw-1:pw-losa2-1"
   port1_1vlan_range: 3600-3619
   port1_2capacity: 100
   port1_2vlan_range: 3600-3619
