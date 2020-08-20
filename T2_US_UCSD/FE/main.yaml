@@ -6,7 +6,7 @@ general:
   logbackupCount: 5
   privatedir: /opt/config/
   sites: 
-    - "T3_US_PW_LAX"
+    - "T2_US_UCSD"
   webdomain: "https://127.0.0.1:443"
 ContinuousLoop: 
   logLevel: DEBUG
@@ -21,7 +21,7 @@ ProvisioningService:
   logLevel: DEBUG
   repeat: 5
 T3_US_PW_LAX:
-  database: /opt/config/T3_US_PW_LAX/sqlite.db
+  database: /opt/config/T2_US_UCSD/sqlite.db
   domain: maxgigapop.net
   latitude: 11.1
   longitude: 12.1
@@ -41,7 +41,7 @@ T3_US_PW_LAX:
   ports: 
     - "1_1"
     - "1_2"
-  privatedir: /opt/config/T3_US_PW_LAX/
+  privatedir: /opt/config/T2_US_UCSD/
   switch: s0
   year: 2013
 prefixes: 
