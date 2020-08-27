@@ -22,7 +22,7 @@ ProvisioningService:
   repeat: 5
 T3_US_Starlight: 
   database: /opt/config/T3_US_Starlight/sqlite.db
-  domain: ultralight.org
+  domain: dtn-2.starlight.org
   latitude: 34.1377
   longitude: 118.1253
   plugin: raw
