@@ -18,7 +18,7 @@ agent:
   PUBLIC_INTF: p1p2
   PUBLIC_INTF_MAX: 100000000000
   hostname: r740xd4
-enp143s0: 
+p1p1: 
   port: 1/2
   shared: false
   switch: s0
