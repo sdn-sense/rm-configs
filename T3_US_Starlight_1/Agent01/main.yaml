@@ -17,7 +17,7 @@ agent:
   NORULES: false
   PUBLIC_INTF: management
   PUBLIC_INTF_MAX: 100000000000
-  hostname: r740xd4
+  hostname: dtn110.sl.startap.net
 p4p1: 
   port: 1/2
   shared: false
