@@ -9,7 +9,7 @@ xiyang:
   full_dn: "/O=University of Maryland/OU=Mid-Atlantic Crossroads/OU=research.maxgigapop.net/CN=Simple CA/C=US/ST=Maryland/O=University of Maryland/OU=RESEARCH.MAXGIGAPOP.NET/CN=Xi Yang"
   permissions: w
 stardtn1:
-  full_dn: "/C=US/ST=Illinois/L=Evanston/O=Northwestern University/OU=StarLight/CN=165.124.33.182/C=US/ST=Illinois/L=Evanston/O=Northwestern University/CN=165.124.33.142"
+  full_dn: "/C=US/ST=Illinois/L=Evanston/O=Northwestern University/OU=StarLight/CN=165.124.33.142/C=US/ST=Illinois/L=Evanston/O=Northwestern University/CN=165.124.33.142"
   permissions: w
 
 
