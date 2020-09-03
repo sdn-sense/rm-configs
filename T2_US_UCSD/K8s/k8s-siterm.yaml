@@ -3,22 +3,19 @@ apiVersion: v1
 kind: Service
 metadata:
   annotations:
-    kompose.cmd: kompose convert
-    kompose.version: 1.21.0 (992df58d8)
-  creationTimestamp: null
   labels:
-    io.kompose.service: sitefe
+    k8s-app: sitefe
   name: sitefe
 spec:
-  type: NodePort
+  type: LoadBalancer
   ports:
   - name: "8443"
     port: 8443
     targetPort: 443
-  externalIPs:
-    - 137.164.55.78
+#  externalIPs:
+#    - x.x.x.x
   selector:
-    io.kompose.service: sitefe
+    k8s-app: sitefe
 status:
   loadBalancer: {}
 ---
@@ -26,26 +23,20 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   annotations:
-    kompose.cmd: kompose convert
-    kompose.version: 1.21.0 (992df58d8)
-  creationTimestamp: null
   labels:
-    io.kompose.service: sitefe
+    k8s-app: sitefe
   name: sitefe
 spec:
   replicas: 1
   selector:
     matchLabels:
-      io.kompose.service: sitefe
+      k8s-app: sitefe
   strategy: {}
   template:
     metadata:
       annotations:
-        kompose.cmd: kompose convert
-        kompose.version: 1.21.0 (992df58d8)
-      creationTimestamp: null
       labels:
-        io.kompose.service: sitefe
+        k8s-app: sitefe
     spec:
       containers:
       - image: sdnsense/site-rm-sense:latest
@@ -79,7 +70,7 @@ spec:
           readOnly: true
           subPath: httpdfullchain.pem
       nodeSelector:
-          kubernetes.io/hostname: irnc-dtn02.mgmt.lax.pw.cenic.net
+          kubernetes.io/hostname: edex.calit2.optiputer.net
       restartPolicy: Always
       serviceAccountName: ""
       volumes:
@@ -131,27 +122,21 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   annotations:
-    kompose.cmd: kompose convert
-    kompose.version: 1.21.0 (992df58d8)
-  creationTimestamp: null
   labels:
-    io.kompose.service: siterm-agent01
+    k8s-app: siterm-agent01
   name: siterm-agent01
 spec:
   replicas: 1
   selector:
     matchLabels:
-      io.kompose.service: siterm-agent01
+      k8s-app: siterm-agent01
   strategy:
     type: Recreate
   template:
     metadata:
       annotations:
-        kompose.cmd: kompose convert
-        kompose.version: 1.21.0 (992df58d8)
-      creationTimestamp: null
       labels:
-        io.kompose.service: siterm-agent01
+        k8s-app: siterm-agent01
     spec:
       hostNetwork: true
       containers:
