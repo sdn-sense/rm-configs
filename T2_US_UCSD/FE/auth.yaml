@@ -12,5 +12,5 @@ prodtransfeR:
   full_dn: "/C=US/O=Internet2/OU=InCommon/CN=InCommon IGTF Server CA/DC=org/DC=incommon/C=US/ST=California/L=Pasadena/O=California Institute of Technology/OU=High Energy Physics/CN=transfer.ultralight.org"
   permissions: w
 ucsd_nautilus:
-  full_dn: "/C=US/ST=CA/L=La Jolla/O=University of California, San Diego/OU=UCSD/CN=nsi0.calit2.optiputer.net
+  full_dn: "/C=US/ST=CA/L=La Jolla/O=University of California, San Diego/OU=UCSD/CN=nsi0.calit2.optiputer.net"
   permissions: w
