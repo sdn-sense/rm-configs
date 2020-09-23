@@ -1,7 +1,7 @@
 ---
 general:
   debug: false
-  ip: "198.32.44.2"
+  ip: "198.32.43.1"
   logDir: /var/log/dtnrm-agent/
   logLevel: DEBUG
   logbackupCount: 5
@@ -15,7 +15,7 @@ general:
 agent: 
   INTERFACES: enp143s0
   NORULES: false
-  PUBLIC_INTF: enp143s0.63
+  PUBLIC_INTF: enp143s0.43
   PUBLIC_INTF_MAX: 100000000000
   hostname: sdn-dtn-1-7.tier2
 enp143s0: 
