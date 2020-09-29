@@ -5,6 +5,7 @@ general:
   logmaxbytes: 2000000
   logbackupCount: 5
   privatedir: /opt/config/
+  autoupdate: false
   sites: 
     - "T2_US_Caltech"
   webdomain: "https://127.0.0.1:443"

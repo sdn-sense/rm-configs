@@ -9,6 +9,7 @@ general:
   private_dir: /opt/config/
   rotate: midnight
   secure: true
+  autoupdate: false
   sense_client: /opt/sense-client/
   siteName: T2_US_Caltech
   webdomain: "https://sdn-dtn-1-7.ultralight.org:8443" 
