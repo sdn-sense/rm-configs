@@ -11,3 +11,6 @@ xiyang:
 dtn:
   full_dn: "/C=US/ST=Illinois/L=Batavia/O=Fermilab/CN=sense-dtn.fnal.gov/C=US/ST=Illinois/L=Batavia/O=Fermilab/CN=sense-dtn.fnal.gov"
   permissions: w
+prometheus:
+  full_dn: "/C=US/O=Let's Encrypt/CN=Let's Encrypt Authority X3/CN=influx.sdn-sense.dev"
+  permissions: r
