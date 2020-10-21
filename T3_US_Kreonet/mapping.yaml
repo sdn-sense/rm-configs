@@ -1,0 +1,23 @@
+---
+
+4a948fe9762ee71dd2d37e3291437eaa:
+  config: FE1/
+  maintainer: "Munkhbat Tergel"
+  status: production
+  type: FE
+1e37bc688173115baf1e7edd51d48e85:
+  config: FE2/
+  maintainer: "Munkhbat Tergel"
+  status: production
+  type: FE
+f65fd6335eeac023ddccf27ffc4e0f41:
+  config: Agent01/
+  maintainer: "Munkhbat Tergel"
+  status: production
+  type: Agent
+6aaa2436084e695e25f9218742757e4d:
+  config: Agent02/
+  maintainer: "Munkhbat Tergel"
+  status: production
+  type: Agent
+
