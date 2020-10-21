@@ -57,6 +57,14 @@ scrape_configs:
       cert_file: /etc/letsencrypt/live/influx.sdn-sense.dev/cert.pem
       key_file: /etc/letsencrypt/live/influx.sdn-sense.dev/privkey.pem
       insecure_skip_verify: true
+  - job_name: T3_US_Kreonet_DTNs
+    static_configs:
+      - targets: ['134.75.254.11:9100']
+      - targets: ['134.75.254.12:9100']
+    tls_config:
+      cert_file: /etc/letsencrypt/live/influx.sdn-sense.dev/cert.pem
+      key_file: /etc/letsencrypt/live/influx.sdn-sense.dev/privkey.pem
+      insecure_skip_verify: true
   - job_name: SENSE_ORCHESTRATOR
     scrape_interval: 60s
     static_configs:
