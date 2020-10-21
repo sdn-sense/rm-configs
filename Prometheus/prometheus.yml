@@ -22,6 +22,12 @@ scrape_configs:
   - job_name: T2_US_Caltech_DTNs
     static_configs:
       - targets: ['sdn-dtn-1-7.ultralight.org:9100']
+  - job_name: T3_US_Starlight_DTNs
+    static_configs:
+      - targets: ['165.124.33.182:9200']
+  - job_name: T2_CH_CERN_DTNs
+    static_configs:
+      - targets: ['192.91.245.27:9100']
   - job_name: T2_US_Caltech_FE
     scrape_interval: 30s
     static_configs:
@@ -31,6 +37,26 @@ scrape_configs:
     tls_config:
       cert_file: /etc/letsencrypt/live/influx.sdn-sense.dev/cert.pem
       key_file: /etc/letsencrypt/live/influx.sdn-sense.dev/privkey.pem
+  - job_name: T3_US_Starlight
+    scrape_interval: 30s
+    static_configs:
+      - targets: ['165.124.33.182:8443']
+    scheme: https
+    metrics_path: /T3_US_Starlight/sitefe/json/frontend/metrics
+    tls_config:
+      cert_file: /etc/letsencrypt/live/influx.sdn-sense.dev/cert.pem
+      key_file: /etc/letsencrypt/live/influx.sdn-sense.dev/privkey.pem
+      insecure_skip_verify: true
+  - job_name: T2_CH_CERN
+    scrape_interval: 30s
+    static_configs:
+      - targets: ['192.91.245.27:8443']
+    scheme: https
+    metrics_path: /T2_CH_CERN/sitefe/json/frontend/metrics
+    tls_config:
+      cert_file: /etc/letsencrypt/live/influx.sdn-sense.dev/cert.pem
+      key_file: /etc/letsencrypt/live/influx.sdn-sense.dev/privkey.pem
+      insecure_skip_verify: true
   - job_name: SENSE_ORCHESTRATOR
     scrape_interval: 60s
     static_configs:
