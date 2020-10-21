@@ -34,4 +34,6 @@ scrape_configs:
   - job_name: SENSE_ORCHESTRATOR
     scrape_interval: 60s
     static_configs:
-      - targets: ['sense-o.es.net:9990']
+      - targets: ['dev1.virnao.com:9990']
+    metrics_path: /metrics/application
+
