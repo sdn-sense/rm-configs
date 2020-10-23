@@ -1,7 +1,7 @@
 ---
 general:
   debug: false
-  ip: "210.119.23.11"
+  ip: "134.75.254.11"
   logDir: /var/log/dtnrm-agent/
   logLevel: DEBUG
   logbackupCount: 5
@@ -11,14 +11,14 @@ general:
   secure: true
   sense_client: /opt/sense-client/
   siteName: T3_US_Kreonet
-  webdomain: "https://210.119.23.11:8443"
+  webdomain: "https://134.75.254.11:8443"
 agent: 
-  INTERFACES: TBC
+  INTERFACES: eno1
   NORULES: false
-  PUBLIC_INTF: TBC
+  PUBLIC_INTF: eno2
   PUBLIC_INTF_MAX: 100000000000
   hostname: sense-dtn1.kreonet.net
-TBC:
+eno1:
   port: 1/2
   shared: false
   switch: s0
