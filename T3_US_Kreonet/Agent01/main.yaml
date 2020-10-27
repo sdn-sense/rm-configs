@@ -11,7 +11,7 @@ general:
   secure: true
   sense_client: /opt/sense-client/
   siteName: T3_US_Kreonet
-  webdomain: "https://134.75.254.11:8443"
+  webdomain: "https://150.183.100.47:8443"
 agent: 
   INTERFACES: eno1
   NORULES: false
