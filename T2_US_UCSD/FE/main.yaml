@@ -1,0 +1,58 @@
+--- 
+general:
+  logDir: /var/log/dtnrm-site-fe/
+  logLevel: DEBUG
+  logmaxbytes: 2000000000
+  logbackupCount: 5
+  privatedir: /opt/config/
+  sites: 
+    - "T2_US_UCSD"
+  webdomain: "https://127.0.0.1:443"
+ContinuousLoop: 
+  logLevel: DEBUG
+  repeat: 5
+LookUpService: 
+  logLevel: DEBUG
+  repeat: 5
+PolicyService: 
+  logLevel: DEBUG
+  repeat: 5
+ProvisioningService: 
+  logLevel: DEBUG
+  repeat: 5
+T2_US_UCSD:
+  database: /opt/config/T2_US_UCSD/sqlite.db
+  domain: calit2.optiputer.net
+  latitude: 32.880060
+  longitude: -117.234003
+  plugin: raw
+  port1_1capacity: 1000
+  port1_1destport: dtn01
+  port1_1desttype: switch
+  port1_1hostname: prism-core
+  port1_1isAlias: "urn:ogf:network:calit2.optiputer.net:2020:prism-core:dtn01"
+  port1_1vlan_range: 1779-1799
+  port1_2capacity: 1000
+  port1_2destport: enp33s0f0
+  port1_2desttype: server
+  port1_2hostname: k8s-igrok-04.calit2.optiputer.net
+  port1_2vlan_range: 3985-3989
+  port1_2isAlias: "urn:ogf:network:calit2.optiputer.net:2020:prism-core:12:k8s-igrok-04.calit2.optiputer.net:enp33s0f0"
+  ports: 
+    - "1_1"
+    - "1_2"
+  privatedir: /opt/config/T2_US_UCSD/
+  switch: prism-core
+  year: 2020
+prefixes: 
+  mrs: "http://schemas.ogf.org/mrs/2013/12/topology#"
+  nml: "http://schemas.ogf.org/nml/2013/03/base#"
+  owl: "http://www.w3.org/2002/07/owl#"
+  rdf: "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  rdfs: "http://www.w3.org/2000/01/rdf-schema#"
+  schema: "http://schemas.ogf.org/nml/2012/10/ethernet"
+  sd: "http://schemas.ogf.org/nsi/2013/12/services/definition#"
+  site: "urn:ogf:network"
+  xml: "http://www.w3.org/XML/1998/namespace#"
+  xsd: "http://www.w3.org/2001/XMLSchema#"
+
