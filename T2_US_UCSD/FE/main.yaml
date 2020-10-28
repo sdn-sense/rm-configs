@@ -23,8 +23,8 @@ ProvisioningService:
 T2_US_UCSD:
   database: /opt/config/T2_US_UCSD/sqlite.db
   domain: calit2.optiputer.net
-  latitude: 32.880060
-  longitude: -117.234003
+  latitude: 32.882648
+  longitude: -117.234579
   plugin: raw
   port1_1capacity: 1000000
   port1_1destport: k8s-gen4-01
