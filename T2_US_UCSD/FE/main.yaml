@@ -33,7 +33,7 @@ T2_US_UCSD:
   port1_1isAlias: "urn:ogf:network:calit2.optiputer.net:2020:prism-core:k8s-gen4-01"
   port1_1vlan_range: 1779-1799
   port1_2capacity: 1000000
-  port1_2destport: enp161s0f1
+  port1_2destport: k8s-gen4-02
   port1_2desttype: server
   port1_2hostname: k8s-gen4-02.calit2.optiputer.net
   port1_2vlan_range: 3985-3989
