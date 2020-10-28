@@ -20,7 +20,8 @@ agent:
   PUBLIC_INTF_MAX: 100000000000
   hostname: sdn-dtn-1-7.tier2
 enp143s0:
-  isAlias: urn:ogf:network:lsanca.pacificwave.net:2016:pw-losa2-1:ultralight
+  port: 1/2
+  switch: s0
   shared: false
   vlan_max: 100000000000
   vlan_min: 1000000000

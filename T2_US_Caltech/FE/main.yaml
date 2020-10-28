@@ -26,7 +26,20 @@ T2_US_Caltech:
   domain: ultralight.org
   latitude: 34.1377
   longitude: 118.1253
-  plugin: none
+  plugin: raw
+  switch: s0
+  port1_1capacity: 100
+  port1_1desttype: switch
+  port1_1isAlias: "urn:ogf:network:lsanca.pacificwave.net:2016:pw-losa2-1:ultralight"
+  port1_1vlan_range: 3600-3619
+  port1_2capacity: 100
+  port1_2vlan_range: 3600-3619
+  port1_3capacity: 10
+  port1_3vlan_range: 3600-3619
+  ports: 
+    - "1_1"
+    - "1_2"
+    - "1_3"
   privatedir: /opt/config/T2_US_Caltech/
   year: 2013
 prefixes: 
