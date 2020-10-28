@@ -37,7 +37,7 @@ T2_US_UCSD:
     - "1_2"
   privatedir: /opt/config/T2_US_UCSD/
   switch: s0
-  year: 2013
+  year: 2020
 prefixes: 
   mrs: "http://schemas.ogf.org/mrs/2013/12/topology#"
   nml: "http://schemas.ogf.org/nml/2013/03/base#"
