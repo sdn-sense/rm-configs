@@ -161,7 +161,7 @@ spec:
           readOnly: true
           subPath: hostkey.pem
       nodeSelector:
-          kubernetes.io/hostname: irnc-dtn02.mgmt.lax.pw.cenic.net
+          kubernetes.io/hostname: edex.calit2.optiputer.net
       restartPolicy: Always
       serviceAccountName: ""
       volumes:
