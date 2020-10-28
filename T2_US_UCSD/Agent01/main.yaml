@@ -21,7 +21,7 @@ agent:
 enp161s0f0:
   port: 1_2
   shared: false
-  switch: prism-core
+  switch: s0
   vlan_max: 100000000000
   vlan_min: 1000000000
   vlans: 3985-3989
