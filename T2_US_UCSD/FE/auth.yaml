@@ -5,9 +5,6 @@ jbalcas:
 orchestrator:
   full_dn: "/O=University of Maryland/OU=Mid-Atlantic Crossroads/OU=research.maxgigapop.net/CN=Simple CA/O=University of Maryland/OU=Mid-Atlantic Crossroads/OU=research.maxgigapop.net/CN=Simple CA"
   permissions: w
-cenic_pw_lax:
-  full_dn: ??
-  permissions: w
 prodtransfeR:
   full_dn: "/C=US/O=Internet2/OU=InCommon/CN=InCommon IGTF Server CA/DC=org/DC=incommon/C=US/ST=California/L=Pasadena/O=California Institute of Technology/OU=High Energy Physics/CN=transfer.ultralight.org"
   permissions: w
