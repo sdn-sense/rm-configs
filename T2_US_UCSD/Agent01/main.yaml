@@ -15,8 +15,6 @@ general:
 agent: 
   INTERFACES: enp161s0f1
   NORULES: false
-  PUBLIC_INTF: enp161s0f1
-  PUBLIC_INTF_MAX: 10000000000
   hostname: k8s-gen4-01.calit2.optiputer.net
 enp161s0f1:
   port: 1_2
