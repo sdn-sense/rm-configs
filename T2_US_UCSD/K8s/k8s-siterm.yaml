@@ -46,6 +46,8 @@ spec:
         - containerPort: 443
         resources: {}
         volumeMounts:
+        - mountPath: /opt/config
+          name: sense-rm-vol
         - mountPath: /etc/dtnrm.yaml
           name: sitermfe
           subPath: sense-siterm-fe.yaml
@@ -87,35 +89,38 @@ spec:
           items:
           - key: httpdcert
             path: httpdcert.pem
-          defaultMode: 0600
+          defaultMode: 0644
       - name: httpdprivkey
         secret:
           secretName: sense-httpdprivkey
           items:
           - key: httpdprivkey
             path: httpdprivkey.pem
-          defaultMode: 0600
+          defaultMode: 0644
       - name: httpdfullchain
         secret:
           secretName: sense-httpdfullchain
           items:
           - key: httpdfullchain
             path: httpdfullchain.pem
-          defaultMode: 0600
+          defaultMode: 0644
       - name: hostcert
         secret:
           secretName: sense-hostcert
           items:
           - key: hostcert
             path: hostcert.pem
-          defaultMode: 0600
+          defaultMode: 0644
       - name: hostkey
         secret:
           secretName: sense-hostkey
           items:
           - key: hostkey
             path: hostkey.pem
-          defaultMode: 0600
+          defaultMode: 0644
+      - name: sense-rm-vol
+        persistentVolumeClaim:
+          claimName: sense-rm-vol
 status: {}
 ---
 apiVersion: apps/v1
@@ -149,6 +154,8 @@ spec:
             add:
             - NET_ADMIN
         volumeMounts:
+        - mountPath: /opt/config
+          name: sense-agent01-vol
         - mountPath: /etc/dtnrm.yaml
           name: sitermagent
           subPath: sense-siterm-agent.yaml
@@ -161,7 +168,7 @@ spec:
           readOnly: true
           subPath: hostkey.pem
       nodeSelector:
-          kubernetes.io/hostname: edex.calit2.optiputer.net
+          kubernetes.io/hostname: k8s-gen4-01.calit2.optiputer.net
       restartPolicy: Always
       serviceAccountName: ""
       volumes:
@@ -178,12 +185,15 @@ spec:
           items:
           - key: agent-hostcert
             path: hostcert.pem
-          defaultMode: 0600
+          defaultMode: 0644
       - name: agent-hostkey
         secret:
           secretName: sense-agent-hostkey
           items:
           - key: agent-hostkey
             path: hostkey.pem
-          defaultMode: 0600
+          defaultMode: 0644
+      - name: sense-agent01-vol
+        persistentVolumeClaim:
+          claimName: sense-agent01-vol
 status: {}
