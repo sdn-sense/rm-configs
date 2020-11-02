@@ -17,7 +17,7 @@ agent:
   NORULES: false
   hostname: k8s-gen4-01.calit2.optiputer.net
 enp161s0f1:
-  port: 1_2
+  port: 1/2
   shared: false
   switch: s0
   vlan_max: 100000000000
