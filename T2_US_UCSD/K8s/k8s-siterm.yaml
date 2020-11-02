@@ -47,7 +47,7 @@ spec:
         resources: {}
         volumeMounts:
         - mountPath: /opt/config
-          name: sense-rm-vol
+          name: sense-fe-vol
         - mountPath: /etc/dtnrm.yaml
           name: sitermfe
           subPath: sense-siterm-fe.yaml
@@ -118,9 +118,9 @@ spec:
           - key: hostkey
             path: hostkey.pem
           defaultMode: 0644
-      - name: sense-rm-vol
+      - name: sense-fe-vol
         persistentVolumeClaim:
-          claimName: sense-rm-vol
+          claimName: sense-fe-vol
 status: {}
 ---
 apiVersion: apps/v1
