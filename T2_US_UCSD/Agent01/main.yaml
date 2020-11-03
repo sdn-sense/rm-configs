@@ -16,7 +16,7 @@ agent:
   INTERFACES: enp161s0f0
   NORULES: false
   hostname: k8s-gen4-01.calit2.optiputer.net
-enp161s0f1:
+enp161s0f0:
   port: 1/2
   shared: false
   switch: s0
