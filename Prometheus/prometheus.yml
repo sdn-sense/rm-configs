@@ -19,15 +19,23 @@ rule_files:
 # A scrape configuration containing exactly one endpoint to scrape:
 # Here it's Prometheus itself.
 scrape_configs:
+# DTN is not possible to monitor yet due to Kubernetes network security
+  - job_name: T2_US_UCSD_DTNs
+    static_configs:
+      - targets: ['67.58.53.201:9100']
+  - job_name: T2_US_UCSD_FE
+    scrape_interval: 30s
+    static_configs:
+      - targets: ['67.58.49.60:8443']
+    scheme: https
+    metrics_path: /T2_US_UCSD/sitefe/json/frontend/metrics
+    tls_config:
+      cert_file: /etc/letsencrypt/live/influx.sdn-sense.dev/cert.pem
+      key_file: /etc/letsencrypt/live/influx.sdn-sense.dev/privkey.pem
+      insecure_skip_verify: true
   - job_name: T2_US_Caltech_DTNs
     static_configs:
       - targets: ['sdn-dtn-1-7.ultralight.org:9100']
-  - job_name: T3_US_Starlight_DTNs
-    static_configs:
-      - targets: ['165.124.33.182:9200']
-  - job_name: T2_CH_CERN_DTNs
-    static_configs:
-      - targets: ['192.91.245.27:9100']
   - job_name: T2_US_Caltech_FE
     scrape_interval: 30s
     static_configs:
@@ -37,6 +45,9 @@ scrape_configs:
     tls_config:
       cert_file: /etc/letsencrypt/live/influx.sdn-sense.dev/cert.pem
       key_file: /etc/letsencrypt/live/influx.sdn-sense.dev/privkey.pem
+  - job_name: T3_US_Starlight_DTNs
+    static_configs:
+      - targets: ['165.124.33.182:9200']
   - job_name: T3_US_Starlight
     scrape_interval: 30s
     static_configs:
@@ -57,10 +68,22 @@ scrape_configs:
       cert_file: /etc/letsencrypt/live/influx.sdn-sense.dev/cert.pem
       key_file: /etc/letsencrypt/live/influx.sdn-sense.dev/privkey.pem
       insecure_skip_verify: true
+  - job_name: T2_CH_CERN_DTNs
+    static_configs:
+      - targets: ['192.91.245.27:9100']
   - job_name: T3_US_Kreonet_DTNs
     static_configs:
       - targets: ['134.75.254.11:9100']
-      - targets: ['134.75.254.12:9100']
+    scheme: https
+    tls_config:
+      cert_file: /etc/letsencrypt/live/influx.sdn-sense.dev/cert.pem
+      key_file: /etc/letsencrypt/live/influx.sdn-sense.dev/privkey.pem
+      insecure_skip_verify: true
+  - job_name: T3_US_Kreonet_FE
+    static_configs:
+      - targets: ['150.183.100.47:8443']
+    scheme: https
+    metrics_path: /T3_US_Kreonet/sitefe/json/frontend/metrics
     tls_config:
       cert_file: /etc/letsencrypt/live/influx.sdn-sense.dev/cert.pem
       key_file: /etc/letsencrypt/live/influx.sdn-sense.dev/privkey.pem
