@@ -13,7 +13,7 @@ general:
   siteName: T2_US_UCSD
   webdomain: "https://67.58.49.60:8443"
 agent: 
-  INTERFACES: enp161s0f1
+  INTERFACES: enp161s0f0
   NORULES: false
   hostname: k8s-gen4-01.calit2.optiputer.net
 enp161s0f1:
