@@ -13,12 +13,10 @@ general:
   siteName: T3_US_Kreonet
   webdomain: "https://150.183.100.47:8443"
 agent: 
-  INTERFACES: eno1
+  INTERFACES: enP65541p1s0f1
   NORULES: false
-  PUBLIC_INTF: eno2
-  PUBLIC_INTF_MAX: 100000000000
   hostname: sense-dtn1.kreonet.net
-eno1:
+enP65541p1s0f1:
   port: 1/2
   shared: false
   switch: s0
