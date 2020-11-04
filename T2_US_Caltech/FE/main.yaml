@@ -30,7 +30,7 @@ T2_US_Caltech:
   switch: s0
   port1_1capacity: 100
   port1_1desttype: switch
-  port1_1isAlias: "urn:ogf:network:lsanca.pacificwave.net:2016:pw-losa2-1:ultralight"
+  port1_1isAlias: "urn:ogf:network:lsanca.pacificwave.net:2016:lax-agg10:ultralight"
   port1_1vlan_range: 3600-3619
   port1_2capacity: 100
   port1_2vlan_range: 3600-3619
