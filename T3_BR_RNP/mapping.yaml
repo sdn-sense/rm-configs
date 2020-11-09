@@ -1,0 +1,13 @@
+---
+
+
+fd87fd857753e7f49f311c425f1039f0:
+  config: FE/
+  maintainer: "Marcos Schwarz"
+  status: production
+  type: FE
+34cf641e57783778d846681f8b9481dc:
+  config: Agent01/
+  maintainer: "Marcos Schwarz"
+  status: production
+  type: Agent
