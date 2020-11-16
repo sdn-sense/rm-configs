@@ -28,16 +28,16 @@ T3_DE_KIT:
   plugin: raw
   port1_1capacity: 100
   port1_1desttype: switch
-  port1_1isAlias: "urn:ogf:network:tb.es.net:2013::star-tb1:3_2_1:+"
-  port1_1vlan_range: 924-929,3985-3989
+  port1_1isAlias: "urn:ogf:network:surf.nl:2020:production:netherlight.geant-1"
+  port1_1vlan_range: 3985-3989
   port1_2capacity: 100
-  port1_2vlan_range: 924-929,3985-3989
+  port1_2vlan_range: 3985-3989
   ports: 
     - "1_1"
     - "1_2"
   privatedir: /opt/config/T3_DE_KIT/
   switch: s0
-  year: 2013
+  year: 2020
 prefixes: 
   mrs: "http://schemas.ogf.org/mrs/2013/12/topology#"
   nml: "http://schemas.ogf.org/nml/2013/03/base#"
