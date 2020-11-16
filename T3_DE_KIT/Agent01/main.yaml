@@ -16,7 +16,7 @@ agent:
   INTERFACES: enP2p1s0f0
   NORULES: false
   hostname: a01-013-202
-p1p1: 
+enP2p1s0f0: 
   port: 1/2
   shared: false
   switch: s0
