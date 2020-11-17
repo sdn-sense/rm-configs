@@ -13,10 +13,10 @@ general:
   siteName: T3_DE_KIT
   webdomain: "https://192.108.46.157:8443" 
 agent: 
-  INTERFACES: enP2p1s0f0
+  INTERFACES: enP48p1s0f0
   NORULES: false
   hostname: a01-013-202
-enP2p1s0f0: 
+enP48p1s0f0: 
   port: 1/2
   shared: false
   switch: s0
