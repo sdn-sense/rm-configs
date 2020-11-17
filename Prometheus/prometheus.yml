@@ -60,7 +60,7 @@ scrape_configs:
       insecure_skip_verify: true
   - job_name: T3_US_Starlight_1_DTNs
     static_configs:
-      - targets: ['165.124.33.142:9200']
+      - targets: ['165.124.33.142:9100']
   - job_name: T3_US_Starlight_1
     scrape_interval: 30s
     static_configs:
