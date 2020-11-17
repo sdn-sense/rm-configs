@@ -58,6 +58,19 @@ scrape_configs:
       cert_file: /etc/letsencrypt/live/influx.sdn-sense.dev/cert.pem
       key_file: /etc/letsencrypt/live/influx.sdn-sense.dev/privkey.pem
       insecure_skip_verify: true
+  - job_name: T3_US_Starlight_1_DTNs
+    static_configs:
+      - targets: ['165.124.33.142:9200']
+  - job_name: T3_US_Starlight_1
+    scrape_interval: 30s
+    static_configs:
+      - targets: ['165.124.33.142:443']
+    scheme: https
+    metrics_path: /T3_US_Starlight_1/sitefe/json/frontend/metrics
+    tls_config:
+      cert_file: /etc/letsencrypt/live/influx.sdn-sense.dev/cert.pem
+      key_file: /etc/letsencrypt/live/influx.sdn-sense.dev/privkey.pem
+      insecure_skip_verify: true
   - job_name: T2_CH_CERN
     scrape_interval: 30s
     static_configs:
