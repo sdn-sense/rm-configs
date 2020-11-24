@@ -47,11 +47,11 @@ scrape_configs:
       key_file: /etc/letsencrypt/live/influx.sdn-sense.dev/privkey.pem
   - job_name: T3_US_Starlight_DTNs
     static_configs:
-      - targets: ['165.124.33.182:9200']
+      - targets: ['165.124.33.233:9200']
   - job_name: T3_US_Starlight
     scrape_interval: 30s
     static_configs:
-      - targets: ['165.124.33.182:8443']
+      - targets: ['165.124.33.233:8443']
     scheme: https
     metrics_path: /T3_US_Starlight/sitefe/json/frontend/metrics
     tls_config:
