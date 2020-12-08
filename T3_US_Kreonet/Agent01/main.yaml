@@ -3,7 +3,7 @@ general:
   debug: false
   ip: "134.75.254.11"
   logDir: /var/log/dtnrm-agent/
-  logLevel: DEBUG
+  logLevel: INFO
   logbackupCount: 5
   logmaxbytes: 2000000
   private_dir: /opt/config/

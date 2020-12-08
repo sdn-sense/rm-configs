@@ -1,7 +1,7 @@
 --- 
 general:
   logDir: /var/log/dtnrm-site-fe/
-  logLevel: DEBUG
+  logLevel: INFO
   logmaxbytes: 2000000
   logbackupCount: 5
   privatedir: /opt/config/
@@ -9,16 +9,16 @@ general:
     - "T1_US_FNAL"
   webdomain: "https://127.0.0.1:443"
 ContinuousLoop: 
-  logLevel: DEBUG
+  logLevel: INFO
   repeat: 5
 LookUpService: 
-  logLevel: DEBUG
+  logLevel: INFO
   repeat: 5
 PolicyService: 
-  logLevel: DEBUG
+  logLevel: INFO
   repeat: 5
 ProvisioningService: 
-  logLevel: DEBUG
+  logLevel: INFO
   repeat: 5
 T1_US_FNAL:
   database: /opt/config/T1_US_FNAL/sqlite.db

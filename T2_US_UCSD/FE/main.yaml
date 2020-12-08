@@ -1,7 +1,7 @@
 --- 
 general:
   logDir: /var/log/dtnrm-site-fe/
-  logLevel: DEBUG
+  logLevel: INFO
   logmaxbytes: 2000000000
   logbackupCount: 5
   privatedir: /opt/config/
@@ -9,16 +9,16 @@ general:
     - "T2_US_UCSD"
   webdomain: "https://127.0.0.1:443"
 ContinuousLoop: 
-  logLevel: DEBUG
+  logLevel: INFO
   repeat: 5
 LookUpService: 
-  logLevel: DEBUG
+  logLevel: INFO
   repeat: 5
 PolicyService: 
-  logLevel: DEBUG
+  logLevel: INFO
   repeat: 5
 ProvisioningService: 
-  logLevel: DEBUG
+  logLevel: INFO
   repeat: 5
 T2_US_UCSD:
   database: /opt/config/T2_US_UCSD/sqlite.db
