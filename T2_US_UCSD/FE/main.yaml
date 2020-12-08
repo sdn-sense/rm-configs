@@ -32,9 +32,17 @@ T2_US_UCSD:
   port1_1vlan_range: 3985-3989
   port1_2capacity: 100
   port1_2vlan_range: 3985-3989
+  port2_1capacity: 100
+  port2_1desttype: switch
+  port2_1isAlias: "urn:ogf:network:calit2.optiputer.net:2020:prism-core:k8s-gen4-02"
+  port2_1vlan_range: 3985-3989
+  port2_2capacity: 100
+  port2_2vlan_range: 3985-3989
   ports: 
     - "1_1"
     - "1_2"
+    - "2_1"
+    - "2_2"
   privatedir: /opt/config/T2_US_UCSD/
   switch: s0
   year: 2020
