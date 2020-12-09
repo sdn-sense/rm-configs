@@ -22,7 +22,7 @@ ProvisioningService:
   repeat: 5
 T3_US_FIU: 
   database: /opt/config/T3_US_FIU/sqlite.db
-  domain: ox.amlight.net
+  domain: fiu.amlight.net
   latitude: 25.7574
   longitude: -80.3733
   plugin: raw
