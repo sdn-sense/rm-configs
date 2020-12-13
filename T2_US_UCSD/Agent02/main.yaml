@@ -19,7 +19,7 @@ agent:
 enp161s0f0:
   port: 1/2
   shared: false
-  switch: s0
+  switch: s1
   vlan_max: 100000000000
   vlan_min: 1000000000
   vlans: 3985-3989
