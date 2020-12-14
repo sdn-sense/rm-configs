@@ -1,6 +1,6 @@
 ---
 siterm:
-  full_dn: "TBD"
+  full_dn: "/C=US/ST=Florida/L=Miami/O=FIU/OU=AmLight/CN=ox.amlight.net/emailAddress=ops@amlight.net/C=US/ST=Florida/L=Miami/O=FIU/CN=ox.amlight.net"
   permissions: w
 sense-o-ca:
   full_dn: "/O=University of Maryland/OU=Mid-Atlantic Crossroads/OU=research.maxgigapop.net/CN=Simple CA/O=University of Maryland/OU=Mid-Atlantic Crossroads/OU=research.maxgigapop.net/CN=Simple CA"
