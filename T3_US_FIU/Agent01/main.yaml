@@ -13,10 +13,10 @@ general:
   siteName: T3_US_FIU
   webdomain: "https://67.17.206.195:8443" 
 agent: 
-  INTERFACES: ens6f
+  INTERFACES: ens6f0
   NORULES: false
   hostname: ox.amlight.net
-ens6f: 
+ens6f0: 
   port: 1/2
   shared: false
   switch: s0
