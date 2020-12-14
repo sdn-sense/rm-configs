@@ -22,19 +22,20 @@ ProvisioningService:
   repeat: 5
 T3_BR_RNP: 
   database: /opt/config/T3_BR_RNP/sqlite.db
-  domain: cipo.rnp.br
-  latitude: -22.9573473
-  longitude: -43.1787586
+  domain: sense.rnp.br
+  latitude: -22.9542068
+  longitude: -43.1766169
   plugin: raw
   port1_1capacity: 10
   port1_1desttype: switch
-  port1_1isAlias: "urn:ogf:network:tb.es.net:2013::star-tb1:3_2_1:+" # what should go put here?
+  port1_1isAlias: "urn:ogf:network:cipo.rnp.br:2013::MXRJ:ae0:+" # what should go put here?
   port1_1vlan_range: 1700-1705
   ports: 
-    - "ae0"
+    - "1_1"
+    - "1_2"
   privatedir: /opt/config/T3_BR_RNP/
-  switch: MXRJ
-  year: 2013
+  switch: s0
+  year: 2020
 prefixes: 
   mrs: "http://schemas.ogf.org/mrs/2013/12/topology#"
   nml: "http://schemas.ogf.org/nml/2013/03/base#"
