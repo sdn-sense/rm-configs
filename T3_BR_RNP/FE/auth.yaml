@@ -1,0 +1,13 @@
+---
+siterm:
+  full_dn: "/C=BR/ST=Rio de Janeiro/L=Rio de Janeiro/O=RNP/OU=IDS/CN=200.159.252.130/emailAddress=marcos.schwarz@rnp.br/C=BR/ST=Rio de Janeiro/L=Rio de Janeiro/O=RNP/CN=200.159.252.130"
+  permissions: w
+sense-o-ca:
+  full_dn: "/O=University of Maryland/OU=Mid-Atlantic Crossroads/OU=research.maxgigapop.net/CN=Simple CA/O=University of Maryland/OU=Mid-Atlantic Crossroads/OU=research.maxgigapop.net/CN=Simple CA"
+  permissions: w
+sense-o:
+  full_dn: "/O=University of Maryland/OU=Mid-Atlantic Crossroads/OU=research.maxgigapop.net/CN=Simple CA/C=US/ST=Maryland/O=University of Maryland/OU=RESEARCH.MAXGIGAPOP.NET/CN=Xi Yang"
+  permissions: w
+prometheus:
+  full_dn: "/C=US/O=Let's Encrypt/CN=Let's Encrypt Authority X3/CN=influx.sdn-sense.dev"
+  permissions: r

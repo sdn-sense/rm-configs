@@ -1,0 +1,28 @@
+---
+general:
+  debug: false
+  ip: "200.159.252.130"
+  logDir: /var/log/dtnrm-agent/
+  logLevel: DEBUG
+  logbackupCount: 5
+  logmaxbytes: 2000000
+  private_dir: /opt/config/
+  rotate: midnight
+  secure: true
+  sense_client: /opt/sense-client/
+  siteName: T3_BR_RNP
+  webdomain: "https://200.159.252.130:8443" 
+agent: 
+  INTERFACES: eno3
+  NORULES: false
+  PUBLIC_INTF: eno3
+  PUBLIC_INTF_MAX: 10000000000
+  hostname: 200.159.252.130
+eno3: 
+  port: 1/2
+  shared: false
+  switch: s0
+  vlan_max: 10000000000
+  vlan_min: 10000000
+  vlans: 1700-1705
+  ips: 172.31.10.0/24,172.31.11.0/24,172.31.12.0/24,172.31.13.0/24,172.31.14.0/24,172.31.15.0/24,10.251.85.0/24,10.251.86.0/24,10.251.87.0/24,10.251.88.0/24,10.251.89.0/24

@@ -1,0 +1,50 @@
+--- 
+general:
+  logDir: /var/log/dtnrm-site-fe/
+  logLevel: DEBUG
+  logmaxbytes: 2000000
+  logbackupCount: 5
+  privatedir: /opt/config/
+  sites: 
+    - "T3_BR_RNP"
+  webdomain: "https://127.0.0.1:443"
+ContinuousLoop: 
+  logLevel: DEBUG
+  repeat: 5
+LookUpService: 
+  logLevel: DEBUG
+  repeat: 5
+PolicyService: 
+  logLevel: DEBUG
+  repeat: 5
+ProvisioningService: 
+  logLevel: DEBUG
+  repeat: 5
+T3_BR_RNP: 
+  database: /opt/config/T3_BR_RNP/sqlite.db
+  domain: sense.rnp.br
+  latitude: -22.9542068
+  longitude: -43.1766169
+  plugin: raw
+  port1_1capacity: 10
+  port1_1desttype: switch
+  port1_1isAlias: "urn:ogf:network:cipo.rnp.br:2013::MXRJ:ae0:+" # what should go put here?
+  port1_1vlan_range: 1700-1705
+  ports: 
+    - "1_1"
+    - "1_2"
+  privatedir: /opt/config/T3_BR_RNP/
+  switch: s0
+  year: 2020
+prefixes: 
+  mrs: "http://schemas.ogf.org/mrs/2013/12/topology#"
+  nml: "http://schemas.ogf.org/nml/2013/03/base#"
+  owl: "http://www.w3.org/2002/07/owl#"
+  rdf: "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  rdfs: "http://www.w3.org/2000/01/rdf-schema#"
+  schema: "http://schemas.ogf.org/nml/2012/10/ethernet"
+  sd: "http://schemas.ogf.org/nsi/2013/12/services/definition#"
+  site: "urn:ogf:network"
+  xml: "http://www.w3.org/XML/1998/namespace#"
+  xsd: "http://www.w3.org/2001/XMLSchema#"
+
