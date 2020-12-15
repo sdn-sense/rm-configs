@@ -26,16 +26,21 @@ T3_BR_RNP:
   latitude: -22.9542068
   longitude: -43.1766169
   plugin: raw
+  switch:
+    - "s0"
+  privatedir: /opt/config/T3_BR_RNP/
+  year: 2020
+s0:
+  vsw: "s0"
+  ports:
+    - "1_1"
+    - "1_2"
   port1_1capacity: 10
   port1_1desttype: switch
   port1_1isAlias: "urn:ogf:network:cipo.rnp.br:2013::MXRJ:ae0:+" # what should go put here?
   port1_1vlan_range: 1700-1705
-  ports: 
-    - "1_1"
-    - "1_2"
-  privatedir: /opt/config/T3_BR_RNP/
-  switch: s0
-  year: 2020
+  port1_2capacity: 10
+  port1_2vlan_range: 1700-1705
 prefixes: 
   mrs: "http://schemas.ogf.org/mrs/2013/12/topology#"
   nml: "http://schemas.ogf.org/nml/2013/03/base#"

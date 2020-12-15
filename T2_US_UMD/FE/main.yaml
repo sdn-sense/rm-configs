@@ -9,23 +9,33 @@ general:
     - "T2_US_UMD"
   webdomain: "https://127.0.0.1:443"
 ContinuousLoop: 
-  logLevel: DEBUG
+  logLevel: INFO
   repeat: 5
 LookUpService: 
-  logLevel: DEBUG
+  logLevel: INFO
   repeat: 5
 PolicyService: 
-  logLevel: DEBUG
+  logLevel: INFO
   repeat: 5
 ProvisioningService: 
-  logLevel: DEBUG
+  logLevel: INFO
   repeat: 5
 T2_US_UMD:
   database: /opt/config/T2_US_UMD/sqlite.db
   domain: maxgigapop.net
-  latitude: 11.1
-  longitude: 12.1
+  latitude: 38.9869
+  longitude: 76.9426
   plugin: raw
+  switch:
+    - s0
+  privatedir: /opt/config/T2_US_UMD/
+  year: 2013
+s0:
+  vsw: "s0"
+  ports:
+    - "1_1"
+    - "1_2"
+    - "1_3"
   port1_1capacity: 40
   port1_1destport: 7_1_1
   port1_1desttype: switch
@@ -33,24 +43,9 @@ T2_US_UMD:
   port1_1isAlias: "urn:ogf:network:es.net:2013::wash-cr5:6_1_1:+"
   port1_1vlan_range: 3600-3619
   port1_2capacity: 40
-  port1_2destport: eth2
-  port1_2desttype: server
-  port1_2hostname: 180-132.research.maxgigapop.net
   port1_2vlan_range: 3600-3619
-  port1_2isAlias: "urn:ogf:network:maxgigapop.net:2013:s0:12:180-132.research.maxgigapop.net:eth2"
   port1_3capacity: 40
-  port1_3destport: eth1
-  port1_3desttype: server
-  port1_3hostname: 180-134.research.maxgigapop.net
   port1_3vlan_range: 3600-3619
-  port1_3isAlias: "urn:ogf:network:maxgigapop.net:2013:s0:13:180-134.research.maxgigapop.net:eth1"
-  ports: 
-    - "1_1"
-    - "1_2"
-    - "1_3"
-  privatedir: /opt/config/T2_US_UMD/
-  switch: s0
-  year: 2013
 prefixes: 
   mrs: "http://schemas.ogf.org/mrs/2013/12/topology#"
   nml: "http://schemas.ogf.org/nml/2013/03/base#"

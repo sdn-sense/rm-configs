@@ -26,6 +26,15 @@ T1_US_FNAL:
   latitude: 41.8407
   longitude: 8.2794
   plugin: raw
+  privatedir: /opt/config/T1_US_FNAL/
+  year: 2013
+  switch:
+    - "s0"
+s0:
+  vsw: s0
+  ports:
+    - "1_1"
+    - "1_2"
   port1_1capacity: 100
   port1_1destport: 3_2_1
   port1_1desttype: switch
@@ -33,17 +42,7 @@ T1_US_FNAL:
   port1_1isAlias: "urn:ogf:network:es.net:2013::chic-cr5:3_2_1:+"
   port1_1vlan_range: 3600-3619
   port1_2capacity: 100
-  port1_2destport: ens1
-  port1_2desttype: server
-  port1_2hostname: sense-dtn.fnal.gov
   port1_2vlan_range: 3600-3619
-  port1_2isAlias: "urn:ogf:network:fnal.gov:2013:s0:1_2:sense-dtn.fnal.gov:ens1"
-  ports: 
-    - "1_1"
-    - "1_2"
-  privatedir: /opt/config/T1_US_FNAL/
-  switch: s0
-  year: 2013
 prefixes: 
   mrs: "http://schemas.ogf.org/mrs/2013/12/topology#"
   nml: "http://schemas.ogf.org/nml/2013/03/base#"

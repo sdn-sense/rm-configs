@@ -26,6 +26,15 @@ T2_CH_CERN:
   latitude: 46.1403
   longitude: 6.0245
   plugin: raw
+  privatedir: /opt/config/T2_CH_CERN/
+  switch:
+    - "s0"
+  year: 2013
+s0:
+  vsw: "s0"
+  ports:
+    - "1_1"
+    - "1_2"
   port1_1capacity: 100
   port1_1destport: cern-1
   port1_1desttype: switch
@@ -33,16 +42,7 @@ T2_CH_CERN:
   port1_1isAlias: "urn:ogf:network:surf.nl:2020:production:netherlight.cern-1"
   port1_1vlan_range: 3986-3989
   port1_2capacity: 100
-  port1_2destport: enP48p1s0f1
-  port1_2desttype: server
-  port1_2hostname: cixp-surfnet-dtn.cern.ch
   port1_2vlan_range: 3986-3989
-  ports: 
-    - "1_1"
-    - "1_2"
-  privatedir: /opt/config/T2_CH_CERN/
-  switch: s0
-  year: 2013
 prefixes: 
   mrs: "http://schemas.ogf.org/mrs/2013/12/topology#"
   nml: "http://schemas.ogf.org/nml/2013/03/base#"
