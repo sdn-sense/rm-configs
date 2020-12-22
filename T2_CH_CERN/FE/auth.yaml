@@ -12,5 +12,5 @@ dtn:
   full_dn: "/C=CH/ST=Geneva/L=Meyrin/O=IT/OU=SURF/CN=cixp-surfnet-dtn.cern.ch/C=CH/ST=Geneva/L=Meyrin/O=IT/CN=cixp-surfnet-dtn.cern.ch"
   permissions: w
 prometheus:
-  full_dn: "/C=US/O=Let's Encrypt/CN=Let's Encrypt Authority X3/CN=influx.sdn-sense.dev"
+  full_dn: "/C=US/O=Let's Encrypt/CN=R3/CN=influx.sdn-sense.dev"
   permissions: r
