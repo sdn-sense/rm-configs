@@ -15,13 +15,13 @@ orchestrator:
   full_dn: "/O=University of Maryland/OU=Mid-Atlantic Crossroads/OU=research.maxgigapop.net/CN=Simple CA/C=US/ST=Maryland/O=University of Maryland/OU=RESEARCH.MAXGIGAPOP.NET/CN=Xi Yang"
   permissions: w
 u180-131:
-  full_dn: "/C=US/O=Let's Encrypt/CN=Let's Encrypt Authority X3/CN=180-131.research.maxgigapop.net"
+  full_dn: "/C=US/O=Let's Encrypt/CN=R3/CN=180-131.research.maxgigapop.net"
   permissions: w
 u180-132:
-  full_dn: "/C=US/O=Let's Encrypt/CN=Let's Encrypt Authority X3/CN=180-132.research.maxgigapop.net"
+  full_dn: "/C=US/O=Let's Encrypt/CN=R3/CN=180-132.research.maxgigapop.net"
   permissions: w
 u180-134:
-  full_dn: "/C=US/O=Let's Encrypt/CN=Let's Encrypt Authority X3/CN=180-134.research.maxgigapop.net"
+  full_dn: "/C=US/O=Let's Encrypt/CN=R3/CN=180-134.research.maxgigapop.net"
   permissions: w
 prodtransfeR:
   full_dn: "/C=US/O=Internet2/OU=InCommon/CN=InCommon IGTF Server CA/DC=org/DC=incommon/C=US/ST=California/L=Pasadena/O=California Institute of Technology/OU=High Energy Physics/CN=transfer.ultralight.org"
