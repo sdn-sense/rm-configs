@@ -19,7 +19,7 @@ agent:
   PUBLIC_INTF_MAX: 100000000000
   hostname: 180-132.research.maxgigapop.net
 eth2:
-  port: 1_2
+  port: 1/2
   shared: false
   switch: s0
   vlan_max: 100000000000
