@@ -101,9 +101,14 @@ scrape_configs:
       cert_file: /etc/letsencrypt/live/influx.sdn-sense.dev/cert.pem
       key_file: /etc/letsencrypt/live/influx.sdn-sense.dev/privkey.pem
       insecure_skip_verify: true
-  - job_name: SENSE_ORCHESTRATOR
+  - job_name: SENSE_O_Dev
     scrape_interval: 60s
     static_configs:
       - targets: ['dev1.virnao.com:9990']
+    metrics_path: /metrics/application
+  - job_name: SENSE_O_East
+    scrape_interval: 60s
+    static_configs:
+      - targets: ['sense-o-east.es.net:9990']
     metrics_path: /metrics/application
 
