@@ -1,0 +1,30 @@
+---
+general:
+  debug: false
+  ip: "198.32.43.7"
+  logDir: /var/log/dtnrm-agent/
+  logLevel: DEBUG
+  logbackupCount: 5
+  logmaxbytes: 2000000
+  private_dir: /opt/config/
+  rotate: midnight
+  secure: true
+  autoupdate: false
+  sense_client: /opt/sense-client/
+  siteName: T2_US_Caltech_Test1
+  webdomain: "https://sdn-sc-nodea.ultralight.org:8443" 
+agent: 
+  INTERFACES: enp4s0f0
+  NORULES: false
+  PUBLIC_INTF: enp4s0f0.43
+  PUBLIC_INTF_MAX: 100000000000
+  hostname: sdn-sc-nodea.ultralight.org
+enp4s0f0:
+  port: 1/2
+  switch: s0
+  shared: false
+  vlan_max: 100000000000
+  vlan_min: 1000000000
+  vlans: 1779-1799,3600-3619,3985-3989
+  ips: 172.16.3.0/30,172.17.3.0/30,172.18.3.0/30,172.19.3.0/30,172.31.10.0/24,172.31.11.0/24,172.31.12.0/24,172.31.13.0/24,172.31.14.0/24,172.31.15.0/24
+
