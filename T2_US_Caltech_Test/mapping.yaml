@@ -10,12 +10,12 @@
   maintainer: "Justas Balcas"
   status: development
   type: FE
-86581996b66c0d3829a9223332b7f0dc
+86581996b66c0d3829a9223332b7f0dc:
   config: Agent01/
   maintainer: "Justas Balcas"
   status: development
   type: Agent
-be9e1d4d13314de7e9fa276b95a33761
+be9e1d4d13314de7e9fa276b95a33761:
   config: Agent02/
   maintainer: "Justas Balcas"
   status: development
