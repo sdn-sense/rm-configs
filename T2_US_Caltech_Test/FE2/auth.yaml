@@ -1,0 +1,19 @@
+---
+jbalcas:
+  full_dn: "/DC=ch/DC=cern/CN=CERN Grid Certification Authority/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=jbalcas/CN=751133/CN=Justas Balcas"
+  permissions: w
+dtn17:
+  full_dn: "/C=US/O=Let's Encrypt/CN=R3/CN=sdn-sc-nodeb.ultralight.org"
+  permissions: w
+orchestrator:
+  full_dn: "/O=University of Maryland/OU=Mid-Atlantic Crossroads/OU=research.maxgigapop.net/CN=Simple CA/O=University of Maryland/OU=Mid-Atlantic Crossroads/OU=research.maxgigapop.net/CN=Simple CA"
+  permissions: w
+xiyang:
+  full_dn: "/O=University of Maryland/OU=Mid-Atlantic Crossroads/OU=research.maxgigapop.net/CN=Simple CA/C=US/ST=Maryland/O=University of Maryland/OU=RESEARCH.MAXGIGAPOP.NET/CN=Xi Yang"
+  permissions: w
+prodtransfeR:
+  full_dn: "/C=US/O=Internet2/OU=InCommon/CN=InCommon IGTF Server CA/DC=org/DC=incommon/C=US/ST=California/L=Pasadena/O=California Institute of Technology/OU=High Energy Physics/CN=transfer.ultralight.org"
+  permissions: w
+prometheus:
+  full_dn: "/C=US/O=Let's Encrypt/CN=R3/CN=influx.sdn-sense.dev"
+  permissions: r
