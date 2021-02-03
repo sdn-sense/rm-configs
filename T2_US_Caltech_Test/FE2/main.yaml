@@ -38,7 +38,7 @@ s0:
     - "1_2"
   port1_1capacity: 100
   port1_1desttype: switch
-  port1_1isAlias: "urn:ogf:network:test1.ultralight.org:2021:s0:1_1"
+  port1_1isAlias: "urn:ogf:network:test2.ultralight.org:2021:s0:1_1:s0"
   port1_1vlan_range: 1779-1799,3600-3619,3985-3989
   port1_2capacity: 100
   port1_2vlan_range: 1779-1799,3600-3619,3985-3989
