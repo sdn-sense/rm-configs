@@ -6,6 +6,7 @@ kubectl create secret generic sense-httpdcert --from-file=httpdcert=/etc/letsenc
 kubectl create secret generic sense-hostkey --from-file=hostkey=/etc/letsencrypt/live/180-131.research.maxgigapop.net/privkey.pem
 kubectl create secret generic sense-hostcert --from-file=hostcert=/etc/letsencrypt/live/180-131.research.maxgigapop.net/cert.pem
 kubectl create secret generic sense-httpdfullchain --from-file=httpdfullchain=/etc/letsencrypt/live/180-131.research.maxgigapop.net/fullchain.pem
+kubectl create secret generic sense-environment --from-file=environment=/etc/siterm-mariadb
 kubectl create configmap sense-siterm-fe-yaml --from-file=sense-siterm-fe=/etc/dtnrm.yaml
 
 # config for Agents
@@ -15,4 +16,4 @@ kubectl create configmap sense-siterm-agent01-yaml --from-file=sense-siterm-agen
 kubectl create configmap sense-siterm-agent02-yaml --from-file=sense-siterm-agent=/etc/dtnrm-agent02.yaml
 
 # deploy site-rm
-kubectl apply -f k8s-siterm-umd.yaml
+kubectl apply -f k8s-siterm.yaml
