@@ -9,6 +9,7 @@ kubectl create secret generic sense-httpdcert --from-file=httpdcert=/MASTER_NODE
 kubectl create secret generic sense-hostkey --from-file=hostkey=/MASTER_NODE_PATH/privkey.pem
 kubectl create secret generic sense-hostcert --from-file=hostcert=/MASTER_NODE_PATH/cert.pem
 kubectl create secret generic sense-httpdfullchain --from-file=httpdfullchain=/MASTER_NODE_PATH/fullchain.pem
+kubectl create secret generic sense-environment --from-file=environment=/MASTER_NODE_PATH/siterm-mariadb
 kubectl create configmap sense-siterm-fe-yaml --from-file=sense-siterm-fe=/etc/dtnrm.yaml
 
 # config for Agents

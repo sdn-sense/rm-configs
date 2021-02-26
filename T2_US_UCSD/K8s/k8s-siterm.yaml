@@ -51,6 +51,10 @@ spec:
         - mountPath: /etc/dtnrm.yaml
           name: sitermfe
           subPath: sense-siterm-fe.yaml
+        - mountPath: /etc/siterm-mariadb
+          name: environment
+          readOnly: true
+          subPath: environment.conf
         - mountPath: /etc/grid-security/hostcert.pem
           name: hostcert
           readOnly: true
@@ -104,6 +108,13 @@ spec:
           - key: httpdfullchain
             path: httpdfullchain.pem
           defaultMode: 0644
+      - name: environment
+        secret:
+          secretName: sense-environment
+          items:
+          - key: environment
+            path: environment.conf
+          defaultMode: 0600
       - name: hostcert
         secret:
           secretName: sense-hostcert
