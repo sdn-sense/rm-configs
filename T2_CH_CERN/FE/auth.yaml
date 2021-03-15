@@ -9,7 +9,7 @@ xiyang:
   full_dn: "/O=University of Maryland/OU=Mid-Atlantic Crossroads/OU=research.maxgigapop.net/CN=Simple CA/C=US/ST=Maryland/O=University of Maryland/OU=RESEARCH.MAXGIGAPOP.NET/CN=Xi Yang"
   permissions: w
 dtn:
-  full_dn: "/C=CH/ST=Geneva/L=Meyrin/O=IT/OU=SURF/CN=cixp-surfnet-dtn.cern.ch/C=CH/ST=Geneva/L=Meyrin/O=IT/CN=cixp-surfnet-dtn.cern.ch"
+  full_dn: "/C=CH/ST=Geneva/L=Meyrin/O=SURF/OU=CERN/CN=cixp-surfnet-dtn.cern.ch/C=CH/ST=Geneva/L=Meyrin/O=SURF/CN=cixp-surfnet-dtn.cern.ch"
   permissions: w
 prometheus:
   full_dn: "/C=US/O=Let's Encrypt/CN=R3/CN=influx.sdn-sense.dev"
