@@ -2,7 +2,7 @@
 general:
   logDir: /var/log/dtnrm-site-fe/
   logLevel: DEBUG
-  logmaxbytes: 2000000
+  logmaxbytes: 2000000000
   logbackupCount: 5
   privatedir: /opt/config/
   sites: 
@@ -21,12 +21,12 @@ ProvisioningService:
   logLevel: DEBUG
   repeat: 5
 T3_US_Starlight_1: 
-  database: /opt/config/T3_US_Starlight_1/sqlite.db
+  database: /opt/config/T3_US_Starlight/sqlite.db
   domain: dtn-1.starlight.org
   latitude: 34.1377
   longitude: 118.1253
   plugin: raw
-  privatedir: /opt/config/T3_US_Starlight_1/
+  privatedir: /opt/config/T3_US_Starlight/
   switch:
     - "s0"
   year: 2013
@@ -37,9 +37,9 @@ s0:
   port1_1capacity: 100
   port1_1desttype: switch
   port1_1isAlias: "urn:ogf:network:mren8700.icair.org:2013:topology:dtn110"
-  port1_1vlan_range: 1780,1795,3985-3989
+  port1_1vlan_range: 1779-1799,3985-3989
   port1_2capacity: 100
-  port1_2vlan_range: 1780,1795,3985-3989
+  port1_2vlan_range: 1779-1799,3985-3989
 prefixes: 
   mrs: "http://schemas.ogf.org/mrs/2013/12/topology#"
   nml: "http://schemas.ogf.org/nml/2013/03/base#"
