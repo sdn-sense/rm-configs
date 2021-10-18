@@ -6,7 +6,7 @@ general:
   logbackupCount: 5
   privatedir: /opt/config/
   sites: 
-    - "T3_US_Starlight_1"
+    - "T3_US_Starlight"
   webdomain: "https://127.0.0.1:443"
 ContinuousLoop: 
   logLevel: DEBUG
@@ -22,7 +22,7 @@ ProvisioningService:
   repeat: 5
 T3_US_Starlight_1: 
   database: /opt/config/T3_US_Starlight/sqlite.db
-  domain: dtn-1.starlight.org
+  domain: starlight.org
   latitude: 34.1377
   longitude: 118.1253
   plugin: raw
