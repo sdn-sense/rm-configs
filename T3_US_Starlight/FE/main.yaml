@@ -6,7 +6,7 @@ general:
   logbackupCount: 5
   privatedir: /opt/config/
   sites: 
-    - "T3_US_Starlight"
+    - "T3_US_Starlight_1"
   webdomain: "https://127.0.0.1:443"
 ContinuousLoop: 
   logLevel: DEBUG
@@ -20,27 +20,26 @@ PolicyService:
 ProvisioningService: 
   logLevel: DEBUG
   repeat: 5
-T3_US_Starlight: 
-  database: /opt/config/T3_US_Starlight/sqlite.db
-  domain: dtn-2.starlight.org
+T3_US_Starlight_1: 
+  database: /opt/config/T3_US_Starlight_1/sqlite.db
+  domain: dtn-1.starlight.org
   latitude: 34.1377
   longitude: 118.1253
   plugin: raw
-  privatedir: /opt/config/T3_US_Starlight/
-  year: 2013
+  privatedir: /opt/config/T3_US_Starlight_1/
   switch:
     - "s0"
+  year: 2013
 s0:
-  vsw: s0
   ports:
     - "1_1"
     - "1_2"
   port1_1capacity: 100
   port1_1desttype: switch
-  port1_1isAlias: "urn:ogf:network:tb.es.net:2013::star-tb1:3_2_1:+"
-  port1_1vlan_range: 924-929,3985-3989
+  port1_1isAlias: "urn:ogf:network:mren8700.icair.org:2013:topology:dtn110"
+  port1_1vlan_range: 1780,1795,3985-3989
   port1_2capacity: 100
-  port1_2vlan_range: 924-929,3985-3989
+  port1_2vlan_range: 1780,1795,3985-3989
 prefixes: 
   mrs: "http://schemas.ogf.org/mrs/2013/12/topology#"
   nml: "http://schemas.ogf.org/nml/2013/03/base#"
