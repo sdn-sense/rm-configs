@@ -12,10 +12,10 @@ spec:
   - name: "8443"
     port: 8443
     targetPort: 443
-#  externalIPs:
-#    - x.x.x.x
+  externalIPs:
+    - 74.114.96.110
   selector:
-    k8s-app: sitefe
+    io.kompose.service: sitefe
 status:
   loadBalancer: {}
 ---
