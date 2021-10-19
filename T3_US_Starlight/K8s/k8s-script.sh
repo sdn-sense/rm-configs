@@ -3,6 +3,8 @@
 ### Download /etc/dtnrm-agent01.yaml and /etc/dtnrm-agent01.yaml from https://github.com/sdn-sense/rm-configs/blob/master/T3_US_Starlight/K8s 
 ### Generate / obtain privkey and cert etc. secret files and place them on the master node under /MASTER_NODE_PATH/.
 
+export MASTER_NODE_PATH=/opt/siterm/installers/fe-docker//conf/etc/httpd/certs
+
 # config for FE
 kubectl create secret generic sense-httpdprivkey --from-file=httpdprivkey=/MASTER_NODE_PATH/privkey.pem
 kubectl create secret generic sense-httpdcert --from-file=httpdcert=/MASTER_NODE_PATH/cert.pem
