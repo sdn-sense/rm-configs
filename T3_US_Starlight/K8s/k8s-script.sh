@@ -5,19 +5,21 @@
 
 export MASTER_NODE_PATH=/opt/siterm/installers/fe-docker//conf/etc/httpd/certs
 
+alias kubesense=`kubectl -n sense`
+
 # config for FE
-kubectl create secret generic sense-httpdprivkey --from-file=httpdprivkey=$MASTER_NODE_PATH/privkey.pem
-kubectl create secret generic sense-httpdcert --from-file=httpdcert=$MASTER_NODE_PATH/cert.pem
-kubectl create secret generic sense-hostkey --from-file=hostkey=$MASTER_NODE_PATH/privkey.pem
-kubectl create secret generic sense-hostcert --from-file=hostcert=$MASTER_NODE_PATH/cert.pem
-kubectl create secret generic sense-httpdfullchain --from-file=httpdfullchain=$MASTER_NODE_PATH/fullchain.pem
-kubectl create secret generic sense-environment --from-file=environment=/etc/siterm-mariadb
-kubectl create configmap sense-siterm-fe-yaml --from-file=sense-siterm-fe=/etc/dtnrm.yaml
+kubesense create secret generic sense-httpdprivkey --from-file=httpdprivkey=$MASTER_NODE_PATH/privkey.pem
+kubesense create secret generic sense-httpdcert --from-file=httpdcert=$MASTER_NODE_PATH/cert.pem
+kubesense create secret generic sense-hostkey --from-file=hostkey=$MASTER_NODE_PATH/privkey.pem
+kubesense create secret generic sense-hostcert --from-file=hostcert=$MASTER_NODE_PATH/cert.pem
+kubesense create secret generic sense-httpdfullchain --from-file=httpdfullchain=$MASTER_NODE_PATH/fullchain.pem
+kubesense create secret generic sense-environment --from-file=environment=/etc/siterm-mariadb
+kubesense create configmap sense-siterm-fe-yaml --from-file=sense-siterm-fe=/etc/dtnrm.yaml
 
 # config for Agents
-kubectl create secret generic sense-agent-hostcert --from-file=agent-hostcert=$MASTER_NODE_PATH/cert.pem
-kubectl create secret generic sense-agent-hostkey --from-file=agent-hostkey=$MASTER_NODE_PATH/privkey.pem
-kubectl create configmap sense-siterm-agent01-yaml --from-file=sense-siterm-agent=/etc/dtnrm-agent01.yaml
+kubesense create secret generic sense-agent-hostcert --from-file=agent-hostcert=$MASTER_NODE_PATH/cert.pem
+kubesense create secret generic sense-agent-hostkey --from-file=agent-hostkey=$MASTER_NODE_PATH/privkey.pem
+kubesense create configmap sense-siterm-agent01-yaml --from-file=sense-siterm-agent=/etc/dtnrm-agent01.yaml
 
 # deploy site-rm
-kubectl apply -f k8s-siterm.yaml
+kubesense apply -f k8s-siterm.yaml
