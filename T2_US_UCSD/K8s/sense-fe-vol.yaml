@@ -4,7 +4,7 @@ metadata:
   name: sense-fe-vol
   namespace: opennsa
 spec:
-  storageClassName: rook-ceph-block
+  storageClassName: rook-cephfs
   accessModes:
   - ReadWriteOnce
   resources:
