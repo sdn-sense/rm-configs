@@ -22,6 +22,6 @@ kubesense create secret generic sense-agent-hostkey --from-file=agent-hostkey=$M
 kubesense create configmap sense-siterm-agent01-yaml --from-file=sense-siterm-agent=/etc/dtnrm-agent01.yaml
 
 # deploy site-rm
-kubesense apply -f sense-fe-vol.yaml
-kubesense apply -f sense-agent01-vol.yaml
+kubectl apply -f sense-fe-vol.yaml
+kubectl apply -f sense-agent01-vol.yaml
 kubesense apply -f k8s-siterm.yaml
