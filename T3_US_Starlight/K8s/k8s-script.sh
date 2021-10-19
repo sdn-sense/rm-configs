@@ -5,7 +5,7 @@
 
 export MASTER_NODE_PATH=/opt/siterm/installers/fe-docker//conf/etc/httpd/certs
 
-alias kubesense=`kubectl -n sense`
+alias kubesense='kubectl -n sense'
 
 # config for FE
 kubesense create secret generic sense-httpdprivkey --from-file=httpdprivkey=$MASTER_NODE_PATH/privkey.pem
