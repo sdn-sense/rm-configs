@@ -4,7 +4,7 @@ metadata:
   name: sense-agent01-vol
   namespace: opennsa
 spec:
-  storageClassName: rook-cephfs
+  storageClassName: rook-ceph-block
   accessModes:
   - ReadWriteOnce
   resources:
