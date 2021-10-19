@@ -7,11 +7,12 @@ metadata:
     k8s-app: sitefe
   name: sitefe
 spec:
-  type: LoadBalancer
+  type: NodePort
   ports:
-  - name: "8443"
-    port: 8443
+  - name: "https"
+    port: 443
     targetPort: 443
+    nodePort: 30443
   selector:
     io.kompose.service: sitefe
 status:
