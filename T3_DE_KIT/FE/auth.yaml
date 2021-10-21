@@ -1,6 +1,6 @@
 ---
 siterm:
-  full_dn: "/C=DE/ST=Baden-Wuerttemberg/L=Karlsruhe/O=KIT/OU=Research/CN=de-kit-login-dtn-sc20.gridka.de/C=DE/ST=Baden-Wuerttemberg/L=Karlsruhe/O=KIT/CN=de-kit-login-dtn-sc20.gridka.de"
+  full_dn: "C=DE/ST=Baden-Wuerttemberg/L=Karlsruhe/O=KIT/OU=Research/CN=autogole-sense-login.gridka.de/C=DE/ST=Baden-Wuerttemberg/L=Karlsruhe/O=KIT/CN=autogole-sense-login.gridka.de"
   permissions: w
 sense-o-ca:
   full_dn: "/O=University of Maryland/OU=Mid-Atlantic Crossroads/OU=research.maxgigapop.net/CN=Simple CA/O=University of Maryland/OU=Mid-Atlantic Crossroads/OU=research.maxgigapop.net/CN=Simple CA"
