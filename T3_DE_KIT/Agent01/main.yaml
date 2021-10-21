@@ -11,7 +11,7 @@ general:
   secure: true
   sense_client: /opt/sense-client/
   siteName: T3_DE_KIT
-  webdomain: "https://192.108.47.14:8443" 
+  webdomain: "https://autogole-sense-login.gridka.de:8443"
 agent: 
   INTERFACES: enP48p1s0f0
   NORULES: false
