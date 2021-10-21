@@ -15,7 +15,7 @@ general:
 agent: 
   INTERFACES: enP48p1s0f0
   NORULES: false
-  hostname: autogole-sense-login.gridka.de
+  hostname: autogole-sense-login
 enP48p1s0f0: 
   port: 1/2
   shared: false
