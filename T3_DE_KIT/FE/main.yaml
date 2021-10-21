@@ -22,7 +22,7 @@ ProvisioningService:
   repeat: 5
 T3_DE_KIT: 
   database: /opt/config/T3_DE_KIT/sqlite.db
-  domain: kit.gridka.de
+  domain: gridka.de
   latitude: 34.1377
   longitude: 118.1253
   plugin: raw
