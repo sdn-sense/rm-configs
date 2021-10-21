@@ -1,7 +1,7 @@
 ---
 general:
   debug: false
-  ip: "192.108.46.157"
+  ip: "192.108.47.14"
   logDir: /var/log/dtnrm-agent/
   logLevel: DEBUG
   logbackupCount: 5
@@ -11,11 +11,11 @@ general:
   secure: true
   sense_client: /opt/sense-client/
   siteName: T3_DE_KIT
-  webdomain: "https://192.108.46.157:8443" 
+  webdomain: "https://192.108.47.14:8443" 
 agent: 
   INTERFACES: enP48p1s0f0
   NORULES: false
-  hostname: a01-013-202
+  hostname: autogole-sense-login.gridka.de
 enP48p1s0f0: 
   port: 1/2
   shared: false
