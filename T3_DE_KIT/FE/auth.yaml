@@ -3,7 +3,7 @@ siterm:
   full_dn: "/C=DE/ST=Baden-Wuerttemberg/L=Karlsruhe/O=KIT/OU=Research/CN=autogole-sense-login.gridka.de/C=DE/ST=Baden-Wuerttemberg/L=Karlsruhe/O=KIT/CN=autogole-sense-login.gridka.de"
   permissions: w
 sense-o:
-  full_dn: "/C=US/ST=California/L=Berkeley/O=LBNL/OU=ESnet/CN=sense-o.es.net/C=US/ST=California/L=Berkeley/O=LBNL/OU=ESnet/CN=sense-o.es.net"
+  full_dn: "/C=US/ST=California/L=Berkeley/O=LBNL/OU=ESnet/CN=sense-o.es.net/C=US/ST=California/L=Berkeley/O=LBNL/CN=sense-o.es.net"
   permissions: w
 prometheus:
   full_dn: "/C=US/O=Let's Encrypt/CN=R3/CN=influx.sdn-sense.dev"
