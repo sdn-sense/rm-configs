@@ -20,7 +20,7 @@ PolicyService:
 ProvisioningService: 
   logLevel: DEBUG
   repeat: 5
-T3_US_Starlight_1: 
+T3_US_Starlight: 
   database: /opt/config/T3_US_Starlight/sqlite.db
   domain: starlight.org
   latitude: 34.1377
