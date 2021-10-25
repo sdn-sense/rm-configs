@@ -11,7 +11,7 @@ general:
   secure: true
   sense_client: /opt/sense-client/
   siteName: T3_US_Starlight
-  webdomain: "https://165.124.33.142:443" 
+  webdomain: "https://165.124.33.152:8443" 
 agent: 
   INTERFACES: p4p1
   NORULES: false
