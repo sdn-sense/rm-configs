@@ -2,14 +2,11 @@
 jbalcas:
   full_dn: "/DC=ch/DC=cern/CN=CERN Grid Certification Authority/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=jbalcas/CN=751133/CN=Justas Balcas"
   permissions: w
-orchestrator:
-  full_dn: "/O=University of Maryland/OU=Mid-Atlantic Crossroads/OU=research.maxgigapop.net/CN=Simple CA/O=University of Maryland/OU=Mid-Atlantic Crossroads/OU=research.maxgigapop.net/CN=Simple CA"
-  permissions: w
-xiyang:
-  full_dn: "/O=University of Maryland/OU=Mid-Atlantic Crossroads/OU=research.maxgigapop.net/CN=Simple CA/C=US/ST=Maryland/O=University of Maryland/OU=RESEARCH.MAXGIGAPOP.NET/CN=Xi Yang"
+sense-o:
+  full_dn: "/C=US/ST=California/L=Berkeley/O=LBNL/OU=ESnet/CN=sense-o.es.net/C=US/ST=California/L=Berkeley/O=LBNL/CN=sense-o.es.net"
   permissions: w
 starlight:
-  full_dn: "/C=US/ST=Illinois/L=Evanston/O=Starlight/CN=dtn110.sl.startap.net/C=US/ST=Illinois/L=Evanston/O=Starlight/CN=dtn110.sl.startap.net"
+  full_dn: "/C=US/ST=Illinois/L=Evanston/O=Starlight/OU=Research/CN=sense-rm.starlight.northwestern.edu/C=US/ST=Illinois/L=Evanston/O=Starlight/CN=sense-rm.starlight.northwestern.edu"
   permissions: w
 prometheus:
   full_dn: "/C=US/O=Let's Encrypt/CN=R3/CN=influx.sdn-sense.dev"
