@@ -6,7 +6,7 @@ sense-o:
   full_dn: "/C=US/ST=California/L=Berkeley/O=LBNL/OU=ESnet/CN=sense-o.es.net/C=US/ST=California/L=Berkeley/O=LBNL/CN=sense-o.es.net"
   permissions: w
 starlight:
-  full_dn: "/C=US/ST=Illinois/L=Evanston/O=Starlight/OU=Research/CN=sense-rm.starlight.northwestern.edu/C=US/ST=Illinois/L=Evanston/O=Starlight/CN=sense-rm.starlight.northwestern.edu"
+  full_dn: "/C=US/ST=Illinois/L=Evanston/O=Starlight/OU=Research/CN=sense-rm.northwestern.edu/C=US/ST=Illinois/L=Evanston/O=Starlight/CN=sense-rm.starlight.northwestern.edu"
   permissions: w
 prometheus:
   full_dn: "/C=US/O=Let's Encrypt/CN=R3/CN=influx.sdn-sense.dev"
