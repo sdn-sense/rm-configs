@@ -31,13 +31,12 @@ T3_US_Starlight:
     - "s0"
   year: 2013
 s0:
+  vsw: "s0"
   ports:
     - "1_1"
     - "1_2"
   port1_1capacity: 100
-  port1_1destport: dtn110-1
   port1_1desttype: switch
-  port1_1hostname: dtn110
   port1_1isAlias: "urn:ogf:network:mren8700.icair.org:2013:topology:dtn110"
   port1_1vlan_range: 1779-1799,3985-3989
   port1_2capacity: 100
