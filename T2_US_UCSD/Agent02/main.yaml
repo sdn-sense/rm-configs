@@ -13,10 +13,10 @@ general:
   siteName: T2_US_UCSD
   webdomain: "https://sense-fe.calit2.optiputer.net:8443"
 agent: 
-  INTERFACES: enp33s0f1
+  INTERFACES: enp1s0f0
   NORULES: false
   hostname: k8s-gen4-02.calit2.optiputer.net
-enp33s0f1:
+enp1s0f0:
   port: 1/2
   shared: false
   switch: s1
