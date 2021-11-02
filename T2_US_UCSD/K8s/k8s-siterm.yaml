@@ -179,7 +179,7 @@ spec:
           readOnly: true
           subPath: hostkey.pem
       nodeSelector:
-          kubernetes.io/hostname: k8s-gen4-01.calit2.optiputer.net
+          kubernetes.io/hostname: k8s-igrok-01.calit2.optiputer.net
       restartPolicy: Always
       serviceAccountName: ""
       volumes:
