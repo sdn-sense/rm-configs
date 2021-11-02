@@ -208,3 +208,78 @@ spec:
         persistentVolumeClaim:
           claimName: sense-agent01-vol
 status: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+  labels:
+    k8s-app: siterm-agent02
+  name: siterm-agent02
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      k8s-app: siterm-agent02
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      annotations:
+      labels:
+        k8s-app: siterm-agent02
+    spec:
+      hostNetwork: true
+      containers:
+      - image: sdnsense/site-agent-sense:latest
+        imagePullPolicy: ""
+        name: siterm-agent02
+        resources: {}
+        securityContext:
+          capabilities:
+            add:
+            - NET_ADMIN
+        volumeMounts:
+        - mountPath: /opt/config
+          name: sense-agent02-vol
+        - mountPath: /etc/dtnrm.yaml
+          name: sitermagent
+          subPath: sense-siterm-agent.yaml
+        - mountPath: /etc/grid-security/hostcert.pem
+          name: agent-hostcert
+          readOnly: true
+          subPath: hostcert.pem
+        - mountPath: /etc/grid-security/hostkey.pem
+          name: agent-hostkey
+          readOnly: true
+          subPath: hostkey.pem
+      nodeSelector:
+          kubernetes.io/hostname: k8s-igrok-02.calit2.optiputer.net
+      restartPolicy: Always
+      serviceAccountName: ""
+      volumes:
+      - configMap:
+          defaultMode: 420
+          items:
+          - key: sense-siterm-agent
+            path: sense-siterm-agent.yaml
+          name: sense-siterm-agent02-yaml
+        name: sitermagent
+      - name: agent-hostcert
+        secret:
+          secretName: sense-agent-hostcert
+          items:
+          - key: agent-hostcert
+            path: hostcert.pem
+          defaultMode: 0644
+      - name: agent-hostkey
+        secret:
+          secretName: sense-agent-hostkey
+          items:
+          - key: agent-hostkey
+            path: hostkey.pem
+          defaultMode: 0644
+      - name: sense-agent02-vol
+        persistentVolumeClaim:
+          claimName: sense-agent02-vol
+status: {}
