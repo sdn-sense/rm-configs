@@ -15,7 +15,7 @@ general:
 agent: 
   INTERFACES: enp1s0f0
   NORULES: false
-  hostname: k8s-gen4-02.calit2.optiputer.net
+  hostname: k8s-igrok-02.calit2.optiputer.net
 enp1s0f0:
   port: 1/2
   shared: false
