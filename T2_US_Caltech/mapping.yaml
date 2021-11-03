@@ -11,8 +11,3 @@ f63e2fab85c1183e4f451b7150bf7bd4:
   maintainer: "Justas Balcas"
   status: production
   type: Agent
-56d05f2af2150a857c3b0154bfa1d014:
-  config: Agent02/
-  maintainer: "Justas Balcas"
-  status: production
-  type: Agent
