@@ -8,7 +8,7 @@ general:
   autoupdate: false
   sites: 
     - "T2_US_Caltech"
-  webdomain: "https://127.0.0.1:443"
+  webdomain: "https://sdn-dtn-1-7.ultralight.org:443"
 ContinuousLoop: 
   logLevel: DEBUG
   repeat: 5
