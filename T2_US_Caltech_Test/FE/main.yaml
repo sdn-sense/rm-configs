@@ -21,7 +21,7 @@ PolicyService:
 ProvisioningService: 
   logLevel: DEBUG
   repeat: 5
-T2_US_Caltech: 
+T2_US_Caltech_Test: 
   database: /opt/config/T2_US_Caltech_Test/sqlite.db
   domain: ultralight.org
   latitude: 34.1377
