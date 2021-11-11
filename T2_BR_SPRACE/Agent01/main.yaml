@@ -12,7 +12,7 @@ general:
   autoupdate: false
   sense_client: /opt/sense-client/
   siteName: T2_BR_SPRACE
-  webdomain: "https://sprace02.redclara.net:443" 
+  webdomain: "https://sprace02.redclara.net:8443" 
 agent: 
   INTERFACES: enp130s0
   NORULES: false
