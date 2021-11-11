@@ -1,0 +1,11 @@
+---
+4750967e9fa481d2a2a39f42f495042d:
+  config: FE/
+  maintainer: "Jadir Marra da Silva"
+  status: production
+  type: FE
+da8cbc980347bd9bd0f53e787e8f8783:
+  config: Agent01/
+  maintainer: "Jadir Marra da Silva"
+  status: production
+  type: Agent

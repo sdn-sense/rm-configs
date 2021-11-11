@@ -1,0 +1,13 @@
+---
+siterm:
+  full_dn: "/C=BR/O=ANSP/OU=ANSPGrid CA/OU=Services/CN=sprace02.redclara.net"
+  permissions: w
+sense-o-ca:
+  full_dn: "/O=University of Maryland/OU=Mid-Atlantic Crossroads/OU=research.maxgigapop.net/CN=Simple CA/O=University of Maryland/OU=Mid-Atlantic Crossroads/OU=research.maxgigapop.net/CN=Simple CA"
+  permissions: w
+sense-o:
+  full_dn: "/O=University of Maryland/OU=Mid-Atlantic Crossroads/OU=research.maxgigapop.net/CN=Simple CA/C=US/ST=Maryland/O=University of Maryland/OU=RESEARCH.MAXGIGAPOP.NET/CN=Xi Yang"
+  permissions: w
+prometheus:
+  full_dn: "/C=US/O=Let's Encrypt/CN=R3/CN=influx.sdn-sense.dev"
+  permissions: r
