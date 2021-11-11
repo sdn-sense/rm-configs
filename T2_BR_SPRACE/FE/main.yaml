@@ -35,6 +35,7 @@ s0:
   ports:
     - "1_1"
     - "1_2"
+    - "1_3"
   port1_1capacity: 100
   port1_1desttype: switch
   port1_1isAlias: "urn:ogf:network:ampath.net:2013:topology:unesp-100g"
