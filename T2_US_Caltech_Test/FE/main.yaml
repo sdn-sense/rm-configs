@@ -26,7 +26,7 @@ T2_US_Caltech_Test:
   domain: ultralight.org
   latitude: 34.1377
   longitude: 118.1253
-  plugin: raw
+  plugin: force10
   privatedir: /opt/config/T2_US_Caltech_Test/
   year: 2013
   switch:
@@ -34,17 +34,20 @@ T2_US_Caltech_Test:
 s0:
   vsw: "s0"
   ports:
-    - "1_1"
-    - "1_2"
-    - "1_3"
-  port1_1capacity: 100
-  port1_1desttype: switch
-  port1_1isAlias: "urn:ogf:network:lsanca.pacificwave.net:2016:lax-agg10:ultralight"
-  port1_1vlan_range: 1779-1799,3600-3619,3985-3989
-  port1_2capacity: 100
-  port1_2vlan_range: 1779-1799,3600-3619,3985-3989
-  port1_3capacity: 10
-  port1_3vlan_range: 1779-1799,3600-3619,3985-3989
+    - "hundredGigE 1/7"
+    - "hundredGigE 1/8"
+    - "hundredGigE 1/5"
+  ports_ignore:
+    - "ManagementEthernet 1/1"
+  vlan_range: 1779-1799,3600-3619,3985-3989
+  allports: True
+  port_hundredGigE_1-7_capacity: 100
+  port_hundredGigE_1-7_desttype: switch
+  port_hundredGigE_1-7_isAlias: "urn:ogf:network:lsanca.pacificwave.net:2016:lax-agg10:ultralight"
+  port_hundredGigE_1-7_vlan_range: 1779-1799,3600-3619,3985-3989
+  port_hundredGigE_1-8_capacity: 100
+  port_hundredGigE_1-8_vlan_range: 3600-3619
+  port_hundredGigE_1-5_vlan_range: 1779-1799
 prefixes: 
   mrs: "http://schemas.ogf.org/mrs/2013/12/topology#"
   nml: "http://schemas.ogf.org/nml/2013/03/base#"

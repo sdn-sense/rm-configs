@@ -20,7 +20,7 @@ agent:
   PUBLIC_INTF_MAX: 100000000000
   hostname: sdn-login-1.ultralight.org
 enp5s0f1:
-  port: 1/2
+  port: hundredGigE 1/5
   switch: s0
   shared: false
   vlan_max: 100000000000
