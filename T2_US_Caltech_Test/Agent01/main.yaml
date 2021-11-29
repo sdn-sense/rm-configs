@@ -21,7 +21,7 @@ agent:
   hostname: sdn-login-1.ultralight.org
 enp5s0f1:
   port: hundredGigE 1/5
-  switch: s0
+  switch: dellos9_s0
   shared: false
   vlan_max: 100000000000
   vlan_min: 1000000000
