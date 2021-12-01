@@ -11,7 +11,7 @@ general:
   secure: true
   sense_client: /opt/sense-client/
   siteName: T2_US_UMD
-  webdomain: "https://206.196.180.131:8443"
+  webdomain: "https://180-131.research.maxgigapop.net:8443"
 agent: 
   INTERFACES: eth2
   NORULES: false
