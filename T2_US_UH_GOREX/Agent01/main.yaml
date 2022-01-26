@@ -1,0 +1,26 @@
+---
+general:
+  debug: false
+  ip: "128.171.123.10"
+  logDir: /var/log/dtnrm-agent/
+  logLevel: INFO
+  logbackupCount: 5
+  logmaxbytes: 2000000000
+  private_dir: /opt/config/
+  rotate: midnight
+  secure: true
+  sense_client: /opt/sense-client/
+  siteName: T2_US_UH_GOREX
+  webdomain: "https://sense-fe.hawaii.edu:8443"
+agent: 
+  INTERFACES: ens6f0
+  NORULES: false
+  hostname: fiona.its.hawaii.edu
+ens6f0:
+  port: 1/2
+  shared: false
+  switch: s0
+  vlan_max: 40000000000
+  vlan_min: 1000000000
+  vlans: 3605-3609
+  ips: 10.30.0.0/24,10.30.1.0/24,10.251.85.0/24,10.251.86.0/24,10.251.87.0/24,10.251.88.0/24,10.251.89.0/24,172.31.10.0/24,172.31.11.0/24,172.31.12.0/24,172.31.13.0/24,172.31.14.0/24,172.31.15.0/24

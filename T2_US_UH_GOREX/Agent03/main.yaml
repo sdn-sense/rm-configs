@@ -1,7 +1,7 @@
 ---
 general:
   debug: false
-  ip: "128.171.110.10"
+  ip: "168.123.136.165"
   logDir: /var/log/dtnrm-agent/
   logLevel: INFO
   logbackupCount: 5
@@ -10,13 +10,13 @@ general:
   rotate: midnight
   secure: true
   sense_client: /opt/sense-client/
-  siteName: T2_US_HAWAII
+  siteName: T2_US_UH_GOREX
   webdomain: "https://sense-fe.hawaii.edu:8443"
 agent: 
-  INTERFACES: enp33s0f1
+  INTERFACES: enp193s0f0
   NORULES: false
-  hostname: dtn-hurp.ifa.hawaii.edu
-enp33s0f1:
+  hostname: k8s-dtn-01.uog.edu
+enp193s0f0:
   port: 1/2
   shared: false
   switch: s1
