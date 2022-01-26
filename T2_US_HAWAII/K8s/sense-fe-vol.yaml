@@ -2,7 +2,7 @@ apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
   name: sense-fe-vol
-  namespace: opennsa
+  namespace: hawaii-opennsa
 spec:
   storageClassName: rook-ceph-block
   accessModes:
