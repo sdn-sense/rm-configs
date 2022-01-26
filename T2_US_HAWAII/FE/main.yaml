@@ -1,0 +1,67 @@
+--- 
+general:
+  logDir: /var/log/dtnrm-site-fe/
+  logLevel: INFO
+  logmaxbytes: 2000000000
+  logbackupCount: 5
+  privatedir: /opt/config/
+  sites: 
+    - "T2_US_UCSD"
+  webdomain: "https://127.0.0.1:443"
+ContinuousLoop: 
+  logLevel: INFO
+  repeat: 5
+LookUpService: 
+  logLevel: INFO
+  repeat: 5
+PolicyService: 
+  logLevel: INFO
+  repeat: 5
+ProvisioningService: 
+  logLevel: INFO
+  repeat: 5
+T2_US_UCSD:
+  database: /opt/config/T2_US_UCSD/sqlite.db
+  domain: calit2.optiputer.net
+  latitude: 32.882648
+  longitude: -117.234579
+  plugin: raw
+  privatedir: /opt/config/T2_US_UCSD/
+  year: 2020
+  switch:
+    - "s0"
+    - "s1"
+s0:
+  vsw: "s0"
+  ports:
+    - "1_1"
+    - "1_2"
+  port1_1capacity: 100
+  port1_1desttype: switch
+  port1_1isAlias: "urn:ogf:network:calit2.optiputer.net:2020:prism-core:k8s-igrok-01"
+  port1_1vlan_range: 1779-1799,3602-3619,3985-3989
+  port1_2capacity: 100
+  port1_2vlan_range: 1779-1799,3602-3619,3985-3989
+s1:
+  vsw: "s1"
+  ports:
+    - "1_1"
+    - "1_2"
+  port1_1capacity: 100
+  port1_1desttype: switch
+  port1_1isAlias: "urn:ogf:network:calit2.optiputer.net:2020:prism-core:k8s-igrok-02"
+  port1_1vlan_range: 1779-1799,3602-3619,3985-3989
+  port1_2capacity: 100
+  port1_2vlan_range: 1779-1799,3602-3619,3985-3989
+prefixes: 
+  mrs: "http://schemas.ogf.org/mrs/2013/12/topology#"
+  nml: "http://schemas.ogf.org/nml/2013/03/base#"
+  owl: "http://www.w3.org/2002/07/owl#"
+  rdf: "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  rdfs: "http://www.w3.org/2000/01/rdf-schema#"
+  schema: "http://schemas.ogf.org/nml/2012/10/ethernet"
+  sd: "http://schemas.ogf.org/nsi/2013/12/services/definition#"
+  site: "urn:ogf:network"
+  xml: "http://www.w3.org/XML/1998/namespace#"
+  xsd: "http://www.w3.org/2001/XMLSchema#"
+
