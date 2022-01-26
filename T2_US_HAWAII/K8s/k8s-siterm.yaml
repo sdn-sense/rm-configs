@@ -76,7 +76,7 @@ spec:
           readOnly: true
           subPath: httpdfullchain.pem
       nodeSelector:
-          kubernetes.io/hostname: edex.calit2.optiputer.net
+          kubernetes.io/hostname: fiona.its.hawaii.edu
       restartPolicy: Always
       serviceAccountName: ""
       volumes:
@@ -179,7 +179,7 @@ spec:
           readOnly: true
           subPath: hostkey.pem
       nodeSelector:
-          kubernetes.io/hostname: k8s-igrok-01.calit2.optiputer.net
+          kubernetes.io/hostname: fiona.its.hawaii.edu
       restartPolicy: Always
       serviceAccountName: ""
       volumes:
@@ -254,7 +254,7 @@ spec:
           readOnly: true
           subPath: hostkey.pem
       nodeSelector:
-          kubernetes.io/hostname: k8s-igrok-02.calit2.optiputer.net
+          kubernetes.io/hostname: fiona.its.hawaii.edu
       restartPolicy: Always
       serviceAccountName: ""
       volumes:
