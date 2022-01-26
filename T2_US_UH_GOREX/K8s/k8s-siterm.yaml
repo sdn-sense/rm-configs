@@ -321,7 +321,7 @@ spec:
             - NET_ADMIN
         volumeMounts:
         - mountPath: /opt/config
-          name: sense-agent01-vol
+          name: sense-agent03-vol
         - mountPath: /etc/dtnrm.yaml
           name: sitermagent
           subPath: sense-siterm-agent.yaml
@@ -359,7 +359,7 @@ spec:
           - key: agent-hostkey
             path: hostkey.pem
           defaultMode: 0644
-      - name: sense-agent01-vol
+      - name: sense-agent03-vol
         persistentVolumeClaim:
           claimName: sense-agent03-vol
 status: {}
