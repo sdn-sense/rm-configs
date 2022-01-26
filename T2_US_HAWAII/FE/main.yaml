@@ -6,7 +6,7 @@ general:
   logbackupCount: 5
   privatedir: /opt/config/
   sites: 
-    - "T2_US_UCSD"
+    - "T2_US_HAWAII"
   webdomain: "https://127.0.0.1:443"
 ContinuousLoop: 
   logLevel: INFO
@@ -20,14 +20,14 @@ PolicyService:
 ProvisioningService: 
   logLevel: INFO
   repeat: 5
-T2_US_UCSD:
-  database: /opt/config/T2_US_UCSD/sqlite.db
-  domain: calit2.optiputer.net
-  latitude: 32.882648
-  longitude: -117.234579
+T2_US_HAWAII:
+  database: /opt/config/T2_US_HAWAII/sqlite.db
+  domain: hawaii.edu
+  latitude: 21.2971
+  longitude: -157.8171
   plugin: raw
-  privatedir: /opt/config/T2_US_UCSD/
-  year: 2020
+  privatedir: /opt/config/T2_US_HAWAII/
+  year: 2022
   switch:
     - "s0"
     - "s1"
@@ -36,12 +36,12 @@ s0:
   ports:
     - "1_1"
     - "1_2"
-  port1_1capacity: 100
+  port1_1capacity: 40
   port1_1desttype: switch
-  port1_1isAlias: "urn:ogf:network:calit2.optiputer.net:2020:prism-core:k8s-igrok-01"
-  port1_1vlan_range: 1779-1799,3602-3619,3985-3989
-  port1_2capacity: 100
-  port1_2vlan_range: 1779-1799,3602-3619,3985-3989
+  port1_1isAlias: "urn:ogf:network:hawaii.edu:2022:hawaii-scidmz:fiona.its.hawaii.edu"
+  port1_1vlan_range: 3605-3609
+  port1_2capacity: 40
+  port1_2vlan_range: 3605-3609
 s1:
   vsw: "s1"
   ports:
@@ -49,10 +49,10 @@ s1:
     - "1_2"
   port1_1capacity: 100
   port1_1desttype: switch
-  port1_1isAlias: "urn:ogf:network:calit2.optiputer.net:2020:prism-core:k8s-igrok-02"
-  port1_1vlan_range: 1779-1799,3602-3619,3985-3989
+  port1_1isAlias: "urn:ogf:network:hawaii.edu:2022:hawaii-scidmz:dtn-hurp.ifa.hawaii.edu"
+  port1_1vlan_range: 3600-3604
   port1_2capacity: 100
-  port1_2vlan_range: 1779-1799,3602-3619,3985-3989
+  port1_2vlan_range: 3600-3604
 prefixes: 
   mrs: "http://schemas.ogf.org/mrs/2013/12/topology#"
   nml: "http://schemas.ogf.org/nml/2013/03/base#"
