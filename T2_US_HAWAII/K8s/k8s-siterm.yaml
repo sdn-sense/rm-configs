@@ -6,6 +6,7 @@ metadata:
   labels:
     k8s-app: sitefe
   name: sitefe
+  namespace: hawaii-opennsa
 spec:
   type: LoadBalancer
   ports:
@@ -26,6 +27,7 @@ metadata:
   labels:
     k8s-app: sitefe
   name: sitefe
+  namespace: hawaii-opennsa
 spec:
   replicas: 1
   selector:
@@ -141,6 +143,7 @@ metadata:
   labels:
     k8s-app: siterm-agent01
   name: siterm-agent01
+  namespace: hawaii-opennsa
 spec:
   replicas: 1
   selector:
@@ -216,6 +219,7 @@ metadata:
   labels:
     k8s-app: siterm-agent02
   name: siterm-agent02
+  namespace: hawaii-opennsa
 spec:
   replicas: 1
   selector:
