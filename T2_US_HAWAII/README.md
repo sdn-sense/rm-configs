@@ -21,3 +21,4 @@ ethernet pw-losa2-1 lsanca.pacificwave.net:2016#pw-losa2-1:guam-gorex(-in|-out) 
 ethernet uog-dtn - vlan:3600-3604 10000 xe-1/0/0 -
 
 </pre>
+<img src="UH_GOREX.png">
