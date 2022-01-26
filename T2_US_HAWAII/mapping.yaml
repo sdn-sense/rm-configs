@@ -14,3 +14,8 @@ fc1160fd224208219cbae01c8c8cc4cf:
   maintainer: "Chris Zane"
   status: production
   type: Agent
+fc1160fd224208219cbae01c8c8cc4cf:
+  config: Agent03/
+  maintainer: "Chris Zane"
+  status: production
+  type: Agent
