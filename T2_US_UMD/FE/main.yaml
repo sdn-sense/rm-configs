@@ -39,8 +39,8 @@ s0:
   port1_1capacity: 40
   port1_1destport: 7_1_1
   port1_1desttype: switch
-  port1_1hostname: wash-cr5
-  port1_1isAlias: "urn:ogf:network:es.net:2013::wash-cr5:6_1_1:+"
+  port1_1hostname: wash-cr6
+  port1_1isAlias: "urn:ogf:network:es.net:2013::wash-cr6:1_1_c6_1:+"
   port1_1vlan_range: 3600-3619
   port1_2capacity: 40
   port1_2vlan_range: 3600-3619
