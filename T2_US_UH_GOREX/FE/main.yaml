@@ -1,0 +1,79 @@
+--- 
+general:
+  logDir: /var/log/dtnrm-site-fe/
+  logLevel: INFO
+  logmaxbytes: 2000000000
+  logbackupCount: 5
+  privatedir: /opt/config/
+  sites: 
+    - "T2_US_UH_GOREX"
+  webdomain: "https://127.0.0.1:443"
+ContinuousLoop: 
+  logLevel: INFO
+  repeat: 5
+LookUpService: 
+  logLevel: INFO
+  repeat: 5
+PolicyService: 
+  logLevel: INFO
+  repeat: 5
+ProvisioningService: 
+  logLevel: INFO
+  repeat: 5
+T2_US_UH_GOREX:
+  database: /opt/config/T2_US_UH_GOREX/sqlite.db
+  domain: hawaii.edu
+  latitude: 21.2971
+  longitude: -157.8171
+  plugin: raw
+  privatedir: /opt/config/T2_US_UH_GOREX/
+  year: 2022
+  switch:
+    - "s0"
+    - "s1"
+    - "s2"
+s0:
+  vsw: "s0"
+  ports:
+    - "1_1"
+    - "1_2"
+  port1_1capacity: 100
+  port1_1desttype: switch
+  port1_1isAlias: "urn:ogf:network:hawaii.edu:2022:hawaii-scidmz:fiona.its.hawaii.edu"
+  port1_1vlan_range: 3605-3609
+  port1_2capacity: 100
+  port1_2vlan_range: 3605-3609
+s1:
+  vsw: "s1"
+  ports:
+    - "1_1"
+    - "1_2"
+  port1_1capacity: 100
+  port1_1desttype: switch
+  port1_1isAlias: "urn:ogf:network:hawaii.edu:2022:hawaii-scidmz:dtn-hurp.ifa.hawaii.edu"
+  port1_1vlan_range: 3600-3604
+  port1_2capacity: 100
+  port1_2vlan_range: 3600-3604
+s2:
+  vsw: "s2"
+  ports:
+    - "1_1"
+    - "1_2"
+  port1_1capacity: 10
+  port1_1desttype: switch
+  port1_1isAlias: "urn:ogf:network:hawaii.edu:2022:hawaii-scidmz:k8s-dtn-01.uog.edu"
+  port1_1vlan_range: 3600-3604
+  port1_2capacity: 10
+  port1_2vlan_range: 3600-3604
+prefixes: 
+  mrs: "http://schemas.ogf.org/mrs/2013/12/topology#"
+  nml: "http://schemas.ogf.org/nml/2013/03/base#"
+  owl: "http://www.w3.org/2002/07/owl#"
+  rdf: "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  rdfs: "http://www.w3.org/2000/01/rdf-schema#"
+  schema: "http://schemas.ogf.org/nml/2012/10/ethernet"
+  sd: "http://schemas.ogf.org/nsi/2013/12/services/definition#"
+  site: "urn:ogf:network"
+  xml: "http://www.w3.org/XML/1998/namespace#"
+  xsd: "http://www.w3.org/2001/XMLSchema#"
+
