@@ -4,7 +4,7 @@ metadata:
   name: sense-agent03-vol
   namespace: hawaii-opennsa
 spec:
-  storageClassName: rook-ceph-block
+  storageClassName: rook-ceph-block-pacific
   accessModes:
   - ReadWriteOnce
   resources:
