@@ -46,7 +46,13 @@ spec:
         name: sitefe
         ports:
         - containerPort: 443
-        resources: {}
+        resources:
+          limits:
+            memory: "3Gi"
+            cpu: "1"
+          requests:
+            memory: "3Gi"
+            cpu: "1"
         volumeMounts:
         - mountPath: /opt/config
           name: sense-fe-vol
