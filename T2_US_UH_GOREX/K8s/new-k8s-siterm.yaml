@@ -187,7 +187,13 @@ spec:
       - image: sdnsense/site-agent-sense:latest
         imagePullPolicy: ""
         name: siterm-agent01
-        resources: {}
+        resources:
+          limits:
+            memory: "3Gi"
+            cpu: "1"
+          requests:
+            memory: "3Gi"
+            cpu: "1"
         securityContext:
           capabilities:
             add:
@@ -263,7 +269,13 @@ spec:
       - image: sdnsense/site-agent-sense:latest
         imagePullPolicy: ""
         name: siterm-agent02
-        resources: {}
+        resources:
+          limits:
+            memory: "3Gi"
+            cpu: "1"
+          requests:
+            memory: "3Gi"
+            cpu: "1"
         securityContext:
           capabilities:
             add:
@@ -339,7 +351,13 @@ spec:
       - image: sdnsense/site-agent-sense:latest
         imagePullPolicy: ""
         name: siterm-agent03
-        resources: {}
+        resources:
+          limits:
+            memory: "3Gi"
+            cpu: "1"
+          requests:
+            memory: "3Gi"
+            cpu: "1"
         securityContext:
           capabilities:
             add:
