@@ -24,7 +24,7 @@ metadata:
   name: sitefe-ingress
 spec:
   rules:
-  - host: sense-fe-uh-gorex.nrp-nautilus.io
+  - host: sense-fe.uhnet.net
     http:
       paths:
       - backend:
@@ -36,7 +36,7 @@ spec:
         pathType: ImplementationSpecific
   tls:
   - hosts:
-    - sense-fe-uh-gorex.nrp-nautilus.io
+    - sense-fe.uhnet.net
 status: {}
 ---
 apiVersion: apps/v1
