@@ -19,7 +19,7 @@ kubectl create secret generic sense-agent-hostcert \
 
 kubectl create secret generic sense-agent-hostkey \
 --from-file=agent-hostkey-1=certs/fiona.its.hawaii.edu/hostkey.pem \
---from-file=agent-hostkey-2=certs/dtn-hurp.ifa.hawaii.edu/hostkey.pem
+--from-file=agent-hostkey-2=certs/dtn-hurp.ifa.hawaii.edu/hostkey.pem \
 --from-file=agent-hostkey-3=certs/k8s-dtn-01.uog.edu/hostkey.pem
 -n hawaii-opennsa
 
