@@ -23,7 +23,7 @@ ProvisioningService:
   repeat: 5
 T2_US_Caltech_Test: 
   database: /opt/config/T2_US_Caltech_Test1/sqlite.db
-  domain: ultralight.org
+  domain: ultralight1.org
   latitude: 34.1377
   longitude: 118.1253
   plugin: ansible
