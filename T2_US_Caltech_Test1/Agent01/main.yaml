@@ -19,7 +19,7 @@ agent:
   PUBLIC_INTF: ens2f0.43
   PUBLIC_INTF_MAX: 100000000000
   hostname: sdn-dtn-2-10.ultralight.org
-enp5s0f1:
+ens2f0:
   port: hundredGigE 1/14
   switch: dellos9_s0
   shared: false
