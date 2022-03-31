@@ -12,11 +12,11 @@ kubectl create configmap sense-siterm-fe-yaml --from-file=sense-siterm-fe=dtnrm.
 
 # config for Agents
 kubectl create secret generic sense-agent01-hostcert --from-file=agent-hostcert=certs/fiona.its.hawaii.edu/hostcert.pem -n hawaii-opennsa
-kubectl create secret generic sense-agent02-hostcert --from-file=agent-hostcert=certs/dtn-hurp.ifa.hawaii.edu/hostcert.pem -n hawaii-opennsa
+kubectl create secret generic sense-agent02-hostcert --from-file=agent-hostcert=certs/prp01.ifa.hawaii.edu/hostcert.pem -n hawaii-opennsa
 kubectl create secret generic sense-agent03-hostcert --from-file=agent-hostcert=certs/k8s-dtn-01.uog.edu/hostcert.pem -n hawaii-opennsa
 
 kubectl create secret generic sense-agent01-hostkey --from-file=agent-hostkey=certs/fiona.its.hawaii.edu/hostkey.pem -n hawaii-opennsa
-kubectl create secret generic sense-agent02-hostkey --from-file=agent-hostkey=certs/dtn-hurp.ifa.hawaii.edu/hostkey.pem -n hawaii-opennsa
+kubectl create secret generic sense-agent02-hostkey --from-file=agent-hostkey=certs/prp01.ifa.hawaii.edu/hostkey.pem -n hawaii-opennsa
 kubectl create secret generic sense-agent03-hostkey --from-file=agent-hostkey=certs/k8s-dtn-01.uog.edu/hostkey.pem -n hawaii-opennsa
 
 kubectl create configmap sense-siterm-agent01-yaml --from-file=sense-siterm-agent=dtnrm-agent01.yaml -n hawaii-opennsa
