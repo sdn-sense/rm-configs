@@ -201,14 +201,14 @@ spec:
         name: sitermagent
       - name: agent-hostcert
         secret:
-          secretName: sense-agent-hostcert
+          secretName: sense-agent01-hostcert
           items:
           - key: agent-hostcert
             path: hostcert.pem
           defaultMode: 0644
       - name: agent-hostkey
         secret:
-          secretName: sense-agent-hostkey
+          secretName: sense-agent01-hostkey
           items:
           - key: agent-hostkey
             path: hostkey.pem
@@ -277,14 +277,14 @@ spec:
         name: sitermagent
       - name: agent-hostcert
         secret:
-          secretName: sense-agent-hostcert
+          secretName: sense-agent02-hostcert
           items:
           - key: agent-hostcert
             path: hostcert.pem
           defaultMode: 0644
       - name: agent-hostkey
         secret:
-          secretName: sense-agent-hostkey
+          secretName: sense-agent02-hostkey
           items:
           - key: agent-hostkey
             path: hostkey.pem
@@ -353,14 +353,14 @@ spec:
         name: sitermagent
       - name: agent-hostcert
         secret:
-          secretName: sense-agent-hostcert
+          secretName: sense-agent03-hostcert
           items:
           - key: agent-hostcert
             path: hostcert.pem
           defaultMode: 0644
       - name: agent-hostkey
         secret:
-          secretName: sense-agent-hostkey
+          secretName: sense-agent03-hostkey
           items:
           - key: agent-hostkey
             path: hostkey.pem
