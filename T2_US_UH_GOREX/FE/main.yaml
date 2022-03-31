@@ -50,7 +50,7 @@ s1:
     - "1_2"
   port1_1capacity: 100
   port1_1desttype: switch
-  port1_1isAlias: "urn:ogf:network:hawaii.edu:2022:hawaii-scidmz:dtn-hurp.ifa.hawaii.edu"
+  port1_1isAlias: "urn:ogf:network:hawaii.edu:2022:hawaii-scidmz:prp01.ifa.hawaii.edu"
   port1_1vlan_range: 3600-3604
   port1_2capacity: 100
   port1_2vlan_range: 3600-3604
