@@ -276,7 +276,7 @@ spec:
           readOnly: true
           subPath: hostkey.pem
       nodeSelector:
-          kubernetes.io/hostname: dtn-hurp.ifa.hawaii.edu
+          kubernetes.io/hostname: prp01.ifa.hawaii.edu
       restartPolicy: Always
       serviceAccountName: ""
       volumes:
