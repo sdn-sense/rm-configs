@@ -11,13 +11,13 @@ kubectl create secret generic sense-environment --from-file=environment=siterm-m
 kubectl create configmap sense-siterm-fe-yaml --from-file=sense-siterm-fe=dtnrm.yaml -n hawaii-opennsa
 
 # config for Agents
-kubectl create secret generic sense-agent01-hostcert --from-file=agent-hostcert-1=certs/fiona.its.hawaii.edu/hostcert.pem -n hawaii-opennsa
-kubectl create secret generic sense-agent02-hostcert --from-file=agent-hostcert-2=certs/dtn-hurp.ifa.hawaii.edu/hostcert.pem -n hawaii-opennsa
-kubectl create secret generic sense-agent03-hostcert --from-file=agent-hostcert-3=certs/k8s-dtn-01.uog.edu/hostcert.pem -n hawaii-opennsa
+kubectl create secret generic sense-agent01-hostcert --from-file=agent-hostcert=certs/fiona.its.hawaii.edu/hostcert.pem -n hawaii-opennsa
+kubectl create secret generic sense-agent02-hostcert --from-file=agent-hostcert=certs/dtn-hurp.ifa.hawaii.edu/hostcert.pem -n hawaii-opennsa
+kubectl create secret generic sense-agent03-hostcert --from-file=agent-hostcert=certs/k8s-dtn-01.uog.edu/hostcert.pem -n hawaii-opennsa
 
-kubectl create secret generic sense-agent01-hostkey --from-file=agent-hostkey-1=certs/fiona.its.hawaii.edu/hostkey.pem -n hawaii-opennsa
-kubectl create secret generic sense-agent02-hostkey --from-file=agent-hostkey-2=certs/dtn-hurp.ifa.hawaii.edu/hostkey.pem -n hawaii-opennsa
-kubectl create secret generic sense-agent03-hostkey --from-file=agent-hostkey-3=certs/k8s-dtn-01.uog.edu/hostkey.pem -n hawaii-opennsa
+kubectl create secret generic sense-agent01-hostkey --from-file=agent-hostkey=certs/fiona.its.hawaii.edu/hostkey.pem -n hawaii-opennsa
+kubectl create secret generic sense-agent02-hostkey --from-file=agent-hostkey=certs/dtn-hurp.ifa.hawaii.edu/hostkey.pem -n hawaii-opennsa
+kubectl create secret generic sense-agent03-hostkey --from-file=agent-hostkey=certs/k8s-dtn-01.uog.edu/hostkey.pem -n hawaii-opennsa
 
 kubectl create configmap sense-siterm-agent01-yaml --from-file=sense-siterm-agent=dtnrm-agent01.yaml -n hawaii-opennsa
 kubectl create configmap sense-siterm-agent02-yaml --from-file=sense-siterm-agent=dtnrm-agent02.yaml -n hawaii-opennsa
