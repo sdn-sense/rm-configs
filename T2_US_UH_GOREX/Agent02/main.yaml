@@ -15,7 +15,7 @@ general:
 agent: 
   INTERFACES: enp33s0f1
   NORULES: false
-  hostname: dtn-hurp.ifa.hawaii.edu
+  hostname: prp01.ifa.hawaii.edu
 enp33s0f1:
   port: 1/2
   shared: false
