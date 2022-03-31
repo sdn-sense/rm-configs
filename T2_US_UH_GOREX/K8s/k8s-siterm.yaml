@@ -276,7 +276,7 @@ spec:
           readOnly: true
           subPath: hostkey.pem
       nodeSelector:
-          kubernetes.io/hostname: fiona.its.hawaii.edu
+          kubernetes.io/hostname: dtn-hurp.ifa.hawaii.edu
       restartPolicy: Always
       serviceAccountName: ""
       volumes:
@@ -358,7 +358,7 @@ spec:
           readOnly: true
           subPath: hostkey.pem
       nodeSelector:
-          kubernetes.io/hostname: fiona.its.hawaii.edu
+          kubernetes.io/hostname: k8s-dtn-01.uog.edu
       restartPolicy: Always
       serviceAccountName: ""
       volumes:
