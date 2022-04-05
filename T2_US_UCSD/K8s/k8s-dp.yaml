@@ -91,7 +91,7 @@ spec:
         secret:
           secretName: sense-tls
           items:
-          - key: tls.cert
+          - key: tls.crt
             path: httpdcert.pem
           defaultMode: 0644
       - name: httpdprivkey
@@ -119,7 +119,7 @@ spec:
         secret:
           secretName: sense-tls
           items:
-          - key: tls.cert
+          - key: tls.crt
             path: hostcert.pem
           defaultMode: 0644
       - name: hostkey
@@ -194,7 +194,7 @@ spec:
         secret:
           secretName: sense-tls
           items:
-          - key: tls.cert
+          - key: tls.crt
             path: hostcert.pem
           defaultMode: 0644
       - name: agent-hostkey
@@ -269,7 +269,7 @@ spec:
         secret:
           secretName: sense-tls
           items:
-          - key: tls.cert
+          - key: tls.crt
             path: hostcert.pem
           defaultMode: 0644
       - name: agent-hostkey
