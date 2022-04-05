@@ -3,6 +3,7 @@ kind: Certificate
 metadata:
   annotations:
   name: sense-cert
+  namespace: opennsa
 spec:
   commonName: sense-fe.nrp-nautilus.io
   dnsNames:
