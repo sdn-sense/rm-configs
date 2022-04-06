@@ -5,9 +5,9 @@ metadata:
   name: sense-cert
   namespace: opennsa
 spec:
-  commonName: sense-fe.calit2.optiputer.net
+  commonName: sense-fe.nrp-nautilus.io
   dnsNames:
-  - sense-fe.calit2.optiputer.net
+  - sense-fe.nrp-nautilus.io
   issuerRef:
     kind: Issuer
     name: letsencrypt
