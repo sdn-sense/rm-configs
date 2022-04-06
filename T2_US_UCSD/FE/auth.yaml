@@ -15,5 +15,5 @@ prometheus:
   full_dn: "/C=US/O=Let's Encrypt/CN=R3/CN=influx.sdn-sense.dev"
   permissions: r
 ucsd_nautilus:
-  full_dn: "/C=US/ST=California/L=La Jolla/O=UC San Diego/OU=Calit2/CN=sense-fe.calit2.optiputer.net/emailAddress=jjgraham@eng.ucsd.edu/C=US/ST=California/L=La Jolla/O=UC San Diego/CN=sense-fe.calit2.optiputer.net"
+  full_dn: "/C=US/ST=California/L=La Jolla/O=UC San Diego/OU=Nautilus/CN=sense-fe.nrp-nautilus.io/emailAddress=jjgraham@ucsd.edu/C=US/ST=California/L=La Jolla/O=UC San Diego/CN=sense-fe.nrp-nautilus.io"
   permissions: w
