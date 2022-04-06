@@ -11,7 +11,7 @@ general:
   secure: true
   sense_client: /opt/sense-client/
   siteName: T2_US_UCSD
-  webdomain: "https://sense-fe.calit2.optiputer.net:8443"
+  webdomain: "https://sense-fe.nrp-nautilus.io:8443"
 agent: 
   INTERFACES: enp33s0f1
   NORULES: false
