@@ -22,7 +22,7 @@ ProvisioningService:
   repeat: 5
 T2_US_UCSD:
   database: /opt/config/T2_US_UCSD/sqlite.db
-  domain: calit2.optiputer.net
+  domain: nrp-nautilus.io
   latitude: 32.882648
   longitude: -117.234579
   plugin: raw
