@@ -50,10 +50,10 @@ dellos9_s0:
   port_hundredGigE_1-7_desttype: switch
   port_hundredGigE_1-7_isAlias: "urn:ogf:network:lsanca.pacificwave.net:2016:lax-agg10:ultralight"
   port_hundredGigE_1-7_vlan_range: 1779-1799,3600-3619,3985-3989
-  port_hundredGigE_1-1_capacity: 100
-  port_hundredGigE_1-1_desttype: switch
-  port_hundredGigE_1-1_isAlias: "urn:ogf:network:ultralight1.org:2013:dellos9_s0:hundredGigE_1-6"
-  port_hundredGigE_1-1_vlan_range: 1779-1799,3600-3619,3985-3989
+  port_Port-channel_102_capacity: 100
+  port_Port-channel_102_desttype: switch
+  port_Port-channel_102_isAlias: "urn:ogf:network:ultralight1.org:2013:dellos9_s0:Port-channel_102"
+  port_Port-channel_102_vlan_range: 1779-1799,3600-3619,3985-3989
 aristaeos_s0:
   vsw: "aristaeos_s0"
   allports: True
