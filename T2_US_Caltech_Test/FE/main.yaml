@@ -26,7 +26,7 @@ T2_US_Caltech_Test:
   domain: ultralight.org
   latitude: 34.1377
   longitude: 118.1253
-  plugin: ansible
+  plugin: raw
   privatedir: /opt/config/T2_US_Caltech_Test/
   ipv4-subnet-pool: 198.32.43.1/32,198.32.43.2/32
   ipv6-subnet-pool: 2605:d9c0:2:fff1::/64,2605:d9c0:2:fff2::/64,2605:d9c0:2:fff3::/64
@@ -35,31 +35,25 @@ T2_US_Caltech_Test:
   year: 2013
   switch:
     - "dellos9_s0"
-    - "aristaeos_s0"
 dellos9_s0:
   vsw: "dellos9_s0"
   rst: "dellos9_s0"
   ports:
     - "hundredGigE 1/7"
     - "hundredGigE 1/23"
-  ports_ignore:
-    - "ManagementEthernet 1/1"
+    - "Port-channel 102"
   vlan_range: 1779-1799,3600-3619,3985-3989
   allports: True
   port_hundredGigE_1-7_capacity: 100
   port_hundredGigE_1-7_desttype: switch
   port_hundredGigE_1-7_isAlias: "urn:ogf:network:lsanca.pacificwave.net:2016:lax-agg10:ultralight"
   port_hundredGigE_1-7_vlan_range: 1779-1799,3600-3619,3985-3989
+  port_hundredGigE_1-23_capacity: 100
+  port_hundredGigE_1-23_vlan_range: 1779-1799,3600-3619,3985-3989
   port_Port-channel_102_capacity: 100
   port_Port-channel_102_desttype: switch
   port_Port-channel_102_isAlias: "urn:ogf:network:ultralight1.org:2013:dellos9_s0:Port-channel_102"
   port_Port-channel_102_vlan_range: 1779-1799,3600-3619,3985-3989
-aristaeos_s0:
-  vsw: "aristaeos_s0"
-  allports: True
-  vlan_range: 1779-1799,3600-3619,3985-3989
-  ports_ignore:
-    - "Management1"
 prefixes: 
   mrs: "http://schemas.ogf.org/mrs/2013/12/topology#"
   nml: "http://schemas.ogf.org/nml/2013/03/base#"
