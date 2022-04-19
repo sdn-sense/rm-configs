@@ -17,3 +17,12 @@ prometheus:
 ucsd_nautilus:
   full_dn: "/C=US/ST=California/L=La Jolla/O=UC San Diego/OU=Calit2/CN=sense-fe.calit2.optiputer.net/emailAddress=jjgraham@eng.ucsd.edu/C=US/ST=California/L=La Jolla/O=UC San Diego/CN=sense-fe.calit2.optiputer.net"
   permissions: w
+agent01_fiona:
+  full_dn: "/C=US/ST=Hawaii/L=Hawaii/O=UHNet/OU=PRP/CN=sense-fe.uhnet.net/emailAddress=jbalcas@caltech.edu/C=US/ST=Hawaii/L=Hawaii/O=UHNet/CN=fiona.its.hawaii.edu"
+  permissions: w
+agent02_prp01:
+  full_dn: "/C=US/ST=Hawaii/L=Hawaii/O=UHNet/OU=PRP/CN=sense-fe.uhnet.net/emailAddress=jbalcas@caltech.edu/C=US/ST=Hawaii/L=Hawaii/O=UHNet/CN=fprp01.ifa.hawaii.edu"
+  permissions: w
+agent03_k8sdtn01:
+  full_dn: "/C=US/ST=Hawaii/L=Hawaii/O=UHNet/OU=PRP/CN=sense-fe.uhnet.net/emailAddress=jbalcas@caltech.edu/C=US/ST=Hawaii/L=Hawaii/O=UHNet/CN=k8s-dtn-01.uog.edu"
+  permissions: w
