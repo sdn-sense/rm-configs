@@ -1,0 +1,31 @@
+---
+general:
+  debug: false
+  ip: "132.249.252.246"
+  logDir: /var/log/dtnrm-agent/
+  logLevel: DEBUG
+  logbackupCount: 5
+  logmaxbytes: 2000000
+  private_dir: /opt/config/
+  rotate: midnight
+  secure: true
+  autoupdate: false
+  sense_client: /opt/sense-client/
+  siteName: T2_US_SDSC
+  webdomain: "https://nrp-01.nrp-nautilus.io:8443"
+agent: 
+  INTERFACES: enp2s0f0
+  NORULES: false
+  PUBLIC_INTF: vlan.4070
+  PUBLIC_INTF_MAX: 10000000000
+  hostname: nrp-01.nrp-nautilus.io
+enp2s0f0:
+  port: updateme
+  switch: s0
+  shared: false
+  vlan_max: 100000000000
+  vlan_min: 1000000000
+  vlans: 1779-1799,3600-3619,3985-3989
+  macvlans: macvlan0,macvlan1,macvlan2
+  ipv4-address-pool: 10.251.85.0/24,10.251.86.0/24,10.251.87.0/24,10.251.88.0/24,10.251.89.0/24,172.16.3.0/30,172.17.3.0/30,172.18.3.0/30,172.19.3.0/30,172.31.10.0/24,172.31.11.0/24,172.31.12.0/24,172.31.13.0/24,172.31.14.0/24,172.31.15.0/24
+
