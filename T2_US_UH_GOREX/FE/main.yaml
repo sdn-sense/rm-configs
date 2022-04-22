@@ -7,7 +7,7 @@ general:
   privatedir: /opt/config/
   sites: 
     - "T2_US_UH_GOREX"
-  webdomain: "https://127.0.0.1:443"
+  webdomain: "https://sense-fe.uhnet.net:8443"
 ContinuousLoop: 
   logLevel: INFO
   repeat: 5

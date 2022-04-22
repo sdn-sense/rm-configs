@@ -7,7 +7,7 @@ general:
   privatedir: /opt/config/
   sites: 
     - "T3_BR_RNP"
-  webdomain: "https://127.0.0.1:443"
+  webdomain: "https://200.159.252.130:8443"
 ContinuousLoop: 
   logLevel: DEBUG
   repeat: 5

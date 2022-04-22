@@ -7,7 +7,7 @@ general:
   privatedir: /opt/config/
   sites: 
     - "T3_US_Starlight"
-  webdomain: "https://127.0.0.1:443"
+  webdomain: "https://sense-rm.northwestern.edu:8443"
 ContinuousLoop: 
   logLevel: DEBUG
   repeat: 5

@@ -7,7 +7,7 @@ general:
   privatedir: /opt/config/
   sites: 
     - "T3_US_Kreonet"
-  webdomain: "https://127.0.0.1:443"
+  webdomain: "https://150.183.100.47:8443"
 ContinuousLoop: 
   logLevel: INFO
   repeat: 5
