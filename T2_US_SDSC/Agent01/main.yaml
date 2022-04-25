@@ -9,10 +9,9 @@ general:
   private_dir: /opt/config/
   rotate: midnight
   secure: true
-  autoupdate: false
-  sense_client: /opt/sense-client/
   siteName: T2_US_SDSC
   webdomain: "https://nrp-01.nrp-nautilus.io:8443"
+  node_exporter: "nrp-01.nrp-nautilus.io:9100"
 agent: 
   INTERFACES: enp2s0f0
   NORULES: false

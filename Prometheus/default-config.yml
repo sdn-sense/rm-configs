@@ -1,0 +1,33 @@
+# This is the default configuration used by SENSE.
+# Only adding default configuration parameters, which
+# are not automatically scanned, parsed from SiteFE configs
+global:
+  scrape_interval:     60s # Set the scrape interval to every 15 seconds. Default is every 1 minute.
+  evaluation_interval: 60s # Evaluate rules every 15 seconds. The default is every 1 minute.
+
+# Alertmanager configuration
+#alerting:
+#  alertmanagers:
+#  - static_configs:
+#    - targets:
+#      - alertmanager:9093
+
+# A scrape configuration containing exactly one endpoint to scrape
+scrape_configs: []
+# Any manual added scrap configs will not be removed;
+# This is what SENSE will add into scrape configuration for FE Prometheus:
+#  - job_name: <SITENAME>_<TYPE>
+#    scrape_interval: 30s
+#    static_configs:
+#      - targets: ['<SITE_FE_URI>']
+#    scheme: https
+#    metrics_path: /<SITENAME>/sitefe/json/frontend/metrics
+#    tls_config:
+#      cert_file: /etc/prometheus/cert.pem
+#      key_file: /etc/prometheus/privkey.pem
+#      insecure_skip_verify: true
+
+# This is what it will add for DTN, if this is enabled in DTN Yaml file.
+#  - job_name: <SITENAME>_<TYPE>_<INCREMENTAL_INTEGER>
+#    static_configs:
+#      - targets: ['<AGENT_NODE_EXPORTER_ENDPOINT>']
