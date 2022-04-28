@@ -6,7 +6,7 @@ general:
   logLevel: DEBUG
   logbackupCount: 5
   logmaxbytes: 2000000
-  private_dir: /opt/config/
+  private_dir: /opt/siterm/config/
   rotate: midnight
   secure: true
   siteName: T2_US_Caltech_Test
