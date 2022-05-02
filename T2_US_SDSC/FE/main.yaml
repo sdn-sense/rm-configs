@@ -20,7 +20,7 @@ PolicyService:
 ProvisioningService: 
   logLevel: INFO
   repeat: 5
-T2_US_UCSD:
+T2_US_SDSC:
   domain: nrp-nautilus.io
   latitude: 32.882648
   longitude: -117.234579
