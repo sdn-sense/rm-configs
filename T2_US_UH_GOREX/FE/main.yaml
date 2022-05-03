@@ -39,7 +39,7 @@ s0:
     - "1_2"
   port1_1capacity: 100
   port1_1desttype: switch
-  port1_1isAlias: "urn:ogf:network:hawaii.edu:2022:hawaii-scidmz:fiona.its.hawaii.edu"
+  port1_1isAlias: "urn:ogf:network:uhnet.net:2021:hawaii-scidmz:uhmanoa-dtn"
   port1_1vlan_range: 3605-3609
   port1_2capacity: 100
   port1_2vlan_range: 3605-3609
@@ -50,7 +50,7 @@ s1:
     - "1_2"
   port1_1capacity: 100
   port1_1desttype: switch
-  port1_1isAlias: "urn:ogf:network:hawaii.edu:2022:hawaii-scidmz:prp01.ifa.hawaii.edu"
+  port1_1isAlias: "urn:ogf:network:uhnet.net:2021:hawaii-scidmz:ifahurp-dtn"
   port1_1vlan_range: 3600-3604
   port1_2capacity: 100
   port1_2vlan_range: 3600-3604
@@ -61,7 +61,7 @@ s2:
     - "1_2"
   port1_1capacity: 10
   port1_1desttype: switch
-  port1_1isAlias: "urn:ogf:network:hawaii.edu:2022:hawaii-scidmz:k8s-dtn-01.uog.edu"
+  port1_1isAlias: "urn:ogf:network:uhnet.net:2021:hawaii-scidmz:guam-gorex"
   port1_1vlan_range: 3600-3604
   port1_2capacity: 10
   port1_2vlan_range: 3600-3604
