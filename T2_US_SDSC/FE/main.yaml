@@ -37,9 +37,9 @@ sn3700_s0:
   private_asn: 65000
   allports: True
   vlan_range: 1779-1799,3600-3619,3985-3989
-  port_Ethernet4_capacity: 100
-  port_Ethernet4_desttype: switch
-  port_Ethernet4_isAlias: "urn:ogf:network:calit2.optiputer.net:2020:prism-core:k8s-igrok-01"
+  port_PortChannel501_capacity: 100
+  port_PortChannel501_desttype: switch
+  port_PortChannel501_isAlias: "urn:ogf:network:calit2.optiputer.net:2020:prism-core:k8s-igrok-01"
 prefixes: 
   mrs: "http://schemas.ogf.org/mrs/2013/12/topology#"
   nml: "http://schemas.ogf.org/nml/2013/03/base#"
