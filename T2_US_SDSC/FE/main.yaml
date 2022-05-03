@@ -37,7 +37,7 @@ sn3700_s0:
   vlan_range: 1779-1799,3600-3619,3985-3989
   port_Ethernet4_capacity: 100
   port_Ethernet4_desttype: switch
-  port_Ethernet4_isAlias: "urn:ogf:network:lsanca.pacificwave.net:2016:lax-agg10:ultralight"
+  port_Ethernet4_isAlias: "urn:ogf:network:sdsc.optiputer.net:2022:sn3700"
 prefixes: 
   mrs: "http://schemas.ogf.org/mrs/2013/12/topology#"
   nml: "http://schemas.ogf.org/nml/2013/03/base#"
