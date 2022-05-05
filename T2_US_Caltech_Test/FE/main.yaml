@@ -38,6 +38,7 @@ dellos9_s0:
   vsw: "dellos9_s0"
   rst: "dellos9_s0"
   private_asn: 64513
+  vrf: lhcone
   ports:
     - "hundredGigE 1/7"
     - "hundredGigE 1/23"
