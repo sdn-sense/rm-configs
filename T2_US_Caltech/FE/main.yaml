@@ -9,6 +9,7 @@ general:
   sites: 
     - "T2_US_Caltech"
   webdomain: "https://sdn-dtn-1-7.ultralight.org:8443"
+  node_exporter: "sdn-dtn-1-7.ultralight.org:9100"
 ContinuousLoop: 
   logLevel: DEBUG
   repeat: 5
