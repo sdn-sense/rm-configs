@@ -4,10 +4,10 @@
 5148562294cb451e2477c11a560a04ab:
   config: FE/
   maintainer: "Marcos Schwarz"
-  status: production
+  status: preprod
   type: FE
 01ce3ac71146d49f0c9c57243e06022b:
   config: Agent01/
   maintainer: "Marcos Schwarz"
-  status: production
+  status: preprod
   type: Agent
