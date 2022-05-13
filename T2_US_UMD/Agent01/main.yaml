@@ -12,6 +12,7 @@ general:
   sense_client: /opt/sense-client/
   siteName: T2_US_UMD
   webdomain: "https://180-131.research.maxgigapop.net:8443"
+  node_exporter: "180-132.research.maxgigapop.net:9100"
 agent: 
   INTERFACES: eth2
   NORULES: false
