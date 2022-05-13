@@ -36,16 +36,16 @@ s0:
     - "1_1"
     - "1_2"
     - "1_3"
-  port1_1capacity: 40
-  port1_1destport: 7_1_1
-  port1_1desttype: switch
-  port1_1hostname: wash-cr6
-  port1_1isAlias: "urn:ogf:network:es.net:2013::wash-cr6:1_1_c6_1:+"
-  port1_1vlan_range: 3600-3619
-  port1_2capacity: 40
-  port1_2vlan_range: 3600-3619
-  port1_3capacity: 40
-  port1_3vlan_range: 3600-3619
+  port1_1_capacity: 40
+  port1_1_destport: 7_1_1
+  port1_1_desttype: switch
+  port1_1_hostname: wash-cr6
+  port1_1_isAlias: "urn:ogf:network:es.net:2013::wash-cr6:1_1_c6_1:+"
+  port1_1_vlan_range: 3600-3619
+  port1_2_capacity: 40
+  port1_2_vlan_range: 3600-3619
+  port1_3_capacity: 40
+  port1_3_vlan_range: 3600-3619
 prefixes: 
   mrs: "http://schemas.ogf.org/mrs/2013/12/topology#"
   nml: "http://schemas.ogf.org/nml/2013/03/base#"
