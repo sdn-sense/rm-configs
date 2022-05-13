@@ -6,10 +6,7 @@ general:
   logLevel: INFO
   logbackupCount: 5
   logmaxbytes: 2000000000
-  private_dir: /opt/config/
-  rotate: midnight
-  secure: true
-  sense_client: /opt/sense-client/
+  private_dir: /opt/siterm/config/
   siteName: T2_US_UH_GOREX
   webdomain: "https://sense-fe.uhnet.net:8443"
 agent: 
@@ -17,7 +14,7 @@ agent:
   NORULES: false
   hostname: fiona.its.hawaii.edu
 ens6f0:
-  port: 1/2
+  port: "1_2"
   shared: false
   switch: s0
   vlan_max: 40000000000
