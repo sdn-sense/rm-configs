@@ -1,12 +1,6 @@
 ---
-jbalcas:
-  full_dn: "/DC=ch/DC=cern/CN=CERN Grid Certification Authority/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=jbalcas/CN=751133/CN=Justas Balcas"
-  permissions: w
 orchestrator:
-  full_dn: "/O=University of Maryland/OU=Mid-Atlantic Crossroads/OU=research.maxgigapop.net/CN=Simple CA/O=University of Maryland/OU=Mid-Atlantic Crossroads/OU=research.maxgigapop.net/CN=Simple CA"
-  permissions: w
-xiyang:
-  full_dn: "/O=University of Maryland/OU=Mid-Atlantic Crossroads/OU=research.maxgigapop.net/CN=Simple CA/C=US/ST=Maryland/O=University of Maryland/OU=RESEARCH.MAXGIGAPOP.NET/CN=Xi Yang"
+  full_dn: "/C=US/ST=California/L=Berkeley/O=LBNL/OU=ESnet/CN=sense-o.es.net/C=US/ST=California/L=Berkeley/O=LBNL/CN=sense-o.es.net"
   permissions: w
 dtn:
   full_dn: "/C=CH/ST=Geneva/L=Meyrin/O=SURF/OU=CERN/CN=cixp-surfnet-dtn.cern.ch/C=CH/ST=Geneva/L=Meyrin/O=SURF/CN=cixp-surfnet-dtn.cern.ch"
