@@ -2,31 +2,16 @@
 general:
   logDir: /var/log/dtnrm-site-fe/
   logLevel: INFO
-  logmaxbytes: 2000000
-  logbackupCount: 5
-  privatedir: /opt/config/
+  privatedir: /opt/siterm/config/
   sites: 
     - "T2_CH_CERN"
   webdomain: "https://192.91.245.27:8443"
-ContinuousLoop: 
-  logLevel: INFO
-  repeat: 5
-LookUpService: 
-  logLevel: INFO
-  repeat: 5
-PolicyService: 
-  logLevel: INFO
-  repeat: 5
-ProvisioningService: 
-  logLevel: INFO
-  repeat: 5
 T2_CH_CERN:
-  database: /opt/config/T2_CH_CERN/sqlite.db
   domain: cern.ch
   latitude: 46.1403
   longitude: 6.0245
   plugin: raw
-  privatedir: /opt/config/T2_CH_CERN/
+  privatedir: /opt/siterm/config/T2_CH_CERN/
   switch:
     - "s0"
   year: 2013
@@ -35,14 +20,14 @@ s0:
   ports:
     - "1_1"
     - "1_2"
-  port1_1capacity: 100
-  port1_1destport: cern-1
-  port1_1desttype: switch
-  port1_1hostname: production7
-  port1_1isAlias: "urn:ogf:network:surf.nl:2020:production:netherlight.cern-1"
-  port1_1vlan_range: 3986-3989
-  port1_2capacity: 100
-  port1_2vlan_range: 3986-3989
+  port_1_1_capacity: 100
+  port_1_1_destport: cern-1
+  port_1_1_desttype: switch
+  port_1_1_hostname: production7
+  port_1_1_isAlias: "urn:ogf:network:surf.nl:2020:production:netherlight.cern-1"
+  port_1_1_vlan_range: 3986-3989
+  port_1_2_capacity: 100
+  port_1_2_vlan_range: 3986-3989
 prefixes: 
   mrs: "http://schemas.ogf.org/mrs/2013/12/topology#"
   nml: "http://schemas.ogf.org/nml/2013/03/base#"

@@ -4,12 +4,7 @@ general:
   ip: "192.91.245.27"
   logDir: /var/log/dtnrm-agent/
   logLevel: INFO
-  logbackupCount: 5
-  logmaxbytes: 2000000
-  private_dir: /opt/config/
-  rotate: midnight
-  secure: true
-  sense_client: /opt/sense-client/
+  private_dir: /opt/siterm/config/
   siteName: T2_CH_CERN
   webdomain: "https://192.91.245.27:8443"
 agent: 
@@ -19,7 +14,7 @@ agent:
   PUBLIC_INTF_MAX: 100000000000
   hostname: cixp-surfnet-dtn.cern.ch
 enP48p1s0f1:
-  port: 1/2
+  port: "1_2"
   shared: false
   switch: s0
   vlan_max: 100000000000
