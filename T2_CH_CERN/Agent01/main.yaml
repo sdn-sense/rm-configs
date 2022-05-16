@@ -6,7 +6,7 @@ general:
   logLevel: INFO
   private_dir: /opt/siterm/config/
   siteName: T2_CH_CERN
-  webdomain: "https://192.91.245.27:8443"
+  webdomain: "https://cixp-surfnet-dtn.cern.ch:8443"
 agent: 
   INTERFACES: enP48p1s0f1
   NORULES: false
