@@ -37,6 +37,7 @@ T2_US_Caltech_Test:
 dellos9_s0:
   vsw: "dellos9_s0"
   rst: "dellos9_s0"
+  rsts_enabled: "ipv4,ipv6"
   private_asn: 64513
   vrf: lhcone
   ports:
