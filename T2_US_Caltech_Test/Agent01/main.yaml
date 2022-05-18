@@ -18,6 +18,7 @@ agent:
   PUBLIC_INTF: enp5s0f1.43
   PUBLIC_INTF_MAX: 100000000000
   hostname: sdn-login-1.ultralight.org
+  rsts_enabled: "ipv4,ipv6"
 enp5s0f1:
   port: hundredGigE 1/23
   switch: dellos9_s0
