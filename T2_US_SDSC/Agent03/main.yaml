@@ -1,7 +1,7 @@
 ---
 general:
   debug: false
-  ip: "132.249.252.246"
+  ip: "132.249.252.242"
   logDir: /var/log/dtnrm-agent/
   logLevel: DEBUG
   private_dir: /opt/siterm/config/
