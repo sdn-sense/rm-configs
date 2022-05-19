@@ -17,3 +17,6 @@ agent01:
 agent02:
   full_dn: "/C=US/ST=California/L=Pasadena/O=Caltech/CN=sdn-sense.dev/C=US/ST=California/L=San Diego/O=SDSC/CN=nrp-02.nrp-nautilus.io"
   permissions: w
+agent03:
+  full_dn: "/C=US/ST=California/L=Pasadena/O=Caltech/CN=sdn-sense.dev/C=US/ST=California/L=San Diego/O=SDSC/CN=k8s-gen4-01.sdsc.optiputer.net"
+  permissions: w
