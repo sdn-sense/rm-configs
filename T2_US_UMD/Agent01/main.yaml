@@ -4,12 +4,7 @@ general:
   ip: "206.196.180.132"
   logDir: /var/log/dtnrm-agent/
   logLevel: DEBUG
-  logbackupCount: 5
-  logmaxbytes: 2000000
-  private_dir: /opt/config/
-  rotate: midnight
-  secure: true
-  sense_client: /opt/sense-client/
+  private_dir: /opt/siterm/config/
   siteName: T2_US_UMD
   webdomain: "https://180-131.research.maxgigapop.net:8443"
   node_exporter: "180-132.research.maxgigapop.net:9100"
@@ -19,6 +14,7 @@ agent:
   PUBLIC_INTF: eth1
   PUBLIC_INTF_MAX: 100000000000
   hostname: 180-132.research.maxgigapop.net
+  rsts_enabled: "ipv4"
 eth2:
   port: "1_2"
   shared: false
