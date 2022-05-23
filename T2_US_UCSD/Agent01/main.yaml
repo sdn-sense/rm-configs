@@ -4,12 +4,7 @@ general:
   ip: "67.58.53.139"
   logDir: /var/log/dtnrm-agent/
   logLevel: INFO
-  logbackupCount: 5
-  logmaxbytes: 2000000000
-  private_dir: /opt/config/
-  rotate: midnight
-  secure: true
-  sense_client: /opt/sense-client/
+  private_dir: /opt/siterm/config/
   siteName: T2_US_UCSD
   webdomain: "https://sense-fe.nrp-nautilus.io:8443"
 agent: 
@@ -17,7 +12,7 @@ agent:
   NORULES: false
   hostname: k8s-igrok-01.calit2.optiputer.net
 enp33s0f1:
-  port: 1/2
+  port: "1_2"
   shared: false
   switch: s0
   vlan_max: 100000000000
