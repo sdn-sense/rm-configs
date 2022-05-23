@@ -4,20 +4,17 @@ general:
   ip: "67.17.206.195"
   logDir: /var/log/dtnrm-agent/
   logLevel: DEBUG
-  logbackupCount: 5
-  logmaxbytes: 2000000
-  private_dir: /opt/config/
-  rotate: midnight
-  secure: true
-  sense_client: /opt/sense-client/
+  private_dir: /opt/siterm/config/
   siteName: T3_US_FIU
   webdomain: "https://67.17.206.195:8443" 
 agent: 
   INTERFACES: ens6f0
   NORULES: false
   hostname: ox.amlight.net
+  PUBLIC_INTF: ens6f0
+  PUBLIC_INTF_MAX: 10000000000
 ens6f0: 
-  port: 1/2
+  port: "1_2"
   shared: false
   switch: s0
   vlan_max: 100000000000

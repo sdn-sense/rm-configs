@@ -2,45 +2,30 @@
 general:
   logDir: /var/log/dtnrm-site-fe/
   logLevel: DEBUG
-  logmaxbytes: 2000000
-  logbackupCount: 5
-  privatedir: /opt/config/
+  privatedir: /opt/siterm/config/
   sites: 
     - "T3_BR_RNP"
   webdomain: "https://200.159.252.130:8443"
-ContinuousLoop: 
-  logLevel: DEBUG
-  repeat: 5
-LookUpService: 
-  logLevel: DEBUG
-  repeat: 5
-PolicyService: 
-  logLevel: DEBUG
-  repeat: 5
-ProvisioningService: 
-  logLevel: DEBUG
-  repeat: 5
 T3_BR_RNP: 
-  database: /opt/config/T3_BR_RNP/sqlite.db
   domain: sense.rnp.br
   latitude: -22.9542068
   longitude: -43.1766169
   plugin: raw
   switch:
     - "s0"
-  privatedir: /opt/config/T3_BR_RNP/
+  privatedir: /opt/siterm/config/T3_BR_RNP/
   year: 2020
 s0:
   vsw: "s0"
   ports:
     - "1_1"
     - "1_2"
-  port1_1capacity: 10
-  port1_1desttype: switch
-  port1_1isAlias: "urn:ogf:network:cipo.rnp.br:2013::MXRJ:ae0:+" # what should go put here?
-  port1_1vlan_range: 1700-1705
-  port1_2capacity: 10
-  port1_2vlan_range: 1700-1705
+  port_1_1_capacity: 10
+  port_1_1_desttype: switch
+  port_1_1_isAlias: "urn:ogf:network:cipo.rnp.br:2013::MXRJ:ae0:+" # what should go put here?
+  port_1_1_vlan_range: 1700-1705
+  port_1_2_capacity: 10
+  port_1_2_vlan_range: 1700-1705
 prefixes: 
   mrs: "http://schemas.ogf.org/mrs/2013/12/topology#"
   nml: "http://schemas.ogf.org/nml/2013/03/base#"

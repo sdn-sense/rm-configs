@@ -2,31 +2,16 @@
 general:
   logDir: /var/log/dtnrm-site-fe/
   logLevel: DEBUG
-  logmaxbytes: 2000000
-  logbackupCount: 5
-  privatedir: /opt/config/
+  privatedir: /opt/siterm/config/
   sites: 
     - "T3_US_FIU"
   webdomain: "https://67.17.206.195:8443"
-ContinuousLoop: 
-  logLevel: DEBUG
-  repeat: 5
-LookUpService: 
-  logLevel: DEBUG
-  repeat: 5
-PolicyService: 
-  logLevel: DEBUG
-  repeat: 5
-ProvisioningService: 
-  logLevel: DEBUG
-  repeat: 5
 T3_US_FIU: 
-  database: /opt/config/T3_US_FIU/sqlite.db
   domain: fiu.amlight.net
   latitude: 25.7574
   longitude: -80.3733
   plugin: raw
-  privatedir: /opt/config/T3_US_FIU/
+  privatedir: /opt/siterm/config/T3_US_FIU/
   switch:
     - "s0"
   year: 2020
@@ -35,12 +20,12 @@ s0:
   ports:
     - "1_1"
     - "1_2"
-  port1_1capacity: 100
-  port1_1desttype: switch
-  port1_1isAlias: "urn:ogf:network:ampath.net:2013:topology:dtn-100g"
-  port1_1vlan_range: 1791-1799,3985-3989
-  port1_2capacity: 100
-  port1_2vlan_range: 1791-1799,3985-3989
+  port_1_1_capacity: 100
+  port_1_1_desttype: switch
+  port_1_1_isAlias: "urn:ogf:network:ampath.net:2013:topology:dtn-100g"
+  port_1_1_vlan_range: 1791-1799,3985-3989
+  port_1_2_capacity: 100
+  port_1_2_vlan_range: 1791-1799,3985-3989
 prefixes: 
   mrs: "http://schemas.ogf.org/mrs/2013/12/topology#"
   nml: "http://schemas.ogf.org/nml/2013/03/base#"

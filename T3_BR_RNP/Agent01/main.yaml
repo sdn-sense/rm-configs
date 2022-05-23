@@ -4,12 +4,7 @@ general:
   ip: "200.159.252.130"
   logDir: /var/log/dtnrm-agent/
   logLevel: DEBUG
-  logbackupCount: 5
-  logmaxbytes: 2000000
-  private_dir: /opt/config/
-  rotate: midnight
-  secure: true
-  sense_client: /opt/sense-client/
+  private_dir: /opt/siterm/config/
   siteName: T3_BR_RNP
   webdomain: "https://200.159.252.130:8443" 
 agent: 
@@ -19,7 +14,7 @@ agent:
   PUBLIC_INTF_MAX: 10000000000
   hostname: 200.159.252.130
 eno3: 
-  port: 1/2
+  port: "1_2"
   shared: false
   switch: s0
   vlan_max: 10000000000
