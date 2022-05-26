@@ -14,7 +14,7 @@ agent:
   PUBLIC_INTF: vlan.4070
   PUBLIC_INTF_MAX: 10000000000
   hostname: k8s-gen4-01.sdsc.optiputer.net
-enp2s0f0:
+enp65s0:
   port: updateme
   switch: s0
   shared: false
