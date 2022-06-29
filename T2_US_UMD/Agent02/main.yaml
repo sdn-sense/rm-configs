@@ -12,14 +12,14 @@ agent:
   INTERFACES: eth1
   NORULES: false
   PUBLIC_INTF: eth1
-  PUBLIC_INTF_MAX: 100000000000
+  PUBLIC_INTF_MAX: 10000
   hostname: 180-134.research.maxgigapop.net
   rsts_enabled: "ipv4"
 eth1:
   port: "1_3"
   shared: false
   switch: s0
-  vlan_max: 100000000000
-  vlan_min: 1000000000
+  vlan_max: 10000
+  vlan_min: 1000
   vlans: 3600-3619
   ips: 172.16.2.0/30,172.17.2.0/30,172.18.2.0/30,172.19.2.0/30,172.31.6.0/24,172.31.7.0/24,172.31.8.0/24,172.31.9.0/24,172.31.10.0/24,172.31.11.0/24,172.31.12.0/24,172.31.13.0/24,172.31.14.0/24,172.31.15.0/24,10.4.44.0/24
