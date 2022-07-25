@@ -13,12 +13,12 @@ general:
   webdomain: "https://sdn-dtn-2-10.ultralight.org:8443" 
   node_exporter: "sdn-dtn-2-10.ultralight.org:9100"
 agent: 
-  INTERFACES: ens2f0
+  INTERFACES: ens2f0np0.43
   NORULES: false
-  PUBLIC_INTF: ens2f0.43
+  PUBLIC_INTF: ens2f0np0.43
   PUBLIC_INTF_MAX: 10000
   hostname: sdn-dtn-2-10.ultralight.org
-ens2f0:
+ens2f0np0:
   port: hundredGigE 1/14
   switch: dellos9_s0
   shared: false
