@@ -9,7 +9,7 @@ general:
   web_domain: "https://sdn-dtn-2-10.ultralight.org:8443" 
   node_exporter: "sdn-dtn-2-10.ultralight.org:9100"
 agent: 
-  interfaces: ens2f0np0.43
+  interfaces: ens2f0np0
   no_rules: false
   public_intf: ens2f0np0.43
   public_intf_max: 10000
