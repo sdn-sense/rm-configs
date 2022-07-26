@@ -2,21 +2,17 @@
 general:
   debug: false
   ip: "198.32.43.16"
-  logDir: /var/log/dtnrm-agent/
-  logLevel: DEBUG
-  logbackupCount: 5
-  logmaxbytes: 2000000
+  log_dir: /var/log/dtnrm-agent/
+  log_level: DEBUG
   private_dir: /opt/siterm/config/
-  rotate: midnight
-  secure: true
-  siteName: T2_US_Caltech_Test1
-  webdomain: "https://sdn-dtn-2-10.ultralight.org:8443" 
+  site_name: T2_US_Caltech_Test1
+  web_domain: "https://sdn-dtn-2-10.ultralight.org:8443" 
   node_exporter: "sdn-dtn-2-10.ultralight.org:9100"
 agent: 
-  INTERFACES: ens2f0np0.43
-  NORULES: false
-  PUBLIC_INTF: ens2f0np0.43
-  PUBLIC_INTF_MAX: 10000
+  interfaces: ens2f0np0.43
+  no_rules: false
+  public_intf: ens2f0np0.43
+  public_intf_max: 10000
   hostname: sdn-dtn-2-10.ultralight.org
 ens2f0np0:
   port: hundredGigE 1/14
