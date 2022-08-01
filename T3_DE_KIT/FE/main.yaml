@@ -2,31 +2,16 @@
 general:
   logDir: /var/log/dtnrm-site-fe/
   logLevel: DEBUG
-  logmaxbytes: 2000000
-  logbackupCount: 5
-  privatedir: /opt/config/
+  privatedir: /opt/siterm/config/
   sites: 
     - "T3_DE_KIT"
   webdomain: "https://autogole-sense-login.gridka.de:8443"
-ContinuousLoop: 
-  logLevel: DEBUG
-  repeat: 5
-LookUpService: 
-  logLevel: DEBUG
-  repeat: 5
-PolicyService: 
-  logLevel: DEBUG
-  repeat: 5
-ProvisioningService: 
-  logLevel: DEBUG
-  repeat: 5
 T3_DE_KIT: 
-  database: /opt/config/T3_DE_KIT/sqlite.db
   domain: gridka.de
   latitude: 34.1377
   longitude: 118.1253
   plugin: raw
-  privatedir: /opt/config/T3_DE_KIT/
+  privatedir: /opt/siterm/config/T3_DE_KIT/
   switch:
     - "s0"
   year: 2020
@@ -35,14 +20,12 @@ s0:
   ports:
     - "1_1"
     - "1_2"
-  port1_1capacity: 100
-  port1_1destport: geant-1
-  port1_1desttype: switch
-  port1_1hostname: autogole-sense-login
-  port1_1isAlias: "urn:ogf:network:surf.nl:2020:production:netherlight.geant-1"
-  port1_1vlan_range: 3986-3989
-  port1_2capacity: 100
-  port1_2vlan_range: 3986-3989
+  port1_1_capacity: 100
+  port1_1_desttype: switch
+  port1_1_isAlias: "urn:ogf:network:surf.nl:2020:production:netherlight.de-kit-1"
+  port1_1_vlan_range: 3985-3989
+  port1_2_capacity: 100
+  port1_2_vlan_range: 3985-3989
 prefixes: 
   mrs: "http://schemas.ogf.org/mrs/2013/12/topology#"
   nml: "http://schemas.ogf.org/nml/2013/03/base#"

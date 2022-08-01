@@ -1,11 +1,11 @@
 ---
 a0d66e5ff8bb712a37184aeb909e7494:
   config: FE/
-  maintainer: "Xi Yang"
+  maintainer: "Hoeft, Bruno"
   status: production
   type: FE
 7c987e973d9f6f5f1553290177777451:
   config: Agent01/
-  maintainer: "Xi Yang"
+  maintainer: "Hoeft, Bruno"
   status: production
   type: Agent
