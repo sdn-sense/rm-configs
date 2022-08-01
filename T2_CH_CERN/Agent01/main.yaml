@@ -7,6 +7,7 @@ general:
   private_dir: /opt/siterm/config/
   siteName: T2_CH_CERN
   webdomain: "https://cixp-surfnet-dtn.cern.ch:8443"
+  node_exporter: "cixp-surfnet-dtn.cern.ch:9100"
 agent: 
   INTERFACES: enP48p1s0f1
   NORULES: false
