@@ -1,10 +1,13 @@
 ---
 siterm:
-  full_dn: "/C=BR/ST=Sao Paulo/L=Sao Paulo/O=UNESP/OU=NCC/CN=sprace02.redclara.net/emailAddress=jadir.marra@unesp.br/C=BR/ST=Sao Paulo/L=Sao Paulo/O=UNESP/CN=sprace02.redclara.net"
+  full_dn: "/C=US/ST=California/L=Pasadena/O=Caltech/CN=sdn-sense.dev/C=BR/ST=Sprace/L=Sprace/O=Sprace/CN=sprace02.redclara.net"
   permissions: w
 sense-o:
   full_dn: "/C=US/ST=California/L=Berkeley/O=LBNL/OU=ESnet/CN=sense-o.es.net/C=US/ST=California/L=Berkeley/O=LBNL/CN=sense-o.es.net"
   permissions: w
+jbalcas:
+   full_dn: "/DC=ch/DC=cern/CN=CERN Grid Certification Authority/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=jbalcas/CN=751133/CN=Justas Balcas"
+   permissions: w
 prometheus:
   full_dn: "/C=US/O=Let's Encrypt/CN=R3/CN=influx.sdn-sense.dev"
   permissions: r
