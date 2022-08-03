@@ -7,7 +7,7 @@ general:
   privatedir: /opt/siterm/config/
   sites: 
     - "T2_US_SDSC"
-  webdomain: "https://nrp-01.nrp-nautilus.io:8443"
+  webdomain: "https://site-rm-dev.nrp-nautilus.io:8443"
 T2_US_SDSC:
   domain: nrp-nautilus.io
   latitude: 32.882648

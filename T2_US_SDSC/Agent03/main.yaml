@@ -6,7 +6,7 @@ general:
   logLevel: DEBUG
   private_dir: /opt/siterm/config/
   siteName: T2_US_SDSC
-  webdomain: "https://nrp-01.nrp-nautilus.io:8443"
+  webdomain: "https://site-rm-dev.nrp-nautilus.io:8443"
   node_exporter: "k8s-gen4-01.sdsc.optiputer.net:9100"
 agent: 
   INTERFACES: enp65s0
