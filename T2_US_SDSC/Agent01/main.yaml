@@ -10,7 +10,7 @@ general:
   rotate: midnight
   secure: true
   siteName: T2_US_SDSC
-  webdomain: "https://site-rm-dev.nrp-nautilus.io:8443"
+  webdomain: "https://sdn-login-1.ultralight.org:9443"
   node_exporter: "nrp-01.nrp-nautilus.io:9100"
 agent: 
   INTERFACES: enp2s0f0
