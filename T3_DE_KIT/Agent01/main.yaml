@@ -1,10 +1,9 @@
 ---
 general:
-  debug: false
   ip: "192.108.47.14"
   logDir: /var/log/dtnrm-agent/
   logLevel: INFO
-  private_dir: /opt/config/
+  private_dir: /opt/siterm/config/
   siteName: T3_DE_KIT
   webdomain: "https://autogole-sense-login.gridka.de:8443"
   node_exporter: "autogole-sense-login.gridka.de:9100"

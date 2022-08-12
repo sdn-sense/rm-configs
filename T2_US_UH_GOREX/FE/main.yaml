@@ -2,8 +2,6 @@
 general:
   logDir: /var/log/dtnrm-site-fe/
   logLevel: INFO
-  logmaxbytes: 2000000000
-  logbackupCount: 5
   privatedir: /opt/siterm/config/
   sites: 
     - "T2_US_UH_GOREX"

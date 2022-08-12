@@ -6,7 +6,7 @@ general:
   private_dir: /opt/siterm/config/
   siteName: T2_US_Caltech_Test
   webdomain: "https://sdn-login-1.ultralight.org:8443"
-  node_exporter: "sdn-login-1.ultralight.org:9100"
+  node_exporter: "sdn-dtn-1-7.ultralight.org:9100"
 agent: 
   INTERFACES: enp143s0
   NORULES: false

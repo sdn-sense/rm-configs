@@ -2,24 +2,10 @@
 general:
   logDir: /var/log/dtnrm-site-fe/
   logLevel: DEBUG
-  logmaxbytes: 2000000
-  logbackupCount: 5
   privatedir: /opt/siterm/config/
   sites: 
     - "T2_US_Caltech_Test"
   webdomain: "https://sdn-login-1.ultralight.org:8443"
-ContinuousLoop: 
-  logLevel: DEBUG
-  repeat: 5
-LookUpService: 
-  logLevel: DEBUG
-  repeat: 5
-PolicyService: 
-  logLevel: DEBUG
-  repeat: 5
-ProvisioningService: 
-  logLevel: DEBUG
-  repeat: 5
 T2_US_Caltech_Test: 
   domain: ultralight.org
   latitude: 34.1377

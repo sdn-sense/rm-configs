@@ -3,7 +3,7 @@ general:
   ip: "200.0.207.117"
   logDir: /var/log/dtnrm-agent/
   logLevel: DEBUG
-  private_dir: /opt/config/
+  private_dir: /opt/siterm/config/
   siteName: T2_BR_SPRACE
   webdomain: "https://sprace02.redclara.net:8443"
   node_exporter: "sprace02.redclara.net:9100"

@@ -2,33 +2,18 @@
 general:
   logDir: /var/log/dtnrm-site-fe/
   logLevel: DEBUG
-  logmaxbytes: 2000000
-  logbackupCount: 5
-  privatedir: /opt/config/
+  privatedir: /opt/siterm/config/
   sites: 
     - "T2_US_UMD"
   webdomain: "https://180-131.research.maxgigapop.net:8443"
-ContinuousLoop: 
-  logLevel: INFO
-  repeat: 5
-LookUpService: 
-  logLevel: INFO
-  repeat: 5
-PolicyService: 
-  logLevel: INFO
-  repeat: 5
-ProvisioningService: 
-  logLevel: INFO
-  repeat: 5
 T2_US_UMD:
-  database: /opt/config/T2_US_UMD/sqlite.db
   domain: maxgigapop.net
   latitude: 38.9869
   longitude: 76.9426
   plugin: raw
   switch:
-    - s0
-  privatedir: /opt/config/T2_US_UMD/
+    - "s0"
+  privatedir: /opt/siterm/config/T2_US_UMD/
   year: 2013
 s0:
   vsw: "s0"

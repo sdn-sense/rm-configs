@@ -1,6 +1,5 @@
 ---
 general:
-  debug: false
   ip: "132.249.252.242"
   logDir: /var/log/dtnrm-agent/
   logLevel: DEBUG
@@ -14,6 +13,7 @@ agent:
   PUBLIC_INTF: vlan.4070
   PUBLIC_INTF_MAX: 10000
   hostname: k8s-gen4-01.sdsc.optiputer.net
+  rsts_enabled: "ipv4,ipv6"
 enp65s0:
   port: updateme
   switch: s0
@@ -23,4 +23,5 @@ enp65s0:
   vlans: 1779-1799,3600-3619,3985-3989
   macvlans: macvlan0,macvlan1,macvlan2
   ipv4-address-pool: 10.251.85.0/24,10.251.86.0/24,10.251.87.0/24,10.251.88.0/24,10.251.89.0/24,172.16.3.0/30,172.17.3.0/30,172.18.3.0/30,172.19.3.0/30,172.31.10.0/24,172.31.11.0/24,172.31.12.0/24,172.31.13.0/24,172.31.14.0/24,172.31.15.0/24
+  ipv6-address-pool: fc00::0010/124,fc00::0020/124,fc00::0030/124,fc00::0040/124,fc00::0050/124,fc00::0060/124,fc00::0070/124,fc00::0080/124,fc00::0090/124,fc00::00a0/124,fc00::00b0/124,fc00::00c0/124,fc00::00d0/124,fc00::00e0/124,fc00::00f0/124
 

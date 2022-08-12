@@ -1,49 +1,36 @@
 --- 
 general:
   logDir: /var/log/dtnrm-site-fe/
-  logLevel: INFO
-  logmaxbytes: 2000000
-  logbackupCount: 5
-  privatedir: /opt/config/
+  privatedir: /opt/siterm/config/
   sites: 
     - "T3_US_Kreonet"
   webdomain: "https://134.75.254.12:8443"
-ContinuousLoop: 
-  logLevel: INFO
-  repeat: 5
-LookUpService: 
-  logLevel: INFO
-  repeat: 5
-PolicyService: 
-  logLevel: INFO
-  repeat: 5
-ProvisioningService: 
-  logLevel: INFO
-  repeat: 5
 T3_US_Kreonet:
-  database: /opt/config/T3_US_Kreonet/sqlite.db
   domain: kreonet.net
   latitude: 35.9
   longitude: 127.76
   plugin: raw
-  port1_1capacity: 100
-  port1_1destport: DTN2
-  port1_1desttype: switch
-  port1_1hostname: daej_topo1
-  port1_1isAlias: "urn:ogf:network:daej-nsi.kreonet.net:2020:daej_topo1:DTN2"
-  port1_1vlan_range: 3985-3989
-  port1_2capacity: 100
-  port1_2destport: eno1
-  port1_2desttype: server
-  port1_2hostname: sense-dtn2.kreonet.net
-  port1_2vlan_range: 3985-3989
-  port1_2isAlias: "urn:ogf:network:kreonet.net:2013:s0:1_2:sense-dtn1.kreonet.net:eno1"
+  privatedir: /opt/siterm/config/T3_US_Kreonet/
+  switch:
+    - "s0"
+  year: 2013
+s0:
+  vsw: "s0"
+  port_1_1_capacity: 100
+  port_1_1_destport: DTN2
+  port_1_1_desttype: switch
+  port_1_1_hostname: daej_topo1
+  port_1_1_isAlias: "urn:ogf:network:daej-nsi.kreonet.net:2020:daej_topo1:DTN2"
+  port_1_1_vlan_range: 3985-3989
+  port_1_2_capacity: 100
+  port_1_2_destport: eno1
+  port_1_2_desttype: server
+  port_1_2_hostname: sense-dtn2.kreonet.net
+  port_1_2_vlan_range: 3985-3989
+  port_1_2_isAlias: "urn:ogf:network:kreonet.net:2013:s0:1_2:sense-dtn1.kreonet.net:eno1"
   ports: 
     - "1_1"
     - "1_2"
-  privatedir: /opt/config/T3_US_Kreonet/
-  switch: s0
-  year: 2013
 prefixes: 
   mrs: "http://schemas.ogf.org/mrs/2013/12/topology#"
   nml: "http://schemas.ogf.org/nml/2013/03/base#"
