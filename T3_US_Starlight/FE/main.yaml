@@ -5,7 +5,7 @@ general:
   privatedir: /opt/siterm/config/
   sites: 
     - "T3_US_Starlight"
-  webdomain: "https://sense-rm.northwestern.edu:8443"
+  webdomain: "https://dtn110.sl.startap.net:8443"
 T3_US_Starlight: 
   domain: starlight.org
   latitude: 34.1377

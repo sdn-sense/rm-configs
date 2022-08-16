@@ -5,7 +5,8 @@ general:
   logLevel: DEBUG
   private_dir: /opt/siterm/config/
   siteName: T3_US_Starlight
-  webdomain: "https://sense-rm.northwestern.edu:8443" 
+  webdomain: "https://dtn110.sl.startap.net:8443"
+  node_exporter: "dtn110.sl.startap.net:9100"
 agent: 
   INTERFACES: p4p1
   NORULES: false
