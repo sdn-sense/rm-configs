@@ -6,7 +6,7 @@ general:
   private_dir: /opt/siterm/config/
   siteName: T3_US_Starlight
   webdomain: "https://dtn110.sl.startap.net:8443"
-  node_exporter: "dtn110.sl.startap.net:9100"
+  node_exporter: "dtn110.sl.startap.net:9200"
 agent: 
   INTERFACES: p4p1
   NORULES: false
