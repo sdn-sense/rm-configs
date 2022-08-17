@@ -26,7 +26,7 @@ sn3700_s0:
   vlan_range: 1779-1799,3600-3619,3985-3989
   port_PortChannel501_capacity: 100
   port_PortChannel501_desttype: switch
-  port_PortChannel501_isAlias: "urn:ogf:network:calit2.optiputer.net:2020:prism-core:k8s-igrok-01"
+  port_PortChannel501_isAlias: "urn:ogf:network:lsanca.pacificwave.net:2016:lax-agg10:calit2"
 prefixes: 
   mrs: "http://schemas.ogf.org/mrs/2013/12/topology#"
   nml: "http://schemas.ogf.org/nml/2013/03/base#"
