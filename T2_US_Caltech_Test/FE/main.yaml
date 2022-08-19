@@ -61,6 +61,10 @@ freertr_s0:
    vsw: "freertr_s0"
    allports: True
    vlan_range: 1779-1799,3600-3619,3985-3989
+freertr_s1:
+   vsw: "freertr_s1"
+   allports: True
+   vlan_range: 1779-1799,3600-3619,3985-3989
 prefixes: 
   mrs: "http://schemas.ogf.org/mrs/2013/12/topology#"
   nml: "http://schemas.ogf.org/nml/2013/03/base#"
