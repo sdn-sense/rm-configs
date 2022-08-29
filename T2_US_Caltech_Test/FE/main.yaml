@@ -22,7 +22,6 @@ T2_US_Caltech_Test:
     - "aristaeos_s0"
     - "dellos9_s1"
     - "sn3700_s0"
-    - "freertr_s0"
 dellos9_s0:
   vsw: "dellos9_s0"
   rst: "dellos9_s0"
@@ -55,10 +54,6 @@ dellos9_s1:
    vlan_range: 1779-1799,3600-3619,3985-3989
 sn3700_s0:
    vsw: "sn3700_s0"
-   allports: True
-   vlan_range: 1779-1799,3600-3619,3985-3989
-freertr_s0:
-   vsw: "freertr_s0"
    allports: True
    vlan_range: 1779-1799,3600-3619,3985-3989
 prefixes: 
