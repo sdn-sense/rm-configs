@@ -21,6 +21,14 @@ aristaeos_s0:
   vsw: "aristaeos_s0"
   allports: True
   vlan_range: 1779-1799,3600-3619,3985-3989
+  port_Ethernet29-1_capacity: 100
+  port_Ethernet29-1_desttype: switch
+  port_Ethernet29-1_isAlias: "urn:ogf:network:ultralight.org:2013:aristaeos_s0:Ethernet32-1"
+  port_Ethernet29-1_vlan_range: 1779-1799,3600-3619,3985-3989
+  port_Port-Channel502_capacity: 400
+  port_Port-Channel502_desttype: switch
+  port_Port-Channel502_isAlias: "urn:ogf:network:calit2.optiputer.net:2020:prism-core:k8s-igrok-02"
+  port_Port-Channel502_vlan_range: 1779-1799,3600-3619,3985-3989
 prefixes: 
   mrs: "http://schemas.ogf.org/mrs/2013/12/topology#"
   nml: "http://schemas.ogf.org/nml/2013/03/base#"
