@@ -34,7 +34,7 @@ dellos9_s0:
     - "Port-channel 102"
   ports_ignore:
     - "ManagementEthernet 1/1"
-  vlan_range: 1779-1799,3600-3619,3985-3989
+  vlan_range: 1779-1799,3600-3619,3985-3989,3870-3883,3911-3912
   allports: True
   port_hundredGigE_1-7_capacity: 100
   port_hundredGigE_1-7_desttype: switch
@@ -43,11 +43,11 @@ dellos9_s0:
 aristaeos_s0:
    vsw: "aristaeos_s0"
    allports: True
-   vlan_range: 1779-1799,3600-3619,3985-3989
+   vlan_range: 3870-3883,3911-3912
    port_Ethernet32-1_capacity: 100
    port_Ethernet32-1_desttype: switch
    port_Ethernet32-1_isAlias: "urn:ogf:network:sc-test.cenic.net:2020:aristaeos_s0:Ethernet29-1"
-   port_Ethernet32-1_vlan_range: 1779-1799,3600-3619,3985-3989
+   port_Ethernet32-1_vlan_range: 3870-3883,3911-3912
 dellos9_s1:
    vsw: "dellos9_s1"
    allports: True
