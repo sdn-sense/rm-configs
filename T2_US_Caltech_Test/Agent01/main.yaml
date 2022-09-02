@@ -1,17 +1,17 @@
 ---
 general:
   ip: "198.32.43.13"
-  logDir: /var/log/dtnrm-agent/
-  logLevel: DEBUG
+  logdir: /var/log/dtnrm-agent/
+  loglevel: DEBUG
   private_dir: /opt/siterm/config/
-  siteName: T2_US_Caltech_Test
+  sitename: [T2_US_Caltech_Test]
   webdomain: "https://sdn-login-1.ultralight.org:8443"
   node_exporter: "sdn-dtn-1-7.ultralight.org:9100"
 agent: 
-  INTERFACES: enp143s0
-  NORULES: false
-  PUBLIC_INTF: enp143s0.43
-  PUBLIC_INTF_MAX: 10000
+  interfaces: [enp143s0]
+  norules: false
+  public_intf: enp143s0.43
+  public_intf_max: 10000
   hostname: sdn-dtn-1-7.ultralight.org
   rsts_enabled: "ipv4,ipv6"
 enp143s0:
