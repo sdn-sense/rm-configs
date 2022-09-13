@@ -1,0 +1,27 @@
+---
+general:
+  ip: "198.32.43.2"
+  logdir: /var/log/dtnrm-agent/
+  loglevel: DEBUG
+  private_dir: /opt/siterm/config/
+  sitename: [T2_US_Caltech_Test]
+  webdomain: "https://sdn-login-1.ultralight.org:8443"
+  node_exporter: "sandie-1.ultralight.org:9100"
+agent: 
+  interfaces: [enp143s0]
+  norules: false
+  public_intf: enp143s0.43
+  public_intf_max: 100000
+  hostname: sandie-1.ultralight.org
+  rsts_enabled: "ipv4,ipv6"
+enp143s0:
+  port: hundredGigE 1/10
+  switch: dellos9_s0
+  shared: false
+  vlan_max: 100000
+  vlan_min: 1000
+  vlans: [1779-1799,3600-3619,3985-3989]
+  macvlans: [macvlan0,macvlan1,macvlan2,macvlan3]
+  ipv4-address-pool: [10.0.14.1/31,10.251.85.0/24,10.251.86.0/24,10.251.87.0/24,10.251.88.0/24,10.251.89.0/24,172.16.3.0/30,172.17.3.0/30,172.18.3.0/30,172.19.3.0/30]
+  ipv6-address-pool: [fc00:3600::0/64,fc00:3601::0/64,fc00:3602::0/64,fc00:3603::0/64,fc00:3604::0/64,fc00:3605::0/64,fc00:3606::0/64,fc00:3607::0/64,fc00:3608::0/64,fc00:3609::0/64,fc00:3610::0/64,fc00:3611::0/64,fc00:3612::0/64,fc00:3613::0/64,fc00:3614::0/64,fc00:3615::0/64,fc00:3616::0/64,fc00:3617::0/64,fc00:3618::0/64,fc00:3619::0/64,fc00:1779::0/64,fc00:1780::0/64,fc00:1781::0/64,fc00:1782::0/64,fc00:1783::0/64,fc00:1784::0/64,fc00:1785::0/64,fc00:1786::0/64,fc00:1787::0/64,fc00:1788::0/64,fc00:1789::0/64,fc00:1790::0/64,fc00:1791::0/64,fc00:1792::0/64,fc00:1793::0/64,fc00:1794::0/64,fc00:1795::0/64,fc00:1796::0/64,fc00:1797::0/64,fc00:1798::0/64,fc00:1799::0/64,fc00:3985::0/64,fc00:3986::0/64,fc00:3987::0/64,fc00:3988::0/64,fc00:3989::0/64]
+

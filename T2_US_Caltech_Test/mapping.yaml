@@ -11,3 +11,18 @@ f63e2fab85c1183e4f451b7150bf7bd4:
   maintainer: "Justas Balcas"
   status: development
   type: Agent
+e17b2d9a8e86697210763feceb02d6ce:
+  config: Agent02/
+  maintainer: "Justas Balcas"
+  status: development
+  type: Agent
+dd17e6ff13b3d61b8c42acd9f9629f5e:
+  config: Agent03/
+  maintainer: "Justas Balcas"
+  status: development
+  type: Agent
+fc4443e197efd719e83251588da4e938:
+  config: Agent04/
+  maintainer: "Justas Balcas"
+  status: development
+  type: Agent
