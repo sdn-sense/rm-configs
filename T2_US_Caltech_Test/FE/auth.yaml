@@ -17,3 +17,12 @@ prodtransfeR:
 prometheus:
   full_dn: "/C=US/O=Let's Encrypt/CN=R3/CN=influx.sdn-sense.dev"
   permissions: r
+sandie1:
+  full_dn: "/C=US/O=Let's Encrypt/CN=R3/CN=sandie-1.ultralight.org"
+  permissions: w
+sandie5:
+  full_dn: "/C=US/O=Let's Encrypt/CN=R3/CN=sandie-5.ultralight.org"
+  permissions: w
+sandie6:
+  full_dn: "/C=US/O=Let's Encrypt/CN=R3/CN=sandie-6.ultralight.org"
+  permissions: w
