@@ -23,7 +23,7 @@ aristaeos_s0:
   vlan_range: [3870-3883,3911-3912]
   port_Port-Channel501_capacity: 200
   port_Port-Channel501_desttype: switch
-  port_Port-Channel501_isAlias: "urn:ogf:network:ultralight.org:2013:aristaeos_s0:Port-Channel111"
+  port_Port-Channel501_isAlias: "urn:ogf:network:ultralight.org:2013:aristaeos_s0:Port-Channel112"
   port_Port-Channel501_vlan_range: [3870-3883,3911-3912]
   port_Port-Channel502_capacity: 400
   port_Port-Channel502_desttype: switch
