@@ -18,12 +18,13 @@ NRM_CENIC:
     - "aristaeos_s0"
 aristaeos_s0:
   vsw: "aristaeos_s0"
+  rst: "aristaeos_s0"
   allports: True
   vlan_range: [3870-3883,3911-3912]
-  port_Ethernet29-1_capacity: 100
-  port_Ethernet29-1_desttype: switch
-  port_Ethernet29-1_isAlias: "urn:ogf:network:ultralight.org:2013:aristaeos_s0:Ethernet32-1"
-  port_Ethernet29-1_vlan_range: [3870-3883,3911-3912]
+  port_Port-Channel501_capacity: 200
+  port_Port-Channel501_desttype: switch
+  port_Port-Channel501_isAlias: "urn:ogf:network:ultralight.org:2013:aristaeos_s0:Port-Channel111"
+  port_Port-Channel501_vlan_range: [3870-3883,3911-3912]
   port_Port-Channel502_capacity: 400
   port_Port-Channel502_desttype: switch
   port_Port-Channel502_isAlias: "urn:ogf:network:calit2.optiputer.net:2020:prism-core:k8s-igrok-02"
