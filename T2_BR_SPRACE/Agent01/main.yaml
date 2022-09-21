@@ -15,7 +15,7 @@ agent:
   hostname: sprace02.redclara.net
   rsts_enabled: "ipv4,ipv6"
 enp130s0:
-  port: 1/2
+  port: "1_2"
   switch: s0
   shared: false
   vlan_max: 10000
