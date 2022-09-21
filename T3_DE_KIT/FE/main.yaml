@@ -23,18 +23,7 @@ s0:
   port1_1_capacity: 100
   port1_1_desttype: switch
   port1_1_isAlias: "urn:ogf:network:surf.nl:2020:production:netherlight.de-kit-1"
-  port1_1_vlan_range: 3985-3989
+  port1_1_vlan_range: [3985-3989]
   port1_2_capacity: 100
-  port1_2_vlan_range: 3985-3989
-prefixes: 
-  mrs: "http://schemas.ogf.org/mrs/2013/12/topology#"
-  nml: "http://schemas.ogf.org/nml/2013/03/base#"
-  owl: "http://www.w3.org/2002/07/owl#"
-  rdf: "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-  rdfs: "http://www.w3.org/2000/01/rdf-schema#"
-  schema: "http://schemas.ogf.org/nml/2012/10/ethernet"
-  sd: "http://schemas.ogf.org/nsi/2013/12/services/definition#"
-  site: "urn:ogf:network"
-  xml: "http://www.w3.org/XML/1998/namespace#"
-  xsd: "http://www.w3.org/2001/XMLSchema#"
+  port1_2_vlan_range: [3985-3989]
 
