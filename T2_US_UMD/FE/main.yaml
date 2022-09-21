@@ -5,7 +5,7 @@ general:
   privatedir: /opt/siterm/config/
   sites: 
     - "T2_US_UMD"
-  webdomain: "https://180-131.research.maxgigapop.net:8443"
+  webdomain: "https://ptxn-sense-v1.maxgigapop.net:8443"
 T2_US_UMD:
   domain: maxgigapop.net
   latitude: 38.9869
@@ -26,20 +26,9 @@ s0:
   port_1_1_desttype: switch
   port_1_1_hostname: wash-cr6
   port_1_1_isAlias: "urn:ogf:network:es.net:2013::wash-cr6:1_1_c6_1:+"
-  port_1_1_vlan_range: 3600-3619
+  port_1_1_vlan_range: [3600-3619]
   port_1_2_capacity: 40
-  port_1_2_vlan_range: 3600-3619
+  port_1_2_vlan_range: [3600-3619]
   port_1_3_capacity: 40
-  port_1_3_vlan_range: 3600-3619
-prefixes: 
-  mrs: "http://schemas.ogf.org/mrs/2013/12/topology#"
-  nml: "http://schemas.ogf.org/nml/2013/03/base#"
-  owl: "http://www.w3.org/2002/07/owl#"
-  rdf: "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-  rdfs: "http://www.w3.org/2000/01/rdf-schema#"
-  schema: "http://schemas.ogf.org/nml/2012/10/ethernet"
-  sd: "http://schemas.ogf.org/nsi/2013/12/services/definition#"
-  site: "urn:ogf:network"
-  xml: "http://www.w3.org/XML/1998/namespace#"
-  xsd: "http://www.w3.org/2001/XMLSchema#"
+  port_1_3_vlan_range: [3600-3619]
 
