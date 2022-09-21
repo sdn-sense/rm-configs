@@ -7,7 +7,7 @@ general:
   sitename: [T2_US_UCSD]
   webdomain: "https://sense-fe.nrp-nautilus.io:8443"
 agent: 
-  interfaces: enp33s0f1
+  interfaces: [enp33s0f1]
   norules: false
   hostname: k8s-igrok-01.calit2.optiputer.net
   rsts_enabled: "ipv4,ipv6"
