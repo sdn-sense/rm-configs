@@ -2,7 +2,7 @@
 general:
   ip: "67.58.53.139"
   logdir: /var/log/dtnrm-agent/
-  loglevel: INFO
+  loglevel: DEBUG
   private_dir: /opt/siterm/config/
   sitename: [T2_US_UCSD]
   webdomain: "https://sense-fe.nrp-nautilus.io:8443"
