@@ -8,3 +8,9 @@ orchestrator:
 xiyang:
   full_dn: "/O=University of Maryland/OU=Mid-Atlantic Crossroads/OU=research.maxgigapop.net/CN=Simple CA/C=US/ST=Maryland/O=University of Maryland/OU=RESEARCH.MAXGIGAPOP.NET/CN=Xi Yang"
   permissions: w
+prometheus:
+  full_dn: "/C=US/O=Let's Encrypt/CN=R3/CN=influx.sdn-sense.dev"
+  permissions: r
+agent:
+  full_dn: "/C=US/ST=California/L=Pasadena/O=Caltech/CN=sdn-sense.dev/C=US/ST=Maryland/L=Maryland/O=University of Maryland/CN=ptxn-sense-v1.maxgigapop.net"
+  permissions: w
