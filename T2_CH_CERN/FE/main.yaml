@@ -6,6 +6,7 @@ general:
   sites: 
     - "T2_CH_CERN"
   webdomain: "https://cixp-surfnet-dtn.cern.ch:8443"
+  probes: ["https_v4_siterm_2xx", "icmp_v4"]
 T2_CH_CERN:
   domain: cern.ch
   latitude: 46.1403
