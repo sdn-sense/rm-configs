@@ -12,7 +12,7 @@ agent:
   norules: false
   hostname: ptxn-sense-v1.maxgigapop.net
   rsts_enabled: "ipv4,ipv6"
-enp8s0:
+enp1s0:
   port: "1_2"
   shared: false
   switch: s0
