@@ -20,15 +20,6 @@ aristaeos_s0:
   vsw: "aristaeos_s0"
   rst: "aristaeos_s0"
   allports: True
-  ports_ignore:
-    - "Ethernet25/1"
-    - "Ethernet26/1"
-    - "Ethernet27/1"
-    - "Ethernet28/1"
-    - "Ethernet29/1"
-    - "Ethernet30/1"
-    - "Ethernet31/1"
-    - "Ethernet32/1"
   vlan_range: [1779-1799,3600-3619,3985-3989,3870-3883,3911-3912,3870-3883]
   port_Port-Channel501_capacity: 200
   port_Port-Channel501_desttype: switch
@@ -36,5 +27,5 @@ aristaeos_s0:
   port_Port-Channel501_vlan_range: [1779-1799,3600-3619,3985-3989,3870-3883,3911-3912,3870-3883]
   port_Port-Channel502_capacity: 400
   port_Port-Channel502_desttype: switch
-  port_Port-Channel502_isAlias: "urn:ogf:network:calit2.optiputer.net:2020:prism-core:k8s-igrok-02"
+  port_Port-Channel502_isAlias: "urn:ogf:network:nrp-nautilus.io:2020:sn3700_s0:PortChannel501"
   port_Port-Channel502_vlan_range: [3873,3874,3911,3912]
