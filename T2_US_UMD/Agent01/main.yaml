@@ -11,7 +11,7 @@ agent:
   interfaces: [enp8s0]
   norules: false
   public_intf: enp1s0
-  public_intf_max: 10000
+  public_intf_max: 1000
   hostname: ptxn-sense-v1.maxgigapop.net
   rsts_enabled: "ipv4,ipv6"
 eth2:
