@@ -20,7 +20,6 @@ T2_US_Caltech_Test:
   switch:
     - "dellos9_s0"
     - "aristaeos_s0"
-    - "dellos9_s1"
     - "sn3700_s0"
 dellos9_s0:
   vsw: "dellos9_s0"
@@ -34,31 +33,34 @@ dellos9_s0:
     - "Port-channel 102"
   ports_ignore:
     - "ManagementEthernet 1/1"
-  vlan_range: [1779-1799,3600-3619,3985-3989,3870-3883,3911-3912,3870-3883,3911-3912]
+    - "hundredGigE 1/8"
+    - "hundredGigE 1/9"
+  vlan_range: [1779-1799,3600-3619,3985-3989,3870-3883,3911-3912,3870-3883]
   allports: True
   port_hundredGigE_1-7_capacity: 100
   port_hundredGigE_1-7_desttype: switch
   port_hundredGigE_1-7_isAlias: "urn:ogf:network:lsanca.pacificwave.net:2016:lax-agg10:ultralight"
-  port_hundredGigE_1-7_vlan_range: [1779-1799,3600-3619,3985-3989]
+  port_hundredGigE_1-7_vlan_range: [1779-1799,3600-3619,3985-3989,3870-3883,3911-3912,3870-3883]
   port_Port-channel_103_capacity: 200
   port_Port-channel_103_desttype: switch
   port_Port-channel_103_isAlias: "urn:ogf:network:ultralight.org:2013:aristaeos_s0:Port-Channel111"
 aristaeos_s0:
    vsw: "aristaeos_s0"
    allports: True
-   vlan_range: [1779-1799,3600-3619,3985-3989,3870-3883,3911-3912,3870-3883,3911-3912]
+   ports_ignore:
+    - "Ethernet15/1"
+    - "Ethernet16/1"
+    - "Ethernet31/1"
+    - "Ethernet32/1"
+   vlan_range: [1779-1799,3600-3619,3985-3989,3870-3883,3911-3912,3870-3883]
    port_Port-Channel111_capacity: 200
    port_Port-Channel111_desttype: switch
    port_Port-Channel111_isAlias: "urn:ogf:network:ultralight.org:2013:dellos9_s0:Port-channel_103"
    port_Port-Channel112_capacity: 200
    port_Port-Channel112_desttype: switch
    port_Port-Channel112_isAlias: "urn:ogf:network:sc-test.cenic.net:2020:aristaeos_s0:Port-Channel501"
-   port_Port-Channel112_vlan_range: [3870-3883,3911-3912]
-dellos9_s1:
-   vsw: "dellos9_s1"
-   allports: True
-   vlan_range: [1779-1799,3600-3619,3985-3989,3870-3883,3911-3912,3870-3883,3911-3912]
+   port_Port-Channel112_vlan_range: [1779-1799,3600-3619,3985-3989,3870-3883,3911-3912,3870-3883]
 sn3700_s0:
    vsw: "sn3700_s0"
    allports: True
-   vlan_range: [1779-1799,3600-3619,3985-3989,3870-3883,3911-3912,3870-3883,3911-3912]
+   vlan_range: [1779-1799,3600-3619,3985-3989,3870-3883,3911-3912,3870-3883]
