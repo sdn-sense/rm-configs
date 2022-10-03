@@ -1,6 +1,6 @@
 ---
 general:
-  ip: "165.124.33.142"
+  ip: "165.124.33.233"
   logdir: /var/log/dtnrm-agent/
   loglevel: DEBUG
   private_dir: /opt/siterm/config/
