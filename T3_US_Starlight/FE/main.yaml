@@ -6,6 +6,7 @@ general:
   sites: 
     - "T3_US_Starlight"
   webdomain: "https://dtn110.sl.startap.net:8443"
+
 T3_US_Starlight: 
   domain: starlight.org
   latitude: 34.1377
@@ -14,7 +15,8 @@ T3_US_Starlight:
   privatedir: /opt/siterm/config/T3_US_Starlight/
   switch:
     - "s0"
-  year: 2013
+    - "s1"
+  year: 2022
 s0:
   vsw: "s0"
   ports:
@@ -27,3 +29,15 @@ s0:
   port_1_1_vlan_range: [1779-1790,1796-1799,3985-3989]
   port_1_2_capacity: 100
   port_1_2_vlan_range: [1779-1790,1796-1799,3985-3989]
+s1:
+  vsw: "s1"
+  ports:
+    - "1_1"
+    - "1_2"
+  vlan_range: [1779-1799]
+  port_1_1_capacity: 100
+  port_1_1_desttype: switch
+  port_1_1_isAlias: "urn:ogf:network:icair.org:2013:mren8700:r740xd4"
+  port_1_1_vlan_range: [1779-1799]
+  port_1_2_capacity: 100
+  port_1_2_vlan_range: [1779-1799]

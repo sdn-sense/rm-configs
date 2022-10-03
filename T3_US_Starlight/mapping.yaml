@@ -2,11 +2,16 @@
 
 1823313fe0bb4052d92f3fde3bd8a233:
   config: FE/
-  maintainer: "Xi Yang"
+  maintainer: "Fei Yeh"
   status: production
   type: FE
 c03ff2bffc6a0bca493a8612d0c41f7f:
   config: Agent01/
-  maintainer: "Xi Yang"
+  maintainer: "Fei Yeh"
+  status: production
+  type: Agent
+40bd9346af13d6f131caedce48ac36c1:
+  config: Agent02/
+  maintainer: "Fei Yeh"
   status: production
   type: Agent
