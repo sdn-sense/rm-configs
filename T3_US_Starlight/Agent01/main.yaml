@@ -5,12 +5,12 @@ general:
   loglevel: DEBUG
   private_dir: /opt/siterm/config/
   sitename: [T3_US_Starlight]
-  webdomain: "https://dtn110.sl.startap.net:8443"
-  node_exporter: "dtn110.sl.startap.net:9200"
+  webdomain: "https://dtn110.it.northwestern.edu:8443"
+  node_exporter: "dtn110.it.northwestern.edu:9200"
 agent: 
   interfaces: [p4p1]
   norules: false
-  hostname: dtn110.sl.startap.net
+  hostname: dtn110.it.northwestern.edu
   rsts_enabled: "ipv4,ipv6"
 p4p1: 
   port: "1_2"
