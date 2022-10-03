@@ -12,7 +12,7 @@ prometheus:
   full_dn: "/C=US/O=Let's Encrypt/CN=R3/CN=influx.sdn-sense.dev"
   permissions: r
 dtnagent:
-  full_dn: "/C=US/ST=California/L=Pasadena/O=Caltech/CN=sdn-sense.dev/C=US/ST=Illinois/L=Chicago/O=Starlight/CN=dtn110.sl.startap.net"
+  full_dn: "/C=US/ST=California/L=Pasadena/O=Caltech/CN=sdn-sense.dev/C=US/ST=Illinois/L=Chicago/O=Starlight/CN=dtn110.it.northwestern.edu"
   permissions: w
 dtnagent1:
   full_dn: "/C=US/ST=California/L=Pasadena/O=Caltech/CN=sdn-sense.dev/C=US/ST=Illinois/L=Chicago/O=Starlight/CN=r740xd4.it.northwestern.edu"
