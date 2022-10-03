@@ -20,6 +20,7 @@ s0:
   ports:
     - "1_1"
     - "1_2"
+  vlan_range: [140,1779-1799,3600-3619]
   port_1_1_capacity: 100
   port_1_1_desttype: switch
   port_1_1_isAlias: "urn:ogf:network:ampath.net:2013:topology:unesp-100g"

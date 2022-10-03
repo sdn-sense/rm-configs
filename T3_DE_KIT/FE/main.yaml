@@ -20,10 +20,11 @@ s0:
   ports:
     - "1_1"
     - "1_2"
-  port1_1_capacity: 100
-  port1_1_desttype: switch
-  port1_1_isAlias: "urn:ogf:network:surf.nl:2020:production:netherlight.de-kit-1"
-  port1_1_vlan_range: [3985-3989]
-  port1_2_capacity: 100
-  port1_2_vlan_range: [3985-3989]
+  vlan_range: [3985-3989]
+  port_1_1_capacity: 100
+  port_1_1_desttype: switch
+  port_1_1_isAlias: "urn:ogf:network:surf.nl:2020:production:netherlight.de-kit-1"
+  port_1_1_vlan_range: [3985-3989]
+  port_1_2_capacity: 100
+  port_1_2_vlan_range: [3985-3989]
 

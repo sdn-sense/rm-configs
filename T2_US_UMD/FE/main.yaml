@@ -20,6 +20,7 @@ s0:
   ports:
     - "1_1"
     - "1_2"
+  vlan_range: [3600-3619]
   port_1_1_capacity: 10
   port_1_1_destport: 7_1_1
   port_1_1_desttype: switch

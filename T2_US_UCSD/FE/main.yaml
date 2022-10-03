@@ -22,6 +22,7 @@ s0:
   ports:
     - "1_1"
     - "1_2"
+  vlan_range: [1779-1799,3602-3619,3985-3989]
   port_1_1_capacity: 100
   port_1_1_desttype: switch
   port_1_1_isAlias: "urn:ogf:network:calit2.optiputer.net:2020:prism-core:k8s-igrok-01"
@@ -33,6 +34,7 @@ s1:
   ports:
     - "1_1"
     - "1_2"
+  vlan_range: [1779-1799,3602-3619,3985-3989]
   port_1_1_capacity: 100
   port_1_1_desttype: switch
   port_1_1_isAlias: "urn:ogf:network:calit2.optiputer.net:2020:prism-core:k8s-igrok-02"

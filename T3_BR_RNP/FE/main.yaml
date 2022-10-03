@@ -20,6 +20,7 @@ s0:
   ports:
     - "1_1"
     - "1_2"
+  vlan_range: [1700-1705]
   port_1_1_capacity: 10
   port_1_1_desttype: switch
   port_1_1_isAlias: "urn:ogf:network:cipo.rnp.br:2013::MXRJ:ae0:+" # what should go put here?

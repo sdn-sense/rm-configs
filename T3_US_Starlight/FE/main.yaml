@@ -20,6 +20,7 @@ s0:
   ports:
     - "1_1"
     - "1_2"
+  vlan_range: [1779-1790,1796-1799,3985-3989]
   port_1_1_capacity: 100
   port_1_1_desttype: switch
   port_1_1_isAlias: "urn:ogf:network:icair.org:2013:mren8700:dtn110"

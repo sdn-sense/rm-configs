@@ -23,6 +23,7 @@ s0:
   ports:
     - "1_1"
     - "1_2"
+  vlan_range: [3605-3609]
   port_1_1_capacity: 100
   port_1_1_desttype: switch
   port_1_1_isAlias: "urn:ogf:network:uhnet.net:2021:hawaii-scidmz:uhmanoa-dtn"
@@ -34,6 +35,7 @@ s1:
   ports:
     - "1_1"
     - "1_2"
+  vlan_range: [3600-3604]
   port_1_1_capacity: 100
   port_1_1_desttype: switch
   port_1_1_isAlias: "urn:ogf:network:uhnet.net:2021:hawaii-scidmz:ifahurp-dtn"
@@ -45,6 +47,7 @@ s2:
   ports:
     - "1_1"
     - "1_2"
+  vlan_range: [3600-3604]
   port_1_1_capacity: 10
   port_1_1_desttype: switch
   port_1_1_isAlias: "urn:ogf:network:uhnet.net:2021:guam-gorex:uog-dtn"
