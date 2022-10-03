@@ -8,11 +8,11 @@ general:
   webdomain: "https://ptxn-sense-v1.maxgigapop.net:8443"
   node_exporter: "ptxn-sense-v1.maxgigapop.net:9100"
 agent: 
-  interfaces: [enp8s0]
+  interfaces: [enp1s0]
   norules: false
   hostname: ptxn-sense-v1.maxgigapop.net
   rsts_enabled: "ipv4,ipv6"
-enp8s0:
+enp1s0:
   port: "1_2"
   shared: false
   switch: s0

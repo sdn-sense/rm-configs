@@ -11,3 +11,6 @@ orchestrator:
 prometheus:
   full_dn: "/C=US/O=Let's Encrypt/CN=R3/CN=influx.sdn-sense.dev"
   permissions: r
+jbalcas:
+  full_dn: "/DC=ch/DC=cern/CN=CERN Grid Certification Authority/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=jbalcas/CN=751133/CN=Justas Balcas"
+  permissions: w
