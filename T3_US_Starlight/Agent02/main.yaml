@@ -5,7 +5,7 @@ general:
   loglevel: DEBUG
   private_dir: /opt/siterm/config/
   sitename: [T3_US_Starlight]
-  webdomain: "https://dtn110.it.northwestern.edu:10443"
+  webdomain: "https://r740xd4.it.northwestern.edu:8443"
   node_exporter: "r740xd4.it.northwestern.edu:9200"
 agent: 
   interfaces: [ens1f0]
