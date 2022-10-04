@@ -5,8 +5,8 @@ general:
   loglevel: DEBUG
   private_dir: /opt/siterm/config/
   sitename: [T3_US_FIU]
-  webdomain: "https://67.17.206.195:8443"
-  node_exporter: "67.17.206.195:9100"
+  webdomain: "https://ox.amlight.net:8443"
+  node_exporter: "ox.amlight.net:9100"
 agent: 
   interfaces: [ens6f0]
   norules: false
