@@ -21,9 +21,9 @@ aristaeos_s0:
   rst: "aristaeos_s0"
   allports: True
   vlan_range: [1779-1799,3600-3619,3985-3989,3870-3883,3911-3912,3870-3883]
-  port_Port-Channel501_capacity: 200
+  port_Port-Channel501_capacity: 400
   port_Port-Channel501_desttype: switch
-  port_Port-Channel501_isAlias: "urn:ogf:network:ultralight.org:2013:aristaeos_s0:Port-Channel112"
+  port_Port-Channel501_isAlias: "urn:ogf:network:ultralight.org:2013:dellos9_s0:Port-channel_103"
   port_Port-Channel501_vlan_range: [1779-1799,3600-3619,3985-3989,3870-3883,3911-3912,3870-3883]
   port_Port-Channel502_capacity: 400
   port_Port-Channel502_desttype: switch
