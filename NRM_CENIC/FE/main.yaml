@@ -20,11 +20,11 @@ aristaeos_s0:
   vsw: "aristaeos_s0"
   rst: "aristaeos_s0"
   allports: True
-  vlan_range: [1779-1799,3600-3619,3985-3989,3870-3883,3911-3912,3870-3883]
+  vlan_range: [1779-1799,3600-3619,3985-3989,3870-3883,3911-3912]
   port_Port-Channel501_capacity: 400
   port_Port-Channel501_desttype: switch
   port_Port-Channel501_isAlias: "urn:ogf:network:ultralight.org:2013:dellos9_s0:Port-channel_103"
-  port_Port-Channel501_vlan_range: [1779-1799,3600-3619,3985-3989,3870-3883,3911-3912,3870-3883]
+  port_Port-Channel501_vlan_range: [1779-1799,3600-3619,3985-3989,3870-3883,3911-3912]
   port_Port-Channel502_capacity: 400
   port_Port-Channel502_desttype: switch
   port_Port-Channel502_isAlias: "urn:ogf:network:nrp-nautilus.io:2020:sn3700_s0:PortChannel501"
@@ -32,4 +32,4 @@ aristaeos_s0:
   port_Ethernet11-1_capacity: 100
   port_Ethernet11-1_desttype: switch
   port_Ethernet11-1_isAlias: "urn:ogf:network:lsanca.pacificwave.net:2016:pw-losa2-1:Arista-400G"
-  port_Ethernet11-1_vlan_range: [1779-1799,3600-3619,3985-3989,3870-3883,3911-3912,3870-3883]
+  port_Ethernet11-1_vlan_range: [1779-1799,3600-3619,3985-3989,3870-3883,3911-3912]
