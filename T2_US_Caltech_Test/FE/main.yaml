@@ -27,6 +27,11 @@ dellos9_s0:
   vrf: lhcone
   ports_ignore:
     - "ManagementEthernet 1/1"
+    - "hundredGigE 1/1"
+    - "hundredGigE 1/2"
+    - "hundredGigE 1/7"
+    - "hundredGigE 1/8"
+    - "hundredGigE 1/9"
   vlan_range: [1779-1799,3600-3619,3985-3989,3870-3883,3911-3912,3870-3883]
   allports: True
   port_Port-channel_103_vlan_range: [1779-1799,3600-3619,3985-3989,3870-3883,3911-3912,3870-3883]
