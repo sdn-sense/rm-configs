@@ -8,7 +8,7 @@ general:
   webdomain: "https://sense-fe.nrp-nautilus.io:8443"
   probes: ["https_v4_siterm_2xx"]
 T2_US_UCSD:
-  domain: nrp-nautilus.io
+  domain: nrp-nautilus-prod.io
   latitude: 32.882648
   longitude: -117.234579
   plugin: raw
