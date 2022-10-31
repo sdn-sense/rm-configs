@@ -26,7 +26,7 @@ dellos9_s0:
   private_asn: 64513
   vrf: lhcone
   ports:
-    - "Port-Channel 103"
+    - "Port-channel 103"
     - "hundredGigE 1/10"
     - "hundredGigE 1/11"
     - "hundredGigE 1/12"
