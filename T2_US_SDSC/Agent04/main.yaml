@@ -15,8 +15,8 @@ agent:
   hostname: k8s-gen4-02.sdsc.optiputer.net
   rsts_enabled: "ipv4,ipv6"
 enp65s0np0:
-  port: updateme
-  switch: s0
+  port: Ethernet28
+  switch: sn3700_s0
   shared: false
   vlan_max: 100000
   vlan_min: 1000
