@@ -22,7 +22,11 @@ sn3700_s0:
   rst: "sn3700_s0"
   rsts_enabled: "ipv4,ipv6"
   private_asn: 65000
-  allports: True
+  allports: False
+  ports:
+    - "PortChannel501"
+    - "Ethernet24"
+    - "Ethernet28"
   vlan_range: [3873,3874,3911,3912]
   port_PortChannel501_capacity: 100
   port_PortChannel501_desttype: switch

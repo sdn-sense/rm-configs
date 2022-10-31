@@ -25,15 +25,14 @@ dellos9_s0:
   rsts_enabled: "ipv4,ipv6"
   private_asn: 64513
   vrf: lhcone
-  ports_ignore:
-    - "ManagementEthernet 1/1"
-    - "hundredGigE 1/1"
-    - "hundredGigE 1/2"
-    - "hundredGigE 1/7"
-    - "hundredGigE 1/8"
-    - "hundredGigE 1/9"
+  ports:
+    - "Port-Channel 103"
+    - "hundredGigE 1/10"
+    - "hundredGigE 1/11"
+    - "hundredGigE 1/12"
+    - "hundredGigE 1/23"
   vlan_range: [1779-1799,3600-3619,3985-3989,3870-3883,3911-3912,3870-3883]
-  allports: True
+  allports: False
   port_Port-channel_103_vlan_range: [1779-1799,3600-3619,3985-3989,3870-3883,3911-3912,3870-3883]
   port_Port-channel_103_capacity: 300
   port_Port-channel_103_desttype: switch
