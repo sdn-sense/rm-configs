@@ -20,7 +20,7 @@ fc1160fd224208219cbae01c8c8cc4cf:
   status: production
   type: Agent
 763e50c3f234729614fd4b03d140fa18:
-  config: Agent03/
+  config: Agent04/
   maintainer: "John Graham"
   status: production
   type: Agent
