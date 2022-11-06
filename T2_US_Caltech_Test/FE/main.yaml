@@ -25,6 +25,7 @@ dellos9_s0:
   rsts_enabled: "ipv4,ipv6"
   private_asn: 64513
   vrf: lhcone
+  vlan_mtu: 9214
   ports:
     - "Port-channel 103"
     - "hundredGigE 1/3"
