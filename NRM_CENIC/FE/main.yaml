@@ -23,6 +23,8 @@ aristaeos_s0:
   ports:
     - "Port-Channel501"
     - "Port-Channel502"
+    - "Ethernet9/1"
+    - "Ethernet10/1"
     - "Ethernet11/1"
   vlan_range: [1779-1799,3600-3619,3985-3989,3870-3883,3911-3912]
   port_Port-Channel501_capacity: 400
@@ -33,6 +35,14 @@ aristaeos_s0:
   port_Port-Channel502_desttype: switch
   port_Port-Channel502_isAlias: "urn:ogf:network:nrp-nautilus.io:2020:sn3700_s0:PortChannel501"
   port_Port-Channel502_vlan_range: [3873,3874,3911,3912]
+  port_Ethernet9-1_capacity: 100
+  port_Ethernet9-1_desttype: switch
+  port_Ethernet9-1_isAlias: "urn:ogf:network:core1.losa.net.internet2.edu:2016:core1:HundredGigE0_0_0_12"
+  port_Ethernet9-1_vlan_range: [3874]
+  port_Ethernet10-1_capacity: 100
+  port_Ethernet10-1_desttype: switch
+  port_Ethernet10-1_isAlias: "urn:ogf:network:core1.losa.net.internet2.edu:2016:core1:HundredGigE0_0_0_13"
+  port_Ethernet10-1_vlan_range: [3873]
   port_Ethernet11-1_capacity: 100
   port_Ethernet11-1_desttype: switch
   port_Ethernet11-1_isAlias: "urn:ogf:network:lsanca.pacificwave.net:2016:pw-losa2-1:Arista-400G"
