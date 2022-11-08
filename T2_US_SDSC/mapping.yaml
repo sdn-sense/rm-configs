@@ -24,3 +24,38 @@ fc1160fd224208219cbae01c8c8cc4cf:
   maintainer: "John Graham"
   status: production
   type: Agent
+313e34fa28a2a08961b77d8d5089ddf5:
+  config: Agent05/
+  maintainer: "John Graham"
+  status: production
+  type: Agent
+e6eba13ca1ff6223b71971b77117ac05:
+  config: Agent06/
+  maintainer: "John Graham"
+  status: production
+  type: Agent
+f53409021b86978b70405282d7e233ca:
+  config: Agent07/
+  maintainer: "John Graham"
+  status: production
+  type: Agent
+3c251fa2adea9d0bdb1d66e57210444e:
+  config: Agent08/
+  maintainer: "John Graham"
+  status: production
+  type: Agent
+8bce0e1ebb6222468ec239ecded50473:
+  config: Agent09/
+  maintainer: "John Graham"
+  status: production
+  type: Agent
+294a80beb3c5b66f5f667ed340e28653:
+  config: Agent10/
+  maintainer: "John Graham"
+  status: production
+  type: Agent
+6c1e6fcebac1a2d0ac2c7c89bb0823a4:
+  config: Agent11/
+  maintainer: "John Graham"
+  status: production
+  type: Agent
