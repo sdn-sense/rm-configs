@@ -14,7 +14,7 @@ agent:
   public_intf_max: 100000
   hostname: node-2-12.sdsc.optiputer.net
   rsts_enabled: "ipv4,ipv6"
-  qos_params: "mtu 9000 mpu 9000 quantum 200000 burst 300000 cburst 300000 qdisc sfq"
+  qos_params: "mtu 9000 mpu 9000 quantum 200000 burst 300000 cburst 300000 qdisc sfq balanced"
 enp193s0f1np1:
   port: Ethernet32
   switch: sn3700_s0

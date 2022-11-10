@@ -14,7 +14,7 @@ agent:
   public_intf_max: 100000
   hostname: sandie-6.ultralight.org
   rsts_enabled: "ipv4,ipv6"
-  qos_params: "mtu 9000 mpu 9000 quantum 200000 burst 300000 cburst 300000 qdisc sfq"
+  qos_params: "mtu 9000 mpu 9000 quantum 200000 burst 300000 cburst 300000 qdisc sfq balanced"
 enp41s0f0:
   port: hundredGigE 1/12
   switch: dellos9_s0
