@@ -20,6 +20,8 @@ aristaeos_s0:
   vsw: "aristaeos_s0"
   rst: "aristaeos_s0"
   allports: False
+  allvlans: False
+  snmp_monitoring: True
   ports:
     - "Port-Channel501"
     - "Port-Channel502"
