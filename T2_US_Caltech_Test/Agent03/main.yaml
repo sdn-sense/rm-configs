@@ -5,17 +5,17 @@ general:
   loglevel: DEBUG
   private_dir: /opt/siterm/config/
   sitename: [T2_US_Caltech_Test]
-  webdomain: "https://sdn-login-1.ultralight.org:8443"
+  webdomain: "https://sense-caltech-fe.ultralight.org:8443"
   node_exporter: "sandie-5.ultralight.org:9100"
 agent: 
-  interfaces: [enp49s0f0]
+  interfaces: [mlx4p1s2]
   norules: false
-  public_intf: enp49s0f0.43
+  public_intf: mlx4p1s2.43
   public_intf_max: 100000
   hostname: sandie-5.ultralight.org
   rsts_enabled: "ipv4,ipv6"
   qos_params: "mtu 9000 mpu 9000 quantum 200000 burst 300000 cburst 300000 qdisc sfq balanced"
-enp49s0f0:
+mlx4p1s2:
   port: hundredGigE 1/11
   switch: dellos9_s0
   shared: false

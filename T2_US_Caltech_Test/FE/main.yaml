@@ -5,7 +5,7 @@ general:
   privatedir: /opt/siterm/config/
   sites: 
     - "T2_US_Caltech_Test"
-  webdomain: "https://sdn-login-1.ultralight.org:8443"
+  webdomain: "https://sense-caltech-fe.ultralight.org:8443"
 T2_US_Caltech_Test: 
   domain: ultralight.org
   latitude: 34.1377
