@@ -5,7 +5,7 @@ general:
   loglevel: DEBUG
   private_dir: /opt/siterm/config/
   sitename: [T2_US_Caltech_Test]
-  webdomain: "https://sense-caltech-fe.ultralight.org:8443"
+  webdomain: "https://sense-caltech-fe.ultralight.org:443"
   node_exporter: "sandie-6.ultralight.org:9100"
 agent: 
   interfaces: [mlx4p1s2]
