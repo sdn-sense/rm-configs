@@ -2,27 +2,15 @@
 jbalcas:
   full_dn: "/DC=ch/DC=cern/CN=CERN Grid Certification Authority/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=jbalcas/CN=751133/CN=Justas Balcas"
   permissions: w
-dtnlogin:
-  full_dn: "/C=US/O=Let's Encrypt/CN=R3/CN=sdn-login-1.ultralight.org"
-  permissions: w
 orchestrator:
   full_dn: "/C=US/ST=California/L=Berkeley/O=LBNL/OU=ESnet/CN=sense-o.es.net/C=US/ST=California/L=Berkeley/O=LBNL/CN=sense-o.es.net"
   permissions: w
 xiyang:
   full_dn: "/O=University of Maryland/OU=Mid-Atlantic Crossroads/OU=research.maxgigapop.net/CN=Simple CA/C=US/ST=Maryland/O=University of Maryland/OU=RESEARCH.MAXGIGAPOP.NET/CN=Xi Yang"
   permissions: w
-prodtransfeR:
-  full_dn: "/C=US/ST=California/L=Pasadena/O=Caltech/CN=sdn-sense.dev/C=US/ST=California/L=Pasadena/O=Caltech/CN=sdn-dtn-1-7.ultralight.org"
-  permissions: w
 prometheus:
   full_dn: "/C=US/O=Let's Encrypt/CN=R3/CN=influx.sdn-sense.dev"
   permissions: r
-sandie1:
-  full_dn: "/C=US/O=Let's Encrypt/CN=R3/CN=sandie-1.ultralight.org"
-  permissions: w
-sandie5:
-  full_dn: "/C=US/O=Let's Encrypt/CN=R3/CN=sandie-5.ultralight.org"
-  permissions: w
-sandie6:
-  full_dn: "/C=US/O=Let's Encrypt/CN=R3/CN=sandie-6.ultralight.org"
+daemonset:
+  full_dn: "/C=US/ST=California/L=Pasadena/O=Caltech/CN=sdn-sense.dev/C=US/ST=California/L=Pasadena/O=Caltech/CN=sense-caltech-fe.ultralight.org"
   permissions: w
