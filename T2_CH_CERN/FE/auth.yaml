@@ -9,5 +9,5 @@ dtn:
   full_dn: "/C=US/ST=California/L=Pasadena/O=Caltech/CN=sdn-sense.dev/C=CH/ST=Geneva/L=Geneva/O=CERN/CN=cixp-surfnet-dtn.cern.ch"
   permissions: w
 prometheus:
-  full_dn: "/C=US/O=Let's Encrypt/CN=R3/CN=influx.sdn-sense.dev"
+  full_dn: "/C=US/ST=California/L=Pasadena/O=Caltech/CN=sdn-sense.dev/C=US/ST=California/L=Pasadena/O=Caltech/CN=autogole-grafana-prometheus.ultralight.org"
   permissions: r
