@@ -5,7 +5,7 @@ general:
   loglevel: DEBUG
   private_dir: /opt/siterm/config/
   sitename: [T2_US_SDSC]
-  webdomain: "https://sdn-login-1.ultralight.org:9443"
+  webdomain: "https://sense-ucsd-fe.ultralight.org:443"
   node_exporter: "nrp-05.nrp-nautilus.io:9100"
 agent: 
   interfaces: [enp2s0f0]

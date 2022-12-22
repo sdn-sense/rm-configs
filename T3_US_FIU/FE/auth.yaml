@@ -2,9 +2,6 @@
 jbalcas:
   full_dn: "/DC=ch/DC=cern/CN=CERN Grid Certification Authority/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=jbalcas/CN=751133/CN=Justas Balcas"
   permissions: w
-dtnlogin:
-  full_dn: "/C=US/O=Let's Encrypt/CN=R3/CN=sdn-login-1.ultralight.org"
-  permissions: w
 orchestrator:
   full_dn: "/C=US/ST=California/L=Berkeley/O=LBNL/OU=ESnet/CN=sense-o.es.net/C=US/ST=California/L=Berkeley/O=LBNL/CN=sense-o.es.net"
   permissions: w

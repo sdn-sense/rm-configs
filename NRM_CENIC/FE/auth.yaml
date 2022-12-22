@@ -11,6 +11,3 @@ orchestrator:
 prometheus:
   full_dn: "/C=US/O=Let's Encrypt/CN=R3/CN=influx.sdn-sense.dev"
   permissions: r
-dtnlogin:
-  full_dn: "/C=US/O=Let's Encrypt/CN=R3/CN=sdn-login-1.ultralight.org"
-  permissions: w
