@@ -5,7 +5,7 @@ general:
   privatedir: /opt/siterm/config/
   sites: 
     - "NRM_CENIC"
-  webdomain: "https://sense-ladowntown-fe.ultralight.org:443"
+  webdomain: "https://sense-ladowntown-fe.sdn-lb.ultralight.org:443"
 NRM_CENIC:
   domain: sc-test.cenic.net
   latitude: 33.9416

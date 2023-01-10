@@ -5,7 +5,7 @@ general:
   privatedir: /opt/siterm/config/
   sites: 
     - "T2_US_SDSC"
-  webdomain: "https://sense-ucsd-fe.ultralight.org:443"
+  webdomain: "https://sense-prpdev-fe.sdn-lb.ultralight.org:443"
 T2_US_SDSC:
   domain: nrp-nautilus.io
   latitude: 32.882648

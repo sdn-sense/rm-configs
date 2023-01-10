@@ -5,7 +5,7 @@ general:
   loglevel: DEBUG
   private_dir: /opt/siterm/config/
   sitename: [T2_US_SDSC]
-  webdomain: "https://sense-ucsd-fe.ultralight.org:443"
+  webdomain: "https://sense-prpdev-fe.sdn-lb.ultralight.org:443"
   node_exporter: "node-2-12.sdsc.optiputer.net:9100"
 agent: 
   interfaces: [enp193s0f1np1]
