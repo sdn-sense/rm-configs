@@ -8,15 +8,15 @@ general:
   webdomain: "https://sense-prpdev-fe.sdn-lb.ultralight.org:443"
   node_exporter: "k8s-gen4-01.sdsc.optiputer.net:9100"
 agent: 
-  interfaces: [enp65s0np0]
+  interfaces: [enp65s0]
   norules: false
   public_intf: vlan.4070
   public_intf_max: 100000
   hostname: k8s-gen4-01.sdsc.optiputer.net
   rsts_enabled: "ipv4,ipv6"
   qos_params: "mtu 9000 mpu 9000 quantum 200000 burst 300000 cburst 300000 qdisc sfq balanced"
-enp65s0np0:
-  port: Ethernet40
+enp65s0:
+  port: Ethernet104
   switch: sn3700_s0
   shared: false
   vlan_max: 100000
