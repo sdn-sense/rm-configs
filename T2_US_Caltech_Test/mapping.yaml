@@ -1,6 +1,4 @@
 ---
-
-
 8feb35ed655904aa30d466658756a87f: 
   config: FE/
   maintainer: "Justas Balcas"
@@ -28,6 +26,11 @@ d8542db5344a5c37ef3ccd13348c19ab:
   type: Agent
 b6667809a1f3258708ca78b5833ce656:
   config: Agent05/
+  maintainer: "Justas Balcas"
+  status: development
+  type: Agent
+fd769ec2cea02eeed0c3e0bcf14141e0:
+  config: Agent06/
   maintainer: "Justas Balcas"
   status: development
   type: Agent

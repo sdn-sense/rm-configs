@@ -19,7 +19,7 @@ mlx3p1s1:
   port: fortyGigE 1/30/1
   switch: dellos9_s0
   shared: false
-  vlan_max: 100000
+  vlan_max: 40000
   vlan_min: 1000
   vlans: [1779-1799,3600-3619,3985-3989,3870-3883,3911-3912,3870-3883,3911-3912]
   macvlans: [macvlan0,macvlan1,macvlan2,macvlan3]
