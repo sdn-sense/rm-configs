@@ -6,6 +6,7 @@ general:
   sites: 
     - "NRM_CENIC"
   webdomain: "https://sense-ladowntown-fe.sdn-lb.ultralight.org:443"
+  probes: ['https_v4_siterm_2xx', 'icmp_v4']
 NRM_CENIC:
   domain: sc-test.cenic.net
   latitude: 33.9416

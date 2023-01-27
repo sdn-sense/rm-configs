@@ -6,6 +6,7 @@ general:
   sites: 
     - "T2_US_SDSC"
   webdomain: "https://sense-prpdev-fe.sdn-lb.ultralight.org:443"
+  probes: ['https_v4_siterm_2xx', 'icmp_v4']
 T2_US_SDSC:
   domain: nrp-nautilus.io
   latitude: 32.882648

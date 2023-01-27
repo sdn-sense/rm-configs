@@ -6,6 +6,7 @@ general:
   sites: 
     - "T2_US_Caltech_Test"
   webdomain: "https://sense-caltech-fe.sdn-lb.ultralight.org:443"
+  probes: ['https_v4_siterm_2xx', 'icmp_v4']
 T2_US_Caltech_Test: 
   domain: ultralight.org
   latitude: 34.1377
