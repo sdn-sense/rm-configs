@@ -27,7 +27,7 @@ dellos9_s0:
   rsts_enabled: "ipv4,ipv6"
   private_asn: 64513
   vrf: lhcone
-  vlan_mtu: 9214
+  vlan_mtu: 9416
   ports:
     - "Port-channel 102"
     - "Port-channel 103"
@@ -55,7 +55,7 @@ dellos9_s0:
   port_Port-channel_102_desttype: "urn:ogf:network:ultralight.org:2013:dellos9_s1:Port-channel_102"
 dellos9_s1:
   vsw: "dellos9_s1"
-  vlan_mtu: 9214
+  vlan_mtu: 9416
   ports:
     - "Port-channel 102"
     - "hundredGigE 1/1"
