@@ -1,0 +1,32 @@
+--- 
+general:
+  logDir: /var/log/dtnrm-site-fe/
+  logLevel: DEBUG
+  privatedir: /opt/siterm/config/
+  sites: 
+    - "T1_US_FNAL"
+  webdomain: "https://cmssense1.fnal.gov:8443"
+T1_US_FNAL:
+  domain: fnal.gov
+  latitude: 41.8384
+  longitude: 88.2616
+  plugin: raw
+  switch:
+    - "s0"
+  privatedir: /opt/siterm/config/T1_US_FNAL/
+  year: 2023
+s0:
+  vsw: "s0"
+  ports:
+    - "1_1"
+    - "1_2"
+  vlan_range: [3600-3619]
+  port_1_1_capacity: 10
+  port_1_1_destport: 7_1_1
+  port_1_1_desttype: switch
+  port_1_1_hostname: fnalfcc-cr6
+  port_1_1_isAlias: "urn:ogf:network:es.net:2013::fnalfcc-cr6:lag-1:+"
+  port_1_1_vlan_range: [3600-3619]
+  port_1_2_capacity: 10
+  port_1_2_vlan_range: [3600-3619]
+
