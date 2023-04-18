@@ -10,7 +10,7 @@ general:
 agent: 
   interfaces: [mlx6p1s1]
   norules: false
-  public_intf: mlx6p1s1.43
+  public_intf: sensexrd1
   public_intf_max: 100000
   hostname: sandie-9.ultralight.org
   rsts_enabled: "ipv4,ipv6"
