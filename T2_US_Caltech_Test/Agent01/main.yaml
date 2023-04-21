@@ -1,23 +1,17 @@
 ---
 general:
   ip: "198.32.43.13"
-  logdir: /var/log/dtnrm-agent/
-  loglevel: DEBUG
-  private_dir: /opt/siterm/config/
   sitename: [T2_US_Caltech_Test]
   webdomain: "https://sense-caltech-fe.sdn-lb.ultralight.org:443"
   node_exporter: "sdn-dtn-1-7.ultralight.org:9100"
 agent: 
   interfaces: [mlx4p1s1]
-  norules: false
   hostname: sdn-dtn-1-7.ultralight.org
-  rsts_enabled: "ipv4,ipv6"
 mlx4p1s1:
   port: hundredGigE 1/23
   switch: dellos9_s0
   shared: false
-  public_intf: sensexrd1
-  public_intf_max: 100000
+  intf_max: 100000
   vlan_max: 100000
   vlan_min: 1000
   vlans: [1779-1799,3600-3619,3985-3989,3870-3883,3911-3912,3870-3883,3911-3912]
@@ -30,12 +24,9 @@ qos:
     sensexrd1:
       ipv6_range: 2605:d9c0:2:fff1::0/64
       master_intf: mlx4p1s1
-      services: 13
     sensexrd2:
       ipv6_range: 2605:d9c0:2:fff2::0/64
       master_intf: mlx4p1s1
-      services: 13
     sensexrd3:
       ipv6_range: 2605:d9c0:2:fff3::0/64
       master_intf: mlx4p1s1
-      services: 13
