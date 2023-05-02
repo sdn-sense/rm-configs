@@ -26,8 +26,11 @@ sn3700_s0:
   allports: False
   ports:
     - "PortChannel501"
+    - "Ethernet44"
+    - "Ethernet40"
+    - "Ethernet52"
+    - "Ethernet100"
     - "Ethernet104"
-    - "Ethernet108"
   vlan_range: [3873,3874,3911,3912]
   port_PortChannel501_capacity: 100
   port_PortChannel501_desttype: switch
