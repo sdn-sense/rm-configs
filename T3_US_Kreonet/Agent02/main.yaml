@@ -1,25 +1,24 @@
 ---
 general:
   ip: "134.75.254.12"
-  logdir: /var/log/dtnrm-agent/
-  loglevel: INFO
-  private_dir: /opt/siterm/config/
   sitename: [T3_US_Kreonet]
   webdomain: "https://134.75.254.12:8443"
 agent: 
   interfaces: [eno1]
-  norules: false
-  public_intf: eno2
-  public_intf_max: 10000
   hostname: sense-dtn2.kreonet.net
-  rsts_enabled: "ipv4,ipv6"
 eno1:
   port: "1_2"
   shared: false
   switch: s0
-  vlan_max: 10000
-  vlan_min: 1000
-  vlans: [3985-3989]
+  intf_max: 100000
+  max_bandwidth: 100000
+  min_bandwidth: 1000
+  vlan_range: [3985-3989]
   ipv4-address-pool: [10.251.85.0/24,10.251.86.0/24,10.251.87.0/24,10.251.88.0/24,10.251.89.0/24,172.16.6.0/30,172.17.6.0/30,172.18.6.0/30,172.19.6.0/30]
   ipv6-address-pool: [fc00:3600::0/64,fc00:3601::0/64,fc00:3602::0/64,fc00:3603::0/64,fc00:3604::0/64,fc00:3605::0/64,fc00:3606::0/64,fc00:3607::0/64,fc00:3608::0/64,fc00:3609::0/64,fc00:3610::0/64,fc00:3611::0/64,fc00:3612::0/64,fc00:3613::0/64,fc00:3614::0/64,fc00:3615::0/64,fc00:3616::0/64,fc00:3617::0/64,fc00:3618::0/64,fc00:3619::0/64,fc00:1779::0/64,fc00:1780::0/64,fc00:1781::0/64,fc00:1782::0/64,fc00:1783::0/64,fc00:1784::0/64,fc00:1785::0/64,fc00:1786::0/64,fc00:1787::0/64,fc00:1788::0/64,fc00:1789::0/64,fc00:1790::0/64,fc00:1791::0/64,fc00:1792::0/64,fc00:1793::0/64,fc00:1794::0/64,fc00:1795::0/64,fc00:1796::0/64,fc00:1797::0/64,fc00:1798::0/64,fc00:1799::0/64,fc00:3985::0/64,fc00:3986::0/64,fc00:3987::0/64,fc00:3988::0/64,fc00:3989::0/64]
-
+qos:
+  policy: hostlevel
+  qos_params: "mtu 9000 mpu 9000 quantum 200000 burst 300000 cburst 300000 qdisc sfq balanced"
+  interfaces:
+    eno1:
+      master_intf: eno1
