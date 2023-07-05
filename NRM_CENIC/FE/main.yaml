@@ -26,6 +26,7 @@ aristaeos_s0:
   ports:
     - "Port-Channel501"
     - "Port-Channel502"
+    - "Port-Channel502-prismcore"
     - "Ethernet1/1"
     - "Ethernet9/1"
     - "Ethernet10/1"
@@ -39,6 +40,11 @@ aristaeos_s0:
   port_Port-Channel502_desttype: switch
   port_Port-Channel502_isAlias: "urn:ogf:network:nrp-nautilus.io:2020:sn3700_s0:PortChannel501"
   port_Port-Channel502_vlan_range: [3873,3874,3911,3912]
+  port_Port-Channel502-prismcore_capacity: 400
+  port_Port-Channel502-prismcore_desttype: switch
+  port_Port-Channel502-prismcore_isAlias: "calit2.optiputer.net:2020#prism-core:pwave-in"
+  port_Port-Channel502-prismcore_vlan_range: [1779-1799]
+  port_Port-Channel502-prismcore_realport: Port-Channel502
   port_Ethernet1-1_capacity: 400
   port_Ethernet1-1_desttype: switch
   port_Ethernet1-1_isAlias: "urn:ogf:network:scinet-sc.dallas.org:2016:core1:random_port_unknown"
