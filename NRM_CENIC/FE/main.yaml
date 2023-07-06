@@ -42,7 +42,7 @@ aristaeos_s0:
   port_Port-Channel502_vlan_range: [3873,3874,3911,3912]
   port_Port-Channel502-prismcore_capacity: 400
   port_Port-Channel502-prismcore_desttype: switch
-  port_Port-Channel502-prismcore_isAlias: "calit2.optiputer.net:2020#prism-core:pwave-in"
+  port_Port-Channel502-prismcore_isAlias: "urn:ogf:network:calit2.optiputer.net:2020:prism-core:pwave"
   port_Port-Channel502-prismcore_vlan_range: [1779-1799]
   port_Port-Channel502-prismcore_realport: Port-Channel502
   port_Ethernet1-1_capacity: 400
