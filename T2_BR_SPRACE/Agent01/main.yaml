@@ -1,12 +1,12 @@
 ---
 general:
-  ip: "200.0.207.117"
+  ip: "200.136.80.224"
   sitename: [T2_BR_SPRACE]
-  webdomain: "https://sprace02.redclara.net:8443"
-  node_exporter: "sprace02.redclara.net:9100"
+  webdomain: "https://sprace02.sprace.org.br:8443"
+  node_exporter: "sprace02.sprace.org.br:9100"
 agent: 
   interfaces: [enp130s0]
-  hostname: sprace02.redclara.net
+  hostname: sprace02.sprace.org.br
 enp130s0:
   port: "1_2"
   switch: s0
