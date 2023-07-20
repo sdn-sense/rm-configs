@@ -21,6 +21,14 @@ T3_US_Caltech_Dev:
   switch:
     - "dellos9_s0"
     - "dellos9_s1"
+    - "dellos10_s0"
+    - "aristaeos_s0"
+    - "aristaeos_s1"
+    - "sn3700_s0"
+    - "freertr_s0"
+    - "freertr_s1"
+    - "freertr_s2"
+    - "freertr_s3"
 dellos9_s0:
   vsw: "dellos9_s0"
   rst: "dellos9_s0"
