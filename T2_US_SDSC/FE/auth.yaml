@@ -14,3 +14,6 @@ prometheus:
 agent:
   full_dn: "/C=US/ST=California/L=Pasadena/O=Caltech/CN=sdn-sense.dev/C=US/ST=California/L=San Diego/O=SDSC/CN=sense-prpdev-fe.sdn-lb.ultralight.org"
   permissions: w
+realtimemon:
+  full_dn: "/C=US/O=Let's Encrypt/CN=R3/CN=dev2.virnao.com"
+  permissions: r

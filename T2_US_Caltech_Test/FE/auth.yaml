@@ -20,3 +20,6 @@ feapi:
 daemonset:
   full_dn: "/C=US/ST=California/L=Pasadena/O=Caltech/CN=sdn-sense.dev/C=US/ST=California/L=Pasadena/O=Caltech/CN=sense-caltech-fe.ultralight.org"
   permissions: w
+realtimemon:
+  full_dn: "/C=US/O=Let's Encrypt/CN=R3/CN=dev2.virnao.com"
+  permissions: r
