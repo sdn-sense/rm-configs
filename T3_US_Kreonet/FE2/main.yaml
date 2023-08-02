@@ -1,7 +1,5 @@
 --- 
 general:
-  logDir: /var/log/dtnrm-site-fe/
-  privatedir: /opt/siterm/config/
   sites: 
     - "T3_US_Kreonet"
   webdomain: "https://134.75.254.12:8443"

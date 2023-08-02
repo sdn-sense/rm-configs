@@ -1,8 +1,6 @@
 --- 
 general:
-  logDir: /var/log/dtnrm-site-fe/
   logLevel: DEBUG
-  privatedir: /opt/siterm/config/
   sites: 
     - "T3_BR_RNP"
   webdomain: "https://200.159.252.130:8443"

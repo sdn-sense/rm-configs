@@ -1,8 +1,6 @@
 --- 
 general:
-  logDir: /var/log/dtnrm-site-fe/
   logLevel: DEBUG
-  privatedir: /opt/siterm/config/
   sites: 
     - "T3_US_Caltech_Dev"
   webdomain: "https://sense-caltech-dev.sdn-lb.ultralight.org:443"

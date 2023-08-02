@@ -1,8 +1,6 @@
 --- 
 general:
-  logDir: /var/log/dtnrm-site-fe/
-  logLevel: INFO
-  privatedir: /opt/siterm/config/
+  logLevel: DEBUG
   sites: 
     - "T2_US_UCSD"
   webdomain: "https://sense-fe.nrp-nautilus.io:8443"

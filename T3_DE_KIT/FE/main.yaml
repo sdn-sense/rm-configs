@@ -1,8 +1,6 @@
 --- 
 general:
-  logDir: /var/log/dtnrm-site-fe/
   logLevel: DEBUG
-  privatedir: /opt/siterm/config/
   sites: 
     - "T3_DE_KIT"
   webdomain: "https://autogole-sense-login.gridka.de:8443"

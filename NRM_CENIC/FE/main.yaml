@@ -1,8 +1,6 @@
 --- 
 general:
-  logDir: /var/log/dtnrm-site-fe/
-  logLevel: INFO
-  privatedir: /opt/siterm/config/
+  logLevel: DEBUG
   sites: 
     - "NRM_CENIC"
   webdomain: "https://sense-ladowntown-fe.sdn-lb.ultralight.org:443"

@@ -1,8 +1,6 @@
 --- 
 general:
-  logDir: /var/log/dtnrm-site-fe/
   logLevel: DEBUG
-  privatedir: /opt/siterm/config/
   sites: 
     - "T3_US_Starlight"
   webdomain: "https://r740xd4.it.northwestern.edu:8443"
