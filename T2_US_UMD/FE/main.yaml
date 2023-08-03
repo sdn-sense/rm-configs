@@ -1,8 +1,6 @@
 --- 
 general:
-  logDir: /var/log/dtnrm-site-fe/
   logLevel: DEBUG
-  privatedir: /opt/siterm/config/
   sites: 
     - "T2_US_UMD"
   webdomain: "https://ptxn-sense-v1.maxgigapop.net:8443"

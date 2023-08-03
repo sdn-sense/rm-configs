@@ -1,8 +1,6 @@
 --- 
 general:
-  logDir: /var/log/dtnrm-site-fe/
   logLevel: INFO
-  privatedir: /opt/siterm/config/
   sites: 
     - "T2_CH_CERN"
   webdomain: "https://cixp-surfnet-dtn.cern.ch:8443"

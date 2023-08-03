@@ -1,8 +1,6 @@
 --- 
 general:
-  logDir: /var/log/dtnrm-site-fe/
   logLevel: DEBUG
-  privatedir: /opt/siterm/config/
   sites: 
     - "T3_US_FIU"
   webdomain: "https://ox.amlight.net:8443"

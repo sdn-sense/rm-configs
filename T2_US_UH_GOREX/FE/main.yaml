@@ -1,8 +1,6 @@
 --- 
 general:
-  logDir: /var/log/dtnrm-site-fe/
   logLevel: INFO
-  privatedir: /opt/siterm/config/
   sites: 
     - "T2_US_UH_GOREX"
   webdomain: "https://sense-fe.uhnet.net:8443"
