@@ -37,7 +37,7 @@ aristaeos_s0:
   port_Port-Channel502_capacity: 400
   port_Port-Channel502_desttype: switch
   port_Port-Channel502_isAlias: "urn:ogf:network:nrp-nautilus.io:2020:sn3700_s0:PortChannel501"
-  port_Port-Channel502_vlan_range: [3873,3874,3911,3912]
+  port_Port-Channel502_vlan_range: [3600-3619,3873,3874,3911,3912,3985-3989]
   port_Port-Channel502-prismcore_capacity: 400
   port_Port-Channel502-prismcore_desttype: switch
   port_Port-Channel502-prismcore_isAlias: "urn:ogf:network:calit2.optiputer.net:2020:prism-core:pwave"
