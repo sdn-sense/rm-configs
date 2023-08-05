@@ -74,3 +74,8 @@ a7c082622c670cbe7c9251faaa69153c:
   maintainer: "Justas Balcas"
   status: development
   type: Agent
+8db2c4eda99451f5c69d7c49a082e908:
+  config: Agent15/
+  maintainer: "Justas Balcas"
+  status: development
+  type: Agent

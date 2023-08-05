@@ -1,15 +1,15 @@
 ---
 general:
-  ip: "198.32.43.13"
+  ip: "198.32.43.23"
   sitename: [T3_US_Caltech_Dev]
   webdomain: "https://sense-caltech-dev.sdn-lb.ultralight.org:443"
-  node_exporter: "sdn-dtn-1-7.ultralight.org:9100"
+  node_exporter: "sdn-sc-03.ultralight.org:9100"
 agent: 
-  interfaces: [mlx4p1s1]
-  hostname: sdn-dtn-1-7.ultralight.org
-mlx4p1s1:
-  port: hundredGigE 1/23
-  switch: dellos9_s0
+  interfaces: [mlx6p1s1]
+  hostname: sdn-sc-03.ultralight.org
+mlx6p1s1:
+  port: hundredGigE 1/24
+  switch: dellos9_s1
   shared: false
   intf_max: 100000
   max_bandwidth: 100000
@@ -23,10 +23,10 @@ qos:
   interfaces:
     sensexrd1:
       ipv6_range: 2605:d9c0:2:fff1::0/64
-      master_intf: mlx4p1s1
+      master_intf: mlx6p1s1
     sensexrd2:
       ipv6_range: 2605:d9c0:2:fff2::0/64
-      master_intf: mlx4p1s1
+      master_intf: mlx6p1s1
     sensexrd3:
       ipv6_range: 2605:d9c0:2:fff3::0/64
-      master_intf: mlx4p1s1
+      master_intf: mlx6p1s1

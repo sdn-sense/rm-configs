@@ -1,11 +1,81 @@
 ---
-8feb35ed655904aa30d466658756a87f: 
+8feb35ed655904aa30d466658756a87f:
   config: FE/
   maintainer: "Justas Balcas"
   status: development
   type: FE
 8e27a5535404f39045af089421c38e78:
   config: Agent01/
+  maintainer: "Justas Balcas"
+  status: development
+  type: Agent
+db78dc9c5b1f8be4aa037b38acb6ffc7:
+  config: Agent02/
+  maintainer: "Justas Balcas"
+  status: development
+  type: Agent
+fe7470380f3d117e65c3588dd89182ad:
+  config: Agent03/
+  maintainer: "Justas Balcas"
+  status: development
+  type: Agent
+d8542db5344a5c37ef3ccd13348c19ab:
+  config: Agent04/
+  maintainer: "Justas Balcas"
+  status: development
+  type: Agent
+b6667809a1f3258708ca78b5833ce656:
+  config: Agent05/
+  maintainer: "Justas Balcas"
+  status: development
+  type: Agent
+fd769ec2cea02eeed0c3e0bcf14141e0:
+  config: Agent06/
+  maintainer: "Justas Balcas"
+  status: development
+  type: Agent
+4782bf6aaf50c4db718c7e4a337e824a:
+  config: Agent07/
+  maintainer: "Justas Balcas"
+  status: development
+  type: Agent
+a7c082622c670cbe7c9251faaa69153c:
+  config: Agent08/
+  maintainer: "Justas Balcas"
+  status: development
+  type: Agent
+125fdbea660a6c6a7504a7519e82345d:
+  config: Agent09/
+  maintainer: "Justas Balcas"
+  status: development
+  type: Agent
+657c4ea3ecc895002aaaac29f3a1ab0f:
+  config: Agent10/
+  maintainer: "Justas Balcas"
+  status: development
+  type: Agent
+504403df247fca02be8448375a58cc9e:
+  config: Agent11/
+  maintainer: "Justas Balcas"
+  status: development
+  type: Agent
+7a3321daa3b4aeb9e56c4ca4ef64c98d:
+  config: Agent12/
+  maintainer: "Justas Balcas"
+  status: development
+  type: Agent
+812a0548e7bfe6270580cd32073c43b4:
+  config: Agent13/
+  maintainer: "Justas Balcas"
+  status: development
+  type: Agent
+1e38e34933f85736dd5e18c32efc382d:
+  config: Agent14/
+  maintainer: "Justas Balcas"
+  status: development
+  type: Agent
+8db2c4eda99451f5c69d7c49a082e908:
+  config: Agent15/
   maintainer: "Justas Balcas"
   status: development
   type: Agent
