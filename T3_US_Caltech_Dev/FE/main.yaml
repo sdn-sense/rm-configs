@@ -38,6 +38,9 @@ dellos9_s0:
   allports: True
   allvlans: True
   snmp_monitoring: True
+  port_Port-channel_103_capacity: 400
+  port_Port-channel_103_desttype: switch
+  port_Port-channel_103_isAlias: "urn:ogf:network:sc-test.cenic.net:2020:aristaeos_s0:Port-Channel501"
 dellos9_s1:
   vsw: "dellos9_s1"
   vlan_mtu: 9416
