@@ -5,6 +5,9 @@ general:
     - "T3_US_Caltech_Dev"
   webdomain: "https://sense-caltech-dev.sdn-lb.ultralight.org:443"
   probes: ['https_v4_siterm_2xx', 'icmp_v4']
+  wan:
+    dellos9_s0:
+      "Port-channel 103": "urn:ogf:network:sc-test.cenic.net:2020:aristaeos_s0:Port-Channel501"
 T3_US_Caltech_Dev: 
   domain: ultralight-dev.org
   latitude: 34.1377
