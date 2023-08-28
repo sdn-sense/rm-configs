@@ -4,6 +4,7 @@ general:
   sites: 
     - "T2_US_UMD"
   webdomain: "https://ptxn-sense-v1.maxgigapop.net:8443"
+  privatedir: /opt/siterm/config/
 T2_US_UMD:
   domain: maxgigapop.net
   latitude: 38.9869

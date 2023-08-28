@@ -5,6 +5,7 @@ general:
     - "T2_US_UH_GOREX"
   webdomain: "https://sense-fe.uhnet.net:8443"
   probes: ["https_v4_siterm_2xx"]
+  privatedir: /opt/siterm/config/
 T2_US_UH_GOREX:
   domain: hawaii.edu
   latitude: 21.2971

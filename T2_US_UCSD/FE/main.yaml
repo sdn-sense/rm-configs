@@ -5,6 +5,7 @@ general:
     - "T2_US_UCSD"
   webdomain: "https://sense-fe.nrp-nautilus.io:8443"
   probes: ["https_v4_siterm_2xx"]
+  privatedir: /opt/siterm/config/
 T2_US_UCSD:
   domain: nrp-nautilus-prod.io
   latitude: 32.882648
