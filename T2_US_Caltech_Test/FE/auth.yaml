@@ -20,6 +20,9 @@ feapi:
 daemonset:
   full_dn: "/C=US/ST=California/L=Pasadena/O=Caltech/CN=sdn-sense.dev/C=US/ST=California/L=Pasadena/O=Caltech/CN=sense-caltech-fe.ultralight.org"
   permissions: w
+rucio:
+  full_dn: "/C=US/O=Internet2/OU=InCommon/CN=InCommon IGTF Server CA/DC=org/DC=incommon/C=US/ST=California/O=University of California, San Diego/CN=rucio-sense.t2.ucsd.edu"
+  permissions: w
 realtimemon:
   full_dn: "/C=US/O=Let's Encrypt/CN=R3/CN=dev2.virnao.com"
   permissions: r
