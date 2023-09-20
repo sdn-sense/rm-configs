@@ -2,7 +2,7 @@
 general:
   ip: "129.93.239.139"
   sitename: [T2_US_Nebraska_Test]
-  webdomain: "https://red-sense-rm.unl.edu:8443"
+  webdomain: "https://red-sense-rm.unl.edu:443"
   node_exporter: "red-sense-dtn1.unl.edu:9100"
 agent:
   interfaces: [p1p1]
