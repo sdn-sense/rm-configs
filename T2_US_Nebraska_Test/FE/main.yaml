@@ -22,7 +22,7 @@ dellos10_s0:
   rst: "dellos10_s0"
   rsts_enabled: "ipv4,ipv6"
   private_asn: 64514
-  vlan_mtu: 9416
+  vlan_mtu: 9216
   ports:
     - "ethernet1/1/13:1"
     - "ethernet1/1/14:1"

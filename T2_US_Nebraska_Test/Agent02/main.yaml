@@ -8,7 +8,7 @@ agent:
   interfaces: [p1p1]
   hostname: red-sense-dtn2.unl.edu
 p1p1:
-  port: ethernet1/1/14_1
+  port: "ethernet1/1/14:1"
   switch: dellos10_s0
   shared: false
   intf_max: 10000
