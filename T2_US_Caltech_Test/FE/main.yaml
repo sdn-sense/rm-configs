@@ -18,7 +18,6 @@ T2_US_Caltech_Test:
   year: 2013
   switch:
     - "dellos9_s0"
-    - "dellos9_s1"
 dellos9_s0:
   vsw: "dellos9_s0"
   rst: "dellos9_s0"
@@ -33,6 +32,7 @@ dellos9_s0:
     - "hundredGigE 1/10"
     - "hundredGigE 1/11"
     - "hundredGigE 1/12"
+    - "hundredGigE 1/13"
     - "hundredGigE 1/23"
     - "hundredGigE 1/25"
     - "hundredGigE 1/27"
@@ -44,32 +44,11 @@ dellos9_s0:
   allports: False
   allvlans: False
   snmp_monitoring: True
-  port_Port-channel_103_vlan_range: [1779-1799,3600-3619,3985-3989,3870-3883,3911-3912,3870-3883]
+  port_hundredGigE_1-13_vlan_range: [3985-3989]
+  port_hundredGigE_1-13_capacity: 100
+  port_hundredGigE_1-13_desttype: switch
+  port_hundredGigE_1-13_isAlias: "urn:ogf:network:sc-test.cenic.net:2020:aristaeos_s0:Port-Channel501-rucio"
+  port_Port-channel_103_vlan_range: [1779-1799,3600-3619,3870-3883,3911-3912,3870-3883]
   port_Port-channel_103_capacity: 300
   port_Port-channel_103_desttype: switch
   port_Port-channel_103_isAlias: "urn:ogf:network:sc-test.cenic.net:2020:aristaeos_s0:Port-Channel501"
-  port_Port-channel_102_vlan_range: [1779-1799,3600-3619,3985-3989,3870-3883,3911-3912,3870-3883]
-  port_Port-channel_102_capacity: 200
-  port_Port-channel_102_desttype: switch
-  port_Port-channel_102_desttype: "urn:ogf:network:ultralight.org:2013:dellos9_s1:Port-channel_102"
-dellos9_s1:
-  vsw: "dellos9_s1"
-  vlan_mtu: 9416
-  ports:
-    - "Port-channel 102"
-    - "hundredGigE 1/1"
-    - "hundredGigE 1/3"
-    - "hundredGigE 1/5"
-    - "hundredGigE 1/8"
-    - "hundredGigE 1/24"
-    - "hundredGigE 1/26"
-    - "hundredGigE 1/28"
-    - "hundredGigE 1/30"
-  vlan_range: [1779-1799,3600-3619,3985-3989,3870-3883,3911-3912,3870-3883]
-  allports: False
-  allvlans: False
-  snmp_monitoring: True
-  port_Port-channel_102_vlan_range: [1779-1799,3600-3619,3985-3989,3870-3883,3911-3912,3870-3883]
-  port_Port-channel_102_capacity: 200
-  port_Port-channel_102_desttype: switch
-  port_Port-channel_102_desttype: "urn:ogf:network:ultralight.org:2013:dellos9_s0:Port-channel_102"
