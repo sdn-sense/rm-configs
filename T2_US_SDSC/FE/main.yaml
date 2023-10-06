@@ -30,6 +30,7 @@ sn3700_s0:
     - "Ethernet100"
     - "Ethernet104"
   vlan_range: [3873,3874,3911,3912,3985-3989,3600-3619]
-  port_PortChannel501_capacity: 100
+  port_PortChannel501_capacity: 400000
   port_PortChannel501_desttype: switch
   port_PortChannel501_isAlias: "urn:ogf:network:sc-test.cenic.net:2020:aristaeos_s0:Port-Channel502"
+  port_PortChannel501_wanlink: PortChannel501

@@ -31,33 +31,40 @@ aristaeos_s0:
     - "Ethernet10/1"
     - "Ethernet11/1"
   vlan_range: [1779-1799,2027,3600-3619,3985-3989,3870-3883,3911-3912]
-  port_Port-Channel501_capacity: 400
+  port_Port-Channel501_capacity: 400000
   port_Port-Channel501_desttype: switch
   port_Port-Channel501_isAlias: "urn:ogf:network:ultralight.org:2013:dellos9_s0:Port-channel_103"
   port_Port-Channel501_vlan_range: [1779-1799,3600-3619,3870-3883,3911-3912]
-  port_Port-Channel501-rucio_capacity: 100
+  port_Port-Channel501_wanlink: "Port-Channel501"
+  port_Port-Channel501-rucio_capacity: 100000
   port_Port-Channel501-rucio_desttype: switch
   port_Port-Channel501-rucio_isAlias: "urn:ogf:network:ultralight.org:2013:dellos9_s0:hundredGigE_1-13"
   port_Port-Channel501-rucio_vlan_range: [3985-3989]
   port_Port-Channel501-rucio_realport: Port-Channel501
-  port_Port-Channel502_capacity: 400
+  port_Port-Channel501-rucio_wanlink: "Port-Channel501-rucio"
+  port_Port-Channel502_capacity: 400000
   port_Port-Channel502_desttype: switch
   port_Port-Channel502_isAlias: "urn:ogf:network:nrp-nautilus.io:2020:sn3700_s0:PortChannel501"
   port_Port-Channel502_vlan_range: [3873,3874,3911,3912,3985-3989,3600-3619]
-  port_Port-Channel502-prismcore_capacity: 400
+  port_Port-Channel502_wanlink: "Port-Channel502"
+  port_Port-Channel502-prismcore_capacity: 400000
   port_Port-Channel502-prismcore_desttype: switch
   port_Port-Channel502-prismcore_isAlias: "urn:ogf:network:calit2.optiputer.net:2020:prism-core:pwave"
   port_Port-Channel502-prismcore_vlan_range: [1779-1799]
   port_Port-Channel502-prismcore_realport: Port-Channel502
-  port_Ethernet9-1_capacity: 100
+  port_Port-Channel502-prismcore_wanlink: "Port-Channel502-prismcore"
+  port_Ethernet9-1_capacity: 100000
   port_Ethernet9-1_desttype: switch
   port_Ethernet9-1_isAlias: "urn:ogf:network:core1.losa.net.internet2.edu:2016:core1:HundredGigE0_0_0_12"
   port_Ethernet9-1_vlan_range: [3874]
-  port_Ethernet10-1_capacity: 100
+  port_Ethernet9-1_wanlink: "Ethernet9/1"
+  port_Ethernet10-1_capacity: 100000
   port_Ethernet10-1_desttype: switch
   port_Ethernet10-1_isAlias: "urn:ogf:network:core1.losa.net.internet2.edu:2016:core1:HundredGigE0_0_0_13"
   port_Ethernet10-1_vlan_range: [3873]
-  port_Ethernet11-1_capacity: 100
+  port_Ethernet10-1_wanlink: "Ethernet10/1"
+  port_Ethernet11-1_capacity: 100000
   port_Ethernet11-1_desttype: switch
   port_Ethernet11-1_isAlias: "urn:ogf:network:lsanca.pacificwave.net:2016:pw-losa2-1:Arista-400G"
   port_Ethernet11-1_vlan_range: [1779-1799,3600-3619,3985-3989,3870-3883,3911-3912]
+  port_Ethernet11-1_wanlink: "Ethernet11/1"

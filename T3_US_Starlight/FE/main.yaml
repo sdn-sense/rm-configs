@@ -20,11 +20,11 @@ s0:
     - "1_1"
     - "1_2"
   vlan_range: [1779-1790,1796-1799,3985-3989]
-  port_1_1_capacity: 100
+  port_1_1_capacity: 100000
   port_1_1_desttype: switch
   port_1_1_isAlias: "urn:ogf:network:icair.org:2013:mren8700:dtn110"
   port_1_1_vlan_range: [1779-1790,1796-1799,3985-3989]
-  port_1_2_capacity: 100
+  port_1_2_capacity: 100000
   port_1_2_vlan_range: [1779-1790,1796-1799,3985-3989]
 s1:
   vsw: "s1"
@@ -32,9 +32,10 @@ s1:
     - "1_1"
     - "1_2"
   vlan_range: [1779-1799,3985-3989]
-  port_1_1_capacity: 100
+  port_1_1_capacity: 100000
   port_1_1_desttype: switch
   port_1_1_isAlias: "urn:ogf:network:icair.org:2013:mren8700:r740xd4"
+  port_1_1_wanlink: "1_1"
   port_1_1_vlan_range: [1779-1799,3985-3989]
-  port_1_2_capacity: 100
+  port_1_2_capacity: 100000
   port_1_2_vlan_range: [1779-1799,3985-3989]

@@ -5,9 +5,6 @@ general:
     - "T3_US_Caltech_Dev"
   webdomain: "https://sense-caltech-dev.sdn-lb.ultralight.org:443"
   probes: ['https_v4_siterm_2xx', 'icmp_v4']
-  wan:
-    dellos9_s0:
-      "Port-channel 103": "urn:ogf:network:sc-test.cenic.net:2020:aristaeos_s0:Port-Channel501"
 T3_US_Caltech_Dev: 
   domain: ultralight-dev.org
   latitude: 34.1377
@@ -41,10 +38,11 @@ dellos9_s0:
   allports: True
   allvlans: True
   snmp_monitoring: True
-  port_Port-channel_103_capacity: 400
+  port_Port-channel_103_capacity: 400000
   port_Port-channel_103_desttype: switch
   port_Port-channel_103_isAlias: "urn:ogf:network:sc-test.cenic.net:2020:aristaeos_s0:Port-Channel501"
   port_Port-channel_103_portName: "Port-channel 103"
+  port_Port-channel_103_wanlink: "Port-channel 103"
 dellos9_s1:
   vsw: "dellos9_s1"
   vlan_mtu: 9416

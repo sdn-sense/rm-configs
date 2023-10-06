@@ -15,13 +15,14 @@ T3_US_Kreonet:
 s0:
   vsw: "s0"
   vlan_range: [3985-3989]
-  port_1_1_capacity: 100
+  port_1_1_capacity: 100000
   port_1_1_destport: DTN1
   port_1_1_desttype: switch
   port_1_1_hostname: daej_topo1
   port_1_1_isAlias: "urn:ogf:network:daej-nsi.kreonet.net:2020:daej_topo1:DTN1"
   port_1_1_vlan_range: [3985-3989]
-  port_1_2_capacity: 100
+  port_1_1_wanlink: "1_1"
+  port_1_2_capacity: 100000
   port_1_2_vlan_range: [3985-3989]
   ports: 
     - "1_1"
