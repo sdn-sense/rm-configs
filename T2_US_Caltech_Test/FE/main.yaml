@@ -48,7 +48,9 @@ dellos9_s0:
   port_hundredGigE_1-13_capacity: 100
   port_hundredGigE_1-13_desttype: switch
   port_hundredGigE_1-13_isAlias: "urn:ogf:network:sc-test.cenic.net:2020:aristaeos_s0:Port-Channel501-rucio"
+  port_hundredGigE_1-13_wanlink: True
   port_Port-channel_103_vlan_range: [1779-1799,3600-3619,3870-3883,3911-3912,3870-3883]
   port_Port-channel_103_capacity: 300
   port_Port-channel_103_desttype: switch
   port_Port-channel_103_isAlias: "urn:ogf:network:sc-test.cenic.net:2020:aristaeos_s0:Port-Channel501"
+  port_Port-channel_103_wanlink: True
