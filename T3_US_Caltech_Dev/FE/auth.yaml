@@ -17,6 +17,9 @@ prometheus:
 feapi:
   full_dn: "/C=US/ST=California/L=Pasadena/O=Caltech/CN=sdn-sense.dev/C=US/ST=California/L=Pasadena/O=Caltech/CN=sense-caltech-dev.sdn-lb.ultralight.org"
   permissions: w
+feapi1:
+  full_dn: "/C=US/O=Let's Encrypt/CN=R3/CN=sense-caltech-dev.sdn-lb.ultralight.org"
+  permissions: w
 daemonset:
   full_dn: "/C=US/ST=California/L=Pasadena/O=Caltech/CN=sdn-sense.dev/C=US/ST=California/L=Pasadena/O=Caltech/CN=sense-caltech-dev.ultralight.org"
   permissions: w
