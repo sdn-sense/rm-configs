@@ -8,6 +8,9 @@ sense-o-ca:
 sense-o:
   full_dn: "/O=University of Maryland/OU=Mid-Atlantic Crossroads/OU=research.maxgigapop.net/CN=Simple CA/C=US/ST=Maryland/O=University of Maryland/OU=RESEARCH.MAXGIGAPOP.NET/CN=Xi Yang"
   permissions: w
+orchestrator1:
+  full_dn: "/C=US/ST=MI/L=Ann Arbor/O=Internet2/OU=InCommon/CN=InCommon RSA Server CA/C=US/ST=California/O=Energy Sciences Network/CN=sense-o.es.net"
+  permissions: w
 prometheus:
   full_dn: "/C=US/ST=California/L=Pasadena/O=Caltech/CN=sdn-sense.dev/C=US/ST=California/L=Pasadena/O=Caltech/CN=autogole-grafana-prometheus.ultralight.org"
   permissions: r

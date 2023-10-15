@@ -5,6 +5,9 @@ siterm:
 sense-o:
   full_dn: "/C=US/ST=California/L=Berkeley/O=LBNL/OU=ESnet/CN=sense-o.es.net/C=US/ST=California/L=Berkeley/O=LBNL/CN=sense-o.es.net"
   permissions: w
+orchestrator1:
+  full_dn: "/C=US/ST=MI/L=Ann Arbor/O=Internet2/OU=InCommon/CN=InCommon RSA Server CA/C=US/ST=California/O=Energy Sciences Network/CN=sense-o.es.net"
+  permissions: w
 prometheus:
   full_dn: "/C=US/ST=California/L=Pasadena/O=Caltech/CN=sdn-sense.dev/C=US/ST=California/L=Pasadena/O=Caltech/CN=autogole-grafana-prometheus.ultralight.org"
   permissions: r
