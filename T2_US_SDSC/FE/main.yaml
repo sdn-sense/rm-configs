@@ -34,6 +34,10 @@ sn3700_s0:
     - "Ethernet40"
     - "Ethernet52"
     - "Ethernet100"
+    - "Ethernet72"
+    - "Ethernet76"
+    - "Ethernet80"
+    - "Ethernet84"
     - "Ethernet104"
   vlan_range: [3873,3874,3911,3912,3985-3989,3600-3619]
   port_Ethernet32_vlan_range: [3400-3407,3600-3610]
