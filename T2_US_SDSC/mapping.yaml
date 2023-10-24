@@ -4,16 +4,6 @@
   maintainer: "John Graham"
   status: production
   type: FE
-7045a2065934c88351f079f830cfc2ac:
-  config: Agent01/
-  maintainer: "John Graham"
-  status: production
-  type: Agent
-f24715e071f66e4e1b661ee63b36ebde:
-  config: Agent02/
-  maintainer: "John Graham"
-  status: production
-  type: Agent
 010f007f670455b4ea657e40aef1df9b:
   config: Agent03/
   maintainer: "John Graham"
@@ -21,41 +11,6 @@ f24715e071f66e4e1b661ee63b36ebde:
   type: Agent
 e77ce3f8a12b7ca22478ce060a9d6a8b:
   config: Agent04/
-  maintainer: "John Graham"
-  status: production
-  type: Agent
-de9be694311f9ff06cba05803222be96:
-  config: Agent05/
-  maintainer: "John Graham"
-  status: production
-  type: Agent
-35186c0fffd3e04d566aa4e883529022:
-  config: Agent06/
-  maintainer: "John Graham"
-  status: production
-  type: Agent
-d9f7f1a2df9fd77c26d4f34914a7052f:
-  config: Agent07/
-  maintainer: "John Graham"
-  status: production
-  type: Agent
-a6a7c3bc22ce104d7b8865711b7e249a:
-  config: Agent08/
-  maintainer: "John Graham"
-  status: production
-  type: Agent
-e50110442797ee9442709359439573d8:
-  config: Agent09/
-  maintainer: "John Graham"
-  status: production
-  type: Agent
-d9f8205d3381e00e89ea6dd1069a16c4:
-  config: Agent10/
-  maintainer: "John Graham"
-  status: production
-  type: Agent
-1ec0e0a94e2a63d416696dc14b7fa3df:
-  config: Agent11/
   maintainer: "John Graham"
   status: production
   type: Agent
