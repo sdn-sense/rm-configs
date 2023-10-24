@@ -4,12 +4,12 @@ general:
   sitename: [T1_US_FNAL]
   webdomain: "https://cmssense1.fnal.gov:8443"
 agent: 
-  interfaces: [enp129s0f2]
+  interfaces: [enp129s0f1]
   hostname: cmssense2.fnal.gov
-enp129s0f2:
+enp129s0f1:
   port: "1_2"
   shared: false
-  switch: s0
+  switch: cisconx9
   intf_max: 10000
   max_bandwidth: 100000
   min_bandwidth: 1000
@@ -20,5 +20,5 @@ qos:
   policy: hostlevel
   qos_params: "mtu 9000 mpu 9000 quantum 200000 burst 300000 cburst 300000 qdisc sfq balanced"
   interfaces:
-    enp129s0f2:
-      master_intf: enp129s0f2
+    enp129s0f1:
+      master_intf: enp129s0f1
