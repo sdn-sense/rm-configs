@@ -50,28 +50,4 @@ enp33s0f0np0:
 qos:
   policy: privatens
   qos_params: "mtu 9000 mpu 9000 quantum 200000 burst 300000 cburst 300000 qdisc sfq balanced"
-  interfaces:
-    vlan.4071:
-      ipv6_range: 2001:48d0:3001:111::0/64
-      master_intf: enp1s0f1np1
-    vlan1.4071:
-      ipv6_range: 2001:48d0:3001:111::0/64
-      master_intf: enp33s0f0np0
-    vlan3.4071:
-      ipv6_range: 2001:48d0:3001:111::0/64
-      master_intf: enp193s0f1np1
-    vlan4.4071:
-      ipv6_range: 2001:48d0:3001:111::0/64
-      master_intf: enp65s0np0
-    vlan.4072:
-      ipv6_range: 2001:48d0:3001:112::0/64
-      master_intf: enp1s0f1np1
-    vlan1.4072:
-      ipv6_range: 2001:48d0:3001:112::0/64
-      master_intf: enp33s0f0np0
-    vlan3.4072:
-      ipv6_range: 2001:48d0:3001:112::0/64
-      master_intf: enp193s0f1np1
-    vlan4.4072:
-      ipv6_range: 2001:48d0:3001:112::0/64
-      master_intf: enp65s0np0
+  interfaces: {}

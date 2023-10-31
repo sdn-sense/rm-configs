@@ -11,6 +11,7 @@ enp65s0np0:
   port: Ethernet104
   switch: sn3700_s0
   shared: false
+  allowOvercommit: false
   intf_max: 100000
   max_bandwidth: 100000
   min_bandwidth: 1000
@@ -21,6 +22,7 @@ enp193s0f1np1:
   port: Ethernet72
   switch: sn3700_s0
   shared: false
+  allowOvercommit: false
   intf_max: 100000
   max_bandwidth: 100000
   min_bandwidth: 1000
@@ -31,6 +33,7 @@ enp129s0f1np1:
   port: Ethernet80
   switch: sn3700_s0
   shared: false
+  allowOvercommit: false
   intf_max: 100000
   max_bandwidth: 100000
   min_bandwidth: 1000
@@ -41,6 +44,7 @@ enp33s0f1np1:
   port: Ethernet76
   switch: sn3700_s0
   shared: false
+  allowOvercommit: false
   intf_max: 100000
   max_bandwidth: 100000
   min_bandwidth: 1000
@@ -51,6 +55,7 @@ enp1s0f1np1:
   port: Ethernet84
   switch: sn3700_s0
   shared: false
+  allowOvercommit: false
   intf_max: 100000
   max_bandwidth: 100000
   min_bandwidth: 1000
@@ -67,9 +72,6 @@ qos:
     vlan1.4071:
       ipv6_range: 2001:48d0:3001:111::0/64
       master_intf: enp33s0f1np1
-    vlan2.4071:
-      ipv6_range: 2001:48d0:3001:111::0/64
-      master_intf: enp129s0f1np1
     vlan3.4071:
       ipv6_range: 2001:48d0:3001:111::0/64
       master_intf: enp193s0f1np1
@@ -82,9 +84,6 @@ qos:
     vlan1.4072:
       ipv6_range: 2001:48d0:3001:112::0/64
       master_intf: enp33s0f1np1
-    vlan2.4072:
-      ipv6_range: 2001:48d0:3001:112::0/64
-      master_intf: enp129s0f1np1
     vlan3.4072:
       ipv6_range: 2001:48d0:3001:112::0/64
       master_intf: enp193s0f1np1
