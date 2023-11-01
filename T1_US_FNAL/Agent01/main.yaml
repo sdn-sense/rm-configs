@@ -7,7 +7,7 @@ agent:
   interfaces: [enp129s0f1]
   hostname: cmssense2.fnal.gov
 enp129s0f1:
-  port: "Ethernet1/25"
+  port: "Ethernet1/26"
   shared: false
   switch: cisconx9
   intf_max: 10000
