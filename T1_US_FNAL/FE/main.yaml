@@ -21,7 +21,7 @@ T1_US_FNAL:
 cisconx9:
   vsw: "cisconx9"
   rst: "cisconx9"
-  rst_enabled: "ipv4,ipv6"
+  rsts_enabled: "ipv4,ipv6"
   private_asn: 64515
   vlan_mtu: 9216
   ports:
