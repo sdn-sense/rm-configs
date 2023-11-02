@@ -15,6 +15,7 @@ T1_US_FNAL:
     - "cisconx9"
   privatedir: /opt/siterm/config/T1_US_FNAL/
   year: 2023
+  ipv6-subnet-pool: [2620:6a:0:2841::/64,2620:6a:0:2842::/64,2620:6a:0:2843::/64]
 cisconx9:
   vsw: "cisconx9"
   rst: "cisconx9"
