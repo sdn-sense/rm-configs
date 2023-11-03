@@ -8,8 +8,8 @@ agent:
   interfaces: [mlx3p1s1]
   hostname: sdn-dtn-2-09.ultralight.org
 mlx3p1s1:
-  port: fortyGigE 1/29/1
-  switch: dellos9_s0
+  port: Ethernet3/1
+  switch: aristaeos_s0
   shared: false
   allowOvercommit: false
   intf_max: 100000
