@@ -29,6 +29,9 @@ aristaeos_s0:
     - "Ethernet1/1"
     - "Ethernet2/1"
     - "Ethernet3/1"
+    - "Ethernet4/1"
+    - "Ethernet5/1"
+    - "Ethernet6/1"
     - "Ethernet9/1"
     - "Ethernet10/1"
     - "Ethernet11/1"
@@ -72,6 +75,21 @@ aristaeos_s0:
   port_Ethernet3-1_isAlias: "urn:ogf:network:core3.tobedefined:2023:tobedefined:tobedefined"
   port_Ethernet3-1_vlan_range: [ 1779-1784 ]
   port_Ethernet3-1_wanlink: "Ethernet3/1"
+  port_Ethernet4-1_capacity: 400000
+  port_Ethernet4-1_desttype: switch
+  port_Ethernet4-1_isAlias: "urn:ogf:network:core4.tobedefined:2023:tobedefined:tobedefined"
+  port_Ethernet4-1_vlan_range: [3616-3619]
+  port_Ethernet4-1_wanlink: "Ethernet4/1"
+  port_Ethernet5-1_capacity: 400000
+  port_Ethernet5-1_desttype: switch
+  port_Ethernet5-1_isAlias: "urn:ogf:network:core5.tobedefined:2023:tobedefined:tobedefined"
+  port_Ethernet5-1_vlan_range: [3606-3609]
+  port_Ethernet5-1_wanlink: "Ethernet5/1"
+  port_Ethernet6-1_capacity: 400000
+  port_Ethernet6-1_desttype: switch
+  port_Ethernet6-1_isAlias: "urn:ogf:network:core6.tobedefined:2023:tobedefined:tobedefined"
+  port_Ethernet6-1_vlan_range: [1781-1784]
+  port_Ethernet6-1_wanlink: "Ethernet6/1"
   port_Ethernet9-1_capacity: 100000
   port_Ethernet9-1_desttype: switch
   port_Ethernet9-1_isAlias: "urn:ogf:network:core1.losa.net.internet2.edu:2016:core1:HundredGigE0_0_0_12"
