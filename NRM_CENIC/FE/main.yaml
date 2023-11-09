@@ -60,6 +60,11 @@ aristaeos_s0:
   port_Port-Channel502-prismcore_vlan_range: [1779-1799]
   port_Port-Channel502-prismcore_realport: Port-Channel502
   port_Port-Channel502-prismcore_wanlink: "Port-Channel502-prismcore"
+  port_Port-Channel503_capacity: 800000
+  port_Port-Channel503_desttype: switch
+  port_Port-Channel503_isAlias: "urn:ogf:network:lsanca.pacificwave.net:2016:losa4-pw-agg-01:losa4-sc22-sw-1"
+  port_Port-Channel503_vlan_range: [1320-1329,1378,1779-1799,3846-3849]
+  port_Port-Channel503_wanlink: "Port-Channel503"
   port_Ethernet1-1_capacity: 400000
   port_Ethernet1-1_desttype: switch
   port_Ethernet1-1_isAlias: "urn:ogf:network:core1.tobedefined:2023:tobedefined:tobedefined"
@@ -112,6 +117,6 @@ aristaeos_s0:
   port_Ethernet11-1-fnal_realport: "Ethernet11/1"
   port_Ethernet13-1_capacity: 400000
   port_Ethernet13-1_desttype: switch
-  port_Ethernet13-1_isAlias: "urn:ogf:network:core4.tobedefinedesnet:2023:tobedefinedesnet:tobedefinedesnet"
+  port_Ethernet13-1_isAlias: "urn:ogf:network:es.net:2013::losa-cr6:2_1_c4_1:+"
   port_Ethernet13-1_vlan_range: [1779-1799,2027,3600-3619,3985-3989,3870-3883,3911-3912]
   port_Ethernet13-1_wanlink: "Ethernet13/1"
