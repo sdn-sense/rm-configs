@@ -118,7 +118,7 @@ aristaeos_s0:
   port_Ethernet11-1-fnal_realport: "Ethernet11/1"
   port_Ethernet12-1_capacity: 400000
   port_Ethernet12-1_desttype: switch
-  port_Ethernet12-1_isAlias: "urn:ogf:network:core4.tobedefined:2023:tobedefined:tobedefined"
+  port_Ethernet12-1_isAlias: "urn:ogf:network:core12.tobedefined:2023:tobedefined:tobedefined"
   port_Ethernet12-1_vlan_range: [3846-3849]
   port_Ethernet12-1_wanlink: "Ethernet12/1"
   port_Ethernet13-1_capacity: 400000
