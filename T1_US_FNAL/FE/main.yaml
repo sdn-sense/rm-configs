@@ -27,6 +27,7 @@ cisconx9:
   ports:
     - "Ethernet1/23"
     - "Ethernet1/23-esnet"
+    - "Ethernet1/24"
     - "Ethernet1/25"
     - "Ethernet1/26"
   port_Ethernet1-23_capacity: 100000
