@@ -23,4 +23,6 @@ cmssense3:
 cmssense4:
   full_dn: "/C=US/O=Internet2/CN=InCommon RSA IGTF Server CA 3/DC=org/DC=incommon/C=US/ST=Illinois/O=Fermi Research Alliance/CN=cmssense4.fnal.gov"
   permissions: w
-
+asif:
+  full_dn: "/DC=ch/DC=cern/CN=CERN Grid Certification Authority//DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sashah/CN=763565/CN=Syed Asif Raza Shah"
+  permissions: w
