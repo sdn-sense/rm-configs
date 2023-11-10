@@ -70,12 +70,12 @@ aristaeos_s0:
   port_Ethernet1-1_capacity: 400000
   port_Ethernet1-1_desttype: switch
   port_Ethernet1-1_isAlias: "urn:ogf:network:core1.tobedefined:2023:tobedefined:tobedefined"
-  port_Ethernet1-1_vlan_range: [3911,3912,3600-3604,3873,3874,3615-3619]
+  port_Ethernet1-1_vlan_range: [ 3605-3609,3610-3614 ]
   port_Ethernet1-1_wanlink: "Ethernet1/1"
   port_Ethernet2-1_capacity: 400000
   port_Ethernet2-1_desttype: switch
   port_Ethernet2-1_isAlias: "urn:ogf:network:core2.tobedefined:2023:tobedefined:tobedefined"
-  port_Ethernet2-1_vlan_range: [ 3605-3609,3610-3614 ]
+  port_Ethernet2-1_vlan_range: [3911,3912,3600-3604,3873,3874,3615-3619]
   port_Ethernet2-1_wanlink: "Ethernet2/1"
   port_Ethernet3-1_capacity: 400000
   port_Ethernet3-1_desttype: switch
