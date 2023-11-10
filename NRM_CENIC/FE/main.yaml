@@ -26,6 +26,7 @@ aristaeos_s0:
     - "Port-Channel501-rucio"
     - "Port-Channel502"
     - "Port-Channel502-prismcore"
+    - "Port-Channel503"
     - "Ethernet1/1"
     - "Ethernet2/1"
     - "Ethernet3/1"
