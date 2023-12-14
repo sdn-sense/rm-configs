@@ -29,6 +29,7 @@ cisconx9:
   rsts_enabled: "ipv4,ipv6"
   private_asn: 64515
   vlan_mtu: 9216
+  snmp_monitoring: True
   ports:
     - "Ethernet1/23"
     - "Ethernet1/23-esnet"
