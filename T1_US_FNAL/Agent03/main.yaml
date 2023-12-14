@@ -22,3 +22,7 @@ qos:
   interfaces:
     enp59s0:
       master_intf: enp59s0
+      ipv6_range:
+        - 2620:6a:0:2841::/64
+        - 2620:6a:0:2842::/64
+        - 2620:6a:0:2843::/64
