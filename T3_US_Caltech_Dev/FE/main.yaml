@@ -13,8 +13,8 @@ T3_US_Caltech_Dev:
   privatedir: /opt/siterm/config/T3_US_Caltech_Dev/
   ipv4-subnet-pool: [198.32.43.1/32,198.32.43.2/32]
   ipv6-subnet-pool: [2605:d9c0:2:fff1::/64,2605:d9c0:2:fff2::/64,2605:d9c0:2:fff3::/64]
-  ipv6-address-pool: [fc00:3600::0/64,fc00:3601::0/64,fc00:3602::0/64,fc00:3603::0/64,fc00:3604::0/64,fc00:3605::0/64,fc00:3606::0/64,fc00:3607::0/64,fc00:3608::0/64,fc00:3609::0/64,fc00:3610::0/64,fc00:3611::0/64,fc00:3612::0/64,fc00:3613::0/64,fc00:3614::0/64,fc00:3615::0/64,fc00:3616::0/64,fc00:3617::0/64,fc00:3618::0/64,fc00:3619::0/64,fc00:1779::0/64,fc00:1780::0/64,fc00:1781::0/64,fc00:1782::0/64,fc00:1783::0/64,fc00:1784::0/64,fc00:1785::0/64,fc00:1786::0/64,fc00:1787::0/64,fc00:1788::0/64,fc00:1789::0/64,fc00:1790::0/64,fc00:1791::0/64,fc00:1792::0/64,fc00:1793::0/64,fc00:1794::0/64,fc00:1795::0/64,fc00:1796::0/64,fc00:1797::0/64,fc00:1798::0/64,fc00:1799::0/64,fc00:3985::0/64,fc00:3986::0/64,fc00:3987::0/64,fc00:3988::0/64,fc00:3989::0/64]
-  ipv4-address-pool: [10.251.85.0/24,10.251.86.0/24,10.251.87.0/24,10.251.88.0/24,10.251.89.0/24,172.16.3.0/30,172.17.3.0/30,172.18.3.0/30,172.19.3.0/30,172.31.10.0/24,172.31.11.0/24,172.31.12.0/24,172.31.13.0/24,172.31.14.0/24,172.31.15.0/24]
+  ipv4-address-pool: [10.0.14.1/31,10.251.85.0/24,10.251.86.0/24,10.251.87.0/24,10.251.88.0/24,10.251.89.0/24,172.16.3.0/30,172.17.3.0/30,172.18.3.0/30,172.19.3.0/30]
+  ipv6-address-pool: [fc00:3620::0/64,fc00:3621::0/64,fc00:3622::0/64,fc00:3623::0/64,fc00:3624::0/64,fc00:3625::0/64,fc00:3626::0/64,fc00:3627::0/64,fc00:3628::0/64,fc00:3629::0/64,fc00:3630::0/64]
   year: 2013
   switch:
     - "dellos9_s0"
@@ -34,15 +34,15 @@ dellos9_s0:
   private_asn: 64513
   vrf: lhcone
   vlan_mtu: 9416
-  vlan_range: [1779-1799,3600-3619,3985-3989,3870-3883,3911-3912,3870-3883]
+  vlan_range: [3620-3630]
   ports:
     "Port-channel 103":
       capacity: 400000
       desttype: switch
-      isAlias: "urn:ogf:network:sc-test.cenic.net:2020:aristaeos_s0:Port-Channel501"
+      isAlias: "urn:ogf:network:sc-test.cenic.net:2020:aristaeos_s0:Port-Channel501-dummy"
       wanlink: True
     "hundredGigE 1/13":
-      vlan_range: [3985-3989]
+      vlan_range: [3625-3630]
       capacity: 100000
     "Port-channel 104":
       capacity: 400000
@@ -54,21 +54,21 @@ dellos9_s0:
 dellos9_s1:
   vsw: "dellos9_s1"
   vlan_mtu: 9416
-  vlan_range: [1779-1799,3600-3619,3985-3989,3870-3883,3911-3912,3870-3883]
+  vlan_range: [3620-3630]
   allports: True
   allvlans: True
   snmp_monitoring: True
 dellos10_s0:
   vsw: "dellos10_s0"
   vlan_mtu: 9416
-  vlan_range: [1779-1799,3600-3619,3985-3989,3870-3883,3911-3912,3870-3883]
+  vlan_range: [3620-3630]
   allports: True
   allvlans: True
   snmp_monitoring: True
 aristaeos_s0:
   vsw: "aristaeos_s0"
   vlan_mtu: 9416
-  vlan_range: [1779-1799,3600-3619,3985-3989,3870-3883,3911-3912,3870-3883]
+  vlan_range: [3620-3630]
   ports:
     "Port-channel104":
       capacity: 400000
@@ -80,42 +80,42 @@ aristaeos_s0:
 aristaeos_s1:
   vsw: "aristaeos_s1"
   vlan_mtu: 9416
-  vlan_range: [1779-1799,3600-3619,3985-3989,3870-3883,3911-3912,3870-3883]
+  vlan_range: [3620-3630]
   allports: True
   allvlans: True
   snmp_monitoring: True
 sn3700_s0:
   vsw: "sn3700_s0"
   vlan_mtu: 9416
-  vlan_range: [1779-1799,3600-3619,3985-3989,3870-3883,3911-3912,3870-3883]
+  vlan_range: [3620-3630]
   allports: True
   allvlans: True
   snmp_monitoring: True
 freertr_s0:
   vsw: "freertr_s0"
   vlan_mtu: 9416
-  vlan_range: [1779-1799,3600-3619,3985-3989,3870-3883,3911-3912,3870-3883]
+  vlan_range: [3620-3630]
   allports: True
   allvlans: True
   snmp_monitoring: True
 freertr_s1:
   vsw: "freertr_s1"
   vlan_mtu: 9416
-  vlan_range: [1779-1799,3600-3619,3985-3989,3870-3883,3911-3912,3870-3883]
+  vlan_range: [3620-3630]
   allports: True
   allvlans: True
   snmp_monitoring: True
 freertr_s2:
   vsw: "freertr_s2"
   vlan_mtu: 9416
-  vlan_range: [1779-1799,3600-3619,3985-3989,3870-3883,3911-3912,3870-3883]
+  vlan_range: [3620-3630]
   allports: True
   allvlans: True
   snmp_monitoring: True
 freertr_s3:
   vsw: "freertr_s3"
   vlan_mtu: 9416
-  vlan_range: [1779-1799,3600-3619,3985-3989,3870-3883,3911-3912,3870-3883]
+  vlan_range: [3620-3630]
   allports: True
   allvlans: True
   snmp_monitoring: True
