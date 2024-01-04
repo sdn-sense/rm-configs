@@ -18,8 +18,6 @@ T3_US_Caltech_Dev:
   year: 2013
   switch:
     - "dellos9_s0"
-    - "dellos9_s1"
-    - "dellos10_s0"
     - "aristaeos_s0"
     - "aristaeos_s1"
     - "sn3700_s0"
@@ -35,6 +33,15 @@ dellos9_s0:
   vrf: lhcone
   vlan_mtu: 9416
   vlan_range: [3620-3630]
+  ports_ignore:
+  - hundredGigE 1/9
+  - hundredGigE 1/13
+  - hundredGigE 1/14
+  - hundredGigE 1/15
+  - hundredGigE 1/17
+  - hundredGigE 1/18
+  - hundredGigE 1/19
+  - hundredGigE 1/20
   ports:
     "Port-channel 103":
       capacity: 400000
@@ -51,24 +58,15 @@ dellos9_s0:
   allports: True
   allvlans: True
   snmp_monitoring: True
-dellos9_s1:
-  vsw: "dellos9_s1"
-  vlan_mtu: 9416
-  vlan_range: [3620-3630]
-  allports: True
-  allvlans: True
-  snmp_monitoring: True
-dellos10_s0:
-  vsw: "dellos10_s0"
-  vlan_mtu: 9416
-  vlan_range: [3620-3630]
-  allports: True
-  allvlans: True
-  snmp_monitoring: True
 aristaeos_s0:
   vsw: "aristaeos_s0"
   vlan_mtu: 9416
   vlan_range: [3620-3630]
+  ports_ignore:
+  - Ethernet29/1
+  - Ethernet30/1
+  - Ethernet31/1
+  - Ethernet32/1
   ports:
     "Port-channel104":
       capacity: 400000
