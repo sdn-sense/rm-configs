@@ -8,8 +8,8 @@ agent:
   interfaces: [mlx5p1s1]
   hostname: sdn-dtn-2-11.ultralight.org
 mlx5p1s1:
-  port: hundredGigE 1/27
-  switch: dellos9_s0
+  port: Ethernet4/1
+  switch: aristaeos_s0
   shared: false
   intf_max: 100000
   max_bandwidth: 100000

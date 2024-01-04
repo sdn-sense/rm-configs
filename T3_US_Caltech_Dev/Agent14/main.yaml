@@ -8,8 +8,8 @@ agent:
   interfaces: [mlx5p1s2]
   hostname: sandie-10.ultralight.org
 mlx5p1s2:
-  port: hundredGigE 1/25
-  switch: dellos9_s0
+  port: Ethernet1/1
+  switch: aristaeos_s0
   shared: false
   intf_max: 100000
   max_bandwidth: 100000
