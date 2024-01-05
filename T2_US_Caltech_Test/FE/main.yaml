@@ -63,7 +63,7 @@ dellos9_s0:
   port_Port-channel_103_wanlink: "Port-channel 103"
   port_Port-channel_104_capacity: 400000
   port_Port-channel_104_desttype: switch
-  port_Port-channel_104_isAlias: "urn:ogf:network:ultralight.org:2013:aristaeos_s0:Port-channel104"
+  port_Port-channel_104_isAlias: "urn:ogf:network:ultralight.org:2013:aristaeos_s0:Port-Channel104"
 aristaeos_s0:
   vsw: "aristaeos_s0"
   vlan_mtu: 9214
