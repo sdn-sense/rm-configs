@@ -54,7 +54,7 @@ dellos9_s0:
     "Port-channel 104":
       capacity: 400000
       desttype: switch
-      isAlias: "urn:ogf:network:ultralight-dev.org:2013:aristaeos_s0:Port-channel104"
+      isAlias: "urn:ogf:network:ultralight-dev.org:2013:aristaeos_s0:Port-Channel104"
   allports: True
   allvlans: True
   snmp_monitoring: True
@@ -68,7 +68,7 @@ aristaeos_s0:
   - Ethernet31/1
   - Ethernet32/1
   ports:
-    "Port-channel104":
+    "Port-Channel104":
       capacity: 400000
       desttype: switch
       isAlias: "urn:ogf:network:ultralight.org:2013:dellos9_s0:Port-channel_104"
