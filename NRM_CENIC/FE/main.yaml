@@ -115,7 +115,7 @@ aristaeos_s0:
   port_Ethernet11-1-fnal_capacity: 400000
   port_Ethernet11-1-fnal_desttype: switch
   port_Ethernet11-1-fnal_isAlias: "urn:ogf:network:fnal.gov:2023:cisconx9:Ethernet1-23"
-  port_Ethernet11-1-fnal_vlan_range: [3610-3615]
+  port_Ethernet11-1-fnal_vlan_range: [3613,3614,3615]
   port_Ethernet11-1-fnal_realport: "Ethernet11/1"
   port_Ethernet12-1_capacity: 400000
   port_Ethernet12-1_desttype: switch
@@ -127,3 +127,8 @@ aristaeos_s0:
   port_Ethernet13-1_isAlias: "urn:ogf:network:es.net:2013::losa-cr6:2_1_c4_1:+"
   port_Ethernet13-1_vlan_range: [1779-1799,2027,3600-3619,3985-3989,3870-3883,3911-3912]
   port_Ethernet13-1_wanlink: "Ethernet13/1"
+  port_Ethernet13-1-fnal_capacity: 400000
+  port_Ethernet13-1-fnal_desttype: switch
+  port_Ethernet13-1-fnal_isAlias: "urn:ogf:network:fnal.gov:2023:cisconx9:Ethernet1-23-la"
+  port_Ethernet13-1-fnal_vlan_range: [3610,3611,3612]
+  port_Ethernet13-1-fnal_realport: "Ethernet13/1"

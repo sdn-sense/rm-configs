@@ -33,6 +33,7 @@ cisconx9:
   ports:
     - "Ethernet1/23"
     - "Ethernet1/23-esnet"
+    - "Ethernet1/23-la"
     - "Ethernet1/24"
     - "Ethernet1/25"
     - "Ethernet1/26"
@@ -40,13 +41,19 @@ cisconx9:
   port_Ethernet1-23_desttype: switch
   port_Ethernet1-23_isAlias: "urn:ogf:network:sc-test.cenic.net:2020:aristaeos_s0:Ethernet11-1-fnal"
   port_Ethernet1-23_wanlink: "Ethernet1/23"
-  port_Ethernet1-23_vlan_range: [3610-3615]
+  port_Ethernet1-23_vlan_range: [3613,3614,3615]
   port_Ethernet1-23-esnet_capacity: 100000
   port_Ethernet1-23-esnet_desttype: switch
   port_Ethernet1-23-esnet_isAlias: "urn:ogf:network:es.net:2013::fnalfcc-cr6:lag-1:+"
   port_Ethernet1-23-esnet_wanlink: "Ethernet1/23-esnet"
   port_Ethernet1-23-esnet_realport: "Ethernet1/23"
   port_Ethernet1-23-esnet_vlan_range: [ 3600-3609,3616-3619 ]
+  port_Ethernet1-23-la_capacity: 100000
+  port_Ethernet1-23-la_desttype: switch
+  port_Ethernet1-23-la_isAlias: "urn:ogf:network:sc-test.cenic.net:2020:aristaeos_s0:Ethernet13-1-fnal"
+  port_Ethernet1-23-la_wanlink: "Ethernet1/23-esnet"
+  port_Ethernet1-23-la_realport: "Ethernet1/23"
+  port_Ethernet1-23-la_vlan_range: [3610,3611,3612]
   vlan_range: [3600-3619]
   allports: False
   allvlans: False
