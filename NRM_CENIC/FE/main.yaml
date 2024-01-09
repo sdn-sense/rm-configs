@@ -39,6 +39,7 @@ aristaeos_s0:
     - "Ethernet11-1-fnal"
     - "Ethernet12/1"
     - "Ethernet13/1"
+    - "Ethernet13-1-fnal"
   vlan_range: [1779-1799,2027,3600-3619,3985-3989,3870-3883,3911-3912]
   port_Port-Channel501_capacity: 400000
   port_Port-Channel501_desttype: switch
