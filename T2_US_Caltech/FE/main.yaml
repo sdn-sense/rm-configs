@@ -56,6 +56,6 @@ Edgecore-Sonic:
   allports: False
   allvlans: False
   snmp_monitoring: True
-  port_Port-channel104_capacity: 200000
-  port_Port-channel104_desttype: switch
-  port_Port-channel104_desttype: "urn:ogf:network:ultralight.org:2024::Port-channel_41"
+  port_Port-channel41_capacity: 200000
+  port_Port-channel41_desttype: switch
+  port_Port-channel41_desttype: "urn:ogf:network:ultralight.org:2024::Port-channel_41"
