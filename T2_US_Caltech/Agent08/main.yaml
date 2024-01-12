@@ -9,7 +9,7 @@ agent:
   hostname: transfer-18.ultralight.org
 bondpublic:
   port: Ethernet48
-  switch: Edgecore-Sonic
+  switch: edgecore_s0
   shared: false
   allowOvercommit: false
   intf_max: 100000

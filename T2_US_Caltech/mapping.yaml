@@ -2,42 +2,42 @@
 c6f6840fb6efbc85293ad6aa82e4b813: 
   config: FE/
   maintainer: "Preeti Bhat"
-  status: development
+  status: production
   type: FE
 e1e0fe6f1ed20c7b29f46ade6f1482a7:
   config: Agent01/
   maintainer: "Preeti Bhat"
-  status: development
+  status: production
   type: Agent
 ce58a2aa724fffac431ffa0254a535f6:
   config: Agent02/
   maintainer: "Preeti Bhat"
-  status: development
+  status: production
   type: Agent
 017195318d2ffa1bc14a21edccaa986f:
   config: Agent03/
   maintainer: "Preeti Bhat"
-  status: development
+  status: production
   type: Agent
 495aa5d898a55d0a0f1426c5d33a0876:
   config: Agent04/
   maintainer: "Preeti Bhat"
-  status: development
+  status: production
   type: Agent
 7c924f104ec97aa8dac59f15ec58213d:
   config: Agent05/
   maintainer: "Preeti Bhat"
-  status: development
+  status: production
   type: Agent
 3538f044f57aaf4a3fbea859f3d5b420:
   config: Agent06/
   maintainer: "Preeti Bhat"
-  status: development
+  status: production
   type: Agent
 8c1088f20f502830b4b35b6f41f33cf5:
   config: Agent07/
   maintainer: "Preeti Bhat"
-  status: development
+  status: production
   type: Agent
 9c4849d395a214fb56c2775eff3acda8:
   config: Agent08/
