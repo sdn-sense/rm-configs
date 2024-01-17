@@ -54,5 +54,5 @@ edgecore_s0:
   vsw: "edgecore_s0"
   allports: False
   vlan_range: [2000-2029]
-  port:
+  ports:
     - "Ethernet48"
