@@ -5,11 +5,6 @@
   maintainer: "Fei Yeh"
   status: production
   type: FE
-c03ff2bffc6a0bca493a8612d0c41f7f:
-  config: Agent01/
-  maintainer: "Fei Yeh"
-  status: production
-  type: Agent
 40bd9346af13d6f131caedce48ac36c1:
   config: Agent02/
   maintainer: "Fei Yeh"
