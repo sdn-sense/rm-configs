@@ -17,16 +17,12 @@ T2_US_UMD:
 s0:
   vsw: "s0"
   ports:
-    - "1_1"
-    - "1_2"
+    "1_1":
+      capacity: 10000
+      destport: 7_1_1
+      hostname: wash-cr6
+      isAlias: "urn:ogf:network:es.net:2013::wash-cr6:1_1_c6_1:+"
+      wanlink: True
+    "1_2":
+      capacity: 10000
   vlan_range: [3600-3619]
-  port_1_1_capacity: 10000
-  port_1_1_destport: 7_1_1
-  port_1_1_desttype: switch
-  port_1_1_hostname: wash-cr6
-  port_1_1_isAlias: "urn:ogf:network:es.net:2013::wash-cr6:1_1_c6_1:+"
-  port_1_1_wanlink: "1_1"
-  port_1_1_vlan_range: [3600-3619]
-  port_1_2_capacity: 10000
-  port_1_2_vlan_range: [3600-3619]
-
