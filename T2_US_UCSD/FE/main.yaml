@@ -19,26 +19,20 @@ T2_US_UCSD:
 s0:
   vsw: "s0"
   ports:
-    - "1_1"
-    - "1_2"
+    "1_1":
+      capacity: 100000
+      isAlias: "urn:ogf:network:calit2.optiputer.net:2020:prism-core:k8s-igrok-01"
+      wanlink: True
+    "1_2":
+      capacity: 100000
   vlan_range: [1779-1799]
-  port_1_1_capacity: 100000
-  port_1_1_desttype: switch
-  port_1_1_isAlias: "urn:ogf:network:calit2.optiputer.net:2020:prism-core:k8s-igrok-01"
-  port_1_1_wanlink: "1_1"
-  port_1_1_vlan_range: [1779-1799]
-  port_1_2_capacity: 100000
-  port_1_2_vlan_range: [1779-1799]
 s1:
   vsw: "s1"
   ports:
-    - "1_1"
-    - "1_2"
+    "1_1":
+      capacity: 100000
+      isAlias: "urn:ogf:network:calit2.optiputer.net:2020:prism-core:k8s-igrok-02"
+      wanlink: True
+    "1_2":
+      capacity: 100000
   vlan_range: [1779-1799]
-  port_1_1_capacity: 100000
-  port_1_1_desttype: switch
-  port_1_1_isAlias: "urn:ogf:network:calit2.optiputer.net:2020:prism-core:k8s-igrok-02"
-  port_1_1_wanlink: "1_1"
-  port_1_1_vlan_range: [1779-1799]
-  port_1_2_capacity: 100000
-  port_1_2_vlan_range: [1779-1799]
