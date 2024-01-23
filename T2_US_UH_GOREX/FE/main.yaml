@@ -20,38 +20,30 @@ T2_US_UH_GOREX:
 s0:
   vsw: "s0"
   ports:
-    - "1_1"
-    - "1_2"
+    "1_1":
+      capacity: 100000
+      isAlias: "urn:ogf:network:uhnet.net:2021:hawaii-scidmz:uhmanoa-dtn"
+      wanlink: True
+    "1_2":
+      capacity: 100000
   vlan_range: [3605-3609]
-  port_1_1_capacity: 100000
-  port_1_1_desttype: switch
-  port_1_1_isAlias: "urn:ogf:network:uhnet.net:2021:hawaii-scidmz:uhmanoa-dtn"
-  port_1_1_vlan_range: [3605-3609]
-  port_1_2_capacity: 100000
-  port_1_2_vlan_range: [3605-3609]
 s1:
   vsw: "s1"
   ports:
-    - "1_1"
-    - "1_2"
+    "1_1":
+      capacity: 100000
+      isAlias: "urn:ogf:network:uhnet.net:2021:hawaii-scidmz:ifahurp-dtn"
+      wanlink: True
+    "1_2":
+      capacity: 100000
   vlan_range: [3600-3604]
-  port_1_1_capacity: 100000
-  port_1_1_desttype: switch
-  port_1_1_isAlias: "urn:ogf:network:uhnet.net:2021:hawaii-scidmz:ifahurp-dtn"
-  port_1_1_wanlink: "1_1"
-  port_1_1_vlan_range: [3600-3604]
-  port_1_2_capacity: 100000
-  port_1_2_vlan_range: [3600-3604]
 s2:
   vsw: "s2"
   ports:
-    - "1_1"
-    - "1_2"
+    "1_1":
+      capacity: 10000
+      isAlias: "urn:ogf:network:uhnet.net:2021:guam-gorex:uog-dtn"
+      wanlink: True
+    "1_2":
+      capacity: 10000
   vlan_range: [3600-3604]
-  port_1_1_capacity: 10000
-  port_1_1_desttype: switch
-  port_1_1_isAlias: "urn:ogf:network:uhnet.net:2021:guam-gorex:uog-dtn"
-  port_1_1_vlan_range: [3600-3604]
-  port_1_1_wanlink: "1_1"
-  port_1_2_capacity: 10000
-  port_1_2_vlan_range: [3600-3604]
