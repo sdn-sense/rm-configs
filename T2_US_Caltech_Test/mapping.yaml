@@ -43,6 +43,10 @@ ff43b0eec6fef7c42cdb8db015f63f53:
   config: Agent08/
   maintainer: "Justas Balcas"
   type: Agent
+71245b76ecc577d4cbd359c17191ceb1:
+  config: Agent09/
+  maintainer: "Justas Balcas"
+  type: Agent
 1e38e34933f85736dd5e18c32efc382d:
   config: Agent14/
   maintainer: "Justas Balcas"
