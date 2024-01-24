@@ -26,3 +26,6 @@ rucio:
 realtimemon:
   full_dn: "/C=US/O=Let's Encrypt/CN=R3/CN=dev2.virnao.com"
   permissions: r
+pbhat:
+  full_dn: "/DC=ch/DC=cern/CN=CERN Grid Certification Authority/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=pbhat/CN=862304/CN=Preeti Padmanabha Bhat"
+  permissions: w
