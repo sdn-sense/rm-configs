@@ -43,19 +43,19 @@ edgecore_s0:
   vrf: Vrf_sense01
   vlan_mtu: 9100
   ports:
-    - "Ethernet0"
-    - "Ethernet8"
-    - "Ethernet16"
-    - "Ethernet24"
-    - "Ethernet32"
-    - "Ethernet40"
-    - "Ethernet48"
-    - "Ethernet56"
-    - "PortChannel41"
+    "Ethernet0": {}
+    "Ethernet8": {}
+    "Ethernet16": {}
+    "Ethernet24": {}
+    "Ethernet32": {}
+    "Ethernet40": {}
+    "Ethernet48": {}
+    "Ethernet56": {}
+    "PortChannel41":
+      capacity: 200000
+      desttype: switch
+      isAlias: "urn:ogf:network:sc-test.cenic.net:2020:aristaeos_s0:Port-Channel501-caltechprod"
   vlan_range: [3640-3659]
   allports: False
   allvlans: False
   snmp_monitoring: True
-  port_PortChannel41_capacity: 200000
-  port_PortChannel41_desttype: switch
-  port_PortChannel41_desttype: "urn:ogf:network:ultralight.org:2024::Port-channel_41"
