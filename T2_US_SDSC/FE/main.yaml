@@ -14,7 +14,7 @@ T2_US_SDSC:
   year: 2020
   metadata:
     xrootd:
-      "2001:48d0:3001:111::/64": "xrootd-sense-ucsd-redirector.sdsc.optiputer.net:1094"
+      "2001:48d0:3001:111::/64": "xrootd-sense-ucsd-redirector-111.sdsc.optiputer.net:1094"
       "2001:48d0:3001:112::/64": "xrootd-sense-ucsd-redirector-112.sdsc.optiputer.net:1094"
       "2001:48d0:3001:113::/64": "xrootd-sense-ucsd-redirector-113.sdsc.optiputer.net:1094"
       "2001:48d0:3001:114::/64": "xrootd-sense-ucsd-redirector-114.sdsc.optiputer.net:1094"
