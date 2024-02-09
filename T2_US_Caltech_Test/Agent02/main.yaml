@@ -32,3 +32,9 @@ qos:
     sensexrd3:
       ipv6_range: 2605:d9c0:2:fff3::0/64
       master_intf: mlx4p2s1
+    sensexrd4:
+      ipv6_range: 2605:d9c0:2:fff4::0/64
+      master_intf: mlx4p2s1
+    sensexrd5:
+      ipv6_range: 2605:d9c0:2:fff5::0/64
+      master_intf: mlx4p2s1
