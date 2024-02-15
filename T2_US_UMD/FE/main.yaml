@@ -19,9 +19,9 @@ s0:
   ports:
     "1_1":
       capacity: 10000
-      destport: 7_1_1
+      destport: lab-50
       hostname: wash-cr6
-      isAlias: "urn:ogf:network:es.net:2013::wash-cr6:1_1_c6_1:+"
+      isAlias: "urnurn:ogf:network:es.net:2013::wash-cr6:lag-50:wix"
       wanlink: True
     "1_2":
       capacity: 10000
