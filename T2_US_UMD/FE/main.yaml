@@ -21,7 +21,7 @@ s0:
       capacity: 10000
       destport: lab-50
       hostname: wash-cr6
-      isAlias: "urnurn:ogf:network:es.net:2013::wash-cr6:lag-50:wix"
+      isAlias: "urn:ogf:network:es.net:2013::wash-cr6:lag-50:wix"
       wanlink: True
     "1_2":
       capacity: 10000
