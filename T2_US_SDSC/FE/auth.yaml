@@ -23,3 +23,6 @@ rucio:
 realtimemon:
   full_dn: "/C=US/O=Let's Encrypt/CN=R3/CN=dev2.virnao.com"
   permissions: r
+ddavila:
+  full_dn: "/DC=ch/DC=cern/CN=CERN Grid Certification Authority/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=ddavila/CN=815177/CN=Diego Davila Foyo"
+  permissions: r

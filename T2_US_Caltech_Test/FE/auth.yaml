@@ -29,3 +29,6 @@ realtimemon:
 pbhat:
   full_dn: "/DC=ch/DC=cern/CN=CERN Grid Certification Authority/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=pbhat/CN=862304/CN=Preeti Padmanabha Bhat"
   permissions: w
+ddavila:
+  full_dn: "/DC=ch/DC=cern/CN=CERN Grid Certification Authority/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=ddavila/CN=815177/CN=Diego Davila Foyo"
+  permissions: r
