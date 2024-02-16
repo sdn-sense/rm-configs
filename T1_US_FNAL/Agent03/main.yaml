@@ -10,6 +10,7 @@ agent:
 enp59s0:
   port: "Ethernet1/24"
   shared: false
+  allowOvercommit: true
   switch: cisconx9
   intf_max: 100000
   max_bandwidth: 100000

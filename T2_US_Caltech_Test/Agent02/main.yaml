@@ -11,7 +11,7 @@ mlx4p2s1:
   port: hundredGigE 1/10
   switch: dellos9_s0
   shared: false
-  allowOvercommit: false
+  allowOvercommit: true
   intf_max: 100000
   max_bandwidth: 100000
   min_bandwidth: 1000

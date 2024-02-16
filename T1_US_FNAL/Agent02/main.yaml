@@ -10,6 +10,7 @@ agent:
 enp129s0f1:
   port: "Ethernet1/25"
   shared: false
+  allowOvercommit: true
   switch: cisconx9
   intf_max: 100000
   max_bandwidth: 100000

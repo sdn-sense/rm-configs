@@ -11,7 +11,7 @@ enp65s0np0:
   port: Ethernet104
   switch: sn3700_s0
   shared: false
-  allowOvercommit: false
+  allowOvercommit: true
   intf_max: 100000
   max_bandwidth: 100000
   min_bandwidth: 1000
@@ -22,7 +22,7 @@ enp193s0f1np1:
   port: Ethernet72
   switch: sn3700_s0
   shared: false
-  allowOvercommit: false
+  allowOvercommit: true
   intf_max: 100000
   max_bandwidth: 100000
   min_bandwidth: 1000
@@ -33,7 +33,7 @@ enp129s0f1np1:
   port: Ethernet80
   switch: sn3700_s0
   shared: false
-  allowOvercommit: false
+  allowOvercommit: true
   intf_max: 100000
   max_bandwidth: 100000
   min_bandwidth: 1000
@@ -44,7 +44,7 @@ enp33s0f1np1:
   port: Ethernet76
   switch: sn3700_s0
   shared: false
-  allowOvercommit: false
+  allowOvercommit: true
   intf_max: 100000
   max_bandwidth: 100000
   min_bandwidth: 1000
@@ -55,7 +55,7 @@ enp1s0f1np1:
   port: Ethernet84
   switch: sn3700_s0
   shared: false
-  allowOvercommit: false
+  allowOvercommit: true
   intf_max: 100000
   max_bandwidth: 100000
   min_bandwidth: 1000
