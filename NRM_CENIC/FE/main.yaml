@@ -44,7 +44,7 @@ aristaeos_s0:
   port_Port-Channel501_capacity: 400000
   port_Port-Channel501_desttype: switch
   port_Port-Channel501_isAlias: "urn:ogf:network:ultralight.org:2013:dellos9_s0:Port-channel_103"
-  port_Port-Channel501_vlan_range: [1779-1799,3613-3619,3870-3883,3911-3912]
+  port_Port-Channel501_vlan_range: [1779-1799,3600-3609,3613-3619,3870-3883,3911-3912]
   port_Port-Channel501_wanlink: "Port-Channel501"
   port_Port-Channel501-rucio_capacity: 100000
   port_Port-Channel501-rucio_desttype: switch
