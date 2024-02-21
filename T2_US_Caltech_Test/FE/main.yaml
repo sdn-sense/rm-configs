@@ -52,6 +52,7 @@ dellos9_s0:
       desttype: switch
       isAlias: "urn:ogf:network:sc-test.cenic.net:2020:aristaeos_s0:Port-Channel501-rucio"
       wanlink: True
+      rate_limit: True
     "hundredGigE 1/23": {}
     "hundredGigE 1/32": {}
   vlan_range: [1779-1799,3600-3619,3985-3989,3870-3883,3911-3912,3870-3883]
