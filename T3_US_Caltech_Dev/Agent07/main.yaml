@@ -11,9 +11,13 @@ mlx5p1s1:
   port: Ethernet4/1
   switch: aristaeos_s0
   shared: false
-  intf_max: 100000
-  max_bandwidth: 100000
-  min_bandwidth: 1000
+  bwParams:
+    unit: "mbps"
+    type: "guaranteedCapped"
+    priority: 0
+    minReservableCapacity: 1000
+    maximumCapacity: 100000
+    granularity: 1000
   vlan_range: [3620-3630]
   ipv4-address-pool: [10.0.14.1/31,10.251.85.0/24,10.251.86.0/24,10.251.87.0/24,10.251.88.0/24,10.251.89.0/24,172.16.3.0/30,172.17.3.0/30,172.18.3.0/30,172.19.3.0/30]
   ipv6-address-pool: [fc00:3620::0/64,fc00:3621::0/64,fc00:3622::0/64,fc00:3623::0/64,fc00:3624::0/64,fc00:3625::0/64,fc00:3626::0/64,fc00:3627::0/64,fc00:3628::0/64,fc00:3629::0/64,fc00:3630::0/64]
