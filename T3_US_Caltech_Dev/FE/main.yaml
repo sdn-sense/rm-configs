@@ -33,6 +33,7 @@ dellos9_s0:
   vrf: lhcone
   vlan_mtu: 9416
   vlan_range: [3620-3630]
+  reservableCapacity: "100%"
   ports_ignore:
   - hundredGigE 1/9
   - hundredGigE 1/13
@@ -48,9 +49,11 @@ dellos9_s0:
       desttype: switch
       isAlias: "urn:ogf:network:sc-test.cenic.net:2020:aristaeos_s0:Port-Channel501-dummy"
       wanlink: True
+      reservableCapacity: 100000
     "hundredGigE 1/13":
       vlan_range: [3625-3630]
       capacity: 100000
+      reservableCapacity: 40000
     "Port-channel 104":
       capacity: 400000
       desttype: switch
