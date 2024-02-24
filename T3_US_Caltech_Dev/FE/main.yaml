@@ -36,9 +36,6 @@ dellos9_s0:
   reservableCapacity: "100%"
   ports_ignore:
   - hundredGigE 1/9
-  - hundredGigE 1/13
-  - hundredGigE 1/14
-  - hundredGigE 1/15
   - hundredGigE 1/17
   - hundredGigE 1/18
   - hundredGigE 1/19
