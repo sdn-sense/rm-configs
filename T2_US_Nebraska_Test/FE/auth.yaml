@@ -26,3 +26,6 @@ dtn2:
 realtimemon:
   full_dn: "/C=US/O=Let's Encrypt/CN=R3/CN=dev2.virnao.com"
   permissions: r
+asif:
+  full_dn: "/DC=ch/DC=cern/CN=CERN Grid Certification Authority/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sashah/CN=763565/CN=Syed Asif Raza Shah"
+  permissions: w
