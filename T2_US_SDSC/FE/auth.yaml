@@ -20,8 +20,11 @@ agent:
 rucio:
   full_dn: "/C=US/O=Internet2/CN=InCommon RSA IGTF Server CA 3/DC=org/DC=incommon/C=US/ST=California/O=University of California, San Diego/CN=rucio-sense.t2.ucsd.edu"
   permissions: w
-realtimemon:
+rtmon-dev2:
   full_dn: "/C=US/O=Let's Encrypt/CN=R3/CN=dev2.virnao.com"
+  permissions: r
+sense-mon:
+  full_dn: "/C=US/ST=California/O=Energy Sciences Network/CN=sense-mon.es.net"
   permissions: r
 ddavila:
   full_dn: "/DC=ch/DC=cern/CN=CERN Grid Certification Authority/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=ddavila/CN=815177/CN=Diego Davila Foyo"
