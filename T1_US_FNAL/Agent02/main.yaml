@@ -3,12 +3,14 @@ general:
   ip: "131.225.196.137"
   sitename: [T1_US_FNAL]
   webdomain: "https://cmssense1.fnal.gov:8443"
+  node_exporter: "cmssense3.fnal.gov:15000"
 agent: 
   interfaces: [enp129s0f1]
   hostname: cmssense3.fnal.gov
 enp129s0f1:
   port: "Ethernet1/25"
   shared: false
+  allowOvercommit: true
   switch: cisconx9
   intf_max: 100000
   max_bandwidth: 100000
@@ -19,6 +21,7 @@ enp129s0f1:
 qos:
   policy: hostlevel
   qos_params: "mtu 9000 mpu 9000 quantum 200000 burst 300000 cburst 300000 qdisc sfq balanced"
+  class_max: true
   interfaces:
     enp129s0f1:
       master_intf: enp129s0f1

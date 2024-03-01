@@ -39,35 +39,13 @@ fd769ec2cea02eeed0c3e0bcf14141e0:
   maintainer: "Justas Balcas"
   status: development
   type: Agent
-a7c082622c670cbe7c9251faaa69153c:
+ff43b0eec6fef7c42cdb8db015f63f53:
   config: Agent08/
   maintainer: "Justas Balcas"
-  status: development
   type: Agent
-125fdbea660a6c6a7504a7519e82345d:
+71245b76ecc577d4cbd359c17191ceb1:
   config: Agent09/
   maintainer: "Justas Balcas"
-  status: development
-  type: Agent
-657c4ea3ecc895002aaaac29f3a1ab0f:
-  config: Agent10/
-  maintainer: "Justas Balcas"
-  status: development
-  type: Agent
-504403df247fca02be8448375a58cc9e:
-  config: Agent11/
-  maintainer: "Justas Balcas"
-  status: development
-  type: Agent
-7a3321daa3b4aeb9e56c4ca4ef64c98d:
-  config: Agent12/
-  maintainer: "Justas Balcas"
-  status: development
-  type: Agent
-812a0548e7bfe6270580cd32073c43b4:
-  config: Agent13/
-  maintainer: "Justas Balcas"
-  status: development
   type: Agent
 1e38e34933f85736dd5e18c32efc382d:
   config: Agent14/

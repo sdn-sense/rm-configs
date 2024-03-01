@@ -16,6 +16,11 @@ T1_US_FNAL:
   privatedir: /opt/siterm/config/T1_US_FNAL/
   year: 2023
   ipv6-subnet-pool: [2620:6a:0:2841::/64,2620:6a:0:2842::/64,2620:6a:0:2843::/64]
+  metadata:
+    xrootd:
+      "2620:6a:0:2841::/64": "cmssense4-origin-2841-1.fnal.gov:2880"
+      "2620:6a:0:2842::/64": "cmssense4-origin-2842-1.fnal.gov:2880"
+      "2620:6a:0:2843::/64": "cmssense4-origin-2843-1.fnal.gov:2880"
   ipv4-address-pool: [10.251.85.0/24,10.251.86.0/24,10.251.87.0/24,10.251.88.0/24,10.251.89.0/24,172.16.3.0/30,172.17.3.0/30,172.18.3.0/30,172.19.3.0/30,172.31.10.0/24,172.31.11.0/24,172.31.12.0/24,172.31.13.0/24,172.31.14.0/24,172.31.15.0/24]
   ipv6-address-pool: [2001:1458:302:49::0/64,fc00:3600::0/64,fc00:3601::0/64,fc00:3602::0/64,fc00:3603::0/64,fc00:3604::0/64,fc00:3605::0/64,fc00:3606::0/64,fc00:3607::0/64,fc00:3608::0/64,fc00:3609::0/64,fc00:3610::0/64,fc00:3611::0/64,fc00:3612::0/64,fc00:3613::0/64,fc00:3614::0/64,fc00:3615::0/64,fc00:3616::0/64,fc00:3617::0/64,fc00:3618::0/64,fc00:3619::0/64,fc00:1779::0/64,fc00:1780::0/64,fc00:1781::0/64,fc00:1782::0/64,fc00:1783::0/64,fc00:1784::0/64,fc00:1785::0/64,fc00:1786::0/64,fc00:1787::0/64,fc00:1788::0/64,fc00:1789::0/64,fc00:1790::0/64,fc00:1791::0/64,fc00:1792::0/64,fc00:1793::0/64,fc00:1794::0/64,fc00:1795::0/64,fc00:1796::0/64,fc00:1797::0/64,fc00:1798::0/64,fc00:1799::0/64,fc00:3985::0/64,fc00:3986::0/64,fc00:3987::0/64,fc00:3988::0/64,fc00:3989::0/64]
 cisconx9:
@@ -24,9 +29,11 @@ cisconx9:
   rsts_enabled: "ipv4,ipv6"
   private_asn: 64515
   vlan_mtu: 9216
+  snmp_monitoring: True
   ports:
     - "Ethernet1/23"
     - "Ethernet1/23-esnet"
+    - "Ethernet1/23-la"
     - "Ethernet1/24"
     - "Ethernet1/25"
     - "Ethernet1/26"
@@ -34,13 +41,19 @@ cisconx9:
   port_Ethernet1-23_desttype: switch
   port_Ethernet1-23_isAlias: "urn:ogf:network:sc-test.cenic.net:2020:aristaeos_s0:Ethernet11-1-fnal"
   port_Ethernet1-23_wanlink: "Ethernet1/23"
-  port_Ethernet1-23_vlan_range: [3610-3615]
+  port_Ethernet1-23_vlan_range: [3613,3614,3615]
   port_Ethernet1-23-esnet_capacity: 100000
   port_Ethernet1-23-esnet_desttype: switch
   port_Ethernet1-23-esnet_isAlias: "urn:ogf:network:es.net:2013::fnalfcc-cr6:lag-1:+"
   port_Ethernet1-23-esnet_wanlink: "Ethernet1/23-esnet"
   port_Ethernet1-23-esnet_realport: "Ethernet1/23"
-  port_Ethernet1-23-esnet_vlan_range: [ 3600-3609,3616-3619 ]
+  port_Ethernet1-23-esnet_vlan_range: [ 3600-3609,3613-3619 ]
+  port_Ethernet1-23-la_capacity: 100000
+  port_Ethernet1-23-la_desttype: switch
+  port_Ethernet1-23-la_isAlias: "urn:ogf:network:sc-test.cenic.net:2020:aristaeos_s0:Ethernet13-1-fnal"
+  port_Ethernet1-23-la_wanlink: "Ethernet1/23-esnet"
+  port_Ethernet1-23-la_realport: "Ethernet1/23"
+  port_Ethernet1-23-la_vlan_range: [3610,3611,3612]
   vlan_range: [3600-3619]
   allports: False
   allvlans: False
