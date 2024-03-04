@@ -29,30 +29,32 @@ sn3700_s0:
   rsts_enabled: "ipv4,ipv6"
   private_asn: 65000
   allports: False
-  ports:
-    - "PortChannel501"
-    - "Ethernet8"
-    - "Ethernet32"
-    - "Ethernet36"
-    - "Ethernet44"
-    - "Ethernet40"
-    - "Ethernet52"
-    - "Ethernet100"
-    - "Ethernet72"
-    - "Ethernet76"
-    - "Ethernet80"
-    - "Ethernet84"
-    - "Ethernet104"
   vlan_range: [3873,3874,3911,3912,3985-3989,3600-3619]
-  port_Ethernet32_vlan_range: [3400-3407,3600-3610]
-  port_Ethernet36_vlan_range: [3400-3407,3600-3610]
-  port_PortChannel501_capacity: 400000
-  port_PortChannel501_desttype: switch
-  port_PortChannel501_isAlias: "urn:ogf:network:sc-test.cenic.net:2020:aristaeos_s0:Port-Channel502"
-  port_PortChannel501_wanlink: PortChannel501
+  ports:
+    "PortChannel501":
+        capacity: 400000
+        desttype: switch
+        isAlias: "urn:ogf:network:sc-test.cenic.net:2020:aristaeos_s0:Port-Channel502"
+        vlan_range: [1779-1799,3600-3619,3985-3989,3873-3874,3911-3912]
+        wanlink: PortChannel501
+    "Ethernet8": {}
+    "Ethernet32":
+        vlan_range: [3400-3407,3600-3610]
+    "Ethernet36":
+        isAlias: "urn:ogf:network:sc-test.cenic.net:2020:aristaeos_s0:Port-Channel501"
+        vlan_range: [3400-3407,3600-3610]
+    "Ethernet44": {}
+    "Ethernet40": {}
+    "Ethernet52": {}
+    "Ethernet100": {}
+    "Ethernet72": {}
+    "Ethernet76": {}
+    "Ethernet80": {}
+    "Ethernet84": {}
+    "Ethernet104": {}
 edgecore_s0:
   vsw: "edgecore_s0"
   allports: False
   vlan_range: [2000-2029]
   ports:
-    - "Ethernet48"
+    "Ethernet48" : {}
