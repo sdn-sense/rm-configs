@@ -33,7 +33,7 @@ aristaeos_s0:
         desttype: switch
         isAlias: "urn:ogf:network:ultralight.org:2013:dellos9_s0:hundredGigE_1-13"
         vlan_range: [3985-3989,3610,3611,3612]
-        realport: Port-Channel501
+        realportname: Port-Channel501
         wanlink: True
     "Port-Channel502":
         capacity: 400000
@@ -46,7 +46,7 @@ aristaeos_s0:
         desttype: switch
         isAlias: "urn:ogf:network:calit2.optiputer.net:2020:prism-core:pwave"
         vlan_range: [1779-1799]
-        realport: Port-Channel502
+        realportname: Port-Channel502
         wanlink: True
     "Port-Channel503":
         capacity: 800000
@@ -113,7 +113,7 @@ aristaeos_s0:
         desttype: switch
         isAlias: "urn:ogf:network:fnal.gov:2023:cisconx9:Ethernet1-23"
         vlan_range: [3613,3614,3615]
-        realport: "Ethernet11/1"
+        realportname: "Ethernet11/1"
         wanlink: True
     "Ethernet12/1":
         capacity: 400000
@@ -132,5 +132,5 @@ aristaeos_s0:
         desttype: switch
         isAlias: "urn:ogf:network:fnal.gov:2023:cisconx9:Ethernet1-23-la"
         vlan_range: [3610,3611,3612]
-        realport: "Ethernet13/1"
+        realportname: "Ethernet13/1"
         wanlink: True
