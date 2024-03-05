@@ -41,7 +41,6 @@ sn3700_s0:
     "Ethernet32":
         vlan_range: [3400-3407,3600-3610]
     "Ethernet36":
-        isAlias: "urn:ogf:network:sc-test.cenic.net:2020:aristaeos_s0:Port-Channel501"
         vlan_range: [3400-3407,3600-3610]
     "Ethernet44": {}
     "Ethernet40": {}
