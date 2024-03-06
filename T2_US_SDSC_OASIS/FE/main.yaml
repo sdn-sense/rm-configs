@@ -3,7 +3,7 @@ general:
   logLevel: DEBUG
   sites: 
     - "T2_US_UCSD_OASIS"
-  webdomain: "https://sitefe-sense-oasis.sdn-lb.ultralight.org:8443"
+  webdomain: "https://sense-oasis.sdn-lb.ultralight.org:443"
   probes: ["https_v4_siterm_2xx"]
   privatedir: /opt/siterm/config/
 T2_US_UCSD_OASIS:
