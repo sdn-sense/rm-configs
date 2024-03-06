@@ -26,7 +26,7 @@ aristaeos_s0:
         capacity: 400000
         desttype: switch
         isAlias: "urn:ogf:network:ultralight.org:2013:dellos9_s0:Port-channel_103"
-        vlan_range: [1779-1799,3600-3609,3613-3619,3870-3883,3911-3912]
+        vlan_range: [1779-1799,3600-3609,3613-3619,3870-3883,3911-3912,3110-3139]
         wanlink: True
     "Port-Channel501-rucio":
         capacity: 100000
@@ -38,15 +38,8 @@ aristaeos_s0:
     "Port-Channel502":
         capacity: 400000
         desttype: switch
-        isAlias: "urn:ogf:network:nrp-nautilus.io:2020:sn3700_s0:PortChannel501"
-        vlan_range: [3873,3874,3911,3912,3985-3989,3600-3619]
-        wanlink: True
-    "Port-Channel502-prismcore":
-        capacity: 400000
-        desttype: switch
-        isAlias: "urn:ogf:network:calit2.optiputer.net:2020:prism-core:pwave"
-        vlan_range: [1779-1799]
-        realportname: Port-Channel502
+        isAlias: "urn:ogf:network:sense-oasis-nrp-nautilus.io:2020:oasis:Pc502"
+        vlan_range: [3873,3874,3911,3912,3985-3989,3600-3619,1779-1799,3110-3139]
         wanlink: True
     "Port-Channel503":
         capacity: 800000
@@ -58,7 +51,7 @@ aristaeos_s0:
         capacity: 400000
         desttype: switch
         isAlias: "urn:ogf:network:core1.tobedefined:2023:tobedefined:tobedefined"
-        vlan_range: [ 3605-3609,3610-3614 ]
+        vlan_range: [3605-3609,3610-3614,3110-3139]
         wanlink: True
     "Ethernet2/1":
         capacity: 400000
@@ -106,7 +99,7 @@ aristaeos_s0:
         capacity: 100000
         desttype: switch
         isAlias: "urn:ogf:network:lsanca.pacificwave.net:2016:pw-losa2-1:Arista-400G"
-        vlan_range: [1779-1799,3600-3619,3985-3989,3870-3883,3911-3912]
+        vlan_range: [1779-1799,3600-3619,3985-3989,3870-3883,3911-3912,3110-3139]
         wanlink: True
     "Ethernet11-1-fnal":
         capacity: 400000

@@ -22,7 +22,7 @@ oasis:
     "Pc502":
       # Port-channel 502 facing LA Arista
       capacity: 400000
-      isAlias: "urn:ogf:network:fakename.net:2020:tobedefined:tolaarista"
+      isAlias: "urn:ogf:network:sc-test.cenic.net:2020:aristaeos_s0:Port-Channel502"
       wanlink: True
       vlan_range: ["3911-3912", "3873-3874", "3985-3989", "3600-3619", "1779-1799", "3110-3139"]
     "6_35":
@@ -34,7 +34,7 @@ oasis:
     "Pc501":
       # Port-channel 501 facing Sonic SN3700
       capacity: 400000
-      isAlias: "urn:ogf:network:fakename.net:2020:tobedefined:tosonic"
+      isAlias: "urn:ogf:network:nrp-nautilus.io:2020:sn3700_s0:PortChannel501"
       wanlink: True
       vlan_range: ["3911-3912", "3873-3874", "3985-3989", "3600-3619", "1779-1799"]
     "Pc500":
@@ -46,6 +46,6 @@ oasis:
     "Pc701":
       # Port-channel 701 facing Prism-Core
       capacity: 200000
-      isAlias: "urn:ogf:network:fakename.net:2020:tobedefined:toprismcore"
+      isAlias: "urn:ogf:network:calit2.optiputer.net:2020:prism-core:pwave-REMOVEME"
       wanlink: True
       vlan_range: ["1779-1799", "3110-3139"]
