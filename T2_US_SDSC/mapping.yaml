@@ -4,6 +4,16 @@
   maintainer: "John Graham"
   status: production
   type: FE
+d37efeb2a4e92b81a8cf4d81b4987c3e:
+  config: Agent01/
+  maintainer: "John Graham"
+  status: production
+  type: Agent
+257f493bcbb9bdad2659ade4a8e51c1b:
+  config: Agent02/
+  maintainer: "John Graham"
+  status: production
+  type: Agent
 010f007f670455b4ea657e40aef1df9b:
   config: Agent03/
   maintainer: "John Graham"

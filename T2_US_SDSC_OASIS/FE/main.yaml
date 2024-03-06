@@ -40,7 +40,7 @@ oasis:
     "Pc500":
         # Port-channel 500 facing Edgecore AS7712
       capacity: 800000
-      isAlias: "urn:ogf:network:fakename.net:2020:tobedefined:toEdgecore"
+      isAlias: "urn:ogf:network:nrp-nautilus.io:2020:edgecore_s0:PortChannel500"
       wanlink: True
       vlan_range: ["3110-3139"]
     "Pc701":

@@ -29,7 +29,7 @@ sn3700_s0:
   rsts_enabled: "ipv4,ipv6"
   private_asn: 65000
   allports: False
-  vlan_range: [3873,3874,3911,3912,3985-3989,3600-3619]
+  vlan_range: [1779-1799,3873,3874,3911,3912,3985-3989,3600-3619,3110-3139]
   ports:
     "PortChannel501":
         capacity: 400000
@@ -37,7 +37,11 @@ sn3700_s0:
         isAlias: "urn:ogf:network:sc-test.cenic.net:2020:aristaeos_s0:Port-Channel502"
         vlan_range: [1779-1799,3600-3619,3985-3989,3873-3874,3911-3912]
         wanlink: PortChannel501
-    "Ethernet8": {}
+    "PortChannel502":
+        capacity: 1200000
+        desttype: switch
+        isAlias: "urn:ogf:network:nrp-nautilus.io:2020:edgecore_s0:PortChannel502"
+        vlan_range: [3110-3139]
     "Ethernet32":
         vlan_range: [3400-3407,3600-3610]
     "Ethernet36":
@@ -51,9 +55,21 @@ sn3700_s0:
     "Ethernet80": {}
     "Ethernet84": {}
     "Ethernet104": {}
+    "Ethernet116": {}
+    "Ethernet120": {}
 edgecore_s0:
   vsw: "edgecore_s0"
   allports: False
-  vlan_range: [2000-2029]
+  vlan_range: [3110-3139]
   ports:
-    "Ethernet48" : {}
+    "Port-Channel502":
+        capacity: 1200000
+        desttype: switch
+        isAlias: "urn:ogf:network:nrp-nautilus.io:2020:sn3700_s0:PortChannel502"
+        vlan_range: [3110-3139]
+    "Port-Channel500":
+        capacity: 800000
+        desttype: switch
+        isAlias: "urn:ogf:network:sense-oasis-nrp-nautilus.io:2020:oasis:Pc500"
+        vlan_range: [3110-3139]
+        wanlink: PortChannel501
