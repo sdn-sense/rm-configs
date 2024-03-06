@@ -45,7 +45,7 @@ aristaeos_s0:
         capacity: 800000
         desttype: switch
         isAlias: "urn:ogf:network:lsanca.pacificwave.net:2016:losa4-pw-agg-01:losa4-sc22-sw-1"
-        vlan_range: [1320-1329,1378,1779-1799,3846-3849]
+        vlan_range: [1320-1329,1378,1779-1799,3846-3849,3350-3359]
         wanlink: True
     "Ethernet1/1":
         capacity: 400000
@@ -99,7 +99,7 @@ aristaeos_s0:
         capacity: 100000
         desttype: switch
         isAlias: "urn:ogf:network:lsanca.pacificwave.net:2016:pw-losa2-1:Arista-400G"
-        vlan_range: [1779-1799,3600-3619,3985-3989,3870-3883,3911-3912,3110-3139]
+        vlan_range: [1779-1799,3600-3619,3985-3989,3870-3883,3911-3912,3110-3139,3350-3359]
         wanlink: True
     "Ethernet11-1-fnal":
         capacity: 400000
