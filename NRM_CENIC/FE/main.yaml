@@ -20,7 +20,7 @@ aristaeos_s0:
   allports: False
   allvlans: False
   snmp_monitoring: True
-  vlan_range: [1779-1799,2027,3600-3619,3985-3989,3870-3883,3911-3912]
+  vlan_range: [1779-1799,2027,3600-3619,3985-3989,3870-3883,3911-3912,3350-3359,3846-3849]
   ports:
     "Port-Channel501":
         capacity: 400000
@@ -51,7 +51,7 @@ aristaeos_s0:
         capacity: 400000
         desttype: switch
         isAlias: "urn:ogf:network:core1.tobedefined:2023:tobedefined:tobedefined"
-        vlan_range: [3605-3609,3610-3614,3110-3139]
+        vlan_range: [3605-3609,3610-3614,3110-3139,3350-3359,3846-3849]
         wanlink: True
     "Ethernet2/1":
         capacity: 400000
