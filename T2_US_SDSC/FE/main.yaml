@@ -62,6 +62,7 @@ edgecore_s0:
   allports: False
   vlan_range: [3110-3139]
   ports:
+    "Ethernet32": {}
     "PortChannel502":
         capacity: 1200000
         desttype: switch
