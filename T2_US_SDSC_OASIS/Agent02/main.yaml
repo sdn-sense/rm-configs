@@ -3,7 +3,7 @@ general:
   ip: "67.58.54.232"
   sitename: [T2_US_UCSD_OASIS]
   webdomain: "https://sense-oasis.sdn-lb.ultralight.org:443"
-  node_exporter: "67.58.54.232"
+  node_exporter: "67.58.54.232:9100"
 agent: 
   interfaces: [enp168s0np0]
   hostname: k8s-gen5-02.sdsc.optiputer.net
