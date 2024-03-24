@@ -28,8 +28,6 @@ oasis:
     "6_35":
       # Port 6/35 facing OFC24
       capacity: 400000
-      isAlias: "urn:ogf:network:fakename.net:2020:tobedefined:toofc"
-      wanlink: True
       vlan_range: ["3110-3139"]
     "Pc501":
       # Port-channel 501 facing Sonic SN3700

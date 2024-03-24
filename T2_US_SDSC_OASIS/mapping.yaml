@@ -4,3 +4,8 @@
   maintainer: "John Graham"
   status: production
   type: FE
+257f493bcbb9bdad2659ade4a8e51c1b:
+  config: Agent02/
+  maintainer: "John Graham"
+  status: production
+  type: Agent
