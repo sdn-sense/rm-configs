@@ -1,7 +1,7 @@
 ---
 general:
   ip: "67.58.54.232"
-  sitename: [T2_US_SDSC_OASIS]
+  sitename: [T2_US_UCSD_OASIS]
   webdomain: "https://sense-oasis.sdn-lb.ultralight.org:443"
   node_exporter: "67.58.54.232"
 agent: 
