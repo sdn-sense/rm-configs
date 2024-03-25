@@ -118,7 +118,7 @@ aristaeos_s0:
         capacity: 400000
         desttype: switch
         isAlias: "urn:ogf:network:es.net:2013::losa-cr6:2_1_c4_1:+"
-        vlan_range: [1779-1799,2027,3600-3619,3985-3989,3870-3883,3911-3912]
+        vlan_range: [1779-1799,2027,3600-3619,3985-3989,3870-3883,3911-3912,3110-3139]
         wanlink: True
     "Ethernet13-1-fnal":
         capacity: 400000
