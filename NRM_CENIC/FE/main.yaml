@@ -50,7 +50,7 @@ aristaeos_s0:
     "Ethernet1/1":
         capacity: 400000
         desttype: switch
-        isAlias: "urn:ogf:network:core1.tobedefined:2023:tobedefined:tobedefined"
+        isAlias: "urn:ogf:network:stack-fabric:2024:topology:node+LOSA:port+ResearchNet-400G-LOSA"
         vlan_range: [3605-3609,3610-3614,3110-3139,3350-3359,3846-3849]
         wanlink: True
     "Ethernet2/1":
