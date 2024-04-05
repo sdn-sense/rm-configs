@@ -34,24 +34,24 @@ T2_US_Caltech:
   ipv4-address-pool: [10.251.85.0/24,10.251.86.0/24,10.251.87.0/24,10.251.88.0/24,10.251.89.0/24,172.16.3.0/30,172.17.3.0/30,172.18.3.0/30,172.19.3.0/30,172.31.10.0/24,172.31.11.0/24,172.31.12.0/24,172.31.13.0/24,172.31.14.0/24,172.31.15.0/24]
   year: 2024
   switch:
-    - "edgecore_s0"
-edgecore_s0:
-  vsw: "edgecore_s0"
-  rst: "edgecore_s0"
+    - "dellos10_s0"
+dellos10_s0:
+  vsw: "dellos10_s0"
+  rst: "dellos10_s0"
   rsts_enabled: "ipv4,ipv6"
   private_asn: 64516
   vrf: Vrf_sense01
   vlan_mtu: 9100
   ports:
-    "Ethernet0": {}
-    "Ethernet8": {}
-    "Ethernet16": {}
-    "Ethernet24": {}
-    "Ethernet32": {}
-    "Ethernet40": {}
-    "Ethernet48": {}
-    "Ethernet56": {}
-    "PortChannel41":
+    "Ethernet 1/1/1": {}
+    "Ethernet 1/1/2": {}
+    "Ethernet 1/1/3": {}
+    "Ethernet 1/1/4": {}
+    "Ethernet 1/1/5": {}
+    "Ethernet 1/1/6": {}
+    "Ethernet 1/1/7": {}
+    "Ethernet 1/1/8": {}
+    "Port-channel 42":
       capacity: 200000
       desttype: switch
       isAlias: "urn:ogf:network:sc-test.cenic.net:2020:aristaeos_s0:Port-Channel501-caltechprod"
