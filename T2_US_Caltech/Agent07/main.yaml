@@ -8,7 +8,7 @@ agent:
   interfaces: [bondpublic]
   hostname: transfer-17.ultralight.org
 bondpublic:
-  port: Eth 1/1/7
+  port: Ethernet 1/1/7
   switch: dellos10_s0
   shared: false
   allowOvercommit: false
