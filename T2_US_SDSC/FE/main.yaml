@@ -54,6 +54,7 @@ sn3700_s0:
     "Ethernet76": {}
     "Ethernet80": {}
     "Ethernet84": {}
+    "Ethernet108": {}
     "Ethernet104": {}
     "Ethernet116": {}
     "Ethernet120": {}
@@ -63,6 +64,7 @@ edgecore_s0:
   vlan_range: [3110-3139]
   ports:
     "Ethernet32": {}
+    "Ethernet40": {}
     "PortChannel502":
         capacity: 1200000
         desttype: switch
