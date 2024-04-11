@@ -41,7 +41,7 @@ sn3700_s0:
         capacity: 1200000
         desttype: switch
         isAlias: "urn:ogf:network:nrp-nautilus.io:2020:edgecore_s0:PortChannel502"
-        vlan_range: [3110-3139]
+        vlan_range: [1779-1799,3600-3619,3985-3989,3873-3874,3911-3912,3110-3139]
     "Ethernet32":
         vlan_range: [3400-3407,3600-3610]
     "Ethernet36":
@@ -69,7 +69,7 @@ edgecore_s0:
         capacity: 1200000
         desttype: switch
         isAlias: "urn:ogf:network:nrp-nautilus.io:2020:sn3700_s0:PortChannel502"
-        vlan_range: [3110-3139]
+        vlan_range: [1779-1799,3600-3619,3985-3989,3873-3874,3911-3912,3110-3139]
     "PortChannel500":
         capacity: 800000
         desttype: switch
