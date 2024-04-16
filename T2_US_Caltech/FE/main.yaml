@@ -35,6 +35,7 @@ T2_US_Caltech:
   year: 2024
   switch:
     - "dellos10_s0"
+    - "dellos10_s1"
 dellos10_s0:
   vsw: "dellos10_s0"
   rst: "dellos10_s0"
@@ -51,11 +52,23 @@ dellos10_s0:
     "Ethernet 1/1/6": {}
     "Ethernet 1/1/7": {}
     "Ethernet 1/1/8": {}
-    "Port-channel 42":
+    "Port-channel 105":
       capacity: 200000
       desttype: switch
       isAlias: "urn:ogf:network:sc-test.cenic.net:2020:aristaeos_s0:Port-Channel501-caltechprod"
-  vlan_range: [3640-3659]
+  vlan_range: [1779-1799,3600-3619,3985-3989,3870-3883,3911-3912,3870-3883]
   allports: False
+  allvlans: False
+  snmp_monitoring: True
+dellos10_s1:
+  vsw: "dellos10_s1"
+  vlan_mtu: 9216
+  ports:
+    "Port-channel 105":
+      capacity: 100000
+      desttype: switch
+      isAlias: "urn:ogf:network:sc-test.cenic.net:2020:aristaeos_s0:Port-Channel501-caltechprod"
+  vlan_range: [1779-1799,3600-3619,3985-3989,3870-3883,3911-3912,3870-3883]
+  allports: True
   allvlans: False
   snmp_monitoring: True
