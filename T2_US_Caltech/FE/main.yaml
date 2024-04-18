@@ -53,9 +53,9 @@ dellos10_s0:
     "Ethernet 1/1/7": {}
     "Ethernet 1/1/8": {}
     "Port-channel 105":
-      capacity: 200000
+      capacity: 100000
       desttype: switch
-      isAlias: "urn:ogf:network:sc-test.cenic.net:2020:aristaeos_s0:Port-Channel501-caltechprod"
+      isAlias: "urn:ogf:network:ultralight.org:2013:dellos10_s1:Port-channel_105"
   vlan_range: [1779-1799,3600-3619,3985-3989,3870-3883,3911-3912,3870-3883]
   allports: False
   allvlans: False
@@ -64,11 +64,27 @@ dellos10_s1:
   vsw: "dellos10_s1"
   vlan_mtu: 9216
   ports:
+    "Ethernet 1/1/30": {}
+      vlan_range: [3985-3989,3610,3611,3612]
+      desttype: switch
+      isAlias: "urn:ogf:network:sc-test.cenic.net:2020:aristaeos_s0:Port-Channel501-rucio"
+      wanlink: True
+      rate_limit: True
+    "Port-channel 102":
+      capacity: 400000
+      desttype: switch
+      isAlias: "urn:ogf:network:sc-test.cenic.net:2020:aristaeos_s0:Port-Channel501"
+      wanlink: True
+    "Port-channel 101":
+      capacity: 300000
+      desttype: switch
+      isAlias: "urn:ogf:network:sc-test.cenic.net:2020:aristaeos_s0:Port-Channel501"
+      wanlink: True
     "Port-channel 105":
       capacity: 100000
       desttype: switch
-      isAlias: "urn:ogf:network:sc-test.cenic.net:2020:aristaeos_s0:Port-Channel501-caltechprod"
+      isAlias: "urn:ogf:network:ultralight.org:2013:dellos10_s0:Port-channel_105"
   vlan_range: [1779-1799,3600-3619,3985-3989,3870-3883,3911-3912,3870-3883]
-  allports: True
+  allports: False
   allvlans: False
   snmp_monitoring: True
