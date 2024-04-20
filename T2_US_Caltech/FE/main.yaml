@@ -64,7 +64,7 @@ dellos10_s1:
   vsw: "dellos10_s1"
   vlan_mtu: 9216
   ports:
-    "Ethernet 1/1/30": {}
+    "Ethernet 1/1/30":
       vlan_range: [3985-3989,3610,3611,3612]
       desttype: switch
       isAlias: "urn:ogf:network:ultralight.org:2013:dellos9_s0:hundredGigE_1-13"
