@@ -63,8 +63,66 @@ edgecore_s0:
   allports: False
   vlan_range: [3110-3139]
   ports:
-    "Ethernet32": {}
-    "Ethernet40": {}
+    "Ethernet244": {} # node-2-6 enp65s0f0np0
+    "Ethernet136":
+      isAlias: "urn:ogf:network:nrp-nautilus.io:2020:node-2-6.sdsc.optiputer.net:Ethernet136-21-00"
+    "Ethernet138":
+      isAlias: "urn:ogf:network:nrp-nautilus.io:2020:node-2-6.sdsc.optiputer.net:Ethernet138-21-00"
+    "Ethernet140":
+      isAlias: "urn:ogf:network:nrp-nautilus.io:2020:node-2-6.sdsc.optiputer.net:Ethernet140-a1-00"
+    "Ethernet142":
+      isAlias: "urn:ogf:network:nrp-nautilus.io:2020:node-2-6.sdsc.optiputer.net:Ethernet142-a1-00"
+    "Ethernet240": {} # node-2-7 enp65s0f0np0
+    "Ethernet144":
+      isAlias: "urn:ogf:network:nrp-nautilus.io:2020:node-2-7.sdsc.optiputer.net:Ethernet144-21-00"
+    "Ethernet146":
+      isAlias: "urn:ogf:network:nrp-nautilus.io:2020:node-2-7.sdsc.optiputer.net:Ethernet146-21-00"
+    "Ethernet148":
+      isAlias: "urn:ogf:network:nrp-nautilus.io:2020:node-2-7.sdsc.optiputer.net:Ethernet148-a1-00"
+    "Ethernet150":
+      isAlias: "urn:ogf:network:nrp-nautilus.io:2020:node-2-7.sdsc.optiputer.net:Ethernet150-a1-00"
+    "Ethernet232": {} # NVME NODE-1-6
+    "Ethernet234": {} # NVME NODE-2-5
+    "Ethernet238": {} # NVME NODE-3-5
+    "Ethernet240": {} # NVME NODE-3-6
+    "Ethernet248": {} # node-2-8 enp65s0f0np0
+    "Ethernet152":
+      isAlias: "urn:ogf:network:nrp-nautilus.io:2020:node-2-8.sdsc.optiputer.net:Ethernet152-a1-00"
+    "Ethernet154":
+      isAlias: "urn:ogf:network:nrp-nautilus.io:2020:node-2-8.sdsc.optiputer.net:Ethernet154-a1-00"
+    "Ethernet156":
+      isAlias: "urn:ogf:network:nrp-nautilus.io:2020:node-2-8.sdsc.optiputer.net:Ethernet156-21-00"
+    "Ethernet158":
+      isAlias: "urn:ogf:network:nrp-nautilus.io:2020:node-2-8.sdsc.optiputer.net:Ethernet158-21-00"
+    "Ethernet32": {} # gen5-01
+    "Ethernet72": {} # node-2-9 enp65s0f0np0
+    "Ethernet160":
+      isAlias: "urn:ogf:network:nrp-nautilus.io:2020:node-2-9.sdsc.optiputer.net:Ethernet160-21-00"
+    "Ethernet162":
+      isAlias: "urn:ogf:network:nrp-nautilus.io:2020:node-2-9.sdsc.optiputer.net:Ethernet162-21-00"
+    "Ethernet164":
+      isAlias: "urn:ogf:network:nrp-nautilus.io:2020:node-2-9.sdsc.optiputer.net:Ethernet164-a1-00"
+    "Ethernet166":
+      isAlias: "urn:ogf:network:nrp-nautilus.io:2020:node-2-9.sdsc.optiputer.net:Ethernet166-a1-00"
+    "Ethernet40": {} # gen5-02
+    "Ethernet252": {} # node-2-10 enp65s0f0np0
+    "Ethernet168":
+      isAlias: "urn:ogf:network:nrp-nautilus.io:2020:node-2-10.sdsc.optiputer.net:Ethernet168-a1-00"
+    "Ethernet170":
+      isAlias: "urn:ogf:network:nrp-nautilus.io:2020:node-2-10.sdsc.optiputer.net:Ethernet170-a1-00"
+    "Ethernet172":
+      isAlias: "urn:ogf:network:nrp-nautilus.io:2020:node-2-10.sdsc.optiputer.net:Ethernet172-21-00"
+    "Ethernet174":
+      isAlias: "urn:ogf:network:nrp-nautilus.io:2020:node-2-10.sdsc.optiputer.net:Ethernet174-21-00"
+    "Ethernet88": {} # node-2-11 enp65s0f0np0
+    "Ethernet104":
+      isAlias: "urn:ogf:network:nrp-nautilus.io:2020:node-2-11.sdsc.optiputer.net:Ethernet104-21-00"
+    "Ethernet106":
+      isAlias: "urn:ogf:network:nrp-nautilus.io:2020:node-2-11.sdsc.optiputer.net:Ethernet106-21-00"
+    "Ethernet108":
+      isAlias: "urn:ogf:network:nrp-nautilus.io:2020:node-2-11.sdsc.optiputer.net:Ethernet108-c1-00"
+    "Ethernet110":
+      isAlias: "urn:ogf:network:nrp-nautilus.io:2020:node-2-11.sdsc.optiputer.net:Ethernet110-c1-00"
     "PortChannel502":
         capacity: 1200000
         desttype: switch
