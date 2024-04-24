@@ -37,7 +37,7 @@ dellos9_s0:
     "Port-channel 102": {}
     "Port-channel 103":
       vlan_range: [1779-1799,3600-3609,3613-3619,3870-3883,3911-3912,3870-3883]
-      capacity: 300000
+      capacity: 400000
       desttype: switch
       isAlias: "urn:ogf:network:sc-test.cenic.net:2020:aristaeos_s0:Port-Channel501"
       wanlink: True
