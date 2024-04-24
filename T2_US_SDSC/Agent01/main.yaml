@@ -3,7 +3,7 @@ general:
   ip: "67.58.54.231"
   sitename: [T2_US_SDSC]
   webdomain: "https://sense-prpdev-fe.sdn-lb.ultralight.org:443"
-  node_exporter: "67.58.54.231:9100"
+  node_exporter: "k8s-gen5-01.sdsc.optiputer.net:9100"
 agent: 
   interfaces: [ens1f0np0, enp168s0np0]
   hostname: k8s-gen5-01.sdsc.optiputer.net
