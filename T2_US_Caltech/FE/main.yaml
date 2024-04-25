@@ -69,14 +69,13 @@ dellos10_s1:
       desttype: switch
       isAlias: "urn:ogf:network:ultralight.org:2013:dellos9_s0:hundredGigE_1-13"
       wanlink: True
-      rate_limit: True
     "Port-channel 102":
       capacity: 400000
       desttype: switch
       isAlias: "urn:ogf:network:sc-test.cenic.net:2020:aristaeos_s0:Port-Channel501"
       wanlink: True
     "Port-channel 101":
-      capacity: 300000
+      capacity: 400000
       desttype: switch
       isAlias: "urn:ogf:network:ultralight.org:2013:dellos9_s0:Port-channel_103"
       wanlink: True
