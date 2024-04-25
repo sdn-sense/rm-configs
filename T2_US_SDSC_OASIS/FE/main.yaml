@@ -19,6 +19,18 @@ oasis:
   vsw: "oasis"
   vlan_range: [1779-1799,3911-3912,3873-3874,3985-3989,3600-3619,3110-3139]
   ports:
+    "6_3_1":
+      # Facility Port for FP1
+      capacity: 400000
+      isAlias: "urn:ogf:network:stack-fabric:2024:topology:node+UCSD:port+FP1-UCSD"
+      wanlink: True
+      vlan_range: ["3110-3119"]
+    "6_3_2":
+      # Facility Port for NRP-UCSD
+      capacity: 400000
+      isAlias: "urn:ogf:network:stack-fabric:2024:topology:node+UCSD:port+NRP-UCSD"
+      wanlink: True
+      vlan_range: ["3120-3139"]
     "Pc502":
       # Port-channel 502 facing LA Arista
       capacity: 400000
