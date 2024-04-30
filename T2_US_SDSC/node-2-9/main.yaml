@@ -11,6 +11,7 @@ enp65s0f0np0:
   port: Ethernet72
   switch: edgecore_s0
   shared: false
+  intf_max: 100000
   bwParams:
     unit: "mbps"
     type: "guaranteedCapped"

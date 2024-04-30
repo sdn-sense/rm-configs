@@ -11,6 +11,7 @@ ens1f0np0:
   port: Ethernet116
   switch: sn3700_s0
   shared: false
+  intf_max: 200000
   bwParams:
     unit: "mbps"
     type: "guaranteedCapped"
@@ -25,6 +26,7 @@ enp168s0np0:
   port: Ethernet40
   switch: edgecore_s0
   shared: false
+  intf_max: 400000
   bwParams:
     unit: "mbps"
     type: "guaranteedCapped"

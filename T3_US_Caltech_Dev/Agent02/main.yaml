@@ -11,6 +11,7 @@ mlx4p2s1:
   port: hundredGigE 1/10
   switch: dellos9_s0
   shared: false
+  intf_max: 100000
   bwParams:
     unit: "mbps"
     type: "guaranteedCapped"

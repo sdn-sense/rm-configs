@@ -11,6 +11,7 @@ mlx3p1s1:
   port: Ethernet3/1
   switch: aristaeos_s0
   shared: false
+  intf_max: 100000
   bwParams:
     unit: "mbps"
     type: "guaranteedCapped"

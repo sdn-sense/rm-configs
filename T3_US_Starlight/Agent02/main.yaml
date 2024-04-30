@@ -11,6 +11,7 @@ ens1f0:
   port: "1_2"
   shared: false
   switch: s1
+  intf_max: 100000
   bwParams:
     unit: "mbps"
     type: "guaranteedCapped"

@@ -11,6 +11,7 @@ bondpublic:
   port: Ethernet 1/1/5
   switch: dellos10_s0
   shared: false
+  intf_max: 100000
   bwParams:
     unit: "mbps"
     type: "guaranteedCapped"

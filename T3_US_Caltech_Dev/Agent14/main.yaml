@@ -11,6 +11,7 @@ mlx5p1s2:
   port: Ethernet1/1
   switch: aristaeos_s0
   shared: false
+  intf_max: 100000
   bwParams:
     unit: "mbps"
     type: "guaranteedCapped"

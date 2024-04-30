@@ -10,6 +10,7 @@ enp33s0f1:
   port: "1_2"
   shared: false
   switch: s1
+  intf_max: 10000
   bwParams:
     unit: "mbps"
     type: "guaranteedCapped"
