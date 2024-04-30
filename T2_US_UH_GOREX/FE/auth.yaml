@@ -18,11 +18,11 @@ frontend:
   full_dn: "/C=US/ST=California/L=Pasadena/O=Caltech/CN=sdn-sense.dev/C=US/ST=Hawaii/L=Hawaii/O=Gorex/CN=sense-fe.uhnet.net"
   permissions: w
 agent_fiona:
-  full_dn: "/C=US/ST=California/L=Pasadena/O=Caltech/CN=sdn-sense.dev/C=US/ST=Hawaii/L=Hawaii/O=Gorex/CN=fiona.its.hawaii.edu"
+  full_dn: "/C=US/O=Let's Encrypt/CN=R3/CN=fiona-its-hawaii.nrp-nautilus.io"
   permissions: w
 agent_prp01:
-  full_dn: "/C=US/ST=California/L=Pasadena/O=Caltech/CN=sdn-sense.dev/C=US/ST=Hawaii/L=Hawaii/O=Gorex/CN=prp01.ifa.hawaii.edu"
+  full_dn: "/C=US/O=Let's Encrypt/CN=R3/CN=prp01-ifa-hawaii.nrp-nautilus.io"
   permissions: w
 agent_k8sdtn01:
-  full_dn: "/C=US/ST=California/L=Pasadena/O=Caltech/CN=sdn-sense.dev/C=US/ST=Hawaii/L=Hawaii/O=Gorex/CN=k8s-dtn-01.uog.edu"
+  full_dn: "/C=US/O=Let's Encrypt/CN=R3/CN=k8s-dtn-01.nrp-nautilus.io"
   permissions: w
