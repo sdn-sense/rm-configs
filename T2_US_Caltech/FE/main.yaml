@@ -42,7 +42,7 @@ dellos10_s0:
   rsts_enabled: "ipv4,ipv6"
   private_asn: 64516
   vrf: Vrf_sense01
-  vlan_mtu: 9100
+  vlan_mtu: 9216
   ports:
     "Ethernet 1/1/1": {}
     "Ethernet 1/1/2": {}
