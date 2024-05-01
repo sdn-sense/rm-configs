@@ -5,9 +5,9 @@ general:
   webdomain: "https://r740xd4.it.northwestern.edu:8443"
   node_exporter: "r740xd4.it.northwestern.edu:9200"
 agent: 
-  interfaces: [ens1f0]
+  interfaces: [eno1]
   hostname: r740xd4.it.northwestern.edu
-ens1f0: 
+eno1:
   port: "1_2"
   shared: false
   switch: s1
@@ -26,5 +26,5 @@ qos:
   policy: hostlevel
   qos_params: "mtu 9000 mpu 9000 quantum 200000 burst 300000 cburst 300000 qdisc sfq balanced"
   interfaces:
-    ens1f0:
-      master_intf: ens1f0
+    eno1:
+      master_intf: eno1
