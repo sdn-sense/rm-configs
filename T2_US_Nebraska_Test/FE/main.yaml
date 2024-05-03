@@ -3,7 +3,7 @@ general:
   logLevel: DEBUG
   sites: 
     - "T2_US_Nebraska_Test"
-  webdomain: "https://red-sense-rm.unl.edu:8443"
+  webdomain: "https://red-sense-rm.unl.edu:443"
   probes: ['https_v4_siterm_2xx', 'icmp_v4']
 T2_US_Nebraska_Test:
   domain: unl.edu
@@ -30,6 +30,7 @@ dellos10_s0:
       capacity: 20000
       desttype: switch
       isAlias: "urn:ogf:network:es.net:2013::kans-cr6:2_1_c22_1:+"
+      wanlink: True
   vlan_range: [2680-2699]
   allports: False
   allvlans: False
