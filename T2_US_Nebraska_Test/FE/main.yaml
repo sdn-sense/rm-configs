@@ -24,9 +24,9 @@ dellos10_s0:
   private_asn: 64514
   vlan_mtu: 9216
   ports:
-    "ethernet1/1/13:1": {}
-    "ethernet1/1/14:1": {}
-    "port-channel1":
+    "Ethernet 1/1/13:1": {}
+    "Ethernet 1/1/14:1": {}
+    "Port-channel 1":
       capacity: 20000
       desttype: switch
       isAlias: "urn:ogf:network:es.net:2013::kans-cr6:2_1_c22_1:+"
