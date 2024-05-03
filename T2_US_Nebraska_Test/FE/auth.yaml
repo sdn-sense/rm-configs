@@ -18,10 +18,10 @@ feapi:
   full_dn: "/C=US/O=Let's Encrypt/CN=R3/CN=red-sense-rm.unl.edu"
   permissions: w
 dtn1:
-  full_dn: "/C=US/O=Let's Encrypt/CN=R3/CN=red-sense-dtn1.unl.edu"
+  full_dn: "/C=US/O=Internet2/CN=InCommon RSA IGTF Server CA 3/DC=org/DC=incommon/C=US/ST=Nebraska/O=University of Nebraska-Lincoln/CN=red-sense-dtn1.unl.edu"
   permissions: w
 dtn2:
-  full_dn: "/C=US/O=Let's Encrypt/CN=R3/CN=red-sense-dtn2.unl.edu"
+  full_dn: "/C=US/O=Internet2/CN=InCommon RSA IGTF Server CA 3/DC=org/DC=incommon/C=US/ST=Nebraska/O=University of Nebraska-Lincoln/CN=red-sense-dtn2.unl.edu"
   permissions: w
 realtimemon:
   full_dn: "/C=US/O=Let's Encrypt/CN=R3/CN=dev2.virnao.com"
