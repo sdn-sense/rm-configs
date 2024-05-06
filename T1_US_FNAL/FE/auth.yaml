@@ -14,6 +14,9 @@ xiyang:
 prometheus:
   full_dn: "/C=US/ST=California/L=Pasadena/O=Caltech/CN=sdn-sense.dev/C=US/ST=California/L=Pasadena/O=Caltech/CN=autogole-grafana-prometheus.ultralight.org"
   permissions: r
+cmssense1:
+  full_dn: "/C=US/O=Internet2/CN=InCommon RSA IGTF Server CA 3/DC=org/DC=incommon/C=US/ST=Illinois/O=Fermi Research Alliance/CN=cmssense1.fnal.gov"
+  permissions: w
 cmssense2:
   full_dn: "/C=US/O=Internet2/CN=InCommon RSA IGTF Server CA 3/DC=org/DC=incommon/C=US/ST=Illinois/O=Fermi Research Alliance/CN=cmssense2.fnal.gov"
   permissions: w

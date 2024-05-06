@@ -51,9 +51,8 @@ cisconx9:
       vlan_range: [ 3610,3611,3612 ]
       realportname: "Ethernet1/23"
       wanlink: True
-    "Ethernet1/24": { }
-    "Ethernet1/25": { }
-    "Ethernet1/26": { }
+    "Ethernet1/27": { }
+    "Ethernet1/28": { }
   vlan_range: [3600-3619]
   allports: False
   allvlans: False
