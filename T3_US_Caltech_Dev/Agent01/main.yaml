@@ -4,6 +4,9 @@ general:
   sitename: [T3_US_Caltech_Dev]
   webdomain: "https://sense-caltech-dev.sdn-lb.ultralight.org:443"
   node_exporter: "sdn-dtn-1-7.ultralight.org:9100"
+  metadata:
+    multus:
+      enabled: true
 agent: 
   interfaces: [mlx4p1s1]
   hostname: sdn-dtn-1-7.ultralight.org
