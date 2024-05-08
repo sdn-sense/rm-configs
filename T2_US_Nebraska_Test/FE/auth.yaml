@@ -32,3 +32,6 @@ asif:
 pbhat:
   full_dn: "/DC=ch/DC=cern/CN=CERN Grid Certification Authority/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=pbhat/CN=862304/CN=Preeti Padmanabha Bhat"
   permissions: w
+rucio:
+  full_dn: "/C=US/O=Internet2/CN=InCommon RSA IGTF Server CA 3/DC=org/DC=incommon/C=US/ST=California/O=University of California, San Diego/CN=rucio-sense.t2.ucsd.edu"
+  permissions: w
