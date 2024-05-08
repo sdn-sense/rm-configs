@@ -14,3 +14,18 @@ fc1160fd224208219cbae01c8c8cc4cf:
   maintainer: "John Graham"
   status: production
   type: Agent
+047a7e9e1ac5001b3f47257aa27adfc0:
+  config: k8s-ceph-01_ultralight_org/
+  maintainer: "John Graham"
+  status: production
+  type: Agent
+1a22d201b5e75ad13ae8a351c6c0052f:
+  config: k8s-gen4-07_ultralight_org/
+  maintainer: "John Graham"
+  status: production
+  type: Agent
+1e6a4112e0a515ac381bc22cc51bee2d:
+  config: k8s-nvme-01_ultralight_org/
+  maintainer: "John Graham"
+  status: production
+  type: Agent
