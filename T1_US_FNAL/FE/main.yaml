@@ -53,6 +53,8 @@ cisconx9:
       wanlink: True
     "Ethernet1/27": { }
     "Ethernet1/28": { }
+    "Ethernet1/22": { }
+    "Ethernet1/24": { }
   vlan_range: [3600-3619]
   allports: False
   allvlans: False
