@@ -54,6 +54,10 @@ dellos9_s0:
       wanlink: True
     "hundredGigE 1/23": {}
     "hundredGigE 1/32": {}
+    "hundredGigE 1/24": {}
+    "hundredGigE 1/21": {}
+    "hundredGigE 1/22": {}
+    "hundredGigE 1/5": {}
   vlan_range: [1779-1799,3600-3619,3985-3989,3870-3883,3911-3912,3870-3883]
   allports: False
   allvlans: False
