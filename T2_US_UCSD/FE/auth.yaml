@@ -23,3 +23,12 @@ ucsd_nautilus_1:
 ucsd_nautilus_2:
   full_dn: "/C=US/O=Let's Encrypt/CN=R3/CN=k8s-igrok-02.nrp-nautilus.io"
   permissions: w
+k8s_ceph_01:
+  full_dn: "/C=US/O=Let's Encrypt/CN=R3/CN=k8s-ceph-01-ultralight.nrp-nautilus.io"
+  permissions: w
+k8s_gen4_07:
+  full_dn: "/C=US/O=Let's Encrypt/CN=R3/CN=k8s-gen4-07-ultralight.nrp-nautilus.io"
+  permissions: w
+k8s_nvme_01:
+  full_dn: "/C=US/O=Let's Encrypt/CN=R3/CN=k8s-nvme-01-ultralight.nrp-nautilus.io"
+  permissions: w
