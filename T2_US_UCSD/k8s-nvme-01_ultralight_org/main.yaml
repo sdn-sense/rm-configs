@@ -6,7 +6,7 @@ general:
 agent: 
   interfaces: [ens2]
   hostname: k8s-nvme-01.ultralight.org
-enp33s0f1:
+ens2:
   kubeLabels:
     isAlias: 'nautilus.io/SenseIsAlias'
     multus: 'nautilus.io/multus'
