@@ -103,22 +103,22 @@ edegcore_s0:
     "Ethernet208":
       vlan_range: [3985-3989,3610,3611,3612]
       desttype: switch
-      isAlias: "urn:ogf:network:ultralight.org:2013:aristaeos_s0:Ethernet4-1"
+      isAlias: "urn:ogf:network:ultralight.org:2020:aristaeos_s0:Ethernet4-1"
       wanlink: True
     "Ethernet216":
       vlan_range: [3985-3989,3610,3611,3612]
       desttype: switch
-      isAlias: "urn:ogf:network:ultralight.org:2013:aristaeos_s0:Ethernet5-1"
+      isAlias: "urn:ogf:network:ultralight.org:2020:aristaeos_s0:Ethernet5-1"
       wanlink: True
     "Ethernet224":
       vlan_range: [3985-3989,3610,3611,3612]
       desttype: switch
-      isAlias: "urn:ogf:network:ultralight.org:2013:aristaeos_s0:Ethernet6-1"
+      isAlias: "urn:ogf:network:ultralight.org:2020:aristaeos_s0:Ethernet6-1"
       wanlink: True
     "Ethernet232":
       vlan_range: [3985-3989,3610,3611,3612]
       desttype: switch
-      isAlias: "urn:ogf:network:ultralight.org:2013:aristaeos_s0:Ethernet12-1"
+      isAlias: "urn:ogf:network:ultralight.org:2020:aristaeos_s0:Ethernet12-1"
       wanlink: True
   vlan_range: [1779-1799,3600-3619,3985-3989,3870-3883,3911-3912,3870-3883]
   allports: False
