@@ -102,7 +102,6 @@ edgecore_s0:
       capacity: 200000
       desttype: switch
       isAlias: "urn:ogf:network:tier2.ultralight.org:2024:dellos10_s0:Port-channel_41"
-      wanlink: True
     "Ethernet208":
       vlan_range: [1779-1799,3600-3609,3613-3619,3870-3883,3911-3912,3110-3139]
       desttype: switch
