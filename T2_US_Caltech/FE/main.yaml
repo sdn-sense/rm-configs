@@ -36,6 +36,7 @@ T2_US_Caltech:
   switch:
     - "dellos10_s0"
     - "dellos10_s1"
+    - "edegcore_s0"
 dellos10_s0:
   vsw: "dellos10_s0"
   rst: "dellos10_s0"
