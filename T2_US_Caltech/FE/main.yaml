@@ -95,6 +95,8 @@ edegcore_s0:
   vsw: "edegcore_s0"
   vlan_mtu: 9100
   ports:
+    "Ethernet80": {}
+    "Ethernet84": {}
     "PortChannel41":
       capacity: 200000
       desttype: switch
