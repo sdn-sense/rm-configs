@@ -36,7 +36,7 @@ T2_US_Caltech:
   switch:
     - "dellos10_s0"
     - "dellos10_s1"
-    - "edegcore_s0"
+    - "edgecore_s0"
 dellos10_s0:
   vsw: "dellos10_s0"
   rst: "dellos10_s0"
@@ -92,8 +92,8 @@ dellos10_s1:
   allports: False
   allvlans: False
   snmp_monitoring: True
-edegcore_s0:
-  vsw: "edegcore_s0"
+edgecore_s0:
+  vsw: "edgecore_s0"
   vlan_mtu: 9100
   ports:
     "Ethernet80": {}
