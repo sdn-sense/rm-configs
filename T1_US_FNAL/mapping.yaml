@@ -19,3 +19,8 @@ f6998c3c359334dbbdadf228a3b24b2d:
   maintainer: "Chih-Hao Huang"
   status: production
   type: Agent
+b1da1020ef0ce35909c14639ad2cdf11:
+  config: Agent04/
+  maintainer: "Chih-Hao Huang"
+  status: production
+  type: Agent
