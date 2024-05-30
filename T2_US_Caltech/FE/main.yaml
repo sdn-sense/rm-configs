@@ -35,7 +35,6 @@ T2_US_Caltech:
   year: 2024
   switch:
     - "dellos10_s0"
-    - "dellos10_s1"
     - "edgecore_s0"
 dellos10_s0:
   vsw: "dellos10_s0"
