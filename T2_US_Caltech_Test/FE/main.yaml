@@ -39,7 +39,7 @@ dellos9_s0:
       vlan_range: [1779-1799,3600-3609,3613-3619,3870-3883,3911-3912,3870-3883]
       capacity: 400000
       desttype: switch
-      isAlias: "urn:ogf:network:tier2.ultralight.org:2024:dellos10_s1:Port-channel_101"
+      isAlias: "urn:ogf:network:tier2.ultralight.org:2024:dellos10_s0:Port-channel_101"
       wanlink: True
     "Port-channel 104":
       capacity: 400000
@@ -47,11 +47,6 @@ dellos9_s0:
       isAlias: "urn:ogf:network:ultralight.org:2013:aristaeos_s0:Port-Channel104"
     "hundredGigE 1/3": {}
     "hundredGigE 1/10": {}
-    "hundredGigE 1/13":
-      vlan_range: [3985-3989,3610,3611,3612]
-      desttype: switch
-      isAlias: "urn:ogf:network:tier2.ultralight.org:2024:dellos10_s1:Ethernet_1-1-30"
-      wanlink: True
     "hundredGigE 1/23": {}
     "hundredGigE 1/32": {}
     "hundredGigE 1/24": {}
