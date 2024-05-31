@@ -26,7 +26,7 @@ aristaeos_s0:
         capacity: 400000
         desttype: switch
         isAlias: "urn:ogf:network:tier2.ultralight.org:2024:dellos10_s0:Port-channel_102"
-        vlan_range: [1779-1799,3600-3609,3613-3619,3870-3883,3911-3912,3110-3139]
+        vlan_range: [1779-1799,3600-3619,3985-3989,3870-3883,3911-3912,3870-3883]
         wanlink: True
     "Port-Channel502":
         capacity: 400000
@@ -62,19 +62,19 @@ aristaeos_s0:
         capacity: 400000
         desttype: switch
         isAlias: "urn:ogf:network:tier2.ultralight.org:2024:edgecore_s0:Ethernet208"
-        vlan_range: [1779-1799,3600-3609,3613-3619,3870-3883,3911-3912,3110-3139]
+        vlan_range: [1779-1799,3600-3619,3985-3989,3870-3883,3911-3912,3870-3883]
         wanlink: True
     "Ethernet5/1":
         capacity: 400000
         desttype: switch
         isAlias: "urn:ogf:network:tier2.ultralight.org:2024:edgecore_s0:Ethernet216"
-        vlan_range: [1779-1799,3600-3609,3613-3619,3870-3883,3911-3912,3110-3139]
+        vlan_range: [1779-1799,3600-3619,3985-3989,3870-3883,3911-3912,3870-3883]
         wanlink: True
     "Ethernet6/1":
         capacity: 400000
         desttype: switch
         isAlias: "urn:ogf:network:tier2.ultralight.org:2024:edgecore_s0:Ethernet224"
-        vlan_range: [1779-1799,3600-3609,3613-3619,3870-3883,3911-3912,3110-3139]
+        vlan_range: [1779-1799,3600-3619,3985-3989,3870-3883,3911-3912,3870-3883]
         wanlink: True
     "Ethernet9/1":
         capacity: 100000
@@ -105,7 +105,7 @@ aristaeos_s0:
         capacity: 400000
         desttype: switch
         isAlias: "urn:ogf:network:tier2.ultralight.org:2024:edgecore_s0:Ethernet232"
-        vlan_range: [1779-1799,3600-3609,3613-3619,3870-3883,3911-3912,3110-3139]
+        vlan_range: [1779-1799,3600-3619,3985-3989,3870-3883,3911-3912,3870-3883]
         wanlink: True
     "Ethernet13/1":
         capacity: 400000
