@@ -76,6 +76,10 @@ edgecore_s0:
   ports:
     "Ethernet80": {}
     "Ethernet84": {}
+    "Ethernet160": {}
+    "Ethernet168": {}
+    "Ethernet176": {}
+    "Ethernet184": {}
     "PortChannel41":
       capacity: 200000
       desttype: switch
