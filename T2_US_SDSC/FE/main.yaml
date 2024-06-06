@@ -1,10 +1,12 @@
---- 
+---
 general:
   logLevel: DEBUG
-  sites: 
-    - "T2_US_SDSC"
-  webdomain: "https://sense-prpdev-fe.sdn-lb.ultralight.org:443"
-  probes: ['https_v4_siterm_2xx', 'icmp_v4']
+  sites:
+    - T2_US_SDSC
+  webdomain: https://sense-prpdev-fe.sdn-lb.ultralight.org:443
+  probes:
+    - https_v4_siterm_2xx
+    - icmp_v4
 T2_US_SDSC:
   domain: nrp-nautilus.io
   latitude: 32.882648
@@ -14,119 +16,217 @@ T2_US_SDSC:
   year: 2020
   metadata:
     xrootd:
-      "2001:48d0:3001:111::/64": "xrootd-sense-ucsd-redirector-111.sdsc.optiputer.net:1094"
-      "2001:48d0:3001:112::/64": "xrootd-sense-ucsd-redirector-112.sdsc.optiputer.net:1094"
-      "2001:48d0:3001:113::/64": "xrootd-sense-ucsd-redirector-113.sdsc.optiputer.net:1094"
-      "2001:48d0:3001:114::/64": "xrootd-sense-ucsd-redirector-114.sdsc.optiputer.net:1094"
-  ipv6-subnet-pool: [2001:48d0:3001:111::/64,2001:48d0:3001:112::/64,2001:48d0:3001:113::/64,2001:48d0:3001:114::/64,2001:48d0:3001:115::/64,2001:48d0:3001:116::/64,2001:48d0:3001:117::/64,2001:48d0:3001:118::/64,2001:48d0:3001:119::/64]
-  ipv6-address-pool: [fc00:3600::0/64,fc00:3601::0/64,fc00:3602::0/64,fc00:3603::0/64,fc00:3604::0/64,fc00:3605::0/64,fc00:3606::0/64,fc00:3607::0/64,fc00:3608::0/64,fc00:3609::0/64,fc00:3610::0/64,fc00:3611::0/64,fc00:3612::0/64,fc00:3613::0/64,fc00:3614::0/64,fc00:3615::0/64,fc00:3616::0/64,fc00:3617::0/64,fc00:3618::0/64,fc00:3619::0/64,fc00:1779::0/64,fc00:1780::0/64,fc00:1781::0/64,fc00:1782::0/64,fc00:1783::0/64,fc00:1784::0/64,fc00:1785::0/64,fc00:1786::0/64,fc00:1787::0/64,fc00:1788::0/64,fc00:1789::0/64,fc00:1790::0/64,fc00:1791::0/64,fc00:1792::0/64,fc00:1793::0/64,fc00:1794::0/64,fc00:1795::0/64,fc00:1796::0/64,fc00:1797::0/64,fc00:1798::0/64,fc00:1799::0/64,fc00:3985::0/64,fc00:3986::0/64,fc00:3987::0/64,fc00:3988::0/64,fc00:3989::0/64]
+      2001:48d0:3001:111::/64: xrootd-sense-ucsd-redirector-111.sdsc.optiputer.net:1094
+      2001:48d0:3001:112::/64: xrootd-sense-ucsd-redirector-112.sdsc.optiputer.net:1094
+      2001:48d0:3001:113::/64: xrootd-sense-ucsd-redirector-113.sdsc.optiputer.net:1094
+      2001:48d0:3001:114::/64: xrootd-sense-ucsd-redirector-114.sdsc.optiputer.net:1094
+  ipv6-subnet-pool:
+    - 2001:48d0:3001:111::/64
+    - 2001:48d0:3001:112::/64
+    - 2001:48d0:3001:113::/64
+    - 2001:48d0:3001:114::/64
+    - 2001:48d0:3001:115::/64
+    - 2001:48d0:3001:116::/64
+    - 2001:48d0:3001:117::/64
+    - 2001:48d0:3001:118::/64
+    - 2001:48d0:3001:119::/64
+  ipv6-address-pool:
+    - fc00:3600::0/64
+    - fc00:3601::0/64
+    - fc00:3602::0/64
+    - fc00:3603::0/64
+    - fc00:3604::0/64
+    - fc00:3605::0/64
+    - fc00:3606::0/64
+    - fc00:3607::0/64
+    - fc00:3608::0/64
+    - fc00:3609::0/64
+    - fc00:3610::0/64
+    - fc00:3611::0/64
+    - fc00:3612::0/64
+    - fc00:3613::0/64
+    - fc00:3614::0/64
+    - fc00:3615::0/64
+    - fc00:3616::0/64
+    - fc00:3617::0/64
+    - fc00:3618::0/64
+    - fc00:3619::0/64
+    - fc00:1779::0/64
+    - fc00:1780::0/64
+    - fc00:1781::0/64
+    - fc00:1782::0/64
+    - fc00:1783::0/64
+    - fc00:1784::0/64
+    - fc00:1785::0/64
+    - fc00:1786::0/64
+    - fc00:1787::0/64
+    - fc00:1788::0/64
+    - fc00:1789::0/64
+    - fc00:1790::0/64
+    - fc00:1791::0/64
+    - fc00:1792::0/64
+    - fc00:1793::0/64
+    - fc00:1794::0/64
+    - fc00:1795::0/64
+    - fc00:1796::0/64
+    - fc00:1797::0/64
+    - fc00:1798::0/64
+    - fc00:1799::0/64
+    - fc00:3985::0/64
+    - fc00:3986::0/64
+    - fc00:3987::0/64
+    - fc00:3988::0/64
+    - fc00:3989::0/64
   switch:
-    - "sn3700_s0"
-    - "edgecore_s0"
+    - sn3700_s0
+    - edgecore_s0
 sn3700_s0:
-  vsw: "sn3700_s0"
-  rst: "sn3700_s0"
-  rsts_enabled: "ipv4,ipv6"
+  vsw: sn3700_s0
+  rst: sn3700_s0
+  rsts_enabled: ipv4,ipv6
   external_snmp: https://nsi-snmpmon-prpdev.nrp-nautilus.io/sn3700_s0/metrics
   private_asn: 65000
-  allports: False
-  vlan_range: [1779-1799,3873,3874,3911,3912,3985-3989,3600-3619,3110-3139]
+  allports: false
+  vlan_range:
+    - 1779-1799
+    - 3873
+    - 3874
+    - 3911
+    - 3912
+    - 3985-3989
+    - 3600-3619
+    - 3110-3139
   ports:
-    "PortChannel502":
-        capacity: 1200000
-        desttype: switch
-        isAlias: "urn:ogf:network:nrp-nautilus.io:2020:edgecore_s0:PortChannel502"
-        vlan_range: [1779-1799,3873,3874,3911,3912,3985-3989,3600-3619,3110-3139]
-    "Ethernet32":
-        vlan_range: [3400-3407,3600-3610]
-    "Ethernet36":
-        vlan_range: [3400-3407,3600-3610]
-    "Ethernet44": {}
-    "Ethernet40": {}
-    "Ethernet52": {}
-    "Ethernet100": {}
-    "Ethernet72": {}
-    "Ethernet76": {}
-    "Ethernet80": {}
-    "Ethernet84": {}
-    "Ethernet108": {}
-    "Ethernet104": {}
-    "Ethernet116": {}
-    "Ethernet120": {}
+    PortChannel502:
+      capacity: 1200000
+      desttype: switch
+      isAlias: urn:ogf:network:nrp-nautilus.io:2020:edgecore_s0:PortChannel502
+      vlan_range:
+        - 1779-1799
+        - 3873
+        - 3874
+        - 3911
+        - 3912
+        - 3985-3989
+        - 3600-3619
+        - 3110-3139
+    Ethernet32:
+      vlan_range:
+        - 3400-3407
+        - 3600-3610
+    Ethernet36:
+      vlan_range:
+        - 3400-3407
+        - 3600-3610
+    Ethernet44: {}
+    Ethernet40: {}
+    Ethernet52: {}
+    Ethernet100: {}
+    Ethernet72: {}
+    Ethernet76: {}
+    Ethernet80: {}
+    Ethernet84: {}
+    Ethernet108: {}
+    Ethernet104: {}
+    Ethernet116: {}
+    Ethernet120: {}
 edgecore_s0:
-  vsw: "edgecore_s0"
-  allports: False
+  vsw: edgecore_s0
+  allports: false
   external_snmp: https://nsi-snmpmon-prpdev.nrp-nautilus.io/edgecore_s0/metrics
-  vlan_range: [1779-1799,3873,3874,3911,3912,3985-3989,3600-3619,3110-3139]
+  vlan_range:
+    - 1779-1799
+    - 3873
+    - 3874
+    - 3911
+    - 3912
+    - 3985-3989
+    - 3600-3619
+    - 3110-3139
   ports:
-    "Ethernet244": {} # node-2-6 enp65s0f0np0
-    "Ethernet136":
-      isAlias: "urn:ogf:network:nrp-nautilus.io:2020:node-2-6.sdsc.optiputer.net:Ethernet136-21-00"
-    "Ethernet138":
-      isAlias: "urn:ogf:network:nrp-nautilus.io:2020:node-2-6.sdsc.optiputer.net:Ethernet138-21-00"
-    "Ethernet140":
-      isAlias: "urn:ogf:network:nrp-nautilus.io:2020:node-2-6.sdsc.optiputer.net:Ethernet140-a1-00"
-    "Ethernet142":
-      isAlias: "urn:ogf:network:nrp-nautilus.io:2020:node-2-6.sdsc.optiputer.net:Ethernet142-a1-00"
-    "Ethernet240": {} # node-2-7 enp65s0f0np0
-    "Ethernet144":
-      isAlias: "urn:ogf:network:nrp-nautilus.io:2020:node-2-7.sdsc.optiputer.net:Ethernet144-21-00"
-    "Ethernet146":
-      isAlias: "urn:ogf:network:nrp-nautilus.io:2020:node-2-7.sdsc.optiputer.net:Ethernet146-21-00"
-    "Ethernet148":
-      isAlias: "urn:ogf:network:nrp-nautilus.io:2020:node-2-7.sdsc.optiputer.net:Ethernet148-a1-00"
-    "Ethernet150":
-      isAlias: "urn:ogf:network:nrp-nautilus.io:2020:node-2-7.sdsc.optiputer.net:Ethernet150-a1-00"
-    "Ethernet232": {} # NVME NODE-1-6
-    "Ethernet234": {} # NVME NODE-2-5
-    "Ethernet238": {} # NVME NODE-3-5
-    "Ethernet240": {} # NVME NODE-3-6
-    "Ethernet248": {} # node-2-8 enp65s0f0np0
-    "Ethernet152":
-      isAlias: "urn:ogf:network:nrp-nautilus.io:2020:node-2-8.sdsc.optiputer.net:Ethernet152-a1-00"
-    "Ethernet154":
-      isAlias: "urn:ogf:network:nrp-nautilus.io:2020:node-2-8.sdsc.optiputer.net:Ethernet154-a1-00"
-    "Ethernet156":
-      isAlias: "urn:ogf:network:nrp-nautilus.io:2020:node-2-8.sdsc.optiputer.net:Ethernet156-21-00"
-    "Ethernet158":
-      isAlias: "urn:ogf:network:nrp-nautilus.io:2020:node-2-8.sdsc.optiputer.net:Ethernet158-21-00"
-    "Ethernet32": {} # gen5-01
-    "Ethernet72": {} # node-2-9 enp65s0f0np0
-    "Ethernet160":
-      isAlias: "urn:ogf:network:nrp-nautilus.io:2020:node-2-9.sdsc.optiputer.net:Ethernet160-21-00"
-    "Ethernet162":
-      isAlias: "urn:ogf:network:nrp-nautilus.io:2020:node-2-9.sdsc.optiputer.net:Ethernet162-21-00"
-    "Ethernet164":
-      isAlias: "urn:ogf:network:nrp-nautilus.io:2020:node-2-9.sdsc.optiputer.net:Ethernet164-a1-00"
-    "Ethernet166":
-      isAlias: "urn:ogf:network:nrp-nautilus.io:2020:node-2-9.sdsc.optiputer.net:Ethernet166-a1-00"
-    "Ethernet40": {} # gen5-02
-    "Ethernet252": {} # node-2-10 enp65s0f0np0
-    "Ethernet168":
-      isAlias: "urn:ogf:network:nrp-nautilus.io:2020:node-2-10.sdsc.optiputer.net:Ethernet168-a1-00"
-    "Ethernet170":
-      isAlias: "urn:ogf:network:nrp-nautilus.io:2020:node-2-10.sdsc.optiputer.net:Ethernet170-a1-00"
-    "Ethernet172":
-      isAlias: "urn:ogf:network:nrp-nautilus.io:2020:node-2-10.sdsc.optiputer.net:Ethernet172-21-00"
-    "Ethernet174":
-      isAlias: "urn:ogf:network:nrp-nautilus.io:2020:node-2-10.sdsc.optiputer.net:Ethernet174-21-00"
-    "Ethernet88": {} # node-2-11 enp65s0f0np0
-    "Ethernet104":
-      isAlias: "urn:ogf:network:nrp-nautilus.io:2020:node-2-11.sdsc.optiputer.net:Ethernet104-21-00"
-    "Ethernet106":
-      isAlias: "urn:ogf:network:nrp-nautilus.io:2020:node-2-11.sdsc.optiputer.net:Ethernet106-21-00"
-    "Ethernet108":
-      isAlias: "urn:ogf:network:nrp-nautilus.io:2020:node-2-11.sdsc.optiputer.net:Ethernet108-c1-00"
-    "Ethernet110":
-      isAlias: "urn:ogf:network:nrp-nautilus.io:2020:node-2-11.sdsc.optiputer.net:Ethernet110-c1-00"
-    "PortChannel502":
-        capacity: 1200000
-        desttype: switch
-        isAlias: "urn:ogf:network:nrp-nautilus.io:2020:sn3700_s0:PortChannel502"
-        vlan_range: [1779-1799,3873,3874,3911,3912,3985-3989,3600-3619,3110-3139]
-    "PortChannel500":
-        capacity: 800000
-        desttype: switch
-        isAlias: "urn:ogf:network:sense-oasis-nrp-nautilus.io:2020:oasis:Pc500"
-        vlan_range: [1779-1799,3873,3874,3911,3912,3985-3989,3600-3619,3110-3139]
-        wanlink: PortChannel501
+    Ethernet244: {}
+    Ethernet136:
+      isAlias: urn:ogf:network:nrp-nautilus.io:2020:node-2-6.sdsc.optiputer.net:Ethernet136-21-00
+    Ethernet138:
+      isAlias: urn:ogf:network:nrp-nautilus.io:2020:node-2-6.sdsc.optiputer.net:Ethernet138-21-00
+    Ethernet140:
+      isAlias: urn:ogf:network:nrp-nautilus.io:2020:node-2-6.sdsc.optiputer.net:Ethernet140-a1-00
+    Ethernet142:
+      isAlias: urn:ogf:network:nrp-nautilus.io:2020:node-2-6.sdsc.optiputer.net:Ethernet142-a1-00
+    Ethernet240: {}
+    Ethernet144:
+      isAlias: urn:ogf:network:nrp-nautilus.io:2020:node-2-7.sdsc.optiputer.net:Ethernet144-21-00
+    Ethernet146:
+      isAlias: urn:ogf:network:nrp-nautilus.io:2020:node-2-7.sdsc.optiputer.net:Ethernet146-21-00
+    Ethernet148:
+      isAlias: urn:ogf:network:nrp-nautilus.io:2020:node-2-7.sdsc.optiputer.net:Ethernet148-a1-00
+    Ethernet150:
+      isAlias: urn:ogf:network:nrp-nautilus.io:2020:node-2-7.sdsc.optiputer.net:Ethernet150-a1-00
+    Ethernet232: {}
+    Ethernet234: {}
+    Ethernet238: {}
+    Ethernet248: {}
+    Ethernet152:
+      isAlias: urn:ogf:network:nrp-nautilus.io:2020:node-2-8.sdsc.optiputer.net:Ethernet152-a1-00
+    Ethernet154:
+      isAlias: urn:ogf:network:nrp-nautilus.io:2020:node-2-8.sdsc.optiputer.net:Ethernet154-a1-00
+    Ethernet156:
+      isAlias: urn:ogf:network:nrp-nautilus.io:2020:node-2-8.sdsc.optiputer.net:Ethernet156-21-00
+    Ethernet158:
+      isAlias: urn:ogf:network:nrp-nautilus.io:2020:node-2-8.sdsc.optiputer.net:Ethernet158-21-00
+    Ethernet32: {}
+    Ethernet72: {}
+    Ethernet160:
+      isAlias: urn:ogf:network:nrp-nautilus.io:2020:node-2-9.sdsc.optiputer.net:Ethernet160-21-00
+    Ethernet162:
+      isAlias: urn:ogf:network:nrp-nautilus.io:2020:node-2-9.sdsc.optiputer.net:Ethernet162-21-00
+    Ethernet164:
+      isAlias: urn:ogf:network:nrp-nautilus.io:2020:node-2-9.sdsc.optiputer.net:Ethernet164-a1-00
+    Ethernet166:
+      isAlias: urn:ogf:network:nrp-nautilus.io:2020:node-2-9.sdsc.optiputer.net:Ethernet166-a1-00
+    Ethernet40: {}
+    Ethernet252: {}
+    Ethernet168:
+      isAlias: urn:ogf:network:nrp-nautilus.io:2020:node-2-10.sdsc.optiputer.net:Ethernet168-a1-00
+    Ethernet170:
+      isAlias: urn:ogf:network:nrp-nautilus.io:2020:node-2-10.sdsc.optiputer.net:Ethernet170-a1-00
+    Ethernet172:
+      isAlias: urn:ogf:network:nrp-nautilus.io:2020:node-2-10.sdsc.optiputer.net:Ethernet172-21-00
+    Ethernet174:
+      isAlias: urn:ogf:network:nrp-nautilus.io:2020:node-2-10.sdsc.optiputer.net:Ethernet174-21-00
+    Ethernet88: {}
+    Ethernet104:
+      isAlias: urn:ogf:network:nrp-nautilus.io:2020:node-2-11.sdsc.optiputer.net:Ethernet104-21-00
+    Ethernet106:
+      isAlias: urn:ogf:network:nrp-nautilus.io:2020:node-2-11.sdsc.optiputer.net:Ethernet106-21-00
+    Ethernet108:
+      isAlias: urn:ogf:network:nrp-nautilus.io:2020:node-2-11.sdsc.optiputer.net:Ethernet108-c1-00
+    Ethernet110:
+      isAlias: urn:ogf:network:nrp-nautilus.io:2020:node-2-11.sdsc.optiputer.net:Ethernet110-c1-00
+    PortChannel502:
+      capacity: 1200000
+      desttype: switch
+      isAlias: urn:ogf:network:nrp-nautilus.io:2020:sn3700_s0:PortChannel502
+      vlan_range:
+        - 1779-1799
+        - 3873
+        - 3874
+        - 3911
+        - 3912
+        - 3985-3989
+        - 3600-3619
+        - 3110-3139
+    PortChannel500:
+      capacity: 800000
+      desttype: switch
+      isAlias: urn:ogf:network:sense-oasis-nrp-nautilus.io:2020:oasis:Pc500
+      vlan_range:
+        - 1779-1799
+        - 3873
+        - 3874
+        - 3911
+        - 3912
+        - 3985-3989
+        - 3600-3619
+        - 3110-3139
+      wanlink: PortChannel501
