@@ -66,7 +66,7 @@ dellos9_s0:
   vrf: lhcone
   vlan_mtu: 9416
   vlan_range:
-    - 3620-3630
+    - 3620-3730
   reservableCapacity: 100%
   ports_ignore:
     - hundredGigE 1/9
@@ -83,7 +83,7 @@ dellos9_s0:
       reservableCapacity: 100000
     hundredGigE 1/13:
       vlan_range:
-        - 3625-3630
+        - 3620-3730
       capacity: 100000
       reservableCapacity: 40000
     Port-channel 104:
@@ -97,7 +97,7 @@ aristaeos_s0:
   vsw: aristaeos_s0
   vlan_mtu: 9416
   vlan_range:
-    - 3620-3630
+    - 3620-3730
   ports_ignore:
     - Ethernet29/1
     - Ethernet30/1
@@ -123,39 +123,7 @@ sn3700_s0:
   vsw: sn3700_s0
   vlan_mtu: 9416
   vlan_range:
-    - 3620-3630
-  allports: true
-  allvlans: true
-  snmp_monitoring: true
-freertr_s0:
-  vsw: freertr_s0
-  vlan_mtu: 9416
-  vlan_range:
-    - 3620-3630
-  allports: true
-  allvlans: true
-  snmp_monitoring: true
-freertr_s1:
-  vsw: freertr_s1
-  vlan_mtu: 9416
-  vlan_range:
-    - 3620-3630
-  allports: true
-  allvlans: true
-  snmp_monitoring: true
-freertr_s2:
-  vsw: freertr_s2
-  vlan_mtu: 9416
-  vlan_range:
-    - 3620-3630
-  allports: true
-  allvlans: true
-  snmp_monitoring: true
-freertr_s3:
-  vsw: freertr_s3
-  vlan_mtu: 9416
-  vlan_range:
-    - 3620-3630
+    - 3620-3730
   allports: true
   allvlans: true
   snmp_monitoring: true
