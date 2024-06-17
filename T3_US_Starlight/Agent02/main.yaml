@@ -3,7 +3,7 @@ general:
   ip: "165.124.33.233"
   sitename: [T3_US_Starlight]
   webdomain: "https://r740xd4.it.northwestern.edu:8443"
-  node_exporter: "r740xd4.it.northwestern.edu:9200"
+  node_exporter: "r740xd4.it.northwestern.edu:9100"
 agent: 
   interfaces: [eno1]
   hostname: r740xd4.it.northwestern.edu
