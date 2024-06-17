@@ -1,9 +1,4 @@
 ---
-98033a990e22ae35efdb40c91bc3cf6d: 
-  config: FE/
-  maintainer: "Chris Zane"
-  status: production
-  type: FE
 30f4d269b94ce174d8b164eabdf39e5d:
   config: Agent01/
   maintainer: "Chris Zane"
