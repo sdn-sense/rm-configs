@@ -36,13 +36,11 @@ oasis:
       capacity: 400000
       isAlias: "urn:ogf:network:sc-test.cenic.net:2020:aristaeos_s0:Port-Channel502"
       wanlink: True
-      vlan_range: ["3911-3912", "3873-3874", "3985-3989", "3600-3619", "1779-1799", "3110-3139"]
     "Pc500":
         # Port-channel 500 facing Edgecore AS7712
       capacity: 800000
       isAlias: "urn:ogf:network:nrp-nautilus.io:2020:edgecore_s0:PortChannel500"
       wanlink: True
-      vlan_range: [1779-1799,3911-3912,3873-3874,3985-3989,3600-3619,3110-3139]
     "Pc701":
       # Port-channel 701 facing Prism-Core
       capacity: 200000

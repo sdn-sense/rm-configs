@@ -13,9 +13,6 @@ T2_US_Caltech_Test:
   longitude: 118.1253
   plugin: ansible
   privatedir: /opt/siterm/config/T2_US_Caltech_Test/
-  ipv4-subnet-pool:
-    - 198.32.43.1/32
-    - 198.32.43.2/32
   ipv6-subnet-pool:
     - 2605:d9c0:2:fff1::/64
     - 2605:d9c0:2:fff2::/64
@@ -81,6 +78,7 @@ T2_US_Caltech_Test:
     - 172.17.3.0/30
     - 172.18.3.0/30
     - 172.19.3.0/30
+    - 10.251.0.0/16
   year: 2013
   switch:
     - dellos9_s0
@@ -95,13 +93,6 @@ dellos9_s0:
   ports:
     Port-channel 102: {}
     Port-channel 103:
-      vlan_range:
-        - 1779-1799
-        - 3600-3619
-        - 3985-3989
-        - 3870-3883
-        - 3911-3912
-        - 3870-3883
       capacity: 400000
       desttype: switch
       isAlias: urn:ogf:network:tier2.ultralight.org:2024:dellos10_s0:Port-channel_101
@@ -124,7 +115,6 @@ dellos9_s0:
     - 3985-3989
     - 3870-3883
     - 3911-3912
-    - 3870-3883
   allports: false
   allvlans: false
   snmp_monitoring: true
@@ -137,7 +127,6 @@ aristaeos_s0:
     - 3985-3989
     - 3870-3883
     - 3911-3912
-    - 3870-3883
   ports:
     Port-Channel104:
       capacity: 400000

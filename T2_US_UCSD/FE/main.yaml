@@ -25,7 +25,7 @@ s0:
       wanlink: True
     "1_2":
       capacity: 100000
-  vlan_range: [1779-1799]
+  vlan_range: [1779-1799,3110-3139]
 s1:
   vsw: "s1"
   ports:
@@ -35,4 +35,4 @@ s1:
       wanlink: True
     "1_2":
       capacity: 100000
-  vlan_range: [1779-1799]
+  vlan_range: [1779-1799,3110-3139]
