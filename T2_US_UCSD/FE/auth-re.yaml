@@ -1,4 +1,4 @@
 ---
 wildcard_nautilus_io:
-  full_dn: "/C=US/O=Let's Encrypt/CN=R3/CN=.*.nrp-nautilus.io"
+  full_dn: "/C=US/O=Let's Encrypt/CN=.*.nrp-nautilus.io"
   permissions: w
