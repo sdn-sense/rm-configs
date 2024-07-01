@@ -1,71 +1,137 @@
---- 
+---
 general:
   logLevel: DEBUG
-  sites: 
-    - "T2_US_Caltech_Test"
-  webdomain: "https://sense-caltech-fe.sdn-lb.ultralight.org:443"
-  probes: ['https_v4_siterm_2xx', 'icmp_v4']
-T2_US_Caltech_Test: 
+  sites:
+    - T2_US_Caltech_Test
+  webdomain: https://sense-caltech-fe.sdn-lb.ultralight.org:443
+  probes:
+    - https_v4_siterm_2xx
+    - icmp_v4
+T2_US_Caltech_Test:
   domain: ultralight.org
   latitude: 34.1377
   longitude: 118.1253
   plugin: ansible
   privatedir: /opt/siterm/config/T2_US_Caltech_Test/
-  ipv4-subnet-pool: [198.32.43.1/32,198.32.43.2/32]
-  ipv6-subnet-pool: [2605:d9c0:2:fff1::/64,2605:d9c0:2:fff2::/64,2605:d9c0:2:fff3::/64,2605:d9c0:2:fff4::/64,2605:d9c0:2:fff5::/64]
+  ipv6-subnet-pool:
+    - 2605:d9c0:2:fff1::/64
+    - 2605:d9c0:2:fff2::/64
+    - 2605:d9c0:2:fff3::/64
+    - 2605:d9c0:2:fff4::/64
+    - 2605:d9c0:2:fff5::/64
   metadata:
     xrootd:
-      "2605:d9c0:2:fff1::/64": "sense-redir-01.ultralight.org:1094"
-      "2605:d9c0:2:fff2::/64": "sense-redir-02.ultralight.org:1094"
-      "2605:d9c0:2:fff3::/64": "sense-redir-03.ultralight.org:1094"
-      "2605:d9c0:2:fff4::/64": "sense-redir-04.ultralight.org:1094"
-      "2605:d9c0:2:fff5::/64": "sense-redir-05.ultralight.org:1094"
-  ipv6-address-pool: [fc00:3600::0/64,fc00:3601::0/64,fc00:3602::0/64,fc00:3603::0/64,fc00:3604::0/64,fc00:3605::0/64,fc00:3606::0/64,fc00:3607::0/64,fc00:3608::0/64,fc00:3609::0/64,fc00:3610::0/64,fc00:3611::0/64,fc00:3612::0/64,fc00:3613::0/64,fc00:3614::0/64,fc00:3615::0/64,fc00:3616::0/64,fc00:3617::0/64,fc00:3618::0/64,fc00:3619::0/64,fc00:1779::0/64,fc00:1780::0/64,fc00:1781::0/64,fc00:1782::0/64,fc00:1783::0/64,fc00:1784::0/64,fc00:1785::0/64,fc00:1786::0/64,fc00:1787::0/64,fc00:1788::0/64,fc00:1789::0/64,fc00:1790::0/64,fc00:1791::0/64,fc00:1792::0/64,fc00:1793::0/64,fc00:1794::0/64,fc00:1795::0/64,fc00:1796::0/64,fc00:1797::0/64,fc00:1798::0/64,fc00:1799::0/64,fc00:3985::0/64,fc00:3986::0/64,fc00:3987::0/64,fc00:3988::0/64,fc00:3989::0/64]
-  ipv4-address-pool: [172.16.3.0/30,172.17.3.0/30,172.18.3.0/30,172.19.3.0/30]
+      2605:d9c0:2:fff1::/64: sense-redir-01.ultralight.org:1094
+      2605:d9c0:2:fff2::/64: sense-redir-02.ultralight.org:1094
+      2605:d9c0:2:fff3::/64: sense-redir-03.ultralight.org:1094
+      2605:d9c0:2:fff4::/64: sense-redir-04.ultralight.org:1094
+      2605:d9c0:2:fff5::/64: sense-redir-05.ultralight.org:1094
+  ipv6-address-pool:
+    - fc00:3600::0/64
+    - fc00:3601::0/64
+    - fc00:3602::0/64
+    - fc00:3603::0/64
+    - fc00:3604::0/64
+    - fc00:3605::0/64
+    - fc00:3606::0/64
+    - fc00:3607::0/64
+    - fc00:3608::0/64
+    - fc00:3609::0/64
+    - fc00:3610::0/64
+    - fc00:3611::0/64
+    - fc00:3612::0/64
+    - fc00:3613::0/64
+    - fc00:3614::0/64
+    - fc00:3615::0/64
+    - fc00:3616::0/64
+    - fc00:3617::0/64
+    - fc00:3618::0/64
+    - fc00:3619::0/64
+    - fc00:1779::0/64
+    - fc00:1780::0/64
+    - fc00:1781::0/64
+    - fc00:1782::0/64
+    - fc00:1783::0/64
+    - fc00:1784::0/64
+    - fc00:1785::0/64
+    - fc00:1786::0/64
+    - fc00:1787::0/64
+    - fc00:1788::0/64
+    - fc00:1789::0/64
+    - fc00:1790::0/64
+    - fc00:1791::0/64
+    - fc00:1792::0/64
+    - fc00:1793::0/64
+    - fc00:1794::0/64
+    - fc00:1795::0/64
+    - fc00:1796::0/64
+    - fc00:1797::0/64
+    - fc00:1798::0/64
+    - fc00:1799::0/64
+    - fc00:3985::0/64
+    - fc00:3986::0/64
+    - fc00:3987::0/64
+    - fc00:3988::0/64
+    - fc00:3989::0/64
+  ipv4-address-pool:
+    - 172.16.3.0/30
+    - 172.17.3.0/30
+    - 172.18.3.0/30
+    - 172.19.3.0/30
+    - 10.251.0.0/16
   year: 2013
   switch:
-    - "dellos9_s0"
-    - "aristaeos_s0"
+    - dellos9_s0
+    - aristaeos_s0
 dellos9_s0:
-  vsw: "dellos9_s0"
-  rst: "dellos9_s0"
-  rsts_enabled: "ipv4,ipv6"
+  vsw: dellos9_s0
+  rst: dellos9_s0
+  rsts_enabled: ipv4,ipv6
   private_asn: 64513
   vrf: lhcone
   vlan_mtu: 9416
   ports:
-    "Port-channel 102": {}
-    "Port-channel 103":
-      vlan_range: [1779-1799,3600-3619,3985-3989,3870-3883,3911-3912,3870-3883]
+    Port-channel 102: {}
+    Port-channel 103:
       capacity: 400000
       desttype: switch
-      isAlias: "urn:ogf:network:tier2.ultralight.org:2024:dellos10_s0:Port-channel_101"
-      wanlink: True
-    "Port-channel 104":
+      isAlias: urn:ogf:network:tier2.ultralight.org:2024:dellos10_s0:Port-channel_101
+      wanlink: true
+    Port-channel 104:
       capacity: 400000
       desttype: switch
-      isAlias: "urn:ogf:network:ultralight.org:2013:aristaeos_s0:Port-Channel104"
-    "hundredGigE 1/3": {}
-    "hundredGigE 1/10": {}
-    "hundredGigE 1/23": {}
-    "hundredGigE 1/32": {}
-    "hundredGigE 1/24": {}
-    "hundredGigE 1/21": {}
-    "hundredGigE 1/22": {}
-    "hundredGigE 1/5": {}
-  vlan_range: [1779-1799,3600-3619,3985-3989,3870-3883,3911-3912,3870-3883]
-  allports: False
-  allvlans: False
-  snmp_monitoring: True
+      isAlias: urn:ogf:network:ultralight.org:2013:aristaeos_s0:Port-Channel104
+    hundredGigE 1/3: {}
+    hundredGigE 1/10: {}
+    hundredGigE 1/23: {}
+    hundredGigE 1/32: {}
+    hundredGigE 1/24: {}
+    hundredGigE 1/21: {}
+    hundredGigE 1/22: {}
+    hundredGigE 1/5: {}
+  vlan_range:
+    - 1779-1799
+    - 3600-3619
+    - 3985-3989
+    - 3870-3883
+    - 3911-3912
+  allports: false
+  allvlans: false
+  snmp_monitoring: true
 aristaeos_s0:
-  vsw: "aristaeos_s0"
+  vsw: aristaeos_s0
   vlan_mtu: 9214
-  vlan_range: [1779-1799,3600-3619,3985-3989,3870-3883,3911-3912,3870-3883]
+  vlan_range:
+    - 1779-1799
+    - 3600-3619
+    - 3985-3989
+    - 3870-3883
+    - 3911-3912
   ports:
-    "Port-Channel104":
+    Port-Channel104:
       capacity: 400000
       desttype: switch
-      isAlias: "urn:ogf:network:ultralight.org:2013:dellos9_s0:Port-channel_104"
-  allports: True
-  allvlans: False
-  snmp_monitoring: True
+      isAlias: urn:ogf:network:ultralight.org:2013:dellos9_s0:Port-channel_104
+  allports: true
+  allvlans: false
+  snmp_monitoring: true

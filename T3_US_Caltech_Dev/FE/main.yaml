@@ -1,124 +1,125 @@
---- 
+---
 general:
   logLevel: DEBUG
-  sites: 
-    - "T3_US_Caltech_Dev"
-  webdomain: "https://sense-caltech-dev.sdn-lb.ultralight.org:443"
-  probes: ['https_v4_siterm_2xx', 'icmp_v4']
-T3_US_Caltech_Dev: 
+  sites:
+    - T3_US_Caltech_Dev
+  webdomain: https://sense-caltech-dev.sdn-lb.ultralight.org:443
+  probes:
+    - https_v4_siterm_2xx
+    - icmp_v4
+T3_US_Caltech_Dev:
   domain: ultralight-dev.org
   latitude: 34.1377
   longitude: 118.1253
   plugin: ansible
   privatedir: /opt/siterm/config/T3_US_Caltech_Dev/
-  ipv4-subnet-pool: [198.32.43.1/32,198.32.43.2/32]
-  ipv6-subnet-pool: [2605:d9c0:2:fff1::/64,2605:d9c0:2:fff2::/64,2605:d9c0:2:fff3::/64]
-  ipv4-address-pool: [10.0.14.1/31,10.251.85.0/24,10.251.86.0/24,10.251.87.0/24,10.251.88.0/24,10.251.89.0/24,172.16.3.0/30,172.17.3.0/30,172.18.3.0/30,172.19.3.0/30]
-  ipv6-address-pool: [fc00:3620::0/64,fc00:3621::0/64,fc00:3622::0/64,fc00:3623::0/64,fc00:3624::0/64,fc00:3625::0/64,fc00:3626::0/64,fc00:3627::0/64,fc00:3628::0/64,fc00:3629::0/64,fc00:3630::0/64]
+  ipv4-subnet-pool:
+    - 198.32.43.1/32
+    - 198.32.43.2/32
+  ipv6-subnet-pool:
+    - 2605:d9c0:2:fff1::/64
+    - 2605:d9c0:2:fff2::/64
+    - 2605:d9c0:2:fff3::/64
+  ipv4-address-pool:
+    - 10.0.14.1/31
+    - 10.251.85.0/24
+    - 10.251.86.0/24
+    - 10.251.87.0/24
+    - 10.251.88.0/24
+    - 10.251.89.0/24
+    - 172.16.3.0/30
+    - 172.17.3.0/30
+    - 172.18.3.0/30
+    - 172.19.3.0/30
+  ipv6-address-pool:
+    - fc00:3620::0/64
+    - fc00:3621::0/64
+    - fc00:3622::0/64
+    - fc00:3623::0/64
+    - fc00:3624::0/64
+    - fc00:3625::0/64
+    - fc00:3626::0/64
+    - fc00:3627::0/64
+    - fc00:3628::0/64
+    - fc00:3629::0/64
+    - fc00:3630::0/64
   metadata:
     xrootd:
-      "2605:d9c0:2:fff1::/64": "redir-01.sdn-lb.ultralight.org:1094"
-      "2605:d9c0:2:fff2::/64": "redir-02.sdn-lb.ultralight.org:1094"
-      "2605:d9c0:2:fff3::/64": "redir-03.sdn-lb.ultralight.org:1094"
+      2605:d9c0:2:fff1::/64: redir-01.sdn-lb.ultralight.org:1094
+      2605:d9c0:2:fff2::/64: redir-02.sdn-lb.ultralight.org:1094
+      2605:d9c0:2:fff3::/64: redir-03.sdn-lb.ultralight.org:1094
   year: 2013
   switch:
-    - "dellos9_s0"
-    - "aristaeos_s0"
-    - "aristaeos_s1"
-    - "sn3700_s0"
-    - "freertr_s0"
-    - "freertr_s1"
-    - "freertr_s2"
-    - "freertr_s3"
+    - dellos9_s0
+    - aristaeos_s0
+    - aristaeos_s1
+    - sn3700_s0
 dellos9_s0:
-  vsw: "dellos9_s0"
-  rst: "dellos9_s0"
-  rsts_enabled: "ipv4,ipv6"
+  vsw: dellos9_s0
+  rst: dellos9_s0
+  rsts_enabled: ipv4,ipv6
   private_asn: 64513
   vrf: lhcone
   vlan_mtu: 9416
-  vlan_range: [3620-3630]
-  reservableCapacity: "100%"
+  vlan_range:
+    - 3620-3730
+  reservableCapacity: 100%
   ports_ignore:
-  - hundredGigE 1/9
-  - hundredGigE 1/17
-  - hundredGigE 1/18
-  - hundredGigE 1/19
-  - hundredGigE 1/20
+    - hundredGigE 1/9
+    - hundredGigE 1/17
+    - hundredGigE 1/18
+    - hundredGigE 1/19
+    - hundredGigE 1/20
   ports:
-    "Port-channel 103":
+    Port-channel 103:
       capacity: 400000
       desttype: switch
-      isAlias: "urn:ogf:network:sc-test.cenic.net:2020:aristaeos_s0:Port-Channel501-dummy"
-      wanlink: True
+      isAlias: urn:ogf:network:sc-test.cenic.net:2020:aristaeos_s0:Port-Channel501-dummy
+      wanlink: true
       reservableCapacity: 100000
-    "hundredGigE 1/13":
-      vlan_range: [3625-3630]
+    hundredGigE 1/13:
+      vlan_range:
+        - 3620-3730
       capacity: 100000
       reservableCapacity: 40000
-    "Port-channel 104":
+    Port-channel 104:
       capacity: 400000
       desttype: switch
-      isAlias: "urn:ogf:network:ultralight-dev.org:2013:aristaeos_s0:Port-Channel104"
-  allports: True
-  allvlans: True
-  snmp_monitoring: True
+      isAlias: urn:ogf:network:ultralight-dev.org:2013:aristaeos_s0:Port-Channel104
+  allports: true
+  allvlans: true
+  snmp_monitoring: true
 aristaeos_s0:
-  vsw: "aristaeos_s0"
+  vsw: aristaeos_s0
   vlan_mtu: 9416
-  vlan_range: [3620-3630]
+  vlan_range:
+    - 3620-3730
   ports_ignore:
-  - Ethernet29/1
-  - Ethernet30/1
-  - Ethernet31/1
-  - Ethernet32/1
+    - Ethernet29/1
+    - Ethernet30/1
+    - Ethernet31/1
+    - Ethernet32/1
   ports:
-    "Port-Channel104":
+    Port-Channel104:
       capacity: 400000
       desttype: switch
-      isAlias: "urn:ogf:network:ultralight-dev.org:2013:dellos9_s0:Port-channel_104"
-  allports: True
-  allvlans: True
-  snmp_monitoring: True
+      isAlias: urn:ogf:network:ultralight-dev.org:2013:dellos9_s0:Port-channel_104
+  allports: true
+  allvlans: true
+  snmp_monitoring: true
 aristaeos_s1:
-  vsw: "aristaeos_s1"
+  vsw: aristaeos_s1
   vlan_mtu: 9416
-  vlan_range: [3620-3630]
-  allports: True
-  allvlans: True
-  snmp_monitoring: True
+  vlan_range:
+    - 3620-3630
+  allports: true
+  allvlans: true
+  snmp_monitoring: true
 sn3700_s0:
-  vsw: "sn3700_s0"
+  vsw: sn3700_s0
   vlan_mtu: 9416
-  vlan_range: [3620-3630]
-  allports: True
-  allvlans: True
-  snmp_monitoring: True
-freertr_s0:
-  vsw: "freertr_s0"
-  vlan_mtu: 9416
-  vlan_range: [3620-3630]
-  allports: True
-  allvlans: True
-  snmp_monitoring: True
-freertr_s1:
-  vsw: "freertr_s1"
-  vlan_mtu: 9416
-  vlan_range: [3620-3630]
-  allports: True
-  allvlans: True
-  snmp_monitoring: True
-freertr_s2:
-  vsw: "freertr_s2"
-  vlan_mtu: 9416
-  vlan_range: [3620-3630]
-  allports: True
-  allvlans: True
-  snmp_monitoring: True
-freertr_s3:
-  vsw: "freertr_s3"
-  vlan_mtu: 9416
-  vlan_range: [3620-3630]
-  allports: True
-  allvlans: True
-  snmp_monitoring: True
+  vlan_range:
+    - 3620-3730
+  allports: true
+  allvlans: true
+  snmp_monitoring: true

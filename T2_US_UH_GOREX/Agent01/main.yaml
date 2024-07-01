@@ -1,15 +1,16 @@
 ---
 general:
   ip: "128.171.123.10"
-  sitename: [T2_US_UH_GOREX]
-  webdomain: "https://sense-fe.uhnet.net:8443"
+  sitename: [T2_US_UCSD]
+  webdomain: "https://sense-fe.nrp-nautilus.io:8443"
 agent: 
   interfaces: [ens6f0]
   hostname: fiona.its.hawaii.edu
 ens6f0:
-  port: "1_2"
+  kubeLabels:
+    isAlias: 'nautilus.io/SenseIsAlias'
+    multus: 'nautilus.io/multus'
   shared: false
-  switch: s0
   intf_max: 40000
   bwParams:
     unit: "mbps"
