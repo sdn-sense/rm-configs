@@ -2,7 +2,7 @@
 general:
   ip: "131.225.196.142"
   sitename: [T1_US_FNAL]
-  webdomain: "https://cmssense1.fnal.gov:8443"
+  webdomain: "https://cmssense2.fnal.gov:8443"
   node_exporter: "cmssense5.fnal.gov:15000"
 agent: 
   interfaces: [enp161s0f0]
