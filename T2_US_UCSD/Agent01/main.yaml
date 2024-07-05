@@ -3,6 +3,7 @@ general:
   ip: "67.58.53.139"
   sitename: [T2_US_UCSD]
   webdomain: "https://sense-fe.nrp-nautilus.io:8443"
+  node_exporter: "k8s-igrok-01.calit2.optiputer.net:9100"
 agent: 
   interfaces: [enp33s0f1]
   hostname: k8s-igrok-01.calit2.optiputer.net

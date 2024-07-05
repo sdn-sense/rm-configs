@@ -3,6 +3,7 @@ general:
   ip: "198.32.43.48"
   sitename: [T2_US_UCSD]
   webdomain: "https://sense-fe.nrp-nautilus.io:8443"
+  node_exporter: "k8s-nvme-01.ultralight.org:9100"
 agent: 
   interfaces: [ens2]
   hostname: k8s-nvme-01.ultralight.org

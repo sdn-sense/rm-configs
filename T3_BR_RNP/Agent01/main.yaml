@@ -2,7 +2,8 @@
 general:
   ip: "200.159.252.130"
   sitename: [T3_BR_RNP]
-  webdomain: "https://200.159.252.130:8443" 
+  webdomain: "https://200.159.252.130:8443"
+  node_exporter: "200.159.252.130:9100"
 agent: 
   interfaces: [eno3]
   hostname: 200.159.252.130

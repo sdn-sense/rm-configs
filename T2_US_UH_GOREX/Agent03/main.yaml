@@ -3,6 +3,7 @@ general:
   ip: "168.123.136.165"
   sitename: [T2_US_UCSD]
   webdomain: "https://sense-fe.nrp-nautilus.io:8443"
+  node_exporter: "k8s-dtn-01.uog.edu:9100"
 agent: 
   interfaces: [enp193s0f0]
   hostname: k8s-dtn-01.uog.edu
