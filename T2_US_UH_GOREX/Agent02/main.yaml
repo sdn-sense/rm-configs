@@ -3,7 +3,8 @@ general:
   ip: "128.171.110.10"
   sitename: [T2_US_UCSD]
   webdomain: "https://sense-fe.nrp-nautilus.io:8443"
-  node_exporter: "prp01.ifa.hawaii.edu:9100"
+  prometheus_federate: https://prometheus.nrp-nautilus.io/federate
+  prometheus_query: '{instance="prp01.ifa.hawaii.edu", service="node-exporter"}'
 agent: 
   interfaces: [enp33s0f1]
   hostname: prp01.ifa.hawaii.edu

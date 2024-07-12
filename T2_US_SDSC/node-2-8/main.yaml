@@ -3,7 +3,8 @@ general:
   ip: "132.249.252.212"
   sitename: [T2_US_SDSC]
   webdomain: "https://sense-prpdev-fe.sdn-lb.ultralight.org:443"
-  node_exporter: "node-2-8.sdsc.optiputer.net:9100"
+  prometheus_federate: https://prometheus.nrp-nautilus.io/federate
+  prometheus_query: '{instance="node-2-8.sdsc.optiputer.net", service="node-exporter"}'
 agent: 
   interfaces: [enp65s0f0np0]
   hostname: node-2-8.sdsc.optiputer.net
