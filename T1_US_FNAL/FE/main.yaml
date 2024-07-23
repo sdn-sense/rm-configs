@@ -3,7 +3,7 @@ general:
   logLevel: DEBUG
   sites: 
     - "T1_US_FNAL"
-  webdomain: "https://cmssense2.fnal.gov:8443"
+  webdomain: "https://cmssense1.fnal.gov:8443"
   probes: ['https_v4_siterm_2xx', 'icmp_v4']
   privatedir: /opt/siterm/config/
 T1_US_FNAL:
