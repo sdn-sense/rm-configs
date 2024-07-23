@@ -3,7 +3,8 @@ general:
   ip: "67.58.54.232"
   sitename: [T2_US_SDSC]
   webdomain: "https://sense-prpdev-fe.sdn-lb.ultralight.org:443"
-  node_exporter: "k8s-gen5-02.sdsc.optiputer.net:9100"
+  prometheus_federate: https://prometheus.nrp-nautilus.io/federate
+  prometheus_query: '{instance="k8s-gen5-02.sdsc.optiputer.net", service="node-exporter"}'
 agent:
   interfaces: [ens1f0np0, enp168s0np0]
   hostname: k8s-gen5-02.sdsc.optiputer.net
