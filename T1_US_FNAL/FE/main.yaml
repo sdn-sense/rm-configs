@@ -106,7 +106,7 @@ cisconx9:
     Ethernet1/23-esnet:
       capacity: 100000
       desttype: switch
-      isAlias: urn:ogf:network:es.net:2013::fnalfcc-cr6:lag-1:+
+      isAlias: urn:ogf:network:es.net:2013::fnalfcc-cr6:lag-2:+
       vlan_range:
         - 3600-3609
         - 3616-3619
