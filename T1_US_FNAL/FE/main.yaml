@@ -99,25 +99,9 @@ cisconx9:
     Ethernet1/23:
       capacity: 100000
       desttype: switch
-      isAlias: urn:ogf:network:sc-test.cenic.net:2020:aristaeos_s0:Ethernet11-1-fnal
-      vlan_range:
-        - 3613-3615
-      wanlink: true
-    Ethernet1/23-esnet:
-      capacity: 100000
-      desttype: switch
       isAlias: urn:ogf:network:es.net:2013::fnalfcc-cr6:lag-2:+
       vlan_range:
-        - 3600-3609
-        - 3616-3619
-      realportname: Ethernet1/23
-      wanlink: true
-    Ethernet1/23-la:
-      capacity: 100000
-      desttype: switch
-      isAlias: urn:ogf:network:sc-test.cenic.net:2020:aristaeos_s0:Ethernet13-1-fnal
-      vlan_range:
-        - 3610-3612
+        - 3600-3619
       realportname: Ethernet1/23
       wanlink: true
     Ethernet1/27: {}

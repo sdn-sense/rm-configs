@@ -184,13 +184,6 @@ aristaeos_s0:
         - 3110-3139
         - 3350-3359
       wanlink: true
-    Ethernet11-1-fnal:
-      capacity: 400000
-      desttype: switch
-      isAlias: urn:ogf:network:fnal.gov:2023:cisconx9:Ethernet1-23
-      vlan_range:
-        - 3613-3615
-      realportname: Ethernet11/1
       wanlink: true
     Ethernet12/1:
       capacity: 400000
@@ -215,12 +208,4 @@ aristaeos_s0:
         - 3870-3883
         - 3911-3912
         - 3110-3139
-      wanlink: true
-    Ethernet13-1-fnal:
-      capacity: 400000
-      desttype: switch
-      isAlias: urn:ogf:network:fnal.gov:2023:cisconx9:Ethernet1-23-la
-      vlan_range:
-        - 3610-3612
-      realportname: Ethernet13/1
       wanlink: true
