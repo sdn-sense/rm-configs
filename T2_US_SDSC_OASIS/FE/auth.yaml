@@ -23,9 +23,6 @@ ucsd_nautilus_1:
 ucsd_nautilus_2:
   full_dn: "/C=US/ST=California/L=Pasadena/O=Caltech/CN=sdn-sense.dev/C=US/ST=California/L=San Diego/O=UCSD/CN=k8s-igrok-02.calit2.optiputer.net"
   permissions: w
-ucsd_prp_dev:
-  full_dn: "/C=US/ST=California/L=Pasadena/O=Caltech/CN=sdn-sense.dev/C=US/ST=California/L=San Diego/O=SDSC/CN=sense-prpdev-fe.sdn-lb.ultralight.org"
-  permissions: w
 ucsd_oasis_fe:
-  full_dn: "/C=US/O=Let's Encrypt/CN=R3/CN=sense-oasis.sdn-lb.ultralight.org"
+  full_dn: "/C=US/O=Let's Encrypt/CN=R10/CN=sense-oasis.nrp-nautilus.io"
   permissions: w

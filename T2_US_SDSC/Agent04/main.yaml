@@ -2,7 +2,7 @@
 general:
   ip: "132.249.252.243"
   sitename: [T2_US_SDSC]
-  webdomain: "https://sense-prpdev-fe.sdn-lb.ultralight.org:443"
+  webdomain: "https://sense-prpdev.nrp-nautilus.io:443"
   node_exporter: "k8s-gen4-02.sdsc.optiputer.net:9100"
 agent: 
   interfaces: [enp65s0np0, enp1s0f1np1, enp33s0f0np0, enp193s0f1np1]
