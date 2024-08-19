@@ -213,7 +213,7 @@ aristaeos_s0:
     Ethernet13-1-fnal:
       capacity: 400000
       desttype: switch
-      isAlias: urn:ogf:network:fnal.gov:2023:cisconx9:Ethernet1-23-la
+      isAlias: urn:ogf:network:fnal.gov:2023:cisconx9:Ethernet1-36-la
       vlan_range:
         - 3610-3615
       realportname: Ethernet13/1
