@@ -31,6 +31,11 @@ oasis:
       isAlias: "urn:ogf:network:stack-fabric:2024:topology:node+UCSD:port+NRP-UCSD"
       wanlink: True
       vlan_range: ["3120-3139"]
+    # Port facing Chameleon
+    "Pc459":
+      capacity: 400000
+      isAlias: "urn:ogf:network:es.net:2020:chameleon:Pc459"
+      wanlink: True
     "Pc502":
       # Port-channel 502 facing LA Arista
       capacity: 400000
