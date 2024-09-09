@@ -1,1 +1,4 @@
 ---
+dtn:
+  full_dn: "/CN=*.kreonet2.net"
+  permissions: w
