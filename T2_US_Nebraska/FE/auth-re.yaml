@@ -1,0 +1,4 @@
+---
+unlsense:
+  full_dn: "/C=US/O=Let's Encrypt/CN=R[0-9]+/CN=.*.unl.edu"
+  permissions: w
