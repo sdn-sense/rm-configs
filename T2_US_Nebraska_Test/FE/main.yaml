@@ -100,7 +100,7 @@ dellos10_s0:
     Port-channel 1:
       capacity: 20000
       desttype: switch
-      isAlias: urn:ogf:network:es.net:2013::kans-cr6:lag-30:+
+      isAlias: urn:ogf:network:sense-gpn-nrp-nautilus.io:2024:gpn:1_2
       wanlink: true
   vlan_range:
     - 2680-2699
