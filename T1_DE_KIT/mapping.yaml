@@ -1,0 +1,16 @@
+---
+a0d66e5ff8bb712a37184aeb909e7494:
+  config: FE/
+  maintainer: "Hoeft, Bruno"
+  status: production
+  type: FE
+8bc38e5de14496386d1c8a4b7224b13e:
+  config: a01-102-101-e/
+  maintainer: "Hoeft, Bruno"
+  status: production
+  type: Agent
+6d7a27d44f7f273510ef5bd3bdfd1c6c:
+  config: a01-102-151-e/
+  maintainer: "Hoeft, Bruno"
+  status: production
+  type: Agent
