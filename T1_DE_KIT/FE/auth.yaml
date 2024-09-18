@@ -14,3 +14,9 @@ prometheus:
 jbalcas:
   full_dn: "/DC=ch/DC=cern/CN=CERN Grid Certification Authority/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=jbalcas/CN=751133/CN=Justas Balcas"
   permissions: w
+agent1:
+  full_dn: "/C=DE/O=DFN-Verein/OU=DFN-PKI/CN=DFN-Verein PCA Grid - G01/C=DE/O=GridGermany/OU=Karlsruhe Institute of Technology/CN=a01-102-101-e.gridka.de"
+  permissions: w
+agent2:
+  full_dn: "/C=DE/O=DFN-Verein/OU=DFN-PKI/CN=DFN-Verein PCA Grid - G01/C=DE/O=GridGermany/OU=Karlsruhe Institute of Technology/CN=a01-102-151-e.gridka.de"
+  permissions: w
