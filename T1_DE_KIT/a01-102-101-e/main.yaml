@@ -2,7 +2,7 @@
 general:
   ip: "192.108.47.18"
   sitename: [T1_DE_KIT]
-  webdomain: "https://a01-102-101-e.gridka.de:8443"
+  webdomain: "https://a01-102-151-e.gridka.de:8443"
   node_exporter: "a01-102-101-e.gridka.de:9100"
 agent:
   interfaces: [ens1]
