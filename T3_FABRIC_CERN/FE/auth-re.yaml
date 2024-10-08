@@ -1,1 +1,4 @@
 ---
+fabrichosts:
+  full_dn: "/C=US/O=Internet2/CN=InCommon RSA Server CA 2/C=US/ST=Kentucky/O=University of Kentucky/.*.exp.fabric-testbed.net"
+  permissions: w
