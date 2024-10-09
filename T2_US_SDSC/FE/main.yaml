@@ -82,6 +82,7 @@ T2_US_SDSC:
     - edgecore_s0
 sn3700_s0:
   vsw: sn3700_s0
+  vswmp: sn3700_s0_mp
   rst: sn3700_s0
   rsts_enabled: ipv4,ipv6
   external_snmp: https://nsi-snmpmon-prpdev.nrp-nautilus.io/sn3700_s0/metrics
@@ -121,6 +122,7 @@ sn3700_s0:
     Ethernet120: {}
 edgecore_s0:
   vsw: edgecore_s0
+  vswmp: edgecore_s0_mp
   allports: false
   external_snmp: https://nsi-snmpmon-prpdev.nrp-nautilus.io/edgecore_s0/metrics
   vlan_range:
