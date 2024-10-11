@@ -90,6 +90,7 @@ T1_US_FNAL:
     - fc00:3989::0/64
 cisconx9:
   vsw: cisconx9
+  vswmp: cisconx9_mp
   rst: cisconx9
   rsts_enabled: ipv4,ipv6
   private_asn: 64515

@@ -15,6 +15,7 @@ T3_BR_RNP:
   year: 2020
 s0:
   vsw: "s0"
+  vswmp: "s0_mp"
   ports:
     - "1_1"
     - "1_2"

@@ -65,6 +65,7 @@ NRM_CENIC:
     - aristaeos_s0
 aristaeos_s0:
   vsw: aristaeos_s0
+  vswmp: aristaeos_s0_mp
   allports: false
   allvlans: false
   snmp_monitoring: true

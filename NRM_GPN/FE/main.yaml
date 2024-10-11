@@ -17,6 +17,7 @@ NRM_GPN:
     - "gpn"
 gpn:
   vsw: "gpn"
+  vswmp: "gpn_mp"
   vlan_range: [2680-2699]
   ports:
     "1_1":

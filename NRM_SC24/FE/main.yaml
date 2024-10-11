@@ -17,6 +17,7 @@ NRM_SC24:
     - "sc24"
 sc24:
   vsw: "sc24"
+  vswmp: "sc24_mp"
   vlan_range: [2680-2699]
   ports:
     "1_1": {}

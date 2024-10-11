@@ -90,6 +90,7 @@ T1_DE_KIT:
     - cisconx10_s0
 cisconx10_s0:
   vsw: cisconx10_s0
+  vswmp: cisconx10_s0_mp
   rst: cisconx10_s0
   rsts_enabled: ipv4,ipv6
   private_asn: 64517

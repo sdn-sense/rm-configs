@@ -15,6 +15,7 @@ T3_US_Starlight:
   year: 2022
 s1:
   vsw: "s1"
+  vswmp: "s1_mp"
   ports:
     "1_1":
       capacity: 100000

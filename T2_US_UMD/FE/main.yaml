@@ -16,6 +16,7 @@ T2_US_UMD:
   year: 2013
 s0:
   vsw: "s0"
+  vswmp: "s0_mp"
   ports:
     "1_1":
       capacity: 10000

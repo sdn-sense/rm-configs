@@ -117,6 +117,7 @@ T2_US_Caltech:
     - edgecore_s0
 dellos10_s0:
   vsw: dellos10_s0
+  vswmp: dellos10_s0_mp
   rst: dellos10_s0
   rsts_enabled: ipv4,ipv6
   private_asn: 64516
@@ -156,6 +157,7 @@ dellos10_s0:
   snmp_monitoring: true
 edgecore_s0:
   vsw: edgecore_s0
+  vswmp: edgecore_s0_mp
   vlan_mtu: 9100
   ports:
     Ethernet80: {}

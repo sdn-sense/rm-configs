@@ -85,6 +85,7 @@ T2_US_Caltech_Test:
     - aristaeos_s0
 dellos9_s0:
   vsw: dellos9_s0
+  vswmp: dellos9_s0_mp
   rst: dellos9_s0
   rsts_enabled: ipv4,ipv6
   private_asn: 64513
@@ -120,6 +121,7 @@ dellos9_s0:
   snmp_monitoring: true
 aristaeos_s0:
   vsw: aristaeos_s0
+  vswmp: aristaeos_s0_mp
   vlan_mtu: 9214
   vlan_range:
     - 1779-1799
