@@ -10,7 +10,7 @@ T3_FABRIC_CERN:
   domain: sense-cern-fabric-testbed.net
   latitude: 32.882648
   longitude: -117.234579
-  plugin: raw
+  plugin: ansible
   privatedir: /opt/siterm/config/T3_FABRIC_CERN/
   year: 2024
   switch:
