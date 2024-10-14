@@ -84,7 +84,7 @@ frr_s0:
       desttype: switch
       isAlias: urn:ogf:network:stack-fabric:2024:topology:node+CERN:port+CERN-HU16-wk3-pci3-p2
   vlan_range:
-    - 3600-3619
+    - 800-1000
   allports: false
   allvlans: false
   snmp_monitoring: false
