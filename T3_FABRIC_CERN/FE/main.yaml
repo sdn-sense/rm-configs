@@ -82,7 +82,7 @@ frr_s0:
     enp8s0np0:
       capacity: 100000
       desttype: switch
-      isAlias: isAlias:to:fabric-testbed.net:facility:port
+      isAlias: urn:ogf:network:stack-fabric:2024:topology:node+CERN:port+CERN-HU16-wk3-pci3-p2
   vlan_range:
     - 3600-3619
   allports: false
