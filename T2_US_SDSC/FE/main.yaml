@@ -103,7 +103,7 @@ sn3700_s0:
     Ethernet0:
       isAlias: urn:ogf:network:nrp-nautilus.io:2020:k8s-bf2-01.sdsc.optiputer.net:Ethernet0-87-00
     Ethernet4:
-      isAlias urn:ogf:network:nrp-nautilus.io:2020:k8s-bf2-01.sdsc.optiputer.net:Ethernet4-87-00
+      isAlias: urn:ogf:network:nrp-nautilus.io:2020:k8s-bf2-01.sdsc.optiputer.net:Ethernet4-87-00
     Ethernet32:
       vlan_range:
         - 3400-3407
