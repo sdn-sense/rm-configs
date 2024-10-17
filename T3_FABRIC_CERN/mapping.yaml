@@ -19,3 +19,8 @@
   maintainer: "Justas Balcas"
   status: development
   type: Agent
+d14db2e56daef0972530d6a9959677b7:
+  config: host4/
+  maintainer: "Justas Balcas"
+  status: development
+  type: Agent
