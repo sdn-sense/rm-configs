@@ -118,6 +118,7 @@ cisconx9:
     Ethernet1/28: {}
     Ethernet1/22: {}
     Ethernet1/24: {}
+    Ethernet1/5: {}
   vlan_range:
     - 3600-3619
   allports: false
