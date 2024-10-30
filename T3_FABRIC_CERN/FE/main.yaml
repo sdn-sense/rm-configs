@@ -79,7 +79,7 @@ frr_s0:
   private_asn: 64518
   vlan_mtu: 9000
   ports:
-    enp8s0np0:
+    e2:
       capacity: 100000
       desttype: switch
       isAlias: urn:ogf:network:stack-fabric:2024:topology:node+CERN:port+CERN-HU16-wk2-pci6-p2
