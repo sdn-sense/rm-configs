@@ -24,6 +24,14 @@ T1_US_FNAL:
       2620:6a:0:2841::/64: cmssense2-origin-2841-1.fnal.gov:2880
       2620:6a:0:2842::/64: cmssense2-origin-2842-1.fnal.gov:2880
       2620:6a:0:2843::/64: cmssense2-origin-2843-1.fnal.gov:2880
+    xrootd4:
+      2620:6a:0:2841::/64: cmssense4-origin-2841-1.fnal.gov:2880
+      2620:6a:0:2842::/64: cmssense4-origin-2842-1.fnal.gov:2880
+      2620:6a:0:2843::/64: cmssense4-origin-2843-1.fnal.gov:2880
+    xrootdnoted:
+      2620:6a:0:2841::/64: cmsnoted1-origin-2841-1.fnal.gov:2880
+      2620:6a:0:2842::/64: cmsnoted1-origin-2842-1.fnal.gov:2880
+      2620:6a:0:2843::/64: cmsnoted1-origin-2843-1.fnal.gov:2880
   ipv4-address-pool:
     - 10.251.85.0/24
     - 10.251.86.0/24
