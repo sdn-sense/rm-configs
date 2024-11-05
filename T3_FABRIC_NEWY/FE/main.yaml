@@ -77,7 +77,7 @@ frr_s0:
   vsw: frr_s0
   rst: frr_s0
   rsts_enabled: ipv6
-  private_asn: 64521
+  private_asn: 64520
   vlan_mtu: 9000
   ports:
     enp8s0np0:
