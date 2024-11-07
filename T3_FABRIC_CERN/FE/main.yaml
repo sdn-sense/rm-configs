@@ -13,8 +13,6 @@ T3_FABRIC_CERN:
   privatedir: /opt/siterm/config/T3_FABRIC_CERN/
   vpp_exporter: "[2602:fcfb:1d:fff0::2]:1234"
   year: 2024
-  switch:
-    - "frr_s0"
   ipv6-subnet-pool:
     - 2602:fcfb:001d:fff2::/64
     - 2602:fcfb:001d:fff3::/64
