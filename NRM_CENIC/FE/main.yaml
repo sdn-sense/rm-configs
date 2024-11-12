@@ -185,7 +185,6 @@ aristaeos_s0:
         - 3110-3139
         - 3350-3359
       wanlink: true
-      wanlink: true
     Ethernet12/1:
       capacity: 400000
       desttype: switch
@@ -218,4 +217,34 @@ aristaeos_s0:
         - 3610-3615
       realportname: Ethernet13/1
       wanlink: true
-
+    Ethernet18/1:
+      capacity: 400000
+      desttype: switch
+      isAlias: urn:ogf:network:sc24.atlanta.net:2024:wc11:wc11
+      vlan_range:
+        - 3600-3604
+        - 3911-3912
+      wanlink: true
+    Ethernet19/1:
+      capacity: 400000
+      desttype: switch
+      isAlias: urn:ogf:network:sc24.atlanta.net:2024:wc12:wc12
+      vlan_range:
+        - 3615-3619
+      wanlink: true
+    Ethernet20/1:
+      capacity: 400000
+      desttype: switch
+      isAlias: urn:ogf:network:sc24.atlanta.net:2024:wc13:wc13
+      vlan_range:
+        - 3605-3614
+        - 3118-3122
+      wanlink: true
+    Ethernet21/1:
+      capacity: 400000
+      desttype: switch
+      isAlias: urn:ogf:network:sc24.atlanta.net:2024:wc14:wc14
+      vlan_range:
+        - 1779
+        - 1780-1784
+      wanlink: true
