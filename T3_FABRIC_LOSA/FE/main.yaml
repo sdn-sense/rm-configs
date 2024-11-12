@@ -78,7 +78,7 @@ frr_s0:
   private_asn: 64519
   vlan_mtu: 9000
   ports:
-    enp8s0np0:
+    e2:
       capacity: 100000
       desttype: switch
       isAlias: urn:ogf:network:stack-fabric:2024:topology:node+LOSA:port+LOSA-HU2-wk2-pci3-p2
