@@ -105,13 +105,13 @@ cisconx9:
   vlan_mtu: 9216
   snmp_monitoring: true
   ports:
-    Ethernet1/23:
+    Ethernet1/36:
       capacity: 200000
       desttype: switch
       isAlias: urn:ogf:network:es.net:2013::fnalfcc-cr6:lag-2:+
       vlan_range:
         - 3600-3619
-      realportname: Ethernet1/23
+      realportname: Ethernet1/36
       wanlink: true
     Ethernet1/27: {}
     Ethernet1/28: {}
