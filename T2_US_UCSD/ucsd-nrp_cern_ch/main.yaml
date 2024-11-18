@@ -6,7 +6,7 @@ general:
   prometheus_federate: https://prometheus.nrp-nautilus.io/federate
   prometheus_query: '{instance="ucsd-nrp.cern.ch", service="node-exporter"}'
 agent: 
-  interfaces: [enp33s0f1]
+  interfaces: [enp161s0f0np0, enp161s0f1np1]
   hostname: ucsd-nrp.cern.ch
 enp161s0f0np0:
   port: "1_2"
