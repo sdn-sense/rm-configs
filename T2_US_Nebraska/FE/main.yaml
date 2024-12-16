@@ -19,9 +19,9 @@ T2_US_Nebraska:
     - 2600:900:6:1123::/64
   metadata:
     xrootd:
-      2600:900:6:1121::/64: red-sense-dtn3.unl.edu:1095
-      2600:900:6:1122::/64: red-sense-dtn3.unl.edu:1095
-      2600:900:6:1123::/64: red-sense-dtn3.unl.edu:1095
+      2600:900:6:1121::/64: red-sense-dtn3-macvlan0.unl.edu:1095
+      2600:900:6:1122::/64: red-sense-dtn3-macvlan1.unl.edu:1095
+      2600:900:6:1123::/64: red-sense-dtn3-macvlan2.unl.edu:1095
   ipv6-address-pool:
     - fc00:3600::0/64
     - fc00:3601::0/64
