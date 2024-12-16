@@ -208,7 +208,7 @@ edgecore_s0:
         - 3600-3619
         - 3110-3139
     PortChannel500:
-      capacity: 800000
+      capacity: 760000
       desttype: switch
       isAlias: urn:ogf:network:sense-oasis-nrp-nautilus.io:2020:oasis:Pc500
       vlan_range:

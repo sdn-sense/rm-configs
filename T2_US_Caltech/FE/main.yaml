@@ -134,7 +134,7 @@ dellos10_s0:
       desttype: switch
       isAlias: urn:ogf:network:tier2.ultralight.org:2024:dellos10_s1:Port-channel_43
     Port-channel 102:
-      capacity: 400000
+      capacity: 380000
       desttype: switch
       isAlias: urn:ogf:network:sc-test.cenic.net:2020:aristaeos_s0:Port-Channel501
       wanlink: true

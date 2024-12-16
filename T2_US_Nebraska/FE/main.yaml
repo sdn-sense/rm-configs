@@ -99,7 +99,7 @@ dellos10_s0:
     Ethernet 1/1/7: {}
     Ethernet 1/1/8: {}
     Port-channel 1:
-      capacity: 200000
+      capacity: 190000
       desttype: switch
       isAlias: urn:ogf:network:sense-gpn-nrp-nautilus.io:2024:gpn:1_3
       wanlink: true

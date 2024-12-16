@@ -106,7 +106,7 @@ cisconx9:
   snmp_monitoring: true
   ports:
     Ethernet1/36:
-      capacity: 200000
+      capacity: 190000
       desttype: switch
       isAlias: urn:ogf:network:es.net:2013::fnalfcc-cr6:lag-2:+
       vlan_range:
