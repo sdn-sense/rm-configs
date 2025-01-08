@@ -137,7 +137,7 @@ edgecore_s0:
     - 3600-3619
     - 3110-3139
   ports:
-    Ethernet244: {}
+    Ethernet128: {}
     Ethernet136:
       isAlias: urn:ogf:network:nrp-nautilus.io:2020:node-2-6.sdsc.optiputer.net:Ethernet136-21-00
     Ethernet138:
