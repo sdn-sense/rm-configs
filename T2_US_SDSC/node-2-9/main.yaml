@@ -6,10 +6,10 @@ general:
   prometheus_federate: https://prometheus.nrp-nautilus.io/federate
   prometheus_query: '{instance="node-2-9.sdsc.optiputer.net", service="node-exporter"}'
 agent: 
-  interfaces: [enp65s0f0np0]
+  interfaces: [enp65s0f1np1]
   hostname: node-2-9.sdsc.optiputer.net
-enp65s0f0np0:
-  port: Ethernet72
+enp65s0f1np1:
+  port: Ethernet134
   switch: edgecore_s0
   shared: false
   intf_max: 100000
