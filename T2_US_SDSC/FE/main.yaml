@@ -146,7 +146,7 @@ edgecore_s0:
       isAlias: urn:ogf:network:nrp-nautilus.io:2020:node-2-6.sdsc.optiputer.net:Ethernet140-a1-00
     Ethernet142:
       isAlias: urn:ogf:network:nrp-nautilus.io:2020:node-2-6.sdsc.optiputer.net:Ethernet142-a1-00
-    Ethernet240: {}
+    Ethernet130: {}
     Ethernet144:
       isAlias: urn:ogf:network:nrp-nautilus.io:2020:node-2-7.sdsc.optiputer.net:Ethernet144-21-00
     Ethernet146:
@@ -158,7 +158,7 @@ edgecore_s0:
     Ethernet232: {}
     Ethernet234: {}
     Ethernet238: {}
-    Ethernet248: {}
+    Ethernet132: {}
     Ethernet152:
       isAlias: urn:ogf:network:nrp-nautilus.io:2020:node-2-8.sdsc.optiputer.net:Ethernet152-a1-00
     Ethernet154:
@@ -168,7 +168,7 @@ edgecore_s0:
     Ethernet158:
       isAlias: urn:ogf:network:nrp-nautilus.io:2020:node-2-8.sdsc.optiputer.net:Ethernet158-21-00
     Ethernet32: {}
-    Ethernet72: {}
+    Ethernet134: {}
     Ethernet160:
       isAlias: urn:ogf:network:nrp-nautilus.io:2020:node-2-9.sdsc.optiputer.net:Ethernet160-21-00
     Ethernet162:
