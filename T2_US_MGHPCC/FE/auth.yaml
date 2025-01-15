@@ -1,0 +1,28 @@
+---
+jbalcas:
+  full_dn: "/DC=ch/DC=cern/CN=CERN Grid Certification Authority/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=jbalcas/CN=751133/CN=Justas Balcas"
+  permissions: w
+orchestrator_ca:
+  full_dn: "/O=University of Maryland/OU=Mid-Atlantic Crossroads/OU=research.maxgigapop.net/CN=Simple CA/O=University of Maryland/OU=Mid-Atlantic Crossroads/OU=research.maxgigapop.net/CN=Simple CA"
+  permissions: w
+orchestrator:
+  full_dn: "/C=US/ST=California/L=Berkeley/O=LBNL/OU=ESnet/CN=sense-o.es.net/C=US/ST=California/L=Berkeley/O=LBNL/CN=sense-o.es.net"
+  permissions: w
+orchestrator1:
+  full_dn: "/C=US/ST=MI/L=Ann Arbor/O=Internet2/OU=InCommon/CN=InCommon RSA Server CA/C=US/ST=California/O=Energy Sciences Network/CN=sense-o.es.net"
+  permissions: w
+prometheus:
+  full_dn: "/C=US/ST=California/L=Pasadena/O=Caltech/CN=sdn-sense.dev/C=US/ST=California/L=Pasadena/O=Caltech/CN=autogole-grafana-prometheus.ultralight.org"
+  permissions: r
+ucsd_nautilus:
+  full_dn: "/C=US/ST=California/L=Pasadena/O=Caltech/CN=sdn-sense.dev/C=US/ST=California/L=San Diego/O=UCSD/CN=sense-fe.nrp-nautilus.io"
+  permissions: w
+ucsd_nautilus_1:
+  full_dn: "/C=US/ST=California/L=Pasadena/O=Caltech/CN=sdn-sense.dev/C=US/ST=California/L=San Diego/O=UCSD/CN=k8s-igrok-01.calit2.optiputer.net"
+  permissions: w
+ucsd_nautilus_2:
+  full_dn: "/C=US/ST=California/L=Pasadena/O=Caltech/CN=sdn-sense.dev/C=US/ST=California/L=San Diego/O=UCSD/CN=k8s-igrok-02.calit2.optiputer.net"
+  permissions: w
+ucsd_oasis_fe:
+  full_dn: "/C=US/O=Let's Encrypt/CN=R10/CN=sense-oasis.nrp-nautilus.io"
+  permissions: w
