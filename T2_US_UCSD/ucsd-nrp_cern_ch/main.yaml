@@ -9,7 +9,9 @@ agent:
   interfaces: [bond0]
   hostname: ucsd-nrp.cern.ch
 bond0:
-  isAlias: "urn:ogf:network:stack-fabric:2024:topology:node+CERN:port+NRP-CERN"
+  kubeLabels:
+    isAlias: 'nautilus.io/SenseIsAlias'
+    multus: 'nautilus.io/multus'
   shared: false
   intf_max: 400000
   bwParams:
