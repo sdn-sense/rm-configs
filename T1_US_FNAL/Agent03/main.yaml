@@ -5,9 +5,9 @@ general:
   webdomain: "https://cmssense1.fnal.gov:8443"
   node_exporter: "cmssense4.fnal.gov:15000"
 agent: 
-  interfaces: [enp59s0]
+  interfaces: [ens1f0np0]
   hostname: cmssense4.fnal.gov
-enp59s0:
+ens1f0np0:
   port: "Ethernet1/24"
   shared: false
   allowOvercommit: true
@@ -28,8 +28,8 @@ qos:
   qos_params: "mtu 9000 mpu 9000 quantum 200000 burst 300000 cburst 300000 qdisc sfq balanced"
   class_max: true
   interfaces:
-    enp59s0:
-      master_intf: enp59s0
+    ens1f0np0:
+      master_intf: ens1f0np0
       ipv6_range:
         - 2620:6a:0:2841::/64
         - 2620:6a:0:2842::/64
