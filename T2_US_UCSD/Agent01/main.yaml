@@ -6,9 +6,9 @@ general:
   prometheus_federate: https://prometheus.nrp-nautilus.io/federate
   prometheus_query: '{instance="k8s-igrok-01.calit2.optiputer.net", service="node-exporter"}'
 agent: 
-  interfaces: [enp33s0f1]
+  interfaces: [enp33s0f1np1]
   hostname: k8s-igrok-01.calit2.optiputer.net
-enp33s0f1:
+enp33s0f1np1:
   port: "1_2"
   shared: false
   switch: s0
@@ -27,5 +27,5 @@ qos:
   policy: hostlevel
   qos_params: "mtu 9000 mpu 9000 quantum 200000 burst 300000 cburst 300000 qdisc sfq balanced"
   interfaces:
-    enp33s0f1:
-      master_intf: enp33s0f1
+    enp33s0f1np1:
+      master_intf: enp33s0f1np1
