@@ -6,9 +6,9 @@ general:
   prometheus_federate: https://prometheus.nrp-nautilus.io/federate
   prometheus_query: '{instance="fiona.its.hawaii.edu", service="node-exporter"}'
 agent: 
-  interfaces: [ens6f0]
+  interfaces: [ens6f0np0]
   hostname: fiona.its.hawaii.edu
-ens6f0:
+ens6f0np0:
   kubeLabels:
     isAlias: 'nautilus.io/SenseIsAlias'
     multus: 'nautilus.io/multus'
@@ -28,5 +28,5 @@ qos:
   policy: hostlevel
   qos_params: "mtu 9000 mpu 9000 quantum 200000 burst 300000 cburst 300000 qdisc sfq balanced"
   interfaces:
-    ens6f0:
-      master_intf: ens6f0
+    ens6f0np0:
+      master_intf: ens6f0np0
