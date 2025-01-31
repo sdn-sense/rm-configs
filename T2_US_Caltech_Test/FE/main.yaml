@@ -27,7 +27,7 @@ T2_US_Caltech_Test:
       2605:d9c0:2:fff4::/64: sense-redir-04.ultralight.org:1094
       2605:d9c0:2:fff5::/64: sense-redir-05.ultralight.org:1094
   ipv6-address-pool:
-    - fc00::0/32
+    - "fc00::0/32"
   ipv4-address-pool:
     - 172.16.3.0/30
     - 172.17.3.0/30

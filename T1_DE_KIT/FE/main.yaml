@@ -23,7 +23,7 @@ T1_DE_KIT:
   #    2600:900:6:1122::/64: red-sense-dtn3.unl.edu:1095
   #    2600:900:6:1123::/64: red-sense-dtn3.unl.edu:1095
   ipv6-address-pool:
-    - fc00::0/32
+    - "fc00::0/32"
   ipv4-address-pool:
     - 10.251.85.0/24
     - 10.251.86.0/24

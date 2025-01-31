@@ -53,7 +53,7 @@ T1_US_FNAL:
     - 172.31.14.0/24
     - 172.31.15.0/24
   ipv6-address-pool:
-    - fc00::0/32
+    - "fc00::0/32"
 cisconx9:
   vsw: cisconx9
   vswmp: cisconx9_mp

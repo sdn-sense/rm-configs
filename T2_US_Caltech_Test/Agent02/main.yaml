@@ -21,7 +21,7 @@ mlx4p2s1:
     granularity: 1000
   vlan_range: [1779-1799,3600-3619,3985-3989,3870-3883,3911-3912]
   ipv4-address-pool: [172.16.3.0/30,172.17.3.0/30,172.18.3.0/30,172.19.3.0/30,10.251.0.0/16]
-  ipv6-address-pool: [fc00::0/32]
+  ipv6-address-pool: ["fc00::0/32"]
 qos:
   policy: privatens
   qos_params: "mtu 9000 mpu 9000 quantum 200000 burst 300000 cburst 300000 qdisc sfq balanced"

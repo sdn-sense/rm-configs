@@ -15,7 +15,7 @@ NRM_CENIC:
   privatedir: /opt/siterm/config/NRM_CENIC/
   year: 2020
   ipv6-address-pool:
-    - fc00::0/32
+    - "fc00::0/32"
   switch:
     - aristaeos_s0
 aristaeos_s0:

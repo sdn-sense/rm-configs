@@ -20,7 +20,7 @@ enp10s0:
     maximumCapacity: 100000
     granularity: 1000
   vlan_range: [800-1000]
-  ipv6-address-pool: [fc00::0/32]
+  ipv6-address-pool: ["fc00::0/32"]
 enp9s0:
   port: host3sub3
   switch: frr_s0
@@ -34,7 +34,7 @@ enp9s0:
     maximumCapacity: 100000
     granularity: 1000
   vlan_range: [800-1000]
-  ipv6-address-pool: [fc00::0/32]
+  ipv6-address-pool: ["fc00::0/32"]
 qos:
   policy: privatens
   qos_params: "mtu 9000 mpu 9000 quantum 200000 burst 300000 cburst 300000 qdisc sfq balanced"

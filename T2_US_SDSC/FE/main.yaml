@@ -30,7 +30,7 @@ T2_US_SDSC:
     - 2001:48d0:3001:117::/64
     - 2001:48d0:3001:118::/64
     - 2001:48d0:3001:119::/64
-  ipv6-address-pool: [fc00::0/32]
+  ipv6-address-pool: ["fc00::0/32"]
   switch:
     - sn3700_s0
     - edgecore_s0

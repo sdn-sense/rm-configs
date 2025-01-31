@@ -25,7 +25,7 @@ T2_US_MGHPCC:
       aaaa:aaaa:a:aaaa::/64: replace_me_a.mghpcc.org:1095
       aaaa:aaaa:a:aaab::/64: replace_me_b.mghpcc.org:1095
       aaaa:aaaa:a:aaac::/64: replace_me_c.mghpcc.org:1095
-  ipv6-address-pool: [fc00::0/32]
+  ipv6-address-pool: ["fc00::0/32"]
   ipv4-address-pool:
     - 10.251.85.0/24
     - 10.251.86.0/24
