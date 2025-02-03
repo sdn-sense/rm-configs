@@ -21,7 +21,8 @@ bondpublic:
     granularity: 1000
   vlan_range: [1779-1799,3600-3619,3985-3989,3870-3883,3911-3912]
   ipv4-address-pool: [10.251.85.0/24,10.251.86.0/24,10.251.87.0/24,10.251.88.0/24,10.251.89.0/24,172.16.3.0/30,172.17.3.0/30,172.18.3.0/30,172.19.3.0/30]
-  ipv6-address-pool: ["fc00::0/32"]
+  ipv6-address-pool:
+    - "fc00::0/32"
 enp1s0np0:
   port: Ethernet8
   switch: edgecore_s0
@@ -36,7 +37,8 @@ enp1s0np0:
     granularity: 1000
   vlan_range: [1779-1799,3600-3619,3985-3989,3870-3883,3911-3912]
   ipv4-address-pool: [10.251.85.0/24,10.251.86.0/24,10.251.87.0/24,10.251.88.0/24,10.251.89.0/24,172.16.3.0/30,172.17.3.0/30,172.18.3.0/30,172.19.3.0/30]
-  ipv6-address-pool: ["fc00::0/32"]
+  ipv6-address-pool:
+    - "fc00::0/32"
 qos:
   policy: privatens
   qos_params: "mtu 9000 mpu 9000 quantum 200000 burst 300000 cburst 300000 qdisc sfq balanced"

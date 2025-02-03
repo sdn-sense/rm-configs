@@ -21,7 +21,8 @@ ens1:
     granularity: 1000
   vlan_range: [3695-3699]
   ipv4-address-pool: [10.0.14.1/31,10.251.85.0/24,10.251.86.0/24,10.251.87.0/24,10.251.88.0/24,10.251.89.0/24,172.16.3.0/30,172.17.3.0/30,172.18.3.0/30,172.19.3.0/30]
-  ipv6-address-pool: ["fc00::0/32"]
+  ipv6-address-pool:
+    - "fc00::0/32"
 qos:
   policy: hostlevel
   qos_params: "mtu 9000 mpu 9000 quantum 200000 burst 300000 cburst 300000 qdisc sfq balanced"
