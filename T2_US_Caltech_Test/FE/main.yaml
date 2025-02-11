@@ -19,6 +19,16 @@ T2_US_Caltech_Test:
     - 2605:d9c0:2:fff3::/64
     - 2605:d9c0:2:fff4::/64
     - 2605:d9c0:2:fff5::/64
+    - 2605:d9c0:2:fff6::/64
+    - 2605:d9c0:2:fff7::/64
+    - 2605:d9c0:2:fff8::/64
+    - 2605:d9c0:2:fff9::/64
+    - 2605:d9c0:2:fffa::/64
+    - 2605:d9c0:2:fffb::/64
+    - 2605:d9c0:2:fffc::/64
+    - 2605:d9c0:2:fffd::/64
+    - 2605:d9c0:2:fffe::/64
+    - 2605:d9c0:2:ffff::/64
   metadata:
     xrootd:
       2605:d9c0:2:fff1::/64: sense-redir-01.ultralight.org:1094
