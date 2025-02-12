@@ -3,7 +3,7 @@ general:
   ip: "128.171.123.10"
   sitename: [T2_US_UCSD]
   webdomain: "https://sense-fe.nrp-nautilus.io:8443"
-  prometheus_federate: https://prometheus.nrp-nautilus.io/federate
+  prometheus_federate: http://thanos-federate-proxy-service:9099
   prometheus_query: '{instance="fiona.its.hawaii.edu", service="node-exporter"}'
 agent: 
   interfaces: [ens6f0np0]

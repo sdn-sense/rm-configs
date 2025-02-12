@@ -3,7 +3,7 @@ general:
   ip: "168.123.136.165"
   sitename: [T2_US_UCSD]
   webdomain: "https://sense-fe.nrp-nautilus.io:8443"
-  prometheus_federate: https://prometheus.nrp-nautilus.io/federate
+  prometheus_federate: http://thanos-federate-proxy-service:9099
   prometheus_query: '{instance="k8s-dtn-01.uog.edu", service="node-exporter"}'
 agent: 
   interfaces: [enp193s0f0]
