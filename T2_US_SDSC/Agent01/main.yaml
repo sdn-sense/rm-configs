@@ -3,7 +3,7 @@ general:
   ip: "67.58.54.231"
   sitename: [T2_US_SDSC]
   webdomain: "https://sense-prpdev.nrp-nautilus.io:443"
-  prometheus_federate: http://thanos-federate-proxy-service:9099
+  prometheus_federate: http://thanos-federate-proxy-service:9099/federate
   prometheus_query: '{instance="k8s-gen5-01.sdsc.optiputer.net", service="node-exporter"}'
 agent: 
   interfaces: [ens1f0np0, enp168s0np0]
