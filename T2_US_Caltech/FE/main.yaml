@@ -12,6 +12,27 @@ T2_US_Caltech:
   latitude: 34.1377
   longitude: 118.1253
   plugin: ansible
+  default_params:
+    starttime:
+      seconds: 10
+      minutes: 0
+      hours: 0
+      days: 0
+      weeks: 0
+      months: 0
+      years: 0
+    endtime:
+      seconds: 0
+      minutes: 0
+      hours: 0
+      days: 0
+      weeks: 0
+      months: 3
+      years: 0
+    bw:
+      type: besteffort
+      unit: mbps
+      minCapacity: 100
   privatedir: /opt/siterm/config/T2_US_Caltech/
   ipv6-subnet-pool:
     - 2605:d9c0:6:2640::/64
