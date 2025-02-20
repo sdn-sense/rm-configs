@@ -3,7 +3,7 @@ general:
   logLevel: DEBUG
   sites:
     - T2_US_Caltech_Test
-  webdomain: https://sense-caltech-fe.sdn-lb.ultralight.org:443
+  webdomain: "https://sense-caltechdev.nrp-nautilus.io:443"
   probes:
     - https_v4_siterm_2xx
     - icmp_v4
