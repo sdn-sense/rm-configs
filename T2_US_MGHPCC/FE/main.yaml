@@ -60,12 +60,14 @@ junos_s0:
   vlan_mtu: 9214
   vlan_range:
     - 3901-3920
-  allports: true
-  allvlans: true
+  allports: false
+  allvlans: false
   snmp_monitoring: false
   ports:
-    "et-0/0/16":
-      capacity: 100000
+    "et-0/0/32":
+      capacity: 400000
       desttype: switch
       isAlias: urn:ogf:network:es.net:2013::newy32aoa-cr6:1_1_c26_1:mghpcc
       wanlink: true
+    "ae2":
+      capacity: 400000

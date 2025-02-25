@@ -5,7 +5,7 @@
   status: production
   type: FE
 c2244179d63eb51d88caf907c0e12c89:
-  config: k8s-gen4-01/
+  config: nrp-sense01-rnd-mghpcc/
   maintainer: "John Graham"
   status: production
   type: Agent
