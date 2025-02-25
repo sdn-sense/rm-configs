@@ -14,6 +14,9 @@ orchestrator1:
 prometheus:
   full_dn: "/C=US/ST=California/L=Pasadena/O=Caltech/CN=sdn-sense.dev/C=US/ST=California/L=Pasadena/O=Caltech/CN=autogole-grafana-prometheus.ultralight.org"
   permissions: r
-mghpcc_dtn:
+mghpcc_fe:
   full_dn: "/C=US/O=Let's Encrypt/CN=R11/CN=sense-mghpcc.nrp-nautilus.io"
+  permissions: w
+mghpcc_dtn:
+  full_dn: "/C=US/O=Let's Encrypt/CN=R11/CN=nrp-sense01-rnd-mghpcc.nrp-nautilus.io"
   permissions: w
