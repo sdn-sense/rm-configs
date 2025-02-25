@@ -4,10 +4,10 @@ general:
   sitename: [T2_US_MGHPCC]
   webdomain: "https://sense-mghpcc.nrp-nautilus.io:443"
   prometheus_federate: http://thanos-federate-proxy-service:9099/federate
-  prometheus_query: '{instance="k8s-gen4-01.net2.mghpcc.org.", service="node-exporter"}'
+  prometheus_query: '{instance="nrp-sense01.rnd.net2.mghpcc.org", service="node-exporter"}'
 agent: 
   interfaces: [bond0]
-  hostname: k8s-gen4-01.net2.mghpcc.org
+  hostname: nrp-sense01.rnd.net2.mghpcc.org
 bond0:
   port: ae2
   switch: junos_s0
