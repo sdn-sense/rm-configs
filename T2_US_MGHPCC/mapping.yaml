@@ -9,3 +9,8 @@ c2244179d63eb51d88caf907c0e12c89:
   maintainer: "John Graham"
   status: production
   type: Agent
+abcdefghijklmnuprstvwzx123456789:
+  config: FE/
+  maintainer: "Justas Balcas"
+  status: production
+  type: FE
