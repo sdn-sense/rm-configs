@@ -56,6 +56,8 @@ junos_s0:
   vswmp: junos_s0_mp
   rst: junos_s0
   rsts_enabled: ipv4,ipv6
+  ansible_params:
+    vlanip: 'irb'
   private_asn: 64522
   vlan_mtu: 9214
   vlan_range:
