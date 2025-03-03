@@ -1,0 +1,75 @@
+--- 
+general:
+  logLevel: DEBUG
+  sites: 
+    - "T2_US_MGHPCC"
+  webdomain: "https://sense-mghpcc-igrok.nrp-nautilus.io:443"
+  probes: ["https_v4_siterm_2xx"]
+  privatedir: /opt/siterm/config/
+T2_US_MGHPCC:
+  domain: mghpcc.org
+  latitude: 42.2027
+  longitude: 72.6077
+  plugin: ansible
+  privatedir: /opt/siterm/config/T2_US_MGHPCC/
+  year: 2025
+  switch:
+    - "junos_s0"
+  #ipv6-subnet-pool:
+  #  - aaaa:aaaa:a:aaaa::/64
+  #  - aaaa:aaaa:a:aaab::/64
+  #  - aaaa:aaaa:a:aaac::/64
+  #metadata:
+  #  xrootd:
+  #    aaaa:aaaa:a:aaaa::/64: replace_me_a.mghpcc.org:1095
+  #    aaaa:aaaa:a:aaab::/64: replace_me_b.mghpcc.org:1095
+  #    aaaa:aaaa:a:aaac::/64: replace_me_c.mghpcc.org:1095
+  ipv6-address-pool:
+    - "fc00:0000:0100::/40"
+    - "fc00:0000:0200::/40"
+    - "fc00:0000:0300::/40"
+    - "fc00:0000:0400::/40"
+    - "fc00:0000:0500::/40"
+    - "fc00:0000:0600::/40"
+    - "fc00:0000:0700::/40"
+    - "fc00:0000:0800::/40"
+    - "fc00:0000:0900::/40"
+    - "fc00:0000:ff00::/40"
+  ipv4-address-pool:
+    - 10.251.85.0/24
+    - 10.251.86.0/24
+    - 10.251.87.0/24
+    - 10.251.88.0/24
+    - 10.251.89.0/24
+    - 172.16.3.0/30
+    - 172.17.3.0/30
+    - 172.18.3.0/30
+    - 172.19.3.0/30
+    - 172.31.10.0/24
+    - 172.31.11.0/24
+    - 172.31.12.0/24
+    - 172.31.13.0/24
+    - 172.31.14.0/24
+    - 172.31.15.0/24
+junos_s0:
+  vsw: junos_s0
+  vswmp: junos_s0_mp
+  rst: junos_s0
+  rsts_enabled: ipv4,ipv6
+  ansible_params:
+    vlanip: 'irb'
+  private_asn: 64522
+  vlan_mtu: 9214
+  vlan_range:
+    - 3901-3920
+  allports: false
+  allvlans: false
+  snmp_monitoring: false
+  ports:
+    "et-0/0/32":
+      capacity: 400000
+      desttype: switch
+      isAlias: urn:ogf:network:es.net:2013::newy32aoa-cr6:1_1_c26_1:mghpcc
+      wanlink: true
+    "ae2":
+      capacity: 400000

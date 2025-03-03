@@ -10,7 +10,7 @@ c2244179d63eb51d88caf907c0e12c89:
   status: production
   type: Agent
 abcdefghijklmnuprstvwzx123456789:
-  config: FE/
+  config: FETEST/
   maintainer: "Justas Balcas"
   status: production
   type: FE
