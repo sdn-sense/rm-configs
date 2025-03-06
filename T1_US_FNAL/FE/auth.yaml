@@ -1,6 +1,6 @@
 ---
 jbalcas:
-  full_dn: "/DC=ch/DC=cern/CN=CERN Grid Certification Authority/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=jbalcas/CN=751133/CN=Justas Balcas"
+  full_dn: "/DC=org/DC=cilogon/C=US/O=CILogon/CN=CILogon Basic CA 1/DC=org/DC=cilogon/C=US/O=ESnet/CN=Justas Balcas E188368"
   permissions: w
 orchestrator:
   full_dn: "/C=US/ST=California/L=Berkeley/O=LBNL/OU=ESnet/CN=sense-o.es.net/C=US/ST=California/L=Berkeley/O=LBNL/CN=sense-o.es.net"
