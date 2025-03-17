@@ -5,7 +5,7 @@ general:
   webdomain: "https://cmssense1.fnal.gov:8443"
   node_exporter: "cmssense3.fnal.gov:15000"
 agent: 
-  interfaces: [enp1s0f0np0]
+  interfaces: [enp65s0f0np0]
   hostname: cmssense3.fnal.gov
 enp1s0f0np0:
   port: "Ethernet1/28"
@@ -84,5 +84,5 @@ qos:
   qos_params: "mtu 9000 mpu 9000 quantum 200000 burst 300000 cburst 300000 qdisc sfq balanced"
   class_max: true
   interfaces:
-    enp1s0f0np0:
-      master_intf: enp1s0f0np0
+    enp65s0f0np0:
+      master_intf: enp65s0f0np0
