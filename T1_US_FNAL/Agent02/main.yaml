@@ -7,7 +7,7 @@ general:
 agent: 
   interfaces: [enp65s0f0np0]
   hostname: cmssense3.fnal.gov
-enp1s0f0np0:
+enp65s0f0np0:
   port: "Ethernet1/28"
   shared: false
   allowOvercommit: true
