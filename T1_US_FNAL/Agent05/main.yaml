@@ -1,14 +1,14 @@
 ---
 general:
-  ip: "131.225.196.141"
+  ip: "131.225.196.143"
   sitename: [T1_US_FNAL]
   webdomain: "https://cmssense1.fnal.gov:8443"
-  node_exporter: "cmsnoted1.fnal.gov:15000"
+  node_exporter: "cmssense6.fnal.gov:15000"
 agent: 
-  interfaces: [ens2f1np1]
-  hostname: cmsnoted1.fnal.gov
-ens2f1np1:
-  port: "Ethernet1/5"
+  interfaces: [enp1s0]
+  hostname: cmssense6.fnal.gov
+enp1s0:
+  port: "Ethernet1/9"
   shared: false
   allowOvercommit: true
   switch: cisconx9
@@ -84,8 +84,8 @@ qos:
   qos_params: "mtu 9000 mpu 9000 quantum 200000 burst 300000 cburst 300000 qdisc sfq balanced"
   class_max: true
   interfaces:
-    ens2f1np1:
-      master_intf: ens2f1np1
+    enp1s0:
+      master_intf: enp1s0
       ipv6_range:
         - 2620:6a:0:2841::/64
         - 2620:6a:0:2842::/64
