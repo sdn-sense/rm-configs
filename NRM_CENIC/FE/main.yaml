@@ -222,31 +222,28 @@ aristaeos_s0:
     Ethernet18/1:
       capacity: 400000
       desttype: switch
-      isAlias: urn:ogf:network:sc24.atlanta.net:2024:wc11:wc11
+      isAlias: urn:ogf:network:ofc25.TBD.net:2025:TBD:TBD1
       vlan_range:
-        - 3600-3604
-        - 3911-3912
+        - 3600-3609
       wanlink: true
     Ethernet19/1:
       capacity: 400000
       desttype: switch
-      isAlias: urn:ogf:network:sc24.atlanta.net:2024:wc12:wc12
+      isAlias: urn:ogf:network:ofc25.TBD.net:2025:TBD:TBD2
       vlan_range:
-        - 3615-3619
+        - 3610-3619
       wanlink: true
     Ethernet20/1:
       capacity: 400000
       desttype: switch
-      isAlias: urn:ogf:network:sc24.atlanta.net:2024:wc13:wc13
+      isAlias: urn:ogf:network:ofc25.TBD.net:2025:TBD:TBD3
       vlan_range:
-        - 3605-3614
-        - 3118-3122
+        - 1779-1788
       wanlink: true
     Ethernet21/1:
       capacity: 400000
       desttype: switch
-      isAlias: urn:ogf:network:sc24.atlanta.net:2024:wc14:wc14
+      isAlias: urn:ogf:network:ofc25.TBD.net:2025:TBD:TBD4
       vlan_range:
-        - 1779
-        - 1780-1784
+        - 1789-1799
       wanlink: true
