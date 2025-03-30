@@ -1,0 +1,26 @@
+---
+7b19c441e9f5e4af805251e46f3c5300:
+  config: FE/
+  maintainer: "Justas Balcas"
+  status: development
+  type: FE
+2573e836bbd757bffe91abd9d0273c1b:
+  config: host1/
+  maintainer: "Justas Balcas"
+  status: development
+  type: Agent
+35ba38a1e8b80df9a820cbf59745e59d:
+  config: host2/
+  maintainer: "Justas Balcas"
+  status: development
+  type: Agent
+2b389eb729d6bcbaf459e15192739bda:
+  config: host3/
+  maintainer: "Justas Balcas"
+  status: development
+  type: Agent
+d14db2e56daef0972530d6a9959677b7:
+  config: host4/
+  maintainer: "Justas Balcas"
+  status: development
+  type: Agent

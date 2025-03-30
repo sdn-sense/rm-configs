@@ -1,0 +1,61 @@
+--- 
+general:
+  logLevel: DEBUG
+  sites: 
+    - "T3_FABRIC_CIEN"
+  webdomain: "https://sense-cien-fabric.nrp-nautilus.io:443"
+  privatedir: /opt/siterm/config/
+T3_FABRIC_CERN:
+  domain: sense-cien-fabric-testbed.net
+  latitude: 37.773972
+  longitude: -122.431297
+  plugin: ansible
+  privatedir: /opt/siterm/config/T3_FABRIC_CIEN/
+  vpp_exporter: "[2602:fcfb:0023:fff0::2]:1234"
+  year: 2025
+  ipv6-subnet-pool:
+    - 2602:fcfb:0023:fff1::/64
+    - 2602:fcfb:0023:fff2::/64
+    - 2602:fcfb:0023:fff3::/64
+  metadata:
+    xrootd:
+      2602:fcfb:0023:fff1::/64 : cien-sub1-host1.exp.fabric-testbed.net:1094
+      2602:fcfb:0023:fff2::/64 : cien-sub2-host1.exp.fabric-testbed.net:1094
+      2602:fcfb:0023:fff3::/64 : cien-sub3-host1.exp.fabric-testbed.net:1094
+  ipv6-address-pool:
+    - "fc00:0000:0100::/40"
+    - "fc00:0000:0200::/40"
+    - "fc00:0000:0300::/40"
+    - "fc00:0000:0400::/40"
+    - "fc00:0000:0500::/40"
+    - "fc00:0000:0600::/40"
+    - "fc00:0000:0700::/40"
+    - "fc00:0000:0800::/40"
+    - "fc00:0000:0900::/40"
+    - "fc00:0000:ff00::/40"
+  switch:
+    - frr_s0
+frr_s0:
+  vsw: frr_s0
+  rst: frr_s0
+  rsts_enabled: ipv6
+  private_asn: 64523
+  vlan_mtu: 9000
+  ports:
+    e2:
+      capacity: 100000
+      desttype: switch
+      isAlias: urn:ogf:network:stack-fabric:2024:topology:node+CIEN:port+CERN-HU14-wk3-pci6-p2
+    e3:
+      capacity: 100000
+      desttype: switch
+      isAlias: urn:ogf:network:stack-fabric:2024:topology:node+CIEN:port+CERN-HU8-wk3-pci3-p1
+    e4:
+      capacity: 100000
+      desttype: switch
+      isAlias: urn:ogf:network:stack-fabric:2024:topology:node+CIEN:port+CERN-HU10-wk3-pci3-p2
+  vlan_range:
+    - 1000-3999
+  allports: false
+  allvlans: false
+  snmp_monitoring: false
