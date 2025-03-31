@@ -5,7 +5,7 @@ general:
   webdomain: "https://sense-caltechprod.nrp-nautilus.io:443"
   node_exporter: "transfer-18.ultralight.org:9100"
 agent: 
-  interfaces: [bondpublic, enp1s0]
+  interfaces: [bondpublic, enp1s0np0]
   hostname: transfer-18.ultralight.org
 bondpublic:
   port: Ethernet 1/1/8
@@ -32,7 +32,7 @@ bondpublic:
     - "fc00:0000:0800::/40"
     - "fc00:0000:0900::/40"
     - "fc00:0000:ff00::/40"
-enp1s0:
+enp1s0np0:
   port: Ethernet184
   switch: edgecore_s0
   shared: false
