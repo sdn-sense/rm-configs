@@ -222,28 +222,60 @@ aristaeos_s0:
     Ethernet18/1:
       capacity: 400000
       desttype: switch
-      isAlias: urn:ogf:network:ofc25.TBD.net:2025:TBD:TBD1
+      isAlias: urn:ogf:network:stack-fabric:2024:topology:node+CIEN:port+FP1-CIEN
       vlan_range:
-        - 3600-3609
+        - 3600-3605
+      wanlink: true
+    Ethernet18-1-other:
+      capacity: 400000
+      desttype: switch
+      isAlias: urn:ogf:network:fnal.gov:TBD:TBD:Ethernet1-18-1
+      vlan_range:
+        - 3606-3609
+      realportname: Ethernet18/1
       wanlink: true
     Ethernet19/1:
       capacity: 400000
       desttype: switch
-      isAlias: urn:ogf:network:ofc25.TBD.net:2025:TBD:TBD2
+      isAlias: urn:ogf:network:stack-fabric:2024:topology:node+CIEN:port+FP2-CIEN
       vlan_range:
-        - 3610-3619
+        - 3610-3615
+      wanlink: true
+    Ethernet19-1-other:
+      capacity: 400000
+      desttype: switch
+      isAlias: urn:ogf:network:fnal.gov:TBD:TBD:Ethernet1-19-1
+      vlan_range:
+        - 3616-3619
+      realportname: Ethernet19/1
       wanlink: true
     Ethernet20/1:
       capacity: 400000
       desttype: switch
-      isAlias: urn:ogf:network:ofc25.TBD.net:2025:TBD:TBD3
+      isAlias: urn:ogf:network:stack-fabric:2024:topology:node+CIEN:port+FP3-CIEN
       vlan_range:
-        - 1779-1788
+        - 1784-1788
+      wanlink: true
+    Ethernet20-1-other:
+      capacity: 400000
+      desttype: switch
+      isAlias: urn:ogf:network:fnal.gov:TBD:TBD:Ethernet1-20-1
+      vlan_range:
+        - 1779-1783
+      realportname: Ethernet20/1
       wanlink: true
     Ethernet21/1:
       capacity: 400000
       desttype: switch
-      isAlias: urn:ogf:network:ofc25.TBD.net:2025:TBD:TBD4
+      isAlias: urn:ogf:network:stack-fabric:2024:topology:node+CIEN:port+FP4-CIEN
       vlan_range:
         - 1789-1799
+      wanlink: true
+    Ethernet21-1-other:
+      capacity: 400000
+      desttype: switch
+      isAlias: urn:ogf:network:fnal.gov:TBD:TBD:Ethernet1-21-1
+      vlan_range:
+        - 1779-1783
+      realportname: Ethernet20/1
       wanlink: true
