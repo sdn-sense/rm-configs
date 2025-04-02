@@ -8,7 +8,7 @@ agent:
   interfaces: [bondpublic, enp1s0np0]
   hostname: transfer-18.ultralight.org
 bondpublic:
-  port: Ethernet 1/1/8
+  port: ethernet1/1/6:1
   switch: dellos10_s0
   shared: false
   intf_max: 100000
@@ -33,7 +33,7 @@ bondpublic:
     - "fc00:0000:0900::/40"
     - "fc00:0000:ff00::/40"
 enp1s0np0:
-  port: Ethernet184
+  port: Ethernet56
   switch: edgecore_s0
   shared: false
   intf_max: 400000
