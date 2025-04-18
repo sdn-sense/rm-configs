@@ -6,9 +6,9 @@ general:
   prometheus_federate: http://thanos-federate-proxy-service:9099/federate
   prometheus_query: '{instance="node-2-11.sdsc.optiputer.net", service="node-exporter"}'
 agent: 
-  interfaces: [enp65s0f1]
+  interfaces: [enp65s0f1np1]
   hostname: node-2-11.sdsc.optiputer.net
-enp65s0f1:
+enp65s0f1np1:
   port: Ethernet88
   switch: edgecore_s0
   shared: false
