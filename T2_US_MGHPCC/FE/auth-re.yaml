@@ -1,1 +1,4 @@
 ---
+mghpccre:
+  full_dn: "/C=US/O=Let's Encrypt/CN=.*mghpcc.nrp-nautilus.io"
+  permissions: w
