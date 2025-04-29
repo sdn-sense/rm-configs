@@ -15,15 +15,23 @@ T2_US_MGHPCC:
   year: 2025
   switch:
     - "junos_s0"
-  #ipv6-subnet-pool:
-  #  - aaaa:aaaa:a:aaaa::/64
-  #  - aaaa:aaaa:a:aaab::/64
-  #  - aaaa:aaaa:a:aaac::/64
-  #metadata:
-  #  xrootd:
-  #    aaaa:aaaa:a:aaaa::/64: replace_me_a.mghpcc.org:1095
-  #    aaaa:aaaa:a:aaab::/64: replace_me_b.mghpcc.org:1095
-  #    aaaa:aaaa:a:aaac::/64: replace_me_c.mghpcc.org:1095
+  ipv6-subnet-pool:
+    - 2001:48e8:6402:0::/64
+    - 2001:48e8:6402:1::/64
+    - 2001:48e8:6402:2::/64
+    - 2001:48e8:6402:3::/64
+    - 2001:48e8:6402:4::/64
+    - 2001:48e8:6402:5::/64
+    - 2001:48e8:6402:6::/64
+    - 2001:48e8:6402:7::/64
+    - 2001:48e8:6402:8::/64
+    - 2001:48e8:6402:9::/64
+    # a to f remaining also, not used.
+  metadata:
+    xrootd:
+      2001:48e8:6402:0::/64: xrootd-0-redir.rnd.net2.mghpcc.org:1094
+      2001:48e8:6402:1::/64: xrootd-1-redir.rnd.net2.mghpcc.org:1094
+      2001:48e8:6402:2::/64: xrootd-2-redir.rnd.net2.mghpcc.org:1094
   ipv6-address-pool:
     - "fc00:0000:0100::/40"
     - "fc00:0000:0200::/40"
