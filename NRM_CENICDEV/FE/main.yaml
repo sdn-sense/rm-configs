@@ -2,12 +2,12 @@
 general:
   logLevel: DEBUG
   sites:
-    - NRM_CENIC
+    - NRM_CENICDEV
   webdomain: https://sense-dev-ladowntown.nrp-nautilus.io:443
   probes:
     - https_v4_siterm_2xx
     - icmp_v4
-NRM_CENIC:
+NRM_CENICDEV:
   domain: sc-test-dev.cenic.net
   latitude: 33.9416
   longitude: -118.4085

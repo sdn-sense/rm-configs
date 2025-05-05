@@ -7,7 +7,7 @@ general:
   probes:
     - https_v4_siterm_2xx
     - icmp_v4
-T2_US_SDSC:
+T2_US_SDSC_DEV:
   domain: nrp-nautilus-dev.io
   latitude: 32.882648
   longitude: -117.234579

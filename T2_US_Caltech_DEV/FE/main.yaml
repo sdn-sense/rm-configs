@@ -2,12 +2,12 @@
 general:
   logLevel: DEBUG
   sites:
-    - T2_US_Caltech
+    - T2_US_Caltech_DEV
   webdomain: "https://sense-dev-caltechprod.nrp-nautilus.io:443"
   probes:
     - https_v4_siterm_2xx
     - icmp_v4
-T2_US_Caltech:
+T2_US_Caltech_DEV:
   domain: tier2-dev.ultralight.org
   latitude: 34.1377
   longitude: 118.1253
@@ -33,7 +33,7 @@ T2_US_Caltech:
       type: bestEffort
       unit: mbps
       minCapacity: 100
-  privatedir: /opt/siterm/config/T2_US_Caltech/
+  privatedir: /opt/siterm/config/T2_US_Caltech_DEV/
   ipv6-subnet-pool:
     - 2605:d9c0:6:2640::/64
     - 2605:d9c0:6:2641::/64
