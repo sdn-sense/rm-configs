@@ -18,7 +18,7 @@ T2_US_UCSD_OASIS:
 oasis:
   vsw: "oasis"
   vswmp: "oasis_mp"
-  vlan_range: [1779-1799,3911-3912,3873-3874,3985-3989,3600-3619,3110-3139]
+  vlan_range: [1779-1799,3911-3912,3873-3874,3985-3989,3600-3610,3110-3139]
   ports:
     "6_3_1":
       # Facility Port for FP1

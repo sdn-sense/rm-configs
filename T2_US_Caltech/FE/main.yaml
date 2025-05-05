@@ -130,7 +130,7 @@ dellos10_s0:
       wanlink: true
   vlan_range:
     - 1779-1799
-    - 3600-3619
+    - 3600-3610
     - 3985-3989
     - 3870-3883
     - 3911-3912
@@ -178,7 +178,7 @@ edgecore_s0:
       wanlink: true
   vlan_range:
     - 1779-1799
-    - 3600-3619
+    - 3600-3610
     - 3985-3989
     - 3870-3883
     - 3911-3912
@@ -203,7 +203,7 @@ dellos10_s1:
       isAlias: urn:ogf:network:tier2.ultralight.org:2024:dellos10_s0:Port-channel_43
   vlan_range:
     - 1779-1799
-    - 3600-3619
+    - 3600-3610
     - 3985-3989
     - 3870-3883
     - 3911-3912
