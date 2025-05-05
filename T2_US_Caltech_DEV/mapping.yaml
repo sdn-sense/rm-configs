@@ -1,0 +1,26 @@
+---
+66666666666666666666666666666666: 
+  config: FE/
+  maintainer: "Justas Balcas"
+  status: dev
+  type: FE
+77777777777777777777777777777777:
+  config: Agent01/
+  maintainer: "Justas Balcas"
+  status: dev
+  type: Agent
+88888888888888888888888888888888:
+  config: Agent02/
+  maintainer: "Justas Balcas"
+  status: dev
+  type: Agent
+99999999999999999999999999999999:
+  config: Agent03/
+  maintainer: "Justas Balcas"
+  status: dev
+  type: Agent
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa:
+  config: Agent04/
+  maintainer: "Justas Balcas"
+  status: dev
+  type: Agent

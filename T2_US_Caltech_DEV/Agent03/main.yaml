@@ -1,0 +1,111 @@
+---
+general:
+  ip: "198.32.44.93"
+  sitename: [T2_US_Caltech]
+  webdomain: "https://sense-caltechprod.nrp-nautilus.io:443"
+  node_exporter: "transfer-13.ultralight.org:9100"
+agent: 
+  interfaces: [bondpublic, enp1s0np0]
+  hostname: transfer-13.ultralight.org
+bondpublic:
+  port: Ethernet 1/1/2:1
+  switch: dellos10_s1
+  shared: false
+  intf_max: 100000
+  bwParams:
+    unit: "mbps"
+    type: "guaranteedCapped"
+    priority: 0
+    minReservableCapacity: 1000
+    maximumCapacity: 100000
+    granularity: 1000
+  vlan_range: [3611-3619]
+  ipv4-address-pool: [10.251.85.0/24,10.251.86.0/24,10.251.87.0/24,10.251.88.0/24,10.251.89.0/24,172.16.3.0/30,172.17.3.0/30,172.18.3.0/30,172.19.3.0/30]
+  ipv6-address-pool:
+    - "fc00:0000:0100::/40"
+    - "fc00:0000:0200::/40"
+    - "fc00:0000:0300::/40"
+    - "fc00:0000:0400::/40"
+    - "fc00:0000:0500::/40"
+    - "fc00:0000:0600::/40"
+    - "fc00:0000:0700::/40"
+    - "fc00:0000:0800::/40"
+    - "fc00:0000:0900::/40"
+    - "fc00:0000:ff00::/40"
+enp1s0np0:
+  port: Ethernet16
+  switch: edgecore_s0
+  shared: false
+  intf_max: 400000
+  bwParams:
+    unit: "mbps"
+    type: "guaranteedCapped"
+    priority: 0
+    minReservableCapacity: 100
+    maximumCapacity: 400000
+    granularity: 100
+  vlan_range: [3611-3619]
+  ipv4-address-pool: [10.251.85.0/24,10.251.86.0/24,10.251.87.0/24,10.251.88.0/24,10.251.89.0/24,172.16.3.0/30,172.17.3.0/30,172.18.3.0/30,172.19.3.0/30]
+  ipv6-address-pool:
+    - "fc00:0000:0100::/40"
+    - "fc00:0000:0200::/40"
+    - "fc00:0000:0300::/40"
+    - "fc00:0000:0400::/40"
+    - "fc00:0000:0500::/40"
+    - "fc00:0000:0600::/40"
+    - "fc00:0000:0700::/40"
+    - "fc00:0000:0800::/40"
+    - "fc00:0000:0900::/40"
+    - "fc00:0000:ff00::/40"
+qos:
+  policy: privatens
+  qos_params: "mtu 9000 mpu 9000 quantum 200000 burst 300000 cburst 300000 qdisc sfq balanced"
+  interfaces:
+    sensexrd1:
+      ipv6_range: 2605:d9c0:6:2640::0/64
+      master_intf: bondpublic
+    sensexrd2:
+      ipv6_range: 2605:d9c0:6:2641::0/64
+      master_intf: bondpublic
+    sensexrd3:
+      ipv6_range: 2605:d9c0:6:2642::0/64
+      master_intf: bondpublic
+    sensexrd4:
+      ipv6_range: 2605:d9c0:6:2643::0/64
+      master_intf: bondpublic
+    sensexrd5:
+      ipv6_range: 2605:d9c0:6:2644::0/64
+      master_intf: bondpublic
+    sensexrd6:
+      ipv6_range: 2605:d9c0:6:2645::0/64
+      master_intf: bondpublic
+    sensexrd7:
+      ipv6_range: 2605:d9c0:6:2646::0/64
+      master_intf: bondpublic
+    sensexrd8:
+      ipv6_range: 2605:d9c0:6:2647::0/64
+      master_intf: bondpublic
+    sensexrd9:
+      ipv6_range: 2605:d9c0:6:2648::0/64
+      master_intf: bondpublic
+    sensexrd10:
+      ipv6_range: 2605:d9c0:6:2649::0/64
+      master_intf: bondpublic
+    sensexrd11:
+      ipv6_range: 22605:d9c0:6:2650::0/64
+      master_intf: bondpublic
+    sensexrd12:
+      ipv6_range: 2605:d9c0:6:2651::0/64
+      master_intf: bondpublic
+    sensexrd13:
+      ipv6_range: 2605:d9c0:6:2652::0/64
+      master_intf: bondpublic
+    sensexrd14:
+      ipv6_range: 2605:d9c0:6:2653::0/64
+      master_intf: bondpublic
+    sensexrd15:
+      ipv6_range: 2605:d9c0:6:2654::0/64
+      master_intf: bondpublic
+    sensexrd16:
+      ipv6_range: 2605:d9c0:6:2655::0/64
+      master_intf: bondpublic
