@@ -56,12 +56,7 @@ sn3700_s0:
   private_asn: 65000
   allports: false
   vlan_range:
-    - 1779-1799
-    - 3873-3874
-    - 3911-3912
-    - 3985-3989
-    - 3600-3619
-    - 3110-3139
+    - 3611-3619
   ports:
     PortChannel502:
       capacity: 1200000
@@ -71,14 +66,6 @@ sn3700_s0:
       isAlias: urn:ogf:network:nrp-nautilus.io:2020:k8s-bf2-01.sdsc.optiputer.net:Ethernet0-87-00
     Ethernet4:
       isAlias: urn:ogf:network:nrp-nautilus.io:2020:k8s-bf2-01.sdsc.optiputer.net:Ethernet4-87-00
-    Ethernet32:
-      vlan_range:
-        - 3400-3407
-        - 3600-3610
-    Ethernet36:
-      vlan_range:
-        - 3400-3407
-        - 3600-3610
     Ethernet44: {}
     Ethernet40: {}
     Ethernet52: {}
@@ -97,13 +84,7 @@ edgecore_s0:
   allports: false
   external_snmp: https://nsi-snmpmon-prpdev.nrp-nautilus.io/edgecore_s0/metrics
   vlan_range:
-    - 1779-1799
-    - 3873-3874
-    - 3911-3912
-    - 3985-3989
-    - 3600-3619
-    - 3110-3139
-    - 4005-4054
+    - 3611-3619
   ports:
     Ethernet128: {}
     Ethernet136:
@@ -169,21 +150,11 @@ edgecore_s0:
       desttype: switch
       isAlias: urn:ogf:network:nrp-nautilus.io:2020:sn3700_s0:PortChannel502
       vlan_range:
-        - 1779-1799
-        - 3873-3874
-        - 3911-3912
-        - 3985-3989
-        - 3600-3619
-        - 3110-3139
+        - 3611-3619
     PortChannel500:
       capacity: 760000
       desttype: switch
       isAlias: urn:ogf:network:sense-oasis-nrp-nautilus.io:2020:oasis:Pc500
       vlan_range:
-        - 1779-1799
-        - 3873-3874
-        - 3911-3912
-        - 3985-3989
-        - 3600-3619
-        - 3110-3139
+        - 3611-3619
       wanlink: PortChannel501
