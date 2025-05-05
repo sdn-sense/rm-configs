@@ -1,0 +1,26 @@
+---
+00000000000000000000000000000000:
+  config: FE/
+  maintainer: "Justas Balcas"
+  status: development
+  type: FE
+11111111111111111111111111111111:
+  config: node-2-6/
+  maintainer: "Justas Balcas"
+  status: development
+  type: Agent
+22222222222222222222222222222222:
+  config: node-2-7/
+  maintainer: "Justas Balcas"
+  status: development
+  type: Agent
+33333333333333333333333333333333:
+  config: node-2-8/
+  maintainer: "Justas Balcas"
+  status: development
+  type: Agent
+44444444444444444444444444444444:
+  config: node-2-9/
+  maintainer: "Justas Balcas"
+  status: development
+  type: Agent

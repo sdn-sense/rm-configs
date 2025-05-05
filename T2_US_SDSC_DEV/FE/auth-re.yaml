@@ -1,0 +1,4 @@
+---
+sdscsense:
+  full_dn: "/C=US/O=Let's Encrypt/CN=.*.nrp-nautilus.io"
+  permissions: w
