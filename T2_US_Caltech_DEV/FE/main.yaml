@@ -96,7 +96,7 @@ T2_US_Caltech_DEV:
     - 172.31.13.0/24
     - 172.31.14.0/24
     - 172.31.15.0/24
-  year: 2024
+  year: 2025
   switch:
     - dellos10_s0
     - dellos10_s1
