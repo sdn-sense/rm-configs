@@ -32,3 +32,15 @@ sense-mon:
 pbhat:
   full_dn: "/DC=ch/DC=cern/CN=CERN Grid Certification Authority/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=pbhat/CN=862304/CN=Preeti Padmanabha Bhat"
   permissions: w
+t11:
+  full_dn: "/C=US/O=Internet2/CN=InCommon RSA IGTF Server CA 3/DC=org/DC=incommon/C=US/ST=California/O=California Institute of Technology/CN=transfer-11-sensedev.ultralight.org"
+  permissions: w
+t12:
+  full_dn: "/C=US/O=Internet2/CN=InCommon RSA IGTF Server CA 3/DC=org/DC=incommon/C=US/ST=California/O=California Institute of Technology/CN=transfer-12-sensedev.ultralight.org"
+  permissions: w
+t13:
+  full_dn: "/C=US/O=Internet2/CN=InCommon RSA IGTF Server CA 3/DC=org/DC=incommon/C=US/ST=California/O=California Institute of Technology/CN=transfer-13-sensedev.ultralight.org"
+  permissions: w
+t14:
+  full_dn: "/C=US/O=Internet2/CN=InCommon RSA IGTF Server CA 3/DC=org/DC=incommon/C=US/ST=California/O=California Institute of Technology/CN=transfer-14-sensedev.ultralight.org"
+  permissions: w
