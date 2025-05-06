@@ -71,13 +71,6 @@ aristaeos_s0:
       vlan_range:
         - 3611-3619
       wanlink: true
-    Ethernet11/1:
-      capacity: 100000
-      desttype: switch
-      isAlias: urn:ogf:network:lsanca.pacificwave.net:2016:pw-losa2-1:Arista-400G
-      vlan_range:
-        - 3611-3619
-      wanlink: true
     Ethernet12/1:
       capacity: 400000
       desttype: switch
@@ -85,10 +78,17 @@ aristaeos_s0:
       vlan_range:
         - 3611-3619
       wanlink: true
-    Ethernet13/1:
-      capacity: 400000
-      desttype: switch
-      isAlias: urn:ogf:network:es.net:2013::losa-cr6:2_1_c4_1:+
-      vlan_range:
-        - 3611-3619
-      wanlink: true
+#    Ethernet11/1:
+#      capacity: 100000
+#      desttype: switch
+#      isAlias: urn:ogf:network:lsanca.pacificwave.net:2016:pw-losa2-1:Arista-400G
+#      vlan_range:
+#        - 3611-3619
+#      wanlink: true
+#    Ethernet13/1:
+#      capacity: 400000
+#      desttype: switch
+#      isAlias: urn:ogf:network:es.net:2013::losa-cr6:2_1_c4_1:+
+#      vlan_range:
+#        - 3611-3619
+#      wanlink: true
