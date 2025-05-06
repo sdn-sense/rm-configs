@@ -123,11 +123,6 @@ dellos10_s0:
       desttype: switch
       isAlias: urn:ogf:network:sc-test-dev.cenic.net:2025:aristaeos_s0:Port-Channel501
       wanlink: true
-    Port-channel 101:
-      capacity: 400000
-      desttype: switch
-      isAlias: urn:ogf:network:ultralight.org:2013:dellos9_s0:Port-channel_103
-      wanlink: true
   vlan_range:
     - 3611-3619
   allports: false
