@@ -2,7 +2,7 @@
 general:
   ip: "198.32.43.13"
   sitename: [T2_US_Caltech_Test]
-  webdomain: "https://sense-caltechdev.nrp-nautilus.io:443"
+  webdomain: "https://sense-caltechtest.sdn-lb.ultralight.org:443"
   node_exporter: "sdn-dtn-1-7.ultralight.org:9100"
 agent: 
   interfaces: [mlx4p1s1]
