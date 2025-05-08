@@ -106,6 +106,7 @@ dellos10_s0:
   vswmp: dellos10_s0_mp
   rst: dellos10_s0
   rsts_enabled: ipv4,ipv6
+  bgpmp: true
   private_asn: 64516
   vrf: Vrf_sense01
   vlan_mtu: 9216
