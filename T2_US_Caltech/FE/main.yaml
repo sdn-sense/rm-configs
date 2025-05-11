@@ -108,6 +108,7 @@ dellos10_s0:
   rsts_enabled: ipv4,ipv6
   private_asn: 64516
   vrf: Vrf_sense01
+  bgpmp: true
   vlan_mtu: 9216
   ports:
     Port-channel 41:

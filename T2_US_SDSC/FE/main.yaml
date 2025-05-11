@@ -98,6 +98,7 @@ sn3700_s0:
   vswmp: sn3700_s0_mp
   rst: sn3700_s0
   rsts_enabled: ipv4,ipv6
+  bgpmp: true
   external_snmp: https://nsi-snmpmon-prpdev.nrp-nautilus.io/sn3700_s0/metrics
   private_asn: 65000
   allports: false
