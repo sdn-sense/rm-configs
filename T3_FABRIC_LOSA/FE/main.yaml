@@ -88,10 +88,16 @@ frr_s0:
   private_asn: 64519
   vlan_mtu: 9000
   ports:
+    # HundredGigE0/0/0/4
     e2:
       capacity: 100000
       desttype: switch
-      isAlias: urn:ogf:network:stack-fabric:2024:topology:node+LOSA:port+LOSA-HU2-wk2-pci3-p2
+      isAlias: urn:ogf:network:stack-fabric:2024:topology:node+LOSA:port+LOSA-HU4-wk2-pci6-p1
+    # HundredGigE0/0/0/6
+    e3:
+      capacity: 100000
+      desttype: switch
+      isAlias: urn:ogf:network:stack-fabric:2024:topology:node+LOSA:port+LOSA-HU6-wk2-pci6-p2
   vlan_range:
     - 800-1000
   allports: false
