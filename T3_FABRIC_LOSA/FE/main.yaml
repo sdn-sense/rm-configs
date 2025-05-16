@@ -13,7 +13,6 @@ T3_FABRIC_LOSA:
   plugin: ansible
   privatedir: /opt/siterm/config/T3_FABRIC_LOSA/
   vpp_exporter: "[2602:fcfb:12:fff0::2]:1234"
-  year: 2024
   ipv6-subnet-pool:
     - 2602:fcfb:0012:fff2::/64
     - 2602:fcfb:0012:fff3::/64
