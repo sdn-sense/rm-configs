@@ -11,9 +11,6 @@ orchestrator:
 orchestrator1:
   full_dn: "/C=US/ST=MI/L=Ann Arbor/O=Internet2/OU=InCommon/CN=InCommon RSA Server CA/C=US/ST=California/O=Energy Sciences Network/CN=sense-o.es.net"
   permissions: w
-prometheus:
-  full_dn: "/C=US/ST=California/L=Pasadena/O=Caltech/CN=sdn-sense.dev/C=US/ST=California/L=Pasadena/O=Caltech/CN=autogole-grafana-prometheus.ultralight.org"
-  permissions: r
 ucsd_nautilus:
   full_dn: "/C=US/ST=California/L=Pasadena/O=Caltech/CN=sdn-sense.dev/C=US/ST=California/L=San Diego/O=UCSD/CN=sense-fe.nrp-nautilus.io"
   permissions: w
@@ -23,6 +20,12 @@ ucsd_nautilus_1:
 ucsd_nautilus_2:
   full_dn: "/C=US/ST=California/L=Pasadena/O=Caltech/CN=sdn-sense.dev/C=US/ST=California/L=San Diego/O=UCSD/CN=k8s-igrok-02.calit2.optiputer.net"
   permissions: w
-gpn_fe:
-  full_dn: "/C=US/O=Let's Encrypt/CN=R10/CN=sense-gpn.nrp-nautilus.io"
+senseoprod:
+  full_dn: "/C=US/O=Internet2/CN=InCommon RSA Server CA 2/C=US/ST=California/O=Energy Sciences Network/CN=sense-o.es.net"
+  permissions: w
+senseodev:
+  full_dn: "/C=US/O=Internet2/CN=InCommon RSA Server CA 2/C=US/ST=California/O=Energy Sciences Network/CN=sense-o-dev.es.net"
+  permissions: w
+senseoeast:
+  full_dn: "/C=US/O=Internet2/CN=InCommon RSA Server CA 2/C=US/ST=California/O=Energy Sciences Network/CN=sense-o-east.es.net"
   permissions: w

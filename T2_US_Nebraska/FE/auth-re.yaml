@@ -5,3 +5,6 @@ unlsense:
 unlincommon:
   full_dn: "/C=US/O=Internet2/CN=InCommon RSA IGTF Server CA 3/.*/O=University of Nebraska-Lincoln/CN=.*.unl.edu"
   permissions: w
+autogole_monitoring:
+  full_dn: "/C=US/O=Let's Encrypt/CN=R[0-9]+/CN=autogole-grafana.nrp-nautilus.io"
+  permissions: r

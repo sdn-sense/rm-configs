@@ -11,9 +11,6 @@ orchestrator1:
 xiyang:
   full_dn: "/O=University of Maryland/OU=Mid-Atlantic Crossroads/OU=research.maxgigapop.net/CN=Simple CA/C=US/ST=Maryland/O=University of Maryland/OU=RESEARCH.MAXGIGAPOP.NET/CN=Xi Yang"
   permissions: w
-prometheus:
-  full_dn: "/C=US/ST=California/L=Pasadena/O=Caltech/CN=sdn-sense.dev/C=US/ST=California/L=Pasadena/O=Caltech/CN=autogole-grafana-prometheus.ultralight.org"
-  permissions: r
 asif:
   full_dn: "/DC=ch/DC=cern/CN=CERN Grid Certification Authority/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sashah/CN=763565/CN=Syed Asif Raza Shah"
   permissions: w
@@ -26,3 +23,12 @@ pbhat:
 ddavila:
   full_dn: "/DC=ch/DC=cern/CN=CERN Grid Certification Authority/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=ddavila/CN=815177/CN=Diego Davila Foyo"
   permissions: r
+senseoprod:
+  full_dn: "/C=US/O=Internet2/CN=InCommon RSA Server CA 2/C=US/ST=California/O=Energy Sciences Network/CN=sense-o.es.net"
+  permissions: w
+senseodev:
+  full_dn: "/C=US/O=Internet2/CN=InCommon RSA Server CA 2/C=US/ST=California/O=Energy Sciences Network/CN=sense-o-dev.es.net"
+  permissions: w
+senseoeast:
+  full_dn: "/C=US/O=Internet2/CN=InCommon RSA Server CA 2/C=US/ST=California/O=Energy Sciences Network/CN=sense-o-east.es.net"
+  permissions: w

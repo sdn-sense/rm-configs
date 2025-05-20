@@ -11,9 +11,6 @@ orchestrator1:
 xiyang:
   full_dn: "/O=University of Maryland/OU=Mid-Atlantic Crossroads/OU=research.maxgigapop.net/CN=Simple CA/C=US/ST=Maryland/O=University of Maryland/OU=RESEARCH.MAXGIGAPOP.NET/CN=Xi Yang"
   permissions: w
-prometheus:
-  full_dn: "/C=US/ST=California/L=Pasadena/O=Caltech/CN=sdn-sense.dev/C=US/ST=California/L=Pasadena/O=Caltech/CN=autogole-grafana-prometheus.ultralight.org"
-  permissions: r
 feapi:
   full_dn: "/C=US/O=Let's Encrypt/CN=R11/CN=sense-caltechprod.nrp-nautilus.io"
   permissions: w
@@ -23,12 +20,6 @@ daemonset:
 rucio:
   full_dn: "/C=US/O=Internet2/CN=InCommon RSA IGTF Server CA 3/DC=org/DC=incommon/C=US/ST=California/O=University of California, San Diego/CN=rucio-sense.t2.ucsd.edu"
   permissions: w
-rtmon-dev2:
-  full_dn: "/C=US/O=Let's Encrypt/CN=R3/CN=dev2.virnao.com"
-  permissions: r
-sense-mon:
-  full_dn: "/C=US/O=Internet2/CN=InCommon RSA Server CA 2/C=US/ST=California/O=Energy Sciences Network/CN=sense-mon.es.net"
-  permissions: r
 pbhat:
   full_dn: "/DC=ch/DC=cern/CN=CERN Grid Certification Authority/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=pbhat/CN=862304/CN=Preeti Padmanabha Bhat"
   permissions: w
@@ -43,4 +34,13 @@ t13:
   permissions: w
 t14:
   full_dn: "/C=US/O=Internet2/CN=InCommon RSA IGTF Server CA 3/DC=org/DC=incommon/C=US/ST=California/O=California Institute of Technology/CN=transfer-14-sensedev.ultralight.org"
+  permissions: w
+senseoprod:
+  full_dn: "/C=US/O=Internet2/CN=InCommon RSA Server CA 2/C=US/ST=California/O=Energy Sciences Network/CN=sense-o.es.net"
+  permissions: w
+senseodev:
+  full_dn: "/C=US/O=Internet2/CN=InCommon RSA Server CA 2/C=US/ST=California/O=Energy Sciences Network/CN=sense-o-dev.es.net"
+  permissions: w
+senseoeast:
+  full_dn: "/C=US/O=Internet2/CN=InCommon RSA Server CA 2/C=US/ST=California/O=Energy Sciences Network/CN=sense-o-east.es.net"
   permissions: w

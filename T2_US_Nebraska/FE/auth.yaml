@@ -23,9 +23,6 @@ dtn1:
 dtn2:
   full_dn: "/C=US/O=Internet2/CN=InCommon RSA IGTF Server CA 3/DC=org/DC=incommon/C=US/ST=Nebraska/O=University of Nebraska-Lincoln/CN=red-sense-dtn2.unl.edu"
   permissions: w
-realtimemon:
-  full_dn: "/C=US/O=Let's Encrypt/CN=R3/CN=dev2.virnao.com"
-  permissions: r
 asif:
   full_dn: "/DC=ch/DC=cern/CN=CERN Grid Certification Authority/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sashah/CN=763565/CN=Syed Asif Raza Shah"
   permissions: w
@@ -34,4 +31,13 @@ pbhat:
   permissions: w
 rucio:
   full_dn: "/C=US/O=Internet2/CN=InCommon RSA IGTF Server CA 3/DC=org/DC=incommon/C=US/ST=California/O=University of California, San Diego/CN=rucio-sense.t2.ucsd.edu"
+  permissions: w
+senseoprod:
+  full_dn: "/C=US/O=Internet2/CN=InCommon RSA Server CA 2/C=US/ST=California/O=Energy Sciences Network/CN=sense-o.es.net"
+  permissions: w
+senseodev:
+  full_dn: "/C=US/O=Internet2/CN=InCommon RSA Server CA 2/C=US/ST=California/O=Energy Sciences Network/CN=sense-o-dev.es.net"
+  permissions: w
+senseoeast:
+  full_dn: "/C=US/O=Internet2/CN=InCommon RSA Server CA 2/C=US/ST=California/O=Energy Sciences Network/CN=sense-o-east.es.net"
   permissions: w

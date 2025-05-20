@@ -1,16 +1,10 @@
 ---
-siterm:
-  full_dn: "/C=US/ST=California/L=Pasadena/O=Caltech/CN=sdn-sense.dev/C=DE/ST=Karlsruhe/L=Karlsruhe/O=KIT/CN=autogole-sense-login.gridka.de"
-  permissions: w
 sense-o:
   full_dn: "/C=US/ST=California/L=Berkeley/O=LBNL/OU=ESnet/CN=sense-o.es.net/C=US/ST=California/L=Berkeley/O=LBNL/CN=sense-o.es.net"
   permissions: w
 orchestrator1:
   full_dn: "/C=US/ST=MI/L=Ann Arbor/O=Internet2/OU=InCommon/CN=InCommon RSA Server CA/C=US/ST=California/O=Energy Sciences Network/CN=sense-o.es.net"
   permissions: w
-prometheus:
-  full_dn: "/C=US/ST=California/L=Pasadena/O=Caltech/CN=sdn-sense.dev/C=US/ST=California/L=Pasadena/O=Caltech/CN=autogole-grafana-prometheus.ultralight.org"
-  permissions: r
 jbalcas:
   full_dn: "/DC=org/DC=cilogon/C=US/O=CILogon/CN=CILogon Basic CA 1/DC=org/DC=cilogon/C=US/O=ESnet/CN=Justas Balcas E188368"
   permissions: w
@@ -19,4 +13,13 @@ agent1:
   permissions: w
 agent2:
   full_dn: "/C=DE/O=DFN-Verein/OU=DFN-PKI/CN=DFN-Verein PCA Grid - G01/C=DE/O=GridGermany/OU=Karlsruhe Institute of Technology/CN=a01-102-151-e.gridka.de"
+  permissions: w
+senseoprod:
+  full_dn: "/C=US/O=Internet2/CN=InCommon RSA Server CA 2/C=US/ST=California/O=Energy Sciences Network/CN=sense-o.es.net"
+  permissions: w
+senseodev:
+  full_dn: "/C=US/O=Internet2/CN=InCommon RSA Server CA 2/C=US/ST=California/O=Energy Sciences Network/CN=sense-o-dev.es.net"
+  permissions: w
+senseoeast:
+  full_dn: "/C=US/O=Internet2/CN=InCommon RSA Server CA 2/C=US/ST=California/O=Energy Sciences Network/CN=sense-o-east.es.net"
   permissions: w

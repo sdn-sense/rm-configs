@@ -20,3 +20,12 @@ mghpcc_fe:
 mghpcc_dtn:
   full_dn: "/C=US/O=Let's Encrypt/CN=R11/CN=nrp-sense01-rnd-mghpcc.nrp-nautilus.io"
   permissions: w
+senseoprod:
+  full_dn: "/C=US/O=Internet2/CN=InCommon RSA Server CA 2/C=US/ST=California/O=Energy Sciences Network/CN=sense-o.es.net"
+  permissions: w
+senseodev:
+  full_dn: "/C=US/O=Internet2/CN=InCommon RSA Server CA 2/C=US/ST=California/O=Energy Sciences Network/CN=sense-o-dev.es.net"
+  permissions: w
+senseoeast:
+  full_dn: "/C=US/O=Internet2/CN=InCommon RSA Server CA 2/C=US/ST=California/O=Energy Sciences Network/CN=sense-o-east.es.net"
+  permissions: w
