@@ -1,6 +1,6 @@
 ---
 sdscsense:
-  full_dn: "/C=US/O=Let's Encrypt/CN=.*.nrp-nautilus.io"
+  full_dn: "/C=US/O=Let's Encrypt/CN=R[0-9]+/CN=sense-prpdev.nrp-nautilus.io"
   permissions: w
 autogole_monitoring:
   full_dn: "/C=US/O=Let's Encrypt/CN=R[0-9]+/CN=autogole-grafana.nrp-nautilus.io"

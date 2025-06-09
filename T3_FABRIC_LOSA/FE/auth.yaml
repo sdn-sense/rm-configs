@@ -11,9 +11,6 @@ orchestrator:
 orchestrator1:
   full_dn: "/C=US/ST=MI/L=Ann Arbor/O=Internet2/OU=InCommon/CN=InCommon RSA Server CA/C=US/ST=California/O=Energy Sciences Network/CN=sense-o.es.net"
   permissions: w
-fecert:
-  full_dn: "/C=US/O=Let's Encrypt/CN=R11/CN=sense-losa-fabric.nrp-nautilus.io"
-  permissions: w
 senseoprod:
   full_dn: "/C=US/O=Internet2/CN=InCommon RSA Server CA 2/C=US/ST=California/O=Energy Sciences Network/CN=sense-o.es.net"
   permissions: w

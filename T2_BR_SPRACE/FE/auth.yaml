@@ -1,7 +1,4 @@
 ---
-siterm:
-  full_dn: "/C=US/ST=California/L=Pasadena/O=Caltech/CN=sdn-sense.dev/C=BR/ST=Sprace/L=Sprace/O=Sprace/CN=sprace02.redclara.net"
-  permissions: w
 orchestrator:
   full_dn: "/C=US/ST=California/L=Berkeley/O=LBNL/OU=ESnet/CN=sense-o.es.net/C=US/ST=California/L=Berkeley/O=LBNL/CN=sense-o.es.net"
   permissions: w

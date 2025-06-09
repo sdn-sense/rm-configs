@@ -11,9 +11,6 @@ orchestrator:
 orchestrator1:
   full_dn: "/C=US/ST=MI/L=Ann Arbor/O=Internet2/OU=InCommon/CN=InCommon RSA Server CA/C=US/ST=California/O=Energy Sciences Network/CN=sense-o.es.net"
   permissions: w
-fe:
-  full_dn: "/C=US/O=Let's Encrypt/CN=R10/CN=sense-prpdev.nrp-nautilus.io"
-  permissions: w
 rucio:
   full_dn: "/C=US/O=Internet2/CN=InCommon RSA IGTF Server CA 3/DC=org/DC=incommon/C=US/ST=California/O=University of California, San Diego/CN=rucio-sense.t2.ucsd.edu"
   permissions: w
