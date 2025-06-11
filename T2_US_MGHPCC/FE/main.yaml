@@ -88,3 +88,12 @@ junos_s0:
       vlan_range:
         - 3912-3920
       wanlink: true
+    "sense-mghpcc":
+      capacity: 400000
+      desttype: switch
+      vlan_range:
+        - 3100-3109
+      realportname: ae4
+      wanlink: true
+
+
