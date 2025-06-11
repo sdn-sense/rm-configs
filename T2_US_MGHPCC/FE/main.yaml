@@ -81,3 +81,19 @@ junos_s0:
       wanlink: true
     "ae2":
       capacity: 400000
+    "ae4":
+      capacity: 400000
+      desttype: switch
+      vlan_range:
+        - 3100-3109
+      wanlink: true
+    "sense-mghpcc":
+      capacity: 400000
+      desttype: switch
+      vlan_range:
+        - 3912-3920
+      realportname: ae4
+      isAlias: urn:ogf:network:stack-fabric:2024:topology:node+MASS:port+SENSE-MGHPCC
+      wanlink: true
+
+
