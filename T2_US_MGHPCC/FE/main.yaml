@@ -70,6 +70,7 @@ junos_s0:
   vlan_mtu: 9214
   vlan_range:
     - 3901-3920
+    - 3100-3109
   allports: false
   allvlans: false
   snmp_monitoring: false
