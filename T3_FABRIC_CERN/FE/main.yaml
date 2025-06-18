@@ -86,6 +86,7 @@ frr_s0:
   rst: frr_s0
   rsts_enabled: ipv6
   private_asn: 64518
+  bgpmp: true
   vlan_mtu: 9000
   ports:
     e1:
