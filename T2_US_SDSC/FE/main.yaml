@@ -1,6 +1,6 @@
 ---
 general:
-  logLevel: DEBUG
+  logLevel: INFO
   sites:
     - T2_US_SDSC
   webdomain: https://sense-prpdev.nrp-nautilus.io:443
