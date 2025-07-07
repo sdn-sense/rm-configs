@@ -3,10 +3,10 @@ general:
   ip: "2602:fcfb:1d:fff1::5"
   sitename: [T3_FABRIC_CERN]
   webdomain: "https://sense-cern-fabric.nrp-nautilus.io:443"
-  node_exporter: "cern-sub1-host3.exp.fabric-testbed.net:9100"
+  node_exporter: "cern1-sub1-host3.exp.fabric-testbed.net:9100"
 agent: 
   interfaces: [enp10s0, enp9s0]
-  hostname: cern-sub1-host3.exp.fabric-testbed.net
+  hostname: cern1-sub1-host3.exp.fabric-testbed.net
 enp10s0:
   port: host3sub2
   switch: frr_s0
