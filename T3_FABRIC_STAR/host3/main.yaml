@@ -1,14 +1,14 @@
 ---
 general:
-  ip: "2602:fcfb:12:fff1::2"
-  sitename: [T3_FABRIC_LOSA]
-  webdomain: "https://sense-losa-fabric.nrp-nautilus.io:443"
-  node_exporter: "losa-sub1-host1.exp.fabric-testbed.net:9100"
+  ip: "2602:fcfb:3:fff1::4"
+  sitename: [T3_FABRIC_STAR]
+  webdomain: "https://sense-star-fabric.nrp-nautilus.io:443"
+  node_exporter: "star-sub1-host3.exp.fabric-testbed.net:9100"
 agent: 
-  interfaces: [enp13s0, enp11s0]
-  hostname: losa-sub1-host1.exp.fabric-testbed.net
-enp13s0:
-  port: host1sub2
+  interfaces: [enp11s0, enp12s0]
+  hostname: star-sub1-host3.exp.fabric-testbed.net
+enp11s0:
+  port: host3sub2
   switch: frr_s0
   shared: false
   intf_max: 100000
@@ -31,8 +31,8 @@ enp13s0:
     - "fc00:0000:0800::/40"
     - "fc00:0000:0900::/40"
     - "fc00:0000:ff00::/40"
-enp11s0:
-  port: host1sub3
+enp12s0:
+  port: host3sub3
   switch: frr_s0
   shared: false
   intf_max: 100000
@@ -59,10 +59,10 @@ qos:
   policy: privatens
   qos_params: "mtu 9000 mpu 9000 quantum 200000 burst 300000 cburst 300000 qdisc sfq balanced"
   interfaces:
-    enp13s0:
-      ipv6_range: 2602:fcfb:1d:fff2::/64
-      master_intf: enp13s0
     enp11s0:
-      ipv6_range: 2602:fcfb:1d:fff3::/64
+      ipv6_range: 2602:fcfb:3:fff2::/64
       master_intf: enp11s0
+    enp12s0:
+      ipv6_range: 2602:fcfb:3:fff3::/64
+      master_intf: enp12s0
 

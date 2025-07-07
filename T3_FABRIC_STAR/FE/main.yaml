@@ -2,23 +2,23 @@
 general:
   logLevel: DEBUG
   sites: 
-    - "T3_FABRIC_LOSA"
-  webdomain: "https://sense-losa-fabric.nrp-nautilus.io:443"
+    - "T3_FABRIC_STAR"
+  webdomain: "https://sense-star-fabric.nrp-nautilus.io:443"
   privatedir: /opt/siterm/config/
-T3_FABRIC_LOSA:
-  domain: sense-losa-fabric-testbed.net
+T3_FABRIC_STAR:
+  domain: sense-star-fabric-testbed.net
   latitude: 32.882648
   longitude: -117.234579
   plugin: ansible
-  privatedir: /opt/siterm/config/T3_FABRIC_LOSA/
-  vpp_exporter: "[2602:fcfb:12:fff0::2]:1234"
+  privatedir: /opt/siterm/config/T3_FABRIC_STAR/
+  vpp_exporter: "[2602:fcfb:3:fff0::2]:1234"
   ipv6-subnet-pool:
-    - 2602:fcfb:0012:fff2::/64
-    - 2602:fcfb:0012:fff3::/64
+    - 2602:fcfb:3:fff2::/64
+    - 2602:fcfb:3:fff3::/64
   metadata:
     xrootd:
-      2602:fcfb:0012:fff2::/64 : losa-sub2-host1.exp.fabric-testbed.net:1094
-      2602:fcfb:0012:fff3::/64 : losa-sub3-host1.exp.fabric-testbed.net:1094
+      2602:fcfb:3:fff2::/64 : star-sub2-host1.exp.fabric-testbed.net:1094
+      2602:fcfb:3:fff3::/64 : star-sub3-host1.exp.fabric-testbed.net:1094
   ipv6-address-pool:
     - "fc00:0000:0100::/40"
     - "fc00:0000:0200::/40"
@@ -37,19 +37,21 @@ frr_s0:
   vsw: frr_s0
   rst: frr_s0
   rsts_enabled: ipv6
-  private_asn: 64519
+  private_asn: REPLACEME
   vlan_mtu: 9000
   ports:
     # HundredGigE0/0/0/0
+    # Looks like these ports are not enabled inside Fabric driver
     e2:
       capacity: 100000
       desttype: switch
-      isAlias: urn:ogf:network:stack-fabric:2024:topology:node+LOSA:port+LOSA-HU0-wk2-pci3-p1
+      isAlias: urn:ogf:network:stack-fabric:2024:topology:node+STAR:port+STAR-update-me-0-0-0-0
     # HundredGigE0/0/0/2
+    # Looks like these ports are not enabled inside Fabric driver
     e3:
       capacity: 100000
       desttype: switch
-      isAlias: urn:ogf:network:stack-fabric:2024:topology:node+LOSA:port+LOSA-HU2-wk2-pci3-p2
+      isAlias: urn:ogf:network:stack-fabric:2024:topology:node+STAR:port+STAR-update-me-0-0-0-2
   vlan_range:
     - 800-1000
   allports: false

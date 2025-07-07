@@ -1,21 +1,26 @@
 ---
-7b19c441e9f5e4af805251e46f3c5300:
+960d96821d12b5300ad2e2c80ce0c3a1:
   config: FE/
   maintainer: "Justas Balcas"
   status: development
   type: FE
 2573e836bbd757bffe91abd9d0273c1b:
   config: host1/
-  maintainer: "Mazahir Hussain"
+  maintainer: "Justas Balcas"
   status: development
   type: Agent
 35ba38a1e8b80df9a820cbf59745e59d:
   config: host2/
-  maintainer: "Mazahir Hussain"
+  maintainer: "Justas Balcas"
   status: development
   type: Agent
-6de77c4422611793b4062b1709977eba:
+2b389eb729d6bcbaf459e15192739bda:
   config: host3/
-  maintainer: "Mazahir Hussain"
+  maintainer: "Justas Balcas"
+  status: development
+  type: Agent
+d14db2e56daef0972530d6a9959677b7:
+  config: host4/
+  maintainer: "Justas Balcas"
   status: development
   type: Agent
