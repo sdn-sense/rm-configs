@@ -46,12 +46,12 @@ frr_s0:
     e2:
       capacity: 100000
       desttype: switch
-      isAlias: 
+      isAlias: urn:ogf:network:stack-fabric:2024:topology:node+CERN:port+CERN-HU16-wk4-pci3-p1
     # HundredGigE0/0/0/18
     e3:
       capacity: 100000
       desttype: switch
-      isAlias: 
+      isAlias: urn:ogf:network:stack-fabric:2024:topology:node+CERN:port+CERN-HU18-wk4-pci3-p2
   vlan_range:
     - 800-1000
   allports: false

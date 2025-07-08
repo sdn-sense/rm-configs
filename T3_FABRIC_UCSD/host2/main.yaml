@@ -1,14 +1,14 @@
 ---
 general:
-  ip: "2602:fcfb:1d:fff1::3"
-  sitename: [T3_FABRIC_CERN]
-  webdomain: "https://sense-cern-fabric.nrp-nautilus.io:443"
-  node_exporter: "cern1-sub1-host1.exp.fabric-testbed.net:9100"
+  ip: "2602:fcfb:d:fff1::3"
+  sitename: [T3_FABRIC_UCSD]
+  webdomain: "https://sense-ucsd-fabric.nrp-nautilus.io:443"
+  node_exporter: "ucsd-sub1-host2.exp.fabric-testbed.net:9100"
 agent: 
-  interfaces: [enp7s0, enp8s0]
-  hostname: cern1-sub1-host1.exp.fabric-testbed.net
-enp7s0:
-  port: host1sub2
+  interfaces: [enp12s0, enp14s0]
+  hostname: ucsd-sub1-host2.exp.fabric-testbed.net
+enp12s0:
+  port: host2sub2
   switch: frr_s0
   shared: false
   intf_max: 100000
@@ -31,8 +31,8 @@ enp7s0:
     - "fc00:0000:0800::/40"
     - "fc00:0000:0900::/40"
     - "fc00:0000:ff00::/40"
-enp8s0:
-  port: host1sub3
+enp14s0:
+  port: host2sub3
   switch: frr_s0
   shared: false
   intf_max: 100000
@@ -59,10 +59,10 @@ qos:
   policy: hostlevel
   qos_params: "mtu 9000 mpu 9000 quantum 200000 burst 300000 cburst 300000 qdisc sfq balanced"
   interfaces:
-    enp7s0:
-      ipv6_range: 2602:fcfb:1d:fff2::/64
-      master_intf: enp7s0
-    enp8s0:
-      ipv6_range: 2602:fcfb:1d:fff3::/64
-      master_intf: enp8s0
+    enp12s0:
+      ipv6_range: 2602:fcfb:d:fff2::/64
+      master_intf: enp12s0
+    enp14s0:
+      ipv6_range: 2602:fcfb:d:fff3::/64
+      master_intf: enp14s0
 

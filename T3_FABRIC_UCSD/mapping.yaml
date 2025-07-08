@@ -4,3 +4,18 @@
   maintainer: "Justas Balcas"
   status: development
   type: FE
+ucsde836bbd757bffe91abd9d0273c1b:
+  config: host1/
+  maintainer: "Mazahir Hussain"
+  status: development
+  type: Agent
+ucsd38a1e8b80df9a820cbf59745e59d:
+  config: host2/
+  maintainer: "Mazahir Hussain"
+  status: development
+  type: Agent
+ucsd7c4422611793b4062b1709977eba:
+  config: host3/
+  maintainer: "Mazahir Hussain"
+  status: development
+  type: Agent
