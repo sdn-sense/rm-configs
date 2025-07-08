@@ -26,7 +26,6 @@ cisconx9:
       # isAlias: urn:ogf:network
       vlan_range:
         - 3985-3989
-      realportname: Ethernet1/4
       wanlink: true
     Ethernet1/6:
       capacity: 10000
@@ -34,7 +33,6 @@ cisconx9:
       # isAlias: 
       vlan_range:
         - 3985-3989
-      realportname: Ethernet1/6
       wanlink: true
   vlan_range:
     - 3985-3989
