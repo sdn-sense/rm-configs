@@ -1,0 +1,6 @@
+---
+123456789abcdefghijklmnopqrstuvw:
+  config: FE/
+  maintainer: "Justas Balcas"
+  status: dev
+  type: FE
