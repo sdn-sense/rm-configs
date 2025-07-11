@@ -41,3 +41,6 @@ senseodev:
 senseoeast:
   full_dn: "/C=US/O=Internet2/CN=InCommon RSA Server CA 2/C=US/ST=California/O=Energy Sciences Network/CN=sense-o-east.es.net"
   permissions: w
+cmssense:
+  full_dn: "/C=US/O=Let's Encrypt/CN=R10/CN=cmssense-prometheus.tier2-lb.ultralight.org"
+  permissions: r
