@@ -3,7 +3,7 @@ general:
   logLevel: DEBUG
   sites: 
     - "T3_FABRIC_CERN1"
-  webdomain: "https://sense-cern1-fabric.nrp-nautilus.io:443"
+  webdomain: "https://[2602:fcfb:1d:ffe0::2]:443"
   privatedir: /opt/siterm/config/
 T3_FABRIC_CERN1:
   domain: sense-cern1-fabric-testbed.net

@@ -2,7 +2,7 @@
 general:
   ip: "2602:fcfb:d:fff1::3"
   sitename: [T3_FABRIC_UCSD]
-  webdomain: "https://sense-ucsd-fabric.nrp-nautilus.io:443"
+  webdomain: "https://[2602:fcfb:d:fff0::2]:443"
   node_exporter: "ucsd-sub1-host2.exp.fabric-testbed.net:9100"
 agent: 
   interfaces: [enp12s0, enp14s0]

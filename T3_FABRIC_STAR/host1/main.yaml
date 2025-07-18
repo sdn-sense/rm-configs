@@ -2,7 +2,7 @@
 general:
   ip: "2602:fcfb:3:fff1::2"
   sitename: [T3_FABRIC_STAR]
-  webdomain: "https://sense-star-fabric.nrp-nautilus.io:443"
+  webdomain: "https://[2602:fcfb:3:fff0::2]:443"
   node_exporter: "star-sub1-host1.exp.fabric-testbed.net:9100"
 agent: 
   interfaces: [enp7s0, enp9s0]

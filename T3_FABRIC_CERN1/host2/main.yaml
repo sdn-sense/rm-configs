@@ -2,7 +2,7 @@
 general:
   ip: "2602:fcfb:1d:fff1::4"
   sitename: [T3_FABRIC_CERN]
-  webdomain: "https://sense-cern-fabric.nrp-nautilus.io:443"
+  webdomain: "https://[2602:fcfb:1d:ffe0::2]:443"
   node_exporter: "cern1-sub1-host2.exp.fabric-testbed.net:9100"
 agent: 
   interfaces: [enp11s0, enp8s0]
