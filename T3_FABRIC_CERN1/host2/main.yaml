@@ -5,9 +5,9 @@ general:
   webdomain: "https://[2602:fcfb:1d:ffe0::2]:443"
   node_exporter: "cern1-sub1-host2.exp.fabric-testbed.net:9100"
 agent: 
-  interfaces: [enp11s0, enp8s0]
+  interfaces: [enp13s0, enp12s0]
   hostname: cern1-sub1-host2.exp.fabric-testbed.net
-enp11s0:
+enp13s0:
   port: host2sub2
   switch: frr_s0
   shared: false
@@ -31,7 +31,7 @@ enp11s0:
     - "fc00:0000:0800::/40"
     - "fc00:0000:0900::/40"
     - "fc00:0000:ff00::/40"
-enp8s0:
+enp12s0:
   port: host2sub3
   switch: frr_s0
   shared: false
@@ -59,10 +59,10 @@ qos:
   policy: privatens
   qos_params: "mtu 9000 mpu 9000 quantum 200000 burst 300000 cburst 300000 qdisc sfq balanced"
   interfaces:
-    enp11s0:
+    enp13s0:
       ipv6_range: 2602:fcfb:1d:fff2::/64
-      master_intf: enp11s0
-    enp8s0:
+      master_intf: enp13s0
+    enp12s0:
       ipv6_range: 2602:fcfb:1d:fff3::/64
-      master_intf: enp8s0
+      master_intf: enp12s0
 
