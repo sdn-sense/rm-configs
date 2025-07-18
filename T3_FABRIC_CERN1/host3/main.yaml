@@ -1,8 +1,8 @@
 ---
 general:
   ip: "2602:fcfb:1d:fff1::5"
-  sitename: [T3_FABRIC_CERN]
-  webdomain: "https://[2602:fcfb:1d:ffe0::2]:443"
+  sitename: [T3_FABRIC_CERN1]
+  webdomain: "https://cern1-sub1-gw1.exp.fabric-testbed.net:443"
   node_exporter: "cern1-sub1-host3.exp.fabric-testbed.net:9100"
 agent: 
   interfaces: [enp7s0, enp12s0]

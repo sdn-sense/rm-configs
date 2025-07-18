@@ -2,7 +2,7 @@
 general:
   ip: "2602:fcfb:1f:fff1::2"
   sitename: [T3_FABRIC_AMST]
-  webdomain: "https://[2602:fcfb:1f:fff1::1]:443"
+  webdomain: "https://amst-sub1-gw1.exp.fabric-testbed.net:443"
   node_exporter: "amst-sub1-host1.exp.fabric-testbed.net:9100"
 agent: 
   interfaces: [enp9s0, enp14s0]

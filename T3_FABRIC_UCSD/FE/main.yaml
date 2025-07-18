@@ -3,7 +3,7 @@ general:
   logLevel: DEBUG
   sites: 
     - "T3_FABRIC_UCSD"
-  webdomain: "https://[2602:fcfb:d:fff0::2]:443"
+  webdomain: "https://ucsd-sub1-gw1.exp.fabric-testbed.net:443"
   probes: ["https_v6_siterm_2xx"]
   privatedir: /opt/siterm/config/
 T3_FABRIC_UCSD:
@@ -12,7 +12,7 @@ T3_FABRIC_UCSD:
   longitude: -117.234579
   plugin: ansible
   privatedir: /opt/siterm/config/T3_FABRIC_UCSD/
-  vpp_exporter: "[2602:fcfb:d:fff0::2]:1234"
+  vpp_exporter: "ucsd-sub1-gw1.exp.fabric-testbed.net:1234"
   year: 2024
   ipv6-subnet-pool:
     - 2602:fcfb:000d:fff2::/64
