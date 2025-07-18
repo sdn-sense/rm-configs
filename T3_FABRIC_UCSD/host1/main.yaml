@@ -2,7 +2,7 @@
 general:
   ip: "2602:fcfb:d:fff1::2"
   sitename: [T3_FABRIC_UCSD]
-  webdomain: "https://[2602:fcfb:d:fff0::2]:443"
+  webdomain: "https://ucsd-sub1-gw1.exp.fabric-testbed.net:443"
   node_exporter: "ucsd-sub1-host1.exp.fabric-testbed.net:9100"
 agent: 
   interfaces: [enp14s0, enp9s0]
