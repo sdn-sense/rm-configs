@@ -38,7 +38,7 @@ frr_s0:
   vsw: frr_s0
   rst: frr_s0
   rsts_enabled: ipv6
-  private_asn: 64519
+  private_asn: 64526
   vlan_mtu: 9000
   ports:
     # HundredGigE0/0/0/0
