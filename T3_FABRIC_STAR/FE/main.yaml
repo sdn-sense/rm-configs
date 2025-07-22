@@ -46,13 +46,13 @@ frr_s0:
     e2:
       capacity: 100000
       desttype: switch
-      isAlias: urn:ogf:network:stack-fabric:2024:topology:node+STAR:port+STAR-update-me-0-0-0-0
+      isAlias: urn:ogf:network:stack-fabric:2024:topology:node+STAR:port+STAR-HU0-wk3-pci3-p1
     # HundredGigE0/0/0/2
     # Looks like these ports are not enabled inside Fabric driver
     e3:
       capacity: 100000
       desttype: switch
-      isAlias: urn:ogf:network:stack-fabric:2024:topology:node+STAR:port+STAR-update-me-0-0-0-2
+      isAlias: urn:ogf:network:stack-fabric:2024:topology:node+STAR:port+STAR-HU2-wk3-pci3-p2
   vlan_range:
     - 800-1000
   allports: false
