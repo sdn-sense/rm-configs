@@ -42,12 +42,12 @@ frr_s0:
   vlan_mtu: 9000
   ports:
     # HundredGigE0/0/0/0
-    e2:
+    e1:
       capacity: 100000
       desttype: switch
       isAlias: urn:ogf:network:stack-fabric:2024:topology:node+NEWY:port+NEWY-HU0-wk1-pci3-p1
     # HundredGigE0/0/0/2
-    e3:
+    e2:
       capacity: 100000
       desttype: switch
       isAlias: urn:ogf:network:stack-fabric:2024:topology:node+NEWY:port+NEWY-HU2-wk1-pci3-p2

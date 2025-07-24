@@ -42,14 +42,12 @@ frr_s0:
   vlan_mtu: 9000
   ports:
     # HundredGigE0/0/0/0
-    # Looks like these ports are not enabled inside Fabric driver
-    e2:
+    e1:
       capacity: 100000
       desttype: switch
       isAlias: urn:ogf:network:stack-fabric:2024:topology:node+STAR:port+STAR-HU0-wk3-pci3-p1
     # HundredGigE0/0/0/2
-    # Looks like these ports are not enabled inside Fabric driver
-    e3:
+    e2:
       capacity: 100000
       desttype: switch
       isAlias: urn:ogf:network:stack-fabric:2024:topology:node+STAR:port+STAR-HU2-wk3-pci3-p2
