@@ -56,7 +56,7 @@ enp9s0:
     - "fc00:0000:0900::/40"
     - "fc00:0000:ff00::/40"
 qos:
-  policy: privatens
+  policy: hostlevel
   qos_params: "mtu 9000 mpu 9000 quantum 200000 burst 300000 cburst 300000 qdisc sfq balanced"
   interfaces:
     enp7s0:
