@@ -4,6 +4,7 @@ general:
   sites:
     - NRM_CENICDEV
   webdomain: https://sense-dev-ladowntown.nrp-nautilus.io:443
+  fastapi: true
   probes:
     - https_v4_siterm_2xx
     - icmp_v4

@@ -4,6 +4,7 @@ general:
   sites: 
     - "T2_US_SDSC_OASISDEV"
   webdomain: "https://sense-dev-oasis.nrp-nautilus.io:443"
+  fastapi: true
   probes: ["https_v4_siterm_2xx"]
   privatedir: /opt/siterm/config/
 T2_US_SDSC_OASISDEV:

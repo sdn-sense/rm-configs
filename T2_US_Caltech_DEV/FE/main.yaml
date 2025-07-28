@@ -4,6 +4,7 @@ general:
   sites:
     - T2_US_Caltech_DEV
   webdomain: "https://sense-dev-caltechprod.nrp-nautilus.io:443"
+  fastapi: true
   probes:
     - https_v4_siterm_2xx
     - icmp_v4
