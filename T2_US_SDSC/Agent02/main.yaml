@@ -62,4 +62,16 @@ qos:
   policy: privatens
   qos_params: "mtu 9000 mpu 9000 quantum 200000 burst 300000 cburst 300000 qdisc sfq balanced"
   class_max: true
-  interfaces: {}
+  interfaces:
+    vlan.4071:
+      ipv6_range: 2001:48d0:3001:111::0/64
+      master_intf: enp168s0np0
+    vlan.4072:
+      ipv6_range: 2001:48d0:3001:112::0/64
+      master_intf: enp168s0np0
+    vlan.4073:
+      ipv6_range: 2001:48d0:3001:113::0/64
+      master_intf: enp168s0np0
+    vlan.4074:
+      ipv6_range: 2001:48d0:3001:114::0/64
+      master_intf: enp168s0np0
