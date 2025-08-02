@@ -13,6 +13,7 @@ ens1f0np0:
   switch: sn3700_s0
   shared: false
   intf_max: 200000
+  allowOvercommit: false
   bwParams:
     unit: "mbps"
     type: "guaranteedCapped"
@@ -38,6 +39,7 @@ enp168s0np0:
   switch: edgecore_s0
   shared: false
   intf_max: 400000
+  allowOvercommit: false
   bwParams:
     unit: "mbps"
     type: "guaranteedCapped"

@@ -12,6 +12,7 @@ net01:
   switch: dellos10_s0
   shared: false
   intf_max: 100000
+  allowOvercommit: false
   bwParams:
     unit: "mbps"
     type: "guaranteedCapped"
@@ -37,6 +38,7 @@ enp1s0np0:
   switch: edgecore_s0
   shared: false
   intf_max: 400000
+  allowOvercommit: false
   bwParams:
     unit: "mbps"
     type: "guaranteedCapped"
