@@ -8,6 +8,7 @@ general:
 agent: 
   interfaces: [ens1f0np0, enp168s0np0]
   hostname: k8s-gen5-01.sdsc.optiputer.net
+  noqos: true
 ens1f0np0:
   port: Ethernet108
   switch: sn3700_s0
