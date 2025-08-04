@@ -1,24 +1,18 @@
 --- 
 general:
   logLevel: DEBUG
-  sites: 
-    - "T2_US_SDSC_OASISDEV"
+  sitename: T2_US_SDSC_OASISDEV
   webdomain: "https://sense-dev-oasis.nrp-nautilus.io:443"
   fastapi: true
   probes: ["https_v4_siterm_2xx"]
-  privatedir: /opt/siterm/config/
 T2_US_SDSC_OASISDEV:
   domain: sense-oasis-nrp-nautilus-dev.io
   latitude: 32.882648
   longitude: -117.234579
   plugin: raw
-  privatedir: /opt/siterm/config/T2_US_SDSC_OASISDEV/
-  year: 2025
   switch:
     - "oasis"
 oasis:
-  vsw: "oasis"
-  vswmp: "oasis_mp"
   vlan_range: [3611-3619]
   ports:
     "Pc502":

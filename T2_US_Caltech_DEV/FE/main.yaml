@@ -1,8 +1,7 @@
 ---
 general:
   logLevel: DEBUG
-  sites:
-    - T2_US_Caltech_DEV
+  sitename: T2_US_Caltech_DEV
   webdomain: "https://sense-dev-caltechprod.nrp-nautilus.io:443"
   fastapi: true
   probes:
@@ -13,28 +12,6 @@ T2_US_Caltech_DEV:
   latitude: 34.1377
   longitude: 118.1253
   plugin: ansible
-  default_params:
-    starttime:
-      seconds: 10
-      minutes: 0
-      hours: 0
-      days: 0
-      weeks: 0
-      months: 0
-      years: 0
-    endtime:
-      seconds: 0
-      minutes: 0
-      hours: 0
-      days: 0
-      weeks: 0
-      months: 3
-      years: 0
-    bw:
-      type: bestEffort
-      unit: mbps
-      minCapacity: 100
-  privatedir: /opt/siterm/config/T2_US_Caltech_DEV/
   ipv6-subnet-pool:
     - 2605:d9c0:6:2640::/64
     - 2605:d9c0:6:2641::/64
@@ -70,44 +47,12 @@ T2_US_Caltech_DEV:
       2605:d9c0:6:2653::/64: redir-14.t2-sense.ultralight.org:1094
       2605:d9c0:6:2654::/64: redir-15.t2-sense.ultralight.org:1094
       2605:d9c0:6:2655::/64: redir-16.t2-sense.ultralight.org:1094
-  ipv6-address-pool:
-    - "fc00:0000:0100::/40"
-    - "fc00:0000:0200::/40"
-    - "fc00:0000:0300::/40"
-    - "fc00:0000:0400::/40"
-    - "fc00:0000:0500::/40"
-    - "fc00:0000:0600::/40"
-    - "fc00:0000:0700::/40"
-    - "fc00:0000:0800::/40"
-    - "fc00:0000:0900::/40"
-    - "fc00:0000:ff00::/40"
-  ipv4-address-pool:
-    - 10.251.85.0/24
-    - 10.251.86.0/24
-    - 10.251.87.0/24
-    - 10.251.88.0/24
-    - 10.251.89.0/24
-    - 172.16.3.0/30
-    - 172.17.3.0/30
-    - 172.18.3.0/30
-    - 172.19.3.0/30
-    - 172.31.10.0/24
-    - 172.31.11.0/24
-    - 172.31.12.0/24
-    - 172.31.13.0/24
-    - 172.31.14.0/24
-    - 172.31.15.0/24
-  year: 2025
   switch:
     - dellos10_s0
     - dellos10_s1
     - edgecore_s0
 dellos10_s0:
-  vsw: dellos10_s0
-  vswmp: dellos10_s0_mp
-  rst: dellos10_s0
   rsts_enabled: ipv4,ipv6
-  bgpmp: true
   private_asn: 64516
   vrf: Vrf_sense01
   vlan_mtu: 9216
@@ -128,11 +73,7 @@ dellos10_s0:
   vlan_range:
     - 3611-3619
   allports: false
-  allvlans: false
-  snmp_monitoring: true
 edgecore_s0:
-  vsw: edgecore_s0
-  vswmp: edgecore_s0_mp
   vlan_mtu: 9100
   ports:
     Ethernet0: {}
@@ -172,12 +113,7 @@ edgecore_s0:
   vlan_range:
     - 3611-3619
   allports: false
-  allvlans: false
-  snmp_monitoring: true
 dellos10_s1:
-  vsw: dellos10_s1
-  vswmp: dellos10_s1_mp
-  rsts_enabled: ipv4,ipv6
   vlan_mtu: 9216
   ports:
     Ethernet 1/1/1:1: {}
@@ -193,5 +129,3 @@ dellos10_s1:
   vlan_range:
     - 3611-3619
   allports: false
-  allvlans: false
-  snmp_monitoring: true
