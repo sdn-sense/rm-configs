@@ -8,7 +8,7 @@ general:
 agent: 
   interfaces: [enp65s0f1np1]
   hostname: node-2-8.sdsc.optiputer.net
-  noqos: true
+  noqos: false
 enp65s0f1np1:
   port: Ethernet132
   switch: edgecore_s0

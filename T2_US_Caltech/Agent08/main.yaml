@@ -7,7 +7,7 @@ general:
 agent: 
   interfaces: [bondpublic, enp1s0np0]
   hostname: transfer-18.ultralight.org
-  noqos: true
+  noqos: false
 bondpublic:
   port: ethernet1/1/6:1
   switch: dellos10_s0

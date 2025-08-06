@@ -7,7 +7,7 @@ general:
 agent: 
   interfaces: [net01, enp1s0np0]
   hostname: transfer-11.ultralight.org
-  noqos: true
+  noqos: false
 net01:
   port: Ethernet 1/1/1:1
   switch: dellos10_s1
