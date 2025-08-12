@@ -15,6 +15,7 @@ NRM_CENICDEV:
   switch:
     - aristaeos_s0
 aristaeos_s0:
+  rate_limit: true
   vlan_range:
     - 3611-3619
   ports:
