@@ -45,7 +45,7 @@ aristaeos_s0:
     - 3110-3139
   ports:
     Port-Channel501:
-      capacity: 100000
+      capacity: 400000
       desttype: switch
       isAlias: urn:ogf:network:tier2.ultralight.org:2024:dellos10_s0:Port-channel_102
       vlan_range:
@@ -56,7 +56,7 @@ aristaeos_s0:
         - 3911-3912
       wanlink: true
     Port-Channel502:
-      capacity: 100000
+      capacity: 400000
       desttype: switch
       isAlias: urn:ogf:network:sense-oasis-nrp-nautilus.io:2020:oasis:Pc502
       vlan_range:
