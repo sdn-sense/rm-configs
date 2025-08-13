@@ -89,7 +89,7 @@ aristaeos_s0:
         - 3846-3849
       wanlink: true
     Ethernet4/1:
-      capacity: 10000
+      capacity: 400000
       desttype: switch
       isAlias: urn:ogf:network:tier2.ultralight.org:2024:edgecore_s0:Ethernet208
       vlan_range:
@@ -100,7 +100,7 @@ aristaeos_s0:
         - 3911-3912
       wanlink: true
     Ethernet5/1:
-      capacity: 10000
+      capacity: 400000
       desttype: switch
       isAlias: urn:ogf:network:tier2.ultralight.org:2024:edgecore_s0:Ethernet216
       vlan_range:
@@ -111,7 +111,7 @@ aristaeos_s0:
         - 3911-3912
       wanlink: true
     Ethernet6/1:
-      capacity: 10000
+      capacity: 400000
       desttype: switch
       isAlias: urn:ogf:network:tier2.ultralight.org:2024:edgecore_s0:Ethernet224
       vlan_range:
@@ -149,7 +149,7 @@ aristaeos_s0:
         - 3350-3359
       wanlink: true
     Ethernet12/1:
-      capacity: 10000
+      capacity: 400000
       desttype: switch
       isAlias: urn:ogf:network:tier2.ultralight.org:2024:edgecore_s0:Ethernet232
       vlan_range:
@@ -160,7 +160,7 @@ aristaeos_s0:
         - 3911-3912
       wanlink: true
     Ethernet13/1:
-      capacity: 100000
+      capacity: 400000
       desttype: switch
       isAlias: urn:ogf:network:es.net:2013::losa-cr6:2_1_c4_1:+
       vlan_range:
@@ -171,18 +171,4 @@ aristaeos_s0:
         - 3870-3883
         - 3911-3912
         - 3110-3139
-      wanlink: true
-    Ethernet20/1:
-      capacity: 400000
-      desttype: switch
-      isAlias: urn:ogf:network:stack-fabric:2024:topology:node+CIEN:port+FP3-CIEN
-      vlan_range:
-        - 1784-1788
-      wanlink: true
-    Ethernet21/1:
-      capacity: 400000
-      desttype: switch
-      isAlias: urn:ogf:network:stack-fabric:2024:topology:node+CIEN:port+FP4-CIEN
-      vlan_range:
-        - 1789-1799
       wanlink: true
