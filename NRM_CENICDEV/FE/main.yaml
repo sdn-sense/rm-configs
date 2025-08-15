@@ -34,28 +34,28 @@ aristaeos_s0:
         - 3611-3619
       wanlink: true
     Ethernet4/1:
-      capacity: 400000
+      capacity: 100000
       desttype: switch
       isAlias: urn:ogf:network:tier2-dev.ultralight.org:2025:edgecore_s0:Ethernet208
       vlan_range:
         - 3611-3619
       wanlink: true
     Ethernet5/1:
-      capacity: 400000
+      capacity: 100000
       desttype: switch
       isAlias: urn:ogf:network:tier2-dev.ultralight.org:2025:edgecore_s0:Ethernet216
       vlan_range:
         - 3611-3619
       wanlink: true
     Ethernet6/1:
-      capacity: 400000
+      capacity: 100000
       desttype: switch
       isAlias: urn:ogf:network:tier2-dev.ultralight.org:2025:edgecore_s0:Ethernet224
       vlan_range:
         - 3611-3619
       wanlink: true
     Ethernet12/1:
-      capacity: 400000
+      capacity: 100000
       desttype: switch
       isAlias: urn:ogf:network:tier2-dev.ultralight.org:2025:edgecore_s0:Ethernet232
       vlan_range:
