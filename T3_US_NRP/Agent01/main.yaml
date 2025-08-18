@@ -1,17 +1,17 @@
 ---
 general:
-  ip: "67.58.53.140"
-  sitename: [T2_US_UCSD]
+  ip: "67.58.53.139"
+  sitename: [T2_US_NRP]
   webdomain: "https://sense-fe.nrp-nautilus.io"
   prometheus_federate: http://thanos-federate-proxy-service:9099/federate
-  prometheus_query: '{instance="k8s-igrok-02.calit2.optiputer.net", service="node-exporter"}'
+  prometheus_query: '{instance="k8s-igrok-01.calit2.optiputer.net", service="node-exporter"}'
 agent: 
   interfaces: [enp33s0f1np1]
-  hostname: k8s-igrok-02.calit2.optiputer.net
+  hostname: k8s-igrok-01.calit2.optiputer.net
 enp33s0f1np1:
   port: "1_2"
   shared: false
-  switch: s1
+  switch: s0
   intf_max: 10000
   bwParams:
     unit: "mbps"
