@@ -1,7 +1,7 @@
 ---
 general:
   ip: "190.103.184.119"
-  sitename: [T2_US_UCSD]
+  sitename: [T3_US_NRP]
   webdomain: "https://sense-fe.nrp-nautilus.io"
   prometheus_federate: http://thanos-federate-proxy-service:9099/federate
   prometheus_query: '{instance="k8s-ceph-02.ampath.net", service="node-exporter"}'
