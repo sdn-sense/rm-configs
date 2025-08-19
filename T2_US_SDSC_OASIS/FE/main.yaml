@@ -53,3 +53,9 @@ oasis:
       isAlias: "urn:ogf:network:calit2.optiputer.net:2020:prism-core:pwave"
       wanlink: True
       vlan_range: ["1779-1799", "3110-3139"]
+    "Pc752":
+      # Port-channel 752 to UCSD Tier2
+      capacity: 800000
+      isAlias: "urn:ogf:network:t2-us-ucsd.edu:2025:edgecore_s0:PortChannel752"
+      wanlink: True
+      vlan_range: ["1779-1799", "3600-3619"]

@@ -1,0 +1,79 @@
+---
+general:
+  logLevel: INFO
+  sites:
+    - T2_US_UCSD
+  webdomain: https://sense-t2-us-ucsd.nrp-nautilus.io:443
+  probes:
+    - https_v4_siterm_2xx
+    - icmp_v4
+T2_US_SDSC:
+  domain: t2-us-ucsd.edu
+  latitude: 32.882648
+  longitude: -117.234579
+  plugin: ansible
+  privatedir: /opt/siterm/config/T2_US_UCSD/
+  year: 2025
+  metadata:
+    xrootd:
+      2001:48d0:6020:f011::/64:  redir-f011.t2.ucsd.edu:1094
+      2001:48d0:6020:f012::/64:  redir-f012.t2.ucsd.edu:1094
+      2001:48d0:6020:f013::/64:  redir-f013.t2.ucsd.edu:1094
+      2001:48d0:6020:f014::/64:  redir-f014.t2.ucsd.edu:1094
+      2001:48d0:6020:f015::/64:  redir-f015.t2.ucsd.edu:1094
+      2001:48d0:6020:f016::/64:  redir-f016.t2.ucsd.edu:1094
+      2001:48d0:6020:f017::/64:  redir-f017.t2.ucsd.edu:1094
+      2001:48d0:6020:f018::/64:  redir-f018.t2.ucsd.edu:1094
+      2001:48d0:6020:f019::/64:  redir-f019.t2.ucsd.edu:1094
+      2001:48d0:6020:f01a::/64:  redir-f01a.t2.ucsd.edu:1094
+      2001:48d0:6020:f01b::/64:  redir-f01b.t2.ucsd.edu:1094
+      2001:48d0:6020:f01c::/64:  redir-f01c.t2.ucsd.edu:1094
+      2001:48d0:6020:f01d::/64:  redir-f01d.t2.ucsd.edu:1094
+      2001:48d0:6020:f01e::/64:  redir-f01e.t2.ucsd.edu:1094
+      2001:48d0:6020:f01f::/64:  redir-f01f.t2.ucsd.edu:1094
+  ipv6-subnet-pool:
+    - 2001:48d0:6020:f010::/64
+    - 2001:48d0:6020:f011::/64
+    - 2001:48d0:6020:f012::/64
+    - 2001:48d0:6020:f013::/64
+    - 2001:48d0:6020:f014::/64
+    - 2001:48d0:6020:f015::/64
+    - 2001:48d0:6020:f016::/64
+    - 2001:48d0:6020:f017::/64
+    - 2001:48d0:6020:f018::/64
+    - 2001:48d0:6020:f019::/64
+    - 2001:48d0:6020:f01a::/64
+    - 2001:48d0:6020:f01b::/64
+    - 2001:48d0:6020:f01c::/64
+    - 2001:48d0:6020:f01d::/64
+    - 2001:48d0:6020:f01e::/64
+    - 2001:48d0:6020:f01f::/64
+  ipv6-address-pool:
+    - "fc00:0000:0100::/40"
+    - "fc00:0000:0200::/40"
+    - "fc00:0000:0300::/40"
+    - "fc00:0000:0400::/40"
+    - "fc00:0000:0500::/40"
+    - "fc00:0000:0600::/40"
+    - "fc00:0000:0700::/40"
+    - "fc00:0000:0800::/40"
+    - "fc00:0000:0900::/40"
+    - "fc00:0000:ff00::/40"
+  switch:
+    - edgecore_s0
+edgecore_s0:
+  vsw: edgecore_s0
+  vswmp: edgecore_s0_mp
+  rst: edgecore_s0
+  rsts_enabled: ipv4,ipv6
+  bgpmp: true
+  private_asn: 26397
+  allports: true
+  vlan_range:
+    - 1779-1799
+    - 3600-3619
+  ports:
+    PortChannel752:
+      capacity: 800000
+      desttype: switch
+      isAlias: urn:ogf:network:sense-oasis-nrp-nautilus.io:2020:oasis:Pc752
