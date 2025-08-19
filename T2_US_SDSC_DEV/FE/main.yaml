@@ -35,7 +35,7 @@ T2_US_SDSC_DEV:
     - sn3700_s0
     - edgecore_s0
 sn3700_s0:
-  rsts_enabled: ipv4,ipv6
+  rsts_enabled: ipv6
   external_snmp: https://nsi-snmpmon-prpdev.nrp-nautilus.io/sn3700_s0/metrics
   private_asn: 65000
   allports: false

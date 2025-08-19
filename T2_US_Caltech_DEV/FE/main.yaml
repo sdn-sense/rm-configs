@@ -52,7 +52,7 @@ T2_US_Caltech_DEV:
     - dellos10_s1
     - edgecore_s0
 dellos10_s0:
-  rsts_enabled: ipv4,ipv6
+  rsts_enabled: ipv6
   private_asn: 64516
   vrf: Vrf_sense01
   vlan_mtu: 9216
