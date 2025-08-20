@@ -20,3 +20,9 @@ senseodev:
 senseoeast:
   full_dn: "/C=US/O=Internet2/CN=InCommon RSA Server CA 2/C=US/ST=California/O=Energy Sciences Network/CN=sense-o-east.es.net"
   permissions: w
+jbalcas:
+  full_dn: "/DC=ch/DC=cern/CN=CERN Certification Authority/CN=jbalcas-eduroam@cern.ch"
+  permissions: w
+jbalcas1:
+  full_dn: "/DC=ch/DC=cern/CN=CERN Grid Certification Authority/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=jbalcas/CN=751133/CN=Justas Balcas"
+  permissions: w

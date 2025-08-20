@@ -6,7 +6,10 @@ orchestrator1:
   full_dn: "/C=US/ST=MI/L=Ann Arbor/O=Internet2/OU=InCommon/CN=InCommon RSA Server CA/C=US/ST=California/O=Energy Sciences Network/CN=sense-o.es.net"
   permissions: w
 jbalcas:
-  full_dn: "/DC=org/DC=cilogon/C=US/O=CILogon/CN=CILogon Basic CA 1/DC=org/DC=cilogon/C=US/O=ESnet/CN=Justas Balcas E188368"
+  full_dn: "/DC=ch/DC=cern/CN=CERN Certification Authority/CN=jbalcas-eduroam@cern.ch"
+  permissions: w
+jbalcas1:
+  full_dn: "/DC=ch/DC=cern/CN=CERN Grid Certification Authority/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=jbalcas/CN=751133/CN=Justas Balcas"
   permissions: w
 agent1:
   full_dn: "/C=DE/O=DFN-Verein/OU=DFN-PKI/CN=DFN-Verein PCA Grid - G01/C=DE/O=GridGermany/OU=Karlsruhe Institute of Technology/CN=a01-102-101-e.gridka.de"
