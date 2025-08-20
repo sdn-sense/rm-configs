@@ -1,23 +1,18 @@
 --- 
 general:
-  logLevel: DEBUG
-  sites: 
-    - "T2_US_UCSD_OASIS"
+  sitename: T2_US_UCSD_OASIS
   webdomain: "https://sense-oasis.nrp-nautilus.io:443"
+  fastapi: true
   probes: ["https_v4_siterm_2xx"]
-  privatedir: /opt/siterm/config/
 T2_US_UCSD_OASIS:
   domain: sense-oasis-nrp-nautilus.io
   latitude: 32.882648
   longitude: -117.234579
   plugin: raw
-  privatedir: /opt/siterm/config/T2_US_UCSD_OASIS/
   year: 2020
   switch:
     - "oasis"
 oasis:
-  vsw: "oasis"
-  vswmp: "oasis_mp"
   vlan_range: [1779-1799,3911-3912,3873-3874,3985-3989,3600-3610,3110-3139]
   ports:
     "6_3_1":

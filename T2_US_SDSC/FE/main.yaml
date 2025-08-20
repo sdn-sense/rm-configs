@@ -1,9 +1,8 @@
 ---
 general:
-  logLevel: INFO
-  sites:
-    - T2_US_SDSC
+  sitename: T2_US_SDSC
   webdomain: https://sense-prpdev.nrp-nautilus.io:443
+  fastapi: true
   probes:
     - https_v4_siterm_2xx
     - icmp_v4
@@ -12,7 +11,6 @@ T2_US_SDSC:
   latitude: 32.882648
   longitude: -117.234579
   plugin: ansible
-  privatedir: /opt/siterm/config/T2_US_SDSC/
   year: 2020
   metadata:
     xrootd:
@@ -33,26 +31,11 @@ T2_US_SDSC:
     - 2001:48d0:3001:11a::/64
     - 2001:48d0:3001:11b::/64
     - 2001:48d0:3001:11c::/64
-  ipv6-address-pool:
-    - "fc00:0000:0100::/40"
-    - "fc00:0000:0200::/40"
-    - "fc00:0000:0300::/40"
-    - "fc00:0000:0400::/40"
-    - "fc00:0000:0500::/40"
-    - "fc00:0000:0600::/40"
-    - "fc00:0000:0700::/40"
-    - "fc00:0000:0800::/40"
-    - "fc00:0000:0900::/40"
-    - "fc00:0000:ff00::/40"
   switch:
     - sn3700_s0
     - edgecore_s0
 sn3700_s0:
-  vsw: sn3700_s0
-  vswmp: sn3700_s0_mp
-  rst: sn3700_s0
   rsts_enabled: ipv4,ipv6
-  bgpmp: true
   external_snmp: https://nsi-snmpmon-prpdev.nrp-nautilus.io/sn3700_s0/metrics
   private_asn: 65000
   allports: false
@@ -93,8 +76,6 @@ sn3700_s0:
     Ethernet116: {}
     Ethernet120: {}
 edgecore_s0:
-  vsw: edgecore_s0
-  vswmp: edgecore_s0_mp
   allports: false
   external_snmp: https://nsi-snmpmon-prpdev.nrp-nautilus.io/edgecore_s0/metrics
   vlan_range:

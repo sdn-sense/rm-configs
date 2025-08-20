@@ -1,9 +1,8 @@
 ---
 general:
-  logLevel: INFO
-  sites:
-    - T2_US_UCSD
+  sitename: T2_US_UCSD
   webdomain: https://sense-t2-us-ucsd.nrp-nautilus.io:443
+  fastapi: true
   probes:
     - https_v4_siterm_2xx
     - icmp_v4
@@ -12,7 +11,6 @@ T2_US_UCSD:
   latitude: 32.882648
   longitude: -117.234579
   plugin: ansible
-  privatedir: /opt/siterm/config/T2_US_UCSD/
   year: 2025
   metadata:
     xrootd:
@@ -48,27 +46,11 @@ T2_US_UCSD:
     - 2001:48d0:6020:f01d::/64
     - 2001:48d0:6020:f01e::/64
     - 2001:48d0:6020:f01f::/64
-  ipv6-address-pool:
-    - "fc00:0000:0100::/40"
-    - "fc00:0000:0200::/40"
-    - "fc00:0000:0300::/40"
-    - "fc00:0000:0400::/40"
-    - "fc00:0000:0500::/40"
-    - "fc00:0000:0600::/40"
-    - "fc00:0000:0700::/40"
-    - "fc00:0000:0800::/40"
-    - "fc00:0000:0900::/40"
-    - "fc00:0000:ff00::/40"
   switch:
     - edgecore_s0
 edgecore_s0:
-  vsw: edgecore_s0
-  vswmp: edgecore_s0_mp
-  rst: edgecore_s0
   rsts_enabled: ipv4,ipv6
-  bgpmp: true
   private_asn: 26397
-  allports: true
   vlan_range:
     - 1779-1799
     - 3600-3619
