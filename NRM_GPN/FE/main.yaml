@@ -1,23 +1,19 @@
 --- 
 general:
   logLevel: DEBUG
-  sites: 
-    - "NRM_GPN"
+  sitename: NRM_GPN
   webdomain: "https://sense-gpn.nrp-nautilus.io:443"
   probes: ["https_v4_siterm_2xx"]
-  privatedir: /opt/siterm/config/
+  fastapi: true
 NRM_GPN:
   domain: sense-gpn-nrp-nautilus.io
   latitude: 32.882648
   longitude: -117.234579
   plugin: raw
-  privatedir: /opt/siterm/config/NRM_GPN/
   year: 2024
   switch:
     - "gpn"
 gpn:
-  vsw: "gpn"
-  vswmp: "gpn_mp"
   vlan_range: [2680-2699]
   ports:
     "1_1":
