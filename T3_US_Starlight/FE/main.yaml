@@ -1,21 +1,17 @@
 --- 
 general:
-  logLevel: DEBUG
-  sites: 
-    - "T3_US_Starlight"
+  sitename: T3_US_Starlight
   webdomain: "https://r740xd4.it.northwestern.edu:8443"
+  fastapi: true
 T3_US_Starlight: 
   domain: starlight.org
   latitude: 34.1377
   longitude: 118.1253
   plugin: raw
-  privatedir: /opt/siterm/config/T3_US_Starlight/
   switch:
     - "s1"
   year: 2022
 s1:
-  vsw: "s1"
-  vswmp: "s1_mp"
   ports:
     "1_1":
       capacity: 100000
@@ -25,5 +21,3 @@ s1:
     "1_2":
       capacity: 100000
   vlan_range: [1379-1399,3985-3989]
-  allports: False
-  allvlans: False

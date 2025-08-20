@@ -1,23 +1,19 @@
 --- 
 general:
   logLevel: DEBUG
-  sites: 
-    - "T9_US_JUSTASDEV"
+  sitename: T9_US_JUSTASDEV
   webdomain: "https://fake1.localhost.com:443"
+  fastapi: true
   probes: ["https_v4_siterm_2xx"]
-  privatedir: /opt/siterm/config/
 T9_US_JUSTASDEV:
   domain: sense-fake1-dev.io
   latitude: 32.882648
   longitude: -117.234579
   plugin: raw
-  privatedir: /opt/siterm/config/T9_US_JUSTASDEV/
   year: 2025
   switch:
     - "fake1"
 fake1:
-  vsw: "fake1"
-  vswmp: "fake1_mp"
   vlan_range: [3611-3619]
   ports:
     "Pc502":

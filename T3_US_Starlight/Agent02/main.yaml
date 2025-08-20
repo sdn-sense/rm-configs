@@ -1,8 +1,9 @@
 ---
 general:
   ip: "165.124.33.233"
-  sitename: [T3_US_Starlight]
+  sitename: T3_US_Starlight
   webdomain: "https://r740xd4.it.northwestern.edu:8443"
+  fastapi: true
   node_exporter: "r740xd4.it.northwestern.edu:9100"
 agent: 
   interfaces: [eth4]
@@ -12,26 +13,7 @@ eth4:
   shared: false
   switch: s1
   intf_max: 100000
-  bwParams:
-    unit: "mbps"
-    type: "guaranteedCapped"
-    priority: 0
-    minReservableCapacity: 1000
-    maximumCapacity: 100000
-    granularity: 1000
   vlan_range: [1379-1399,3985-3989]
-  ipv4-address-pool: [10.250.80.0/24,10.251.85.0/24,10.251.86.0/24,10.251.87.0/24,10.251.88.0/24,10.251.89.0/24,172.31.10.0/24,172.31.11.0/24,172.31.12.0/24,172.31.13.0/24,172.31.14.0/24,172.31.15.0/24]
-  ipv6-address-pool:
-    - "fc00:0000:0100::/40"
-    - "fc00:0000:0200::/40"
-    - "fc00:0000:0300::/40"
-    - "fc00:0000:0400::/40"
-    - "fc00:0000:0500::/40"
-    - "fc00:0000:0600::/40"
-    - "fc00:0000:0700::/40"
-    - "fc00:0000:0800::/40"
-    - "fc00:0000:0900::/40"
-    - "fc00:0000:ff00::/40"
 qos:
   policy: hostlevel
   qos_params: "mtu 9000 mpu 9000 quantum 200000 burst 300000 cburst 300000 qdisc sfq balanced"

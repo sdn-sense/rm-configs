@@ -1,9 +1,8 @@
 ---
 general:
-  logLevel: DEBUG
-  sites:
-    - T2_US_Nebraska
+  sitename: T2_US_Nebraska
   webdomain: https://red-sense-rm.unl.edu:10443
+  fastapi: true
   probes:
     - https_v4_siterm_2xx
     - icmp_v4
@@ -12,7 +11,6 @@ T2_US_Nebraska:
   latitude: 40.8208
   longitude: 96.7005
   plugin: ansible
-  privatedir: /opt/siterm/config/T2_US_Nebraska/
   ipv6-subnet-pool:
     - 2600:900:6:1121::/64
     - 2600:900:6:1122::/64
@@ -22,40 +20,10 @@ T2_US_Nebraska:
       2600:900:6:1121::/64: red-sense-dtn3-macvlan0.unl.edu:1095
       2600:900:6:1122::/64: red-sense-dtn3-macvlan1.unl.edu:1095
       2600:900:6:1123::/64: red-sense-dtn3-macvlan2.unl.edu:1095
-  ipv6-address-pool:
-    - "fc00:0000:0100::/40"
-    - "fc00:0000:0200::/40"
-    - "fc00:0000:0300::/40"
-    - "fc00:0000:0400::/40"
-    - "fc00:0000:0500::/40"
-    - "fc00:0000:0600::/40"
-    - "fc00:0000:0700::/40"
-    - "fc00:0000:0800::/40"
-    - "fc00:0000:0900::/40"
-    - "fc00:0000:ff00::/40"
-  ipv4-address-pool:
-    - 10.251.85.0/24
-    - 10.251.86.0/24
-    - 10.251.87.0/24
-    - 10.251.88.0/24
-    - 10.251.89.0/24
-    - 172.16.3.0/30
-    - 172.17.3.0/30
-    - 172.18.3.0/30
-    - 172.19.3.0/30
-    - 172.31.10.0/24
-    - 172.31.11.0/24
-    - 172.31.12.0/24
-    - 172.31.13.0/24
-    - 172.31.14.0/24
-    - 172.31.15.0/24
   year: 2024
   switch:
     - dellos10_s0
 dellos10_s0:
-  vsw: dellos10_s0
-  vswmp: dellos10_s0_mp
-  rst: dellos10_s0
   rsts_enabled: ipv4,ipv6
   private_asn: 64514
   vlan_mtu: 9216
@@ -70,5 +38,3 @@ dellos10_s0:
   vlan_range:
     - 2680-2699
   allports: false
-  allvlans: false
-  snmp_monitoring: true

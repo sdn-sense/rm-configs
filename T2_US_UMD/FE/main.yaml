@@ -1,10 +1,8 @@
 --- 
 general:
-  logLevel: DEBUG
-  sites: 
-    - "T2_US_UMD"
+  sitename: T2_US_UMD
   webdomain: "https://ptxn-sense-v1.maxgigapop.net:8443"
-  privatedir: /opt/siterm/config/
+  fastapi: true
 T2_US_UMD:
   domain: maxgigapop.net
   latitude: 38.9869
@@ -12,11 +10,8 @@ T2_US_UMD:
   plugin: raw
   switch:
     - "s0"
-  privatedir: /opt/siterm/config/T2_US_UMD/
   year: 2013
 s0:
-  vsw: "s0"
-  vswmp: "s0_mp"
   ports:
     "1_1":
       capacity: 10000
