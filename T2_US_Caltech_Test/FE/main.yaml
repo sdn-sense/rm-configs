@@ -1,9 +1,9 @@
 ---
 general:
   logLevel: DEBUG
-  sites:
-    - T2_US_Caltech_Test
+  sitename: T2_US_Caltech_Test
   webdomain: "https://sense-caltechtest.sdn-lb.ultralight.org:443"
+  fastapi: true
   probes:
     - https_v4_siterm_2xx
     - icmp_v4
@@ -12,7 +12,6 @@ T2_US_Caltech_Test:
   latitude: 34.1377
   longitude: 118.1253
   plugin: ansible
-  privatedir: /opt/siterm/config/T2_US_Caltech_Test/
   ipv6-subnet-pool:
     - 2605:d9c0:2:fff1::/64
     - 2605:d9c0:2:fff2::/64
@@ -36,31 +35,11 @@ T2_US_Caltech_Test:
       2605:d9c0:2:fff3::/64: sense-redir-03.ultralight.org:1094
       2605:d9c0:2:fff4::/64: sense-redir-04.ultralight.org:1094
       2605:d9c0:2:fff5::/64: sense-redir-05.ultralight.org:1094
-  ipv6-address-pool:
-    - "fc00:0000:0100::/40"
-    - "fc00:0000:0200::/40"
-    - "fc00:0000:0300::/40"
-    - "fc00:0000:0400::/40"
-    - "fc00:0000:0500::/40"
-    - "fc00:0000:0600::/40"
-    - "fc00:0000:0700::/40"
-    - "fc00:0000:0800::/40"
-    - "fc00:0000:0900::/40"
-    - "fc00:0000:ff00::/40"
-  ipv4-address-pool:
-    - 172.16.3.0/30
-    - 172.17.3.0/30
-    - 172.18.3.0/30
-    - 172.19.3.0/30
-    - 10.251.0.0/16
   year: 2013
   switch:
     - dellos9_s0
     - aristaeos_s0
 dellos9_s0:
-  vsw: dellos9_s0
-  vswmp: dellos9_s0_mp
-  rst: dellos9_s0
   rsts_enabled: ipv4,ipv6
   private_asn: 64513
   vrf: lhcone
@@ -90,11 +69,7 @@ dellos9_s0:
     - 3870-3883
     - 3911-3912
   allports: false
-  allvlans: false
-  snmp_monitoring: true
 aristaeos_s0:
-  vsw: aristaeos_s0
-  vswmp: aristaeos_s0_mp
   vlan_mtu: 9214
   vlan_range:
     - 1779-1799
@@ -107,6 +82,3 @@ aristaeos_s0:
       capacity: 400000
       desttype: switch
       isAlias: urn:ogf:network:ultralight.org:2013:dellos9_s0:Port-channel_104
-  allports: true
-  allvlans: false
-  snmp_monitoring: true
