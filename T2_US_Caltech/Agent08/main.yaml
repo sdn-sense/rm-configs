@@ -1,7 +1,7 @@
 ---
 general:
   ip: "198.32.44.98"
-  sitename: [T2_US_Caltech]
+  sitename: T2_US_Caltech
   webdomain: "https://sense-caltechprod.nrp-nautilus.io:443"
   node_exporter: "transfer-18.ultralight.org:9100"
 agent: 
@@ -14,52 +14,14 @@ bondpublic:
   shared: false
   intf_max: 100000
   allowOvercommit: false
-  bwParams:
-    unit: "mbps"
-    type: "guaranteedCapped"
-    priority: 0
-    minReservableCapacity: 100
-    maximumCapacity: 100000
-    granularity: 100
   vlan_range: [1779-1799,3600-3610,3985-3989,3870-3883,3911-3912]
-  ipv4-address-pool: [10.251.85.0/24,10.251.86.0/24,10.251.87.0/24,10.251.88.0/24,10.251.89.0/24,172.16.3.0/30,172.17.3.0/30,172.18.3.0/30,172.19.3.0/30]
-  ipv6-address-pool:
-    - "fc00:0000:0100::/40"
-    - "fc00:0000:0200::/40"
-    - "fc00:0000:0300::/40"
-    - "fc00:0000:0400::/40"
-    - "fc00:0000:0500::/40"
-    - "fc00:0000:0600::/40"
-    - "fc00:0000:0700::/40"
-    - "fc00:0000:0800::/40"
-    - "fc00:0000:0900::/40"
-    - "fc00:0000:ff00::/40"
 enp1s0np0:
   port: Ethernet56
   switch: edgecore_s0
   shared: false
   intf_max: 400000
   allowOvercommit: false
-  bwParams:
-    unit: "mbps"
-    type: "guaranteedCapped"
-    priority: 0
-    minReservableCapacity: 100
-    maximumCapacity: 400000
-    granularity: 100
   vlan_range: [1779-1799,3600-3610,3985-3989,3870-3883,3911-3912,3870-3883,3911-3912]
-  ipv4-address-pool: [10.251.85.0/24,10.251.86.0/24,10.251.87.0/24,10.251.88.0/24,10.251.89.0/24,172.16.3.0/30,172.17.3.0/30,172.18.3.0/30,172.19.3.0/30]
-  ipv6-address-pool:
-    - "fc00:0000:0100::/40"
-    - "fc00:0000:0200::/40"
-    - "fc00:0000:0300::/40"
-    - "fc00:0000:0400::/40"
-    - "fc00:0000:0500::/40"
-    - "fc00:0000:0600::/40"
-    - "fc00:0000:0700::/40"
-    - "fc00:0000:0800::/40"
-    - "fc00:0000:0900::/40"
-    - "fc00:0000:ff00::/40"
 qos:
   policy: privatens
   qos_params: "mtu 9000 mpu 9000 quantum 200000 burst 300000 cburst 300000 qdisc sfq balanced"
