@@ -1,7 +1,7 @@
 ---
 general:
   ip: "198.32.43.50"
-  sitename: [T3_US_NRP]
+  sitename: T3_US_NRP
   webdomain: "https://sense-fe.nrp-nautilus.io"
   prometheus_federate: http://thanos-federate-proxy-service:9099/federate
   prometheus_query: '{instance="k8s-gen4-07.ultralight.org", service="node-exporter"}'
@@ -14,52 +14,14 @@ enp129s0f0np0:
     multus: 'nautilus.io/multus'
   shared: false
   intf_max: 100000
-  bwParams:
-    unit: "mbps"
-    type: "guaranteedCapped"
-    priority: 0
-    minReservableCapacity: 1000
-    maximumCapacity: 100000
-    granularity: 1000
   vlan_range: [1779-1799,3600-3619,3870-3883,3911-3912,3870-3883]
-  ipv4-address-pool: [10.30.0.0/24,10.30.1.0/24,10.251.85.0/24,10.251.86.0/24,10.251.87.0/24,10.251.88.0/24,10.251.89.0/24,172.31.10.0/24,172.31.11.0/24,172.31.12.0/24,172.31.13.0/24,172.31.14.0/24,172.31.15.0/24]
-  ipv6-address-pool:
-    - "fc00:0000:0100::/40"
-    - "fc00:0000:0200::/40"
-    - "fc00:0000:0300::/40"
-    - "fc00:0000:0400::/40"
-    - "fc00:0000:0500::/40"
-    - "fc00:0000:0600::/40"
-    - "fc00:0000:0700::/40"
-    - "fc00:0000:0800::/40"
-    - "fc00:0000:0900::/40"
-    - "fc00:0000:ff00::/40"
 enp129s0f1np1:
   kubeLabels:
     isAlias: 'nautilus.io/SenseIsAlias'
     multus: 'nautilus.io/multus'
   shared: false
   intf_max: 100000
-  bwParams:
-    unit: "mbps"
-    type: "guaranteedCapped"
-    priority: 0
-    minReservableCapacity: 1000
-    maximumCapacity: 100000
-    granularity: 1000
   vlan_range: [1779-1799,3600-3619,3870-3883,3911-3912,3870-3883]
-  ipv4-address-pool: [10.30.0.0/24,10.30.1.0/24,10.251.85.0/24,10.251.86.0/24,10.251.87.0/24,10.251.88.0/24,10.251.89.0/24,172.31.10.0/24,172.31.11.0/24,172.31.12.0/24,172.31.13.0/24,172.31.14.0/24,172.31.15.0/24]
-  ipv6-address-pool:
-    - "fc00:0000:0100::/40"
-    - "fc00:0000:0200::/40"
-    - "fc00:0000:0300::/40"
-    - "fc00:0000:0400::/40"
-    - "fc00:0000:0500::/40"
-    - "fc00:0000:0600::/40"
-    - "fc00:0000:0700::/40"
-    - "fc00:0000:0800::/40"
-    - "fc00:0000:0900::/40"
-    - "fc00:0000:ff00::/40"
 qos:
   policy: hostlevel
   qos_params: "mtu 9000 mpu 9000 quantum 200000 burst 300000 cburst 300000 qdisc sfq balanced"
