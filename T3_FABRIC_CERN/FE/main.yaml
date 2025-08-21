@@ -28,19 +28,19 @@ frr_s0:
     e1:
       capacity: 100000
       desttype: switch
-      isAlias: urn:ogf:network:stack-fabric:2024:topology:node+CERN:port+CERN-HU8-wk3-pci3-p1
+      isAlias: urn:ogf:network:stack-fabric:2024:topology:node+CERN:port+CERN-HU4-wk2-pci6-p1
     e2:
       capacity: 1000
       desttype: switch
-      isAlias: urn:ogf:network:stack-fabric:2024:topology:node+CERN:port+CERN-HU10-wk3-pci3-p2
+      isAlias: urn:ogf:network:stack-fabric:2024:topology:node+CERN:port+CERN-HU6-wk2-pci6-p2
     e3:
       capacity: 100000
       desttype: switch
-      isAlias: urn:ogf:network:stack-fabric:2024:topology:node+CERN:port+CERN-HU12-wk3-pci6-p1
+      isAlias: urn:ogf:network:stack-fabric:2024:topology:node+CERN:port+CERN-HU0-wk2-pci3-p1
     e4:
       capacity: 100000
       desttype: switch
-      isAlias: urn:ogf:network:stack-fabric:2024:topology:node+CERN:port+CERN-HU14-wk3-pci6-p2
+      isAlias: urn:ogf:network:stack-fabric:2024:topology:node+CERN:port+CERN-HU2-wk2-pci3-p2
   vlan_range:
     - 800-1000
     - 2070-2079
