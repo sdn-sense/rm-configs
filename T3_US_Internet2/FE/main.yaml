@@ -1,0 +1,19 @@
+--- 
+general:
+  sitename: T3_US_Internet2
+  webdomain: "https://sense-nrp-internet2.nrp-nautilus.io"
+  fastapi: true
+  probes: ["https_v4_siterm_2xx", "icmp_v4"]
+T3_US_Internet2:
+  domain: nrp-internet2.io
+  latitude: 32.882648
+  longitude: -117.234579
+  plugin: raw
+  year: 2025
+  switch:
+    - "s0"
+s0:
+  vlan_range: [1-4094]
+  ports:
+    "1_1":
+      capacity: 100000
