@@ -5,10 +5,10 @@ general:
   webdomain: "https://sense-caltechprod.nrp-nautilus.io:443"
   node_exporter: "transfer-15.ultralight.org:9100"
 agent: 
-  interfaces: [bondpublic, enp1s0np0]
+  interfaces: [bond0, enp1s0np0]
   hostname: transfer-15.ultralight.org
   noqos: false
-bondpublic:
+bond0:
   port: Ethernet 1/1/3:1
   switch: dellos10_s1
   shared: false
@@ -28,49 +28,49 @@ qos:
   interfaces:
     sensexrd1:
       ipv6_range: 2605:d9c0:6:2640::0/64
-      master_intf: bondpublic
+      master_intf: bond0
     sensexrd2:
       ipv6_range: 2605:d9c0:6:2641::0/64
-      master_intf: bondpublic
+      master_intf: bond0
     sensexrd3:
       ipv6_range: 2605:d9c0:6:2642::0/64
-      master_intf: bondpublic
+      master_intf: bond0
     sensexrd4:
       ipv6_range: 2605:d9c0:6:2643::0/64
-      master_intf: bondpublic
+      master_intf: bond0
     sensexrd5:
       ipv6_range: 2605:d9c0:6:2644::0/64
-      master_intf: bondpublic
+      master_intf: bond0
     sensexrd6:
       ipv6_range: 2605:d9c0:6:2645::0/64
-      master_intf: bondpublic
+      master_intf: bond0
     sensexrd7:
       ipv6_range: 2605:d9c0:6:2646::0/64
-      master_intf: bondpublic
+      master_intf: bond0
     sensexrd8:
       ipv6_range: 2605:d9c0:6:2647::0/64
-      master_intf: bondpublic
+      master_intf: bond0
     sensexrd9:
       ipv6_range: 2605:d9c0:6:2648::0/64
-      master_intf: bondpublic
+      master_intf: bond0
     sensexrd10:
       ipv6_range: 2605:d9c0:6:2649::0/64
-      master_intf: bondpublic
+      master_intf: bond0
     sensexrd11:
       ipv6_range: 22605:d9c0:6:2650::0/64
-      master_intf: bondpublic
+      master_intf: bond0
     sensexrd12:
       ipv6_range: 2605:d9c0:6:2651::0/64
-      master_intf: bondpublic
+      master_intf: bond0
     sensexrd13:
       ipv6_range: 2605:d9c0:6:2652::0/64
-      master_intf: bondpublic
+      master_intf: bond0
     sensexrd14:
       ipv6_range: 2605:d9c0:6:2653::0/64
-      master_intf: bondpublic
+      master_intf: bond0
     sensexrd15:
       ipv6_range: 2605:d9c0:6:2654::0/64
-      master_intf: bondpublic
+      master_intf: bond0
     sensexrd16:
       ipv6_range: 2605:d9c0:6:2655::0/64
-      master_intf: bondpublic
+      master_intf: bond0
