@@ -4,3 +4,8 @@
   maintainer: "John Graham"
   status: production
   type: FE
+c05e6fe61346f7fc7577d14898767b72:
+  config: pas.bois.net.internet2.edu/
+  maintainer: "John Graham"
+  status: production
+  type: Agent
