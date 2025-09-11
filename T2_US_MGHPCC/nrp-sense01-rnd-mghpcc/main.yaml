@@ -12,8 +12,9 @@ bond0:
   port: ae2
   switch: junos_s0
   shared: false
-  intf_max: 400000
   vlan_range: [3901-3920]
+  bwParams:
+    maximumCapacity: 400000
 qos:
   policy: hostlevel
   qos_params: "mtu 9000 mpu 9000 quantum 200000 burst 300000 cburst 300000 qdisc sfq balanced"
