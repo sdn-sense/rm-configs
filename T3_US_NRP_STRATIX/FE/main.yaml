@@ -6,7 +6,7 @@ general:
   probes:
     - https_v4_siterm_2xx
     - icmp_v4
-T2_US_UCSD:
+T3_US_NRP_STRATIX:
   domain: t3-us-nrp-stratix.nrp-nautilus-io
   latitude: 32.882648
   longitude: -117.234579
