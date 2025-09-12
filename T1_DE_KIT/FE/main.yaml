@@ -25,7 +25,7 @@ cisconx10_s0:
     Ethernet1/28:
       capacity: 100000
       desttype: switch
-      #isAlias: urn:ogf:network:sense-gpn-nrp-nautilus.io:2024:gpn:1_3
+      isAlias: urn:ogf:network:surf.nl:2020:production:netherlight.de-kit-1
       wanlink: true
   vlan_range:
     - 3695-3699
