@@ -14,8 +14,8 @@ T1_DE_KIT:
   plugin: ansible
   year: 2024
   switch:
-    - cisconx10_s0
-cisconx10_s0:
+    - cisconx9
+cisconx9:
   rsts_enabled: ipv4,ipv6
   private_asn: 64517
   vlan_mtu: 9216
