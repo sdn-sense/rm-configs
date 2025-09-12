@@ -9,7 +9,7 @@ agent:
   hostname: a01-102-151-e.gridka.de
 ens1:
   port: "Ethernet1/12"
-  switch: cisconx10_s0
+  switch: cisconx9
   shared: false
   vlan_range: [3695-3699]
 qos:
