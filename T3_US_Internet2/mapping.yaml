@@ -1,4 +1,10 @@
 ---
+6fca643244c3e273880ca9aad6fdd840:
+  config: FE/
+  maintainer: "John Graham"
+  status: production
+  type: FE
+  
 23a71a3084879e10da04011fa8148a9e:
   config: pas.alba.net.internet2.edu/
   maintainer: "John Graham"
