@@ -11,7 +11,7 @@ agent:
 enp65s0f0np0:
 
   isAlias: urn:ogf:network:al2s.internet2.edu:2023:node+core1.losa:port+HundredGigE0_0_0_31
-  vlan_range: [1-4094]  # This just matches same vlan range on T3_US_Internet2 peering point
+  vlan_range: [2-4094]  # This just matches same vlan range on T3_US_Internet2 peering point
 qos:
   policy: hostlevel
   qos_params: "mtu 9000 mpu 9000 quantum 200000 burst 300000 cburst 300000 qdisc sfq balanced"
