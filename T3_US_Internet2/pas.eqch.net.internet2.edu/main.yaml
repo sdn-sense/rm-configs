@@ -1,0 +1,33 @@
+---
+general:
+  ip: "163.253.16.27"
+  sitename: T3_US_Internet2
+  webdomain: "https://sense-nrp-internet2.nrp-nautilus.io"
+  prometheus_federate: http://thanos-federate-proxy-service:9099/federate
+  prometheus_query: '{instance="pas.eqch.net.internet2.edu", service="node-exporter"}'
+agent: 
+  interfaces: [enp65s0f1np1]
+  hostname: pas.eqch.net.internet2.edu
+enp65s0f0np0:
+
+  isAlias: urn:ogf:network:al2s.internet2.edu:2023:node+core1.eqch:port+HundredGigE0_0_0_33
+  # Alternative URNs for eqch:
+  # isAlias_agg3: urn:ogf:network:al2s.internet2.edu:2023:node+agg3.eqch:port+Bundle-Ether100_gcp_ord-zone1-7
+  # isAlias_agg3: urn:ogf:network:al2s.internet2.edu:2023:node+agg3.eqch:port+Bundle-Ether5_gcp_ord-zone1-7
+  # isAlias_agg3: urn:ogf:network:al2s.internet2.edu:2023:node+agg3.eqch:port+HundredGigE0_0_0_4_azure_CrossConnection-Chicago
+  # isAlias_agg3: urn:ogf:network:al2s.internet2.edu:2023:node+agg3.eqch:port+HundredGigE0_0_0_6_aws_us-east-2
+  # isAlias_agg3: urn:ogf:network:al2s.internet2.edu:2023:node+agg3.eqch:port+TenGigE0_0_0_10_2_azure_CrossConnection-Chicago
+  # isAlias_agg3: urn:ogf:network:al2s.internet2.edu:2023:node+agg3.eqch:port+TenGigE0_0_0_11_0_aws_us-east-2
+  # isAlias_agg4: urn:ogf:network:al2s.internet2.edu:2023:node+agg4.eqch:port+Bundle-Ether100_gcp_ord-zone2-7
+  # isAlias_agg4: urn:ogf:network:al2s.internet2.edu:2023:node+agg4.eqch:port+Bundle-Ether5_gcp_ord-zone2-7
+  # isAlias_agg4: urn:ogf:network:al2s.internet2.edu:2023:node+agg4.eqch:port+HundredGigE0_0_0_4_azure_CrossConnection-Chicago
+  # isAlias_agg4: urn:ogf:network:al2s.internet2.edu:2023:node+agg4.eqch:port+HundredGigE0_0_0_6_aws_us-east-2
+  # isAlias_agg4: urn:ogf:network:al2s.internet2.edu:2023:node+agg4.eqch:port+TenGigE0_0_0_11_0_azure_CrossConnection-Chicago
+  # isAlias_agg4: urn:ogf:network:al2s.internet2.edu:2023:node+agg4.eqch:port+TenGigE0_0_0_11_2_aws_us-east-2
+  vlan_range: [1000-3999]  # This just matches same vlan range on T3_US_Internet2 peering point
+qos:
+  policy: hostlevel
+  qos_params: "mtu 9000 mpu 9000 quantum 200000 burst 300000 cburst 300000 qdisc sfq balanced"
+  interfaces:
+    enp65s0f0np0:
+      master_intf: enp65s0f0np0
