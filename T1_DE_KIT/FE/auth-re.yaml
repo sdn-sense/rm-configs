@@ -2,3 +2,9 @@
 autogole_monitoring:
   full_dn: "/C=US/O=Let's Encrypt/CN=R[0-9]+/CN=autogole-grafana.nrp-nautilus.io"
   permissions: r
+a01-102-151-e:
+  full_dn: "/C=US/O=Let's Encrypt/CN=R[0-9]+/CN=a01-102-151-e.gridka.de"
+  permissions: rw
+a01-102-101-e:
+  full_dn: "/C=US/O=Let's Encrypt/CN=R[0-9]+/CN=a01-102-101-e.gridka.de"
+  permissions: rw

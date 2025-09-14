@@ -1,21 +1,18 @@
 ---
-sense-o:
-  full_dn: "/C=US/ST=California/L=Berkeley/O=LBNL/OU=ESnet/CN=sense-o.es.net/C=US/ST=California/L=Berkeley/O=LBNL/CN=sense-o.es.net"
-  permissions: w
-orchestrator1:
-  full_dn: "/C=US/ST=MI/L=Ann Arbor/O=Internet2/OU=InCommon/CN=InCommon RSA Server CA/C=US/ST=California/O=Energy Sciences Network/CN=sense-o.es.net"
-  permissions: w
 jbalcas:
   full_dn: "/DC=ch/DC=cern/CN=CERN Certification Authority/CN=jbalcas-eduroam@cern.ch"
   permissions: w
 jbalcas1:
   full_dn: "/DC=ch/DC=cern/CN=CERN Grid Certification Authority/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=jbalcas/CN=751133/CN=Justas Balcas"
   permissions: w
-agent1:
-  full_dn: "/C=DE/O=DFN-Verein/OU=DFN-PKI/CN=DFN-Verein PCA Grid - G01/C=DE/O=GridGermany/OU=Karlsruhe Institute of Technology/CN=a01-102-101-e.gridka.de"
+orchestrator_ca:
+  full_dn: "/O=University of Maryland/OU=Mid-Atlantic Crossroads/OU=research.maxgigapop.net/CN=Simple CA/O=University of Maryland/OU=Mid-Atlantic Crossroads/OU=research.maxgigapop.net/CN=Simple CA"
   permissions: w
-agent2:
-  full_dn: "/C=DE/O=DFN-Verein/OU=DFN-PKI/CN=DFN-Verein PCA Grid - G01/C=DE/O=GridGermany/OU=Karlsruhe Institute of Technology/CN=a01-102-151-e.gridka.de"
+orchestrator:
+  full_dn: "/C=US/ST=California/L=Berkeley/O=LBNL/OU=ESnet/CN=sense-o.es.net/C=US/ST=California/L=Berkeley/O=LBNL/CN=sense-o.es.net"
+  permissions: w
+orchestrator1:
+  full_dn: "/C=US/ST=MI/L=Ann Arbor/O=Internet2/OU=InCommon/CN=InCommon RSA Server CA/C=US/ST=California/O=Energy Sciences Network/CN=sense-o.es.net"
   permissions: w
 senseoprod:
   full_dn: "/C=US/O=Internet2/CN=InCommon RSA Server CA 2/C=US/ST=California/O=Energy Sciences Network/CN=sense-o.es.net"

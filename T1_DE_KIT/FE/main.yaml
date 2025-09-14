@@ -1,9 +1,9 @@
 ---
 general:
   logLevel: DEBUG
-  sites:
-    - T1_DE_KIT
+  sitename: T1_DE_KIT
   webdomain: https://a01-102-151-e.gridka.de:8443
+  fastapi: true
   probes:
     - https_v4_siterm_2xx
     - icmp_v4
@@ -12,50 +12,10 @@ T1_DE_KIT:
   latitude: 51.2993
   longitude: 9.491
   plugin: ansible
-  privatedir: /opt/siterm/config/T1_DE_KIT/
-  #ipv6-subnet-pool:
-    #- 2600:900:6:1121::/64
-    #- 2600:900:6:1122::/64
-    #- 2600:900:6:1123::/64
-  #metadata:
-  #  xrootd:
-  #    2600:900:6:1121::/64: red-sense-dtn3.unl.edu:1095
-  #    2600:900:6:1122::/64: red-sense-dtn3.unl.edu:1095
-  #    2600:900:6:1123::/64: red-sense-dtn3.unl.edu:1095
-  ipv6-address-pool:
-    - "fc00:0000:0100::/40"
-    - "fc00:0000:0200::/40"
-    - "fc00:0000:0300::/40"
-    - "fc00:0000:0400::/40"
-    - "fc00:0000:0500::/40"
-    - "fc00:0000:0600::/40"
-    - "fc00:0000:0700::/40"
-    - "fc00:0000:0800::/40"
-    - "fc00:0000:0900::/40"
-    - "fc00:0000:ff00::/40"
-  ipv4-address-pool:
-    - 10.251.85.0/24
-    - 10.251.86.0/24
-    - 10.251.87.0/24
-    - 10.251.88.0/24
-    - 10.251.89.0/24
-    - 172.16.3.0/30
-    - 172.17.3.0/30
-    - 172.18.3.0/30
-    - 172.19.3.0/30
-    - 172.31.10.0/24
-    - 172.31.11.0/24
-    - 172.31.12.0/24
-    - 172.31.13.0/24
-    - 172.31.14.0/24
-    - 172.31.15.0/24
   year: 2024
   switch:
-    - cisconx10_s0
-cisconx10_s0:
-  vsw: cisconx10_s0
-  vswmp: cisconx10_s0_mp
-  rst: cisconx10_s0
+    - cisconx9
+cisconx9:
   rsts_enabled: ipv4,ipv6
   private_asn: 64517
   vlan_mtu: 9216
@@ -65,7 +25,7 @@ cisconx10_s0:
     Ethernet1/28:
       capacity: 100000
       desttype: switch
-      #isAlias: urn:ogf:network:sense-gpn-nrp-nautilus.io:2024:gpn:1_3
+      isAlias: urn:ogf:network:surf.nl:2020:production:netherlight.de-kit-1
       wanlink: true
   vlan_range:
     - 3695-3699

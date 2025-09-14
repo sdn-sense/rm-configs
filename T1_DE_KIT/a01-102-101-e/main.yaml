@@ -1,7 +1,7 @@
 ---
 general:
   ip: "192.108.47.18"
-  sitename: [T1_DE_KIT]
+  sitename: T1_DE_KIT
   webdomain: "https://a01-102-151-e.gridka.de:8443"
   node_exporter: "a01-102-101-e.gridka.de:9100"
 agent:
@@ -9,36 +9,12 @@ agent:
   hostname: a01-102-101-e.gridka.de
 ens1:
   port: "Ethernet1/11"
-  switch: cisconx10_s0
+  switch: cisconx9
   shared: false
-  intf_max: 40000
-  bwParams:
-    unit: "mbps"
-    type: "guaranteedCapped"
-    priority: 0
-    minReservableCapacity: 1000
-    maximumCapacity: 40000
-    granularity: 1000
   vlan_range: [3695-3699]
-  ipv4-address-pool: [10.0.14.1/31,10.251.85.0/24,10.251.86.0/24,10.251.87.0/24,10.251.88.0/24,10.251.89.0/24,172.16.3.0/30,172.17.3.0/30,172.18.3.0/30,172.19.3.0/30]
-  ipv6-address-pool:
-    - "fc00:0000:0100::/40"
-    - "fc00:0000:0200::/40"
-    - "fc00:0000:0300::/40"
-    - "fc00:0000:0400::/40"
-    - "fc00:0000:0500::/40"
-    - "fc00:0000:0600::/40"
-    - "fc00:0000:0700::/40"
-    - "fc00:0000:0800::/40"
-    - "fc00:0000:0900::/40"
-    - "fc00:0000:ff00::/40"
 qos:
   policy: hostlevel
   qos_params: "mtu 9000 mpu 9000 quantum 200000 burst 300000 cburst 300000 qdisc sfq balanced"
   interfaces:
     ens1:
       master_intf: ens1
-      #ipv6_range:
-      #- 2600:900:6:1121::/64
-      #- 2600:900:6:1122::/64
-      #- 2600:900:6:1123::/64
