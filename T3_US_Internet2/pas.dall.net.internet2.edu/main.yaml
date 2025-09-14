@@ -6,14 +6,14 @@ general:
   prometheus_federate: http://thanos-federate-proxy-service:9099/federate
   prometheus_query: '{instance="pas.dall.net.internet2.edu", service="node-exporter"}'
 agent: 
-  interfaces: [enp65s0f1np1]
+  interfaces: [enp65s0f0np0]
   hostname: pas.dall.net.internet2.edu
 enp65s0f0np0:
 
   isAlias: urn:ogf:network:al2s.internet2.edu:2023:node+core1.dall:port+HundredGigE0_0_0_29
   # Alternative URNs for dall:
   # isAlias_core_alt: urn:ogf:network:al2s.internet2.edu:2023:node+core1.dall:port+HundredGigE0_0_0_24
-  vlan_range: [1000-3999]  # This just matches same vlan range on T3_US_Internet2 peering point
+  vlan_range: [1-4094]  # This just matches same vlan range on T3_US_Internet2 peering point
 qos:
   policy: hostlevel
   qos_params: "mtu 9000 mpu 9000 quantum 200000 burst 300000 cburst 300000 qdisc sfq balanced"
