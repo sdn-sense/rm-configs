@@ -1,16 +1,16 @@
 ---
 general:
-  ip: "163.253.16.9"
+  ip: "163.253.16.37"
   sitename: T3_US_Internet2
   webdomain: "https://sense-nrp-internet2.nrp-nautilus.io"
   prometheus_federate: http://thanos-federate-proxy-service:9099/federate
-  prometheus_query: '{instance="pas.bois.net.internet2.edu", service="node-exporter"}'
+  prometheus_query: '{instance="pas.indi.net.internet2.edu", service="node-exporter"}'
 agent: 
   interfaces: [enp65s0f0np0]
-  hostname: pas.bois.net.internet2.edu
+  hostname: pas.indi.net.internet2.edu
 enp65s0f0np0:
 
-  isAlias: urn:ogf:network:al2s.internet2.edu:2023:node+core1.bois:port+HundredGigE0_0_0_33
+  isAlias: urn:ogf:network:al2s.internet2.edu:2023:node+core1.indi:port+HundredGigE0_0_0_30
   vlan_range: [2-4094]  # This just matches same vlan range on T3_US_Internet2 peering point
 qos:
   policy: hostlevel

@@ -4,8 +4,261 @@
   maintainer: "John Graham"
   status: production
   type: FE
+  
+23a71a3084879e10da04011fa8148a9e:
+  config: pas.alba.net.internet2.edu/
+  maintainer: "John Graham"
+  status: production
+  type: Agent
+
+a647b618ddadabf9c12deb323256d3ca:
+  config: pas.ashb.net.internet2.edu/
+  maintainer: "John Graham"
+  status: production
+  type: Agent
+
 c05e6fe61346f7fc7577d14898767b72:
   config: pas.bois.net.internet2.edu/
+  maintainer: "John Graham"
+  status: production
+  type: Agent
+
+a8a588b6ee2a824a3586bdf706c6d226:
+  config: pas.bost.net.internet2.edu/
+  maintainer: "John Graham"
+  status: production
+  type: Agent
+
+f6b5babf9e9403dc09a9b18ca04bde32:
+  config: pas.char.net.internet2.edu/
+  maintainer: "John Graham"
+  status: production
+  type: Agent
+
+902cee0ba847ac7eba477cf055d6df5c:
+  config: pas.cinc.net.internet2.edu/
+  maintainer: "John Graham"
+  status: production
+  type: Agent
+
+eecc98907903f18ededd6e7bda9dcf77:
+  config: pas.clev.net.internet2.edu/
+  maintainer: "John Graham"
+  status: production
+  type: Agent
+
+6a542c5ca43f11c00d936800b336767d:
+  config: pas.dall.net.internet2.edu/
+  maintainer: "John Graham"
+  status: production
+  type: Agent
+
+ba50d0862b218c213788e712dc0aa329:
+  config: pas.dall3.net.internet2.edu/
+  maintainer: "John Graham"
+  status: production
+  type: Agent
+
+c15da28c513250e8e0954e2e7cab187b:
+  config: pas.denv.net.internet2.edu/
+  maintainer: "John Graham"
+  status: production
+  type: Agent
+
+e36ea1d9123fca13a6086ebff58ac337:
+  config: pas.elpa.net.internet2.edu/
+  maintainer: "John Graham"
+  status: production
+  type: Agent
+
+988614aee666ef604169e6d0802d891d:
+  config: pas.eqch.net.internet2.edu/
+  maintainer: "John Graham"
+  status: production
+  type: Agent
+
+ff6771196039b0047472b18d3fdb7250:
+  config: pas.hart2.net.internet2.edu/
+  maintainer: "John Graham"
+  status: production
+  type: Agent
+
+1d2b220971d653f0ac809a6490050fac:
+  config: pas.holy.net.internet2.edu/
+  maintainer: "John Graham"
+  status: production
+  type: Agent
+
+a91cf7302e03623e1d4770a38c9b8bcd:
+  config: pas.houh.net.internet2.edu/
+  maintainer: "John Graham"
+  status: production
+  type: Agent
+
+b3f8ae2e1b928009f3c0993af59ec7c9:
+  config: pas.hous.net.internet2.edu/
+  maintainer: "John Graham"
+  status: production
+  type: Agent
+
+ae457f047aa57146ef196ee8e276448c:
+  config: pas.indi.net.internet2.edu/
+  maintainer: "John Graham"
+  status: production
+  type: Agent
+
+cf4c64f38e462be041da6fd06a9806e3:
+  config: pas.jack.net.internet2.edu/
+  maintainer: "John Graham"
+  status: production
+  type: Agent
+
+2b428f478142288c7eda288364b7c388:
+  config: pas.jcsn.net.internet2.edu/
+  maintainer: "John Graham"
+  status: production
+  type: Agent
+
+1912d263c955adf9b76d0d9c0fdf9441:
+  config: pas.lasv.net.internet2.edu/
+  maintainer: "John Graham"
+  status: production
+  type: Agent
+
+423529f3241c3cf990bbe3f90083465b:
+  config: pas.losa.net.internet2.edu/
+  maintainer: "John Graham"
+  status: production
+  type: Agent
+
+d022a389f6d664a8bb5a9159380b71fd:
+  config: pas.losa2.net.internet2.edu/
+  maintainer: "John Graham"
+  status: production
+  type: Agent
+
+e1f9e72844eebc19a4390cbb0400e8a7:
+  config: pas.loui.net.internet2.edu/
+  maintainer: "John Graham"
+  status: production
+  type: Agent
+
+e577c31237020cf41485fed808022917:
+  config: pas.minn.net.internet2.edu/
+  maintainer: "John Graham"
+  status: production
+  type: Agent
+
+bc541153aa0ae869a0efc4f962b51a64:
+  config: pas.miss.net.internet2.edu/
+  maintainer: "John Graham"
+  status: production
+  type: Agent
+
+b6505a9e7cf2a0fb397a7ec8949c90ab:
+  config: pas.nash.net.internet2.edu/
+  maintainer: "John Graham"
+  status: production
+  type: Agent
+
+d3300b84707a8d405d231e7304603294:
+  config: pas.newy32aoa.net.internet2.edu/
+  maintainer: "John Graham"
+  status: production
+  type: Agent
+
+e024314f5849927366dc00c89bce696b:
+  config: pas.pens.net.internet2.edu/
+  maintainer: "John Graham"
+  status: production
+  type: Agent
+
+ba6763bfb36a8bf661bd43785d60f1e2:
+  config: pas.phil.net.internet2.edu/
+  maintainer: "John Graham"
+  status: production
+  type: Agent
+
+578037864b029c2526f2a59eaaecffbf:
+  config: pas.phoe.net.internet2.edu/
+  maintainer: "John Graham"
+  status: production
+  type: Agent
+
+49769b6d68cdd62d0b73a644ff03da4b:
+  config: pas.pitt.net.internet2.edu/
+  maintainer: "John Graham"
+  status: production
+  type: Agent
+
+89ef15591ff3aa43efbf7b279080b592:
+  config: pas.port.net.internet2.edu/
+  maintainer: "John Graham"
+  status: production
+  type: Agent
+
+15a7b28eb4782408c785df676d9ba9e9:
+  config: pas.rale.net.internet2.edu/
+  maintainer: "John Graham"
+  status: production
+  type: Agent
+
+2ecf12376ed171ec8b977551ee94ba6f:
+  config: pas.reno.net.internet2.edu/
+  maintainer: "John Graham"
+  status: production
+  type: Agent
+
+b7b9f17060f8a2188d1104431ec608a3:
+  config: pas.sacr.net.internet2.edu/
+  maintainer: "John Graham"
+  status: production
+  type: Agent
+
+9e3519db44d96f2c9a4b45e3f1434961:
+  config: pas.salt.net.internet2.edu/
+  maintainer: "John Graham"
+  status: production
+  type: Agent
+
+20fc47dc34818342d21e092626ce01fa:
+  config: pas.seat.net.internet2.edu/
+  maintainer: "John Graham"
+  status: production
+  type: Agent
+
+87a317985b215517e07f84446277fa42:
+  config: pas.star.net.internet2.edu/
+  maintainer: "John Graham"
+  status: production
+  type: Agent
+
+c678153586345e3d038fededb587896b:
+  config: pas.sunn.net.internet2.edu/
+  maintainer: "John Graham"
+  status: production
+  type: Agent
+
+70a0e88032c2dd21a1f8e2675df6c858:
+  config: pas.tole2.net.internet2.edu/
+  maintainer: "John Graham"
+  status: production
+  type: Agent
+
+70867cb23a8cc91acc10d59ebc0998e5:
+  config: pas.tucs.net.internet2.edu/
+  maintainer: "John Graham"
+  status: production
+  type: Agent
+
+7205421ecbcd46bf1065501ee89c74c5:
+  config: pas.tuls.net.internet2.edu/
+  maintainer: "John Graham"
+  status: production
+  type: Agent
+
+1ae23e773c11b4c826d1ef74478138db:
+  config: pas.wash.net.internet2.edu/
   maintainer: "John Graham"
   status: production
   type: Agent
