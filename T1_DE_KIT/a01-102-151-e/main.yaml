@@ -5,9 +5,9 @@ general:
   webdomain: "https://a01-102-151-e.gridka.de:8443"
   node_exporter: "a01-102-151-e.gridka.de:9100"
 agent:
-  interfaces: [ens1]
+  interfaces: [ens2]
   hostname: a01-102-151-e.gridka.de
-ens1:
+ens2:
   port: "Ethernet1/12"
   switch: cisconx9
   shared: false
@@ -17,4 +17,4 @@ qos:
   qos_params: "mtu 9000 mpu 9000 quantum 200000 burst 300000 cburst 300000 qdisc sfq balanced"
   interfaces:
     ens1:
-      master_intf: ens1
+      master_intf: ens2
