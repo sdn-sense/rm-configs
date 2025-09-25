@@ -1,27 +1,27 @@
----
 general:
-  ip: "163.253.16.95"
+  ip: 163.253.16.95
   sitename: T3_US_Internet2
-  webdomain: "https://sense-nrp-internet2.nrp-nautilus.io"
+  webdomain: https://sense-nrp-internet2.nrp-nautilus.io
   prometheus_federate: http://thanos-federate-proxy-service:9099/federate
   prometheus_query: '{instance="pas.losa2.net.internet2.edu", service="node-exporter"}'
-agent: 
-  interfaces: [enp65s0f0np0]
+agent:
+  interfaces:
+  - enp65s0f0np0
+  - enp65s0f1np1
   hostname: pas.losa2.net.internet2.edu
 enp65s0f0np0:
-
   isAlias: urn:ogf:network:al2s.internet2.edu:2023:node+agg1.losa2:port+Bundle-Ether100_gcp_lax-zone1-19
-  # Alternative URNs for losa2:
-  # isAlias_agg1: urn:ogf:network:al2s.internet2.edu:2023:node+agg1.losa2:port+Bundle-Ether100_gcp_lax-zone1-19
-  # isAlias_agg1: urn:ogf:network:al2s.internet2.edu:2023:node+agg1.losa2:port+HundredGigE0_0_0_11
-  # isAlias_agg1: urn:ogf:network:al2s.internet2.edu:2023:node+agg1.losa2:port+HundredGigE0_0_0_27_azure_CrossConnection-LosAngeles
-  # isAlias_agg1: urn:ogf:network:al2s.internet2.edu:2023:node+agg1.losa2:port+TenGigE0_0_0_4_0_aws_us-west-1
-  # isAlias_agg2: urn:ogf:network:al2s.internet2.edu:2023:node+agg2.losa2:port+HundredGigE0_0_0_27_azure_CrossConnection-LosAngeles
-  # isAlias_agg2: urn:ogf:network:al2s.internet2.edu:2023:node+agg2.losa2:port+TenGigE0_0_0_4_2_aws_us-west-1
-  vlan_range: [2-4094]  # This just matches same vlan range on T3_US_Internet2 peering point
+  vlan_range:
+  - 2-4094
 qos:
   policy: hostlevel
-  qos_params: "mtu 9000 mpu 9000 quantum 200000 burst 300000 cburst 300000 qdisc sfq balanced"
+  qos_params: mtu 9000 mpu 9000 quantum 200000 burst 300000 cburst 300000 qdisc sfq
+    balanced
   interfaces:
     enp65s0f0np0:
       master_intf: enp65s0f0np0
+    enp65s0f1np1:
+      master_intf: enp65s0f1np1
+enp65s0f1np1:
+  isAlias: urn:ogf:network:al2s.internet2.edu:2023:node+core1.losa2:port+HundredGigE0_0_0_XX
+  vlan_range: [2-4094]

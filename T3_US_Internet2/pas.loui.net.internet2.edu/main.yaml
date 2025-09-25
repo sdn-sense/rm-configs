@@ -1,22 +1,27 @@
----
 general:
-  ip: "163.253.16.49"
+  ip: 163.253.16.49
   sitename: T3_US_Internet2
-  webdomain: "https://sense-nrp-internet2.nrp-nautilus.io"
+  webdomain: https://sense-nrp-internet2.nrp-nautilus.io
   prometheus_federate: http://thanos-federate-proxy-service:9099/federate
   prometheus_query: '{instance="pas.loui.net.internet2.edu", service="node-exporter"}'
-agent: 
-  interfaces: [enp65s0f0np0]
+agent:
+  interfaces:
+  - enp65s0f0np0
+  - enp65s0f1np1
   hostname: pas.loui.net.internet2.edu
 enp65s0f0np0:
-
   isAlias: urn:ogf:network:al2s.internet2.edu:2023:node+core1.loui:port+HundredGigE0_0_0_24
-  # Alternative URNs for loui:
-  # isAlias_core_alt: urn:ogf:network:al2s.internet2.edu:2023:node+core1.loui:port+HundredGigE0_0_0_26
-  vlan_range: [2-4094]  # This just matches same vlan range on T3_US_Internet2 peering point
+  vlan_range:
+  - 2-4094
 qos:
   policy: hostlevel
-  qos_params: "mtu 9000 mpu 9000 quantum 200000 burst 300000 cburst 300000 qdisc sfq balanced"
+  qos_params: mtu 9000 mpu 9000 quantum 200000 burst 300000 cburst 300000 qdisc sfq
+    balanced
   interfaces:
     enp65s0f0np0:
       master_intf: enp65s0f0np0
+    enp65s0f1np1:
+      master_intf: enp65s0f1np1
+enp65s0f1np1:
+  isAlias: urn:ogf:network:al2s.internet2.edu:2023:node+core1.loui:port+HundredGigE0_0_0_XX
+  vlan_range: [2-4094]
