@@ -5,50 +5,20 @@ general:
   webdomain: "https://sense-nrp-internet2.nrp-nautilus.io"
   prometheus_federate: http://thanos-federate-proxy-service:9099/federate
   prometheus_query: '{instance="pas.ashb.net.internet2.edu", service="node-exporter"}'
-agent: 
-  interfaces: [enp65s0f0np0]
+agent:
+  interfaces: [enp65s0f1np1, enp65s0f0np0]
   hostname: pas.ashb.net.internet2.edu
 enp65s0f0np0:
-  isAlias: urn:ogf:network:al2s.internet2.edu:2023:node+core1.ashb:port+HundredGigE0_0_0_26
-  # Alternative URNs for ashb:
-  # isAlias_core_alt: urn:ogf:network:al2s.internet2.edu:2023:node+core1.ashb:port+HundredGigE0_0_0_33
-  # isAlias_agg1: urn:ogf:network:al2s.internet2.edu:2023:node+agg1.ashb:port+Bundle-Ether110_gcp_iad-zone2-1
-  # isAlias_agg1: urn:ogf:network:al2s.internet2.edu:2023:node+agg1.ashb:port+Bundle-Ether50_gcp_iad-zone2-1
-  # isAlias_agg1: urn:ogf:network:al2s.internet2.edu:2023:node+agg1.ashb:port+Bundle-Ether60_oci_us-ashburn-1
-  # isAlias_agg1: urn:ogf:network:al2s.internet2.edu:2023:node+agg1.ashb:port+HundredGigE0_0_0_21_azure_CrossConnection-WashingtonDC
-  # isAlias_agg1: urn:ogf:network:al2s.internet2.edu:2023:node+agg1.ashb:port+HundredGigE0_0_0_25_aws_us-east-1
-  # isAlias_agg1: urn:ogf:network:al2s.internet2.edu:2023:node+agg1.ashb:port+TenGigE0_0_0_20_1_azure_CrossConnection-WashingtonDC
-  # isAlias_agg1: urn:ogf:network:al2s.internet2.edu:2023:node+agg1.ashb:port+TenGigE0_0_0_20_3_aws_us-east-1
-  # isAlias_agg1: urn:ogf:network:al2s.internet2.edu:2023:node+agg1.ashb:port+TenGigE0_0_0_24_1_azure-gov_CrossConnection-WashingtonDC
-  # isAlias_agg1: urn:ogf:network:al2s.internet2.edu:2023:node+agg1.ashb:port+TenGigE0_0_0_24_2_aws_us-east-1
-  # isAlias_agg1: urn:ogf:network:al2s.internet2.edu:2023:node+agg1.ashb:port+TenGigE0_0_0_24_3_azure_CrossConnection-WashingtonDC
-  # isAlias_agg2: urn:ogf:network:al2s.internet2.edu:2023:node+agg2.ashb:port+Bundle-Ether70_oci-gov_us-langley-1
-  # isAlias_agg2: urn:ogf:network:al2s.internet2.edu:2023:node+agg2.ashb:port+HundredGigE0_0_0_17_aws_us-east-1
-  # isAlias_agg2: urn:ogf:network:al2s.internet2.edu:2023:node+agg2.ashb:port+TenGigE0_0_0_20_0_aws_us-east-1
-  # isAlias_agg2: urn:ogf:network:al2s.internet2.edu:2023:node+agg2.ashb:port+TenGigE0_0_0_20_1_aws_us-east-1
-  # isAlias_agg2: urn:ogf:network:al2s.internet2.edu:2023:node+agg2.ashb:port+TenGigE0_0_0_24_0_aws_us-east-1
-  # isAlias_agg2: urn:ogf:network:al2s.internet2.edu:2023:node+agg2.ashb:port+TenGigE0_0_0_24_1_aws_us-east-1
-  # isAlias_agg3: urn:ogf:network:al2s.internet2.edu:2023:node+agg3.ashb:port+Bundle-Ether110_gcp_iad-zone1-1
-  # isAlias_agg3: urn:ogf:network:al2s.internet2.edu:2023:node+agg3.ashb:port+Bundle-Ether5_gcp_iad-zone1-1
-  # isAlias_agg3: urn:ogf:network:al2s.internet2.edu:2023:node+agg3.ashb:port+Bundle-Ether6_oci_us-ashburn-1
-  # isAlias_agg3: urn:ogf:network:al2s.internet2.edu:2023:node+agg3.ashb:port+Bundle-Ether7_oci-gov_us-langley-1
-  # isAlias_agg3: urn:ogf:network:al2s.internet2.edu:2023:node+agg3.ashb:port+HundredGigE0_0_0_17_aws_us-east-1
-  # isAlias_agg3: urn:ogf:network:al2s.internet2.edu:2023:node+agg3.ashb:port+HundredGigE0_0_0_41_aws_us-east-1
-  # isAlias_agg3: urn:ogf:network:al2s.internet2.edu:2023:node+agg3.ashb:port+HundredGigE0_0_0_9_azure_CrossConnection-WashingtonDC
-  # isAlias_agg3: urn:ogf:network:al2s.internet2.edu:2023:node+agg3.ashb:port+TenGigE0_0_0_0_1_azure-gov_CrossConnection-WashingtonDC
-  # isAlias_agg3: urn:ogf:network:al2s.internet2.edu:2023:node+agg3.ashb:port+TenGigE0_0_0_0_2_aws_us-east-1
-  # isAlias_agg3: urn:ogf:network:al2s.internet2.edu:2023:node+agg3.ashb:port+TenGigE0_0_0_0_3_aws_us-east-1
-  # isAlias_agg3: urn:ogf:network:al2s.internet2.edu:2023:node+agg3.ashb:port+TenGigE0_0_0_40_0_aws_us-east-1
-  # isAlias_agg3: urn:ogf:network:al2s.internet2.edu:2023:node+agg3.ashb:port+TenGigE0_0_0_4_0_aws_us-east-1
-  # isAlias_agg3: urn:ogf:network:al2s.internet2.edu:2023:node+agg3.ashb:port+TenGigE0_0_0_4_1_azure_CrossConnection-WashingtonDC
-  # isAlias_agg3: urn:ogf:network:al2s.internet2.edu:2023:node+agg3.ashb:port+TenGigE0_0_0_4_2_azure_CrossConnection-WashingtonDC
-  # isAlias_agg3: urn:ogf:network:al2s.internet2.edu:2023:node+agg3.ashb:port+TenGigE0_0_0_4_3_aws_us-east-1
-  # isAlias_agg3: urn:ogf:network:al2s.internet2.edu:2023:node+agg3.ashb:port+TenGigE0_0_0_8_1_aws_us-east-1
-  # isAlias_agg3: urn:ogf:network:al2s.internet2.edu:2023:node+agg3.ashb:port+TenGigE0_0_0_8_2_aws_us-east-1
+  isAlias: urn:ogf:network:al2s.internet2.edu:2023:node+core1.ashb:port+HundredGigEenp65s0f0np0
   vlan_range: [2-4094]  # This just matches same vlan range on T3_US_Internet2 peering point
 qos:
   policy: hostlevel
   qos_params: "mtu 9000 mpu 9000 quantum 200000 burst 300000 cburst 300000 qdisc sfq balanced"
   interfaces:
+    enp65s0f1np1:
+      master_intf: enp65s0f1np1
     enp65s0f0np0:
       master_intf: enp65s0f0np0
+enp65s0f1np1:
+  isAlias: urn:ogf:network:al2s.internet2.edu:2023:node+core1.ashb:port+HundredGigE0_0_0_33
+  vlan_range: [2-4094]  # This just matches same vlan range on T3_US_Internet2 peering point

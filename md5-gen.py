@@ -13,3 +13,4 @@ if __name__ == "__main__":
         generateMD5(sys.argv[1])
     else:
         print('Usage: python3 <script_name> <hostname>')
+
