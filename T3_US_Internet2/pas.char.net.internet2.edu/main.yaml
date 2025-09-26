@@ -23,5 +23,6 @@ qos:
     enp65s0f1np1:
       master_intf: enp65s0f1np1
 enp65s0f1np1:
-  isAlias: urn:ogf:network:al2s.internet2.edu:2023:node+core1.char:port+HundredGigE0_0_0_XX
-  vlan_range: [2-4094]
+  isAlias: urn:ogf:network:al2s.internet2.edu:2023:node+core1.char:port+HundredGigEenp65s0f1np1
+  vlan_range:
+  - 2-4094
