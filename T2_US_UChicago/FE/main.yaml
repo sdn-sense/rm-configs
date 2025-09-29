@@ -1,0 +1,39 @@
+--- 
+general:
+  sitename: T2_US_UChicago
+  webdomain: "https://sense.af.uchicago.edu:443"
+  fastapi: true
+T2_US_UChicago:
+  domain: sense.af.uchicago.edu
+  latitude: 41.789722
+  longitude: -87.599722
+  plugin: ansible
+  vpp_exporter: "[2605:9a00:10:7::1]:1234"
+  year: 2024
+  ipv6-subnet-pool:
+    - 2605:9a00:10:2010::/64
+    - 2605:9a00:10:2011::/64
+    - 2605:9a00:10:2012::/64
+    - 2605:9a00:10:2013::/64
+  metadata:
+    xrootd:
+      2605:9a00:10:2010::/64 : redir-01.af.uchicago.edu:1094
+      2605:9a00:10:2011::/64 : redir-01.af.uchicago.edu:1094
+      2605:9a00:10:2012::/64 : redir-01.af.uchicago.edu:1094
+      2605:9a00:10:2013::/64 : redir-01.af.uchicago.edu:1094
+  switch:
+    - frr_s0
+frr_s0:
+  rsts_enabled: ipv6
+  private_asn: 64527
+  vlan_mtu: 9000
+  ports:
+    e1:
+      capacity: 100000
+      desttype: switch
+      isAlias: urn:ogf:network:es.net:2013::chic-cr6:lag-10:ssl
+  vlan_range:
+    - 2540-2549
+  allports: false
+  allvlans: false
+  snmp_monitoring: false
