@@ -18,38 +18,45 @@ NRM_CENIC:
 aristaeos_s0:
   rate_limit: true
   vlan_range:
+    - 1400-1499
     - 1779-1799
     - 2027
+    - 3110-3139
     - 3600-3610
     - 3985-3989
     - 3870-3883
     - 3911-3912
     - 3350-3359
     - 3846-3849
-    - 3110-3139
+    - 4005-4024
   ports:
     Port-Channel501:
       capacity: 100000
       desttype: switch
       isAlias: urn:ogf:network:tier2.ultralight.org:2024:dellos10_s0:Port-channel_102
       vlan_range:
+        - 1400-1499
         - 1779-1799
         - 3600-3610
         - 3985-3989
         - 3870-3883
         - 3911-3912
+        - 3110-3139
+        - 4005-4024
       wanlink: true
     Port-Channel502:
       capacity: 400000
       desttype: switch
       isAlias: urn:ogf:network:sense-oasis-nrp-nautilus.io:2020:oasis:Pc502
       vlan_range:
+        - 1400-1499
         - 3873-3874
         - 3911-3912
         - 3985-3989
         - 3600-3610
         - 1779-1799
         - 3110-3139
+        - 4005-4024
       wanlink: true
     Port-Channel503:
       capacity: 800000
@@ -77,33 +84,42 @@ aristaeos_s0:
       desttype: switch
       isAlias: urn:ogf:network:tier2.ultralight.org:2024:edgecore_s0:Ethernet208
       vlan_range:
+        - 1400-1499
         - 1779-1799
         - 3600-3610
         - 3985-3989
         - 3870-3883
         - 3911-3912
+        - 3110-3139
+        - 4005-4024
       wanlink: true
     Ethernet5/1:
       capacity: 10000
       desttype: switch
       isAlias: urn:ogf:network:tier2.ultralight.org:2024:edgecore_s0:Ethernet216
       vlan_range:
+        - 1400-1499
         - 1779-1799
         - 3600-3610
         - 3985-3989
         - 3870-3883
         - 3911-3912
+        - 3110-3139
+        - 4005-4024
       wanlink: true
     Ethernet6/1:
       capacity: 10000
       desttype: switch
       isAlias: urn:ogf:network:tier2.ultralight.org:2024:edgecore_s0:Ethernet224
       vlan_range:
+        - 1400-1499
         - 1779-1799
         - 3600-3610
         - 3985-3989
         - 3870-3883
         - 3911-3912
+        - 3110-3139
+        - 4005-4024
       wanlink: true
     Ethernet9/1:
       capacity: 100000
@@ -137,17 +153,21 @@ aristaeos_s0:
       desttype: switch
       isAlias: urn:ogf:network:tier2.ultralight.org:2024:edgecore_s0:Ethernet232
       vlan_range:
+        - 1400-1499
         - 1779-1799
         - 3600-3610
         - 3985-3989
         - 3870-3883
         - 3911-3912
+        - 3110-3139
+        - 4005-4024
       wanlink: true
     Ethernet13/1:
       capacity: 400000
       desttype: switch
       isAlias: urn:ogf:network:es.net:2013::losa-cr6:2_1_c4_1:+
       vlan_range:
+        - 1400-1499
         - 1779-1799
         - 2027
         - 3600-3610
@@ -155,4 +175,5 @@ aristaeos_s0:
         - 3870-3883
         - 3911-3912
         - 3110-3139
+        - 4005-4024
       wanlink: true

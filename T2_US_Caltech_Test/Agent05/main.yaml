@@ -12,7 +12,7 @@ mlx3p1s1:
   switch: aristaeos_s0
   shared: false
   intf_max: 100000
-  vlan_range: [1779-1799,3600-3619,3985-3989,3870-3883,3911-3912]
+  vlan_range: [1779-1799,3600-3619,3985-3989,3870-3883,3911-3912,1400-1499,3110-3139,4005-4024]
 qos:
   policy: privatens
   qos_params: "mtu 9000 mpu 9000 quantum 200000 burst 300000 cburst 300000 qdisc sfq balanced"

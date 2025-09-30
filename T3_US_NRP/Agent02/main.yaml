@@ -13,7 +13,7 @@ enp33s0f1np1:
   shared: false
   switch: s1
   intf_max: 10000
-  vlan_range: [1779-1799,3110-3139]
+  vlan_range: [1400-1499,1779-1799,3110-3139,3140-3189,3600-3610,3873-3874,3911-3912,3985-3989,4005-4024]
 qos:
   policy: hostlevel
   qos_params: "mtu 9000 mpu 9000 quantum 200000 burst 300000 cburst 300000 qdisc sfq balanced"
