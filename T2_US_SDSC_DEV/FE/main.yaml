@@ -40,7 +40,7 @@ sn3700_s0:
   private_asn: 65000
   allports: false
   vlan_range:
-    - 3615-3619
+    - 3611-3619
   ports:
     PortChannel502:
       capacity: 1200000
@@ -66,7 +66,7 @@ edgecore_s0:
   allports: false
   external_snmp: https://nsi-snmpmon-prpdev.nrp-nautilus.io/edgecore_s0/metrics
   vlan_range:
-    - 3615-3619
+    - 3611-3619
   ports:
     Ethernet128: {}
     Ethernet130: {}
@@ -84,11 +84,11 @@ edgecore_s0:
       desttype: switch
       isAlias: urn:ogf:network:nrp-nautilus-dev.io:2025:sn3700_s0:PortChannel502
       vlan_range:
-        - 3615-3619
+        - 3611-3619
     PortChannel500:
       capacity: 760000
       desttype: switch
       isAlias: urn:ogf:network:sense-oasis-nrp-nautilus-dev.io:2025:oasis:Pc500
       vlan_range:
-        - 3615-3619
+        - 3611-3619
       wanlink: PortChannel501

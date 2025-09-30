@@ -12,7 +12,7 @@ bond0:
   port: Ethernet 1/1/1:5
   switch: dellos10_s1
   intf_max: 200000
-  vlan_range: [3615-3619]
+  vlan_range: [3611-3619]
 enp1s0np0:
   port: Ethernet8
   switch: edgecore_s0
@@ -24,7 +24,7 @@ enp1s0np0:
     minReservableCapacity: 100
     maximumCapacity: 400000
     granularity: 100
-  vlan_range: [3615-3619]
+  vlan_range: [3611-3619]
 qos:
   policy: privatens
   qos_params: "mtu 9000 mpu 9000 quantum 200000 burst 300000 cburst 300000 qdisc sfq balanced"

@@ -13,7 +13,7 @@ enp65s0f1np1:
   port: Ethernet132
   switch: edgecore_s0
   intf_max: 100000
-  vlan_range: [3615-3619]
+  vlan_range: [3611-3619]
 qos:
   policy: privatens
   qos_params: "mtu 9000 mpu 9000 quantum 200000 burst 300000 cburst 300000 qdisc sfq balanced"
