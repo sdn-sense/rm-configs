@@ -17,61 +17,19 @@ NRM_CENICDEV:
 aristaeos_s0:
   rate_limit: true
   vlan_range:
-    - 3611-3619
+    - 3615-3619
   ports:
     Port-Channel501:
       capacity: 100000
       desttype: switch
       isAlias: urn:ogf:network:tier2-dev.ultralight.org:2025:dellos10_s0:Port-channel_102
       vlan_range:
-        - 3611-3619
+        - 3615-3619
       wanlink: true
     Port-Channel502:
       capacity: 100000
       desttype: switch
       isAlias: urn:ogf:network:sense-oasis-nrp-nautilus-dev.io:2025:oasis:Pc502
       vlan_range:
-        - 3611-3619
+        - 3615-3619
       wanlink: true
-#    Ethernet4/1:
-#      capacity: 400000
-#      desttype: switch
-#      isAlias: urn:ogf:network:tier2-dev.ultralight.org:2025:edgecore_s0:Ethernet208
-#      vlan_range:
-#        - 3611-3619
-#      wanlink: true
-#    Ethernet5/1:
-#      capacity: 400000
-#      desttype: switch
-#      isAlias: urn:ogf:network:tier2-dev.ultralight.org:2025:edgecore_s0:Ethernet216
-#      vlan_range:
-#        - 3611-3619
-#      wanlink: true
-#    Ethernet6/1:
-#      capacity: 400000
-#      desttype: switch
-#      isAlias: urn:ogf:network:tier2-dev.ultralight.org:2025:edgecore_s0:Ethernet224
-#      vlan_range:
-#        - 3611-3619
-#      wanlink: true
-#    Ethernet12/1:
-#      capacity: 400000
-#      desttype: switch
-#      isAlias: urn:ogf:network:tier2-dev.ultralight.org:2025:edgecore_s0:Ethernet232
-#      vlan_range:
-#        - 3611-3619
-#      wanlink: true
-#    Ethernet11/1:
-#      capacity: 100000
-#      desttype: switch
-#      isAlias: urn:ogf:network:lsanca.pacificwave.net:2016:pw-losa2-1:Arista-400G
-#      vlan_range:
-#        - 3611-3619
-#      wanlink: true
-#    Ethernet13/1:
-#      capacity: 400000
-#      desttype: switch
-#      isAlias: urn:ogf:network:es.net:2013::losa-cr6:2_1_c4_1:+
-#      vlan_range:
-#        - 3611-3619
-#      wanlink: true

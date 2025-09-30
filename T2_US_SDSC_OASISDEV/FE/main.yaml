@@ -13,7 +13,7 @@ T2_US_SDSC_OASISDEV:
   switch:
     - "oasis"
 oasis:
-  vlan_range: [3611-3619]
+  vlan_range: [3615-3619]
   ports:
     "Pc502":
       # Port-channel 502 facing LA Arista

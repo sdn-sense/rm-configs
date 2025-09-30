@@ -71,7 +71,7 @@ dellos10_s0:
       isAlias: urn:ogf:network:sc-test-dev.cenic.net:2025:aristaeos_s0:Port-Channel501
       wanlink: true
   vlan_range:
-    - 3611-3619
+    - 3615-3619
   allports: false
 edgecore_s0:
   vlan_mtu: 9100
@@ -111,7 +111,7 @@ edgecore_s0:
       isAlias: urn:ogf:network:sc-test-dev.cenic.net:2025:aristaeos_s0:Ethernet12-1
       wanlink: true
   vlan_range:
-    - 3611-3619
+    - 3615-3619
   allports: false
 dellos10_s1:
   vlan_mtu: 9216
@@ -127,5 +127,5 @@ dellos10_s1:
       desttype: switch
       isAlias: urn:ogf:network:tier2-dev.ultralight.org:2025:dellos10_s0:Port-channel_43
   vlan_range:
-    - 3611-3619
+    - 3615-3619
   allports: false
