@@ -23,3 +23,6 @@ senseodev:
 senseoeast:
   full_dn: "/C=US/O=Internet2/CN=InCommon RSA Server CA 2/C=US/ST=California/O=Energy Sciences Network/CN=sense-o-east.es.net"
   permissions: w
+fengping:
+  full_dn: "/DC=ch/DC=cern/CN=CERN Grid Certification Authority/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=fehu/CN=673366/CN=Fengping Hu"
+  permissions: w
