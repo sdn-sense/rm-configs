@@ -22,7 +22,7 @@ cisconx9:
   ports:
     Ethernet1/11: {}
     Ethernet1/12: {}
-    Ethernet1/28:
+    Ethernet1/36:
       capacity: 100000
       desttype: switch
       isAlias: urn:ogf:network:surf.nl:2020:production:netherlight.de-kit-1
