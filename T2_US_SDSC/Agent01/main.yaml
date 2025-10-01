@@ -15,14 +15,14 @@ ens1f0np0:
   shared: false
   intf_max: 200000
   allowOvercommit: false
-  vlan_range: [1779-1799,3873-3874,3911-3912,3985-3989,3600-3619,3110-3139]
+  vlan_range: [1400-1499,1779-1799,3110-3139,3140-3189,3600-3610,3873-3874,3911-3912,3985-3989,4005-4024]
 enp168s0np0:
   port: Ethernet32
   switch: edgecore_s0
   shared: false
   intf_max: 400000
   allowOvercommit: false
-  vlan_range: [1779-1799,3873-3874,3911-3912,3985-3989,3600-3619,3110-3139]
+  vlan_range: [1400-1499,1779-1799,3110-3139,3140-3189,3600-3610,3873-3874,3911-3912,3985-3989,4005-4024]
 qos:
   policy: privatens
   qos_params: "mtu 9000 mpu 9000 quantum 200000 burst 300000 cburst 300000 qdisc sfq balanced"
