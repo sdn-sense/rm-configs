@@ -16,6 +16,7 @@ NRM_CENICDEV:
     - aristaeos_s0
 aristaeos_s0:
   rate_limit: true
+  vrf: sense
   vlan_range:
     - 3611-3619
   ports:
