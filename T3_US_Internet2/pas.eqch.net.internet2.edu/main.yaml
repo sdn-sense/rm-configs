@@ -24,7 +24,7 @@ enp65s0f0np0:
   # isAlias_agg4: urn:ogf:network:al2s.internet2.edu:2023:node+agg4.eqch:port+HundredGigE0_0_0_6_aws_us-east-2
   # isAlias_agg4: urn:ogf:network:al2s.internet2.edu:2023:node+agg4.eqch:port+TenGigE0_0_0_11_0_azure_CrossConnection-Chicago
   # isAlias_agg4: urn:ogf:network:al2s.internet2.edu:2023:node+agg4.eqch:port+TenGigE0_0_0_11_2_aws_us-east-2
-  vlan_range: [2-4094]  # This just matches same vlan range on T3_US_Internet2 peering point
+  vlan_range: [1000-3999]  # This just matches same vlan range on T3_US_Internet2 peering point
 qos:
   policy: hostlevel
   qos_params: "mtu 9000 mpu 9000 quantum 200000 burst 300000 cburst 300000 qdisc sfq balanced"
