@@ -8,7 +8,7 @@ agent:
   interfaces: [ens2]
   hostname: a01-102-151-e.gridka.de
 ens2:
-  port: "Ethernet1/12"
+  port: "Ethernet1/11"
   switch: cisconx9
   shared: false
   vlan_range: [3695-3699]
