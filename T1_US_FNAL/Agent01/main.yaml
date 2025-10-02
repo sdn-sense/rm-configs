@@ -4,6 +4,7 @@ general:
   sitename: [T1_US_FNAL]
   webdomain: "https://cmssense1.fnal.gov:8443"
   node_exporter: "cmssense2.fnal.gov:9100"
+  node_exporter_passthrough: true
 agent: 
   interfaces: [enp65s0f0np0]
   hostname: cmssense2.fnal.gov
