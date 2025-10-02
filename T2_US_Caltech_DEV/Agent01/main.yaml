@@ -4,7 +4,6 @@ general:
   sitename: T2_US_Caltech_DEV
   webdomain: "https://sense-dev-caltechprod.nrp-nautilus.io:443"
   node_exporter: "transfer-11.ultralight.org:9100"
-  node_exporter_passthrough: true
 agent: 
   interfaces: [bond0, enp1s0np0]
   hostname: transfer-11.ultralight.org

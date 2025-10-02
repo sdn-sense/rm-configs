@@ -4,6 +4,7 @@ general:
   sitename: T1_DE_KIT
   webdomain: "https://a01-102-151-e.gridka.de:8443"
   node_exporter: "a01-102-101-e.gridka.de:9100"
+  node_exporter_passthrough: true
 agent:
   interfaces: [ens2]
   hostname: a01-102-101-e.gridka.de
