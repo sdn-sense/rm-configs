@@ -17,10 +17,10 @@ T2_US_UChicago:
     - 2605:9a00:10:2013::/64
   metadata:
     xrootd:
-      2605:9a00:10:2010::/64 : redir-01.af.uchicago.edu:1094
-      2605:9a00:10:2011::/64 : redir-01.af.uchicago.edu:1094
-      2605:9a00:10:2012::/64 : redir-01.af.uchicago.edu:1094
-      2605:9a00:10:2013::/64 : redir-01.af.uchicago.edu:1094
+      2605:9a00:10:2010::/64 : dtn-100-2010.af.uchicago.edu:1094
+      2605:9a00:10:2011::/64 : dtn-100-2011.af.uchicago.edu:1094
+      2605:9a00:10:2012::/64 : dtn-100-2012.af.uchicago.edu:1094
+      2605:9a00:10:2013::/64 : dtn-100-2013.af.uchicago.edu:1094
   switch:
     - frr_s0
 frr_s0:
