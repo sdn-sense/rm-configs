@@ -1,0 +1,35 @@
+---
+general:
+  ip: " 67.58.59.9" # This is an IP of hostname (only used as unique identifier in frontend). Will be removed in future
+  sitename: T2_US_UCSD
+  webdomain: https://sense-t2-us-ucsd.nrp-nautilus.io:443
+  node_exporter: "dtn-01.t2.ucsd.edu:9100"
+agent:
+  interfaces: [enp1s0f0np0] # Here you are telling all interfaces Agent is allowed to control. Can be a list (only physical interfaces). No need to whitelist all vlan.xxx here or macvlans
+  hostname: dtn-01.t2.ucsd.edu # hostname -f
+enp1s0f0np0: # For all agent -> interfaces, each interface requires own config section
+  port: "Ethernet22" # Where is it connected? Either you know it, or (on router check lldp neigbors and match mac table). Or run lldpd daemon on host, and do lldpcli show neighbors. I checked dtn-01 on the router based on the mac address
+  switch: edgecore_s0  # Switch name. This needs to point to a switch inside the Frontend. Frontend has only one switch now, called edgecore_s0 
+  vlan_range: [1400-1499,1779-1799,3110-3139,3140-3189,3600-3610,3873-3874,3911-3912,3985-3989,4005-4024] # Which vlans are allowed up to host. this is mainly for L2. In most cases, this matches same vlan range, that FE configures on the switch. You can be selective and tell only specific vlans are allowed.
+qos: # QoS Policy
+  policy: hostlevel # Given your public IPs for XRootD are set at the host level (macvlan1,2,3...) this is then hostlevel. In case privatens are used (either kube multus or docker) - this would be privatens then. For Private NS, see example here:T2_US_SDSC/Agent01/main.yaml
+  qos_params: "mtu 9000 mpu 9000 quantum 200000 burst 300000 cburst 300000 qdisc sfq balanced" # This is the default (you dont need to specify this. Only if you want to override it) 
+  interfaces:
+    enp1s0f0np0: # Which interface has all public ranges?
+      master_intf: enp1s0f0np0 # What is the master interface? Yes, information is repeating, but that is mainly to respect same format as PrivateNS.
+      ipv6_range: # What ranges are controllable on that master_intf?
+      - 2001:48d0:6020:f011::/64
+      - 2001:48d0:6020:f012::/64
+      - 2001:48d0:6020:f013::/64
+      - 2001:48d0:6020:f014::/64
+      - 2001:48d0:6020:f015::/64
+      - 2001:48d0:6020:f016::/64
+      - 2001:48d0:6020:f017::/64
+      - 2001:48d0:6020:f018::/64
+      - 2001:48d0:6020:f019::/64
+      - 2001:48d0:6020:f01a::/64
+      - 2001:48d0:6020:f01b::/64
+      - 2001:48d0:6020:f01c::/64
+      - 2001:48d0:6020:f01d::/64
+      - 2001:48d0:6020:f01e::/64
+      - 2001:48d0:6020:f01f::/64

@@ -4,3 +4,10 @@
   maintainer: "Diego Davila"
   status: production
   type: FE
+38402a360a5a0e0ebf5f278a4de631bc:
+  config: dtn-01.t2.ucsd.edu/ # This points to a directory
+  maintainer: "Diego Davila"
+  status: production
+  type: Agent
+# Note: MD5 is generated using python3 md5-gen.py <hostname>
+# Script is available in the root of this repo

@@ -57,3 +57,4 @@ edgecore_s0:
       capacity: 800000
       desttype: switch
       isAlias: urn:ogf:network:sense-oasis-nrp-nautilus.io:2020:oasis:Pc752
+    Ethernet22: {} # Port needs to be enabled on FE also. By default, FE runs with allports:false, and tells that only ports listed in configuration, are enabled for SENSE. For agent connections, most times ports do not require any additional configuration. 
