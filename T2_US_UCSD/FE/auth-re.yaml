@@ -1,6 +1,6 @@
 ---
-sdscsense:
-  full_dn: "/C=US/O=Let's Encrypt/CN=R[0-9]+/CN=.*.nrp-nautilus.io"
+ucsdsense:
+  full_dn: "/C=US/O=Internet2/CN=InCommon RSA IGTF Server CA 3/DC=org/DC=incommon/C=US/ST=California/O=University of California, San Diego/CN=dtn-[0-9]+.t2.ucsd.edu"
   permissions: w
 autogole_monitoring:
   full_dn: "/C=US/O=Let's Encrypt/CN=R[0-9]+/CN=autogole-grafana.nrp-nautilus.io"
