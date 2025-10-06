@@ -1,7 +1,7 @@
 ---
 general:
   ip: "131.225.196.137"
-  sitename: [T1_US_FNAL]
+  sitename: T1_US_FNAL
   webdomain: "https://cmssense1.fnal.gov:8443"
   node_exporter: "cmssense3.fnal.gov:9100"
   node_exporter_passthrough: true
@@ -11,29 +11,8 @@ agent:
 enp65s0f0np0:
   port: "Ethernet1/28"
   shared: false
-  allowOvercommit: true
   switch: cisconx9
-  intf_max: 100000
-  bwParams:
-    unit: "mbps"
-    type: "guaranteedCapped"
-    priority: 0
-    minReservableCapacity: 1000
-    maximumCapacity: 100000
-    granularity: 1000
   vlan_range: [3600-3619]
-  ipv4-address-pool: [10.251.85.0/24,10.251.86.0/24,10.251.87.0/24,10.251.88.0/24,10.251.89.0/24,172.16.3.0/30,172.17.3.0/30,172.18.3.0/30,172.19.3.0/30,172.31.10.0/24,172.31.11.0/24,172.31.12.0/24,172.31.13.0/24,172.31.14.0/24,172.31.15.0/24]
-  ipv6-address-pool:
-    - "fc00:0000:0100::/40"
-    - "fc00:0000:0200::/40"
-    - "fc00:0000:0300::/40"
-    - "fc00:0000:0400::/40"
-    - "fc00:0000:0500::/40"
-    - "fc00:0000:0600::/40"
-    - "fc00:0000:0700::/40"
-    - "fc00:0000:0800::/40"
-    - "fc00:0000:0900::/40"
-    - "fc00:0000:ff00::/40"
 qos:
   policy: hostlevel
   qos_params: "mtu 9000 mpu 9000 quantum 200000 burst 300000 cburst 300000 qdisc sfq balanced"

@@ -1,11 +1,9 @@
 ---
 general:
   logLevel: DEBUG
-  sites: 
-    - "T1_US_FNAL"
+  sitename: "T1_US_FNAL"
   webdomain: "https://cmssense1.fnal.gov:8443"
-  probes: ['https_v4_siterm_2xx', 'icmp_v4']
-  privatedir: /opt/siterm/config/
+  fastapi: true
 T1_US_FNAL:
   domain: fnal.gov
   latitude: 41.8384
@@ -13,7 +11,6 @@ T1_US_FNAL:
   plugin: ansible
   switch:
     - cisconx9
-  privatedir: /opt/siterm/config/T1_US_FNAL/
   year: 2023
   ipv6-subnet-pool:
     - 2620:6a:0:2841::/64
@@ -40,37 +37,7 @@ T1_US_FNAL:
       2620:6a:0:2841::/64: cmssense6-origin-2841-1.fnal.gov:2880
       2620:6a:0:2842::/64: cmssense6-origin-2842-1.fnal.gov:2880
       2620:6a:0:2843::/64: cmssense6-origin-2843-1.fnal.gov:2880
-  ipv4-address-pool:
-    - 10.251.85.0/24
-    - 10.251.86.0/24
-    - 10.251.87.0/24
-    - 10.251.88.0/24
-    - 10.251.89.0/24
-    - 172.16.3.0/30
-    - 172.17.3.0/30
-    - 172.18.3.0/30
-    - 172.19.3.0/30
-    - 172.31.10.0/24
-    - 172.31.11.0/24
-    - 172.31.12.0/24
-    - 172.31.13.0/24
-    - 172.31.14.0/24
-    - 172.31.15.0/24
-  ipv6-address-pool:
-    - "fc00:0000:0100::/40"
-    - "fc00:0000:0200::/40"
-    - "fc00:0000:0300::/40"
-    - "fc00:0000:0400::/40"
-    - "fc00:0000:0500::/40"
-    - "fc00:0000:0600::/40"
-    - "fc00:0000:0700::/40"
-    - "fc00:0000:0800::/40"
-    - "fc00:0000:0900::/40"
-    - "fc00:0000:ff00::/40"
 cisconx9:
-  vsw: cisconx9
-  vswmp: cisconx9_mp
-  rst: cisconx9
   rsts_enabled: ipv4,ipv6
   private_asn: 64515
   vlan_mtu: 9216
