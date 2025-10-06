@@ -4,3 +4,43 @@
   maintainer: "Diego Davila"
   status: production
   type: FE
+38402a360a5a0e0ebf5f278a4de631bc:
+  config: Agent01/
+  maintainer: "Diego Davila"
+  status: production
+  type: Agent
+9500a57fda487cfa906fd1f52a26732e:
+  config: Agent02/
+  maintainer: "Diego Davila"
+  status: production
+  type: Agent
+0189f9ef43b0bf821eec9266f4eb45d8:
+  config: Agent03/
+  maintainer: "Diego Davila"
+  status: production
+  type: Agent
+63040143efa225d17fc8c96fb48e35d6:
+  config: Agent04/
+  maintainer: "Diego Davila"
+  status: production
+  type: Agent
+f1bd28015b66e4e5681c6934c972187f:
+  config: Agent05/
+  maintainer: "Diego Davila"
+  status: production
+  type: Agent
+180279b557b7eca3f08f7a13eacaca32:
+  config: Agent06/
+  maintainer: "Diego Davila"
+  status: production
+  type: Agent
+06da9a2b89389d2e46ff139d81f0a261:
+  config: Agent07/
+  maintainer: "Diego Davila"
+  status: production
+  type: Agent
+21862b9df73c63594a72734711e9e025:
+  config: Agent08/
+  maintainer: "Diego Davila"
+  status: production
+  type: Agent
