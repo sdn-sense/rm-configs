@@ -57,3 +57,4 @@ edgecore_s0:
       capacity: 800000
       desttype: switch
       isAlias: urn:ogf:network:sense-oasis-nrp-nautilus.io:2020:oasis:Pc752
+      wanlink: True
