@@ -3,6 +3,8 @@ general:
   sitename: T2_US_UChicago
   webdomain: "https://sense.af.uchicago.edu:443"
   fastapi: true
+  probes:
+    - https_v4_siterm_2xx
 T2_US_UChicago:
   domain: sense.af.uchicago.edu
   latitude: 41.789722
