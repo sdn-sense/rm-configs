@@ -1,0 +1,35 @@
+general:
+  ip: "67.58.59.13"
+  sitename: T2_US_UCSD
+  webdomain: "https://sense-t2-us-ucsd.nrp-nautilus.io:443"
+  node_exporter: "dtn-05.t2.ucsd.edu:9100"
+agent:
+  interfaces: [enp1s0f0np0]
+  hostname: dtn-05.t2.ucsd.edu
+enp1s0f0np0:
+  port: "Ethernet30"
+  switch: edgecore_s0
+  vlan_range: [1400-1499,1779-1799,3110-3139,3140-3189,3600-3610,3873-3874,3911-3912,3985-3989,4005-4024]
+qos:
+  policy: hostlevel
+  qos_params: "mtu 9000 mpu 9000 quantum 200000 burst 300000 cburst 300000 qdisc sfq balanced"
+  interfaces:
+    enp1s0f0np0:
+      master_intf: enp1s0f0np0
+      ipv6_range:
+      - 2001:48d0:6020:f010::/64
+      - 2001:48d0:6020:f011::/64
+      - 2001:48d0:6020:f012::/64
+      - 2001:48d0:6020:f013::/64
+      - 2001:48d0:6020:f014::/64
+      - 2001:48d0:6020:f015::/64
+      - 2001:48d0:6020:f016::/64
+      - 2001:48d0:6020:f017::/64
+      - 2001:48d0:6020:f018::/64
+      - 2001:48d0:6020:f019::/64
+      - 2001:48d0:6020:f01a::/64
+      - 2001:48d0:6020:f01b::/64
+      - 2001:48d0:6020:f01c::/64
+      - 2001:48d0:6020:f01d::/64
+      - 2001:48d0:6020:f01e::/64
+      - 2001:48d0:6020:f01f::/64
