@@ -12,6 +12,7 @@ enp1s0:
   port: "Ethernet1/9"
   shared: false
   switch: cisconx9
+  vlan_range: [3600-3619]
 qos:
   policy: hostlevel
   qos_params: "mtu 9000 mpu 9000 quantum 200000 burst 300000 cburst 300000 qdisc sfq balanced"
