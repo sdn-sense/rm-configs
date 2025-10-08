@@ -15,18 +15,12 @@ T2_US_UCSD_OASIS:
 oasis:
   vlan_range: [1400-1499,1779-1799,3110-3139,3140-3189,3600-3610,3873-3874,3911-3912,3985-3989,4005-4024]
   ports:
-    "6_3_1":
-      # Facility Port for FP1
-      capacity: 400000
-      isAlias: "urn:ogf:network:stack-fabric:2024:topology:node+UCSD:port+FP1-UCSD"
-      wanlink: True
-      vlan_range: ["4005-4024"]
-    "6_3_2":
+    "Pc520":
       # Facility Port for NRP-UCSD
-      capacity: 400000
+      capacity: 100000 # It is set to 100 (while Oasis in reality has 800g). 100 because of internal details on Fabric.
       isAlias: "urn:ogf:network:stack-fabric:2024:topology:node+UCSD:port+NRP-UCSD"
       wanlink: True
-      vlan_range: ["3110-3139"]
+      vlan_range: ["3140-3189"]
     # Port facing Chameleon
     "Pc459":
       capacity: 400000
