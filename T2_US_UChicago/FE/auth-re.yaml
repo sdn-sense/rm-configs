@@ -1,10 +1,6 @@
 ---
-fabrichosts:
-  full_dn: "/C=US/O=Internet2/CN=InCommon RSA Server CA 2/C=US/ST=Kentucky/O=University of Kentucky/.*.exp.fabric-testbed.net"
-  permissions: w
-fabricigtf:
-  full_dn: "/C=US/O=Internet2/CN=InCommon RSA IGTF Server CA 3/DC=org/DC=incommon/C=US/ST=Kentucky/O=University of Kentucky/CN=.*"
-  permissions: w
+uchicagodtn:
+  full_dn: "/C=US/O=Let's Encrypt/CN=R[0-9]+/CN=sense-c[0-9]+.af.uchicago.edu"
 autogole_monitoring:
   full_dn: "/C=US/O=Let's Encrypt/CN=R[0-9]+/CN=autogole-grafana.nrp-nautilus.io"
   permissions: r
