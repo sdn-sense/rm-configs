@@ -2,5 +2,10 @@
 57ed8ab161a57cc34af04a8c114140f7:
   config: FE/
   maintainer: "Justas Balcas"
-  status: development
+  status: production
   type: FE
+f09243624ef719706fbb94fc79fa2552:
+  config: c020.af.uchicago.edu/
+  maintainer: "Justas Balcas"
+  status: production
+  type: Agent

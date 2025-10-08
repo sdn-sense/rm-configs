@@ -1,0 +1,22 @@
+---
+general:
+  ip: "192.170.240.135"
+  sitename: T2_US_UChicago
+  webdomain: "https://sense.af.uchicago.edu:443"
+  fastapi: true
+  node_exporter: "c020.af.uchicago.edu:9100"
+agent: 
+  interfaces: [ens2f0np0]
+  hostname: c020.af.uchicago.edu
+ens2f0np0:
+  port: "1_2"
+  shared: false
+  switch: s1
+  intf_max: 100000
+  vlan_range: [100-200]
+qos:
+  policy: hostlevel
+  qos_params: "mtu 9000 mpu 9000 quantum 200000 burst 300000 cburst 300000 qdisc sfq balanced"
+  interfaces:
+    ens2f0np0:
+      master_intf: ens2f0np0
