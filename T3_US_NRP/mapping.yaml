@@ -24,11 +24,6 @@ fc1160fd224208219cbae01c8c8cc4cf:
   maintainer: "John Graham"
   status: production
   type: Agent
-1e6a4112e0a515ac381bc22cc51bee2d:
-  config: k8s-nvme-01_ultralight_org/
-  maintainer: "John Graham"
-  status: production
-  type: Agent
 8e47f350ffd8a28b6699ec86fa4053b1:
   config: ucsd-nrp_cern_ch/
   maintainer: "John Graham"

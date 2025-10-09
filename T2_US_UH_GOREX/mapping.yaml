@@ -9,8 +9,3 @@
   maintainer: "Chris Zane"
   status: production
   type: Agent
-5b596d3fb0c814ba6715d8669394d5d4:
-  config: Agent03/
-  maintainer: "Chris Zane"
-  status: production
-  type: Agent
