@@ -1,6 +1,6 @@
 ---
 general:
-  logLevel: DEBUG
+  logLevel: INFO
   sitename: NRM_CENIC
   webdomain: https://sense-ladowntown.nrp-nautilus.io:443
   fastapi: true
