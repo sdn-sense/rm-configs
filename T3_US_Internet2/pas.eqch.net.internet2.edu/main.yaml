@@ -6,11 +6,10 @@ general:
   prometheus_federate: http://thanos-federate-proxy-service:9099/federate
   prometheus_query: '{instance="pas.eqch.net.internet2.edu", service="node-exporter"}'
 agent: 
-  interfaces: [enp65s0f0np0]
+  interfaces: [enp65s0f1np1, enp65s0f0np0]
   hostname: pas.eqch.net.internet2.edu
 enp65s0f0np0:
-
-  isAlias: urn:ogf:network:al2s.internet2.edu:2023:node+core1.eqch:port+HundredGigE0_0_0_33
+  isAlias: urn:ogf:network:al2s.internet2.edu:2023:node+core1.eqch:port+HundredGigE0_0_0_30
   # Alternative URNs for eqch:
   # isAlias_agg3: urn:ogf:network:al2s.internet2.edu:2023:node+agg3.eqch:port+Bundle-Ether100_gcp_ord-zone1-7
   # isAlias_agg3: urn:ogf:network:al2s.internet2.edu:2023:node+agg3.eqch:port+Bundle-Ether5_gcp_ord-zone1-7
@@ -29,5 +28,10 @@ qos:
   policy: hostlevel
   qos_params: "mtu 9000 mpu 9000 quantum 200000 burst 300000 cburst 300000 qdisc sfq balanced"
   interfaces:
+    enp65s0f1np1:
+      master_intf: enp65s0f1np1
     enp65s0f0np0:
       master_intf: enp65s0f0np0
+enp65s0f1np1:
+  isAlias: urn:ogf:network:al2s.internet2.edu:2023:node+core1.eqch:port+HundredGigE0_0_0_33
+  vlan_range: [1000-3999]  # This just matches same vlan range on T3_US_Internet2 peering point
