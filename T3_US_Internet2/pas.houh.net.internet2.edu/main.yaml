@@ -9,7 +9,7 @@ agent:
   interfaces: [enp65s0f1np1, enp65s0f0np0]
   hostname: pas.houh.net.internet2.edu
 enp65s0f0np0:
-  isAlias: urn:ogf:network:al2s.internet2.edu:2023:node+core1.houh:port+HundredGigEenp65s0f0np0
+  isAlias: urn:ogf:network:al2s.internet2.edu:2023:node+core1.houh:port+HundredGigE0_0_0_26
   vlan_range: [1000-3999]  # This just matches same vlan range on T3_US_Internet2 peering point
 qos:
   policy: hostlevel
@@ -20,5 +20,5 @@ qos:
     enp65s0f0np0:
       master_intf: enp65s0f0np0
 enp65s0f1np1:
-  isAlias: urn:ogf:network:al2s.internet2.edu:2023:node+core1.houh:port+HundredGigE0_0_0_33
+  isAlias: urn:ogf:network:al2s.internet2.edu:2023:node+core1.houh:port+HundredGigE0_0_0_27
   vlan_range: [1000-3999]  # This just matches same vlan range on T3_US_Internet2 peering point
