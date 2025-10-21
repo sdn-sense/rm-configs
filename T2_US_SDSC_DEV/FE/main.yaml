@@ -4,7 +4,7 @@ general:
   sitename: T2_US_SDSC_DEV
   webdomain: https://sense-dev-sdsc.nrp-nautilus.io:443
   fastapi: true
-  oidc: true
+  oidc: false
   probes:
     - https_v4_siterm_2xx
     - icmp_v4
