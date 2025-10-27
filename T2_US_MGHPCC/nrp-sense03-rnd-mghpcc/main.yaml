@@ -9,7 +9,7 @@ agent:
   interfaces: [bond0]
   hostname: nrp-sense03.rnd.net2.mghpcc.org
 bond0:
-  port: ae998
+  port: ae7
   switch: junos_s0
   shared: false
   vlan_range: [3901-3920]

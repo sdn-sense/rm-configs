@@ -52,6 +52,10 @@ junos_s0:
       vlan_range:
         - 3100-3109
       wanlink: true
+    "ae6":
+      capacity: 400000
+    "ae7":
+      capacity: 400000
     "sense-mghpcc":
       capacity: 400000
       desttype: switch
