@@ -9,3 +9,13 @@ c2244179d63eb51d88caf907c0e12c89:
   maintainer: "John Graham"
   status: production
   type: Agent
+de5b091cc55414290d39cc4343a11007:
+  config: nrp-sense02-rnd-mghpcc/
+  maintainer: "John Graham"
+  status: production
+  type: Agent
+7273546195c123674f479e7e81304555:
+  config: nrp-sense03-rnd-mghpcc/
+  maintainer: "John Graham"
+  status: production
+  type: Agent

@@ -1,0 +1,23 @@
+---
+general:
+  ip: "205.172.169.6"
+  sitename: T2_US_MGHPCC
+  webdomain: "https://sense-mghpcc.nrp-nautilus.io:443"
+  prometheus_federate: http://thanos-federate-proxy-service:9099/federate
+  prometheus_query: '{instance="nrp-sense03.rnd.net2.mghpcc.org", service="node-exporter"}'
+agent: 
+  interfaces: [bond0]
+  hostname: nrp-sense03.rnd.net2.mghpcc.org
+bond0:
+  port: ae998
+  switch: junos_s0
+  shared: false
+  vlan_range: [3901-3920]
+  bwParams:
+    maximumCapacity: 400000
+qos:
+  policy: hostlevel
+  qos_params: "mtu 9000 mpu 9000 quantum 200000 burst 300000 cburst 300000 qdisc sfq balanced"
+  interfaces:
+    bond0:
+      master_intf: bond0
