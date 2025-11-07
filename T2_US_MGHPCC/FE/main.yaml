@@ -59,6 +59,9 @@ junos_s0:
       desttype: switch
       isAlias: urn:ogf:network:es.net:2013::bost-cr6:1_1_c22_1:mghpcc
       wanlink: true
+      vlan_range:
+        - 3901-3910
+        - 3107
     "ae6":
       capacity: 400000
     "ae7":
