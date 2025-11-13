@@ -1,0 +1,7 @@
+---
+mghpccre:
+  full_dn: "/C=US/O=Let's Encrypt/CN=R[0-9]+/CN=.*mghpcc.nrp-nautilus.io"
+  permissions: w
+autogole_monitoring:
+  full_dn: "/C=US/O=Let's Encrypt/CN=R[0-9]+/CN=autogole-grafana.nrp-nautilus.io"
+  permissions: r

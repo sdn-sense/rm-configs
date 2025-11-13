@@ -178,3 +178,51 @@ aristaeos_s0:
         - 3110-3139
         - 4005-4024
       wanlink: true
+    Ethernet18/1-wc191:
+    # WC19-1 to Caltech booth
+      capacity: 400000
+      desttype: switch
+      realportname: Ethernet18/1
+      vlan_range:
+        - 1790-1799
+      wanlink: true
+    Ethernet18/1-wc192:
+    # Wc19-2 to Juniper Junos
+      capacity: 400000
+      desttype: switch
+      isAlias: urn:ogf:network:scinet.net:2025:junos_s0:ae100-wc192
+      realportname: Ethernet18/1
+      vlan_range:
+        - 3600-3609
+      wanlink: true
+    Ethernet19/1-wc201:
+    # WC20-1 to Caltech booth
+      capacity: 400000
+      desttype: switch
+      realportname: Ethernet19/1
+      vlan_range:
+        - 3985-3989
+      wanlink: true
+    Ethernet19/1-wc202:
+    # Wc20-2 to Juniper Junos
+      capacity: 400000
+      desttype: switch
+      isAlias: urn:ogf:network:scinet.net:2025:junos_s0:ae100-wc202
+      realportname: Ethernet19/1
+      vlan_range:
+        - 3130-3139
+      wanlink: true
+    Ethernet20/1:
+    # Wc21 to Caltech booth
+      capacity: 400000
+      desttype: switch
+      vlan_range:
+        - 4005-4014
+      wanlink: true
+    Ethernet21/1:
+    # Wc22 to Caltech booth
+      capacity: 400000
+      desttype: switch
+      vlan_range:
+        - 1420-1429
+      wanlink: true
