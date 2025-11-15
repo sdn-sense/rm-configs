@@ -4,3 +4,63 @@
   maintainer: "Justas Balcas"
   status: production
   type: FE
+98fb15a146dc9eaad50ffb730c981520:
+  config: r640-01/
+  maintainer: "John Graham"
+  status: production
+  type: Agent
+5e6e457b6da15683c719f10f09227d72:
+  config: r640-02/
+  maintainer: "John Graham"
+  status: production
+  type: Agent
+23e38bbc395d696432ee993dc568d7e8:
+  config: r640-03/
+  maintainer: "John Graham"
+  status: production
+  type: Agent
+dcb6e55c3f985d917ca5a291fe64a097:
+  config: r640-04/
+  maintainer: "John Graham"
+  status: production
+  type: Agent
+7cc341473af13861205b62c4f6525e8f:
+  config: r640-05/
+  maintainer: "John Graham"
+  status: production
+  type: Agent
+cb6194d8e851a1bc79e4e7efb999efd1:
+  config: r640-06/
+  maintainer: "John Graham"
+  status: production
+  type: Agent
+fd5143458058f37cd057db009c2b85fe:
+  config: r640-07/
+  maintainer: "John Graham"
+  status: production
+  type: Agent
+306a48782063f642a6b03de735a10bb1:
+  config: r640-08/
+  maintainer: "John Graham"
+  status: production
+  type: Agent
+64d6066be5e48130640a4d5ad82f8511:
+  config: r640-09/
+  maintainer: "John Graham"
+  status: production
+  type: Agent
+b340a0c1d2d5580deac2bff18c797abb:
+  config: r640-10/
+  maintainer: "John Graham"
+  status: production
+  type: Agent
+556c13a99a78c060b5c02bdf9ab420b4:
+  config: r640-11/
+  maintainer: "John Graham"
+  status: production
+  type: Agent
+a444cdb8549c900a2bdc7eb17d298784:
+  config: r640-12/
+  maintainer: "John Graham"
+  status: production
+  type: Agent
