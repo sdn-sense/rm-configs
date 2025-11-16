@@ -1,16 +1,16 @@
 ---
 general:
-  ip: "140.221.247.10"
+  ip: "140.221.247.20"
   sitename: NRM_SCINET
   webdomain: "https://sense-scinet.nrp-nautilus.io:443"
   prometheus_federate: http://thanos-federate-proxy-service:9099/federate
-  prometheus_query: '{instance="r640-01.sc25.nrp-nautilus.io", service="node-exporter"}'
+  prometheus_query: '{instance="r640-10.sc25.nrp-nautilus.io", service="node-exporter"}'
 agent: 
   interfaces: [enp59s0np0]
-  hostname: r640-01.sc25.nrp-nautilus.io
+  hostname: r640-10.sc25.nrp-nautilus.io
   noqos: false
 enp59s0np0:
-  port: et-0/0/14
+  port: et-0/0/23
   switch: junos_s0
   shared: false
   intf_max: 100000

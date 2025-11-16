@@ -64,7 +64,7 @@ junos_s0:
       capacity: 400000
       desttype: switch
       #isAlias: TODO
-      realportname: ae100
+      realportname: ae0
       vlan_range:
         - 2000-2009
       wanlink: true
@@ -72,7 +72,7 @@ junos_s0:
       capacity: 400000
       desttype: switch
       isAlias: urn:ogf:network:es.net:2013::bost-cr6:2_1_c19_1:sc25-wc05b
-      realportname: ae100
+      realportname: ae0
       vlan_range:
         - 3925-3927
       wanlink: true
@@ -80,7 +80,7 @@ junos_s0:
       capacity: 400000
       desttype: switch
       isAlias: urn:ogf:network:es.net:2013::newy32aoa-cr6:1_1_c3_1:sc25-wc08
-      realportname: ae100
+      realportname: ae0
       vlan_range:
         - 3915-3917
       wanlink: true
@@ -88,7 +88,7 @@ junos_s0:
       capacity: 400000
       desttype: switch
       #isAlias: TODO
-      realportname: ae100
+      realportname: ae0
       vlan_range:
         - 2100-2109
       wanlink: true
@@ -96,7 +96,7 @@ junos_s0:
       capacity: 400000
       desttype: switch
       isAlias: urn:ogf:network:sc-test.cenic.net:2020:aristaeos_s0:Ethernet18/1-wc192
-      realportname: ae100
+      realportname: ae0
       vlan_range:
         - 3600-3609
       wanlink: true
@@ -104,7 +104,48 @@ junos_s0:
       capacity: 400000
       desttype: switch
       isAlias: urn:ogf:network:sc-test.cenic.net:2020:aristaeos_s0:Ethernet19/1-wc202
-      realportname: ae100
+      realportname: ae0
       vlan_range:
         - 3130-3139
       wanlink: true
+    et-0/0/7:
+      capacity: 400000
+      desttype: server
+      # NOTE: This goes to Caltech Server.
+    et-0/0/11:
+      capacity: 400000
+      desttype: switch
+      isAlias: urn:ogf:network:starlight-boot.scinet.net:2025:junos_s0:et-0/0/11
+    et-0/0/14:
+      capacity: 100000
+      desttype: server
+    et-0/0/15:
+      capacity: 100000
+      desttype: server
+    et-0/0/16:
+      capacity: 100000
+      desttype: server
+    et-0/0/17:
+      capacity: 100000
+      desttype: server
+    et-0/0/18:
+      capacity: 100000
+      desttype: server
+    et-0/0/19:
+      capacity: 100000
+      desttype: server
+    et-0/0/20:
+      capacity: 100000
+      desttype: server
+    et-0/0/21:
+      capacity: 100000
+      desttype: server
+    et-0/0/22:
+      capacity: 100000
+      desttype: server
+    et-0/0/23:
+      capacity: 100000
+      desttype: server
+    et-0/0/24:
+      capacity: 100000
+      desttype: server
