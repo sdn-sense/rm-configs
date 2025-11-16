@@ -181,7 +181,7 @@ aristaeos_s0:
     Ethernet18/1:
       capacity: 400000
       desttype: switch
-    Ethernet18/1-wc191:
+    Ethernet181wc191:
     # WC19-1 to Caltech booth
       capacity: 400000
       desttype: switch
@@ -189,7 +189,7 @@ aristaeos_s0:
       vlan_range:
         - 1790-1799
       wanlink: true
-    Ethernet18/1-wc192:
+    Ethernet181wc192:
     # Wc19-2 to Juniper Junos
       capacity: 400000
       desttype: switch
@@ -201,7 +201,7 @@ aristaeos_s0:
     Ethernet19/1:
       capacity: 400000
       desttype: switch
-    Ethernet19/1-wc201:
+    Ethernet191wc201:
     # WC20-1 to Caltech booth
       capacity: 400000
       desttype: switch
@@ -209,7 +209,7 @@ aristaeos_s0:
       vlan_range:
         - 3985-3989
       wanlink: true
-    Ethernet19/1-wc202:
+    Ethernet191wc202:
     # Wc20-2 to Juniper Junos
       capacity: 400000
       desttype: switch
