@@ -178,6 +178,9 @@ aristaeos_s0:
         - 3110-3139
         - 4005-4024
       wanlink: true
+    Ethernet18/1:
+      capacity: 400000
+      desttype: switch
     Ethernet18/1-wc191:
     # WC19-1 to Caltech booth
       capacity: 400000
@@ -195,6 +198,9 @@ aristaeos_s0:
       vlan_range:
         - 3600-3609
       wanlink: true
+    Ethernet19/1:
+      capacity: 400000
+      desttype: switch
     Ethernet19/1-wc201:
     # WC20-1 to Caltech booth
       capacity: 400000
