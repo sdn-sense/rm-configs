@@ -17,6 +17,7 @@ NRM_CENIC:
     - aristaeos_s0
 aristaeos_s0:
   rate_limit: true
+  allports: false
   vrf: sense
   vlan_range:
     - 1400-1499
