@@ -95,7 +95,7 @@ junos_s0:
     ae100-wc192: #- LA-Arista Ethernet18/1-wc192
       capacity: 400000
       desttype: switch
-      isAlias: urn:ogf:network:sc-test.cenic.net:2020:aristaeos_s0:Ethernet18/1-wc192
+      isAlias: urn:ogf:network:sc-test.cenic.net:2020:aristaeos_s0:Ethernet181wc192
       realportname: ae0
       vlan_range:
         - 3600-3609
@@ -103,7 +103,7 @@ junos_s0:
     ae100-wc202: #- LA-Arista Ethernet19/1-wc202
       capacity: 400000
       desttype: switch
-      isAlias: urn:ogf:network:sc-test.cenic.net:2020:aristaeos_s0:Ethernet19/1-wc202
+      isAlias: urn:ogf:network:sc-test.cenic.net:2020:aristaeos_s0:Ethernet191wc202
       realportname: ae0
       vlan_range:
         - 3130-3139
@@ -115,7 +115,7 @@ junos_s0:
     et-0/0/11:
       capacity: 400000
       desttype: switch
-      isAlias: urn:ogf:network:starlight-boot.scinet.net:2025:junos_s0:et-0/0/11
+      # isAlias: urn:ogf:network:starlight-boot.scinet.net:2025:junos_s0:et-0-0-11
     et-0/0/14:
       capacity: 100000
       desttype: server
