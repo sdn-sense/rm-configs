@@ -108,6 +108,10 @@ junos_s0:
       vlan_range:
         - 3130-3139
       wanlink: true
+    et-0/0/3:
+      capacity: 400000
+      desttype: server
+      # NOTE: This goes to Ciena server.
     et-0/0/7:
       capacity: 400000
       desttype: server
