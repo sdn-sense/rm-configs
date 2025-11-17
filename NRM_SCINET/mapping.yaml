@@ -64,3 +64,18 @@ a444cdb8549c900a2bdc7eb17d298784:
   maintainer: "John Graham"
   status: production
   type: Agent
+96d786c950cc7fb621ad13cba76504ec:
+  config: rc3-sc-15/
+  maintainer: "John Graham"
+  status: production
+  type: Agent
+a62ca12c1c271829bbe8a058eed3c34a:
+  config: rc3-sc-14/
+  maintainer: "John Graham"
+  status: production
+  type: Agent
+8476b5c128fe06e6c3e630290eb75f69:
+  config: rc3-sc-13/
+  maintainer: "John Graham"
+  status: production
+  type: Agent

@@ -1,0 +1,41 @@
+---
+general:
+  ip: "140.221.135.15"
+  sitename: NRM_SCINET
+  webdomain: "https://sense-scinet.nrp-nautilus.io:443"
+  prometheus_federate: http://thanos-federate-proxy-service:9099/federate
+  prometheus_query: '{instance="rc3-sc-15.sc25.nrp-nautilus.io", service="node-exporter"}'
+agent: 
+  interfaces: [enp129s0np0]
+  hostname: rc3-sc-15.sc25.nrp-nautilus.io
+  noqos: false
+enp129s0np0:
+  port: et-0/0/113
+  switch: junos_s0
+  shared: false
+  intf_max: 100000
+  allowOvercommit: false
+  vlan_range: [1100-1149]
+qos:
+  policy: privatens
+  qos_params: "mtu 9000 mpu 9000 quantum 200000 burst 300000 cburst 300000 qdisc sfq balanced"
+  class_max: true
+  interfaces:
+    vlan.1149:
+      ipv6_range: 2001:468:1f05:10::/64
+      master_intf: enp129s0np0
+    vlan.1148:
+      ipv6_range: 2001:468:1f05:11::/64
+      master_intf: enp129s0np0
+    vlan.1147:
+      ipv6_range: 2001:468:1f05:12::/64
+      master_intf: enp129s0np0
+    vlan.1146:
+      ipv6_range: 2001:468:1f05:20::/64
+      master_intf: enp129s0np0
+    vlan.1145:
+      ipv6_range: 2001:468:1f05:21::/64
+      master_intf: enp129s0np0
+    vlan.1144:
+      ipv6_range: 2001:468:1f05:22::/64
+      master_intf: enp129s0np0
