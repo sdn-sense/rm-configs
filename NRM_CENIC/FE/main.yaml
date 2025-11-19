@@ -20,6 +20,7 @@ aristaeos_s0:
   allports: false
   vrf: sense
   vlan_range:
+    - 1320-1329
     - 1400-1499
     - 1779-1799
     - 2027
@@ -86,6 +87,7 @@ aristaeos_s0:
       desttype: switch
       isAlias: urn:ogf:network:tier2.ultralight.org:2024:edgecore_s0:Ethernet208
       vlan_range:
+        - 1320-1329
         - 1400-1499
         - 1779-1799
         - 3600-3610
@@ -100,6 +102,7 @@ aristaeos_s0:
       desttype: switch
       isAlias: urn:ogf:network:tier2.ultralight.org:2024:edgecore_s0:Ethernet216
       vlan_range:
+        - 1320-1329
         - 1400-1499
         - 1779-1799
         - 3600-3610
@@ -114,6 +117,7 @@ aristaeos_s0:
       desttype: switch
       isAlias: urn:ogf:network:tier2.ultralight.org:2024:edgecore_s0:Ethernet224
       vlan_range:
+        - 1320-1329
         - 1400-1499
         - 1779-1799
         - 3600-3610
@@ -155,6 +159,7 @@ aristaeos_s0:
       desttype: switch
       isAlias: urn:ogf:network:tier2.ultralight.org:2024:edgecore_s0:Ethernet232
       vlan_range:
+        - 1320-1329
         - 1400-1499
         - 1779-1799
         - 3600-3610
