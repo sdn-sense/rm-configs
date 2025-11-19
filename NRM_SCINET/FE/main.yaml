@@ -63,7 +63,7 @@ junos_s0:
     ae100-wc03: # Internet2 needisAlias
       capacity: 400000
       desttype: switch
-      #isAlias: TODO
+      isAlias: urn:ogf:network:al2s.internet2.edu:2023:node+core1.scinet:port+FourHundredGigE0_0_0_3
       realportname: ae0
       vlan_range:
         - 2000-2009
@@ -87,7 +87,7 @@ junos_s0:
     ae100-wc10d: # Internet2 Need isAlias
       capacity: 400000
       desttype: switch
-      #isAlias: TODO
+      isAlias: urn:ogf:network:al2s.internet2.edu:2023:node+core1.scinet:port+FourHundredGigE0_0_0_5
       realportname: ae0
       vlan_range:
         - 2100-2109
