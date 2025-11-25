@@ -1,0 +1,26 @@
+--- 
+general:
+  logLevel: DEBUG
+  sitename: T9_US_ALBERTODEV
+  webdomain: "https://fake1.localhost.com:443"
+  fastapi: true
+  probes: ["https_v4_siterm_2xx"]
+T9_US_ALBERTODEV:
+  domain: siterm-fake1-dev
+  latitude: 32.882648
+  longitude: -117.234579
+  plugin: raw
+  year: 2025
+  switch:
+    - "fake1"
+fake1:
+  vlan_range: [3611-3619]
+  ports:
+    "Port1":
+      capacity: 400000
+      isAlias: "urn:ogf:network:siterm-fake2-dev:2025:fake2:Port1"
+      wanlink: True
+    "Port2":
+      capacity: 800000
+      isAlias: "urn:ogf:network:siterm-fake2-dev:2025:fake2:Port2"
+      wanlink: True

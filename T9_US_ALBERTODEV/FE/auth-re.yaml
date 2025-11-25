@@ -1,0 +1,4 @@
+---
+trust_it_all:
+  full_dn: ".*"
+  permissions: w
