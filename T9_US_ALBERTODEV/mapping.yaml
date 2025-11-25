@@ -1,0 +1,6 @@
+---
+123456789abcdefghijklmnopqrstuvw:
+  config: FE/
+  maintainer: "Alberto Jimenez"
+  status: dev
+  type: FE
