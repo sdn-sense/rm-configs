@@ -2,7 +2,7 @@
 general:
   ip: "198.32.44.98"
   sitename: T2_US_Caltech
-  webdomain: "https://sense-caltechprod.nrp-nautilus.io:443"
+  webdomain: "https://sense-caltechprod.tier2-lb.ultralight.org:443"
   node_exporter: "transfer-18.ultralight.org:9100"
 agent: 
   interfaces: [bond0, enp1s0np0]
