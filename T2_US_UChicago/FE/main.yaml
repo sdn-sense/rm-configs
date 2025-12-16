@@ -35,7 +35,7 @@ frr_s0:
       desttype: switch
       isAlias: urn:ogf:network:es.net:2013::chic-cr6:lag-10:ssl
   vlan_range:
-    - 2540-2549
+    - 2544-2549
   allports: false
   allvlans: false
   snmp_monitoring: false
