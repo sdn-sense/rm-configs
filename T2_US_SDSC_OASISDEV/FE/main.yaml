@@ -4,6 +4,7 @@ general:
   sitename: T2_US_SDSC_OASISDEV
   webdomain: "https://sense-dev-oasis.nrp-nautilus.io:443"
   probes: ["https_v4_siterm_2xx"]
+  oidc: true
 T2_US_SDSC_OASISDEV:
   domain: sense-oasis-nrp-nautilus-dev.io
   latitude: 32.882648
