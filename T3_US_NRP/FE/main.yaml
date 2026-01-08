@@ -2,7 +2,6 @@
 general:
   sitename: T3_US_NRP
   webdomain: "https://sense-fe.nrp-nautilus.io"
-  fastapi: true
   probes: ["https_v4_siterm_2xx", "icmp_v4"]
 T3_US_NRP:
   domain: nrp-nautilus-prod.io

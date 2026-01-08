@@ -2,7 +2,6 @@
 general:
   sitename: T2_US_Nebraska
   webdomain: https://red-sense-rm.unl.edu:10443
-  fastapi: true
   probes:
     - https_v4_siterm_2xx
     - icmp_v4

@@ -3,7 +3,6 @@ general:
   logLevel: DEBUG
   sitename: T9_US_JUSTASDEV
   webdomain: "https://fake1.localhost.com:443"
-  fastapi: true
   probes: ["https_v4_siterm_2xx"]
 T9_US_JUSTASDEV:
   domain: sense-fake1-dev.io
