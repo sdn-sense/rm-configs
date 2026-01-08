@@ -3,7 +3,6 @@ general:
   ip: "192.170.240.135"
   sitename: T2_US_UChicago
   webdomain: "https://sense.af.uchicago.edu:443"
-  fastapi: true
   node_exporter: "c020.af.uchicago.edu:9100"
 agent: 
   interfaces: [ens2f0np0]

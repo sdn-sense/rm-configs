@@ -3,7 +3,6 @@ general:
   logLevel: DEBUG
   sitename: T2_US_Caltech
   webdomain: "https://sense-caltechprod.nrp-nautilus.io:443"
-  fastapi: true
   probes:
     - https_v4_siterm_2xx
     - icmp_v4

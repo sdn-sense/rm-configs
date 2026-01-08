@@ -3,7 +3,6 @@ general:
   logLevel: DEBUG
   sitename: T3_FABRIC_AMST
   webdomain: "https://amst-sub1-gw1.exp.fabric-testbed.net:443"
-  fastapi: true
   probes: ["https_v6_siterm_2xx"]
 T3_FABRIC_AMST:
   domain: sense-amst-fabric-testbed.net

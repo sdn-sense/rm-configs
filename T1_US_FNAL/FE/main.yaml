@@ -3,7 +3,6 @@ general:
   logLevel: DEBUG
   sitename: "T1_US_FNAL"
   webdomain: "https://cmssense1.fnal.gov:8443"
-  fastapi: true
   probes: ['https_v4_siterm_2xx', 'icmp_v4']
 T1_US_FNAL:
   domain: fnal.gov

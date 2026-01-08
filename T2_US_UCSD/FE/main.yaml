@@ -2,7 +2,6 @@
 general:
   sitename: T2_US_UCSD
   webdomain: https://sense-t2-us-ucsd.nrp-nautilus.io:443
-  fastapi: true
   probes:
     - https_v4_siterm_2xx
     - icmp_v4

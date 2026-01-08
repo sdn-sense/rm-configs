@@ -2,7 +2,6 @@
 general:
   sitename: T3_FABRIC_LOSA
   webdomain: "https://losa-sub1-gw1.exp.fabric-testbed.net:443"
-  fastapi: true
   probes: ["https_v6_siterm_2xx"]
 T3_FABRIC_LOSA:
   domain: sense-losa-fabric-testbed.net

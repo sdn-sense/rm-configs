@@ -2,7 +2,6 @@
 general:
   sitename: "T2_US_MGHPCC"
   webdomain: "https://sense-mghpcc.nrp-nautilus.io:443"
-  fastapi: true
   probes: ["https_v4_siterm_2xx"]
 T2_US_MGHPCC:
   domain: mghpcc.org

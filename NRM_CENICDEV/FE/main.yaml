@@ -3,7 +3,7 @@ general:
   logLevel: DEBUG
   sitename: NRM_CENICDEV
   webdomain: https://sense-dev-ladowntown.nrp-nautilus.io:443
-  fastapi: true
+  oidc: true
   probes:
     - https_v4_siterm_2xx
     - icmp_v4
