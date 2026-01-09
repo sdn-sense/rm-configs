@@ -1,21 +1,26 @@
 ---
 7b19c441e9f5e4af805251e46f3c5300:
   config: FE/
-  maintainer: "Mazahir Hussain"
+  maintainer: "Kiran Vasu"
   status: development
   type: FE
 ucsde836bbd757bffe91abd9d0273c1b:
   config: host1/
-  maintainer: "Mazahir Hussain"
+  maintainer: "Kiran Vasu"
   status: development
   type: Agent
 ucsd38a1e8b80df9a820cbf59745e59d:
   config: host2/
-  maintainer: "Mazahir Hussain"
+  maintainer: "Kiran Vasu"
   status: development
   type: Agent
 ucsd7c4422611793b4062b1709977eba:
   config: host3/
-  maintainer: "Mazahir Hussain"
+  maintainer: "Kiran Vasu"
+  status: development
+  type: Agent
+c8f02620ce32231df033f4c981eb4c60:
+  config: host4/
+  maintainer: "Kiran Vasu"
   status: development
   type: Agent
