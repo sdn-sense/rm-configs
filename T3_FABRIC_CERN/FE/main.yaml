@@ -7,7 +7,7 @@ T3_FABRIC_CERN:
   latitude: 32.882648
   longitude: -117.234579
   plugin: ansible
-  vpp_exporter: "[2602:fcfb:1d:fff0::2]:1234"
+  vpp_exporter: "[2602:fcfb:1d:fff0::2]:80"
   year: 2024
   ipv6-subnet-pool:
     - 2602:fcfb:001d:fff2::/64

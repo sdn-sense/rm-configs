@@ -9,7 +9,7 @@ T2_US_UChicago:
   latitude: 41.789722
   longitude: -87.599722
   plugin: ansible
-  vpp_exporter: "[2605:9a00:10:7::1]:1234"
+  vpp_exporter: "[2605:9a00:10:7::1]:80"
   year: 2024
   ipv6-subnet-pool:
     - 2605:9a00:10:2010::/64
