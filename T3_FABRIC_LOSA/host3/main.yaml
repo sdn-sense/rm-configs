@@ -5,9 +5,9 @@ general:
   webdomain: "https://losa-sub1-gw1.exp.fabric-testbed.net:443"
   node_exporter: "losa-sub1-host3.exp.fabric-testbed.net:9100"
 agent: 
-  interfaces: [enp11s0, enp9s0]
+  interfaces: [enp8s0, enp9s0]
   hostname: losa-sub1-host3.exp.fabric-testbed.net
-enp11s0:
+enp8s0:
   port: host3sub2
   switch: frr_s0
   shared: false
@@ -23,9 +23,9 @@ qos:
   policy: hostlevel
   qos_params: "mtu 9000 mpu 9000 quantum 200000 burst 300000 cburst 300000 qdisc sfq balanced"
   interfaces:
-    enp11s0:
+    enp8s0:
       ipv6_range: 2602:fcfb:12:fff2::/64
-      master_intf: enp11s0
+      master_intf: enp8s0
     enp9s0:
       ipv6_range: 2602:fcfb:12:fff3::/64
       master_intf: enp9s0
