@@ -14,22 +14,49 @@ qos:
   policy: hostlevel
   qos_params: "mtu 9000 mpu 9000 quantum 200000 burst 300000 cburst 300000 qdisc sfq balanced"
   interfaces:
-    enp1s0f0np0:
+    vlan.4000:
+      ipv6_range: 2001:48d0:6020:f011::/64
       master_intf: enp1s0f0np0
-      ipv6_range:
-      - 2001:48d0:6020:f010::/64
-      - 2001:48d0:6020:f011::/64
-      - 2001:48d0:6020:f012::/64
-      - 2001:48d0:6020:f013::/64
-      - 2001:48d0:6020:f014::/64
-      - 2001:48d0:6020:f015::/64
-      - 2001:48d0:6020:f016::/64
-      - 2001:48d0:6020:f017::/64
-      - 2001:48d0:6020:f018::/64
-      - 2001:48d0:6020:f019::/64
-      - 2001:48d0:6020:f01a::/64
-      - 2001:48d0:6020:f01b::/64
-      - 2001:48d0:6020:f01c::/64
-      - 2001:48d0:6020:f01d::/64
-      - 2001:48d0:6020:f01e::/64
-      - 2001:48d0:6020:f01f::/64
+    vlan.4001:
+      ipv6_range: 2001:48d0:6020:f012::/64
+      master_intf: enp1s0f0np0
+    vlan.4002:
+      ipv6_range: 2001:48d0:6020:f013::/64
+      master_intf: enp1s0f0np0
+    vlan.4003:
+      ipv6_range: 2001:48d0:6020:f014::/64
+      master_intf: enp1s0f0np0
+    vlan.4004:
+      ipv6_range: 2001:48d0:6020:f015::/64
+      master_intf: enp1s0f0np0
+    vlan.4005:
+      ipv6_range: 2001:48d0:6020:f016::/64
+      master_intf: enp1s0f0np0
+    vlan.4006:
+      ipv6_range: 2001:48d0:6020:f017::/64
+      master_intf: enp1s0f0np0
+    vlan.4007:
+      ipv6_range: 2001:48d0:6020:f018::/64
+      master_intf: enp1s0f0np0
+    vlan.4008:
+      ipv6_range: 2001:48d0:6020:f019::/64
+      master_intf: enp1s0f0np0
+    vlan.4009:
+      ipv6_range: 2001:48d0:6020:f01a::/64
+      master_intf: enp1s0f0np0
+    vlan.4010:
+      ipv6_range: 2001:48d0:6020:f01b::/64
+      master_intf: enp1s0f0np0
+    vlan.4011:
+      ipv6_range: 2001:48d0:6020:f01c::/64
+      master_intf: enp1s0f0np0
+    vlan.4012:
+      ipv6_range: 2001:48d0:6020:f01d::/64
+      master_intf: enp1s0f0np0
+    vlan.4013:
+      ipv6_range: 2001:48d0:6020:f01e::/64
+      master_intf: enp1s0f0np0
+    vlan.4014:
+      ipv6_range: 2001:48d0:6020:f01f::/64
+      master_intf: enp1s0f0np0
+
