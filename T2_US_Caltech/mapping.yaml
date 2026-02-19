@@ -34,12 +34,13 @@ b6209600dc3ce8edb0c6b21d24337c21:
   maintainer: "Preeti Bhat"
   status: production
   type: Agent
-c570ecbc7ec37adfa047cc2ad9967ecf:
- config: Agent07/
- maintainer: "Preeti Bhat"
- status: production
- type: Agent
+# c570ecbc7ec37adfa047cc2ad9967ecf:
+#  config: Agent07/
+#  maintainer: "Preeti Bhat"
+#  status: production
+#  type: Agent
 d1980c7b1dbc605f9839a93423e4c091:
  config: Agent08/
  maintainer: "Preeti Bhat"
  type: Agent
+ status: production
