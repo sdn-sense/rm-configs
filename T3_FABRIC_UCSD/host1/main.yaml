@@ -7,13 +7,13 @@ general:
 agent: 
   interfaces: [enp9s0, enp8s0]
   hostname: ucsd-sub1-host1.exp.fabric-testbed.net
-enp8s0:
+enp9s0:
   port: host1sub2
   switch: frr_s0
   shared: false
   intf_max: 100000
   vlan_range: [800-1000]
-enp9s0:
+enp8s0:
   port: host1sub3
   switch: frr_s0
   shared: false
@@ -23,10 +23,10 @@ qos:
   policy: hostlevel
   qos_params: "mtu 9000 mpu 9000 quantum 200000 burst 300000 cburst 300000 qdisc sfq balanced"
   interfaces:
-    enp8s0:
-      ipv6_range: 2602:fcfb:d:fff2::/64
-      master_intf: enp8s0
     enp9s0:
-      ipv6_range: 2602:fcfb:d:fff3::/64
+      ipv6_range: 2602:fcfb:d:fff2::/64
       master_intf: enp9s0
+    enp8s0:
+      ipv6_range: 2602:fcfb:d:fff3::/64
+      master_intf: enp8s0
 

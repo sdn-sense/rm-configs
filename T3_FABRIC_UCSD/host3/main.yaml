@@ -5,15 +5,15 @@ general:
   webdomain: "https://ucsd-sub1-gw1.exp.fabric-testbed.net:443"
   node_exporter: "ucsd-sub1-host3.exp.fabric-testbed.net:9100"
 agent:
-  interfaces: [enp7s0, enp8s0]
+  interfaces: [enp8s0, enp10s0]
   hostname: ucsd-sub1-host3.exp.fabric-testbed.net
-enp7s0:
+enp8s0:
   port: host3sub2
   switch: frr_s0
   shared: false
   intf_max: 100000
   vlan_range: [800-1000]
-enp8s0:
+enp10s0:
   port: host3sub3
   switch: frr_s0
   shared: false
@@ -23,10 +23,10 @@ qos:
   policy: hostlevel
   qos_params: "mtu 9000 mpu 9000 quantum 200000 burst 300000 cburst 300000 qdisc sfq balanced"
   interfaces:
-    enp7s0:
-      ipv6_range: 2602:fcfb:d:fff2::/64
-      master_intf: enp7s0
     enp8s0:
-      ipv6_range: 2602:fcfb:d:fff3::/64
+      ipv6_range: 2602:fcfb:d:fff2::/64
       master_intf: enp8s0
+    enp10s0:
+      ipv6_range: 2602:fcfb:d:fff3::/64
+      master_intf: enp10s0
 
