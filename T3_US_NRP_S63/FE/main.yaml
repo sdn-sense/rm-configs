@@ -1,0 +1,22 @@
+---
+general:
+  sitename: T3_US_NRP_S63
+  webdomain: https://sense-t3-us-nrp-s63.nrp-nautilus.io:443
+  probes:
+    - https_v4_siterm_2xx
+    - icmp_v4
+T3_US_NRP_S63:
+  domain: t3-us-nrp-s63.nrp-nautilus-io
+  latitude: 32.882648
+  longitude: -117.234579
+  plugin: ansible
+  year: 2026
+  switch:
+    - edgecore_s0
+edgecore_s0:
+  vlan_range: [1400-1499,1779-1799,3110-3139,3140-3189,3600-3610,3873-3874,3911-3912,3985-3989,4005-4024]
+  ports:
+    PortChannel550:
+      capacity: 800000
+      desttype: switch
+      isAlias: urn:ogf:network:sense-oasis-nrp-nautilus.io:2020:oasis:Pc550
