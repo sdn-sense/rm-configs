@@ -12,8 +12,8 @@ T2_US_SDSC_S63:
   plugin: ansible
   year: 2026
   switch:
-    - edgecore_s0
-edgecore_s0:
+    - edgecore_s63
+edgecore_s63:
   vlan_range: [1400-1499,1779-1799,3110-3139,3140-3189,3600-3610,3873-3874,3911-3912,3985-3989,4005-4024]
   ports:
     PortChannel550:
