@@ -1,8 +1,8 @@
 ---
 general:
   ip: "132.249.252.223"
-  sitename: T3_US_NRP_S63
-  webdomain: "https://sense-t3-us-nrp-s63.nrp-nautilus.io"
+  sitename: T2_US_SDSC_S63
+  webdomain: "https://sense-t2-us-sdsc-s63.nrp-nautilus.io"
   prometheus_federate: http://thanos-federate-proxy-service:9099/federate
   prometheus_query: '{instance="nrp-s63-25.sdsc.optiputer.net", service="node-exporter"}'
 agent: 
