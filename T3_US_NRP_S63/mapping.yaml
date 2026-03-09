@@ -1,0 +1,16 @@
+---
+c06725593e4b2d36b96d5a9b038dd77d:
+  config: FE/
+  maintainer: "John Graham"
+  status: production
+  type: FE
+90b5e8b6423660c1a16df99287a8d3ba:
+  config: k8s-stratix-10-01.sdsc.optiputer.net/
+  maintainer: "John Graham"
+  status: production
+  type: Agent
+9e0e66944cbeefdf195dfb7741fb60af:
+  config: nrp-s63-25.sdsc.optiputer.net/
+  maintainer: "John Graham"
+  status: production
+  type: Agent
