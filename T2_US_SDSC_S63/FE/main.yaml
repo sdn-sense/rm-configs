@@ -6,7 +6,7 @@ general:
     - https_v4_siterm_2xx
     - icmp_v4
 T2_US_SDSC_S63:
-  domain: t2-us-sdsc-s63.nrp-nautilus-io
+  domain: sense-t2-us-sdsc-s63.nrp-nautilus.io
   latitude: 32.882648
   longitude: -117.234579
   plugin: ansible
