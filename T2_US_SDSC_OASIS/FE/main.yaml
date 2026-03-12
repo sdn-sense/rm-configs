@@ -39,7 +39,7 @@ oasis:
     "Pc550":
       # Port-channel 550 facing Stratix 10
       capacity: 800000
-      isAlias: "urn:ogf:network:t3-us-nrp-stratix.nrp-nautilus-io:2025:edgecore_s0:PortChannel550"
+      isAlias: "urn:ogf:network:sense-t2-us-sdsc-s63.nrp-nautilus.io:2026:edgecore_s63:PortChannel550"
       wanlink: True
     "Pc701":
       # Port-channel 701 facing Prism-Core
