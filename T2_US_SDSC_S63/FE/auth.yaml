@@ -25,4 +25,4 @@ senseoeast:
   permissions: w
 cmssense:
   full_dn: "/C=US/O=Let's Encrypt/CN=R10/CN=cmssense-prometheus.tier2-lb.ultralight.org"
-  permissions: r%
+  permissions: r
