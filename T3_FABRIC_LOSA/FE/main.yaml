@@ -1,9 +1,9 @@
 --- 
 general:
-  sitename: T3_FABRIC_LOSA
+  sitename: T3_US_FAB_LOSA
   webdomain: "https://losa-sub1-gw1.exp.fabric-testbed.net:443"
   probes: ["https_v6_siterm_2xx"]
-T3_FABRIC_LOSA:
+T3_US_FAB_LOSA:
   domain: sense-losa-fabric-testbed.net
   latitude: 32.882648
   longitude: -117.234579
