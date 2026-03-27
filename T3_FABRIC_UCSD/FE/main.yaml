@@ -1,6 +1,6 @@
 --- 
 general:
-  sitename: T3_FABRIC_UCSD 
+  sitename: T3_US_FAB_UCSD
   webdomain: "https://ucsd-sub1-gw1.exp.fabric-testbed.net:443"
   probes: ["https_v6_siterm_2xx"]
 T3_FABRIC_UCSD:
