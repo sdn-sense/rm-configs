@@ -3,7 +3,7 @@ general:
   sitename: T3_US_FAB_UCSD
   webdomain: "https://ucsd-sub1-gw1.exp.fabric-testbed.net:443"
   probes: ["https_v6_siterm_2xx"]
-T3_FABRIC_UCSD:
+T3_US_FAB_UCSD:
   domain: sense-ucsd-fabric-testbed.net
   latitude: 32.882648
   longitude: -117.234579
