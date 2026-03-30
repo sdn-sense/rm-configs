@@ -19,8 +19,3 @@ ucsd7c4422611793b4062b1709977eba:
   maintainer: "Kiran Vasu"
   status: development
   type: Agent
-c8f02620ce32231df033f4c981eb4c60:
-  config: host4/
-  maintainer: "Kiran Vasu"
-  status: development
-  type: Agent
