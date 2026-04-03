@@ -5,9 +5,9 @@ general:
   webdomain: "https://sense-caltechtest.sdn-lb.ultralight.org:443"
   node_exporter: "sdn-dtn-2-11.ultralight.org:9100"
 agent: 
-  interfaces: [nic1]
+  interfaces: [bond0]
   hostname: sdn-dtn-2-11.ultralight.org
-nic1:
+bond0:
   port: Ethernet4/1
   switch: aristaeos_s0
   shared: false
@@ -20,16 +20,16 @@ qos:
   interfaces:
     sensexrd1:
       ipv6_range: 2605:d9c0:2:fff1::0/64
-      master_intf: nic1
+      master_intf: bond0
     sensexrd2:
       ipv6_range: 2605:d9c0:2:fff2::0/64
-      master_intf: nic1
+      master_intf: bond0
     sensexrd3:
       ipv6_range: 2605:d9c0:2:fff3::0/64
-      master_intf: nic1
+      master_intf: bond0
     sensexrd4:
       ipv6_range: 2605:d9c0:2:fff4::0/64
-      master_intf: nic1
+      master_intf: bond0
     sensexrd5:
       ipv6_range: 2605:d9c0:2:fff5::0/64
-      master_intf: nic1
+      master_intf: bond0
