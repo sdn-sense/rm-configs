@@ -5,9 +5,9 @@ general:
   webdomain: "https://sense-caltechtest.sdn-lb.ultralight.org:443"
   node_exporter: "sdn-dtn-2-10.ultralight.org:9100"
 agent: 
-  interfaces: [mlx5p1s1]
+  interfaces: [nic1]
   hostname: sdn-dtn-2-10.ultralight.org
-mlx5p1s1:
+nic1:
   port: Ethernet2/1
   switch: aristaeos_s0
   shared: false
@@ -18,5 +18,5 @@ qos:
   qos_params: "mtu 9000 mpu 9000 quantum 200000 burst 300000 cburst 300000 qdisc sfq balanced"
   class_max: true
   interfaces:
-    mlx5p1s1:
-      master_intf: mlx5p1s1
+    nic1:
+      master_intf: nic1
