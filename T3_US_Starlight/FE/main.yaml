@@ -2,6 +2,7 @@
 general:
   sitename: T3_US_Starlight
   webdomain: "https://r740xd4.it.northwestern.edu:8443"
+  oidc: true
 T3_US_Starlight: 
   domain: starlight.org
   latitude: 34.1377

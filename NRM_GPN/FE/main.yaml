@@ -4,6 +4,7 @@ general:
   sitename: NRM_GPN
   webdomain: "https://sense-gpn.nrp-nautilus.io:443"
   probes: ["https_v4_siterm_2xx"]
+  oidc: true
 NRM_GPN:
   domain: sense-gpn-nrp-nautilus.io
   latitude: 32.882648

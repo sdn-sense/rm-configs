@@ -4,6 +4,7 @@ general:
   sites: 
     - "T3_US_FIU"
   webdomain: "https://ox.amlight.net:8443"
+  oidc: true
 T3_US_FIU: 
   domain: fiu.amlight.net
   latitude: 25.7574

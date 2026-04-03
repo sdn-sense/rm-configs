@@ -1,0 +1,14 @@
+---
+# List of downtimes
+#Downtimes:
+#  - 
+  #STARTTIME: Start time (ISO 8601 datetime string (with a UTC offset)). e.g. 2025-09-30T10:00:00-05:00
+  #ENDTIME: End time (ISO 8601 datetime string (with a UTC offset)). e.g. 2025-09-31T10:00:00-05:00
+  #CREATETIME: Create time (ISO 8601 datetime string (with a UTC offset)). e.g. 2025-09-21T10:00:00-05:00
+  #DESCRIPTION: Downtime description. Any string or links.
+  #POLICY: One of: Outage, Cleanup, Upgrade
+  #                Outage, means it will be unavailable for that period of time. New requests can proceed normally, if outage is in future/past. During outage new requests should not be accepted.
+  #                Cleanup, means that database will be fully wipedout. No new requests past starttime should be accepted. During outage, nothing is accepted.
+  #                Upgrade, downtime is for an upgrade, and new requests are ok to accept before start. During outage, nothing is accepted.
+  # If downtime is announced 6hrs before STARTTIME - this is scheduled downtime. Otherwise, unscheduled.
+  #SERVICES: List of MD5 defined inside the mapping.yaml

@@ -4,6 +4,7 @@ general:
   sites: 
     - "T3_BR_RNP"
   webdomain: "https://200.159.252.130:8443"
+  oidc: true
 T3_BR_RNP: 
   domain: sense.rnp.br
   latitude: -22.9542068

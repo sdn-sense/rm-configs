@@ -4,6 +4,7 @@ general:
   sites: 
     - "T2_BR_SPRACE"
   webdomain: "https://sprace02.sprace.org.br:8443"
+  oidc: true
 T2_BR_SPRACE: 
   domain: sprace02.sprace.org.br
   latitude: -23.511344

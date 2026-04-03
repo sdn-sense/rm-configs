@@ -2,6 +2,7 @@
 general:
   sitename: T2_US_SDSC_S63
   webdomain: https://sense-t2-us-sdsc-s63.nrp-nautilus.io:443
+  oidc: true
   probes:
     - https_v4_siterm_2xx
     - icmp_v4
