@@ -1,14 +1,14 @@
 ---
 general:
-  ip: "192.170.240.135"
+  ip: "192.170.240.192"
   sitename: T2_US_UChicago
   webdomain: "https://sense.af.uchicago.edu:443"
-  node_exporter: "c020.af.uchicago.edu:9100"
+  node_exporter: "c112.af.uchicago.edu:9100"
 agent: 
-  interfaces: [ens2f0np0]
-  hostname: c020.af.uchicago.edu
-ens2f0np0:
-  port: "1_2"
+  interfaces: [bond0]
+  hostname: c112.af.uchicago.edu
+bond0:
+  port: "1_4"
   shared: false
   switch: s1
   intf_max: 100000
@@ -20,31 +20,32 @@ qos:
   interfaces:
     vlan.2540:
       ipv6_range: 2605:9a00:10:2010::0/64
-      master_intf: ens2f0np0
+      master_intf: bond0
     vlan.2541:
       ipv6_range: 2605:9a00:10:2011::0/64
-      master_intf: ens2f0np0
+      master_intf: bond0
     vlan.2542:
       ipv6_range: 2605:9a00:10:2012::0/64
-      master_intf: ens2f0np0
+      master_intf: bond0
     vlan.2543:
       ipv6_range: 2605:9a00:10:2013::0/64
-      master_intf: ens2f0np0
+      master_intf: bond0
     vlan.2544:
       ipv6_range: 2605:9a00:10:2014::0/64
-      master_intf: ens2f0np0
+      master_intf: bond0
     vlan.2545:
       ipv6_range: 2605:9a00:10:2015::0/64
-      master_intf: ens2f0np0
+      master_intf: bond0
     vlan.2546:
       ipv6_range: 2605:9a00:10:2016::0/64
-      master_intf: ens2f0np0
+      master_intf: bond0
     vlan.2547:
       ipv6_range: 2605:9a00:10:2017::0/64
-      master_intf: ens2f0np0
+      master_intf: bond0
     vlan.2548:
       ipv6_range: 2605:9a00:10:2018::0/64
-      master_intf: ens2f0np0
+      master_intf: bond0
     vlan.2549:
       ipv6_range: 2605:9a00:10:2019::0/64
-      master_intf: ens2f0np0
+      master_intf: bond0
+

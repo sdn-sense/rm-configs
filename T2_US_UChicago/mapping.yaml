@@ -9,3 +9,28 @@ f09243624ef719706fbb94fc79fa2552:
   maintainer: "Justas Balcas"
   status: production
   type: Agent
+76d395d0f2072405c6b8461da3a5213c:
+  config: c111.af.uchicago.edu/
+  maintainer: "Justas Balcas"
+  status: production
+  type: Agent
+b2436113286a42ce80f2c9c3767614c8:
+  config: c112.af.uchicago.edu/
+  maintainer: "Justas Balcas"
+  status: production
+  type: Agent
+c41952e0afc130cad1e3ed4689382699:
+  config: c113.af.uchicago.edu/
+  maintainer: "Justas Balcas"
+  status: production
+  type: Agent
+2bc81a243b8e9c86b1d7d9a9adb3d7a7:
+  config: c114.af.uchicago.edu/
+  maintainer: "Justas Balcas"
+  status: production
+  type: Agent
+833bf4613cbbd3960a80aa6bab53f42d:
+  config: c115.af.uchicago.edu/
+  maintainer: "Justas Balcas"
+  status: production
+  type: Agent
