@@ -3,6 +3,7 @@ general:
   sitename: T2_US_SDSC
   webdomain: https://sense-prpdev.nrp-nautilus.io:443
   oidc: true
+  logLevel: DEBUG
   probes:
     - https_v4_siterm_2xx
     - icmp_v4
