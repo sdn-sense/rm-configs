@@ -1,11 +1,11 @@
 ---
 general:
   ip: "2602:fcfb:13:fff1::2"
-  sitename: T3_FABRIC_NEWY
+  sitename: T3_US_FAB_NEWY
   webdomain: "https://newy-sub1-gw1.exp.fabric-testbed.net:443"
   node_exporter: "newy-sub1-host1.exp.fabric-testbed.net:9100"
 agent: 
-  interfaces: [enp9s0, enp13s0]
+  interfaces: [enp9s0, enp7s0]
   hostname: newy-sub1-host1.exp.fabric-testbed.net
 enp9s0:
   port: host1sub2
@@ -13,7 +13,7 @@ enp9s0:
   shared: false
   intf_max: 100000
   vlan_range: [800-1000]
-enp13s0:
+enp7s0:
   port: host1sub3
   switch: frr_s0
   shared: false
@@ -26,7 +26,7 @@ qos:
     enp9s0:
       ipv6_range: 2602:fcfb:13:fff2::/64
       master_intf: enp9s0
-    enp13s0:
+    enp7s0:
       ipv6_range: 2602:fcfb:13:fff3::/64
-      master_intf: enp13s0
+      master_intf: enp7s0
 

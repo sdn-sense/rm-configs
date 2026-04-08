@@ -1,7 +1,7 @@
 --- 
 general:
   logLevel: DEBUG
-  sitename: T3_FABRIC_NEWY
+  sitename: T3_US_FAB_NEWY
   webdomain: "https://newy-sub1-gw1.exp.fabric-testbed.net:443"
   probes: ["https_v6_siterm_2xx"]
 T3_FABRIC_NEWY:
@@ -25,16 +25,16 @@ frr_s0:
   private_asn: 64520
   vlan_mtu: 9000
   ports:
-    # HundredGigE0/0/0/0
+    # HundredGigE0/0/0/4
     e1:
       capacity: 100000
       desttype: switch
-      isAlias: urn:ogf:network:stack-fabric:2024:topology:node+NEWY:port+NEWY-HU0-wk1-pci3-p1
-    # HundredGigE0/0/0/2
+      isAlias: urn:ogf:network:stack-fabric:2024:topology:node+NEWY:port+NEWY-HU4-wk1-pci6-p1
+    # HundredGigE0/0/0/6
     e2:
       capacity: 100000
       desttype: switch
-      isAlias: urn:ogf:network:stack-fabric:2024:topology:node+NEWY:port+NEWY-HU2-wk1-pci3-p2
+      isAlias: urn:ogf:network:stack-fabric:2024:topology:node+NEWY:port+NEWY-HU6-wk1-pci6-p2
   vlan_range:
     - 800-1000
   allports: false

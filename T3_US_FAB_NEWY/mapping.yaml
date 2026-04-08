@@ -1,21 +1,21 @@
 ---
 newyc441e9f5e4af805251e46f3c5300:
   config: FE/
-  maintainer: "Mazahir Hussain"
+  maintainer: "Kiran Vasu"
   status: development
   type: FE
 newye836bbd757bffe91abd9d0273c1b:
   config: host1/
-  maintainer: "Mazahir Hussain"
+  maintainer: "Kiran Vasu"
   status: development
   type: Agent
 newy38a1e8b80df9a820cbf59745e59d:
   config: host2/
-  maintainer: "Mazahir Hussain"
+  maintainer: "Kiran Vasu"
   status: development
   type: Agent
 newy7c4422611793b4062b1709977eba:
   config: host3/
-  maintainer: "Mazahir Hussain"
+  maintainer: "Kiran Vasu"
   status: development
   type: Agent
