@@ -2,6 +2,7 @@
 general:
   sitename: T3_FABRIC_STAR
   webdomain: "https://star-sub1-gw1.exp.fabric-testbed.net:443"
+  oidc: true
   probes: ["https_v6_siterm_2xx"]
 T3_FABRIC_STAR:
   domain: sense-star-fabric-testbed.net
