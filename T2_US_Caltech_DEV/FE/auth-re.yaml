@@ -1,0 +1,10 @@
+---
+autogole_monitoring:
+  full_dn: "/C=US/O=Let's Encrypt/CN=R[0-9]+/CN=autogole-grafana.nrp-nautilus.io"
+  permissions: r
+feapi:
+  full_dn: "/C=US/O=Let's Encrypt/CN=R[0-9]+/CN=sense-caltechprod.nrp-nautilus.io"
+  permissions: w
+debuggers:
+  full_dn: "/C=US/O=Internet2/CN=InCommon RSA IGTF Server CA 3/domainComponent=org/domainComponent=incommon/C=US/ST=California/O=California Institute of Technology/CN=transfer-[0-9]+-sensedev.ultralight.org"
+  permissions: w

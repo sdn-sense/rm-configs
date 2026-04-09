@@ -1,0 +1,25 @@
+---
+daemonset:
+  full_dn: "/C=US/O=Internet2/CN=InCommon RSA IGTF Server CA 3/DC=org/DC=incommon/C=US/ST=California/O=California Institute of Technology/CN=sense-kube-daemonset-tier2.ultralight.org"
+  permissions: w
+t11:
+  full_dn: "/C=US/O=Internet2/CN=InCommon RSA IGTF Server CA 3/DC=org/DC=incommon/C=US/ST=California/O=California Institute of Technology/CN=transfer-11-sensedev.ultralight.org"
+  permissions: w
+t12:
+  full_dn: "/C=US/O=Internet2/CN=InCommon RSA IGTF Server CA 3/DC=org/DC=incommon/C=US/ST=California/O=California Institute of Technology/CN=transfer-12-sensedev.ultralight.org"
+  permissions: w
+t13:
+  full_dn: "/C=US/O=Internet2/CN=InCommon RSA IGTF Server CA 3/DC=org/DC=incommon/C=US/ST=California/O=California Institute of Technology/CN=transfer-13-sensedev.ultralight.org"
+  permissions: w
+t14:
+  full_dn: "/C=US/O=Internet2/CN=InCommon RSA IGTF Server CA 3/DC=org/DC=incommon/C=US/ST=California/O=California Institute of Technology/CN=transfer-14-sensedev.ultralight.org"
+  permissions: w
+senseoprod:
+  full_dn: "/C=US/O=Internet2/CN=InCommon RSA Server CA 2/C=US/ST=California/O=Energy Sciences Network/CN=sense-o.es.net"
+  permissions: a
+senseodev:
+  full_dn: "/C=US/O=Internet2/CN=InCommon RSA Server CA 2/C=US/ST=California/O=Energy Sciences Network/CN=sense-o-dev.es.net"
+  permissions: a
+senseoeast:
+  full_dn: "/C=US/O=Internet2/CN=InCommon RSA Server CA 2/C=US/ST=California/O=Energy Sciences Network/CN=sense-o-east.es.net"
+  permissions: a
