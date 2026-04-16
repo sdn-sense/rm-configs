@@ -1,0 +1,37 @@
+--- 
+general:
+  sitename: T3_US_FAB_Bluefield3
+  webdomain: "https://[2602:fcfb:a:fff0::2]:443"
+  oidc: true
+T3_US_FAB_Bluefield3:
+  domain: sense-bluefield-fabric-testbed.net
+  latitude: 32.882648
+  longitude: -117.234579
+  plugin: ansible
+  vpp_exporter: "[2602:fcfb:a:fff0::2]:80"
+  year: 2026
+  ipv6-subnet-pool:
+    - 2602:fcfb:a:fff1::/64
+    - 2602:fcfb:a:fff2::/64
+    - 2602:fcfb:a:fff3::/64
+  switch:
+    - frr_bluefield3
+frr_bluefield3:
+  rsts_enabled: ipv6
+  private_asn: 64528
+  vlan_mtu: 9000
+  ports:
+    p0:
+      capacity: 400000
+      desttype: switch
+      isAlias: urn:ogf:network:stack-fabric:2024:topology:node+WASH:port+CERN-HU12-wk3-pci6-p1
+    p1:
+      capacity: 400000
+      desttype: switch
+      isAlias: urn:ogf:network:stack-fabric:2024:topology:node+WASH:port+CERN-HU10-wk3-pci3-p2
+  vlan_range:
+    - 800-1000
+    - 2070-2079
+  allports: true
+  allvlans: true
+  snmp_monitoring: false
