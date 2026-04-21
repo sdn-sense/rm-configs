@@ -35,6 +35,21 @@ FE_RESERVED_KEYS = {"general"}
 AGENT_RESERVED_KEYS = {"general", "agent", "qos"}
 
 
+def parse_bool(value, default=False):
+    """Parse YAML/config boolean-like values without relying on Python truthiness."""
+    if value is None:
+        return default
+    if isinstance(value, bool):
+        return value
+    if isinstance(value, str):
+        normalized = value.strip().lower()
+        if normalized in {"true", "yes", "on", "1"}:
+            return True
+        if normalized in {"false", "no", "off", "0"}:
+            return False
+    return bool(value)
+
+
 class ValidationReport:
     """Collects errors and warnings during validation."""
 
@@ -415,10 +430,10 @@ def validate_agent_main(site_name, site_path, agent_dir, agent_data, fe_data, re
             sw_data = fe_data.get(sw_name, {})
             if isinstance(sw_data, dict):
                 ports = sw_data.get("ports", {})
-                allports = sw_data.get("allports", False)
+                allports = parse_bool(sw_data.get("allports"), default=True)
                 fe_switches[sw_name] = {
                     "ports": set(ports.keys()) if isinstance(ports, dict) else set(),
-                    "allports": bool(allports),
+                    "allports": allports,
                 }
 
     # --- per-interface validation ---
