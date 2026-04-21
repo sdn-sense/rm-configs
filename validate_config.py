@@ -12,6 +12,7 @@ Checks:
   - Cross-site MD5 uniqueness and ASN collision detection
 """
 
+import datetime
 import ipaddress
 import re
 import sys
@@ -25,9 +26,11 @@ SKIP_DIRS = {"CAs", "standarts", ".github", ".git"}
 VALID_MAPPING_TYPES = {"FE", "Agent"}
 VALID_PLUGINS = {"ansible", "raw"}
 VALID_QOS_POLICIES = {"hostlevel", "privatens"}
+VALID_DOWNTIME_SERVICES = {"FE", "Agent", "All"}
 VLAN_MIN = 1
 VLAN_MAX = 4094
 MD5_RE = re.compile(r"^[0-9a-f]{32}$")
+DOWNTIME_TIME_FORMAT = "%Y %m %d %H:%M"
 
 # Known top-level keys in FE/main.yaml that are NOT site-specific sections
 FE_RESERVED_KEYS = {"general"}
@@ -357,6 +360,105 @@ def _check_required_field(data, key, expected_types, filepath, context, report):
 
 
 # ---------------------------------------------------------------------------
+# FE downtime validation
+# ---------------------------------------------------------------------------
+
+def _parse_downtime_time(value, filepath, context, report):
+    """Parse downtime start/end time."""
+    if not isinstance(value, str) or not value.strip():
+        report.error(filepath, f"{context} must be a non-empty string in 'yyyy mm dd hh:mm' format")
+        return None
+    try:
+        return datetime.datetime.strptime(value, DOWNTIME_TIME_FORMAT)
+    except ValueError:
+        report.error(filepath, f"{context} '{value}' must use 'yyyy mm dd hh:mm' format")
+        return None
+
+
+def validate_fe_downtime(site_name, downtime_data, report):
+    """Validate FE/downtime.yaml structure. Empty files are valid placeholders."""
+    rel = Path(site_name) / "FE" / "downtime.yaml"
+    if downtime_data is None:
+        return
+    if not isinstance(downtime_data, dict):
+        report.error(rel, "FE/downtime.yaml must be empty or a YAML dict")
+        return
+
+    required_fields = {
+        "id",
+        "enabled",
+        "disable_reason",
+        "start",
+        "end",
+        "services",
+        "hostname",
+        "downfor",
+    }
+    for orchestrator, entries in downtime_data.items():
+        context = f"orchestrator '{orchestrator}'"
+        if not isinstance(orchestrator, str) or not orchestrator.strip():
+            report.error(rel, "orchestrator key must be a non-empty string")
+        if not isinstance(entries, list) or not entries:
+            report.error(rel, f"{context} must map to a non-empty list of downtime entries")
+            continue
+
+        seen_ids = set()
+        for index, entry in enumerate(entries):
+            entry_context = f"{context} entry {index}"
+            if not isinstance(entry, dict):
+                report.error(rel, f"{entry_context} must be a dict")
+                continue
+
+            missing = required_fields - set(entry)
+            for field in sorted(missing):
+                report.error(rel, f"{entry_context} missing '{field}'")
+            if missing:
+                continue
+
+            extra = set(entry) - required_fields
+            for field in sorted(extra):
+                report.warning(rel, f"{entry_context} has unknown field '{field}'")
+
+            entry_id = entry.get("id")
+            if isinstance(entry_id, bool) or not isinstance(entry_id, int):
+                report.error(rel, f"{entry_context}.id must be an integer")
+            elif entry_id in seen_ids:
+                report.error(rel, f"{entry_context}.id '{entry_id}' is duplicated under {context}")
+            else:
+                seen_ids.add(entry_id)
+
+            if not isinstance(entry.get("enabled"), bool):
+                report.error(rel, f"{entry_context}.enabled must be true or false")
+
+            disable_reason = entry.get("disable_reason")
+            if not isinstance(disable_reason, str):
+                report.error(rel, f"{entry_context}.disable_reason must be a string")
+            elif entry.get("enabled") is False and not disable_reason.strip():
+                report.error(rel, f"{entry_context}.disable_reason must be set when enabled is false")
+
+            start_time = _parse_downtime_time(entry.get("start"), rel, f"{entry_context}.start", report)
+            end_time = _parse_downtime_time(entry.get("end"), rel, f"{entry_context}.end", report)
+            if start_time and end_time and start_time >= end_time:
+                report.error(rel, f"{entry_context}.start must be before end")
+
+            services = entry.get("services")
+            if services not in VALID_DOWNTIME_SERVICES:
+                report.error(rel, f"{entry_context}.services '{services}' is invalid, expected one of {VALID_DOWNTIME_SERVICES}")
+
+            hostname = entry.get("hostname")
+            if not isinstance(hostname, str) or not hostname.strip():
+                report.error(rel, f"{entry_context}.hostname must be a non-empty string")
+
+            downfor = entry.get("downfor")
+            if not isinstance(downfor, list) or not downfor:
+                report.error(rel, f"{entry_context}.downfor must be a non-empty list")
+            else:
+                for downfor_index, consumer in enumerate(downfor):
+                    if not isinstance(consumer, str) or not consumer.strip():
+                        report.error(rel, f"{entry_context}.downfor[{downfor_index}] must be a non-empty string")
+
+
+# ---------------------------------------------------------------------------
 # Phase 4: Agent validation
 # ---------------------------------------------------------------------------
 
@@ -547,6 +649,15 @@ def main():
             fe_data = parsed_files[fe_file]
             fe_data_by_site[site_name] = fe_data
             validate_fe_main(site_name, site_path, fe_data, report, all_asns)
+
+        fe_dir = site_path / "FE"
+        downtime_file = fe_dir / "downtime.yaml"
+        if not fe_dir.exists():
+            continue
+        if not downtime_file.exists():
+            report.error(Path(site_name) / "FE" / "downtime.yaml", "Missing FE/downtime.yaml")
+        elif downtime_file in parsed_files:
+            validate_fe_downtime(site_name, parsed_files[downtime_file], report)
 
     # Phase 4: Agent validation
     for site_name, site_path in sites.items():

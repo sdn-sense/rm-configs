@@ -1,0 +1,11 @@
+sense-o.es.net:
+  - id: 0
+    enabled: false
+    disable_reason: "Fake downtime entry for validator and consumer integration testing."
+    start: "2026 01 01 00:00"
+    end: "2026 01 01 01:00"
+    services: All
+    hostname: sense-ladowntown.nrp-nautilus.io
+    downfor:
+      - sense-o.es.net
+      - autogolemon.nrp.edu
