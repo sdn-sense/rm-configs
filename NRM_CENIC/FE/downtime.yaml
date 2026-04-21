@@ -1,4 +1,4 @@
-sense-o.es.net:
+downtimes:
   - id: 0
     enabled: false
     disable_reason: "Fake downtime entry for validator and consumer integration testing."

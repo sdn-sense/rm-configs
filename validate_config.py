@@ -383,6 +383,9 @@ def validate_fe_downtime(site_name, downtime_data, report):
     if not isinstance(downtime_data, dict):
         report.error(rel, "FE/downtime.yaml must be empty or a YAML dict")
         return
+    if set(downtime_data) != {"downtimes"}:
+        report.error(rel, "FE/downtime.yaml must only define a top-level 'downtimes' list")
+        return
 
     required_fields = {
         "id",
@@ -394,68 +397,65 @@ def validate_fe_downtime(site_name, downtime_data, report):
         "hostname",
         "downfor",
     }
-    for orchestrator, entries in downtime_data.items():
-        context = f"orchestrator '{orchestrator}'"
-        if not isinstance(orchestrator, str) or not orchestrator.strip():
-            report.error(rel, "orchestrator key must be a non-empty string")
-        if not isinstance(entries, list) or not entries:
-            report.error(rel, f"{context} must map to a non-empty list of downtime entries")
+    entries = downtime_data.get("downtimes")
+    if not isinstance(entries, list) or not entries:
+        report.error(rel, "downtimes must be a non-empty list")
+        return
+
+    seen_ids = set()
+    for index, entry in enumerate(entries):
+        entry_context = f"downtimes[{index}]"
+        if not isinstance(entry, dict):
+            report.error(rel, f"{entry_context} must be a dict")
             continue
 
-        seen_ids = set()
-        for index, entry in enumerate(entries):
-            entry_context = f"{context} entry {index}"
-            if not isinstance(entry, dict):
-                report.error(rel, f"{entry_context} must be a dict")
-                continue
+        missing = required_fields - set(entry)
+        for field in sorted(missing):
+            report.error(rel, f"{entry_context} missing '{field}'")
+        if missing:
+            continue
 
-            missing = required_fields - set(entry)
-            for field in sorted(missing):
-                report.error(rel, f"{entry_context} missing '{field}'")
-            if missing:
-                continue
+        extra = set(entry) - required_fields
+        for field in sorted(extra):
+            report.warning(rel, f"{entry_context} has unknown field '{field}'")
 
-            extra = set(entry) - required_fields
-            for field in sorted(extra):
-                report.warning(rel, f"{entry_context} has unknown field '{field}'")
+        entry_id = entry.get("id")
+        if isinstance(entry_id, bool) or not isinstance(entry_id, int):
+            report.error(rel, f"{entry_context}.id must be an integer")
+        elif entry_id in seen_ids:
+            report.error(rel, f"{entry_context}.id '{entry_id}' is duplicated")
+        else:
+            seen_ids.add(entry_id)
 
-            entry_id = entry.get("id")
-            if isinstance(entry_id, bool) or not isinstance(entry_id, int):
-                report.error(rel, f"{entry_context}.id must be an integer")
-            elif entry_id in seen_ids:
-                report.error(rel, f"{entry_context}.id '{entry_id}' is duplicated under {context}")
-            else:
-                seen_ids.add(entry_id)
+        if not isinstance(entry.get("enabled"), bool):
+            report.error(rel, f"{entry_context}.enabled must be true or false")
 
-            if not isinstance(entry.get("enabled"), bool):
-                report.error(rel, f"{entry_context}.enabled must be true or false")
+        disable_reason = entry.get("disable_reason")
+        if not isinstance(disable_reason, str):
+            report.error(rel, f"{entry_context}.disable_reason must be a string")
+        elif entry.get("enabled") is False and not disable_reason.strip():
+            report.error(rel, f"{entry_context}.disable_reason must be set when enabled is false")
 
-            disable_reason = entry.get("disable_reason")
-            if not isinstance(disable_reason, str):
-                report.error(rel, f"{entry_context}.disable_reason must be a string")
-            elif entry.get("enabled") is False and not disable_reason.strip():
-                report.error(rel, f"{entry_context}.disable_reason must be set when enabled is false")
+        start_time = _parse_downtime_time(entry.get("start"), rel, f"{entry_context}.start", report)
+        end_time = _parse_downtime_time(entry.get("end"), rel, f"{entry_context}.end", report)
+        if start_time and end_time and start_time >= end_time:
+            report.error(rel, f"{entry_context}.start must be before end")
 
-            start_time = _parse_downtime_time(entry.get("start"), rel, f"{entry_context}.start", report)
-            end_time = _parse_downtime_time(entry.get("end"), rel, f"{entry_context}.end", report)
-            if start_time and end_time and start_time >= end_time:
-                report.error(rel, f"{entry_context}.start must be before end")
+        services = entry.get("services")
+        if services not in VALID_DOWNTIME_SERVICES:
+            report.error(rel, f"{entry_context}.services '{services}' is invalid, expected one of {VALID_DOWNTIME_SERVICES}")
 
-            services = entry.get("services")
-            if services not in VALID_DOWNTIME_SERVICES:
-                report.error(rel, f"{entry_context}.services '{services}' is invalid, expected one of {VALID_DOWNTIME_SERVICES}")
+        hostname = entry.get("hostname")
+        if not isinstance(hostname, str) or not hostname.strip():
+            report.error(rel, f"{entry_context}.hostname must be a non-empty string")
 
-            hostname = entry.get("hostname")
-            if not isinstance(hostname, str) or not hostname.strip():
-                report.error(rel, f"{entry_context}.hostname must be a non-empty string")
-
-            downfor = entry.get("downfor")
-            if not isinstance(downfor, list) or not downfor:
-                report.error(rel, f"{entry_context}.downfor must be a non-empty list")
-            else:
-                for downfor_index, consumer in enumerate(downfor):
-                    if not isinstance(consumer, str) or not consumer.strip():
-                        report.error(rel, f"{entry_context}.downfor[{downfor_index}] must be a non-empty string")
+        downfor = entry.get("downfor")
+        if not isinstance(downfor, list) or not downfor:
+            report.error(rel, f"{entry_context}.downfor must be a non-empty list")
+        else:
+            for downfor_index, consumer in enumerate(downfor):
+                if not isinstance(consumer, str) or not consumer.strip():
+                    report.error(rel, f"{entry_context}.downfor[{downfor_index}] must be a non-empty string")
 
 
 # ---------------------------------------------------------------------------
