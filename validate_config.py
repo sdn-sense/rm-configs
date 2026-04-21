@@ -9,12 +9,15 @@ Checks:
   - VLAN range format and values
   - IP address/subnet pool validity
   - QoS configuration validity
+  - FE auth allowed keys, permissions, and allowed_ips validity
   - Cross-site MD5 uniqueness and ASN collision detection
 """
 
+import argparse
 import datetime
 import ipaddress
 import re
+import subprocess
 import sys
 from pathlib import Path
 
@@ -27,6 +30,8 @@ VALID_MAPPING_TYPES = {"FE", "Agent"}
 VALID_PLUGINS = {"ansible", "raw"}
 VALID_QOS_POLICIES = {"hostlevel", "privatens"}
 VALID_DOWNTIME_SERVICES = {"FE", "Agent", "All"}
+VALID_AUTH_KEYS = {"full_dn", "permissions", "allowed_ips"}
+VALID_AUTH_PERMISSIONS = {"r", "read", "w", "write", "rw", "readwrite", "read-write", "a", "admin"}
 VLAN_MIN = 1
 VLAN_MAX = 4094
 MD5_RE = re.compile(r"^[0-9a-f]{32}$")
@@ -36,6 +41,7 @@ DOWNTIME_TIME_FORMAT = "%Y %m %d %H:%M"
 FE_RESERVED_KEYS = {"general"}
 # Known top-level keys in agent main.yaml that are NOT interface sections
 AGENT_RESERVED_KEYS = {"general", "agent", "qos"}
+EXPECTED_FE_FILES = {"main.yaml", "downtime.yaml", "auth.yaml", "auth-re.yaml"}
 
 
 def parse_bool(value, default=False):
@@ -117,6 +123,93 @@ def parse_yaml_files(sites, report):
     return parsed
 
 
+def parse_yaml_file(yaml_file, base_dir, report):
+    """Parse a single YAML file and return the parsed content."""
+    try:
+        with open(yaml_file, "r", encoding="utf-8") as fh:
+            return yaml.safe_load(fh)
+    except yaml.YAMLError as exc:
+        mark = ""
+        if hasattr(exc, "problem_mark") and exc.problem_mark:
+            pm = exc.problem_mark
+            mark = f" (line {pm.line + 1}, col {pm.column + 1})"
+        problem = exc.problem if hasattr(exc, "problem") else exc
+        report.error(yaml_file.relative_to(base_dir), f"YAML parse error{mark}: {problem}")
+    except OSError as exc:
+        report.error(yaml_file.relative_to(base_dir), f"Unable to read file: {exc}")
+    return None
+
+
+def _run_git(args, base_dir):
+    """Run a git command and return stdout lines."""
+    proc = subprocess.run(
+        ["git", *args],
+        cwd=base_dir,
+        check=True,
+        text=True,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+    )
+    return [line.strip() for line in proc.stdout.splitlines() if line.strip()]
+
+
+def _is_zero_sha(value):
+    """Return True for GitHub's all-zero before SHA."""
+    return bool(value) and set(value) == {"0"}
+
+
+def get_changed_files(base_dir, base_ref=None, head_ref="HEAD"):
+    """Return changed files from git as repo-relative Paths."""
+    if base_ref and _is_zero_sha(base_ref):
+        base_ref = None
+
+    if base_ref:
+        diff_args = ["diff", "--name-only", "--diff-filter=ACMR", base_ref, head_ref]
+    else:
+        diff_args = ["diff", "--name-only", "--diff-filter=ACMR", "HEAD~1", head_ref]
+
+    try:
+        return [Path(path) for path in _run_git(diff_args, base_dir)]
+    except (subprocess.CalledProcessError, FileNotFoundError):
+        status_args = ["status", "--short"]
+        changed = []
+        for line in _run_git(status_args, base_dir):
+            if len(line) > 3 and line[:2] != "??":
+                changed.append(Path(line[3:]))
+            elif line.startswith("?? "):
+                changed.append(Path(line[3:]))
+        return changed
+
+
+def _load_yaml_if_exists(path, base_dir, report):
+    """Load YAML file if it exists."""
+    if not path.exists():
+        return None
+    return parse_yaml_file(path, base_dir, report)
+
+
+def classify_expected_yaml(path, sites):
+    """Classify an expected site YAML path for changed-file validation."""
+    parts = path.parts
+    if len(parts) < 2:
+        return None
+
+    site_name = parts[0]
+    if site_name not in sites:
+        return None
+
+    if len(parts) == 2 and parts[1] == "mapping.yaml":
+        return site_name, "mapping", None
+
+    if len(parts) == 3 and parts[1] == "FE" and parts[2] in EXPECTED_FE_FILES:
+        return site_name, f"fe:{parts[2]}", None
+
+    if len(parts) == 3 and parts[2] == "main.yaml" and parts[1] != "FE":
+        return site_name, "agent:main.yaml", parts[1]
+
+    return None
+
+
 # ---------------------------------------------------------------------------
 # VLAN range validation
 # ---------------------------------------------------------------------------
@@ -175,6 +268,68 @@ def validate_ip_pool(entries, expected_version, filepath, context, report):
                 report.error(filepath, f"{context}: '{entry_str}' is IPv{net.version}, expected IPv{expected_version}")
         except ValueError as exc:
             report.error(filepath, f"{context}: invalid IP network '{entry_str}': {exc}")
+
+
+# ---------------------------------------------------------------------------
+# FE auth validation
+# ---------------------------------------------------------------------------
+
+def validate_auth_file(site_name, auth_name, auth_data, report):
+    """Validate FE auth.yaml/auth-re.yaml entries.
+
+    allowed_ips is optional. If it is not present, the credential is valid from any IP.
+    """
+    rel = Path(site_name) / "FE" / auth_name
+    if auth_data is None:
+        return
+    if not isinstance(auth_data, dict):
+        report.error(rel, f"{auth_name} must be a YAML dict")
+        return
+
+    for username, auth_entry in auth_data.items():
+        context = f"user '{username}'"
+        if not isinstance(auth_entry, dict):
+            report.error(rel, f"{context} must be a dict")
+            continue
+
+        unknown_keys = set(auth_entry) - VALID_AUTH_KEYS
+        if unknown_keys:
+            report.error(rel, f"{context} has unsupported keys: {', '.join(sorted(unknown_keys))}. Allowed keys: {', '.join(sorted(VALID_AUTH_KEYS))}")
+
+        for required_key in ("full_dn", "permissions"):
+            if required_key not in auth_entry:
+                report.error(rel, f"{context}.{required_key} is required")
+
+        full_dn = auth_entry.get("full_dn")
+        if "full_dn" in auth_entry and (not isinstance(full_dn, str) or not full_dn.strip()):
+            report.error(rel, f"{context}.full_dn must be a non-empty string")
+
+        permissions = auth_entry.get("permissions")
+        if "permissions" in auth_entry:
+            if not isinstance(permissions, str) or not permissions.strip():
+                report.error(rel, f"{context}.permissions must be a non-empty string")
+            elif permissions not in VALID_AUTH_PERMISSIONS:
+                report.error(rel, f"{context}.permissions '{permissions}' is invalid. Allowed values: {', '.join(sorted(VALID_AUTH_PERMISSIONS))}")
+
+        if "allowed_ips" not in auth_entry:
+            continue
+
+        allowed_ips = auth_entry["allowed_ips"]
+        if not isinstance(allowed_ips, list) or not allowed_ips:
+            report.error(rel, f"{context}.allowed_ips must be a non-empty list when specified; omit allowed_ips to allow any IP")
+            continue
+
+        for index, allowed_ip in enumerate(allowed_ips):
+            if not isinstance(allowed_ip, str) or not allowed_ip.strip():
+                report.error(rel, f"{context}.allowed_ips[{index}] must be a non-empty CIDR string")
+                continue
+            if "/" not in allowed_ip:
+                report.error(rel, f"{context}.allowed_ips[{index}] '{allowed_ip}' must include a CIDR prefix")
+                continue
+            try:
+                ipaddress.ip_network(allowed_ip, strict=False)
+            except ValueError as exc:
+                report.error(rel, f"{context}.allowed_ips[{index}] invalid network '{allowed_ip}': {exc}")
 
 
 # ---------------------------------------------------------------------------
@@ -617,8 +772,8 @@ def validate_asn_uniqueness(all_asns, report):
 # Main
 # ---------------------------------------------------------------------------
 
-def main():
-    base_dir = Path(__file__).parent
+def validate_all(base_dir):
+    """Validate all supported site configuration files."""
     report = ValidationReport()
 
     # Phase 0: Discovery
@@ -659,6 +814,11 @@ def main():
         elif downtime_file in parsed_files:
             validate_fe_downtime(site_name, parsed_files[downtime_file], report)
 
+        for auth_name in ("auth.yaml", "auth-re.yaml"):
+            auth_file = fe_dir / auth_name
+            if auth_file in parsed_files:
+                validate_auth_file(site_name, auth_name, parsed_files[auth_file], report)
+
     # Phase 4: Agent validation
     for site_name, site_path in sites.items():
         mapping_file = site_path / "mapping.yaml"
@@ -694,6 +854,116 @@ def main():
     # Report
     print()
     report.print_report()
+    return report
+
+
+def _mapping_agent_dirs(mapping_data):
+    """Return agent config directories from a mapping.yaml data structure."""
+    agent_dirs = set()
+    if not isinstance(mapping_data, dict):
+        return agent_dirs
+    for entry in mapping_data.values():
+        if isinstance(entry, dict) and entry.get("type") == "Agent":
+            config_dir = str(entry.get("config", "")).rstrip("/")
+            if config_dir:
+                agent_dirs.add(config_dir)
+    return agent_dirs
+
+
+def validate_changed(base_dir, report, base_ref=None, head_ref="HEAD"):
+    """Validate only changed expected YAML files under site directories."""
+    sites = discover_sites(base_dir)
+    if not sites:
+        print("No site directories found.")
+        report.error("repo", "No site directories found.")
+        return report
+
+    changed_files = get_changed_files(base_dir, base_ref=base_ref, head_ref=head_ref)
+    expected_files = []
+    skipped_files = []
+    for rel_path in changed_files:
+        if rel_path.suffix not in {".yaml", ".yml"}:
+            skipped_files.append(rel_path)
+            continue
+        classification = classify_expected_yaml(rel_path, sites)
+        if classification:
+            expected_files.append((rel_path, classification))
+        else:
+            skipped_files.append(rel_path)
+
+    print(f"Found {len(changed_files)} changed files")
+    print(f"Validating {len(expected_files)} changed expected YAML files")
+    if skipped_files:
+        print(f"Skipped {len(skipped_files)} files outside site config or not expected YAML")
+
+    parsed_cache = {}
+
+    def load_rel(rel_path):
+        abs_path = base_dir / rel_path
+        if rel_path not in parsed_cache:
+            parsed_cache[rel_path] = _load_yaml_if_exists(abs_path, base_dir, report)
+        return parsed_cache[rel_path]
+
+    for rel_path, (site_name, file_type, agent_dir) in expected_files:
+        site_path = sites[site_name]
+        data = load_rel(rel_path)
+        abs_path = base_dir / rel_path
+        if not abs_path.exists():
+            continue
+
+        if file_type == "mapping":
+            validate_mapping(site_name, site_path, data, report, {})
+            continue
+
+        if file_type == "fe:main.yaml":
+            validate_fe_main(site_name, site_path, data, report, {})
+            continue
+
+        if file_type == "fe:downtime.yaml":
+            validate_fe_downtime(site_name, data, report)
+            continue
+
+        if file_type in {"fe:auth.yaml", "fe:auth-re.yaml"}:
+            validate_auth_file(site_name, rel_path.name, data, report)
+            continue
+
+        if file_type == "agent:main.yaml":
+            mapping_rel = Path(site_name) / "mapping.yaml"
+            mapping_data = load_rel(mapping_rel)
+            agent_dirs = _mapping_agent_dirs(mapping_data)
+            if agent_dir not in agent_dirs:
+                print(f"Skipping {rel_path}: agent directory is not listed in {mapping_rel}")
+                continue
+            fe_data = load_rel(Path(site_name) / "FE" / "main.yaml")
+            is_disabled = (site_path / "disabled").exists() or (site_path / agent_dir / "disabled").exists()
+            validate_agent_main(site_name, site_path, agent_dir, data, fe_data, report, is_disabled)
+
+    print()
+    report.print_report()
+    return report
+
+
+def build_arg_parser():
+    """Build CLI argument parser."""
+    parser = argparse.ArgumentParser(description="Validate rm-configs site configuration files.")
+    mode = parser.add_mutually_exclusive_group()
+    mode.add_argument("--all", action="store_true", help="Validate all site configuration files.")
+    mode.add_argument("--changed", action="store_true", help="Validate only changed expected YAML files under site directories.")
+    parser.add_argument("--base-ref", help="Base git ref/SHA for --changed mode. Defaults to HEAD~1 when not provided.")
+    parser.add_argument("--head-ref", default="HEAD", help="Head git ref/SHA for --changed mode. Defaults to HEAD.")
+    return parser
+
+
+def main():
+    base_dir = Path(__file__).parent
+    args = build_arg_parser().parse_args()
+    report = ValidationReport()
+
+    if args.changed:
+        report = validate_changed(base_dir, report, base_ref=args.base_ref, head_ref=args.head_ref)
+    else:
+        report = validate_all(base_dir)
+
     sys.exit(1 if report.has_errors() else 0)
 
 

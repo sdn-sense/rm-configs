@@ -28,4 +28,6 @@ jobs:
         run: pip install pyyaml
 
       - name: Run config validation
-        run: python3 validate_config.py
+        env:
+          BASE_REF: ${{ github.event.pull_request.base.sha || github.event.before }}
+        run: python3 validate_config.py --changed --base-ref "${BASE_REF}"
