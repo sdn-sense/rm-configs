@@ -4,13 +4,43 @@ cf699749655c3bc526db71242c10a267:
   maintainer: "Garhan Attebury"
   status: development
   type: FE
-9bbb68fcf7554d3c5bf794f70de64bb7:
+f66809ddf06c6b04f88c8edee74c1085:
   config: Agent01/
   maintainer: "Garhan Attebury"
   status: development
   type: Agent
-54f6f44da656b195013dec5743fdaa15:
+0c33b3db742764b8a7423197a1d2d8a1:
   config: Agent02/
+  maintainer: "Garhan Attebury"
+  status: development
+  type: Agent
+2d277dbd81d19189d5b1588b1120c679:
+  config: Agent03/
+  maintainer: "Garhan Attebury"
+  status: development
+  type: Agent
+b4c7486e19314f6d1168cef4a34d2e77:
+  config: Agent04/
+  maintainer: "Garhan Attebury"
+  status: development
+  type: Agent
+6ea48df4a6f3f553a0a62bab3bd4f770:
+  config: Agent05/
+  maintainer: "Garhan Attebury"
+  status: development
+  type: Agent
+2d7498a0053c8e26e4a055c27461c59b:
+  config: Agent06/
+  maintainer: "Garhan Attebury"
+  status: development
+  type: Agent
+35477066514a54b2dcbbc87330a98776:
+  config: Agent07/
+  maintainer: "Garhan Attebury"
+  status: development
+  type: Agent
+f553015b4aa3b63e1921e1c3780e507e:
+  config: Agent08/
   maintainer: "Garhan Attebury"
   status: development
   type: Agent

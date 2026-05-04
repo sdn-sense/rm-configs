@@ -1,14 +1,14 @@
 ---
 general:
-  ip: "129.93.239.136"
+  ip: "129.93.239.184"
   sitename: T2_US_Nebraska
   webdomain: "https://red-sense-rm.unl.edu:10443"
-  node_exporter: "red-xfer7.unl.edu:9100"
+  node_exporter: "red-xfer1.unl.edu:9100"
 agent:
   interfaces: [enp1s0f0np0]
-  hostname: red-xfer7.unl.edu
+  hostname: red-xfer1.unl.edu
 enp1s0f0np0:
-  port: "Ethernet 1/1/7"
+  port: "Ethernet 1/1/1"
   switch: dellos10_s0
   shared: false
   intf_max: 100000
