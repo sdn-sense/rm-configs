@@ -1,0 +1,22 @@
+---
+general:
+  ip: "<ip of the host>"
+  sitename: T2_US_Wisconsin
+  webdomain: "<FE URL>"
+  node_exporter: "<hostname>:9100"
+agent:
+  interfaces: <yet to be added>
+  hostname: <hostname>
+<interafce name>:
+  port: "<port connected to the switch>"
+  switch: cisconx_s0
+  shared: false
+  intf_max: 
+  vlan_range: []
+qos:
+  policy: hostlevel
+  qos_params: "mtu 9000 mpu 9000 quantum 200000 burst 300000 cburst 300000 qdisc sfq balanced"
+  interfaces:
+    <interafce name>:
+      master_intf: <interafce name>
+      ipv6_range:

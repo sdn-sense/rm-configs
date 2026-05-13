@@ -1,0 +1,46 @@
+---
+<md5 hash for FE>:
+  config: FE/
+  maintainer: "Ajit "
+  status: development
+  type: FE
+<md5 hash for hostname>:
+  config: Agent01/
+  maintainer: "ajit@hep.wisc.edu"
+  status: development
+  type: Agent
+<md5 hash for hostname>:
+  config: Agent02/
+  maintainer: "ajit@hep.wisc.edu"
+  status: development
+  type: Agent
+<md5 hash for hostname>:
+  config: Agent03/
+  maintainer: "ajit@hep.wisc.edu"
+  status: development
+  type: Agent
+<md5 hash for hostname>:
+  config: Agent04/
+  maintainer: "ajit@hep.wisc.edu"
+  status: development
+  type: Agent
+<md5 hash for hostname>:
+  config: Agent05/
+  maintainer: "ajit@hep.wisc.edu"
+  status: development
+  type: Agent
+<md5 hash for hostname>:
+  config: Agent06/
+  maintainer: "ajit@hep.wisc.edu"
+  status: development
+  type: Agent
+<md5 hash for hostname>:
+  config: Agent07/
+  maintainer: "ajit@hep.wisc.edu"
+  status: development
+  type: Agent
+<md5 hash for hostname>:
+  config: Agent08/
+  maintainer: "ajit@hep.wisc.edu"
+  status: development
+  type: Agent
