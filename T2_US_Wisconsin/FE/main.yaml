@@ -1,0 +1,30 @@
+---
+general:
+  logLevel: DEBUG
+  sitename: T2_US_Wisconsin
+  webdomain: "https://<yet to be added>443"
+  oidc: true
+  probes:
+    - https_v4_siterm_2xx
+    - icmp_v4
+T2_US_Wisconsin:
+  domain: <yet to be added> 
+  latitude: <yet to be added>
+  longitude: <yet to be added>
+  plugin: ansible
+  ipv6-subnet-pool:
+    - 2607:f388:101c:1010/60
+  metadata:
+    xrootd:
+      2607:f388:101c:1010/60: <yet to be added>
+  year: 2024
+  switch:
+    - cisconx_s0
+cisconx_s0:
+  rsts_enabled: ipv4,ipv6
+  private_asn: <yet to be added>
+  vrf: <yet to be added>
+  vlan_mtu: <yet to be added>
+  ports:
+  vlan_range:
+  allports: false
