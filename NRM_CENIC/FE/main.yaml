@@ -34,7 +34,7 @@ aristaeos_s0:
     - 4005-4024
   ports:
     Port-Channel501:
-      capacity: 100000
+      capacity: 400000
       desttype: switch
       isAlias: urn:ogf:network:tier2.ultralight.org:2024:dellos10_s0:Port-channel_102
       vlan_range:
@@ -83,7 +83,7 @@ aristaeos_s0:
         - 3846-3849
       wanlink: true
     Ethernet4/1:
-      capacity: 10000
+      capacity: 400000
       desttype: switch
       isAlias: urn:ogf:network:tier2.ultralight.org:2024:edgecore_s0:Ethernet208
       vlan_range:
@@ -98,7 +98,7 @@ aristaeos_s0:
         - 4005-4024
       wanlink: true
     Ethernet5/1:
-      capacity: 10000
+      capacity: 400000
       desttype: switch
       isAlias: urn:ogf:network:tier2.ultralight.org:2024:edgecore_s0:Ethernet216
       vlan_range:
@@ -113,7 +113,7 @@ aristaeos_s0:
         - 4005-4024
       wanlink: true
     Ethernet6/1:
-      capacity: 10000
+      capacity: 400000
       desttype: switch
       isAlias: urn:ogf:network:tier2.ultralight.org:2024:edgecore_s0:Ethernet224
       vlan_range:
@@ -155,7 +155,7 @@ aristaeos_s0:
         - 3350-3359
       wanlink: true
     Ethernet12/1:
-      capacity: 10000
+      capacity: 400000
       desttype: switch
       isAlias: urn:ogf:network:tier2.ultralight.org:2024:edgecore_s0:Ethernet232
       vlan_range:
