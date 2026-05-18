@@ -34,7 +34,7 @@ aristaeos_s0:
     - 4005-4024
   ports:
     Port-Channel501:
-      capacity: 400000
+      capacity: 300000
       desttype: switch
       isAlias: urn:ogf:network:tier2.ultralight.org:2024:dellos10_s0:Port-channel_102
       vlan_range:
