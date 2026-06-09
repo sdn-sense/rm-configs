@@ -22,6 +22,13 @@ T2_US_Caltech:
     - 2605:d9c0:6:2646::/64
     - 2605:d9c0:6:2647::/64
     - 2605:d9c0:6:2648::/64
+    - 2605:d9c0:6:2649::/64
+    - 2605:d9c0:6:2650::/64
+    - 2605:d9c0:6:2651::/64
+    - 2605:d9c0:6:2652::/64
+    - 2605:d9c0:6:2653::/64
+    - 2605:d9c0:6:2654::/64
+    - 2605:d9c0:6:2655::/64
   metadata:
     xrootd:
       2605:d9c0:6:2640::/64: redir-01.t2-sense.ultralight.org:1094
@@ -33,6 +40,13 @@ T2_US_Caltech:
       2605:d9c0:6:2646::/64: redir-07.t2-sense.ultralight.org:1094
       2605:d9c0:6:2647::/64: redir-08.t2-sense.ultralight.org:1094
       2605:d9c0:6:2648::/64: redir-09.t2-sense.ultralight.org:1094
+      2605:d9c0:6:2649::/64: redir-10.t2-sense.ultralight.org:1094
+      2605:d9c0:6:2650::/64: redir-11.t2-sense.ultralight.org:1094
+      2605:d9c0:6:2651::/64: redir-12.t2-sense.ultralight.org:1094
+      2605:d9c0:6:2652::/64: redir-13.t2-sense.ultralight.org:1094
+      2605:d9c0:6:2653::/64: redir-14.t2-sense.ultralight.org:1094
+      2605:d9c0:6:2654::/64: redir-15.t2-sense.ultralight.org:1094
+      2605:d9c0:6:2655::/64: redir-16.t2-sense.ultralight.org:1094
   year: 2024
   switch:
     - dellos10_s0
