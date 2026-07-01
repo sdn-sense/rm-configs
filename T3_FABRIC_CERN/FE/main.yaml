@@ -15,7 +15,7 @@ T3_FABRIC_CERN:
     - 2602:fcfb:001d:fff3::/64
   metadata:
     xrootd:
-      2602:fcfb:001d:fff1::/64 : cern-sub1-host1.exp.fabric-testbed.net:1094
+      #2602:fcfb:001d:fff1::/64 : cern-sub1-host1.exp.fabric-testbed.net:1094 (Used for default routing, not for provisioning)
       2602:fcfb:001d:fff2::/64 : cern-sub2-host1.exp.fabric-testbed.net:1094
       2602:fcfb:001d:fff3::/64 : cern-sub3-host1.exp.fabric-testbed.net:1094
   switch:
