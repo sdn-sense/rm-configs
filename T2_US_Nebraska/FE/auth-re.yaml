@@ -2,6 +2,9 @@
 unlsense:
   full_dn: "/C=US/O=Let's Encrypt/CN=R[0-9]+/CN=.*.unl.edu"
   permissions: w
+unlsense1:
+  full_dn: "/C=US/O=Let's Encrypt/CN=YR[0-9]+/CN=.*.unl.edu"
+  permissions: w
 unlincommon:
   full_dn: "/C=US/O=Internet2/CN=InCommon RSA IGTF Server CA 3/.*/O=University of Nebraska-Lincoln/CN=.*.unl.edu"
   permissions: w

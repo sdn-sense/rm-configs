@@ -14,3 +14,6 @@ autogole_monitoring1:
 fecert:
   full_dn: "/C=US/O=Let's Encrypt/CN=R[0-9]+/CN=sense-losa-fabric.nrp-nautilus.io"
   permissions: w
+fecert1:
+  full_dn: "/C=US/O=Let's Encrypt/CN=YR[0-9]+/CN=sense-losa-fabric.nrp-nautilus.io"
+  permissions: w

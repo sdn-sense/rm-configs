@@ -9,3 +9,6 @@ autogole_monitoring1:
 gpn_fe:
   full_dn: "/C=US/O=Let's Encrypt/CN=R[0-9]+/CN=sense-gpn.nrp-nautilus.io"
   permissions: w
+gpn_fe1:
+  full_dn: "/C=US/O=Let's Encrypt/CN=YR[0-9]+/CN=sense-gpn.nrp-nautilus.io"
+  permissions: w

@@ -8,3 +8,6 @@ autogole_monitoring1:
 fe:
   full_dn: "/C=US/O=Let's Encrypt/CN=R[0-9]+/CN=sense-ladowntown.nrp-nautilus.io"
   permissions: w
+fe1:
+  full_dn: "/C=US/O=Let's Encrypt/CN=YR[0-9]+/CN=sense-ladowntown.nrp-nautilus.io"
+  permissions: w

@@ -8,3 +8,6 @@ autogole_monitoring1:
 feapi:
   full_dn: "/C=US/O=Let's Encrypt/CN=R[0-9]+/CN=sense-caltech-fe.tier2-lb.ultralight.org"
   permissions: w
+feapi1:
+  full_dn: "/C=US/O=Let's Encrypt/CN=YR[0-9]+/CN=sense-caltech-fe.tier2-lb.ultralight.org"
+  permissions: w
