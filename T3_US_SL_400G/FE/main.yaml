@@ -1,0 +1,42 @@
+--- 
+general:
+  sitename: T3_US_SL_400G
+  webdomain: "https://g5intel2.it.northwestern.edu:8443"
+  oidc: true
+T3_US_SL_400G:
+  domain: starlight.northwestern.edu
+  latitude: 34.1377
+  longitude: 118.1253
+  plugin: ansible
+  switch:
+    - "sl-z9432f"
+  year: 2026
+sl-z9432f:
+  vlan_mtu: 9000
+  ports:
+    "ethernet1/1/7:1":
+      capacity: 100000
+      desttype: switch
+      isAlias: "urn:ogf:network:starlight.northwestern.edu:2025:slz9432f:r740xd4-2"
+      wanlink: False
+    "ethernet1/1/19":
+      capacity: 400000
+      desttype: switch
+      isAlias: "urn:ogf:network:starlight.northwestern.edu:2025:slz9432f:slfabric-56"
+      wanlink: True
+    "ethernet1/1/21":
+      capacity: 400000
+      desttype: switch
+      isAlias: "urn:ogf:network:starlight.northwestern.edu:2025:slz9432f:slfabric-12"
+      wanlink: True
+    "ethernet1/1/22":
+      capacity: 400000
+      desttype: switch
+      isAlias: "urn:ogf:network:starlight.northwestern.edu:2025:slz9432f:slfabric-60"
+      wanlink: True
+    "ethernet1/1/24":
+      capacity: 400000
+      desttype: switch
+      isAlias: "urn:ogf:network:starlight.northwestern.edu:2025:slz9432f:g5intel2-p1"
+      wanlink: False
+  vlan_range: [2030-2035,2779-2799]

@@ -1,0 +1,21 @@
+---
+general:
+  ip: "165.124.33.144"
+  sitename: T3_US_SL_400G
+  webdomain: "https://g5intel2.it.northwestern.edu:8443"
+  node_exporter: "g5intel2.it.northwestern.edu:9100"
+agent: 
+  interfaces: [p1p0]
+  hostname: g5intel2.it.northwestern.edu
+p1p0:
+  port: "ethernet1/1/24"
+  shared: false
+  switch: sl-z9432f
+  intf_max: 400000
+  vlan_range: [2030-2035,2779-2799]
+qos:
+  policy: hostlevel
+  qos_params: "mtu 9000 mpu 9000 quantum 200000 burst 300000 cburst 300000 qdisc sfq balanced"
+  interfaces:
+    p1p0:
+      master_intf: enp181s0np0

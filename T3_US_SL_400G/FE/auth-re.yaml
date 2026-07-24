@@ -1,0 +1,13 @@
+---
+autogole_monitoring:
+  full_dn: "/C=US/O=Let's Encrypt/CN=R[0-9]+/CN=autogole-grafana.nrp-nautilus.io"
+  permissions: r
+autogole_monitoring1:
+  full_dn: "/C=US/O=Let's Encrypt/CN=YR[0-9]+/CN=autogole-grafana.nrp-nautilus.io"
+  permissions: r
+starlightdtn:
+  full_dn: "/C=US/O=Let's Encrypt/CN=R[0-9]+/CN=r740xd4.it.northwestern.edu"
+  permissions: w
+starlightdtn1:
+  full_dn: "/C=US/O=Let's Encrypt/CN=YR[0-9]+/CN=r740xd4.it.northwestern.edu"
+  permissions: w
