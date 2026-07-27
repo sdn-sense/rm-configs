@@ -5,9 +5,6 @@ autogole_monitoring:
 autogole_monitoring1:
   full_dn: "/C=US/O=Let's Encrypt/CN=YR[0-9]+/CN=autogole-grafana.nrp-nautilus.io"
   permissions: r
-starlightdtn:
-  full_dn: "/C=US/O=Let's Encrypt/CN=R[0-9]+/CN=r740xd4.it.northwestern.edu"
-  permissions: w
-starlightdtn1:
-  full_dn: "/C=US/O=Let's Encrypt/CN=YR[0-9]+/CN=r740xd4.it.northwestern.edu"
+starlightdtn2:
+  full_dn: "/C=US/O=Let's Encrypt/CN=YE2/CN=g5intel2.it.northwestern.edu"
   permissions: w

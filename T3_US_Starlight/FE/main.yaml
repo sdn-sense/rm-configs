@@ -5,8 +5,8 @@ general:
   oidc: true
 T3_US_Starlight: 
   domain: starlight.org
-  latitude: 34.1377
-  longitude: 118.1253
+  latitude: 41.89533
+  longitude: -87.61652
   plugin: raw
   switch:
     - "s1"
