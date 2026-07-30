@@ -38,25 +38,3 @@ qos:
     vlan.4007:
       ipv6_range: 2001:48d0:6020:f018::/64
       master_intf: enp1s0f0np0
-    vlan.4008:
-      ipv6_range: 2001:48d0:6020:f019::/64
-      master_intf: enp1s0f0np0
-    vlan.4009:
-      ipv6_range: 2001:48d0:6020:f01a::/64
-      master_intf: enp1s0f0np0
-    vlan.4010:
-      ipv6_range: 2001:48d0:6020:f01b::/64
-      master_intf: enp1s0f0np0
-    vlan.4011:
-      ipv6_range: 2001:48d0:6020:f01c::/64
-      master_intf: enp1s0f0np0
-    vlan.4012:
-      ipv6_range: 2001:48d0:6020:f01d::/64
-      master_intf: enp1s0f0np0
-    vlan.4013:
-      ipv6_range: 2001:48d0:6020:f01e::/64
-      master_intf: enp1s0f0np0
-    vlan.4014:
-      ipv6_range: 2001:48d0:6020:f01f::/64
-      master_intf: enp1s0f0np0
-
