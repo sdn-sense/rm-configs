@@ -13,7 +13,7 @@ T2_US_UCSD:
   plugin: ansible
   year: 2025
   metadata:
-    xrootd-ceph:
+    xrootd:
       2001:48d0:6020:f011::/64:  redir-f011.t2.ucsd.edu:1094
       2001:48d0:6020:f012::/64:  redir-f012.t2.ucsd.edu:1094
       2001:48d0:6020:f013::/64:  redir-f013.t2.ucsd.edu:1094
@@ -22,8 +22,6 @@ T2_US_UCSD:
       2001:48d0:6020:f016::/64:  redir-f016.t2.ucsd.edu:1094
       2001:48d0:6020:f017::/64:  redir-f017.t2.ucsd.edu:1094
       2001:48d0:6020:f018::/64:  redir-f018.t2.ucsd.edu:1094
-    xrootd-blackhole:
-      2001:48d0:6020:f019::/64:  redir-f019.t2.ucsd.edu:1094
       2001:48d0:6020:f01a::/64:  redir-f01a.t2.ucsd.edu:1094
       2001:48d0:6020:f01b::/64:  redir-f01b.t2.ucsd.edu:1094
       2001:48d0:6020:f01c::/64:  redir-f01c.t2.ucsd.edu:1094
@@ -39,7 +37,6 @@ T2_US_UCSD:
     - 2001:48d0:6020:f016::/64
     - 2001:48d0:6020:f017::/64
     - 2001:48d0:6020:f018::/64
-    - 2001:48d0:6020:f019::/64
     - 2001:48d0:6020:f01a::/64
     - 2001:48d0:6020:f01b::/64
     - 2001:48d0:6020:f01c::/64
