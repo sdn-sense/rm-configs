@@ -52,6 +52,7 @@ cisconx9:
         - 3600-3619
       wanlink: true
     Ethernet1/27: {}
+    Ethernet1/31: {}
     Ethernet1/28: {}
     Ethernet1/22: {}
     Ethernet1/24: {}
