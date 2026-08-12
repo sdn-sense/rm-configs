@@ -5,38 +5,31 @@ general:
   oidc: true
 T3_US_SL_400G:
   domain: starlight.northwestern.edu
-  latitude: 41.89533
-  longitude: -87.61652
+  latitude: 41.89523
+  longitude: -87.61673
   plugin: ansible
   switch:
     - "sl-z9432f"
   year: 2026
 sl-z9432f:
-  vlan_mtu: 9000
+  vlan_mtu: 9216
   ports:
-    "ethernet1/1/7:1":
-      capacity: 100000
-      desttype: switch
-      isAlias: "urn:ogf:network:starlight.northwestern.edu:2025:slz9432f:r740xd4-2"
-      wanlink: False
     "ethernet1/1/19":
       capacity: 400000
       desttype: switch
-      isAlias: "urn:ogf:network:starlight.northwestern.edu:2025:slz9432f:slfabric-56"
+      isAlias: "urn:ogf:network:sense-star-fabric-testbed.net:frr_s0:e56"
       wanlink: True
     "ethernet1/1/21":
       capacity: 400000
       desttype: switch
-      isAlias: "urn:ogf:network:starlight.northwestern.edu:2025:slz9432f:slfabric-12"
+      isAlias: "urn:ogf:network:sense-star-fabric-testbed.net:frr_s0:e12"
       wanlink: True
     "ethernet1/1/22":
       capacity: 400000
       desttype: switch
-      isAlias: "urn:ogf:network:starlight.northwestern.edu:2025:slz9432f:slfabric-60"
+      isAlias: "urn:ogf:network:sense-star-fabric-testbed.net:frr_s0:e60"
       wanlink: True
     "ethernet1/1/24":
       capacity: 400000
-      desttype: switch
-      isAlias: "urn:ogf:network:starlight.northwestern.edu:2025:slz9432f:g5intel2-p1"
-      wanlink: False
   vlan_range: [2030-2035,2779-2799]
+  allports: false
