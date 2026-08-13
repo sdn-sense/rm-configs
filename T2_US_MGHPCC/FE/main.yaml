@@ -76,6 +76,8 @@ junos_s0:
       isAlias: urn:ogf:network:stack-fabric:2024:topology:node+MASS:port+SENSE-MGHPCC
       wanlink: true
 mghpcc-rt-dev:
+  ansible_params:
+    vlanmode: 'mx'
   vlan_mtu: 9214
   vlan_range:
     - 3901-3920
