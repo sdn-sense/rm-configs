@@ -81,4 +81,5 @@ mghpcc-rt-dev:
     - 3901-3920
     - 3100-3109
   allports: true
+  ports: {}
 
