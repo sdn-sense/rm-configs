@@ -17,17 +17,17 @@ sl-z9432f:
     "ethernet1/1/19":
       capacity: 400000
       desttype: switch
-      isAlias: "urn:ogf:network:sense-star-fabric-testbed.net:frr_s0:e56"
+      isAlias: "urn:ogf:network:stack-fabric:2024:topology:node+STAR:port+StarLight-400G-1-STAR"
       wanlink: True
     "ethernet1/1/21":
       capacity: 400000
       desttype: switch
-      isAlias: "urn:ogf:network:sense-star-fabric-testbed.net:frr_s0:e12"
+      isAlias: "urn:ogf:network:stack-fabric:2024:topology:node+STAR:port+StarLight-400G-2-STAR"
       wanlink: True
     "ethernet1/1/22":
       capacity: 400000
       desttype: switch
-      isAlias: "urn:ogf:network:sense-star-fabric-testbed.net:frr_s0:e60"
+      isAlias: "urn:ogf:network:stack-fabric:2024:topology:node+STAR:port+StarLight-400G-3-STAR"
       wanlink: True
     "ethernet1/1/24":
       capacity: 400000
