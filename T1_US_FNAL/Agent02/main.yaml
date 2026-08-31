@@ -6,10 +6,10 @@ general:
   node_exporter: "cmssense3.fnal.gov:15000"
   node_exporter_passthrough: true
 agent: 
-  interfaces: [enp65s0f0np0]
+  interfaces: [ens4f1np1]
   hostname: cmssense3.fnal.gov
-enp65s0f0np0:
-  port: "Ethernet1/28"
+ens4f1np1:
+  port: "Ethernet1/32"
   shared: false
   switch: cisconx9
   vlan_range: [3600-3619]
@@ -18,5 +18,5 @@ qos:
   qos_params: "mtu 9000 mpu 9000 quantum 200000 burst 300000 cburst 300000 qdisc sfq balanced"
   class_max: true
   interfaces:
-    enp65s0f0np0:
-      master_intf: enp65s0f0np0
+    ens4f1np1:
+      master_intf: ens4f1np1
