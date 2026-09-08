@@ -35,9 +35,3 @@ aristaeos_s0:
       vlan_range:
         - 3611-3619
       wanlink: true
-    Port-Channel504:
-      capacity: 100000
-      desttype: switch
-      vlan_range:
-        - 3611-3619
-      wanlink: true
