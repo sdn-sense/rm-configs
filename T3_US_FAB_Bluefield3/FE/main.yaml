@@ -2,7 +2,6 @@
 general:
   sitename: T3_US_FAB_Bluefield3
   webdomain: "https://[2602:fcfb:a:fff0::2]:443"
-  oidc: true
 T3_US_FAB_Bluefield3:
   domain: sense-bluefield-fabric-testbed.net
   latitude: 32.882648

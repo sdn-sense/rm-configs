@@ -6,7 +6,6 @@ general:
   logLevel: DEBUG
   sitename: NRM_CENIC
   webdomain: https://siterm.apps.cenic.org:443
-  oidc: true
   probes:
     - https_v4_siterm_2xx
     - icmp_v4

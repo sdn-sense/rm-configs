@@ -404,6 +404,9 @@ def validate_fe_main(site_name, site_path, fe_data, report, all_asns):
     if not general.get("webdomain"):
         report.error(rel, "Missing 'general.webdomain'")
 
+    if "oidc" in general:
+        report.warning(rel, "general.oidc is obsolete (all Frontends use token auth); remove it")
+
     # --- site-specific section ---
     # The sitename should be a top-level key
     site_section = fe_data.get(sitename)

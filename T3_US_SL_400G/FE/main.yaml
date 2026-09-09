@@ -2,7 +2,6 @@
 general:
   sitename: T3_US_SL_400G
   webdomain: "https://g5intel2.it.northwestern.edu:8443"
-  oidc: true
 T3_US_SL_400G:
   domain: starlight.northwestern.edu
   latitude: 41.89523
