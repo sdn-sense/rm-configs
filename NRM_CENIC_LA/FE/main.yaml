@@ -1,13 +1,13 @@
 ---
 general:
   logLevel: DEBUG
-  sitename: NRM_CENIC
+  sitename: NRM_CENIC_LA
   webdomain: https://sense-ladowntown.nrp-nautilus.io:443
   oidc: true
   probes:
     - https_v4_siterm_2xx
     - icmp_v4
-NRM_CENIC:
+NRM_CENIC_LA:
   domain: sc-test.cenic.net
   latitude: 33.9416
   longitude: -118.4085
