@@ -1,0 +1,28 @@
+# THIS IS A FAKE DEVICE, MAINLY FOR MONITORING
+# NONE OF THE DEVICES, VLANS ARE CORRECT
+# SEE SENSE-O MODEL FOR UP TO DATE INFORMATION
+---
+general:
+  logLevel: DEBUG
+  sitename: NRM_CENIC
+  webdomain: https://siterm.apps.cenic.org:443
+  oidc: true
+  probes:
+    - https_v4_siterm_2xx
+    - icmp_v4
+NRM_CENIC:
+  domain: cenic.net
+  latitude: 33.9416
+  longitude: -118.4085
+  plugin: raw
+  year: 2025
+  switch:
+    - cenic_s0
+cenic_s0:
+  vlan_range:
+    - 3600-3610
+  ports:
+    Ethernet1/1:
+      capacity: 400000
+      desttype: switch
+      wanlink: true
