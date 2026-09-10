@@ -36,7 +36,7 @@ T2_US_SDSC_DEV:
     - edgecore_s0
 sn3700_s0:
   rsts_enabled: ipv6
-  external_snmp: https://nsi-snmpmon-prpdev.nrp-nautilus.io/sn3700_s0/metrics
+  external_snmp: https://nsi-snmpmon-prpdev.opennsa.svc.cluster.local:8443/sn3700_s0/metrics
   private_asn: 65000
   allports: false
   vlan_range:
@@ -64,7 +64,7 @@ sn3700_s0:
     Ethernet120: {}
 edgecore_s0:
   allports: false
-  external_snmp: https://nsi-snmpmon-prpdev.nrp-nautilus.io/edgecore_s0/metrics
+  external_snmp: https://nsi-snmpmon-prpdev.opennsa.svc.cluster.local:8443/edgecore_s0/metrics
   vlan_range:
     - 3611-3619
   ports:
