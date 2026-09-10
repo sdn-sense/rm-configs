@@ -11,3 +11,9 @@ autogole_monitoring1:
 cmssensenew:
   full_dn: "/C=US/O=Internet2/CN=InCommon RSA IGTF Server CA 3/DC=org/DC=incommon/C=US/ST=Illinois/O=Fermi Forward Discovery Group, LLC/CN=.*.fnal.gov"
   permissions: w
+senseopilot:
+  full_dn: "/C=US/O=Let's Encrypt/CN=E[0-9]+/CN=sense-o-pilot.es.net"
+  permissions: a
+senseopilot1:
+  full_dn: "/C=US/O=Let's Encrypt/CN=YE[0-9]+/CN=sense-o-pilot.es.net"
+  permissions: a

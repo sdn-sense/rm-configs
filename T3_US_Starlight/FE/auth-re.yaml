@@ -11,3 +11,9 @@ starlightdtn:
 starlightdtn1:
   full_dn: "/C=US/O=Let's Encrypt/CN=YR[0-9]+/CN=r740xd4.it.northwestern.edu"
   permissions: w
+senseopilot:
+  full_dn: "/C=US/O=Let's Encrypt/CN=E[0-9]+/CN=sense-o-pilot.es.net"
+  permissions: a
+senseopilot1:
+  full_dn: "/C=US/O=Let's Encrypt/CN=YE[0-9]+/CN=sense-o-pilot.es.net"
+  permissions: a
