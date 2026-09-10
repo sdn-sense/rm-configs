@@ -1,9 +1,9 @@
 --- 
 general:
-  sitename: T2_US_UCSD_OASIS
+  sitename: T2_US_SDSC_OASIS
   webdomain: "https://sense-oasis.nrp-nautilus.io:443"
   probes: ["https_v4_siterm_2xx"]
-T2_US_UCSD_OASIS:
+T2_US_SDSC_OASIS:
   domain: sense-oasis-nrp-nautilus.io
   latitude: 32.882648
   longitude: -117.234579
