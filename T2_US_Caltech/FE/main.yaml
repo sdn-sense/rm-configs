@@ -40,7 +40,7 @@ T2_US_Caltech:
       2605:d9c0:6:2647::/64: redir-08.t2-sense.ultralight.org:1094
       2605:d9c0:6:2648::/64: redir-09.t2-sense.ultralight.org:1094
       2605:d9c0:6:2649::/64: redir-10.t2-sense.ultralight.org:1094
-      2605:d9c0:6:2650::/64: redir-11.t2-sense.ultralight.org:1094
+#      2605:d9c0:6:2650::/64: redir-11.t2-sense.ultralight.org:1094
       2605:d9c0:6:2651::/64: redir-12.t2-sense.ultralight.org:1094
       2605:d9c0:6:2652::/64: redir-13.t2-sense.ultralight.org:1094
       2605:d9c0:6:2653::/64: redir-14.t2-sense.ultralight.org:1094
