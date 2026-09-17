@@ -94,12 +94,6 @@ edgecore_s0:
     Ethernet24: {}
     Ethernet32: {}
     Ethernet40: {}
-    Ethernet88: {}
-    Ethernet92: {}
-    Ethernet96: {}
-    Ethernet100: {}
-    Ethernet160: {}
-    Ethernet168: {}
     PortChannel41:
       capacity: 200000
       desttype: switch
