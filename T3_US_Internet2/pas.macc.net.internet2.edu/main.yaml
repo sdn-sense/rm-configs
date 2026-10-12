@@ -1,0 +1,26 @@
+---
+general:
+  ip: "163.253.16.103"
+  sitename: T3_US_Internet2
+  webdomain: "https://sense-nrp-internet2.nrp-nautilus.io"
+  prometheus_federate: http://thanos-federate-proxy-service:9099/federate
+  prometheus_query: '{instance="pas.macc.net.internet2.edu", service="node-exporter"}'
+agent:
+  interfaces: [enp14s0f0np0, enp14s0f1np1]
+  hostname: pas.macc.net.internet2.edu
+enp14s0f0np0:
+  # core1.macc.net.internet2.edu HundredGigE0/0/0/8 -- NRP facing
+  isAlias: urn:ogf:network:al2s.internet2.edu:2023:node+core1.macc:port+HundredGigE0_0_0_8
+  vlan_range: [1000-3999]
+enp14s0f1np1:
+  # core1.macc.net.internet2.edu HundredGigE0/0/0/6 -- Internet2 facing
+  isAlias: urn:ogf:network:al2s.internet2.edu:2023:node+core1.macc:port+HundredGigE0_0_0_6
+  vlan_range: [2410-2419]
+qos:
+  policy: hostlevel
+  qos_params: "mtu 9000 mpu 9000 quantum 200000 burst 300000 cburst 300000 qdisc sfq balanced"
+  interfaces:
+    enp14s0f0np0:
+      master_intf: enp14s0f0np0
+    enp14s0f1np1:
+      master_intf: enp14s0f1np1

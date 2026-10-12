@@ -262,3 +262,9 @@ c678153586345e3d038fededb587896b:
   maintainer: "John Graham"
   status: production
   type: Agent
+
+d3e3066adfa30860bd9b3751cdd7b9f9:
+  config: pas.macc.net.internet2.edu/
+  maintainer: "John Graham"
+  status: production
+  type: Agent
