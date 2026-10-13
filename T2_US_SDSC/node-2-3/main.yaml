@@ -1,0 +1,21 @@
+---
+general:
+  ip: "132.249.252.206"
+  sitename: T2_US_SDSC
+  webdomain: "https://sense-prpdev.nrp-nautilus.io:443"
+  prometheus_federate: http://thanos-federate-proxy-service:9099/federate
+  prometheus_query: '{instance="node-2-3.sdsc.optiputer.net", service="node-exporter"}'
+agent:
+  interfaces: [enp113s0f0np0]
+  hostname: node-2-3.sdsc.optiputer.net
+enp113s0f0np0:
+  port: Ethernet180
+  switch: edgecore_s0
+  shared: false
+  intf_max: 100000
+  vlan_range: [1400-1499,1779-1799,3110-3139,3140-3189,3600-3610,3873-3874,3911-3912,3985-3989,4005-4024]
+qos:
+  policy: privatens
+  qos_params: "mtu 9000 mpu 9000 quantum 200000 burst 300000 cburst 300000 qdisc sfq balanced"
+  class_max: true
+  interfaces: {}
