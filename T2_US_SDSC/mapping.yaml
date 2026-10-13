@@ -54,6 +54,21 @@ f701f8cb9ea9c1dd6e85ce9093d62bed:
   maintainer: "John Graham"
   status: production
   type: Agent
+b19437882bbd325d973f01d8213b67e0:
+  config: node-2-2/
+  maintainer: "John Graham"
+  status: production
+  type: Agent
+77e2537fc34a388316076bb12157ec5c:
+  config: node-2-3/
+  maintainer: "John Graham"
+  status: production
+  type: Agent
+84df2d1dad8aee535934ada286da850c:
+  config: node-2-4/
+  maintainer: "John Graham"
+  status: production
+  type: Agent
 920586b201f9979b8700d9c8d9ccb727:
   config: ceph-01-ampath/
   maintainer: "John Graham"

@@ -125,6 +125,9 @@ edgecore_s0:
     Ethernet174:
       isAlias: urn:ogf:network:nrp-nautilus.io:2020:node-2-10.sdsc.optiputer.net:Ethernet174-21-00
     Ethernet88: {}
+    Ethernet178: {}
+    Ethernet180: {}
+    Ethernet182: {}
     Ethernet104:
       isAlias: urn:ogf:network:nrp-nautilus.io:2020:node-2-11.sdsc.optiputer.net:Ethernet104-21-00
     Ethernet106:
