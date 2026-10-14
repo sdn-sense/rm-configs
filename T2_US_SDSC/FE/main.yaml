@@ -78,9 +78,7 @@ sn3700_s0:
     Ethernet76: {}   # k8s-epyc-01
     Ethernet80: {}   # k8s-nvme-01
     Ethernet108: {}  # k8s-gen5-01 ens1f0np0, per Agent01. lldp agrees
-    Ethernet116: {}  # k8s-gen5-02 ens1f0np0, per Agent02. lldp here says
-                     # k8s-gen5-01, so gen5-02 is advertising the wrong
-                     # system name over lldp. Agent02 is authoritative.
+    Ethernet116: {}  # k8s-gen5-02 ens1f0np0, per Agent02. lldp agrees
 edgecore_s0:
   allports: false
   external_snmp: http://nsi-snmpmon-prpdev.opennsa.svc.cluster.local:8443/edgecore_s0/metrics
@@ -116,9 +114,7 @@ edgecore_s0:
     Ethernet132: {}  # node-2-8 94:6d:ae:a6:66:29
     Ethernet32: {}   # k8s-gen5-01 enp168s0np0, per Agent01. lldp agrees
     Ethernet134: {}  # node-2-9 94:6d:ae:a6:66:2f
-    Ethernet40: {}   # k8s-gen5-02 enp168s0np0, per Agent02. lldp here says
-                     # k8s-gen5-01, same wrong system name as sn3700
-                     # Ethernet116. Agent02 is authoritative.
+    Ethernet40: {}   # k8s-gen5-02 enp168s0np0, per Agent02. lldp agrees
     Ethernet252: {}  # node-2-10 94:6d:ae:a6:66:34
     Ethernet88: {}   # node-2-11 b8:ce:f6:d6:25:db
     Ethernet178: {}  # node-2-2
