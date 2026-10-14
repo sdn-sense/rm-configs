@@ -40,102 +40,97 @@ sn3700_s0:
   private_asn: 65000
   allports: false
   vlan_range: [1400-1499,1779-1799,3110-3139,3140-3189,3600-3610,3873-3874,3911-3912,3985-3989,4005-4024]
+  # removed 2026-10-13: Ethernet4, Ethernet40, Ethernet44, Ethernet84,
+  # Ethernet100, Ethernet104, Ethernet120. Ansible facts report mediatype
+  # None on all seven, so there is no transceiver in the cage and nothing
+  # is cabled. They were admin-enabled, so SiteRM dropped each from the
+  # model and warned about it on every pass. Ethernet4 was the second port
+  # of k8s-bf2-01; port 0 (Ethernet0) is still up. Re-add a port here when
+  # an optic goes back in, not before.
+  #
+  # Five of those seven were claimed by Agent03 (k8s-gen4-01) and Agent04
+  # (k8s-gen4-02), both removed in the same change. Neither host is a
+  # Nautilus node any more, neither has checked in to this FE, and both
+  # configs carried IPs that no longer match DNS. The ports they claimed
+  # that are still up had already been repatched to other hosts, which is
+  # why Ethernet52 72 76 80 stay here with no agent behind them.
   ports:
     PortChannel502:
+      # lag to edgecore_s0, members Ethernet48 52 56 60 64 68
       capacity: 1200000
       desttype: switch
       isAlias: urn:ogf:network:nrp-nautilus.io:2020:edgecore_s0:PortChannel502
     Ethernet0:
+      # lldp reports nrp-ai-100-01, which does not match the isAlias below.
+      # Left as-is: the port is up and in the model, so correcting the alias
+      # is a separate change that needs someone to confirm the patch.
       isAlias: urn:ogf:network:nrp-nautilus.io:2020:k8s-bf2-01.sdsc.optiputer.net:Ethernet0-87-00
-    Ethernet4:
-      isAlias: urn:ogf:network:nrp-nautilus.io:2020:k8s-bf2-01.sdsc.optiputer.net:Ethernet4-87-00
-    Ethernet32:
+    Ethernet32:  # up, no lldp neighbour
       vlan_range:
         - 3400-3407
         - 3600-3610
-    Ethernet36:
+    Ethernet36:  # localhost.localdomain b8:ce:f6:44:c6:51
       vlan_range:
         - 3400-3407
         - 3600-3610
-    Ethernet44: {}
-    Ethernet40: {}
-    Ethernet52: {}
-    Ethernet100: {}
-    Ethernet72: {}
-    Ethernet76: {}
-    Ethernet80: {}
-    Ethernet84: {}
-    Ethernet108: {}
-    Ethernet104: {}
-    Ethernet116: {}
-    Ethernet120: {}
+    Ethernet52: {}   # up, no lldp neighbour
+    Ethernet72: {}   # k8s-gpu-03
+    Ethernet76: {}   # k8s-epyc-01
+    Ethernet80: {}   # k8s-nvme-01
+    Ethernet108: {}  # k8s-gen5-01 ens1f0np0, per Agent01. lldp agrees
+    Ethernet116: {}  # k8s-gen5-02 ens1f0np0, per Agent02. lldp here says
+                     # k8s-gen5-01, so gen5-02 is advertising the wrong
+                     # system name over lldp. Agent02 is authoritative.
 edgecore_s0:
   allports: false
   external_snmp: http://nsi-snmpmon-prpdev.opennsa.svc.cluster.local:8443/edgecore_s0/metrics
   vlan_range: [1400-1499,1779-1799,3110-3139,3140-3189,3600-3610,3873-3874,3911-3912,3985-3989,4005-4024]
+  # Alveo U55C ports, added 2024-04-23 in 8bb119a. 22 of the 24 were down
+  # with lineprotocol down, so SiteRM dropped each from the model and
+  # warned on every pass. Optics are present in all of these cages, so the
+  # far end is not driving the link: on a U55C the CMAC only comes up once
+  # a bitstream that instantiates it is loaded. Removed 2026-10-13:
+  #
+  #   node-2-6   Ethernet136 138 (21:00)  Ethernet140 142 (a1:00)
+  #   node-2-7   Ethernet144 146 (21:00)  Ethernet148 150 (a1:00)
+  #   node-2-8   Ethernet156 158 (21:00)  Ethernet152 154 (a1:00)
+  #   node-2-9   Ethernet160 162 (21:00)  Ethernet164 166 (a1:00)
+  #   node-2-10  Ethernet172 174 (21:00)  Ethernet168 170 (a1:00)
+  #   node-2-11  Ethernet106 (21:00 p1)   Ethernet110 (c1:00 p1)
+  #
+  # node-2-11 kept Ethernet104 and Ethernet108, which are up. Those two are
+  # port 0 of each of its cards, so on that host only the first cage of each
+  # card is lit. Put a port back when its CMAC comes up, not before.
+  #
+  # The hosts are all Ready in Nautilus, so this is card and bitstream
+  # state, not dead nodes. Worth knowing while re-adding: the k8s device
+  # plugin sees 2 U55C on node-2-6/7/8 but only 1 on node-2-9 and
+  # node-2-10, and node-2-11 reports 0 under a non-stock shell. node-2-10
+  # has no SiteRM agent in HostData at all.
   ports:
-    Ethernet128: {}
-    Ethernet136:
-      isAlias: urn:ogf:network:nrp-nautilus.io:2020:node-2-6.sdsc.optiputer.net:Ethernet136-21-00
-    Ethernet138:
-      isAlias: urn:ogf:network:nrp-nautilus.io:2020:node-2-6.sdsc.optiputer.net:Ethernet138-21-00
-    Ethernet140:
-      isAlias: urn:ogf:network:nrp-nautilus.io:2020:node-2-6.sdsc.optiputer.net:Ethernet140-a1-00
-    Ethernet142:
-      isAlias: urn:ogf:network:nrp-nautilus.io:2020:node-2-6.sdsc.optiputer.net:Ethernet142-a1-00
-    Ethernet130: {}
-    Ethernet144:
-      isAlias: urn:ogf:network:nrp-nautilus.io:2020:node-2-7.sdsc.optiputer.net:Ethernet144-21-00
-    Ethernet146:
-      isAlias: urn:ogf:network:nrp-nautilus.io:2020:node-2-7.sdsc.optiputer.net:Ethernet146-21-00
-    Ethernet148:
-      isAlias: urn:ogf:network:nrp-nautilus.io:2020:node-2-7.sdsc.optiputer.net:Ethernet148-a1-00
-    Ethernet150:
-      isAlias: urn:ogf:network:nrp-nautilus.io:2020:node-2-7.sdsc.optiputer.net:Ethernet150-a1-00
-    Ethernet232: {}
-    Ethernet234: {}
-    Ethernet238: {}
-    Ethernet132: {}
-    Ethernet152:
-      isAlias: urn:ogf:network:nrp-nautilus.io:2020:node-2-8.sdsc.optiputer.net:Ethernet152-a1-00
-    Ethernet154:
-      isAlias: urn:ogf:network:nrp-nautilus.io:2020:node-2-8.sdsc.optiputer.net:Ethernet154-a1-00
-    Ethernet156:
-      isAlias: urn:ogf:network:nrp-nautilus.io:2020:node-2-8.sdsc.optiputer.net:Ethernet156-21-00
-    Ethernet158:
-      isAlias: urn:ogf:network:nrp-nautilus.io:2020:node-2-8.sdsc.optiputer.net:Ethernet158-21-00
-    Ethernet32: {}
-    Ethernet134: {}
-    Ethernet160:
-      isAlias: urn:ogf:network:nrp-nautilus.io:2020:node-2-9.sdsc.optiputer.net:Ethernet160-21-00
-    Ethernet162:
-      isAlias: urn:ogf:network:nrp-nautilus.io:2020:node-2-9.sdsc.optiputer.net:Ethernet162-21-00
-    Ethernet164:
-      isAlias: urn:ogf:network:nrp-nautilus.io:2020:node-2-9.sdsc.optiputer.net:Ethernet164-a1-00
-    Ethernet166:
-      isAlias: urn:ogf:network:nrp-nautilus.io:2020:node-2-9.sdsc.optiputer.net:Ethernet166-a1-00
-    Ethernet40: {}
-    Ethernet252: {}
-    Ethernet168:
-      isAlias: urn:ogf:network:nrp-nautilus.io:2020:node-2-10.sdsc.optiputer.net:Ethernet168-a1-00
-    Ethernet170:
-      isAlias: urn:ogf:network:nrp-nautilus.io:2020:node-2-10.sdsc.optiputer.net:Ethernet170-a1-00
-    Ethernet172:
-      isAlias: urn:ogf:network:nrp-nautilus.io:2020:node-2-10.sdsc.optiputer.net:Ethernet172-21-00
-    Ethernet174:
-      isAlias: urn:ogf:network:nrp-nautilus.io:2020:node-2-10.sdsc.optiputer.net:Ethernet174-21-00
-    Ethernet88: {}
-    Ethernet178: {}
-    Ethernet180: {}
-    Ethernet182: {}
+    Ethernet128: {}  # node-2-6 94:6d:ae:a6:66:4d
+    Ethernet130: {}  # node-2-7 94:6d:ae:a6:66:41
+    Ethernet232: {}  # node-1-6
+    Ethernet234: {}  # node-2-5
+    Ethernet238: {}  # node-3-5
+    Ethernet132: {}  # node-2-8 94:6d:ae:a6:66:29
+    Ethernet32: {}   # k8s-gen5-01 enp168s0np0, per Agent01. lldp agrees
+    Ethernet134: {}  # node-2-9 94:6d:ae:a6:66:2f
+    Ethernet40: {}   # k8s-gen5-02 enp168s0np0, per Agent02. lldp here says
+                     # k8s-gen5-01, same wrong system name as sn3700
+                     # Ethernet116. Agent02 is authoritative.
+    Ethernet252: {}  # node-2-10 94:6d:ae:a6:66:34
+    Ethernet88: {}   # node-2-11 b8:ce:f6:d6:25:db
+    Ethernet178: {}  # node-2-2
+    Ethernet180: {}  # node-2-3
+    Ethernet182: {}  # node-2-4
     Ethernet104:
+      # node-2-11 U55C at 21:00, cage 0. Up, and no lldp neighbour, which
+      # is expected: the FPGA brings the link up but does not speak lldp.
       isAlias: urn:ogf:network:nrp-nautilus.io:2020:node-2-11.sdsc.optiputer.net:Ethernet104-21-00
-    Ethernet106:
-      isAlias: urn:ogf:network:nrp-nautilus.io:2020:node-2-11.sdsc.optiputer.net:Ethernet106-21-00
     Ethernet108:
+      # node-2-11 U55C at c1:00, cage 0. Up, no lldp neighbour, same reason.
       isAlias: urn:ogf:network:nrp-nautilus.io:2020:node-2-11.sdsc.optiputer.net:Ethernet108-c1-00
-    Ethernet110:
-      isAlias: urn:ogf:network:nrp-nautilus.io:2020:node-2-11.sdsc.optiputer.net:Ethernet110-c1-00
     PortChannel502:
       capacity: 1200000
       desttype: switch
