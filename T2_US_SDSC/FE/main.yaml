@@ -117,6 +117,7 @@ edgecore_s0:
     Ethernet40: {}   # k8s-gen5-02 enp168s0np0, per Agent02. lldp agrees
     Ethernet252: {}  # node-2-10 94:6d:ae:a6:66:34
     Ethernet88: {}   # node-2-11 b8:ce:f6:d6:25:db
+    Ethernet176: {}  # node-2-1 b8:3f:d2:71:61:f2
     Ethernet178: {}  # node-2-2
     Ethernet180: {}  # node-2-3
     Ethernet182: {}  # node-2-4
