@@ -120,6 +120,7 @@ edgecore_s0:
     Ethernet176: {}  # node-2-1 b8:3f:d2:71:61:f2
     Ethernet178: {}  # node-2-2
     Ethernet180: {}  # node-2-3
+    Ethernet168: {}  # node-2-3
     Ethernet182: {}  # node-2-4
     Ethernet104:
       # node-2-11 U55C at 21:00, cage 0. Up, and no lldp neighbour, which
