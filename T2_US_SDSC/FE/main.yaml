@@ -118,10 +118,13 @@ edgecore_s0:
     Ethernet252: {}  # node-2-10 94:6d:ae:a6:66:34
     Ethernet88: {}   # node-2-11 b8:ce:f6:d6:25:db
     Ethernet176: {}  # node-2-1 b8:3f:d2:71:61:f2
+    Ethernet170: {}  # node-2-1
     Ethernet178: {}  # node-2-2
+    Ethernet172: {}  # node-2-2
     Ethernet180: {}  # node-2-3
     Ethernet168: {}  # node-2-3
     Ethernet182: {}  # node-2-4
+    Ethernet174: {}  # node-2-4
     Ethernet104:
       # node-2-11 U55C at 21:00, cage 0. Up, and no lldp neighbour, which
       # is expected: the FPGA brings the link up but does not speak lldp.
