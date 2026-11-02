@@ -1,0 +1,196 @@
+---
+general:
+  logLevel: DEBUG
+  sitename: NRM_SC26
+  webdomain: https://sense-scinet.nrp-nautilus.io:443
+  probes:
+    - https_v4_siterm_2xx
+    - icmp_v4
+NRM_SC26:
+  domain: sense.scinet.net
+  latitude: 41.8527 
+  longitude: -87.6158°
+  lugin: ansible
+  year: 2026
+  switch:
+    - cisco8200_s0
+cisco8200_s0:
+  rate_limit: true
+  allports: false
+  vrf: sense
+  vlan_range:
+    - 1320-1329
+    - 1400-1499
+    - 1779-1799
+    - 2027
+    - 3110-3139
+    - 3600-3610
+    - 3985-3989
+    - 3870-3883
+    - 3911-3912
+    - 3350-3359
+    - 3846-3849
+    - 4005-4024
+  ports:
+    Lag1/1-wc352:
+      capacity: 800000
+      desttype: switch
+      realportname: Lag1 
+      isAlias: urn:ogf:network:sc-test.cenic.net:aristaeos_s0:Ethernet18/1-wc352
+      vlan_range:
+        - 3605-3609 
+      wanlink: true
+    Lag1/2-wc342:
+      capacity: 800000
+      desttype: switch
+      realportname: Lag1 
+      isAlias: urn:ogf:network:sc-test.cenic.net:aristaeos_s0:Ethernet19/1-wc342
+      vlan_range:
+        - 1795-1799 
+      wanlink: true
+    Ethernet12/1-wc362:
+      capacity: 400000
+      desttype: switch
+      realportname: Ethenet12 
+      isAlias: urn:ogf:network:sc-test.cenic.net:aristaeos_s0:Ethernet20/1-wc362
+      vlan_range:
+        - 3120-3129 
+      wanlink: true
+    Ethernet4/1-wc302:
+      capacity: 400000
+      desttype: switch
+      realportname: Ethernet4 
+      #isAlias: urn:ogf:network:internet2
+      vlan_range: 
+        - 2410-2419 
+      wanlink: true
+    Ethernet8/1-wc095:
+      capacity: 400000
+      desttype: switch
+      realportname: Ethernet8 
+      #isAlias: urn:ogf:network:fabric
+      vlan_range: 
+        - 300-309 
+      wanlink: true
+    Ethernet16/1-wc262:
+      capacity: 400000
+      desttype: switch
+      realportname: Ethernet16 
+      #isAlias: urn:ogf:network:fabric
+      vlan_range: 
+        - 2900-2901 
+      wanlink: true
+    Ethernet20/1-wc292:
+      capacity: 400000
+      desttype: switch
+      realportname: Ethernet20 
+      #isAlias: urn:ogf:network:esnet
+      vlan_range: 
+        - 2010-2019 
+      wanlink: true
+    Ethernet24/1-wc312:
+      capacity: 400000
+      desttype: switch
+      realportname: Ethernet24
+      #isAlias: urn:ogf:network:esnet
+      vlan_range: 
+        - 3010-3019 
+      wanlink: true
+    Ethernet28/1:
+      capacity: 400000
+      desttype: switch
+      realportname: Ethernet28 
+      #isAlias: urn:ogf:network:stack-fabric:2024:topology:node+STAR:
+      vlan_range:
+        - 300-309
+        - 2900-2901 
+      wanlink: true
+    Ethernet29/1:
+      capacity: 400000
+      desttype: switch
+      realportname: Ethernet29 
+      #isAlias:
+      wanlink: true
+    Ethernet30/1:
+      capacity: 400000
+      desttype: switch
+      realportname: Ethernet30
+      #isAlias:
+      wanlink: true
+    Ethernet30/1:
+      capacity: 400000
+      desttype: switch realportname: Ethernet30
+      #isAlias:
+      wanlink: true
+    Ethernet31/1:
+      capacity: 400000
+      desttype: switch
+      realportname: Ethernet31
+      #isAlias:
+      wanlink: true
+    Ethernet32/1:
+      capacity: 400000
+      desttype: switch
+      realportname: Ethernet32
+      #isAlias:
+      wanlink: true
+    Ethernet33/1:
+      capacity: 400000
+      desttype: switch
+      realportname: Ethernet33
+      #isAlias:
+      wanlink: true
+    Ethernet34/1:
+      capacity: 400000
+      desttype: switch
+      realportname: Ethernet34
+      #isAlias:
+      wanlink: true
+    Ethernet10/1:
+      capacity: 100000
+      desttype: switch
+      realportname: Ethernet10
+      #isAlias:
+      wanlink: true
+    Ethernet11/1:
+      capacity: 100000
+      desttype: switch
+      realportname: Ethernet11
+      #isAlias:
+      wanlink: true
+    Ethernet12/1:
+      capacity: 100000
+      desttype: switch
+      realportname: Ethernet12
+      #isAlias:
+      wanlink: true
+    Ethernet13/1:
+      capacity: 100000
+      desttype: switch
+      realportname: Ethernet13
+      #isAlias:
+      wanlink: true
+    Ethernet14/1:
+      capacity: 100000
+      desttype: switch
+      realportname: Ethernet14
+      #isAlias:
+      wanlink: true
+    Ethernet15/1:
+      capacity: 100000
+      desttype: switch
+      realportname: Ethernet15
+      #isAlias:
+      wanlink: true
+    Ethernet16/1:
+      capacity: 100000
+      desttype: switch
+      realportname: Ethernet16
+      #isAlias:
+      wanlink: true
+    Ethernet17/1:
+      capacity: 100000
+      desttype: switch
+      realportname: Ethernet17
+      #isAlias:
+      wanlink: true
