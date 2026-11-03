@@ -29,3 +29,8 @@ fc1160fd224208219cbae01c8c8cc4cf:
   maintainer: "John Graham"
   status: production
   type: Agent
+b0bbc79b9a628f5372294ddcba202f6a:
+  config: dtn_cern_ch/
+  maintainer: "John Graham"
+  status: development
+  type: Agent
