@@ -1,0 +1,10 @@
+---
+senseoprod:
+  full_dn: "/C=US/O=Internet2/CN=InCommon RSA Server CA 2/C=US/ST=California/O=Energy Sciences Network/CN=sense-o.es.net"
+  permissions: a
+senseodev:
+  full_dn: "/C=US/O=Internet2/CN=InCommon RSA Server CA 2/C=US/ST=California/O=Energy Sciences Network/CN=sense-o-dev.es.net"
+  permissions: a
+senseoeast:
+  full_dn: "/C=US/O=Internet2/CN=InCommon RSA Server CA 2/C=US/ST=California/O=Energy Sciences Network/CN=sense-o-east.es.net"
+  permissions: a

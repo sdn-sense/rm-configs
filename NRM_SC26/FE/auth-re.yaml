@@ -1,0 +1,19 @@
+---
+autogole_monitoring:
+  full_dn: "/C=US/O=Let's Encrypt/CN=R[0-9]+/CN=autogole-grafana.nrp-nautilus.io"
+  permissions: r
+autogole_monitoring1:
+  full_dn: "/C=US/O=Let's Encrypt/CN=YR[0-9]+/CN=autogole-grafana.nrp-nautilus.io"
+  permissions: r
+fe:
+  full_dn: "/C=US/O=Let's Encrypt/CN=R[0-9]+/CN=sense-ladowntown.nrp-nautilus.io"
+  permissions: w
+fe1:
+  full_dn: "/C=US/O=Let's Encrypt/CN=YR[0-9]+/CN=sense-ladowntown.nrp-nautilus.io"
+  permissions: w
+senseopilot:
+  full_dn: "/C=US/O=Let's Encrypt/CN=E[0-9]+/CN=sense-o-pilot.es.net"
+  permissions: a
+senseopilot1:
+  full_dn: "/C=US/O=Let's Encrypt/CN=YE[0-9]+/CN=sense-o-pilot.es.net"
+  permissions: a
