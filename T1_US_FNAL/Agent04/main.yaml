@@ -6,10 +6,15 @@ general:
   node_exporter: "cmssense5.fnal.gov:9100"
   node_exporter_passthrough: true
 agent: 
-  interfaces: [enp161s0f0]
+  interfaces: [enp161s0f0, ens4np0]
   hostname: cmssense5.fnal.gov
 enp161s0f0:
   port: "Ethernet1/22"
+  shared: false
+  switch: cisconx9
+  vlan_range: [3600-3619]
+ens4np0:
+  port: "Ethernet1/34"
   shared: false
   switch: cisconx9
   vlan_range: [3600-3619]
