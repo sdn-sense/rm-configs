@@ -10,7 +10,6 @@ T2_US_MGHPCC:
   plugin: ansible
   switch:
     - "junos_s0"
-    - "mghpcc-rt-dev"
   ipv6-subnet-pool:
     - 2001:48e8:6401:0::/64
     - 2001:48e8:6401:1::/64
@@ -74,13 +73,4 @@ junos_s0:
       realportname: ae4
       isAlias: urn:ogf:network:stack-fabric:2024:topology:node+MASS:port+SENSE-MGHPCC
       wanlink: true
-mghpcc-rt-dev:
-  ansible_params:
-    vlanmode: 'mx'
-  vlan_mtu: 9214
-  vlan_range:
-    - 3901-3920
-    - 3100-3109
-  allports: true
-  ports: {}
 
