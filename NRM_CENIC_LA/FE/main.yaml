@@ -183,3 +183,91 @@ aristaeos_s0:
         - 3110-3139
         - 4005-4024
       wanlink: true
+    Ethernet18/1-wc352:
+      capacity: 400000
+      desttype: switch
+      realportname: Ethernet18/1
+      isAlias: urn:ogf:network:sense.scinet.net:2026:cisco8200_s0:PortChannel1-wc352 
+      vlan_range:
+        - 3605-3609 
+      wanlink: true
+    Ethernet19/1-wc342:
+      capacity: 400000
+      desttype: switch
+      realportname: Ethernet19/1
+      isAlias: urn:ogf:network:sense.scinet.net:2026:cisco8200_s0:PortChannel1-wc342 
+      vlan_range:
+        - 1795-1799 
+      wanlink: true
+    Ethernet20/1-wc362:
+      capacity: 400000
+      desttype: switch
+      realportname: Ethernet20/1
+      isAlias: urn:ogf:network:sense.scinet.net:2026:cisco8200_s0:Ethernet1/12/1-wc362 
+      vlan_range:
+        - 3120-3129 
+      wanlink: true
+    Ethernet18/1-wc351:
+      capacity: 400000
+      desttype: switch
+      realportname: Ethernet18/1
+      #isAlias: none  
+      vlan_range:
+        - 3600-3604 
+      wanlink: true
+    Ethernet19/1-wc341:
+      capacity: 400000
+      desttype: switch
+      realportname: Ethernet19/1
+      #isAlias: none  
+      vlan_range:
+        - 1790-1794 
+      wanlink: true
+    Ethernet20/1-wc361:
+      capacity: 400000
+      desttype: switch
+      realportname: Ethernet20/1
+      #isAlias: none 
+      vlan_range:
+        - 3130-3139 
+      wanlink: true
+    Ethernet7/1-wc371:
+      capacity: 400000
+      desttype: switch
+      realportname: Ethernet7/1
+      #isAlias: none 
+      vlan_range:
+        - 3985-3989 
+      wanlink: true
+    Ethernet8/1-wc381:
+      capacity: 400000
+      desttype: switch
+      realportname: Ethernet8/1
+      #isAlias: none 
+      vlan_range:
+        - 4005-4009 
+      wanlink: true
+    Ethernet16/1-wc381:
+      capacity: 400000
+      desttype: switch
+      realportname: Ethernet16/1
+      #isAlias: none 
+      vlan_range:
+        - 4010-4014 
+      wanlink: true
+    Ethernet22/1-wc401:
+      capacity: 400000
+      desttype: switch
+      realportname: Ethernet22/1
+      #isAlias: none
+      vlan_range:
+        - 1420-1424 
+      wanlink: true
+    Ethernet23/1-wc411:
+      capacity: 400000
+      desttype: switch
+      realportname: Ethernet23/1
+      #isAlias: none 
+      vlan_range:
+        - 1425-1429 
+      wanlink: true
