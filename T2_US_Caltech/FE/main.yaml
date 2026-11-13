@@ -118,6 +118,10 @@ edgecore_s0:
       desttype: switch
       isAlias: urn:ogf:network:sc-test.cenic.net:2020:aristaeos_s0:Ethernet12-1
       wanlink: true
+    Ethernet144: {} # SC26 and IMSS Servers
+    Ethernet160: {} # SC26 and IMSS Servers
+    Ethernet152: {} # SC26 and IMSS Servers
+    Ethernet168: {} # SC26 and IMSS Servers
   vlan_range:
     - 1320-1329
     - 1400-1499
