@@ -9,8 +9,8 @@ general:
 NRM_SC26:
   domain: sense.scinet.net
   latitude: 41.8527 
-  longitude: -87.6158°
-  lugin: ansible
+  longitude: -87.6158
+  plugin: ansible
   year: 2026
   switch:
     - cisco8200_s0
