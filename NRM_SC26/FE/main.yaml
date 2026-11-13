@@ -17,7 +17,6 @@ NRM_SC26:
 cisco8200_s0:
   rate_limit: true
   allports: true
-  vrf: sense
   vlan_range:
     - 1320-1329
     - 1400-1499
