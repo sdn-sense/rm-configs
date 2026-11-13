@@ -13,8 +13,8 @@ NRM_SC26:
   plugin: ansible
   year: 2026
   switch:
-    - cisco8200_s0
-cisco8200_s0:
+    - cisco8122_s0
+cisco8122_s0:
   rate_limit: true
   allports: true
   vlan_range:
