@@ -35,7 +35,7 @@ cisco8200_s0:
       capacity: 800000
       desttype: switch
       realportname: PortChannel1 
-      isAlias: urn:ogf:network:sc-test.cenic.net:aristaeos_s0:Ethernet18/1-wc352
+      isAlias: urn:ogf:network:sc-test.cenic.net:aristaeos_s0:Ethernet18-1-wc352
       vlan_range:
         - 3605-3609 
       wanlink: true
@@ -43,7 +43,7 @@ cisco8200_s0:
       capacity: 800000
       desttype: switch
       realportname: PortChannel1 
-      isAlias: urn:ogf:network:sc-test.cenic.net:aristaeos_s0:Ethernet19/1-wc342
+      isAlias: urn:ogf:network:sc-test.cenic.net:aristaeos_s0:Ethernet19-1-wc342
       vlan_range:
         - 1795-1799 
       wanlink: true
@@ -51,7 +51,7 @@ cisco8200_s0:
       capacity: 400000
       desttype: switch
       realportname: Ethernet1/12/1 
-      isAlias: urn:ogf:network:sc-test.cenic.net:aristaeos_s0:Ethernet20/1-wc362
+      isAlias: urn:ogf:network:sc-test.cenic.net:aristaeos_s0:Ethernet20-1-wc362
       vlan_range:
         - 3120-3129 
       wanlink: true
