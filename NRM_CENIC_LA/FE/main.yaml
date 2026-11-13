@@ -187,7 +187,7 @@ aristaeos_s0:
       capacity: 400000
       desttype: switch
       realportname: Ethernet18/1
-      isAlias: urn:ogf:network:sense.scinet.net:2020:cisco8200_s0:PortChannel1-wc352 
+      isAlias: urn:ogf:network:sense.scinet.net:2026:cisco8200_s0:PortChannel1-wc352 
       vlan_range:
         - 3605-3609 
       wanlink: true
@@ -195,7 +195,7 @@ aristaeos_s0:
       capacity: 400000
       desttype: switch
       realportname: Ethernet19/1
-      isAlias: urn:ogf:network:sense.scinet.net:2020:cisco8200_s0:PortChannel1-wc342 
+      isAlias: urn:ogf:network:sense.scinet.net:2026:cisco8200_s0:PortChannel1-wc342 
       vlan_range:
         - 1795-1799 
       wanlink: true
@@ -203,7 +203,7 @@ aristaeos_s0:
       capacity: 400000
       desttype: switch
       realportname: Ethernet20/1
-      isAlias: urn:ogf:network:sense.scinet.net:2020:cisco8200_s0:Ethernet1/12/1-wc362 
+      isAlias: urn:ogf:network:sense.scinet.net:2026:cisco8200_s0:Ethernet1/12/1-wc362 
       vlan_range:
         - 3120-3129 
       wanlink: true
