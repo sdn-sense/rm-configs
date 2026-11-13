@@ -50,7 +50,7 @@ cisco8200_s0:
     Ethernet1/12/1-wc362:
       capacity: 400000
       desttype: switch
-      realportname: Ethernet1/12/1 
+      realportname: Ethernet96 
       isAlias: urn:ogf:network:sc-test.cenic.net:aristaeos_s0:Ethernet20-1-wc362
       vlan_range:
         - 3120-3129 
@@ -58,7 +58,7 @@ cisco8200_s0:
     Ethernet1/4/1-wc302:
       capacity: 400000
       desttype: switch
-      realportname: Ethernet1/4/1
+      realportname: Ethernet32
       #isAlias: need to add to urn:ogf:network:internet2
       vlan_range: 
         - 2410-2419 
@@ -66,7 +66,7 @@ cisco8200_s0:
     Ethernet1/8/1-wc095:
       capacity: 400000
       desttype: switch
-      realportname: Ethernet1/8/1 
+      realportname: Ethernet64 
       #isAlias: need to add to urn:ogf:network:fabric
       vlan_range: 
         - 300-309 
@@ -74,7 +74,7 @@ cisco8200_s0:
     Ethernet1/16/1-wc262:
       capacity: 400000
       desttype: switch
-      realportname: Ethernet1/16/1 
+      realportname: Ethernet128 
       #isAlias: need to add to urn:ogf:network:fabric
       vlan_range: 
         - 2900-2901 
@@ -82,7 +82,7 @@ cisco8200_s0:
     Ethernet1/20/1-wc292:
       capacity: 400000
       desttype: switch
-      realportname: Ethernet1/20/1 
+      realportname: Ethernet160 
       #isAlias: need to add to urn:ogf:network:esnet
       vlan_range: 
         - 2010-2019 
@@ -90,101 +90,101 @@ cisco8200_s0:
     Ethernet1/24/1-wc312:
       capacity: 400000
       desttype: switch
-      realportname: Ethernet1/24/1
+      realportname: Ethernet192
       #isAlias: need to add to urn:ogf:network:esnet
       vlan_range: 
         - 3010-3019 
       wanlink: true
-    Ethernet1/28/1:
+    Ethernet224:
       capacity: 400000
       desttype: switch
-      realportname: Ethernet1/28/1 
+      realportname: Ethernet224 
       #isAlias: none
       vlan_range:
         - 300-309
         - 2900-2901 
       wanlink: true
-    Ethernet1/29/1:
+    Ethernet232:
       capacity: 400000
       desttype: switch
-      realportname: Ethernet1/29/1
+      realportname: Ethernet232
       #isAlias:
       wanlink: true
-    Ethernet1/30/1:
+    Ethernet240:
       capacity: 400000
       desttype: switch
-      realportname: Ethernet1/30/1
+      realportname: Ethernet240
       #isAlias: none
       wanlink: true
-    Ethernet1/31/1:
+    Ethernet248:
       capacity: 400000
       desttype: switch
-      realportname: Ethernet1/31/1
+      realportname: Ethernet248
       #isAlias: none
       wanlink: true
-    Ethernet1/32/1:
+    Ethernet256:
       capacity: 400000
       desttype: switch
-      realportname: Ethernet1/32/1
+      realportname: Ethernet256
       #isAlias: none
       wanlink: true
-    Ethernet1/33/1:
+    Ethernet264:
       capacity: 400000
       desttype: switch
-      realportname: Ethernet1/33/1
+      realportname: Ethernet264
       #isAlias: none
       wanlink: true
-    Ethernet1/34/1:
+    Ethernet272:
       capacity: 400000
       desttype: switch
-      realportname: Ethernet1/34/1
+      realportname: Ethernet272
       #isAlias: none
       wanlink: true
-    Ethernet1/10/1:
+    Ethernet80:
       capacity: 100000
       desttype: switch
-      realportname: Ethernet1/10/1
+      realportname: Ethernet80
       #isAlias: none
       wanlink: true
-    Ethernet1/11/1:
+    Ethernet88:
       capacity: 100000
       desttype: switch
-      realportname: Ethernet1/11/1
+      realportname: Ethernet88
       #isAlias: none
       wanlink: true
-    Ethernet1/12/1:
+    Ethernet96:
       capacity: 100000
       desttype: switch
-      realportname: Ethernet1/12/1
+      realportname: Ethernet96
       #isAlias: none
       wanlink: true
-    Ethernet1/13/1:
+    Ethernet104:
       capacity: 100000
       desttype: switch
-      realportname: Ethernet1/13/1
+      realportname: Ethernet104
       #isAlias: none
       wanlink: true
-    Ethernet1/14/1:
+    Ethernet112:
       capacity: 100000
       desttype: switch
-      realportname: Ethernet1/14/1
+      realportname: Ethernet112
       #isAlias: none
       wanlink: true
-    Ethernet1/15/1:
+    Ethernet120:
       capacity: 100000
       desttype: switch
-      realportname: Ethernet1/15/1
+      realportname: Ethernet120
       #isAlias: none
       wanlink: true
-    Ethernet1/16/1:
+    Ethernet128:
       capacity: 100000
       desttype: switch
-      realportname: Ethernet1/16/1
+      realportname: Ethernet128
       #isAlias: none
       wanlink: true
-    Ethernet1/17/1:
+    Ethernet136:
       capacity: 100000
       desttype: switch
-      realportname: Ethernet1/17/1
+      realportname: Ethernet136
       #isAlias: none
       wanlink: true
