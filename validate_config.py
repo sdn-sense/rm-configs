@@ -29,6 +29,7 @@ SKIP_DIRS = {"CAs", "standarts", ".github", ".git"}
 VALID_MAPPING_TYPES = {"FE", "Agent"}
 VALID_PLUGINS = {"ansible", "raw"}
 VALID_QOS_POLICIES = {"hostlevel", "privatens"}
+VALID_QOS_SHAPING = {"bidirectional", "ingress", "egress"}
 VALID_DOWNTIME_SERVICES = {"FE", "Agent", "All"}
 VALID_AUTH_KEYS = {"full_dn", "permissions", "allowed_ips"}
 VALID_AUTH_PERMISSIONS = {"r", "read", "w", "write", "rw", "readwrite", "read-write", "a", "admin"}
@@ -737,6 +738,9 @@ def validate_agent_main(site_name, site_path, agent_dir, agent_data, fe_data, re
         policy = qos.get("policy")
         if policy is not None and policy not in VALID_QOS_POLICIES:
             report.error(rel, f"qos.policy '{policy}' is invalid, expected one of {VALID_QOS_POLICIES}")
+        shaping = qos.get("shaping")
+        if shaping is not None and shaping not in VALID_QOS_SHAPING:
+            report.error(rel, f"qos.shaping '{shaping}' is invalid, expected one of {VALID_QOS_SHAPING}")
 
         qos_intfs = qos.get("interfaces")
         if isinstance(qos_intfs, dict) and qos_intfs:
