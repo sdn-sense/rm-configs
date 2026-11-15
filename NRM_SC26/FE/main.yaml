@@ -31,160 +31,194 @@ cisco8122_s0:
     - 3846-3849
     - 4005-4024
   ports:
-    PortChannel1-wc352:
-      capacity: 800000
-      desttype: switch
-      realportname: PortChannel1 
-      isAlias: urn:ogf:network:sc-test.cenic.net:aristaeos_s0:Ethernet18-1-wc352
-      vlan_range:
-        - 3605-3609 
-      wanlink: true
-    PortChannel1/2-wc342:
-      capacity: 800000
-      desttype: switch
-      realportname: PortChannel1 
-      isAlias: urn:ogf:network:sc-test.cenic.net:aristaeos_s0:Ethernet19-1-wc342
-      vlan_range:
-        - 1795-1799 
-      wanlink: true
-    Ethernet1/12/1-wc362:
+    # WAN circuits: SCinet scn-rtr-noka-3 trunks, one entry per WCnn-x VLAN range (SCinet NOC diagram 2026-11-10-a)
+    Ethernet16-wc342:
       capacity: 400000
       desttype: switch
-      realportname: Ethernet96 
-      isAlias: urn:ogf:network:sc-test.cenic.net:aristaeos_s0:Ethernet20-1-wc362
+      realportname: Ethernet16
+      isAlias: urn:ogf:network:sc-test.cenic.net:2020:aristaeos_s0:Ethernet18-1-wc342
       vlan_range:
-        - 3120-3129 
+        - 1795-1799
       wanlink: true
-    Ethernet1/4/1-wc302:
+    Ethernet16-wc312:
+      capacity: 400000
+      desttype: switch
+      realportname: Ethernet16
+      #isAlias: need to add to urn:ogf:network:esnet
+      vlan_range:
+        - 3010-3019
+      wanlink: true
+    Ethernet24-wc302:
+      capacity: 400000
+      desttype: switch
+      realportname: Ethernet24
+      #isAlias: need to add to urn:ogf:network:internet2
+      vlan_range:
+        - 2410-2419
+      wanlink: true
+    Ethernet32-wc095:
       capacity: 400000
       desttype: switch
       realportname: Ethernet32
-      #isAlias: need to add to urn:ogf:network:internet2
-      vlan_range: 
-        - 2410-2419 
-      wanlink: true
-    Ethernet1/8/1-wc095:
-      capacity: 400000
-      desttype: switch
-      realportname: Ethernet64 
       #isAlias: need to add to urn:ogf:network:fabric
-      vlan_range: 
-        - 300-309 
-      wanlink: true
-    Ethernet1/16/1-wc262:
-      capacity: 400000
-      desttype: switch
-      realportname: Ethernet128 
-      #isAlias: need to add to urn:ogf:network:fabric
-      vlan_range: 
-        - 2900-2901 
-      wanlink: true
-    Ethernet1/20/1-wc292:
-      capacity: 400000
-      desttype: switch
-      realportname: Ethernet160 
-      #isAlias: need to add to urn:ogf:network:esnet
-      vlan_range: 
-        - 2010-2019 
-      wanlink: true
-    Ethernet1/24/1-wc312:
-      capacity: 400000
-      desttype: switch
-      realportname: Ethernet192
-      #isAlias: need to add to urn:ogf:network:esnet
-      vlan_range: 
-        - 3010-3019 
-      wanlink: true
-    Ethernet224:
-      capacity: 400000
-      desttype: switch
-      realportname: Ethernet224 
-      #isAlias: none
       vlan_range:
         - 300-309
-        - 2900-2901 
       wanlink: true
-    Ethernet232:
+    Ethernet40-wc352:
       capacity: 400000
       desttype: switch
-      realportname: Ethernet232
-      #isAlias:
+      realportname: Ethernet40
+      isAlias: urn:ogf:network:sc-test.cenic.net:2020:aristaeos_s0:Ethernet19-1-wc352
+      vlan_range:
+        - 3605-3609
       wanlink: true
-    Ethernet240:
+    Ethernet40-wc262:
       capacity: 400000
       desttype: switch
-      realportname: Ethernet240
-      #isAlias: none
+      realportname: Ethernet40
+      #isAlias: need to add to urn:ogf:network:fabric
+      vlan_range:
+        - 2900-2901
       wanlink: true
-    Ethernet248:
+    Ethernet48-wc292:
       capacity: 400000
       desttype: switch
-      realportname: Ethernet248
-      #isAlias: none
+      realportname: Ethernet48
+      #isAlias: need to add to urn:ogf:network:esnet
+      vlan_range:
+        - 2010-2019
       wanlink: true
-    Ethernet256:
+    Ethernet56-wc362:
       capacity: 400000
       desttype: switch
-      realportname: Ethernet256
-      #isAlias: none
+      realportname: Ethernet56
+      isAlias: urn:ogf:network:sc-test.cenic.net:2020:aristaeos_s0:Ethernet20-1-wc362
+      vlan_range:
+        - 3120-3129
       wanlink: true
-    Ethernet264:
+    # Nokia trunks (physical), routed uplink and LAGs
+    Ethernet0:
+      # PortChannel03 member, scn-rtr-noka-3 1/1/c37/1
       capacity: 400000
       desttype: switch
-      realportname: Ethernet264
-      #isAlias: none
-      wanlink: true
-    Ethernet272:
+      realportname: Ethernet0
+    Ethernet8:
+      # PortChannel03 member, scn-rtr-noka-3 1/1/c37/2
       capacity: 400000
       desttype: switch
-      realportname: Ethernet272
-      #isAlias: none
-      wanlink: true
-    Ethernet80:
-      capacity: 100000
+      realportname: Ethernet8
+    Ethernet16:
+      # scn-rtr-noka-3 1/1/c38/2; WC34-2, WC31-2
+      capacity: 400000
       desttype: switch
-      realportname: Ethernet80
-      #isAlias: none
-      wanlink: true
-    Ethernet88:
-      capacity: 100000
+      realportname: Ethernet16
+    Ethernet24:
+      # scn-rtr-noka-3 1/1/c38/1; WC30-2
+      capacity: 400000
       desttype: switch
-      realportname: Ethernet88
-      #isAlias: none
-      wanlink: true
-    Ethernet96:
-      capacity: 100000
+      realportname: Ethernet24
+    Ethernet32:
+      # scn-rtr-noka-3 1/1/c41/1; WC09-5
+      capacity: 400000
       desttype: switch
-      realportname: Ethernet96
-      #isAlias: none
-      wanlink: true
-    Ethernet104:
-      capacity: 100000
+      realportname: Ethernet32
+    Ethernet40:
+      # scn-rtr-noka-3 1/1/c41/2; WC26-2, WC35-2
+      capacity: 400000
       desttype: switch
-      realportname: Ethernet104
-      #isAlias: none
-      wanlink: true
-    Ethernet112:
-      capacity: 100000
+      realportname: Ethernet40
+    Ethernet48:
+      # scn-rtr-noka-3 1/1/c42/2; WC29-2
+      capacity: 400000
       desttype: switch
-      realportname: Ethernet112
-      #isAlias: none
-      wanlink: true
+      realportname: Ethernet48
+    Ethernet56:
+      # scn-rtr-noka-3 1/1/c42/1; WC36-2
+      capacity: 400000
+      desttype: switch
+      realportname: Ethernet56
+    PortChannel03:
+      # Ethernet0+Ethernet8 routed link to scn-rtr-noka-3
+      capacity: 800000
+      desttype: switch
+      realportname: PortChannel03
     Ethernet120:
+      # PortChannel10 member, noc-cluster-fi-01-B Eth1/3
       capacity: 100000
       desttype: switch
       realportname: Ethernet120
-      #isAlias: none
-      wanlink: true
     Ethernet128:
+      # PortChannel10 member, noc-cluster-fi-01-B Eth1/4
       capacity: 100000
       desttype: switch
       realportname: Ethernet128
-      #isAlias: none
-      wanlink: true
     Ethernet136:
+      # PortChannel20 member, noc-cluster-fi-01-A Eth1/3
       capacity: 100000
       desttype: switch
       realportname: Ethernet136
-      #isAlias: none
-      wanlink: true
+    Ethernet144:
+      # PortChannel20 member, noc-cluster-fi-01-A Eth1/4
+      capacity: 100000
+      desttype: switch
+      realportname: Ethernet144
+    PortChannel10:
+      # Ethernet120+Ethernet128 to noc-cluster-fi-01-B
+      capacity: 200000
+      desttype: switch
+      realportname: PortChannel10
+    PortChannel20:
+      # Ethernet136+Ethernet144 to noc-cluster-fi-01-A
+      capacity: 200000
+      desttype: switch
+      realportname: PortChannel20
+    # Booth drops (lldp: ARISTA-7060-DX6 / cien-data-sw-8190), VLANs per SCinet NOC diagram
+    Ethernet64:
+      # Booth Drop Ciena 5035-B; WC09-5, WC26-2
+      capacity: 400000
+      desttype: switch
+      realportname: Ethernet64
+      vlan_range:
+        - 300-309
+        - 2900-2901
+    Ethernet72:
+      # Booth Drop Caltech 5438-A; WC34-2, WC31-2
+      capacity: 400000
+      desttype: switch
+      realportname: Ethernet72
+      vlan_range:
+        - 1795-1799
+        - 3010-3019
+    Ethernet88:
+      # Booth Drop Caltech 5438-I; WC35-2
+      capacity: 400000
+      desttype: switch
+      realportname: Ethernet88
+      vlan_range:
+        - 3605-3609
+    Ethernet96:
+      # Booth Drop Caltech 5438-J; WC29-2
+      capacity: 400000
+      desttype: switch
+      realportname: Ethernet96
+      vlan_range:
+        - 2010-2019
+    Ethernet104:
+      # Booth Drop Caltech 5438-R; WC36-2
+      capacity: 400000
+      desttype: switch
+      realportname: Ethernet104
+      vlan_range:
+        - 3120-3129
+    Ethernet112:
+      # Booth Drop Caltech 5438-S; no WC VLANs assigned
+      capacity: 400000
+      desttype: switch
+      realportname: Ethernet112
+    # Ethernet80 is Booth Drop Caltech 5438-B (WC30-2) but oper down; uncomment once it is up
+    #Ethernet80:
+    #  capacity: 400000
+    #  desttype: switch
+    #  realportname: Ethernet80
+    #  vlan_range:
+    #    - 2410-2419
