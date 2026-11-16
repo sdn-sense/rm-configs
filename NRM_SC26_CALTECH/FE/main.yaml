@@ -1,0 +1,56 @@
+---
+general:
+  sitename: NRM_SC26_CALTECH
+  webdomain: "https://sense-scinet-caltech.nrp-nautilus.io:443"
+  probes: ["https_v4_siterm_2xx", "icmp_v4"]
+NRM_SC26_CALTECH:
+  domain: sense-scinet-caltech-nrp-nautilus.io
+  latitude: 41.8527
+  longitude: -87.6158
+  plugin: raw
+  year: 2026
+  switch:
+    - "arista_booth"
+arista_booth:
+  # Caltech booth ARISTA-7060-DX6. RAW: SiteRM configures nothing here; every VLAN
+  # below must be statically configured on the real switch by its owner.
+  vlan_range: [1149, 1795-1799, 2010-2019, 2410-2419, 3010-3019, 3605-3609]
+  ports:
+    # Host-facing. 1149 is host-to-host only and appears on NO uplink.
+    "Ethernet10_1":
+      # nrp-caltech-01 enp193s0np0
+      capacity: 400000
+      vlan_range: [1149, 1795-1799, 3010-3019]
+    "Ethernet10_5":
+      # nrp-caltech-01 enp33s0np0 (also carries node mgmt vlan106)
+      capacity: 400000
+      vlan_range: [2410-2419]
+    "Ethernet38_1":
+      # nrp-caltech-02 enp65s0np0
+      capacity: 400000
+      vlan_range: [1149, 3605-3609]
+    "Ethernet38_5":
+      # nrp-caltech-02 enp1s0np0
+      capacity: 400000
+      vlan_range: [2010-2019]
+    # Uplinks to the SCinet 8122
+    "Ethernet49_1":
+      capacity: 400000
+      isAlias: "urn:ogf:network:sense.scinet.net:2026:cisco8122_s0:Ethernet72"
+      wanlink: True
+      vlan_range: [1795-1799, 3010-3019]
+    "Ethernet49_5":
+      capacity: 400000
+      isAlias: "urn:ogf:network:sense.scinet.net:2026:cisco8122_s0:Ethernet80"
+      wanlink: True
+      vlan_range: [2410-2419]
+    "Ethernet55_1":
+      capacity: 400000
+      isAlias: "urn:ogf:network:sense.scinet.net:2026:cisco8122_s0:Ethernet88"
+      wanlink: True
+      vlan_range: [3605-3609]
+    "Ethernet55_5":
+      capacity: 400000
+      isAlias: "urn:ogf:network:sense.scinet.net:2026:cisco8122_s0:Ethernet96"
+      wanlink: True
+      vlan_range: [2010-2019]
