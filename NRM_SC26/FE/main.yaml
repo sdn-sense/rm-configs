@@ -214,14 +214,14 @@ cisco8122_s0:
       realportname: Ethernet96
       vlan_range:
         - 2010-2019
-    Ethernet104:
-      # Booth Drop Caltech 5438-R; WC36-2
-      # ARISTA-7060-DX6 Et53/1
-      capacity: 400000
-      desttype: switch
-      realportname: Ethernet104
-      vlan_range:
-        - 3120-3129
+    # Ethernet104 is Booth Drop Caltech 5438-R (WC36-2, ARISTA-7060-DX6 Et53/1);
+    # not used -- nrp-caltech-02 reaches the 8122 over Ethernet96 only
+    #Ethernet104:
+    #  capacity: 400000
+    #  desttype: switch
+    #  realportname: Ethernet104
+    #  vlan_range:
+    #    - 3120-3129
     Ethernet112:
       # Booth Drop Caltech 5438-S; no WC VLANs assigned
       # ARISTA-7060-DX6 Et53/5
