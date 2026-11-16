@@ -14,3 +14,13 @@ c8a7a61bdaafed899b5732e882360826:
   maintainer: "Justas Balcas"
   status: production
   type: Agent
+7a5dfcde4b254ff2bc1d7ef58ab58c01:
+  config: Agent03/
+  maintainer: "Justas Balcas"
+  status: production
+  type: Agent
+d0aecabcd523912a635c2339780597fe:
+  config: Agent04/
+  maintainer: "Justas Balcas"
+  status: production
+  type: Agent
