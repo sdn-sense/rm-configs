@@ -44,7 +44,7 @@ cisco8122_s0:
       capacity: 400000
       desttype: switch
       realportname: Ethernet16
-      #isAlias: need to add to urn:ogf:network:esnet
+      isAlias: urn:ogf:network:es.net:2013::star-cr6:1_1_c4_1:sc26-wc31
       vlan_range:
         - 3010-3019
       wanlink: true
@@ -84,7 +84,7 @@ cisco8122_s0:
       capacity: 400000
       desttype: switch
       realportname: Ethernet48
-      #isAlias: need to add to urn:ogf:network:esnet
+      isAlias: urn:ogf:network:es.net:2013::chic-cr6:1_1_c20_1:sc26-wc29
       vlan_range:
         - 2010-2019
       wanlink: true
