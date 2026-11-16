@@ -215,10 +215,10 @@ cisco8122_s0:
       capacity: 400000
       desttype: switch
       realportname: Ethernet112
-    # Ethernet80 is Booth Drop Caltech 5438-B (WC30-2) but oper down; uncomment once it is up
-    #Ethernet80:
-    #  capacity: 400000
-    #  desttype: switch
-    #  realportname: Ethernet80
-    #  vlan_range:
-    #    - 2410-2419
+    Ethernet80:
+      # Booth Drop Caltech 5438-B; WC30-2
+      capacity: 400000
+      desttype: switch
+      realportname: Ethernet80
+      vlan_range:
+        - 2410-2419
