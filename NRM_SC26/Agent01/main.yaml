@@ -6,7 +6,7 @@ general:
   prometheus_federate: http://thanos-federate-proxy-service:9099/federate
   prometheus_query: '{instance="nrp-caltech-01.26.scconf.org", service="node-exporter"}'
 agent:
-  interfaces: [enp193s0np0]
+  interfaces: [enp193s0np0, enp33s0np0]
   hostname: nrp-caltech-01.26.scconf.org
   noqos: false
 enp193s0np0:
@@ -16,16 +16,18 @@ enp193s0np0:
   intf_max: 400000
   allowOvercommit: false
   vlan_range: [1795-1799, 3010-3019]
-#enp33s0np0:
-#  port: Ethernet96
-#  switch: cisco8122_s0
-#  shared: false
-#  intf_max: 400000
-#  allowOvercommit: false
-#  vlan_range: [2010-2019]
+enp33s0np0:
+  port: Ethernet80
+  switch: cisco8122_s0
+  shared: false
+  intf_max: 400000
+  allowOvercommit: false
+  vlan_range: [2410-2419]
 qos:
   policy: hostlevel
   qos_params: "mtu 9000 mpu 9000 quantum 200000 burst 300000 cburst 300000 qdisc sfq balanced"
   interfaces:
     enp193s0np0:
       master_intf: enp193s0np0
+    enp33s0np0:
+      master_intf: enp33s0np0
