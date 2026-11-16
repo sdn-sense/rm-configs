@@ -108,12 +108,12 @@ cisco8122_s0:
       desttype: switch
       realportname: Ethernet8
     Ethernet16:
-      # scn-rtr-noka-3 1/1/c38/2; WC34-2, WC31-2
+      # scn-rtr-noka-3 1/1/c38/1; WC34-2, WC31-2
       capacity: 400000
       desttype: switch
       realportname: Ethernet16
     Ethernet24:
-      # scn-rtr-noka-3 1/1/c38/1; WC30-2
+      # scn-rtr-noka-3 1/1/c38/2; WC30-2
       capacity: 400000
       desttype: switch
       realportname: Ethernet24
@@ -128,12 +128,12 @@ cisco8122_s0:
       desttype: switch
       realportname: Ethernet40
     Ethernet48:
-      # scn-rtr-noka-3 1/1/c42/2; WC29-2
+      # scn-rtr-noka-3 1/1/c42/1; WC29-2
       capacity: 400000
       desttype: switch
       realportname: Ethernet48
     Ethernet56:
-      # scn-rtr-noka-3 1/1/c42/1; WC36-2
+      # scn-rtr-noka-3 1/1/c42/2; WC36-2
       capacity: 400000
       desttype: switch
       realportname: Ethernet56
@@ -183,14 +183,24 @@ cisco8122_s0:
         - 2900-2901
     Ethernet72:
       # Booth Drop Caltech 5438-A; WC34-2, WC31-2
+      # ARISTA-7060-DX6 Et49/1 "Drop-A-Cluster-72"; nrp-caltech-01 enp193s0np0
       capacity: 400000
       desttype: switch
       realportname: Ethernet72
       vlan_range:
         - 1795-1799
         - 3010-3019
+    Ethernet80:
+      # Booth Drop Caltech 5438-B; WC30-2
+      # ARISTA-7060-DX6 Et49/5 "Drop-B-Cluster-80"; nrp-caltech-01 enp33s0np0
+      capacity: 400000
+      desttype: switch
+      realportname: Ethernet80
+      vlan_range:
+        - 2410-2419
     Ethernet88:
       # Booth Drop Caltech 5438-I; WC35-2
+      # ARISTA-7060-DX6 Et55/1; nrp-caltech-02 enp65s0np0
       capacity: 400000
       desttype: switch
       realportname: Ethernet88
@@ -198,6 +208,7 @@ cisco8122_s0:
         - 3605-3609
     Ethernet96:
       # Booth Drop Caltech 5438-J; WC29-2
+      # ARISTA-7060-DX6 Et55/5
       capacity: 400000
       desttype: switch
       realportname: Ethernet96
@@ -205,6 +216,7 @@ cisco8122_s0:
         - 2010-2019
     Ethernet104:
       # Booth Drop Caltech 5438-R; WC36-2
+      # ARISTA-7060-DX6 Et53/1
       capacity: 400000
       desttype: switch
       realportname: Ethernet104
@@ -212,13 +224,7 @@ cisco8122_s0:
         - 3120-3129
     Ethernet112:
       # Booth Drop Caltech 5438-S; no WC VLANs assigned
+      # ARISTA-7060-DX6 Et53/5
       capacity: 400000
       desttype: switch
       realportname: Ethernet112
-    Ethernet80:
-      # Booth Drop Caltech 5438-B; WC30-2
-      capacity: 400000
-      desttype: switch
-      realportname: Ethernet80
-      vlan_range:
-        - 2410-2419
