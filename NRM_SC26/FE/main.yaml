@@ -52,9 +52,9 @@ cisco8122_s0:
       capacity: 400000
       desttype: switch
       realportname: Ethernet24
-      isAlias: urn:ogf:network:al2s.internet2.edu:2023:node+core1.star:port+HundredGigE0_0_0_27
+      isAlias: urn:ogf:network:al2s.internet2.edu:2023:node+core1.star:port+FourHundredGigE0_0_0_0
       vlan_range:
-        - 2410-2419
+        - 2400-2419
       wanlink: true
     Ethernet32-wc095:
       capacity: 400000
@@ -176,7 +176,7 @@ cisco8122_s0:
         - 300-309
         - 1795-1799
         - 2010-2019
-        - 2410-2419
+        - 2400-2419
         - 2900-2901
         - 3010-3019
         - 3120-3129
@@ -206,7 +206,7 @@ cisco8122_s0:
       desttype: switch
       realportname: Ethernet80
       vlan_range:
-        - 2410-2419
+        - 2400-2419
     Ethernet88:
       # Booth Drop Caltech 5438-I; WC35-2
       # ARISTA-7060-DX6 Et55/1; nrp-caltech-02 enp65s0np0
