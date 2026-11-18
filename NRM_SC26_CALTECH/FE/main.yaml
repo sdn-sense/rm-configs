@@ -14,7 +14,7 @@ NRM_SC26_CALTECH:
 arista_booth:
   # Caltech booth ARISTA-7060-DX6. RAW: SiteRM configures nothing here; every VLAN
   # below must be statically configured on the real switch by its owner.
-  vlan_range: [1149, 1795-1799, 2010-2019, 2410-2419, 3010-3019, 3605-3609]
+  vlan_range: [1149, 1795-1799, 2010-2019, 2400-2419, 3010-3019, 3605-3609]
   ports:
     # Host-facing. 1149 is host-to-host only and appears on NO uplink.
     "Ethernet10_1":
@@ -24,7 +24,7 @@ arista_booth:
     "Ethernet10_5":
       # nrp-caltech-01 enp33s0np0 (also carries node mgmt vlan106)
       capacity: 400000
-      vlan_range: [2410-2419]
+      vlan_range: [2400-2419]
     "Ethernet38_1":
       # nrp-caltech-02 enp65s0np0
       capacity: 400000
@@ -43,7 +43,7 @@ arista_booth:
       capacity: 400000
       isAlias: "urn:ogf:network:sense.scinet.net:2026:cisco8122_s0:Ethernet80"
       wanlink: True
-      vlan_range: [2410-2419]
+      vlan_range: [2400-2419]
     "Ethernet55_1":
       capacity: 400000
       isAlias: "urn:ogf:network:sense.scinet.net:2026:cisco8122_s0:Ethernet88"
