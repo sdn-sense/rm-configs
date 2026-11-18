@@ -52,7 +52,7 @@ cisco8122_s0:
       capacity: 400000
       desttype: switch
       realportname: Ethernet24
-      isAlias: urn:ogf:network:al2s.internet2.edu:2023:node+core1.chic:port+HundredGigE0_0_0_29
+      isAlias: urn:ogf:network:al2s.internet2.edu:2023:node+core1.star:port+HundredGigE0_0_0_27
       vlan_range:
         - 2410-2419
       wanlink: true
