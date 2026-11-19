@@ -8,7 +8,7 @@ general:
 agent:
   interfaces: [eno7]
   hostname: nrp-gpu-01.26.scconf.org
-  noqos: false
+  noqos: true
 eno7:
   port: PortChannel20
   switch: cisco8122_s0

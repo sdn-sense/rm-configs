@@ -8,7 +8,7 @@ general:
 agent:
   interfaces: [enp193s0np0, enp33s0np0]
   hostname: nrp-caltech-01.26.scconf.org
-  noqos: false
+  noqos: true
 enp193s0np0:
   port: Ethernet72
   switch: cisco8122_s0
