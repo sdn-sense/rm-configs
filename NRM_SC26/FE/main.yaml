@@ -232,8 +232,10 @@ cisco8122_s0:
     #  vlan_range:
     #    - 3120-3129
     Ethernet112:
-      # Booth Drop Caltech 5438-S; no WC VLANs assigned
-      # ARISTA-7060-DX6 Et53/5
+      # Booth Drop Caltech 5438-S; WC-01
+      # ARISTA-7060-DX6 Et53/5 to Et33/1, caltech-sm enp49s0f0np0
       capacity: 400000
       desttype: switch
       realportname: Ethernet112
+      vlan_range:
+        - 2400-2419

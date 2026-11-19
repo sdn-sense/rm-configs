@@ -24,3 +24,8 @@ d0aecabcd523912a635c2339780597fe:
   maintainer: "Justas Balcas"
   status: production
   type: Agent
+c7542bb2f4b995484c9668c0302aca6c:
+  config: Agent05/
+  maintainer: "Justas Balcas"
+  status: production
+  type: Agent
